@@ -1,0 +1,30 @@
+﻿@model IEnumerable<College>
+
+@{
+    ViewData["Title"] = "Colleges";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Course Planner</h1>
+</div>
+
+<div class="container">
+    <div class="row row-md-10" style="margin:auto;">
+        <div class="col col-md-6"  style="margin:auto;" >
+            <div class="card" >
+                <div class="card-header">
+                    <div class="card-title">Colleges</div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        @foreach (var c in Model)
+                        {
+                            <li> @Html.ActionLink( @c.Name, "CourseList", "Course", @c ) </li>
+                        }
+                        <li> @Html.ActionLink( "Add To List", "Create", "College" ) </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>

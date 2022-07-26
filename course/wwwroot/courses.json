@@ -1,0 +1,601 @@
+{
+  "colleges": {
+    "CCC-CSU C-ID": {
+      "COMP112": {
+        "objectives": [
+          "Describe the software development life-cycle",
+          "Describe the principles of structured programming and be able to describe, design, implement, and test structured programs using currently accepted methodology",
+          "Explain what an algorithm is and its importance in computer programming"
+        ],
+        "content": [
+          "Software life-cycle including design, development, styles, documentation, testing and maintenance",
+          "Procedural versus objected oriented programming",
+          " - Survey of current languages",
+          "Program design tools and programming environments",
+          "Documentation",
+          "Coding conventions",
+          "Data types, variables, expressions, sequential processing",
+          "Arrays",
+          " - Declaring and allocating arrays",
+          " - Multiple-subscripted arrays",
+          "Control structure",
+          " - Selective structures: if and switch",
+          " - Repetitive structures: loops",
+          "Algorithms including simple sorting and searching",
+          "File I/O",
+          " - Files and streams",
+          " - Sequential access files",
+          "Error handling",
+          "Passing parameters by value and by reference",
+          "Principles of testing and designing test data"
+        ]
+      }
+    },
+    "Cuyamaca College": {
+      "CS-119 (2022 Spring) - Python": {
+        "status": "complete",
+        "CatalogID": "CS119",
+        "CanvasCourseID": 43212,
+        "Name": "2022SP-CS-119-4451 - Program Design & Development",
+        "Course Code": "2022SP-CS-119-4451",
+        "Time Zone": "PST8",
+        "SIS ID": "2022SP-4451",
+        "Subaccount": "Computer Science",
+        "Term": "Spring 2022",
+        "Start": "31-Jan-2022",
+        "End": "6-Jun-2022",
+        "textbook": "Programming Logic and Design",
+        "c-id": {
+          "Discipline": "Computer Science",
+          "C-ID Number": "112",
+          "Title": "Introduction to Programming Concepts and Methodologies"
+        },
+        "objectives": [
+          "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools",
+          "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
+          "Test and debug applications using debugging tools such as trace execution"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "resources",
+            "week": 0
+          },
+          "Module 1": {
+            "title": "(Chapter 1) An Overview of Computer Programming",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "(Chapter 2) Applications and Data",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "(Chapter 3) Making Decisions",
+            "week": 3
+          },
+          "Module 4": {
+            "title": "(Chapter 4) Looping",
+            "week": 4
+          },
+          "Module 5": {
+            "title": "(Chapter 5) Arrays (2 weeks)",
+            "week": 5
+          },
+          "Module 6": {
+            "title": "(Chapter 6) Using Methods (2 weeks)",
+            "week": 7
+          },
+          "Module 7": {
+            "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+            "week": 9
+          },
+          "Module 8": {
+            "title": "(Chapter 8) More Object Concepts (2 weeks)",
+            "week": 11
+          },
+          "Module 9": {
+            "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+            "week": 13
+          },
+          "Module 10": {
+            "title": "(Chapter 10) Exception Handling",
+            "week": 14
+          },
+          "Module 11": {
+            "title": "(Chapter 11) System Modeling with UML",
+            "week": 15
+          },
+          "Module 12": {
+            "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+            "week": 16
+          },
+          "Module 13": {
+            "title": "Finals Week",
+            "week": 17
+          }
+        },
+        "assignments": {
+          "Discussions": {
+            "title": "Ice Breaker",
+            "module": 1,
+            "points": 10
+          },
+          "Programming Projects": {
+            "Lab1": {
+              "module": 1,
+              "tasks": [
+                "lab folder structure",
+                "pseudocode.txt",
+                "calculator.py",
+                "KmToMiles.py",
+                "MilesToKm.py"
+              ],
+              "points": 10
+            },
+            "Lab2": {}
+          },
+          "Quizzes": {
+            "Chapter 1 Quiz": {
+              "module": 1,
+              "points": 10
+            },
+            "Chapter 2 Quiz": {
+              "module": 2,
+              "points": 10
+            },
+            "Chapter 3 Quiz": {
+              "module": 3,
+              "points": 10
+            },
+            "Chapter 4 Quiz": {
+              "module": 4,
+              "points": 10
+            },
+            "Chapter 5 Quiz": {
+              "module": 5,
+              "points": 10
+            },
+            "Chapter 6 Quiz": {
+              "module": 6,
+              "points": 10
+            },
+            "Chapter 7 Quiz": {
+              "module": 7,
+              "points": 10
+            },
+            "Chapter 8 Quiz": {
+              "module": 8,
+              "points": 10
+            },
+            "Chapter 9 Quiz": {
+              "module": 9,
+              "points": 10
+            },
+            "Chapter 10 Quiz": {
+              "module": 10,
+              "points": 10
+            },
+            "Chapter 11 Quiz": {
+              "module": 11,
+              "points": 10
+            },
+            "Chapter 12 Quiz": {
+              "module": 12,
+              "points": 10
+            }
+          },
+          "Exams": {
+            "Mid-term Exam": {
+              "module": 6,
+              "points": 100
+            },
+            "Final Exam": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Class Presentations": ""
+        }
+      },
+      "CS-119 (2022 Fall) - Python": {
+        "status": "draft",
+        "CatalogID": "CS119",
+        "CanvasCourseID": 48300,
+        "LongName": "2022FA-CS-119-0799 - Program Design & Development",
+        "Course Code": "2022FA-CS-119-0799",
+        "Time Zone": "PST8",
+        "SIS ID": "2022FA-0799",
+        "Subaccount": "Computer Science",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "17-Dec-2022",
+        "textbook": "Programming Logic and Design",
+        "c-id": {
+          "Discipline": "Computer Science",
+          "C-ID Number": "112",
+          "Title": "Introduction to Programming Concepts and Methodologies"
+        },
+        "objectives": [
+          "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools",
+          "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
+          "Test and debug applications using debugging tools such as trace execution"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "resources",
+            "week": 0
+          },
+          "Module 1": {
+            "title": "(Chapter 1) An Overview of Computer Programming",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "(Chapter 2) Applications and Data",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "(Chapter 3) Making Decisions",
+            "week": 3
+          },
+          "Module 4": {
+            "title": "(Chapter 4) Looping",
+            "week": 4
+          },
+          "Module 5": {
+            "title": "(Chapter 5) Arrays (2 weeks)",
+            "week": 5
+          },
+          "Module 6": {
+            "title": "(Chapter 6) Using Methods (2 weeks)",
+            "week": 7
+          },
+          "Module 7": {
+            "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+            "week": 9
+          },
+          "Module 8": {
+            "title": "(Chapter 8) More Object Concepts (2 weeks)",
+            "week": 11
+          },
+          "Module 9": {
+            "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+            "week": 13
+          },
+          "Module 10": {
+            "title": "(Chapter 10) Exception Handling",
+            "week": 14
+          },
+          "Module 11": {
+            "title": "(Chapter 11) System Modeling with UML",
+            "week": 15
+          },
+          "Module 12": {
+            "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+            "week": 16
+          },
+          "Module 13": {
+            "title": "Finals Week",
+            "week": 17
+          }
+        },
+        "assignments": {
+          "Discussions": {
+            "title": "Ice Breaker",
+            "module": 1,
+            "points": 10
+          },
+          "Programming Projects": {
+            "Lab1": {
+              "module": 1,
+              "tasks": [
+                "lab folder structure",
+                "pseudocode.txt",
+                "calculator.py",
+                "KmToMiles.py",
+                "MilesToKm.py"
+              ],
+              "points": 10
+            },
+            "Lab2": {}
+          },
+          "Quizzes": {
+            "Chapter 1 Quiz": {
+              "module": 1,
+              "points": 10
+            },
+            "Chapter 2 Quiz": {
+              "module": 2,
+              "points": 10
+            },
+            "Chapter 3 Quiz": {
+              "module": 3,
+              "points": 10
+            },
+            "Chapter 4 Quiz": {
+              "module": 4,
+              "points": 10
+            },
+            "Chapter 5 Quiz": {
+              "module": 5,
+              "points": 10
+            },
+            "Chapter 6 Quiz": {
+              "module": 6,
+              "points": 10
+            },
+            "Chapter 7 Quiz": {
+              "module": 7,
+              "points": 10
+            },
+            "Chapter 8 Quiz": {
+              "module": 8,
+              "points": 10
+            },
+            "Chapter 9 Quiz": {
+              "module": 9,
+              "points": 10
+            },
+            "Chapter 10 Quiz": {
+              "module": 10,
+              "points": 10
+            },
+            "Chapter 11 Quiz": {
+              "module": 11,
+              "points": 10
+            },
+            "Chapter 12 Quiz": {
+              "module": 12,
+              "points": 10
+            }
+          },
+          "Exams": {
+            "Mid-term Exam": {
+              "module": 6,
+              "points": 100
+            },
+            "Final Exam": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Class Presentations": ""
+        }
+      }
+    },
+    "Santa Fe College": {
+      "COP2552 (2022 Summer) - Java": {
+        "status": "active",
+        "CatalogID": "COP-2552",
+        "CanvasCourseID": 444382,
+        "LongName": "S22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Course Code": "S22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_S22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Summer 2022",
+        "Start": "8-May-2022",
+        "End": "9-Aug-2022",
+        "textbook": "Java Early Objects, Gaddis",
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand data types, variable scope, and file access",
+          "Recognize the properties and behaviors of classes and objects",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and arraylists to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Comprehend and use wrapper classes",
+          "Know proper use of exception handling",
+          "Understand and use JavaFX to create GUI-based applications",
+          "Utilize a relational database within a Java application"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "resources",
+            "week": 0
+          },
+          "Module 1": "Chapter 2: Java Fundamentals",
+          "Module 2": "Chapter 3: A First Look at Classes and Objects",
+          "Module 3": "Chapter 4: Decision Structures",
+          "Module 4": "Chapter 5: Loops and Files",
+          "Module 5": "Chapter 6: A Second Look at Classes",
+          "Module 6": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+          "Module 7": "Chapter 9: Inheritance",
+          "Module 8": "Chapter 10: Exceptions and Advanced File I/O",
+          "Module 9": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+          "Module 10": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+          "Module 11": "Chapter 13: Recursion",
+          "Module 12": "Chapter 15: Databases",
+          "Module 13": "Wrap-up and Final Exams"
+        },
+        "assignments": {
+          "Discussions": [
+            {
+              "title": "Ice Breaker - Getting to know you (Part 1)",
+              "points": 0,
+              "module": 1
+            },
+            {
+              "title": "Ice Breaker - Getting to know you",
+              "points": 50,
+              "module": 1
+            }
+          ],
+          "Programming Projects": {
+            "Project 1": {
+              "module": 3,
+              "points": 100
+            },
+            "Project 2": {
+              "module": 5,
+              "points": 100
+            },
+            "Project 3": {
+              "module": 7,
+              "points": 100
+            },
+            "Project 4": {
+              "module": 9,
+              "points": 100
+            },
+            "Project 5": {
+              "module": 11,
+              "points": 100
+            },
+            "Project 6": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Quizzes": {},
+          "Exams": {
+            "Exam 1 (Chapters 2-5)": {
+              "module": 4,
+              "points": 100
+            },
+            "Exam 2 (Chapters 2-5)": {
+              "module": 6,
+              "points": 100
+            },
+            "Exam 3 (Chapters 2-5)": {
+              "module": 8,
+              "points": 100
+            },
+            "Exam 4 (Chapters 2-5)": {
+              "module": 12,
+              "points": 100
+            },
+            "Final (Comprehensive)": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Class Presentations": ""
+        }
+      },
+      "COP2552 (2022 Fall) - Java": {
+        "status": "draft",
+        "CatalogID": "COP-2552",
+        "CanvasCourseID": 452308,
+        "LongName": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Course Code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": "Java Early Objects, Gaddis",
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand data types, variable scope, and file access",
+          "Recognize the properties and behaviors of classes and objects",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and arraylists to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Comprehend and use wrapper classes",
+          "Know proper use of exception handling",
+          "Understand and use JavaFX to create GUI-based applications",
+          "Utilize a relational database within a Java application"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "resources",
+            "week": 0
+          },
+          "Module 1": "Chapter 2: Java Fundamentals",
+          "Module 2": "Chapter 3: A First Look at Classes and Objects",
+          "Module 3": "Chapter 4: Decision Structures",
+          "Module 4": "Chapter 5: Loops and Files",
+          "Module 5": "Chapter 6: A Second Look at Classes",
+          "Module 6": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+          "Module 7": "Chapter 9: Inheritance",
+          "Module 8": "Chapter 10: Exceptions and Advanced File I/O",
+          "Module 9": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+          "Module 10": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+          "Module 11": "Chapter 13: Recursion",
+          "Module 12": "Chapter 15: Databases",
+          "Module 13": "Wrap-up and Final Exams"
+        },
+        "assignments": {
+          "Discussions": [
+            {
+              "title": "Ice Breaker - Getting to know you (Part 1)",
+              "points": 0,
+              "module": 1
+            },
+            {
+              "title": "Ice Breaker - Getting to know you",
+              "points": 50,
+              "module": 1
+            }
+          ],
+          "Programming Projects": {
+            "Project 1": {
+              "module": 3,
+              "points": 100
+            },
+            "Project 2": {
+              "module": 5,
+              "points": 100
+            },
+            "Project 3": {
+              "module": 7,
+              "points": 100
+            },
+            "Project 4": {
+              "module": 9,
+              "points": 100
+            },
+            "Project 5": {
+              "module": 11,
+              "points": 100
+            },
+            "Project 6": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Quizzes": {},
+          "Exams": {
+            "Exam 1 (Chapters 2-5)": {
+              "module": 4,
+              "points": 100
+            },
+            "Exam 2 (Chapters 2-5)": {
+              "module": 6,
+              "points": 100
+            },
+            "Exam 3 (Chapters 2-5)": {
+              "module": 8,
+              "points": 100
+            },
+            "Exam 4 (Chapters 2-5)": {
+              "module": 12,
+              "points": 100
+            },
+            "Final (Comprehensive)": {
+              "module": 13,
+              "points": 100
+            }
+          },
+          "Class Presentations": ""
+        }
+      }
+    },
+    "Palomar College": {
+      "CSIT140 (2016 Spring)": {},
+      "CSIT141 (2016 Spring)": {},
+      "CSIT295 (2016 Spring)": {}
+    },
+    "Embry-Riddle Aeronautical University": {
+      "ISTA220": {},
+      "ISTA322": {},
+      "ISTA420": {}
+    }
+  }
+}
