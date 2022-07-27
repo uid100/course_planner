@@ -32,6 +32,7 @@
       }
     },
     "Cuyamaca College": {
+      "CanvasURL": "https://gcccd.instructure.com",
       "CS-119 (2022 Spring) - Python": {
         "status": "complete",
         "CatalogID": "CS119",
@@ -119,8 +120,9 @@
             "module": 1,
             "points": 10
           },
-          "Programming Projects": {
-            "Lab1": {
+          "Projects": [
+            {
+              "title": "Lab1",
               "module": 1,
               "tasks": [
                 "lab folder structure",
@@ -131,75 +133,92 @@
               ],
               "points": 10
             },
-            "Lab2": {}
-          },
-          "Quizzes": {
-            "Chapter 1 Quiz": {
+            {
+              "title": "Lab2",
+              "module": 2
+            }
+          ],
+          "Quizzes": [
+            {
+              "title": "Chapter 1 Quiz",
               "module": 1,
               "points": 10
             },
-            "Chapter 2 Quiz": {
+            {
+              "title": "Chapter 2 Quiz",
               "module": 2,
               "points": 10
             },
-            "Chapter 3 Quiz": {
+            {
+              "title": "Chapter 3 Quiz",
               "module": 3,
               "points": 10
             },
-            "Chapter 4 Quiz": {
+            {
+              "title": "Chapter 4 Quiz",
               "module": 4,
               "points": 10
             },
-            "Chapter 5 Quiz": {
+            {
+              "title": "Chapter 5 Quiz",
               "module": 5,
               "points": 10
             },
-            "Chapter 6 Quiz": {
+            {
+              "title": "Chapter 6 Quiz",
               "module": 6,
               "points": 10
             },
-            "Chapter 7 Quiz": {
+            {
+              "title": "Chapter 7 Quiz",
               "module": 7,
               "points": 10
             },
-            "Chapter 8 Quiz": {
+            {
+              "title": "Chapter 8 Quiz",
               "module": 8,
               "points": 10
             },
-            "Chapter 9 Quiz": {
+            {
+              "title": "Chapter 9 Quiz",
               "module": 9,
               "points": 10
             },
-            "Chapter 10 Quiz": {
+            {
+              "title": "Chapter 10 Quiz",
               "module": 10,
               "points": 10
             },
-            "Chapter 11 Quiz": {
+            {
+              "title": "Chapter 11 Quiz",
               "module": 11,
               "points": 10
             },
-            "Chapter 12 Quiz": {
+            {
+              "title": "Chapter 12 Quiz",
               "module": 12,
               "points": 10
             }
-          },
-          "Exams": {
-            "Mid-term Exam": {
+          ],
+          "Exams": [
+            {
+              "title": "Mid-term Exam",
               "module": 6,
               "points": 100
             },
-            "Final Exam": {
+            {
+              "title": "Final Exam",
               "module": 13,
               "points": 100
             }
-          },
-          "Class Presentations": ""
+          ]
         }
       },
       "CS-119 (2022 Fall) - Python": {
         "status": "draft",
         "CatalogID": "CS119",
         "CanvasCourseID": 48300,
+        "Name": "Program Design & Development",
         "LongName": "2022FA-CS-119-0799 - Program Design & Development",
         "Course Code": "2022FA-CS-119-0799",
         "Time Zone": "PST8",
@@ -283,8 +302,9 @@
             "module": 1,
             "points": 10
           },
-          "Programming Projects": {
-            "Lab1": {
+          "Projects": [
+            {
+              "title": "Lab1",
               "module": 1,
               "tasks": [
                 "lab folder structure",
@@ -295,8 +315,11 @@
               ],
               "points": 10
             },
-            "Lab2": {}
-          },
+            {
+              "title": "Lab2",
+              "module": 2
+            }
+          ],
           "Quizzes": {
             "Chapter 1 Quiz": {
               "module": 1,
@@ -347,21 +370,24 @@
               "points": 10
             }
           },
-          "Exams": {
-            "Mid-term Exam": {
+          "Exams": [
+            {
+              "title": "Mid-term Exam",
               "module": 6,
               "points": 100
             },
-            "Final Exam": {
+            {
+              "title": "Final Exam",
               "module": 13,
               "points": 100
             }
-          },
-          "Class Presentations": ""
+          ],
+          "Presentations": ""
         }
       }
     },
     "Santa Fe College": {
+      "CanvasURL": "https://courses.sfcollege.edu",
       "COP2552 (2022 Summer) - Java": {
         "status": "active",
         "CatalogID": "COP-2552",
@@ -395,19 +421,58 @@
             "title": "resources",
             "week": 0
           },
-          "Module 1": "Chapter 2: Java Fundamentals",
-          "Module 2": "Chapter 3: A First Look at Classes and Objects",
-          "Module 3": "Chapter 4: Decision Structures",
-          "Module 4": "Chapter 5: Loops and Files",
-          "Module 5": "Chapter 6: A Second Look at Classes",
-          "Module 6": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
-          "Module 7": "Chapter 9: Inheritance",
-          "Module 8": "Chapter 10: Exceptions and Advanced File I/O",
-          "Module 9": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
-          "Module 10": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
-          "Module 11": "Chapter 13: Recursion",
-          "Module 12": "Chapter 15: Databases",
-          "Module 13": "Wrap-up and Final Exams"
+          "Module  1": {
+            "title": "Chapter 2: Java Fundamentals",
+            "week": 1
+          },
+          "Module  2": {
+            "title": "Chapter 3: A First Look at Classes and Objects",
+            "week": 2
+          },
+          "Module  3": {
+            "title": "Chapter 4: Decision Structures",
+            "week": 3
+          },
+          "Module  4": {
+            "title": "Chapter 5: Loops and Files",
+            "week": 4
+          },
+          "Module  5": {
+            "title": "Chapter 6: A Second Look at Classes",
+            "week": 5
+          },
+          "Module  6": {
+            "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+            "week": 6
+          },
+          "Module  7": {
+            "title": "Chapter 9: Inheritance",
+            "week": 7
+          },
+          "Module  8": {
+            "title": "Chapter 10: Exceptions and Advanced File I/O",
+            "week": 8
+          },
+          "Module  9": {
+            "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+            "week": 9
+          },
+          "Module 10": {
+            "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+            "week": 10
+          },
+          "Module 11": {
+            "title": "Chapter 13: Recursion",
+            "week": 11
+          },
+          "Module 12": {
+            "title": "Chapter 15: Databases",
+            "week": 12
+          },
+          "Module 13": {
+            "title": "Wrap-up and Final Exams",
+            "week": 13
+          }
         },
         "assignments": {
           "Discussions": [
@@ -422,55 +487,66 @@
               "module": 1
             }
           ],
-          "Programming Projects": {
-            "Project 1": {
+          "Projects": [
+            {
+              "title": "Project 1 (Price Adjustment)",
               "module": 3,
               "points": 100
             },
-            "Project 2": {
+            {
+              "title": "Project 2 (Patient Visit Records)",
               "module": 5,
               "points": 100
             },
-            "Project 3": {
+            {
+              "title": "Project 3 (Exercise Tracker)",
               "module": 7,
               "points": 100
             },
-            "Project 4": {
+            {
+              "title": "Project 4 (Storm Data Analysis)",
               "module": 9,
               "points": 100
             },
-            "Project 5": {
+            {
+              "title": "Project 5 (Movie Catalog)",
               "module": 11,
               "points": 100
             },
-            "Project 6": {
+            {
+              "title": "Project 6 (Password Check)",
               "module": 13,
               "points": 100
             }
-          },
+          ],
           "Quizzes": {},
-          "Exams": {
-            "Exam 1 (Chapters 2-5)": {
+          "Exams": [
+            {
+              "title": "Exam 1 (Chapters 2-5)",
               "module": 4,
               "points": 100
             },
-            "Exam 2 (Chapters 2-5)": {
+            {
+              "title": "Exam 2 (Chapters 6-7)",
               "module": 6,
               "points": 100
             },
-            "Exam 3 (Chapters 2-5)": {
+            {
+              "title": "Exam 3 (Chapters 9-10)",
               "module": 8,
               "points": 100
             },
-            "Exam 4 (Chapters 2-5)": {
+            {
+              "title": "Exam 4 (Chapters 11,12&15)",
               "module": 12,
               "points": 100
             },
-            "Final (Comprehensive)": {
+            {
+              "title": "Final (Comprehensive)",
               "module": 13,
               "points": 100
             }
-          },
+          ],
           "Class Presentations": ""
         }
       },
@@ -507,19 +583,58 @@
             "title": "resources",
             "week": 0
           },
-          "Module 1": "Chapter 2: Java Fundamentals",
-          "Module 2": "Chapter 3: A First Look at Classes and Objects",
-          "Module 3": "Chapter 4: Decision Structures",
-          "Module 4": "Chapter 5: Loops and Files",
-          "Module 5": "Chapter 6: A Second Look at Classes",
-          "Module 6": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
-          "Module 7": "Chapter 9: Inheritance",
-          "Module 8": "Chapter 10: Exceptions and Advanced File I/O",
-          "Module 9": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
-          "Module 10": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
-          "Module 11": "Chapter 13: Recursion",
-          "Module 12": "Chapter 15: Databases",
-          "Module 13": "Wrap-up and Final Exams"
+          "Module  1": {
+            "title": "Chapter 2: Java Fundamentals",
+            "week": 1
+          },
+          "Module  2": {
+            "title": "Chapter 3: A First Look at Classes and Objects",
+            "week": 2
+          },
+          "Module  3": {
+            "title": "Chapter 4: Decision Structures",
+            "week": 3
+          },
+          "Module  4": {
+            "title": "Chapter 5: Loops and Files",
+            "week": 4
+          },
+          "Module  5": {
+            "title": "Chapter 6: A Second Look at Classes",
+            "week": 5
+          },
+          "Module  6": {
+            "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+            "week": 6
+          },
+          "Module  7": {
+            "title": "Chapter 9: Inheritance",
+            "week": 7
+          },
+          "Module  8": {
+            "title": "Chapter 10: Exceptions and Advanced File I/O",
+            "week": 8
+          },
+          "Module  9": {
+            "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+            "week": 9
+          },
+          "Module 10": {
+            "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+            "week": 10
+          },
+          "Module 11": {
+            "title": "Chapter 13: Recursion",
+            "week": 11
+          },
+          "Module 12": {
+            "title": "Chapter 15: Databases",
+            "week": 12
+          },
+          "Module 13": {
+            "title": "Wrap-up and Final Exams",
+            "week": 14
+          }
         },
         "assignments": {
           "Discussions": [
@@ -534,56 +649,237 @@
               "module": 1
             }
           ],
-          "Programming Projects": {
-            "Project 1": {
+          "Projects": [
+            {
+              "title": "Project 1 (Price Adjustment)",
               "module": 3,
               "points": 100
             },
-            "Project 2": {
+            {
+              "title": "Project 2 (Patient Visit Records)",
               "module": 5,
               "points": 100
             },
-            "Project 3": {
+            {
+              "title": "Project 3 (Exercise Tracker)",
               "module": 7,
               "points": 100
             },
-            "Project 4": {
+            {
+              "title": "Project 4 (Storm Data Analysis)",
               "module": 9,
               "points": 100
             },
-            "Project 5": {
+            {
+              "title": "Project 5 (Movie Catalog)",
               "module": 11,
               "points": 100
             },
-            "Project 6": {
+            {
+              "title": "Project 6 (Password Check)",
               "module": 13,
               "points": 100
             }
-          },
+          ],
           "Quizzes": {},
-          "Exams": {
-            "Exam 1 (Chapters 2-5)": {
+          "Exams": [
+            {
+              "title": "Exam 1 (Chapters 2-5)",
               "module": 4,
               "points": 100
             },
-            "Exam 2 (Chapters 2-5)": {
+            {
+              "title": "Exam 2 (Chapters 6-7)",
               "module": 6,
               "points": 100
             },
-            "Exam 3 (Chapters 2-5)": {
+            {
+              "title": "Exam 3 (Chapters 9-10)",
               "module": 8,
               "points": 100
             },
-            "Exam 4 (Chapters 2-5)": {
+            {
+              "title": "Exam 4 (Chapters 11,12&15)",
               "module": 12,
               "points": 100
             },
-            "Final (Comprehensive)": {
+            {
+              "title": "Final (Comprehensive)",
               "module": 13,
               "points": 100
             }
+          ],
+          "Presentations": ""
+        }
+      },
+      "COP2551 (2022 Fall) - Visual C# (TIC)": {
+        "status": "draft",
+        "CatalogID": "COP-2551",
+        "CanvasCourseID": 449240,
+        "Name": "Intermediate Object-Oriented Programming",
+        "LongName": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Course Code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": {
+          "title": "Starting Out with Visual C#, 5ed",
+          "author": "Gaddis",
+          "ISBN": "978-0-13-518351-9"
+        },
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand forms, controls, and events",
+          "Understand data types and variable scope",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and pointers to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Understand the basic concepts of working with a database",
+          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "Getting Started",
+            "week": 0
           },
-          "Class Presentations": ""
+          "Module 1": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "Making Decisions",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "Loops, Files and Random Numbers",
+            "week": 3
+          },
+          "Module 4": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 4
+          },
+          "Module 5": {
+            "title": "Text Processing",
+            "week": 5
+          },
+          "Module 6": {
+            "title": "Structures, Enumberated Types, and Dictionaries",
+            "week": 6
+          },
+          "Module 7": {
+            "title": "Introduction to Classes",
+            "week": 7
+          },
+          "Module 8": {
+            "title": "Inheritance, Polymorphism, and Interfaces",
+            "week": 9
+          },
+          "Module 9": {
+            "title": "Databases",
+            "week": 11
+          },
+          "Module 10": {
+            "title": "LINQ",
+            "week": 13
+          }
+        },
+        "assignments": {
+          "Discussions": {},
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": [],
+          "Presentations": ""
+        }
+      },
+      "COP2551 (2022 Fall) - Visual C# (TAC)": {
+        "status": "draft",
+        "CatalogID": "COP-2551",
+        "CanvasCourseID": 453172,
+        "Name": "Intermediate Object-Oriented Programming",
+        "LongName": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+        "Course Code": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": {
+          "title": "Starting Out with Visual C#, 5ed",
+          "author": "Gaddis",
+          "ISBN": "978-0-13-518351-9"
+        },
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand forms, controls, and events",
+          "Understand data types and variable scope",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and pointers to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Understand the basic concepts of working with a database",
+          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "Getting Started",
+            "week": 0
+          },
+          "Module 1": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "Making Decisions",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "Loops, Files and Random Numbers",
+            "week": 3
+          },
+          "Module 4": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 4
+          },
+          "Module 5": {
+            "title": "Text Processing",
+            "week": 5
+          },
+          "Module 6": {
+            "title": "Structures, Enumberated Types, and Dictionaries",
+            "week": 6
+          },
+          "Module 7": {
+            "title": "Introduction to Classes",
+            "week": 7
+          },
+          "Module 8": {
+            "title": "Inheritance, Polymorphism, and Interfaces",
+            "week": 9
+          },
+          "Module 9": {
+            "title": "Databases",
+            "week": 11
+          },
+          "Module 10": {
+            "title": "LINQ",
+            "week": 13
+          }
+        },
+        "assignments": {
+          "Discussions": {},
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": [],
+          "Presentations": ""
         }
       }
     },

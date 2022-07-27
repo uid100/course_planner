@@ -9,7 +9,7 @@
 </div>
 
 <div class="container">
-    <div class="row row-md-11" style="margin:auto;">
+    <div class="row row-md-11" style="margin:auto;" id="course_header">
             <div class="card col col-md-9" id="courseInfo" style="margin:auto;">
                 <div class="btn card-header" 
                         data-bs-toggle="collapse" data-bs-target="#courseDetail" 
@@ -22,17 +22,24 @@
                 </div card-header>
 
                 <div class="card card-body collapse" id="courseDetail">
+                    @Model.Name
                     <table>
                         <tr><th>cat</th><td>@Model.CatalogID</td></tr>
                         <tr><th>Name</th><td>@Model.LongName</td></tr>
                         <tr><th>Term</th><td>@Model.Term</td></tr>
+                        <tr><th>Canvas Id</th><td>@Model.CanvasID</td></tr>
                         <tr><th>Start</th><td>@Model.TermStart.DayOfWeek @Model.TermStart.ToShortDateString()</td></tr>
                         <tr><th>End</th><td>@Model.TermEnd.DayOfWeek @Model.TermEnd.ToShortDateString()</td></tr>
                     </table>
+                    @Html.ActionLink( "Welcome", "Welcome", "CanvasPage", Model )
+                    @*<form action="/CanvasPage/Welcome" method="post">
+                        <input type="hidden" name="course" value="@Model" />
+                        <button type="submit" class="btn-primary">welcome</button>
+                    </form>*@
                 </div card-body>
 
             </div card #courseInfo> 
-    </div row>
+    </div row course_header>
 
     @{
         int weeks = (int)(@Model.TermEnd - @Model.TermStart).TotalDays / 7 + 1;
@@ -42,7 +49,7 @@
 
     @for(int row=0; row<rows; row++)
     {
-        <div class="row mt-1" style="margin:auto">
+        <div class="row mt-1" style="margin:auto" id="weeks">
             @for(int col=0; col<cards_per_row; col++)
             {
                 int week = row * cards_per_row + col + 1;
@@ -59,24 +66,40 @@
                         <div class="card-header">
                             <div class="card-title">
                                 @(week == weeks ? "final exams" : "week " + week) 
-                                @{
-                                    if (module is not null && week < weeks)
-                                    {
-                                        moduleNumber++;
-                                        <span style="font-weight:bold;">module @moduleNumber</span><br />
-                                        @(module.Title)
-                                    }
-                                }
                             </div>
                         </div card-header>
                         <div class="card-body">
+                            @if (module is not null && week < weeks)
+                            {
+                                moduleNumber++;
+                                <span style="font-weight:bold;">module @moduleNumber</span><br />
+                                @(module.Title)<br />
+                                @if (module.ToDo is not null) 
+                                {
+                                    <span class="text-success">
+                                    @module.ToDo<br />
+                                    </span>
+                                }
+                                @if (module.Quiz is not null) 
+                                {
+                                    <span class="text-primary">
+                                    @module.Quiz<br />
+                                    </span>
+                                }
+                                @if (module.Exam is not null) 
+                                {
+                                    <span class="text-primary">
+                                    @module.Exam<br />
+                                    </span>
+                                }
+                            }
                             @d0.DayOfWeek: @d0.ToShortDateString()<br>
                             @due.DayOfWeek: @due.ToShortDateString()
                         </div card-body>
                     </div card>
                 </div col>
             }
-        </div row>            
+        </div row weeks>            
     }
 
 </div container>
