@@ -387,10 +387,291 @@
       }
     },
     "Santa Fe College": {
-      "CanvasURL": "https://courses.sfcollege.edu",
+      "COP2551 (2022 Fall) - Visual C# (TIC)": {
+        "status": "draft",
+        "CatalogID": "COP-2551",
+        "CanvasURL": "https://courses.sfcollege.edu",
+        "CanvasCourseID": 449240,
+        "Name": "Intermediate Object-Oriented Programming",
+        "LongName": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Course Code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": {
+          "title": "Starting Out with Visual C#, 5ed",
+          "author": "Gaddis",
+          "ISBN": "978-0-13-518351-9"
+        },
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand forms, controls, and events",
+          "Understand data types and variable scope",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and pointers to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Understand the basic concepts of working with a database",
+          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "Getting Started",
+            "week": 0
+          },
+          "Module 1": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "Making Decisions",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "Loops, Files and Random Numbers",
+            "week": 4
+          },
+          "Module 4": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 5
+          },
+          "Module 5": {
+            "title": "Text Processing",
+            "week": 6
+          },
+          "Module 6": {
+            "title": "Structures, Enumberated Types, and Dictionaries",
+            "week": 7
+          },
+          "Module 7": {
+            "title": "Introduction to Classes",
+            "week": 8
+          },
+          "Module 8": {
+            "title": "Inheritance, Polymorphism, and Interfaces",
+            "week": 10
+          },
+          "Module 9": {
+            "title": "Databases",
+            "week": 12
+          },
+          "Module 10": {
+            "title": "LINQ",
+            "week": 14
+          }
+        },
+        "assignments": {
+          "Discussions": [
+            {
+              "title": "Ice Breaker - Getting to know you (Part 1)",
+              "points": 0,
+              "module": 1
+            },
+            {
+              "title": "Ice Breaker - Getting to know you",
+              "points": 50,
+              "module": 1
+            }
+          ],
+          "Projects": [
+            {
+              "title": "Project 1 - ticket sales",
+              "module": 1,
+              "points": 100
+            },
+            {
+              "title": "Project 2",
+              "module": 2,
+              "points": 100
+            },
+            {
+              "title": "Project 3",
+              "module": 3,
+              "points": 100
+            },
+            {
+              "title": "Project 4",
+              "module": 4,
+              "points": 100
+            },
+            {
+              "title": "Project 5",
+              "module": 5,
+              "points": 100
+            },
+            {
+              "title": "Project 6",
+              "module": 6,
+              "points": 100
+            },
+            {
+              "title": "Project 7a",
+              "module": 7,
+              "points": 100
+            },
+            {
+              "title": "Project 7b",
+              "module": 7,
+              "points": 100
+            },
+            {
+              "title": "Project 8",
+              "module": 8,
+              "points": 100
+            },
+            {
+              "title": "Project 9a",
+              "module": 9,
+              "points": 100
+            },
+            {
+              "title": "Project 9b",
+              "module": 9,
+              "points": 100
+            },
+            {
+              "title": "Project 10",
+              "module": 10,
+              "points": 100
+            }
+          ],
+          "Exams": [
+            {
+              "title": "Exam 1",
+              "module": 2,
+              "points": 100
+            },
+            {
+              "title": "Exam 2",
+              "module": 4,
+              "points": 100
+            },
+            {
+              "title": "Exam 3",
+              "module": 5,
+              "points": 100
+            },
+            {
+              "title": "Exam 4",
+              "module": 7,
+              "points": 100
+            },
+            {
+              "title": "Exam 5",
+              "module": 9,
+              "points": 100
+            },
+            {
+              "title": "Final Exam",
+              "module": 10,
+              "points": 100
+            }
+          ],
+          "Quizzes": [
+            {
+              "title": "syllabus acknowledgement",
+              "module": 2,
+              "points": 50
+            }
+          ],
+          "Presentations": ""
+        }
+      },
+      "COP2551 (2022 Fall) - Visual C# (TAC)": {
+        "status": "draft",
+        "CatalogID": "COP-2551",
+        "CanvasURL": "https://courses.sfcollege.edu",
+        "CanvasCourseID": 453172,
+        "Name": "Intermediate Object-Oriented Programming",
+        "LongName": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+        "Course Code": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+        "Time Zone": "EST5",
+        "SIS ID": "COP2552_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": {
+          "title": "Starting Out with Visual C#, 5ed",
+          "author": "Gaddis",
+          "ISBN": "978-0-13-518351-9"
+        },
+        "objectives": [
+          "Understand the program development cycle",
+          "Understand forms, controls, and events",
+          "Understand data types and variable scope",
+          "Use the various types of selection structures",
+          "Use the various types of repetition structures",
+          "Use arrays and pointers to store character and numeric data",
+          "Understand how to create and use functions",
+          "Understand how sequential data files are opened, read to and from, deleted, and merged",
+          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+          "Understand the basic concepts of working with a database",
+          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+        ],
+        "modules": {
+          "Module 0": {
+            "title": "Getting Started",
+            "week": 0
+          },
+          "Module 1": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 1
+          },
+          "Module 2": {
+            "title": "Making Decisions",
+            "week": 2
+          },
+          "Module 3": {
+            "title": "Loops, Files and Random Numbers",
+            "week": 3
+          },
+          "Module 4": {
+            "title": "Introduction to Visual C# & Processing Data",
+            "week": 4
+          },
+          "Module 5": {
+            "title": "Text Processing",
+            "week": 5
+          },
+          "Module 6": {
+            "title": "Structures, Enumberated Types, and Dictionaries",
+            "week": 6
+          },
+          "Module 7": {
+            "title": "Introduction to Classes",
+            "week": 7
+          },
+          "Module 8": {
+            "title": "Inheritance, Polymorphism, and Interfaces",
+            "week": 9
+          },
+          "Module 9": {
+            "title": "Databases",
+            "week": 11
+          },
+          "Module 10": {
+            "title": "LINQ",
+            "week": 13
+          }
+        },
+        "assignments": {
+          "Discussions": {},
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": [],
+          "Presentations": ""
+        }
+      },
       "COP2552 (2022 Summer) - Java": {
         "status": "active",
         "CatalogID": "COP-2552",
+        "CanvasURL": "https://courses.sfcollege.edu",
         "CanvasCourseID": 444382,
         "LongName": "S22 COP2552.0M1: OBJ ORIENT PG 2",
         "Course Code": "S22 COP2552.0M1: OBJ ORIENT PG 2",
@@ -553,6 +834,7 @@
       "COP2552 (2022 Fall) - Java": {
         "status": "draft",
         "CatalogID": "COP-2552",
+        "CanvasURL": "https://courses.sfcollege.edu",
         "CanvasCourseID": 452308,
         "LongName": "F22 COP2552.0M1: OBJ ORIENT PG 2",
         "Course Code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
@@ -709,176 +991,6 @@
               "points": 100
             }
           ],
-          "Presentations": ""
-        }
-      },
-      "COP2551 (2022 Fall) - Visual C# (TIC)": {
-        "status": "draft",
-        "CatalogID": "COP-2551",
-        "CanvasCourseID": 449240,
-        "Name": "Intermediate Object-Oriented Programming",
-        "LongName": "F22 COP2552.0M1: OBJ ORIENT PG 2",
-        "Course Code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
-        "Time Zone": "EST5",
-        "SIS ID": "COP2552_0M1_F22",
-        "Subaccount": "Santa Fe College",
-        "Term": "Fall 2022",
-        "Start": "22-Aug-2022",
-        "End": "3-Dec-2022",
-        "textbook": {
-          "title": "Starting Out with Visual C#, 5ed",
-          "author": "Gaddis",
-          "ISBN": "978-0-13-518351-9"
-        },
-        "objectives": [
-          "Understand the program development cycle",
-          "Understand forms, controls, and events",
-          "Understand data types and variable scope",
-          "Use the various types of selection structures",
-          "Use the various types of repetition structures",
-          "Use arrays and pointers to store character and numeric data",
-          "Understand how to create and use functions",
-          "Understand how sequential data files are opened, read to and from, deleted, and merged",
-          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
-          "Understand the basic concepts of working with a database",
-          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
-        ],
-        "modules": {
-          "Module 0": {
-            "title": "Getting Started",
-            "week": 0
-          },
-          "Module 1": {
-            "title": "Introduction to Visual C# & Processing Data",
-            "week": 1
-          },
-          "Module 2": {
-            "title": "Making Decisions",
-            "week": 2
-          },
-          "Module 3": {
-            "title": "Loops, Files and Random Numbers",
-            "week": 3
-          },
-          "Module 4": {
-            "title": "Introduction to Visual C# & Processing Data",
-            "week": 4
-          },
-          "Module 5": {
-            "title": "Text Processing",
-            "week": 5
-          },
-          "Module 6": {
-            "title": "Structures, Enumberated Types, and Dictionaries",
-            "week": 6
-          },
-          "Module 7": {
-            "title": "Introduction to Classes",
-            "week": 7
-          },
-          "Module 8": {
-            "title": "Inheritance, Polymorphism, and Interfaces",
-            "week": 9
-          },
-          "Module 9": {
-            "title": "Databases",
-            "week": 11
-          },
-          "Module 10": {
-            "title": "LINQ",
-            "week": 13
-          }
-        },
-        "assignments": {
-          "Discussions": {},
-          "Projects": [],
-          "Exams": [],
-          "Quizzes": [],
-          "Presentations": ""
-        }
-      },
-      "COP2551 (2022 Fall) - Visual C# (TAC)": {
-        "status": "draft",
-        "CatalogID": "COP-2551",
-        "CanvasCourseID": 453172,
-        "Name": "Intermediate Object-Oriented Programming",
-        "LongName": "F22 COP2551.0M2: OBJ ORIENT PG 1",
-        "Course Code": "F22 COP2551.0M2: OBJ ORIENT PG 1",
-        "Time Zone": "EST5",
-        "SIS ID": "COP2552_0M1_F22",
-        "Subaccount": "Santa Fe College",
-        "Term": "Fall 2022",
-        "Start": "22-Aug-2022",
-        "End": "3-Dec-2022",
-        "textbook": {
-          "title": "Starting Out with Visual C#, 5ed",
-          "author": "Gaddis",
-          "ISBN": "978-0-13-518351-9"
-        },
-        "objectives": [
-          "Understand the program development cycle",
-          "Understand forms, controls, and events",
-          "Understand data types and variable scope",
-          "Use the various types of selection structures",
-          "Use the various types of repetition structures",
-          "Use arrays and pointers to store character and numeric data",
-          "Understand how to create and use functions",
-          "Understand how sequential data files are opened, read to and from, deleted, and merged",
-          "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
-          "Understand the basic concepts of working with a database",
-          "Understand the basic concepts of working with Language Integrated Query (LINQ)"
-        ],
-        "modules": {
-          "Module 0": {
-            "title": "Getting Started",
-            "week": 0
-          },
-          "Module 1": {
-            "title": "Introduction to Visual C# & Processing Data",
-            "week": 1
-          },
-          "Module 2": {
-            "title": "Making Decisions",
-            "week": 2
-          },
-          "Module 3": {
-            "title": "Loops, Files and Random Numbers",
-            "week": 3
-          },
-          "Module 4": {
-            "title": "Introduction to Visual C# & Processing Data",
-            "week": 4
-          },
-          "Module 5": {
-            "title": "Text Processing",
-            "week": 5
-          },
-          "Module 6": {
-            "title": "Structures, Enumberated Types, and Dictionaries",
-            "week": 6
-          },
-          "Module 7": {
-            "title": "Introduction to Classes",
-            "week": 7
-          },
-          "Module 8": {
-            "title": "Inheritance, Polymorphism, and Interfaces",
-            "week": 9
-          },
-          "Module 9": {
-            "title": "Databases",
-            "week": 11
-          },
-          "Module 10": {
-            "title": "LINQ",
-            "week": 13
-          }
-        },
-        "assignments": {
-          "Discussions": {},
-          "Projects": [],
-          "Exams": [],
-          "Quizzes": [],
           "Presentations": ""
         }
       }

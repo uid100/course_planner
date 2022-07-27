@@ -75,6 +75,21 @@ namespace course.Controllers
 
                 try
                 {
+                    foreach (var jsonEntry in c["assignments"]["Discussions"])
+                    {
+                        try
+                        {
+                            string discussion = (string)jsonEntry["title"];
+                            int moduleNumber = (int)jsonEntry["module"];
+                            course.Modules[moduleNumber].Discussion = discussion;
+                        }
+                        catch (Exception ex) { }
+                    }
+                }
+
+                catch (Exception ex) { }
+                try
+                {
                     foreach (var jsonEntry in c["assignments"]["Quizzes"])
                     {
                         try

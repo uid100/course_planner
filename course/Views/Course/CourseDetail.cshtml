@@ -31,7 +31,7 @@
                         <tr><th>Start</th><td>@Model.TermStart.DayOfWeek @Model.TermStart.ToShortDateString()</td></tr>
                         <tr><th>End</th><td>@Model.TermEnd.DayOfWeek @Model.TermEnd.ToShortDateString()</td></tr>
                     </table>
-                    @Html.ActionLink( "Welcome", "Welcome", "CanvasPage", Model )
+                    @Html.ActionLink( "homepage", "Welcome", "CanvasPage", Model )
                     @*<form action="/CanvasPage/Welcome" method="post">
                         <input type="hidden" name="course" value="@Model" />
                         <button type="submit" class="btn-primary">welcome</button>
@@ -74,28 +74,34 @@
                                 moduleNumber++;
                                 <span style="font-weight:bold;">module @moduleNumber</span><br />
                                 @(module.Title)<br />
-                                @if (module.ToDo is not null) 
+                                @if (module.Discussion is not null)
                                 {
                                     <span class="text-success">
-                                    @module.ToDo<br />
+                                        @module.Discussion<br />
                                     </span>
                                 }
-                                @if (module.Quiz is not null) 
+                                @if (module.ToDo is not null)
                                 {
-                                    <span class="text-primary">
-                                    @module.Quiz<br />
+                                    <span class="text-success">
+                                        @module.ToDo<br />
                                     </span>
                                 }
-                                @if (module.Exam is not null) 
+                                @if (module.Quiz is not null)
                                 {
                                     <span class="text-primary">
-                                    @module.Exam<br />
+                                        @module.Quiz<br />
+                                    </span>
+                                }
+                                @if (module.Exam is not null)
+                                {
+                                    <span class="text-primary">
+                                        @module.Exam<br />
                                     </span>
                                 }
                             }
                             @d0.DayOfWeek: @d0.ToShortDateString()<br>
                             @due.DayOfWeek: @due.ToShortDateString()
-                        </div card-body>
+                        </div>
                     </div card>
                 </div col>
             }
