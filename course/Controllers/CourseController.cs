@@ -41,19 +41,15 @@ namespace course.Controllers
                 {
                     foreach (var jsonEntry in c["modules"])
                     {
-                        string key = "Module " + count++;
-                        var m = jsonEntry.First;
-                        if (m is not null)
+                        try
                         {
-                            try
-                            {
-                                Module module = new Module();
-                                module.Title = (string)m["title"];
-                                module.Week = (int)m["week"];
-                                course.Modules.Add(module);
-                            }
-                            catch (Exception ex) { }
+                            Module module = new Module();
+                            module.Id = (int)jsonEntry["module"];
+                            module.Title = (string)jsonEntry["title"];
+                            module.Week = (int)jsonEntry["week"];
+                            course.Modules.Add(module);
                         }
+                        catch (Exception ex) { }
                     }
                 }
                 catch (Exception ex) { }
@@ -65,9 +61,10 @@ namespace course.Controllers
                         try
                         {                            
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].ToDo = new Project();
-                            course.Modules[moduleNumber].ToDo.Title = (string)jsonEntry["title"];
-                            course.Modules[moduleNumber].ToDo.Days = (int)jsonEntry["days"];
+                            int index = course.Modules.FindIndex(module => module.Id == moduleNumber);
+                            course.Modules[index].ToDo = new Project();
+                            course.Modules[index].ToDo.Title = (string)jsonEntry["title"];
+                            course.Modules[index].ToDo.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -81,9 +78,10 @@ namespace course.Controllers
                         try
                         {
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Discussion = new Discussion();
-                            course.Modules[moduleNumber].Discussion.Title = (string)jsonEntry["title"];
-                            course.Modules[moduleNumber].Discussion.Days = (int)jsonEntry["days"];
+                            int index = course.Modules.FindIndex(module => module.Id == moduleNumber);
+                            course.Modules[index].Discussion = new Discussion();
+                            course.Modules[index].Discussion.Title = (string)jsonEntry["title"];
+                            course.Modules[index].Discussion.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -97,9 +95,10 @@ namespace course.Controllers
                         try
                         {
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Quiz = new Quiz();
-                            course.Modules[moduleNumber].Quiz.Title = (string)jsonEntry["title"];
-                            course.Modules[moduleNumber].Quiz.Days = (int)jsonEntry["days"];
+                            int index = course.Modules.FindIndex(module => module.Id == moduleNumber);
+                            course.Modules[index].Quiz = new Quiz();
+                            course.Modules[index].Quiz.Title = (string)jsonEntry["title"];
+                            course.Modules[index].Quiz.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -112,9 +111,10 @@ namespace course.Controllers
                         try
                         {
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Exam = new Exam();
-                            course.Modules[moduleNumber].Exam.Title = (string)jsonEntry["title"];
-                            course.Modules[moduleNumber].Exam.Days = (int)jsonEntry["days"];
+                            int index = course.Modules.FindIndex(module => module.Id == moduleNumber);
+                            course.Modules[index].Exam = new Exam();
+                            course.Modules[index].Exam.Title = (string)jsonEntry["title"];
+                            course.Modules[index].Exam.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }

@@ -32,10 +32,10 @@
       }
     },
     "Cuyamaca College": {
-      "CanvasURL": "https://gcccd.instructure.com",
       "CS-119 (2022 Spring) - Python": {
         "status": "complete",
         "CatalogID": "CS119",
+        "CanvasURL": "https://gcccd.instructure.com",
         "CanvasCourseID": 43212,
         "Name": "2022SP-CS-119-4451 - Program Design & Development",
         "Course Code": "2022SP-CS-119-4451",
@@ -56,70 +56,92 @@
           "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
           "Test and debug applications using debugging tools such as trace execution"
         ],
-        "modules": {
-          "Module 0": {
+        "modules": [
+          {
+            "module": 0,
             "title": "resources",
             "week": 0
           },
-          "Module 1": {
+          {
+            "module": 1,
             "title": "(Chapter 1) An Overview of Computer Programming",
             "week": 1
           },
-          "Module 2": {
+          {
+            "module": 2,
             "title": "(Chapter 2) Applications and Data",
             "week": 2
           },
-          "Module 3": {
+          {
+            "module": 3,
             "title": "(Chapter 3) Making Decisions",
             "week": 3
           },
-          "Module 4": {
+          {
+            "module": 4,
             "title": "(Chapter 4) Looping",
             "week": 4
           },
-          "Module 5": {
+          {
+            "module": 5,
             "title": "(Chapter 5) Arrays (2 weeks)",
             "week": 5
           },
-          "Module 6": {
+          {
+            "module": 6,
             "title": "(Chapter 6) Using Methods (2 weeks)",
             "week": 7
           },
-          "Module 7": {
-            "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+          {
+            "module": 99,
+            "title": "Spring Break",
             "week": 9
           },
-          "Module 8": {
+          {
+            "module": 7,
+            "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+            "week": 10
+          },
+          {
+            "module": 8,
             "title": "(Chapter 8) More Object Concepts (2 weeks)",
-            "week": 11
+            "week": 12
           },
-          "Module 9": {
+          {
+            "module": 9,
             "title": "(Chapter 9) Event-Driven Prog. and GUIs",
-            "week": 13
-          },
-          "Module 10": {
-            "title": "(Chapter 10) Exception Handling",
             "week": 14
           },
-          "Module 11": {
-            "title": "(Chapter 11) System Modeling with UML",
+          {
+            "module": 10,
+            "title": "(Chapter 10) Exception Handling",
             "week": 15
           },
-          "Module 12": {
-            "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+          {
+            "module": 11,
+            "title": "(Chapter 11) System Modeling with UML",
             "week": 16
           },
-          "Module 13": {
-            "title": "Finals Week",
+          {
+            "module": 12,
+            "title": "(Chapter 12) Manipulating Larger Quantities of Data",
             "week": 17
-          }
-        },
-        "assignments": {
-          "Discussions": {
-            "title": "Ice Breaker",
-            "module": 1,
-            "points": 10
           },
+          {
+            "module": 13,
+            "title": "Finals Week",
+            "week": 18
+          }
+        ],
+        "assignments": {
+          "Discussions": [
+            {
+              "title": "Ice Breaker",
+              "module": 1,
+              "days": 6,
+              "points": 10
+            }
+          ],
           "Projects": [
             {
               "title": "Lab1",
@@ -200,7 +222,7 @@
               "points": 10
             }
           ],
-          "Exams": [
+          "Exams":[
             {
               "title": "Mid-term Exam",
               "module": 6,
@@ -217,6 +239,7 @@
       "CS-119 (2022 Fall) - Python": {
         "status": "draft",
         "CatalogID": "CS119",
+        "CanvasURL": "https://gcccd.instructure.com",
         "CanvasCourseID": 48300,
         "Name": "Program Design & Development",
         "LongName": "2022FA-CS-119-0799 - Program Design & Development",
@@ -238,74 +261,92 @@
           "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
           "Test and debug applications using debugging tools such as trace execution"
         ],
-        "modules": {
-          "Module 0": {
+        "modules": [
+          {
+            "module": 0,
             "title": "resources",
             "week": 0
           },
-          "Module 1": {
+          {
+            "module": 1,
             "title": "(Chapter 1) An Overview of Computer Programming",
             "week": 1
           },
-          "Module 2": {
+          {
+            "module": 2,
             "title": "(Chapter 2) Applications and Data",
             "week": 2
           },
-          "Module 3": {
+          {
+            "module": 3,
             "title": "(Chapter 3) Making Decisions",
             "week": 3
           },
-          "Module 4": {
+          {
+            "module": 4,
             "title": "(Chapter 4) Looping",
             "week": 4
           },
-          "Module 5": {
+          {
+            "module": 5,
             "title": "(Chapter 5) Arrays (2 weeks)",
             "week": 5
           },
-          "Module 6": {
+          {
+            "module": 6,
             "title": "(Chapter 6) Using Methods (2 weeks)",
             "week": 7
           },
-          "Module 7": {
+          {
+            "module": 7,
             "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
             "week": 9
           },
-          "Module 8": {
+          {
+            "module": 8,
             "title": "(Chapter 8) More Object Concepts (2 weeks)",
             "week": 11
           },
-          "Module 9": {
+          {
+            "module": 9,
             "title": "(Chapter 9) Event-Driven Prog. and GUIs",
             "week": 13
           },
-          "Module 10": {
+          {
+            "module": 10,
             "title": "(Chapter 10) Exception Handling",
             "week": 14
           },
-          "Module 11": {
+          {
+            "module": 11,
             "title": "(Chapter 11) System Modeling with UML",
             "week": 15
           },
-          "Module 12": {
+          {
+            "module": 12,
             "title": "(Chapter 12) Manipulating Larger Quantities of Data",
             "week": 16
           },
-          "Module 13": {
+          {
+            "module": 13,
             "title": "Finals Week",
             "week": 17
           }
-        },
+        ],
         "assignments": {
-          "Discussions": {
-            "title": "Ice Breaker",
-            "module": 1,
-            "points": 10
-          },
+          "Discussions": [
+            {
+              "title": "Ice Breaker",
+              "module": 1,
+              "days": 6,
+              "points": 10
+            }
+          ],
           "Projects": [
             {
               "title": "Lab1",
               "module": 1,
+              "days": 6,
               "tasks": [
                 "lab folder structure",
                 "pseudocode.txt",
@@ -317,72 +358,148 @@
             },
             {
               "title": "Lab2",
-              "module": 2
+              "module": 2,
+              "days": 6
+            },
+            {
+              "title": "Lab3",
+              "module": 3,
+              "days": 6
+            },
+            {
+              "title": "Lab4",
+              "module": 4,
+              "days": 6
+            },
+            {
+              "title": "Lab5",
+              "module": 5,
+              "days": 13
+            },
+            {
+              "title": "Lab6",
+              "module": 6,
+              "days": 13
+            },
+            {
+              "title": "Lab7",
+              "module": 7,
+              "days": 13
+            },
+            {
+              "title": "Lab8",
+              "module": 8,
+              "days": 13
+            },
+            {
+              "title": "Lab9",
+              "module": 9,
+              "days": 6
+            },
+            {
+              "title": "Lab10",
+              "module": 10,
+              "days": 6
+            },
+            {
+              "title": "Lab11",
+              "module": 11,
+              "days": 6
+            },
+            {
+              "title": "Lab12",
+              "module": 12,
+              "days": 6
             }
           ],
-          "Quizzes": {
-            "Chapter 1 Quiz": {
+          "Quizzes": [
+            {
+              "title": "Chapter 1 Quiz",
               "module": 1,
+              "days": 6,
               "points": 10
             },
-            "Chapter 2 Quiz": {
+            {
+              "title": "Chapter 2 Quiz",
               "module": 2,
+              "days": 6,
               "points": 10
             },
-            "Chapter 3 Quiz": {
+            {
+              "title": "Chapter 3 Quiz",
               "module": 3,
+              "days": 6,
               "points": 10
             },
-            "Chapter 4 Quiz": {
+            {
+              "title": "Chapter 4 Quiz",
               "module": 4,
+              "days": 6,
               "points": 10
             },
-            "Chapter 5 Quiz": {
+            {
+              "title": "Chapter 5 Quiz",
               "module": 5,
+              "days": 13,
               "points": 10
             },
-            "Chapter 6 Quiz": {
+            {
+              "title": "Chapter 6 Quiz",
               "module": 6,
+              "days": 13,
               "points": 10
             },
-            "Chapter 7 Quiz": {
+            {
+              "title": "Chapter 7 Quiz",
               "module": 7,
+              "days": 13,
               "points": 10
             },
-            "Chapter 8 Quiz": {
+            {
+              "title": "Chapter 8 Quiz",
               "module": 8,
+              "days": 13,
               "points": 10
             },
-            "Chapter 9 Quiz": {
+            {
+              "title": "Chapter 9 Quiz",
               "module": 9,
+              "days": 6,
               "points": 10
             },
-            "Chapter 10 Quiz": {
+            {
+              "title": "Chapter 10 Quiz",
               "module": 10,
+              "days": 6,
               "points": 10
             },
-            "Chapter 11 Quiz": {
+            {
+              "title": "Chapter 11 Quiz",
               "module": 11,
+              "days": 6,
               "points": 10
             },
-            "Chapter 12 Quiz": {
+            {
+              "title": "Chapter 12 Quiz",
               "module": 12,
+              "days": 6,
               "points": 10
             }
-          },
+          ],
           "Exams": [
             {
               "title": "Mid-term Exam",
               "module": 6,
+              "days": 15,
               "points": 100
             },
             {
               "title": "Final Exam",
               "module": 13,
+              "days": 3,
               "points": 100
             }
-          ],
-          "Presentations": ""
+          ]
         }
       }
     },
@@ -628,52 +745,60 @@
           "Understand the basic concepts of working with a database",
           "Understand the basic concepts of working with Language Integrated Query (LINQ)"
         ],
-        "modules": {
-          "Module 0": {
+        "modules": [
+          {
+            "module": 0,
             "title": "Getting Started",
             "week": 0
           },
-          "Module 1": {
+          {
+            "module": 1,
             "title": "intro to Visual C# & Processing Data",
             "week": 1
           },
-          "Module 2": {
+          {
+            "module": 2,
             "title": "Making Decisions",
             "week": 2
           },
-          "Module 3": {
-            "title": "Loops, Files and Random Numbers",
-            "week": 4
-          },
-          "Module 4": {
+
+
+          {
+            "module": 4,
             "title": "Introduction to Visual C# & Processing Data",
             "week": 5
           },
-          "Module 5": {
+          {
+            "module": 5,
             "title": "Text Processing",
             "week": 6
           },
-          "Module 6": {
+          {
+            "module": 6,
             "title": "Structures, Enumberated Types, and Dictionaries",
             "week": 7
           },
-          "Module 7": {
+          {
+            "module": 7,
             "title": "Introduction to Classes",
             "week": 8
           },
-          "Module 8": {
+          {
+            "module": 8,
             "title": "Inheritance, Polymorphism, and Interfaces",
             "week": 10
           },
-          "Module 9": {
+          {
+            "module": 9,
             "title": "Databases",
             "week": 12
           },
-          "Module 10": {
+          {
+            "module": 10,
             "title": "LINQ",
             "week": 14
           }
-        },
+        ],
         "assignments": {
           "Discussions": [
             {

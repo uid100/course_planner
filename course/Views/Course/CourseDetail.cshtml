@@ -44,8 +44,9 @@
     @{
         int weeks = (int)(@Model.TermEnd - @Model.TermStart).TotalDays / 7 + 1;
         int rows = (weeks + cards_per_row - 1) / cards_per_row;
-        int moduleNumber = 0;
+        //int moduleNumber = 0;
     }
+    @*@weeks weeks | @rows rows<br />*@
 
     @for(int row=0; row<rows; row++)
     {
@@ -65,27 +66,27 @@
                     <div class="card" >
                         <div class="card-header">
                             <div class="card-title">
-                                @(week == weeks ? "final exams" : "week " + week) 
+                                week @week : @d0.DayOfWeek @d0.ToShortDateString()
+                                @*(week == weeks ? "final exams" : "week " + week) *@
                             </div>
                         </div card-header>
                         <div class="card-body">
-                            @if (week < weeks)
+                            @if (week <= weeks)
                             {
-                                @d0.ToShortDateString() <b>@d0.DayOfWeek</b><br>
                                 @if (module is not null)
                                 {
-                                    moduleNumber++;
-                                    <span style="font-weight:bold;">module @moduleNumber</span><br />
+                                    //moduleNumber++;
+                                    <span style="font-weight:bold;">module @module.Id</span><br />
                                     @(module.Title)<br />
 
                                     @if (module.Discussion is not null)
                                     {
-                                        <span class="text-success">
+                                        <span class="text-warning">
                                             @{
                                                 DateTime d = d0.AddDays(module.Discussion.Days);
                                             }
                                             @d.ToShortDateString(): 
-                                            @module.Discussion.Title<br />
+                                            Disc: @module.Discussion.Title<br />
                                         </span>
                                     }
                                     @if (module.ToDo is not null)
@@ -110,7 +111,7 @@
                                     }
                                     @if (module.Exam is not null)
                                     {
-                                        <span class="text-primary">
+                                        <span class="text-danger">
                                             @{
                                                 DateTime d = d0.AddDays(module.Exam.Days);
                                             }
