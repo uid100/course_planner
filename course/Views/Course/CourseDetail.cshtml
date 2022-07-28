@@ -69,38 +69,58 @@
                             </div>
                         </div card-header>
                         <div class="card-body">
-                            @if (module is not null && week < weeks)
+                            @if (week < weeks)
                             {
-                                moduleNumber++;
-                                <span style="font-weight:bold;">module @moduleNumber</span><br />
-                                @(module.Title)<br />
-                                @if (module.Discussion is not null)
+                                @d0.ToShortDateString() <b>@d0.DayOfWeek</b><br>
+                                @if (module is not null)
                                 {
-                                    <span class="text-success">
-                                        @module.Discussion<br />
-                                    </span>
-                                }
-                                @if (module.ToDo is not null)
-                                {
-                                    <span class="text-success">
-                                        @module.ToDo<br />
-                                    </span>
-                                }
-                                @if (module.Quiz is not null)
-                                {
-                                    <span class="text-primary">
-                                        @module.Quiz<br />
-                                    </span>
-                                }
-                                @if (module.Exam is not null)
-                                {
-                                    <span class="text-primary">
-                                        @module.Exam<br />
-                                    </span>
+                                    moduleNumber++;
+                                    <span style="font-weight:bold;">module @moduleNumber</span><br />
+                                    @(module.Title)<br />
+
+                                    @if (module.Discussion is not null)
+                                    {
+                                        <span class="text-success">
+                                            @{
+                                                DateTime d = d0.AddDays(module.Discussion.Days);
+                                            }
+                                            @d.ToShortDateString(): 
+                                            @module.Discussion.Title<br />
+                                        </span>
+                                    }
+                                    @if (module.ToDo is not null)
+                                    {
+                                        <span class="text-success">
+                                            @{
+                                                DateTime d = d0.AddDays(module.ToDo.Days);
+                                            }
+                                            @d.ToShortDateString(): 
+                                            @module.ToDo.Title<br />
+                                        </span>
+                                    }
+                                    @if (module.Quiz is not null)
+                                    {
+                                        <span class="text-primary">
+                                            @{
+                                                DateTime d = d0.AddDays(module.Quiz.Days);
+                                            }
+                                            @d.ToShortDateString(): 
+                                            @module.Quiz.Title<br />
+                                        </span>
+                                    }
+                                    @if (module.Exam is not null)
+                                    {
+                                        <span class="text-primary">
+                                            @{
+                                                DateTime d = d0.AddDays(module.Exam.Days);
+                                            }
+                                            @d.ToShortDateString(): 
+                                            @module.Exam.Title<br />
+                                        </span>
+                                    }
                                 }
                             }
-                            @d0.DayOfWeek: @d0.ToShortDateString()<br>
-                            @due.DayOfWeek: @due.ToShortDateString()
+                            @*@due.DayOfWeek: @due.ToShortDateString()*@
                         </div>
                     </div card>
                 </div col>

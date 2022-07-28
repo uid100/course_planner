@@ -63,10 +63,11 @@ namespace course.Controllers
                     foreach (var jsonEntry in c["assignments"]["Projects"])
                     {
                         try
-                        {
-                            string projectTitle = (string)jsonEntry["title"];
+                        {                            
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].ToDo = projectTitle;
+                            course.Modules[moduleNumber].ToDo = new Project();
+                            course.Modules[moduleNumber].ToDo.Title = (string)jsonEntry["title"];
+                            course.Modules[moduleNumber].ToDo.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -79,9 +80,10 @@ namespace course.Controllers
                     {
                         try
                         {
-                            string discussion = (string)jsonEntry["title"];
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Discussion = discussion;
+                            course.Modules[moduleNumber].Discussion = new Discussion();
+                            course.Modules[moduleNumber].Discussion.Title = (string)jsonEntry["title"];
+                            course.Modules[moduleNumber].Discussion.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -94,9 +96,10 @@ namespace course.Controllers
                     {
                         try
                         {
-                            string projectTitle = (string)jsonEntry["title"];
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Exam = projectTitle;
+                            course.Modules[moduleNumber].Quiz = new Quiz();
+                            course.Modules[moduleNumber].Quiz.Title = (string)jsonEntry["title"];
+                            course.Modules[moduleNumber].Quiz.Days = (int)jsonEntry["days"];
                         }
                         catch (Exception ex) { }
                     }
@@ -108,14 +111,12 @@ namespace course.Controllers
                     {
                         try
                         {
-                            string projectTitle = (string)jsonEntry["title"];
                             int moduleNumber = (int)jsonEntry["module"];
-                            course.Modules[moduleNumber].Exam = projectTitle;
+                            course.Modules[moduleNumber].Exam = new Exam();
+                            course.Modules[moduleNumber].Exam.Title = (string)jsonEntry["title"];
+                            course.Modules[moduleNumber].Exam.Days = (int)jsonEntry["days"];
                         }
-                        catch (Exception ex)
-                        {
-                            int x = 0;
-                        }
+                        catch (Exception ex) { }
                     }
                 }
                 catch (Exception ex) { }

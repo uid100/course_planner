@@ -4,9 +4,9 @@
     {
         public string? Title { get; set; }
         public int? Week { get; set; }
-        public string? Discussion { get; set; }
-        public string? Exam { get; set; }
-        public string? Quiz { get; set; }
-        public string? ToDo { get; set; }
+        public Discussion? Discussion { get; set; }
+        public Exam? Exam { get; set; }
+        public Quiz? Quiz { get; set; }
+        public Project? ToDo { get; set; }
     }
 }
