@@ -1,7 +1,14 @@
+global using course.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//builder.Services.AddTransient<ICollegeRepository, TestCollegeRepo>();
+builder.Services.AddTransient<ICollegeRepository, JsonCollegeRepo>();
+//builder.Services.AddTransient<ICourseRepository, TestCourseRepo>();
+builder.Services.AddTransient<ICourseRepository, JsonCourseRepo>();
 
 var app = builder.Build();
 

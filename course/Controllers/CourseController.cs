@@ -7,9 +7,15 @@ namespace course.Controllers
 {
     public class CourseController : Controller
     {
+        private ICourseRepository _courses;
+
+        public CourseController(ICourseRepository courses)
+        {
+            _courses = courses;
+        }
         public IActionResult CourseList(College college)
         {
-            return View(Courses(college));
+            return View(_courses.Courses.Where(c=>c.College == college.Name));
         }
 
         public IActionResult CourseDetail(Course course)
@@ -123,29 +129,6 @@ namespace course.Controllers
             }
 
             return View(course);
-        }
-
-        List<Course> Courses(College college)
-        {
-            List<Course> courses = new List<Course>();
-
-            string jsonString;
-            using (StreamReader r = new StreamReader("wwwroot/courses.json"))
-            {
-                jsonString = r.ReadToEnd();
-            }
-
-            var jsonObject = JObject.Parse(jsonString);
-
-            foreach (var c in jsonObject["colleges"][college.Name] as JObject)
-            {
-                var course = new Course();
-                course.College = college.Name;
-                course.Name = c.Key;
-                courses.Add(course);
-            }
-
-            return courses;
         }
     }
 }

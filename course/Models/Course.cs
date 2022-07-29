@@ -2,6 +2,7 @@
 {
     public class Course
     {
+        public int CollegeID { get; set; }
         public String? College { get; set; }
         public String? CatalogID { get; set; }
         public String? Name { get; set; }
