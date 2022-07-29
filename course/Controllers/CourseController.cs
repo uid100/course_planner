@@ -130,6 +130,29 @@ namespace course.Controllers
 
             return View(course);
         }
+
+        List<Course> Courses(College college)
+        {
+            List<Course> courses = new List<Course>();
+
+            string jsonString;
+            using (StreamReader r = new StreamReader("wwwroot/courses.json"))
+            {
+                jsonString = r.ReadToEnd();
+            }
+
+            var jsonObject = JObject.Parse(jsonString);
+
+            foreach (var c in jsonObject["colleges"][college.Name] as JObject)
+            {
+                var course = new Course();
+                course.College = college.Name;
+                course.Name = c.Key;
+                courses.Add(course);
+            }
+
+            return courses;
+        }
     }
 }
 
