@@ -5,7 +5,6 @@ namespace course.Models
     public class JsonCourseRepo : ICourseRepository
     {
         private string _filename;
-        private readonly IConfiguration _config;
 
         public JsonCourseRepo(IConfiguration config)
         {
@@ -21,12 +20,13 @@ namespace course.Models
                 {
                     string jsonString = r.ReadToEnd();
                     JObject collegeData = JObject.Parse(jsonString);
-                    foreach(var jsonObject in (JObject)collegeData["colleges"])
+                    // TODO: fix 'dereference possible null' in JsonCourseRepo.cs
+                    foreach(var jsonObject in (JObject?)collegeData["colleges"])
                     {
                         string collegeName = jsonObject.Key;
                         JObject courseData = JObject.Parse(jsonString);
-                        foreach(var c in courseData["colleges"][collegeName] as JObject)
-                        //foreach (var c in jsonObject["colleges"][collegeName] as JObject)
+                        // TODO: fix 'dereference possible null' in JsonCourseRepo.cs
+                        foreach (var c in courseData["colleges"][collegeName] as JObject)
                         {
                             Course course = new Course();
                             course.College = collegeName;

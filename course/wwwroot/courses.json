@@ -2,6 +2,9 @@
   "colleges": {
     "CCC-CSU C-ID": {
       "COMP112": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
         "objectives": [
           "Describe the software development life-cycle",
           "Describe the principles of structured programming and be able to describe, design, implement, and test structured programs using currently accepted methodology",
@@ -28,7 +31,14 @@
           "Error handling",
           "Passing parameters by value and by reference",
           "Principles of testing and designing test data"
-        ]
+        ],
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
       }
     },
     "Cuyamaca College": {
@@ -1576,17 +1586,119 @@
           ],
           "Presentations": ""
         }
+      },
+      "COP4813": {
+        "status": "draft",
+        "CatalogID": "COP-2552",
+        "CanvasURL": "https://courses.sfcollege.edu",
+        "CanvasCourseID": 452018,
+        "LongName": "F22 COP4813.0M1: WEB APPL PROG",
+        "Course Code": "F22 COP4813.0M1: WEB APPL PROG",
+        "Time Zone": "EST5",
+        "SIS ID": "COP4813_0M1_F22",
+        "Subaccount": "Santa Fe College",
+        "Term": "Fall 2022",
+        "Start": "22-Aug-2022",
+        "End": "3-Dec-2022",
+        "textbook": "",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
       }
     },
     "Palomar College": {
-      "CSIT140 (2016 Spring)": {},
-      "CSIT141 (2016 Spring)": {},
-      "CSIT295 (2016 Spring)": {}
+      "CSIT140 (2016 Spring)": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      },
+      "CSIT141 (2016 Spring)": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      },
+      "CSIT295 (2016 Spring)": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      }
     },
     "Embry-Riddle Aeronautical University": {
-      "ISTA220": {},
-      "ISTA322": {},
-      "ISTA420": {}
+      "ISTA220": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      },
+      "ISTA322": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      },
+      "ISTA420": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      }
+    },
+    "Faber College": {
+      "ENG100": {
+        "CanvasCourseID": 999,
+        "Start": "1-Jan-1900",
+        "End": "31-Jan-1900",
+        "modules": [],
+        "assignments": {
+          "Discussions": [],
+          "Projects": [],
+          "Exams": [],
+          "Quizzes": []
+        }
+      }
     }
   }
 }

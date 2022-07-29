@@ -2,6 +2,7 @@
 using course.Models;
 using course.Controllers;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace course_test
 {
@@ -29,8 +30,8 @@ namespace course_test
 
             // Act
             int collegeCount = colleges.Colleges.Count();
-            string college0 = colleges.Colleges.First().Name;
-            string college2 = colleges.Colleges.Last().Name;
+            string college0 = colleges.Colleges.FirstOrDefault().Name;
+            string college2 = colleges.Colleges.LastOrDefault().Name;
 
             int courseCount0 = (courses.Courses.Count(x=>x.College == college0));
             int courseCount2 = (courses.Courses.Count(x=>x.College == college2));

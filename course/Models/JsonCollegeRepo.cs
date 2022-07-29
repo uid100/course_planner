@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json.Linq;
+﻿
+using Newtonsoft.Json.Linq;
 
 namespace course.Models
 {
     public class JsonCollegeRepo : ICollegeRepository
     {
         private string _filename;
-        private readonly IConfiguration _config;
 
         public JsonCollegeRepo(IConfiguration config)
         {
@@ -21,10 +21,12 @@ namespace course.Models
                 {
                     var jsonString = r.ReadToEnd();
                     JObject keyValuePairs = JObject.Parse(jsonString);
-                    foreach (var c in (JObject)keyValuePairs["colleges"])
+                    if (keyValuePairs.HasValues)
                     {
-                        //colleges.Add(new College { Id = _id++, Name = (string)c.Key });
-                        colleges.Add(new College { Name = (string)c.Key });
+                        foreach (var c in (JObject?)keyValuePairs["colleges"])
+                        {
+                            colleges.Add(new College { Name = (string)c.Key });
+                        }
                     }
                 }
 

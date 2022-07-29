@@ -9,10 +9,6 @@ namespace course.Controllers
         //public IActionResult Welcome() => View();
 
         //[HttpPost]
-        public IActionResult Welcome(Course course)
-        {
-            int x = 0;
-            return View(course);
-        }
+        public IActionResult Welcome(Course course) => View(course);
     }
 }

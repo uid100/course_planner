@@ -18,7 +18,7 @@ namespace course.Controllers
             return View(_courses.Courses.Where(c=>c.College == college.Name));
         }
 
-        public IActionResult CourseDetail(Course course)
+        public IActionResult CourseDetail(Course? course)
         {
             string jsonString = "";
             using (var r = new StreamReader("wwwroot/courses.json"))
@@ -28,7 +28,12 @@ namespace course.Controllers
 
             JObject jsonObject = JObject.Parse(jsonString);
 
-            JToken? c = jsonObject["colleges"][course.College][course.Name];
+            if (course == null) return View("Error");
+            course.Name ??= "missing";
+            course.College ??= "missing";
+
+            // TODO: fix lots of null reference warnings
+            JToken? c = jsonObject["colleges"][course.College][course.Name] ?? null;
             if( c!= null) 
             {
                 course.CatalogID = (string)c["CatalogID"];
