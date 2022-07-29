@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "course", "course\course.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COP2551_F22", "COP2551_F22\COP2551_F22.csproj", "{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "course_test", "course_test\course_test.csproj", "{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
