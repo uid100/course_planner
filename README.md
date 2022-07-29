@@ -1,6 +1,6 @@
 # Canvas Course Planning utility
 
-![Canvas](https://images/canvas-logo-1024x1020.png)
+![icon](![icon](https://github.com/uid100/course_planner/raw/master/images/canvas-logo-1024x1020.png)
 
 MVC (C#) utility to plan and grapically view Canvas course material.
 
