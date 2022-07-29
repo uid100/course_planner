@@ -22,7 +22,7 @@ namespace course.Controllers
 
             JObject jsonObject = JObject.Parse(jsonString);
 
-            JToken? c = jsonObject["colleges"][course.College][course.Name];
+            JToken? c = jsonObject["colleges"][course.College]["courses"][course.Name];
             if( c!= null) 
             {
                 course.CatalogID = (string)c["CatalogID"];
@@ -137,7 +137,7 @@ namespace course.Controllers
 
             var jsonObject = JObject.Parse(jsonString);
 
-            foreach (var c in jsonObject["colleges"][college.Name] as JObject)
+            foreach (var c in jsonObject["colleges"][college.Name]["courses"] as JObject)
             {
                 var course = new Course();
                 course.College = college.Name;
