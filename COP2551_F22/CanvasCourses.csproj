@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\files\course_files\" />
-    <Folder Include="wwwroot\pages\" />
     <Folder Include="wwwroot\files\course_files\module01\" />
   </ItemGroup>
 

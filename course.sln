@@ -5,9 +5,9 @@ VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "course", "course\course.csproj", "{09C4639D-AC8A-48EC-84DB-F42C81599B8E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "COP2551_F22", "COP2551_F22\COP2551_F22.csproj", "{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanvasCourses", "COP2551_F22\CanvasCourses.csproj", "{B60B1F5D-B99C-4A06-B9D3-0445D06A6399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "course_test", "course_test\course_test.csproj", "{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "course_test", "course_test\course_test.csproj", "{170BA1BF-A435-400E-9E90-AFDB2DAF15A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

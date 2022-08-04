@@ -19,5 +19,8 @@ namespace course.Controllers
         {
             return View("CollegeList", _colleges.Colleges);
         }
+
+        // TODO: Add Todo List Controller and Views (and json dataset)
+        public IActionResult ToDoList() => View("Index");
     }
 }

@@ -33,16 +33,16 @@ namespace course.Controllers
             course.College ??= "missing";
 
             // TODO: fix lots of null reference warnings
-            JToken? c = jsonObject["colleges"][course.College][course.Name] ?? null;
+            JToken? c = jsonObject["colleges"][course.College]["courses"][course.Name] ?? null;
             if( c!= null) 
             {
-                course.CatalogID = (string)c["CatalogID"];
-                course.CanvasID = (int)c["CanvasCourseID"];
+                course.CatalogID = (string)c["catalog ID"];
+                course.CanvasID = (int)c["canvas course ID"];
                 course.Name = course.Name;
-                course.LongName = (string)c["LongName"];
-                course.Term = (string)c["Term"];
-                course.TermStart = DateTime.Parse(s: (string)c["Start"]);
-                course.TermEnd = DateTime.Parse(s: (string)c["End"]);
+                course.LongName = (string)c["long name"];
+                course.Term = (string)c["term"];
+                course.TermStart = DateTime.Parse(s: (string)c["start"]);
+                course.TermEnd = DateTime.Parse(s: (string)c["end"]);
                 course.Status = (string)c["status"];
 
                 int count = 0;

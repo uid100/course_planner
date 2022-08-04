@@ -26,7 +26,7 @@ namespace course.Models
                         string collegeName = jsonObject.Key;
                         JObject courseData = JObject.Parse(jsonString);
                         // TODO: fix 'dereference possible null' in JsonCourseRepo.cs
-                        foreach (var c in courseData["colleges"][collegeName] as JObject)
+                        foreach (var c in courseData["colleges"][collegeName]["courses"] as JObject)
                         {
                             Course course = new Course();
                             course.College = collegeName;

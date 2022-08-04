@@ -1,0 +1,216 @@
+<div id="navigation"><a class="btn btn-primary icon-home-light" href="https://courses.sfcollege.edu/courses/452308/"> Home </a></div>
+<div id="header">
+    <h2>Project 2</h2>
+    <p>Get started this week. You'll have two weeks to complete this assignment. Check the calendar for due dates.</p>
+    <p>&nbsp;</p>
+</div>
+<div id="project_specifications">
+    <h3 style="text-decoration: underline;">Project Specifications</h3>
+    <div id="objective">
+        <h4 style="text-decoration: underline;">Objective</h4>
+        <p><strong>Write a Java program using good object-oriented programming principles that will read from three input files and will write information to two output files.</strong></p>
+        <p>&nbsp;</p>
+    </div>
+    <div id="input_files">
+        <h4 style="text-decoration: underline;">The Files</h4>
+        <p>Input files:</p>
+        <p><span style="font-family: Courier New, Courier, monospace;"> <a class="instructure_file_link instructure_scribd_file inline_disabled" title="PatientListW3.txt" href="https://courses.sfcollege.edu/courses/452308/files/43696556?wrap=1" target="_blank" rel="noopener" data-api-returntype="File" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452308/files/43696556"> PatientListW3.txt</a><br /><a class="instructure_file_link instructure_scribd_file inline_disabled" title="NewPatientList.txt" href="https://courses.sfcollege.edu/courses/452308/files/43696466?wrap=1" target="_blank" rel="noopener" data-api-returntype="File" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452308/files/43696466"> NewPatientList.txt</a><br /><a class="instructure_file_link instructure_scribd_file inline_disabled" title="RemovePatientList.txt" href="https://courses.sfcollege.edu/courses/452308/files/43696408?wrap=1" target="_blank" rel="noopener" data-api-returntype="File" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452308/files/43696408"> RemovePatientList.txt</a><br /></span> <em>(download these files.)</em></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <ul>
+            <ul>
+                <li>The input file names are: <span style="font-family: Courier New, Courier, monospace;"> PatientListW3.txt, NewPatientList.txt, RemovePatientList.txt</span> and are located in the current directory.</li>
+                <li>The output file names are: <span style="font-family: Courier New, Courier, monospace;"> PatientListW4.txt, PatientErrorsW4.txt</span> and written to the directory: "<span style="font-family: Courier New, Courier, monospace;">C\SFC\COP2552\Project2</span>"</li>
+                <li>The first input file (<span style="font-family: Courier New, Courier, monospace;">PatientListW3.txt</span>) contains the system date from the previous week, all the patient id numbers, patient names, date of birth, and year added as a new patient, within a medical practice at the end of a business day.</li>
+                <li>Each value is on a separate line (we have not learned delimiters and tokens yet)</li>
+                <li>The patient ID number and the three values that follow are one group that belong together. The next patient ID number and the three values that follow are a group and belong together, and so on.</li>
+            </ul>
+        </ul>
+        <br />
+        <ul>
+            <ul>
+                <li>The file is sorted in ascending order by patient id number.</li>
+                <li>The second input file (<span style="font-family: Courier New Courier, monospace;">NewPatientListtxt</span>) is automatically created when a new patient is seen in the medical office.</li>
+                <li>The second input file contains the new patient's ID number, patient name, and date of birth.</li>
+                <li>The program will add the current year as the year added as a new patient.</li>
+            </ul>
+        </ul>
+        <br />
+        <ul>
+            <ul>
+                <li>This file is sorted in ascending order by patient id number.</li>
+                <li>The third input file (<span style="font-family: Courier New, Courier, monospace;">RemovePatientList.txt</span>) is automatically generated when a patient leaves the medical office.</li>
+                <li>This file contains the patient id number, patient name, and date of birth.</li>
+            </ul>
+        </ul>
+        <br />
+        <ul>
+            <li>This file is sorted in ascending order by patient id number.</li>
+            <li>The first output file (<span style="font-family: Courier New, Courier, monospace;">PatientListW4.txt</span>) will contain the current system date (MMDDYYYY format - not hardcoded) at the top of the file followed by the patient id number, patient name, date of birth, and year added as a new patient.&nbsp;<em>(fixed error 10-Jun:&nbsp; Not "MMDDYYY")</em></li>
+            <li>
+                The second output file (<span style="font-family: Courier New, Courier, monospace;">PatientErrorsW4.txt</span>) will contain the current system date (MMDDYYYY format - not hardcoded) at the top of the file followed by the patient id number, patient name, and date of birth that is considered an error. This error occurs:
+                <ul>
+                    <li>if a patient is to be added to the medical practice, but the patient id number already exists in the current patient file (<span style="font-family: Courier New, Courier, monospace;">PatientListW3.txt</span>).</li>
+                    <li>if a patient is to be removed from the medical practice, but the patient id number does not exist in the current patient file (<span style="font-family: Courier New, Courier, monospace;">PatientListW3.txt</span>).</li>
+                    <li>if no errors exist, this file should not be created.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+    </div>
+    <div id="file_layout">
+        <h3 style="text-decoration: underline;">File Layout</h3>
+        <div class="col-sm-11 col-md-9 col-lg-6" style="margin-left: 5%;">
+            <table border="1" width="100%" cellspacing="2" cellpadding="2">
+                <caption>Input Files</caption>
+                <tbody style="font-family: Courier New, Courier, monospace;">
+                    <tr valign="top">
+                        <th scope="col">PatientListW3.txt</th>
+                        <th scope="col">NewPatientList.txt</th>
+                        <th scope="col">RemovePatient.txt</th>
+                    </tr>
+                    <tr valign="top">
+                        <td>Previous date<br />Patient id number<br />Patient name<br />Date of Birth<br />Year Added<br />Patient id number<br />Patient name<br />Date of birth<br />Year Added<br />...</td>
+                        <td>Patient id number<br />Patient name<br />Date of birth<br />Patient id number<br />Patient name<br />Date of birth<br />...</td>
+                        <td>Patient id number<br />Patient name<br />Date of birth<br />Patient id number<br />Patient name<br />...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>&nbsp;</p>
+        <div class="col-sm-11 col-md-9 col-lg-6" style="margin-left: 5%;">
+            <table border="1" width="100%" cellspacing="2" cellpadding="2">
+                <caption>Output Files</caption>
+                <tbody style="font-family: Courier New, Courier, monospace;">
+                    <tr valign="top">
+                        <th scope="col">PatientListW4.txt</th>
+                        <th scope="col">PatientErrorsW4.txt</th>
+                    </tr>
+                    <tr valign="top">
+                        <td>Current System date<br />Patient id number<br />Patient name<br />Date of Birth<br />Year Added<br />Patient id number<br />Patient name<br />Date of birth<br />Year Added<br />...</td>
+                        <td>Current System date<br />Patient id number<br />Patient name<br />Date of birth<br />Patient id number<br />Patient name<br />Date of birth<br />...</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <div id="program_details">
+        <h3 style="text-decoration: underline;">Program Details</h3>
+        <p>The program will update the current list of patients for the ending week. Of course, this would normally be updated using a database (sigh...soon), but in this project, you create a new output file that will contain the complete list of current patients for the following week. The integrity of the previous week's data is left secure.</p>
+        <p>The program should read in, but ignore the previous date in the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> input file. It is there to keep track of dates, but is not needed in the process of this program.</p>
+        <p>The program must place the current system date (MMDDYYYY format - do not hard code this date) as the first line in the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW4.txt</span> output file.</p>
+        <p>In essence, the program will then merge the current patient file with the new patients to be added and removing the patients that are no longer part of the medical practice.</p>
+        <p>&nbsp;</p>
+        <ul>
+            <li>Name the class <span style="font-family: 'Courier New', Courier, monospace;">Patient</span></li>
+            <li>To be efficient, this program will <u>not</u> use an array or any other data structure. It is not needed nor efficient.</li>
+            <li>All input files are in ascending order by patient ID number.</li>
+            <li>The program will read in the first patient id number, patient name, date of birth, and year added from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> input file.</li>
+            <li>Store the patient id number, name, and date of birth in a string variable and the year added as an integer variable.</li>
+            <li>Next, the program should read in the first patient id number, patient name, and date of birth from the <span style="font-family: 'Courier New', Courier, monospace;">NewPatientList.txt</span> input file.</li>
+            <li>Next, the program should read in the first patient id number, patient name, date of birth, and year added from the <span style="font-family: 'Courier New', Courier, monospace;">RemovePatient.txt</span> input file.</li>
+            <li>If the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;"> PatientListW3.txt</span> file matches the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">RemovePatient.txt file:</span></li>
+            <ul>
+                <li>do not write this patient's information to the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW4.txt</span> output file.</li>
+                <li>read in the next patient's information from the <span style="font-family: 'Courier New', Courier, monospace;">RemovePatient.txt</span> file.</li>
+                <li>read in the next patient's information from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file.</li>
+            </ul>
+            <li>
+                If the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> is less than the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">RemovePatient.txt</span> file:
+                <ul>
+                    <li>
+                        if the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">NewPatientList.txt</span> file is less than the current patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file:
+                        <ul>
+                            <li>insert the new patient information into the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW4.txt</span> file.</li>
+                            <li>add the current year as the patient's year added</li>
+                            <li>read in the next patient information from the <span style="font-family: 'Courier New', Courier, monospace;">NewPatientList.txt</span> file.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                If the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file is less than the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">NewPatientList.txt file:</span>
+                <ul>
+                    <li>write the current patient information from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file to the patient information in the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW4.txt</span> file.</li>
+                    <li>read in the next value in the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file.</li>
+                </ul>
+            </li>
+            <li>
+                If the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">RemovePatient.txt</span> file does not match any patient id in the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file:
+                <ul>
+                    <li>an error has occurred - write the patient information (id, name, date of birth, year added) to the <span style="font-family: 'Courier New', Courier, monospace;">PatientErrorsW4.txt</span> output file.</li>
+                </ul>
+            </li>
+            <li>
+                If the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">NewPatientList.txt</span> matches the patient id number from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt file:</span>
+                <ul>
+                    <li>an error has occurred - write the patient information (id, name, date of birth, year added) to the <span style="font-family: 'Courier New', Courier, monospace;">PatientErrorsW4.txt</span> output file.</li>
+                    <li>write the patient's information from the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW3.txt</span> file to the <span style="font-family: 'Courier New', Courier, monospace;">PatientListW4.txt</span> output file.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+    </div>
+</div>
+<div id="example">
+    <h3 style="text-decoration: underline;">Example</h3>
+    <div class="col-sm-11 col-md-9 col-lg-6" style="margin-left: 5%;">
+        <table border="1" width="100%" cellspacing="2" cellpadding="2">
+            <caption>Input files</caption>
+            <tbody style="font-family: Courier New, Courier, monospace;">
+                <tr valign="top">
+                    <th scope="col">PatientListW3.txt</th>
+                    <th scope="col">NewPatientList.txt</th>
+                    <th scope="col">RemovePatient.txt</th>
+                </tr>
+                <tr>
+                    <td valign="top">current date<br />1111<br />Smith<br />12231934<br />2007<br />2222<br />Jones<br />08141977<br />1999<br />3333<br />White<br />06261996<br />2015<br />4444&lt;<br />Goodson<br />10102001<br />2019<br />5555<br />Williams<br />09211988<br />2000</td>
+                    <td valign="top">0123<br />Adams<br />05291979<br />3456&lt;<br />Morris<br />01311955<br />5555<br />Andrews<br />11131994<br />8182<br />Ziegler<br />06242000</td>
+                    <td valign="top">3333<br />White<br />06261996<br />7717<br />Thomas<br />04301986</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>&nbsp;</p>
+    <p>The output files will contain the patients in the following order<br />(with all appropriate data):</p>
+    <div class="col-sm-11 col-md-9 col-lg-6" style="margin-left: 5%;">
+        <table border="1" width="100%" cellspacing="2" cellpadding="2">
+            <caption>Output files</caption>
+            <tbody style="font-family: Courier New, Courier, monospace;">
+                <tr valign="top">
+                    <th scope="col">PatientListW4.txt</th>
+                    <th scope="col">PatientErrorsW4.txt</th>
+                </tr>
+                <tr>
+                    <td>current date<br />0123<br />Adams<br />05291979<br />2021<br />1111<br />Smith<br />12231934<br />2007<br />2222<br />Jones<br />08141977<br />1999<br />3456<br />Morris<br />01311955<br />2021<br />4444<br />Goodson<br />10102001<br />2019<br />5555<br />Williams<br />09211988<br />2000<br />8182<br />Ziegler<br />06242000<br />2021</td>
+                    <td>current date<br />5555<br />Williams<br />09211988<br />2000<br />7717<br />Thomas<br />04301986</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="expectations">
+    <ul>
+        <li>Be sure to use methods throughout. Each method should be short and do one task.</li>
+        <li>Use a driver method for the order of execution. main() should simply call the driver method.</li>
+        <li>Excellent comments are throughout the program code.</li>
+    </ul>
+    <p>&nbsp;</p>
+</div>
+<div id="to-do">
+    <h3 style="text-decoration: underline;">To-do:</h3>
+    <ol>
+        <li>Check the <strong>Calendar</strong> for the due date!</li>
+        <li>Be sure to use the <a title="Template Code" href="https://courses.sfcollege.edu/courses/452308/pages/template-code" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452308/pages/template-code" data-api-returntype="Page">Template Code</a>.</li>
+        <li>Be sure to review the Specifications before you submit your Project.</li>
+        <li>Test your code.</li>
+        <li>Review the Rubric before you submit.</li>
+        <li>Upload your <strong>.java</strong> file to the Project 1 assignment.</li>
+    </ol>
+    <p>&nbsp;</p>
+</div>
+<div id="rubric">
+    <h3 style="text-decoration: underline;">Rubric</h3>
+    <a href="https://courses.sfcollege.edu/courses/452308/rubrics/272028">link to grading criteria</a>
+</div>
