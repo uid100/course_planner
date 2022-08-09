@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Help";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Canvas Course Planner - Help</h1>
+</div>
+
+
+<div class="container">
+    <div class="row row-md-10" style="margin:auto;">
+        <div class="col col-md-6"  style="margin:auto;" >
+            <div class="card" >
+                <div class="card-header">
+                    <div class="card-title">Getting Started</div>
+                </div>
+                <div class="card-body">
+                    This application is designed to graphically layout course curriculum and assist
+                    in event scheduling. The input and output is currently in json format, other formats
+                    are planned.
+                    <ul>
+                        <li> @Html.ActionLink( "Download json Template", "Sample", "Help" ) </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
