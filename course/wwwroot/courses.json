@@ -938,7 +938,7 @@
               {
                 "title": "Project 2",
                 "module": 2,
-                "days": 13,
+                "days": 6,
                 "points": 100
               },
               {
@@ -1015,20 +1015,20 @@
               },
               {
                 "title": "Exam 3",
-                "module": 5,
+                "module": 6,
                 "days": 6,
                 "points": 100
               },
               {
                 "title": "Exam 4",
-                "module": 7,
+                "module": 8,
                 "days": 6,
                 "points": 100
               },
               {
                 "title": "Exam 5",
-                "module": 9,
-                "days": 3,
+                "module": 10,
+                "days": 6,
                 "points": 100
               },
               {
