@@ -1690,13 +1690,251 @@
           "subaccount": "Santa Fe College",
           "term": "Fall 2022",
           "start": "22-Aug-2022",
-          "end": "3-Dec-2022",
+          "end": "10-Dec-2022",
           "textbook": "",
-          "modules": [],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to web appl",
+              "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
+              "week": 1
+            },
+            {
+              "module": 2,
+              "title": "single page web apps",
+              "read": "Ch2 – How to develop a single-page MVC web app",
+              "week": 2
+            },
+            {
+              "module": 3,
+              "title": "responsive design",
+              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "week": 3
+            },            
+            {
+              "module": 4,
+              "title": "data-driven MVC",
+              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "week": 4
+            },
+            {
+              "module": 5,
+              "title": "Manually test and debug",
+              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "week": 5
+            },
+            {
+              "module": 6,
+              "title": "Working with controllers and routing",
+              "read": "Ch6 – working with controllers and routing",
+              "week": 6
+            },
+            {
+              "module": 7,
+              "title": "Working with Razor views",
+              "read": "Ch7 – Working with Razor views",
+              "week": 7
+            },
+            {
+              "module": 8,
+              "title": "xfr data from controller",
+              "read": "Ch8 – ",
+              "week": 8
+            },
+            {
+              "module": 9,
+              "title": "state & cookies",
+              "read": "Ch9 –",
+              "week": 9
+            },
+            {
+              "module": 10,
+              "title": "model binding",
+              "read": "Ch10",
+              "week": 10
+            },
+            {
+              "module": 11,
+              "title": "data validation",
+              "read": "Ch11",
+              "week": 11
+            },
+            {
+              "module": 12,
+              "title": "Entity Framework",
+              "read": "Ch12",
+              "week": 12
+            },
+            {
+              "module": 13,
+              "title": "e-commerce website",
+              "read": "Ch13",
+              "week": 14
+            },
+            {
+              "module": 14,
+              "title": "wrap up",
+              "week": 15
+            },
+            {
+              "module": 15,
+              "title": "final",
+              "week": 16
+            }
+          ],
           "assignments": {
-            "Discussions": [],
-            "Projects": [],
-            "Exams": [],
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 20,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Web applications: Brainstorming",
+                "points": 0,
+                "days": 3,
+                "module": 3
+              },
+              {
+                "title": "Web applications: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 3
+              },
+              {
+                "title": "Github Hosting: README.md",
+                "points": 0,
+                "days": 3,
+                "module": 6
+              },
+              {
+                "title": "Github: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Github Code: commit",
+                "points": 0,
+                "days": 3,
+                "module": 8
+              },
+              {
+                "title": "Github Code: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Class Model: commit",
+                "points": 0,
+                "days": 3,
+                "module": 11
+              },
+              {
+                "title": "Class Model: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Screenshots",
+                "points": 0,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Feedback",
+                "points": 20,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Ex1-1 - Guitar Shop",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Ex2-1 - Price Quotation App",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "Ex4-1 - Contact Manager App",
+                "points": 100,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "title": "Ex6-1 - FAQ App",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Ex8-1 - TripLog App",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Ex10-1 - TicTacToe App",
+                "points": 100,
+                "days": 6,
+                "module": 10
+              },
+              {
+                "title": "Ex12-1 - TripLog_v2 App",
+                "points": 100,
+                "days": 6,
+                "module": 12
+              },
+              {
+                "title": "Ex13-1 - Quarterly Sales App",
+                "points": 100,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 1-4)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 5-8)",
+                "module": 9,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-13)",
+                "module": 14,
+                "days": 8,
+                "points": 100
+              }
+
+
+
+            ],
             "Quizzes": []
           }
         }
