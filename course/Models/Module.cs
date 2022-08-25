@@ -9,5 +9,6 @@
         public Exam? Exam { get; set; }
         public Quiz? Quiz { get; set; }
         public Project? ToDo { get; set; }
+        public bool isReady { get; set; }
     }
 }

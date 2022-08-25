@@ -58,6 +58,9 @@ namespace course.Controllers
                             module.Id = (int)jsonEntry["module"];
                             module.Title = (string)jsonEntry["title"];
                             module.Week = (int)jsonEntry["week"];
+                            module.isReady = false;
+                            if( jsonEntry["ready"] is not null)
+                                module.isReady = (bool)jsonEntry["ready"] ? true : false;
                             course.Modules.Add(module);
                         }
                         catch (Exception ex) { }

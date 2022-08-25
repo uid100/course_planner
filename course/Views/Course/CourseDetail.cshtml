@@ -60,12 +60,15 @@
                 if (due > Model.TermEnd) due = Model.TermEnd;
 
                 var module = Model.Modules.FirstOrDefault<Module>(m => m.Week == week);
+
+                string titleColor = "bg-light";
+                if (module is not null) titleColor = module.isReady ? "bg-info" : "bg-warning";
                 @*if (module is not null) @(module.Title)<br>*@
 
                 <div class="col col-md-4"  style="margin:auto;">
                     <div class="card" >
-                        <div class="card-header">
-                            <div class="card-title">
+                        <div class="card-header ">
+                            <div class="card-title @titleColor">
                                 week @week : @d0.DayOfWeek @d0.ToShortDateString()
                                 @*(week == weeks ? "final exams" : "week " + week) *@
                             </div>

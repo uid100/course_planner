@@ -101,72 +101,86 @@
             {
               "module": 1,
               "title": "(Chapter 1) An Overview of Computer Programming",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "(Chapter 2) Applications and Data",
-              "week": 2
+              "week": 2,
+              "ready": true
             },
             {
               "module": 3,
               "title": "(Chapter 3) Making Decisions",
-              "week": 3
+              "week": 3,
+              "ready": true
             },
             {
               "module": 4,
               "title": "(Chapter 4) Looping",
-              "week": 4
+              "week": 4,
+              "ready": true
             },
             {
               "module": 5,
               "title": "(Chapter 5) Arrays (2 weeks)",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 6,
               "title": "(Chapter 6) Using Methods (2 weeks)",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 99,
               "title": "Spring Break",
-              "week": 9
+              "week": 9,
+              "ready": true
             },
             {
               "module": 7,
               "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 8,
               "title": "(Chapter 8) More Object Concepts (2 weeks)",
-              "week": 12
+              "week": 12,
+              "ready": true
             },
             {
               "module": 9,
               "title": "(Chapter 9) Event-Driven Prog. and GUIs",
-              "week": 14
+              "week": 14,
+              "ready": true
             },
             {
               "module": 10,
               "title": "(Chapter 10) Exception Handling",
-              "week": 15
+              "week": 15,
+              "ready": true
             },
             {
               "module": 11,
               "title": "(Chapter 11) System Modeling with UML",
-              "week": 16
+              "week": 16,
+              "ready": true
             },
             {
               "module": 12,
               "title": "(Chapter 12) Manipulating Larger Quantities of Data",
-              "week": 17
+              "week": 17,
+              "ready": true
             },
             {
               "module": 13,
               "title": "Finals Week",
-              "week": 18
+              "week": 18,
+              "ready": true
             }
           ],
           "assignments": {
@@ -306,67 +320,80 @@
             {
               "module": 1,
               "title": "(Chapter 1) An Overview of Computer Programming",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "(Chapter 2) Applications and Data",
-              "week": 2
+              "week": 2,
+              "ready": true
             },
             {
               "module": 3,
               "title": "(Chapter 3) Making Decisions",
-              "week": 3
+              "week": 3,
+              "ready": true
             },
             {
               "module": 4,
               "title": "(Chapter 4) Looping",
-              "week": 4
+              "week": 4,
+              "ready": true
             },
             {
               "module": 5,
               "title": "(Chapter 5) Arrays (2 weeks)",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 6,
               "title": "(Chapter 6) Using Methods (2 weeks)",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 7,
               "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
-              "week": 9
+              "week": 9,
+              "ready": true
             },
             {
               "module": 8,
               "title": "(Chapter 8) More Object Concepts (2 weeks)",
-              "week": 11
+              "week": 11,
+              "ready": true
             },
             {
               "module": 9,
               "title": "(Chapter 9) Event-Driven Prog. and GUIs",
-              "week": 13
+              "week": 13,
+              "ready": true
             },
             {
               "module": 10,
               "title": "(Chapter 10) Exception Handling",
-              "week": 14
+              "week": 14,
+              "ready": true
             },
             {
               "module": 11,
               "title": "(Chapter 11) System Modeling with UML",
-              "week": 15
+              "week": 15,
+              "ready": true
             },
             {
               "module": 12,
               "title": "(Chapter 12) Manipulating Larger Quantities of Data",
-              "week": 16
+              "week": 16,
+              "ready": true
             },
             {
               "module": 13,
               "title": "Finals Week",
-              "week": 17
+              "week": 17,
+              "ready": true
             }
           ],
           "assignments": {
@@ -851,12 +878,14 @@
             {
               "module": 1,
               "title": "intro to Visual C# & Processing Data",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "Making Decisions",
-              "week": 3
+              "week": 3,
+              "ready": true
             },
             {
               "module": 3,
@@ -1090,12 +1119,14 @@
             {
               "module": 1,
               "title": "intro to Visual C# & Processing Data",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "Making Decisions",
-              "week": 3
+              "week": 3,
+              "ready": true
             },
             {
               "module": 3,
@@ -1521,72 +1552,86 @@
             {
               "module": 1,
               "title": "Chapter 2: Java Fundamentals",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "Chapter 3: A First Look at Classes and Objects",
-              "week": 2
+              "week": 2,
+              "ready": true
             },
             {
               "module": 3,
               "title": "Chapter 4: Decision Structures",
-              "week": 3
+              "week": 3,
+              "ready": true
             },
             {
               "module": 4,
               "title": "Chapter 5: Loops and Files",
-              "week": 4
+              "week": 4,
+              "ready": true
             },
             {
               "module": 5,
               "title": "Chapter 6: A Second Look at Classes",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 6,
               "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
-              "week": 6
+              "week": 6,
+              "ready": true
             },
             {
               "module": 7,
               "title": "Chapter 9: Inheritance",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 8,
               "title": "Chapter 10: Exceptions and Advanced File I/O",
-              "week": 8
+              "week": 8,
+              "ready": true
             },
             {
               "module": 9,
               "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
-              "week": 9
+              "week": 9,
+              "ready": true
             },
             {
               "module": 10,
               "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 11,
               "title": "Chapter 13: Recursion",
-              "week": 12
+              "week": 12,
+              "ready": true
             },
             {
               "module": 12,
               "title": "Chapter 15: Databases",
-              "week": 13
+              "week": 13,
+              "ready": true
             },
             {
               "module": 13,
               "title": "Wrap-up and Final Exams",
-              "week": 15
+              "week": 15,
+              "ready": true
             },
             {
               "module": 14,
               "title": "Finals Week",
-              "week": 16
+              "week": 16,
+              "ready": true
             }
           ],
           "assignments": {
@@ -1702,13 +1747,15 @@
               "module": 1,
               "title": "intro to web appl",
               "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
-              "week": 1
+              "week": 1,
+              "ready": true
             },
             {
               "module": 2,
               "title": "single page web apps",
               "read": "Ch2 – How to develop a single-page MVC web app",
-              "week": 2
+              "week": 2,
+              "ready": true
             },
             {
               "module": 3,
