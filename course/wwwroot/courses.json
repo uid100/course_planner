@@ -896,7 +896,8 @@
             {
               "module": 4,
               "title": "Modular Code",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 5,
@@ -1138,7 +1139,8 @@
             {
               "module": 4,
               "title": "Modular Code",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 5,
@@ -1792,7 +1794,8 @@
               "module": 5,
               "title": "Manually test and debug",
               "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
-              "week": 5
+              "week": 5,
+              "ready": true
             },
             {
               "module": 6,
