@@ -1,0 +1,184 @@
+<div id="description">
+    <h3 class="alert alert-info">Description</h3>
+    <p>
+        Through each chapter, we have walked through sample code highlighting new concepts and then working 
+        on related projects which build on the idea and use the same methods to create a similar but solution.
+    </p>
+    <p>
+        The assigned projects have included project specification, and sometimes a sample sketch of what the 
+        completed solution might look like. The instructions are intended to give an overall picture of the 
+        project objective and the preliminary design.
+    </p>
+    <p>
+        <strong>git</strong> is a tool that was designed and written by Linus Torvalds, the engineer who first
+        ported the Unix kernel to the i386 personal computer platform, which has since been named "Linux." The
+        <strong>git</strong> tool is designed to track and catalog changes to files. <em>Source code configuration
+        management</em> is a huge part of the software engineering industry, and <strong>git</strong> is currently
+        one of the primary standard tools.
+    </p>
+    <p>
+        Imagine a typical software product with tens or hundreds of thousands of <em>Software (logical) Lines of
+        Code</em> or "SLOC," sometimes referred to in kSLOC for large projects. On this project, you are one of
+        25 software developers. Obviously, everyone is working on the same code, or <em>software baseline.</em> 
+        If three or four engineers are are working on a bug fixes in certain parts of the code, while another 
+        small team of three or four are working to implement a new feature update, at some point, common files 
+        will likely be affected. This is the problem that <strong>git</strong> was built to solve. 
+    </p>
+    <p>
+        The tool allows the developer to download a copy, or <em>clone</em> a <em>branch</em> of the code and 
+        work independently without worrying about others changing their local copy. When their changes are 
+        complete and tested and ready to be integrated with the baseline, the engineer makes a <em>pull request</em>
+        and the owner of the main repository will carefully <em>pull</em> the changed files and compare and 
+        approve all of the changes, which can then be sync-ed with the other engineers local copies. All of this
+        needs to be carefully orchestrated and each project team will have its own set of policies and procedures
+        to ensure that your changes do not get overwritten by another developer when they <em>commit</em> their 
+        changes.
+    </p>
+    <p>
+        Even when you are working on a team of one, it is a good practice to track the changes to your project. If
+        your code is working, but incomplete, and you spend a few hours working to implement a new requirement
+        and your cat knocks the fishbowl on your keyboard and before the computer turns itself off, it magically
+        adds 200 keystrokes (it bounced, ok?) including the delete key so once that is all cleaned up, you do not
+        even recognize the changes to your code. Ok, that is an absurd example, but what if your code worked
+        yesterday and not today? After a while, you can decide to just roll back all of your changes and download
+        the last known good, working copy. Does that sound familiar?
+    </p>
+    <p>
+        The <strong>git</strong> repository allows you to do just that. The repository may be stored and accessed 
+        on your local computer, but there are benefits to using a server to host the repository remotely. If the
+        fishbowl rendered the computer inoperable, or if you are truly sharing with a team environment, then remote
+        copies just make more sense. This is where <strong>github</strong> comes in.
+    </p>
+    <p>
+        Just as <strong>git</strong> is a standard Configuration Management (CM) tool, <strong>github</strong> is
+        one of the primary servers used to host our code. Some organizations will use other servers or even
+        their own internal solutions, but many do use github to host their projects.
+    </p>
+    <p>&nbsp;</p>
+</div> <!-- #description -->
+<div id="objective">
+    <h3 class="alert alert-info">Objectives</h3>
+    <p>
+        This week you will set up a new github profile, or update yours if you already have one, and create a
+        new repository.
+    </p>
+    <p>&nbsp;</p>
+</div>
+<div id="github">
+    <p>
+        As a developer, your github profile may become an important part of your resume.
+    </p>
+    <p>
+        Browse to Github.com. Review the site, and the pricing model(s). As a student, you can sign up for a free
+        account. I will leave it to you to discover what you need to do for that. Even with a student account, If 
+        you have an email address that you expect to have for a very long time, that is the best one to use. If 
+        not, that is ok. You will be able to add email accounts to your account and change them later. Select a 
+        unique profile name that you can identify with, but one that you can put on your resume. 
+    </p>
+    <p>
+        https://www.github.com/bubblegumtrollsucksapplesauce may have deep meaning to your experience, but might not 
+        be understood by a hiring manager.
+    </p>
+    <p>&nbsp;</p>
+    <ol>
+        <li>
+            <strong>Create an account and edit your profile.</strong>
+            <ul>
+                <li>
+                    Add something, very brief, to your "Bio." This is just a headline, a couple of lines
+                    to describe who you are or what you want to do is enough.
+                </li>
+                <li>
+                    Update your profile picture. This is (usually) not a suit and tie picture. Save that for LinkedIn. 
+                    This one gets seen by other engineers, so it can be fun, but still <em>office- and hiring 
+                    manager-appropriate.</em> Do not leave it as the random pixelated random block image that 
+                    is there by default.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Create a new (public) repository.</strong>
+            <ul>
+                <li>
+                    Click the plus sign ( + ) from the menu bar at the top and select New Repository.
+                </li>
+                <li>
+                    Give your project a descriptive name, not <em>COP4813_project.</em> What does your web app do? 
+                    Give it a name. You can change it later, or add new one and name it something else. In my
+                    garage, I have a few workbenches. Two of them are always cleared off for working, but the others
+                    are often cluttered with several projects. My Github (today) has 112 repositories in various
+                    states of completion. Most are private, some are public. In time you may have many.
+                </li>
+                <li>
+                    Add a short description. Just a sentence or two, keep it brief.
+                </li>
+                <li>
+                    Set the repository to <bold>Public.</bold>
+                </li>
+                <li>
+                    Add a README file.  Check this box and click CREATE.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Update the README.md file.</strong>
+            <ul>
+                <li>
+                    You have a new repository with one file in it, called README.md. By default, every folder that 
+                    open in Github, will look for a file called README.md and display it at the bottom of the screen,
+                    under the list of files.
+                </li>
+                <li>
+                    Google (yes, we are using it as a verb now) "github markdown cheat sheet." README.md is a markdown
+                    file. It is a simple text file with simple formatting instructions. Use the pencil icon from the 
+                    upper right corner of the README.md file to open the editor and copy/paste the description of your
+                    web app project from the discussion in Canvas. This is the start to your project. You do not need
+                    to start writing code yet, just create the repository and start collecting your notes here in the 
+                    README file.
+                </li>
+                <li>
+                    <em>This is a living document. It does not have to be a final product. This is your whiteboard.
+                    Start gathering your ideas. You can (you will) add to this later.</em>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Tell us about it. (Discussion board post)</strong>
+            <ul>
+                <li>
+                    For this week, write a brief paragraph including the link to your github repository. I will follow
+                    the link and look at your profile and your README file. This is your project. It can be as elaborate
+                    and polished as you want it to be. Like the projects on my workbench, some are more 'finished' than
+                    others, but all are in progress.
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <p>&nbsp;</p>
+</div>
+
+<div id="deliverable">
+    <h2 class="alert alert-info">Deliverable</h2>
+    <ul>
+        <li>
+            Discussion post (here) containing:
+            <ul>
+                <li>
+                    Link to your project repository.
+                </li>
+                <li>
+                    Your github account should include your bio and updated avatar
+                </li>
+                <li>
+                    Your project repository should include a README describing your web app, the objective, the architecture, 
+                    or whatever you have so far.
+                </li>
+                <li>
+                    (optional) Share your thoughts about the project so far. How easy or hard was it to create your account? 
+                    What did you learn about setting up github accounts or repositories? What warnings or advice do you have
+                    for others?
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

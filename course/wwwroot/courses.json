@@ -1801,13 +1801,15 @@
               "module": 6,
               "title": "Working with controllers and routing",
               "read": "Ch6 – working with controllers and routing",
-              "week": 6
+              "week": 6,
+              "ready": true
             },
             {
               "module": 7,
               "title": "Working with Razor views",
               "read": "Ch7 – Working with Razor views",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 8,
