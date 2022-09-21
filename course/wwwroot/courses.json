@@ -1815,7 +1815,8 @@
               "module": 8,
               "title": "xfr data from controller",
               "read": "Ch8 – ",
-              "week": 8
+              "week": 8,
+              "ready": true
             },
             {
               "module": 9,
