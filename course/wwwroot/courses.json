@@ -902,7 +902,8 @@
             {
               "module": 5,
               "title": "Text Processing",
-              "week": 6
+              "week": 6,
+              "ready": true
             },
             {
               "module": 6,
@@ -1145,7 +1146,8 @@
             {
               "module": 5,
               "title": "Text Processing",
-              "week": 6
+              "week": 6,
+              "ready": true
             },
             {
               "module": 6,
