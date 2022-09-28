@@ -908,12 +908,14 @@
             {
               "module": 6,
               "title": "Structs, Enums, and Dict",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 7,
               "title": "Introduction to Classes",
-              "week": 8
+              "week": 8,
+              "ready": true
             },
             {
               "module": 99,
@@ -1152,12 +1154,14 @@
             {
               "module": 6,
               "title": "Structs, Enums, and Dict",
-              "week": 7
+              "week": 7,
+              "ready": true
             },
             {
               "module": 7,
               "title": "Introduction to Classes",
-              "week": 8
+              "week": 8,
+              "ready": true
             },
             {
               "module": 99,
