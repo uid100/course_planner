@@ -18,6 +18,19 @@ namespace course.Controllers
             return View(_courses.Courses.Where(c=>c.College == college.Name));
         }
 
+        public IActionResult All()
+        {
+            DateTime dateTime = DateTime.Now;
+            IEnumerable<Course> courses = _courses.Courses.Where(d=>d.TermEnd > dateTime);
+            return View("CourseList", courses);
+        }
+        public IActionResult Current()
+        {
+            IEnumerable<Course> courses = _courses.Courses;
+            //_courses.Courses.ToList().AsEnumerable()
+            return View("CourseList", courses);
+        }
+
         public IActionResult CourseDetail(Course? course)
         {
             string jsonString = "";

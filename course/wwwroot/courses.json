@@ -970,25 +970,25 @@
                 "points": 100
               },
               {
-                "title": "Project 2",
+                "title": "Project 2 - BMI calc",
                 "module": 2,
                 "days": 6,
                 "points": 100
               },
               {
-                "title": "Project 3",
+                "title": "Project 3 - guess number",
                 "module": 3,
                 "days": 6,
                 "points": 100
               },
               {
-                "title": "Project 4",
+                "title": "Project 4 - tictactoe sim",
                 "module": 4,
                 "days": 6,
                 "points": 100
               },
               {
-                "title": "Project 5",
+                "title": "Project 5 - camelCase",
                 "module": 5,
                 "days": 6,
                 "points": 100
@@ -1000,35 +1000,35 @@
                 "points": 100
               },
               {
-                "title": "Project 7a",
+                "title": "Project 7a - employees",
                 "module": 7,
                 "points": 100
               },
               {
-                "title": "Project 7b",
+                "title": "Project 7b - dorm life",
                 "module": 7,
                 "days": 13,
                 "points": 100
               },
               {
-                "title": "Project 8",
+                "title": "Project 8 - address book",
                 "module": 8,
                 "days": 6,
                 "points": 100
               },
               {
-                "title": "Project 9a",
+                "title": "Project 9a - personnel db",
                 "module": 9,
                 "points": 100
               },
               {
-                "title": "Project 9b",
+                "title": "Project 9b - population db",
                 "module": 9,
                 "days": 13,
                 "points": 100
               },
               {
-                "title": "Project 10",
+                "title": "Project 10 - prod.search",
                 "module": 10,
                 "days": 13,
                 "points": 100
