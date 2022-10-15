@@ -1824,21 +1824,23 @@
             {
               "module": 8,
               "title": "xfr data from controller",
-              "read": "Ch8 – ",
+              "read": "Ch8 – xfr data between controller and view",
               "week": 8,
               "ready": true
             },
             {
               "module": 9,
               "title": "state & cookies",
-              "read": "Ch9 –",
-              "week": 9
+              "read": "Ch9 – session state and cookies",
+              "week": 9,
+              "ready": true
             },
             {
               "module": 10,
               "title": "model binding",
               "read": "Ch10",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 11,
