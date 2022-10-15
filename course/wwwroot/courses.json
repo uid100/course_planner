@@ -925,12 +925,14 @@
             {
               "module": 8,
               "title": "Inherit.., Polym.., and Interfaces",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 9,
               "title": "Databases",
-              "week": 11
+              "week": 11,
+              "ready": true
             },
             {
               "module": 10,
@@ -1171,12 +1173,14 @@
             {
               "module": 8,
               "title": "Inherit.., Polym.., and Interfaces",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 9,
               "title": "Databases",
-              "week": 11
+              "week": 11,
+              "ready": true
             },
             {
               "module": 10,
