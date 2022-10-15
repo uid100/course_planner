@@ -10,7 +10,8 @@
 
     <div class="row row-md-11" style="margin:auto;" id="course_header">
             <div class="card col col-md-9" id="courseInfo" style="margin:auto;">
-                <div class="btn card-header" 
+                <div class="btn card-header text-white" 
+                        style="background-color:#19b2e0;" 
                         data-bs-toggle="collapse" data-bs-target="#courseDetail" 
                         aria-controls="courseDetail" aria-expanded="false">
                     <div class="card-title"> 
@@ -58,14 +59,14 @@
 
                 var module = Model.Modules.FirstOrDefault<Module>(m => m.Week == week);
 
-                string titleColor = "bg-light";
-                if (module is not null) titleColor = module.isReady ? "bg-info" : "bg-warning";
+                string headerColor = "#19b2e0";
+                if (module is not null) headerColor = module.isReady ? "#19b2e0" : "#FFFF00";
                 @*if (module is not null) @(module.Title)<br>*@
 
                 <div class="col col-md-4"  style="margin:auto;">
                     <div class="card" >
-                        <div class="card-header ">
-                            <div class="card-title @titleColor">
+                        <div class="card-header" style="background-color: @headerColor">
+                            <div class="card-title">
                                 week @week : @d0.DayOfWeek @d0.ToShortDateString()
                                 @*(week == weeks ? "final exams" : "week " + week) *@
                             </div>
