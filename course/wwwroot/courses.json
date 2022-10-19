@@ -937,7 +937,8 @@
             {
               "module": 10,
               "title": "LINQ",
-              "week": 13
+              "week": 13,
+              "ready": true
             },
             {
               "module": 11,
@@ -1185,7 +1186,8 @@
             {
               "module": 10,
               "title": "LINQ",
-              "week": 13
+              "week": 13,
+              "ready": true
             },
             {
               "module": 11,
