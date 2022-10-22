@@ -1848,7 +1848,8 @@
               "module": 11,
               "title": "data validation",
               "read": "Ch11",
-              "week": 11
+              "week": 11,
+              "ready": true
             },
             {
               "module": 12,
