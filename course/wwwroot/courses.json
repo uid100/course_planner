@@ -1855,7 +1855,8 @@
               "module": 12,
               "title": "Entity Framework",
               "read": "Ch12",
-              "week": 12
+              "week": 12,
+              "ready": true
             },
             {
               "module": 13,

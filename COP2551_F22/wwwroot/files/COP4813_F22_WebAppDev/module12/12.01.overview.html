@@ -1,0 +1,92 @@
+<div id="overview12">
+
+    <div id="navigation">
+        <a class="btn btn-primary icon-home-light"
+           href="https://courses.sfcollege.edu/courses/452018">
+            Home
+        </a>
+    </div> <!-- navigation -->
+
+    <div id="header">
+        <p>&nbsp;</p>
+
+        <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid red;"
+             id="44071302" alt="textbook cover" width="128"
+             src="https://courses.sfcollege.edu/courses/452018/files/44071302/preview" width"300" />
+        <p style="text-align: center;">
+            <strong>
+                Chapter 12 Entity Framework Core
+            </strong>
+        </p>
+        <p>&nbsp;</p>
+        <h2 class="alert alert-info">Module 12</h2>
+    </div> <!-- #header -->
+
+    <div id="entity-framework">
+        <h3 class="alert alert-info">Entity Framework Core</h3>
+
+        <p>
+            Entity Framework is a powerful suite of tools that handle much of 
+            the heavy lifting required for the interface between your .NET app
+            and a database.
+        </p>
+        <p>
+            A couple of important takeaways to remember.
+            <ul>
+                <li>
+                    <em>Migrations</em> - read through your compiled code and build the scripts
+                    to create or update your database schema to ensure they match your code 
+                    <em>exactly!</em>
+                </li>
+                <li>
+                    <em>Scaffolding</em> - analyzes an existing database schema and generates
+                    the code to describe data models to match the table entities <em>exactly!</em>
+                </li>
+            </ul>
+        </p>
+        <p>
+            EF does those things and more. You do not have to use Entity Framework to migrate
+            your class models to db tables. You do not have to use EF to generate code to match
+            your existing database schema. You can create your own tables and write your own 
+            code and still use Entity Framework to link them together. Just make sure they match
+            <em>exactly!</em>
+        </p>
+        <p>
+            You can even use both! You can create your tables, scaffold your data model code
+            (auto-generated code), and then modify the code to your liking and then migrate 
+            the changes back to the database and go back and forth until both match what you
+            want them to be.
+        </p>
+
+        <h4>Code First</h4>
+        <p>
+            When you hear the term <em>"code first"</em> it means that the class models are 
+            written in code (C#) and then the tool is called to create or modify the db schema
+            using <em>migrations</em>.
+        </p>
+
+        <h4>Database First</h4>
+        <p>
+            <em>Database first</em> means that you are writing code to match an existing database
+            schema. Often, you will not be able to modify existing database table designs because
+            other apps and other users are already using them and storing data in them. This is
+            common. You can write your code to match the tables, or you can let EF <em>scaffold</em>
+            the code and you can build around it.
+        </p>
+
+        
+        <p>&nbsp;</p>
+    </div> <!-- #entity-framework -->
+
+    <div id="todo-list">
+        <h3 class="alert alert-info"> TODO:</h3>
+
+        <ol style="margin-left:10%;">
+            <li><strong>Read and Review</strong> Chapter 12</li>
+            <li><strong>Review</strong> Chapter 12 Powerpoint and notes</li>
+            <li><strong>Practice</strong> stepping through the code samples</li>
+            <li><strong>Complete</strong> the Trips Log (revisited) application</li>
+        </ol>
+
+    </div> <!-- #todo-list -->
+</div> <!-- #overview12 -->
