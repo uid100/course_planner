@@ -595,6 +595,17 @@
             "Finals Week ends": "11-Dec-2022",
             "Grades due": "12-Dec-2022"
           }
+        },
+        "Spring 2023": {
+          "holidays": {
+            "Spring Break Begins": "13-Mar-2023"
+          },
+          "important dates": {
+            "First day of Sprint Term": "9-Jan-2023",
+            "Spring classes end": "29-Apr-2023",
+            "Finals Week ends": "6-May-2023",
+            "Grades due": "8-May-2023"
+          }
         }
       },
       "courses": {
@@ -1335,6 +1346,11 @@
             "Presentations": ""
           }
         },
+        "COP2551 (2023 Spring) - Visual C#": {
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023"
+        },
         "COP2552 (2022 Summer) - Java": {
           "status": "active",
           "catalog ID": "COP-2552",
@@ -1754,6 +1770,11 @@
             "Class Presentations": ""
           }
         },
+        "COP2552 (2023 Spring) - Java": {
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023"
+        },
         "COP4813 (2022 Fall) - Web Appl": {
           "status": "draft",
           "catalog ID": "COP-2552",
@@ -1862,7 +1883,8 @@
               "module": 13,
               "title": "e-commerce website",
               "read": "Ch13",
-              "week": 14
+              "week": 14,
+              "ready": true
             },
             {
               "module": 14,
@@ -2025,7 +2047,568 @@
             ],
             "Quizzes": []
           }
+        },
+        "CIS4083 (2023 Spring) Introduction to Cloud": {
+          "status": "draft",
+          "catalog ID": "CIS-4083",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 0,
+          "long name": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "course code": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "time zone": "EST5",
+          "SIS ID": "CIS4083_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "textbook": "",
+          "topics": [
+            "What is the cloud?",
+            "Cloud Services (SaaS, PaaS, IaaS, XaaS)",
+            "Scalability",
+            "Cloud Providers (AWS, Azure, GCP)",
+            "App Services",
+            "Virtual Machines",
+            "Storage",
+            "Databases",
+            "Virtual Networks",
+            "Authentication"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "What is Cloud Computing?",
+              "read": "",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "single page web apps",
+              "read": "Ch2 – How to develop a single-page MVC web app",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "responsive design",
+              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "data-driven MVC",
+              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Manually test and debug",
+              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Working with controllers and routing",
+              "read": "Ch6 – working with controllers and routing",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Working with Razor views",
+              "read": "Ch7 – Working with Razor views",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "xfr data from controller",
+              "read": "",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "",
+              "read": "",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "",
+              "read": "Ch10",
+              "week": 10,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "",
+              "read": "Ch11",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "",
+              "read": "Ch12",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "",
+              "read": "Ch13",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 14,
+              "title": "wrap up",
+              "week": 15
+            },
+            {
+              "module": 15,
+              "title": "final",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 20,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Web applications: Brainstorming",
+                "points": 0,
+                "days": 3,
+                "module": 3
+              },
+              {
+                "title": "Web applications: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 3
+              },
+              {
+                "title": "Github Hosting: README.md",
+                "points": 0,
+                "days": 3,
+                "module": 6
+              },
+              {
+                "title": "Github: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Github Code: commit",
+                "points": 0,
+                "days": 3,
+                "module": 8
+              },
+              {
+                "title": "Github Code: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Class Model: commit",
+                "points": 0,
+                "days": 3,
+                "module": 11
+              },
+              {
+                "title": "Class Model: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Screenshots",
+                "points": 0,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Feedback",
+                "points": 20,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Ex1-1 - Guitar Shop",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Ex2-1 - Price Quotation App",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "Ex4-1 - Contact Manager App",
+                "points": 100,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "title": "Ex6-1 - FAQ App",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Ex8-1 - TripLog App",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Ex10-1 - TicTacToe App",
+                "points": 100,
+                "days": 6,
+                "module": 10
+              },
+              {
+                "title": "Ex12-1 - TripLog_v2 App",
+                "points": 100,
+                "days": 6,
+                "module": 12
+              },
+              {
+                "title": "Ex13-1 - Quarterly Sales App",
+                "points": 100,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 1-4)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 5-8)",
+                "module": 9,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-13)",
+                "module": 14,
+                "days": 8,
+                "points": 100
+              }
+
+
+
+            ],
+            "Quizzes": []
+          }
+
+        },
+        "CIS4891 (2023 Spring) Senior Project": {
+          "status": "draft",
+          "catalog ID": "CIS-4083",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 0,
+          "long name": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "course code": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "time zone": "EST5",
+          "SIS ID": "CIS4083_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "textbook": "",
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to web appl",
+              "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "single page web apps",
+              "read": "Ch2 – How to develop a single-page MVC web app",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "responsive design",
+              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "data-driven MVC",
+              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Manually test and debug",
+              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Working with controllers and routing",
+              "read": "Ch6 – working with controllers and routing",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Working with Razor views",
+              "read": "Ch7 – Working with Razor views",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "xfr data from controller",
+              "read": "",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "",
+              "read": "",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "",
+              "read": "Ch10",
+              "week": 10,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "",
+              "read": "Ch11",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "",
+              "read": "Ch12",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "",
+              "read": "Ch13",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 14,
+              "title": "wrap up",
+              "week": 15
+            },
+            {
+              "module": 15,
+              "title": "final",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 20,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Web applications: Brainstorming",
+                "points": 0,
+                "days": 3,
+                "module": 3
+              },
+              {
+                "title": "Web applications: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 3
+              },
+              {
+                "title": "Github Hosting: README.md",
+                "points": 0,
+                "days": 3,
+                "module": 6
+              },
+              {
+                "title": "Github: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Github Code: commit",
+                "points": 0,
+                "days": 3,
+                "module": 8
+              },
+              {
+                "title": "Github Code: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Class Model: commit",
+                "points": 0,
+                "days": 3,
+                "module": 11
+              },
+              {
+                "title": "Class Model: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Screenshots",
+                "points": 0,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Feedback",
+                "points": 20,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Ex1-1 - Guitar Shop",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Ex2-1 - Price Quotation App",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "Ex4-1 - Contact Manager App",
+                "points": 100,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "title": "Ex6-1 - FAQ App",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Ex8-1 - TripLog App",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Ex10-1 - TicTacToe App",
+                "points": 100,
+                "days": 6,
+                "module": 10
+              },
+              {
+                "title": "Ex12-1 - TripLog_v2 App",
+                "points": 100,
+                "days": 6,
+                "module": 12
+              },
+              {
+                "title": "Ex13-1 - Quarterly Sales App",
+                "points": 100,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 1-4)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 5-8)",
+                "module": 9,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-13)",
+                "module": 14,
+                "days": 8,
+                "points": 100
+              }
+
+
+
+            ],
+            "Quizzes": []
+          }
+
         }
+
       }
     },
     "Palomar College": {
