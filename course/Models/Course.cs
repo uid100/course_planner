@@ -12,5 +12,6 @@
         public string? Status { get; set; }
         public List<Module>? Modules { get; set; }
         public int? CanvasID { get; set; }
+        public string? CanvasURL { get; set; }
     }
 }

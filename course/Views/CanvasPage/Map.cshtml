@@ -1,0 +1,53 @@
+﻿@model Course
+
+@{
+    Layout = null;
+}
+
+<div id="Map">
+    <div id="navigation">
+        <a class="btn btn-primary icon-home-light"
+               href="https://courses.sfcollege.edu/courses/452018">
+                Home
+        </a>
+        <p style="border-top: 4px solid blue">&nbsp;</p>
+    </div> <!-- #navigation -->
+
+    <div id="Main-Shadow" 
+        style="
+            margin: 50px 15% 50px 15%;
+            background-color: #0404B4;" >
+        <div id="Home" 
+            style="
+                position: relative; 
+                top-20px; 
+                left: -20px;
+                padding: 20px;
+                background-color: #58D3F7;
+                border: 2px solid #0404B4;" >
+            @{
+                string homeURL = "https://" + Model.CanvasURL + "/courses/" + Model.CanvasID;
+            }
+            <a class="btn btn-primary" title="Home" href=@homeURL>Home Page</a>            
+        </div> <!-- #Home -->
+    </div> <!-- #Main-Shadow -->
+
+    <div id="Instructor-Shadow" style="
+            margin: 50px 15% 50px 15%;
+            background-color: #0404B4;" >
+        <div id="Modules" 
+            style="
+                position: relative; 
+                top-20px; 
+                left: -20px;
+                padding: 20px;
+                background-color: #58D3F7;
+                border: 2px solid #0404B4;" >
+            @{
+                string instrctorURL = "https://" + Model.CanvasURL + "/courses/" + Model.CanvasID;
+            }
+            <a class="btn btn-primary" title="Home" href=@instrctorURL>Instructor Page</a>            
+        </div> <!-- #Instructor -->
+    </div> <!-- #Instructor-Shadow -->
+
+</div> <!-- #Map -->

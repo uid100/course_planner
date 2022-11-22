@@ -51,6 +51,7 @@ namespace course.Controllers
             {
                 course.CatalogID = (string)c["catalog ID"];
                 course.CanvasID = (int)c["canvas course ID"];
+                course.CanvasURL = (string)c["canvas URL"];
                 course.Name = course.Name;
                 course.LongName = (string)c["long name"];
                 course.Term = (string)c["term"];
