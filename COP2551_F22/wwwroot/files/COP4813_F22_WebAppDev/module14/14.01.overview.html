@@ -13,79 +13,130 @@
         <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid red;"
              id="44071302" alt="textbook cover" width="128"
              src="https://courses.sfcollege.edu/courses/452018/files/44071302/preview" width"300" />
-        <p style="text-align: center;">
-            <strong>
-                Chapter 13 E-Commerce Web App
-            </strong>
-        </p>
         <p>&nbsp;</p>
         <h2 class="alert alert-info">Module 13</h2>
     </div> <!-- #header -->
 
-    <div id="Exam">
-        <h3 class="alert alert-info">Exam 3</h3>
+    <div>
+        <h3 class="alert alert-info">Wrapping it up</h3>
+        <p>
+            Throughout this course we have written some web applications. The MVC pattern is an 
+            important one. As with anything, the more you use it, the easier it gets and the more 
+            you can do with it.
+        </p>
+        <p>
+            There is one more piece that we did not get to. Deploying your application to the internet
+            so that it can be used by other systems and users.
+        </p>
+        <p>
+            You won&quot;t have to hand anything in for this module, but it is a short demonstration
+            and I think it is worth doing. Let me know your thoughts.
+        </p>
+    </div>
+    <div id="Deploy">
+        <h3 class="alert alert-info">Deploying your web application</h3>
 
         <p>
-            Exam 3 covers Chapters 9 - 13.
+            Deploy to Azure - A Quick Demo
+        </p>
+        <p>
+            I like to write code. Especially, I like MVC apps hosted in ASP.NET. Leveraging built-in templates,
+            it is easy to get something up and running and ready to customize, very quickly. The specific use-case
+            and the data returned is not the focus for this exercise. Any tested web app should work.
+        </p>
+        <p>
+            Once your app is working and producing the results that you want, how can you make it available to
+            anyone for use across the internet?
+        </p>
+        <p>
+            There are several hosting service providers available. This example will require an Microsoft Azure
+            account, but if you are careful and follow the instructions closely and carefully, there are many
+            services that are available at no cost.
+        </p>
+        <p>
+            The following was in response to a student request. She wanted her application to auto-populate city
+            and state data for a user using an API ZIP code lookup. The API we chose for this does not require an
+            API key for testing and casual use. It does have limits on how many results it will return, but for
+            most usage, it is exactly what we needed for this testing.
         </p>
         <p>&nbsp;</p>
-    </div> <!-- #Exam -->
+    </div> <!-- #Deploy -->
 
-    <div id="my-web-app">
-        <h3 class="alert alert-info">My Web App</h3>
-
-        <p>
-            Building web apps from the MVC template is something that I really
-            enjoy. As you become more familiar with the tools, you can leverage 
-            them to create unique and useful applications.
-        </p>
-        <p>
-            This week is about collaboration. You will be working through the 
-            next steps of your code and collaborating with others to create 
-            something useful.
-        </p>
-        <p>
-            See the Discussion page for this week for more details.
-        </p>
-        <p>&nbsp;</p>
-    </div> <!-- #my-web-app -->
-
-    <div id="e-commerce">
-        <h3 class="alert alert-info">E-Commerce Web App</h3>
+    <div id="Instructions">
+        <h3 class="alert alert-info">Instructions</h3>
 
         <p>
-            The Bookstore website presented in this chapter is a realistic
-            website that uses the skills presented so far in this book.
-            This app encompasses all of the material in the earlier chapters.
+            For this exercise, you can use any web app that you have built, or you can download my sample code
+            and use that.
         </p>
         <p>
-            Over the next two weeks, you will work through the Bookstore web
-            application in Chapter 13 and a related exercise. I think that 
-            time spent in this chapter will be time well spent. 
+            Open Visual Studio and choose <strong>Clone a repository</strong> (or open your own.)
         </p>
         <p>
-            The complete code is available for download from the publisher.
-            I suggest that you take a pass at it on your own before using 
-            the code as reference, then practice with Exercise 13-1 using the
-            ex_starts code. This will help with the programming assignment
-            for this module. 
+            Enter <em>https://github.com/uid100/locationlookup.git</em> for the location.
         </p>
-        <p>&nbsp;</p>
-    </div> <!-- #e-commerce -->
+        <p>
+            Visual Studio will create a local clone of the repository and you will see the files added in
+            the solution explorer. If the solution does not open automatically, double-click the solution 
+            file (locationlookup.sln) from the file list and build and run it locally to see that it works.
+        </p>
+        <p>
+            Assuming the project builds and runs correctly, right-click the project and from the pop-up
+            context menu, choose <strong>Publish...</strong>
+        </p>
+        <p>
+            Choose Azure to publish to the Microsoft cloud and Next.
+        </p>
+        <p>
+            Select Azure App Service (Windows). (Next.) This is a managed platform which seamlessly hosts ASP.NET
+            applications.
+        </p>
+        <p>
+            Once you are signed in, you can select between creating a new app service or selecting an existing 
+            as the target. From here you will also see a list of available subscriptions for billing.
+        </p>
+        <p>
+            Choose an available subscription and click the plus (+) sign to create a new app service.
+        </p>
+        <p>
+            Give your application a name. By default, Azure will assign the project name and a timestamp:<br />
+            locationlookup20221122153627   (project name + YYYY + MM + DD + HH + mm + ss)<br />
+            Sometimes the timestamp is helpful. The name will be part of the URL. If I enter "ziplookup" then 
+            my application URL will be "https://ziplookup.azurewebsites.net." This needs to be a unique
+            name, so Azure will check that it is.
+        </p>
+        <p>
+            I recommend keeping projects in shared resource groups, and by habit, I always add "_rg" to 
+            resource group names. So in this case, I chose "New" and created the resource group.
+        </p>
+        <p>
+            Once you have an app name, an available subscription, and a resource group, perhaps the most
+            important part of this is to scale the app correctly. Since this is a simple proof of concept
+            that I want to build and test and share with a few people, this is not going into large scale
+            production, from the drop down I can select the "Free" service level. This will be more than 
+            adequate for our purposes, and will not generate any unintended costs. <strong>Be careful,</strong>
+            the default service level will incur a monthly cost, so be sure that you do not skip this step.
+        </p>
+        <p>
+            Select Create and the app service will be created in Azure. Once this finishes, after a short
+            delay, there is still one more step. Click Finish and Visual Studio will creating the publishing
+            profile with the newly created app service.
+        </p>
+        <p>
+            Finally, click the Publish button. Visual Studio will build the package and publish it to the
+            new App Service and will open the new web app in your default browser.
+        </p>
+        <p>
+            Try opening your website on a mobile device to see how it looks there.
+        </p>
+        <p>
+            Now that your app service has been created, you can continue to develop and test your application 
+            (locally), and when you want to update it to the web, right-click the project name (in the solution
+            explorer) and choose Publish and the same publish profile will be used. So you can push the updates
+            to the web with just a couple of clicks and refresh the view on your mobile device to see the
+            changes.
+        </p>
 
-    <div id="todo-list">
-        <h3 class="alert alert-info"> TODO:</h3>
+    </div> <!-- #Instructions -->
 
-        <ol style="margin-left:10%;">
-            <li><strong>Read and Review</strong> Chapter 13</li>
-            <li><strong>Review</strong> Chapter 13 Powerpoint and notes</li>
-            <li><strong>Practice</strong> stepping through the Bookstore App code</li>
-            <li><strong>Practice</strong> implementing the changes from Ex 13-1</li>
-            <li><strong>Complete</strong> Exam 3</li>
-            <li><strong>Update</strong> your web application</li>
-            <li><strong>Participate</strong> in the peer discussion</li>
-            <li><strong>Complete</strong> the Quarterly Sales application</li>
-        </ol>
-
-    </div> <!-- #todo-list -->
 </div> <!-- #overview14 -->
