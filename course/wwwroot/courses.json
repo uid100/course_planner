@@ -1203,7 +1203,8 @@
             {
               "module": 11,
               "title": "wrap-up",
-              "week": 15
+              "week": 15,
+              "ready": true
             },
             {
               "module": 12,
