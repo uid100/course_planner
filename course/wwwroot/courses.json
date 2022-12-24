@@ -59,11 +59,14 @@
             ],
             "Memorial Day": "30-May-2022"
           },
-          "important dates": {}
+          "important dates": {
+          }
         },
         "Fall 2022": {
           "holidays": {},
           "important dates": {}
+        
+
         }
       },
       "courses": {
@@ -598,13 +601,26 @@
         },
         "Spring 2023": {
           "holidays": {
-            "Spring Break Begins": "13-Mar-2023"
+            "Martin Luther King, Jr.": "16-Jan-2023",
+            "Spring Break": [
+              "13-Mar-2023",
+              "14-Mar-2023",
+              "15-Mar-2023",
+              "16-Mar-2023",
+              "17-Mar-2023"
+            ]
           },
           "important dates": {
-            "First day of Sprint Term": "9-Jan-2023",
-            "Spring classes end": "29-Apr-2023",
-            "Finals Week ends": "6-May-2023",
-            "Grades due": "8-May-2023"
+            "classes begin": "9-Jan-2023",
+            "classes end": "29-Apr-2023",
+            "final exams": [
+              "1-May-2023",
+              "2-May-2023",
+              "3-May-2023",
+              "4-May-2023",
+              "5-May-2023"
+            ],
+            "grades due": "8-May-2023"
           }
         }
       },
@@ -1799,63 +1815,63 @@
             {
               "module": 1,
               "title": "intro to web appl",
-              "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
+              "read": "Ch1 ï¿½ An Introduction to web programming with ASP.NET Core MVC",
               "week": 1,
               "ready": true
             },
             {
               "module": 2,
               "title": "single page web apps",
-              "read": "Ch2 – How to develop a single-page MVC web app",
+              "read": "Ch2 ï¿½ How to develop a single-page MVC web app",
               "week": 2,
               "ready": true
             },
             {
               "module": 3,
               "title": "responsive design",
-              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "read": "Ch3 ï¿½ How to make a web app responsive with Bootstrap",
               "week": 3,
               "ready": true
             },
             {
               "module": 4,
               "title": "data-driven MVC",
-              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "read": "Ch4 ï¿½ How to develop a data-driven MVC web app",
               "week": 4,
               "ready": true
             },
             {
               "module": 5,
               "title": "Manually test and debug",
-              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "read": "Ch5 ï¿½ Manually test and debug an ASP.NET Core web app",
               "week": 5,
               "ready": true
             },
             {
               "module": 6,
               "title": "Working with controllers and routing",
-              "read": "Ch6 – working with controllers and routing",
+              "read": "Ch6 ï¿½ working with controllers and routing",
               "week": 6,
               "ready": true
             },
             {
               "module": 7,
               "title": "Working with Razor views",
-              "read": "Ch7 – Working with Razor views",
+              "read": "Ch7 ï¿½ Working with Razor views",
               "week": 7,
               "ready": true
             },
             {
               "module": 8,
               "title": "xfr data from controller",
-              "read": "Ch8 – xfr data between controller and view",
+              "read": "Ch8 ï¿½ xfr data between controller and view",
               "week": 8,
               "ready": true
             },
             {
               "module": 9,
               "title": "state & cookies",
-              "read": "Ch9 – session state and cookies",
+              "read": "Ch9 ï¿½ session state and cookies",
               "week": 9,
               "ready": true
             },
@@ -2062,10 +2078,25 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "Course Learning Outcomes": [
+            "Master the concepts and principles of cloud computing.",
+            "Explain the basic concepts of cloud computing.",
+            "Identify and distinguish cloud types.",
+            "Explain methods of managing cloud computing systems.",
+            "Identify standards, best practices, and policies of cloud computing management.",
+            "Describe cloud services; SaaS, PaaS, IaaS, IDaaS.",
+            "Perform a business impact analysis.",
+            "Identify advantages and disadvantages of cloud-based storage.",
+            "Explain best practices when collaborating in the clouds.",
+            "Demonstrate professional level skills in the areas of disaster recovery and business continuity and the cloud.",
+            "Explain service-oriented architectures and web services.",
+            "Master techniques of using Infrastructure-as-a-Service, (IaaS), Platform-as-a-Service (Paas) and Big Data systems.",
+            "Master the techniques of developing, deploying, and managing cloud applications major topics: Introduction background and history of cloud computing, cloud computing concepts, cloud computing models with virtualization background and history  of virtualization, virtual machines, virtual networks, virtual storage IaaS system architecture, IaaS programming, PaaS System Architecture, PaaS Programming, Big Data system architecture and Big Data programming."
+          ],
           "textbook": "",
           "topics": [
             "What is the cloud?",
-            "Cloud Services (SaaS, PaaS, IaaS, XaaS)",
+            "Cloud Services (SaaS, PaaS, IaaS, IDaaS, XaaS)",
             "Scalability",
             "Cloud Providers (AWS, Azure, GCP)",
             "App Services",
@@ -2077,62 +2108,65 @@
           ],
           "modules": [
             {
+              "module": -99,
+              "title": "Spring Recess",
+              "week": 10,
+              "ready": true
+            },
+            {
               "module": 0,
-              "title": "Getting Started",
+              "title": "Resources",
               "week": 0
             },
             {
               "module": 1,
-              "title": "What is Cloud Computing?",
-              "read": "",
+              "title": "What is the Cloud?",
               "week": 1,
-              "ready": false
+              "ready": true
             },
             {
               "module": 2,
-              "title": "single page web apps",
-              "read": "Ch2 – How to develop a single-page MVC web app",
+              "title": "What is Cloud Computing?",
               "week": 2,
-              "ready": false
+              "ready": true
             },
             {
               "module": 3,
-              "title": "responsive design",
-              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "title": "What is Virtualization",
               "week": 3,
               "ready": false
             },
             {
               "module": 4,
-              "title": "data-driven MVC",
-              "read": "Ch4 – How to develop a data-driven MVC web app",
-              "week": 4,
-              "ready": false
-            },
-            {
-              "module": 5,
-              "title": "Manually test and debug",
-              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "title": "",
+              "read": "",
               "week": 5,
               "ready": false
             },
             {
+              "module": 5,
+              "title": "",
+              "read": "",
+              "week": 7,
+              "ready": false
+            },
+            {
               "module": 6,
-              "title": "Working with controllers and routing",
-              "read": "Ch6 – working with controllers and routing",
+              "title": "",
+              "read": "",
               "week": 6,
               "ready": false
             },
             {
               "module": 7,
-              "title": "Working with Razor views",
-              "read": "Ch7 – Working with Razor views",
+              "title": "",
+              "read": "",
               "week": 7,
               "ready": false
             },
             {
               "module": 8,
-              "title": "xfr data from controller",
+              "title": "",
               "read": "",
               "week": 8,
               "ready": false
@@ -2148,21 +2182,21 @@
               "module": 10,
               "title": "",
               "read": "Ch10",
-              "week": 10,
+              "week": 11,
               "ready": false
             },
             {
               "module": 11,
               "title": "",
               "read": "Ch11",
-              "week": 11,
+              "week": 12,
               "ready": false
             },
             {
               "module": 12,
               "title": "",
               "read": "Ch12",
-              "week": 12,
+              "week": 13,
               "ready": false
             },
             {
@@ -2186,154 +2220,75 @@
           "assignments": {
             "Discussions": [
               {
-                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "title": "Tell us about you (Part 1)",
                 "points": 0,
                 "days": 3,
                 "module": 1
               },
               {
-                "title": "Ice Breaker - Getting to know you",
-                "points": 20,
+                "title": "Tell us about you",
+                "points": 75,
                 "days": 6,
                 "module": 1
               },
               {
-                "title": "Web applications: Brainstorming",
-                "points": 0,
-                "days": 3,
-                "module": 3
-              },
-              {
-                "title": "Web applications: Peer Review",
-                "points": 20,
+                "title": "leading CSPs",
+                "points": 50,
                 "days": 6,
-                "module": 3
-              },
-              {
-                "title": "Github Hosting: README.md",
-                "points": 0,
-                "days": 3,
-                "module": 6
-              },
-              {
-                "title": "Github: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 6
-              },
-              {
-                "title": "Github Code: commit",
-                "points": 0,
-                "days": 3,
-                "module": 8
-              },
-              {
-                "title": "Github Code: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 8
-              },
-              {
-                "title": "Class Model: commit",
-                "points": 0,
-                "days": 3,
-                "module": 11
-              },
-              {
-                "title": "Class Model: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 11
-              },
-              {
-                "title": "My App: Screenshots",
-                "points": 0,
-                "days": 6,
-                "module": 11
-              },
-              {
-                "title": "My App: Feedback",
-                "points": 20,
-                "days": 12,
-                "module": 13
+                "module": 2
               }
             ],
             "Projects": [
               {
-                "title": "Ex1-1 - Guitar Shop",
+                "title": "Az-VM",
                 "points": 100,
                 "days": 6,
-                "module": 1
+                "module": 3
               },
               {
-                "title": "Ex2-1 - Price Quotation App",
+                "title": "AWS-VM",
                 "points": 100,
-                "days": 6,
-                "module": 2
-              },
-              {
-                "title": "Ex4-1 - Contact Manager App",
-                "points": 100,
-                "days": 6,
+                "days": 13,
                 "module": 4
               },
               {
-                "title": "Ex6-1 - FAQ App",
+                "Title": "Az-MVC WebApp",
                 "points": 100,
                 "days": 6,
-                "module": 6
+                "module": 7
               },
               {
-                "title": "Ex8-1 - TripLog App",
+                "Title": "AWS Lambda",
                 "points": 100,
                 "days": 6,
                 "module": 8
               },
               {
-                "title": "Ex10-1 - TicTacToe App",
+                "Title": "Google Drive",
                 "points": 100,
                 "days": 6,
-                "module": 10
-              },
-              {
-                "title": "Ex12-1 - TripLog_v2 App",
-                "points": 100,
-                "days": 6,
-                "module": 12
-              },
-              {
-                "title": "Ex13-1 - Quarterly Sales App",
-                "points": 100,
-                "days": 12,
-                "module": 13
+                "module": 4
               }
             ],
             "Exams": [
               {
-                "title": "Exam 1 (Chapters 1-4)",
+                "title": "AWS-VM",
                 "module": 5,
                 "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 2 (Chapters 5-8)",
-                "module": 9,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 3 (Chapters 9-13)",
-                "module": 14,
-                "days": 8,
                 "points": 100
               }
 
 
-
             ],
-            "Quizzes": []
+            "Quizzes": [
+              {
+                "title": "syllabus acknowledgement",
+                "module": 1,
+                "days": 6,
+                "points": 25
+              }
+            ]
           }
-
         },
         "CIS4891 (2023 Spring) Senior Project": {
           "status": "draft",
@@ -2352,55 +2307,55 @@
           "modules": [
             {
               "module": 0,
-              "title": "Getting Started",
+              "title": "Additional Resources",
               "week": 0
             },
             {
               "module": 1,
               "title": "intro to web appl",
-              "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
+              "read": "Ch1 ï¿½ An Introduction to web programming with ASP.NET Core MVC",
               "week": 1,
               "ready": false
             },
             {
               "module": 2,
               "title": "single page web apps",
-              "read": "Ch2 – How to develop a single-page MVC web app",
+              "read": "Ch2 ï¿½ How to develop a single-page MVC web app",
               "week": 2,
               "ready": false
             },
             {
               "module": 3,
               "title": "responsive design",
-              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "read": "Ch3 ï¿½ How to make a web app responsive with Bootstrap",
               "week": 3,
               "ready": false
             },
             {
               "module": 4,
               "title": "data-driven MVC",
-              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "read": "Ch4 ï¿½ How to develop a data-driven MVC web app",
               "week": 4,
               "ready": false
             },
             {
               "module": 5,
               "title": "Manually test and debug",
-              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
+              "read": "Ch5 ï¿½ Manually test and debug an ASP.NET Core web app",
               "week": 5,
               "ready": false
             },
             {
               "module": 6,
               "title": "Working with controllers and routing",
-              "read": "Ch6 – working with controllers and routing",
+              "read": "Ch6 ï¿½ working with controllers and routing",
               "week": 6,
               "ready": false
             },
             {
               "module": 7,
               "title": "Working with Razor views",
-              "read": "Ch7 – Working with Razor views",
+              "read": "Ch7 ï¿½ Working with Razor views",
               "week": 7,
               "ready": false
             },
@@ -2601,15 +2556,11 @@
                 "days": 8,
                 "points": 100
               }
-
-
-
             ],
             "Quizzes": []
           }
 
         }
-
       }
     },
     "Palomar College": {
