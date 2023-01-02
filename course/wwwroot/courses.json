@@ -65,8 +65,29 @@
         "Fall 2022": {
           "holidays": {},
           "important dates": {}
-        
-
+        },
+        "Spring 2023": {
+          "holidays": {
+            "Spring Break": [
+              "27-Mar-2023",
+              "28-Mar-2023",
+              "29-Mar-2023",
+              "30-Mar-2023",
+              "31-Mar-2023"
+            ],
+            "Memorial Day": "29-May-2023"
+          },
+          "important dates": {
+            "classes start": "30-Jan-2023",
+            "classes end": "",
+            "finals": [
+              "30-May-2023",
+              "31-May-2023",
+              "1-Jun-2023",
+              "2-Jun-2023",
+              "3-Jun-2023"
+            ]
+          }
         }
       },
       "courses": {
@@ -397,6 +418,291 @@
               "title": "Finals Week",
               "week": 17,
               "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Lab1",
+                "module": 1,
+                "days": 6,
+                "tasks": [
+                  "lab folder structure",
+                  "pseudocode.txt",
+                  "calculator.py",
+                  "KmToMiles.py",
+                  "MilesToKm.py"
+                ],
+                "points": 10
+              },
+              {
+                "title": "Lab2",
+                "module": 2,
+                "days": 6
+              },
+              {
+                "title": "Lab3",
+                "module": 3,
+                "days": 6
+              },
+              {
+                "title": "Lab4",
+                "module": 4,
+                "days": 6
+              },
+              {
+                "title": "Lab5",
+                "module": 5,
+                "days": 13
+              },
+              {
+                "title": "Lab6",
+                "module": 6,
+                "days": 13
+              },
+              {
+                "title": "Lab7",
+                "module": 7,
+                "days": 13
+              },
+              {
+                "title": "Lab8",
+                "module": 8,
+                "days": 13
+              },
+              {
+                "title": "Lab9",
+                "module": 9,
+                "days": 6
+              },
+              {
+                "title": "Lab10",
+                "module": 10,
+                "days": 6
+              },
+              {
+                "title": "Lab11",
+                "module": 11,
+                "days": 6
+              },
+              {
+                "title": "Lab12",
+                "module": 12,
+                "days": 6
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "Chapter 1 Quiz",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 2 Quiz",
+                "module": 2,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 3 Quiz",
+                "module": 3,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 4 Quiz",
+                "module": 4,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 5 Quiz",
+                "module": 5,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 6 Quiz",
+                "module": 6,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 7 Quiz",
+                "module": 7,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 8 Quiz",
+                "module": 8,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 9 Quiz",
+                "module": 9,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 10 Quiz",
+                "module": 10,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 11 Quiz",
+                "module": 11,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 12 Quiz",
+                "module": 12,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Mid-term Exam",
+                "module": 6,
+                "days": 15,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 13,
+                "days": 3,
+                "points": 100
+              }
+            ]
+          }
+        },
+        "CS-119 (2023 Spring) - Python": {
+          "status": "draft",
+          "catalog ID": "CS119",
+          "canvas URL": "https://gcccd.instructure.com",
+          "canvas course ID": 48300,
+          "name": "Program Design & Development",
+          "long name": "2022FA-CS-119-0799 - Program Design & Development",
+          "course code": "2022FA-CS-119-0799",
+          "time zone": "PST8",
+          "SIS ID": "2022FA-0799",
+          "subaccount": "Computer Science",
+          "term": "Fall 2022",
+          "start": "30-Jan-2023",
+          "end": "2-Jun-2023",
+          "textbook": "Programming Logic and Design",
+          "c-id": {
+            "Discipline": "Computer Science",
+            "C-ID Number": "112",
+            "Title": "Introduction to Programming Concepts and Methodologies"
+          },
+          "objectives": [
+            "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools",
+            "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
+            "Test and debug applications using debugging tools such as trace execution"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "(Chapter 1) An Overview of Computer Programming",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "(Chapter 2) Applications and Data",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "(Chapter 3) Making Decisions",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "(Chapter 4) Looping",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "(Chapter 5) Arrays (2 weeks)",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "(Chapter 6) Using Methods (2 weeks)",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+              "week": 10,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "(Chapter 8) More Object Concepts (2 weeks)",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "(Chapter 10) Exception Handling",
+              "week": 15,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "(Chapter 11) System Modeling with UML",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+              "week": 17,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "Finals Week",
+              "week": 18,
+              "ready": false
             }
           ],
           "assignments": {
@@ -1446,30 +1752,30 @@
             {
               "module": 99,
               "title": "Spring Break",
-              "week": 0
+              "week": 10
             },
             {
               "module": 8,
               "title": "Inherit.., Polym.., and Interfaces",
-              "week": 10,
+              "week": 11,
               "ready": false
             },
             {
               "module": 9,
               "title": "Databases",
-              "week": 11,
+              "week": 12,
               "ready": false
             },
             {
               "module": 10,
               "title": "LINQ",
-              "week": 13,
+              "week": 14,
               "ready": false
             },
             {
               "module": 11,
               "title": "wrap-up",
-              "week": 15,
+              "week": 16,
               "ready": false
             },
             {
@@ -2122,27 +2428,33 @@
               "ready": false
             },
             {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10,
+              "ready": true
+            },
+            {
               "module": 10,
               "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
-              "week": 10,
+              "week": 11,
               "ready": false
             },
             {
               "module": 11,
               "title": "Chapter 13: Recursion",
-              "week": 12,
+              "week": 13,
               "ready": false
             },
             {
               "module": 12,
               "title": "Chapter 15: Databases",
-              "week": 13,
+              "week": 14,
               "ready": false
             },
             {
               "module": 13,
               "title": "Wrap-up and Final Exams",
-              "week": 15,
+              "week": 16,
               "ready": false
             },
             {
