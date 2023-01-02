@@ -1405,43 +1405,43 @@
               "module": 1,
               "title": "intro to Visual C# & Processing Data",
               "week": 1,
-              "ready": true
+              "ready": false
             },
             {
               "module": 2,
               "title": "Making Decisions",
               "week": 3,
-              "ready": true
+              "ready": false
             },
             {
               "module": 3,
               "title": "Loops, Files and Random Numbers",
               "week": 4,
-              "ready": true
+              "ready": false
             },
             {
               "module": 4,
               "title": "Modular Code",
               "week": 5,
-              "ready": true
+              "ready": false
             },
             {
               "module": 5,
               "title": "Text Processing",
               "week": 6,
-              "ready": true
+              "ready": false
             },
             {
               "module": 6,
               "title": "Structs, Enums, and Dict",
               "week": 7,
-              "ready": true
+              "ready": false
             },
             {
               "module": 7,
               "title": "Introduction to Classes",
               "week": 8,
-              "ready": true
+              "ready": false
             },
             {
               "module": 99,
@@ -1452,25 +1452,25 @@
               "module": 8,
               "title": "Inherit.., Polym.., and Interfaces",
               "week": 10,
-              "ready": true
+              "ready": false
             },
             {
               "module": 9,
               "title": "Databases",
               "week": 11,
-              "ready": true
+              "ready": false
             },
             {
               "module": 10,
               "title": "LINQ",
               "week": 13,
-              "ready": true
+              "ready": false
             },
             {
               "module": 11,
               "title": "wrap-up",
               "week": 15,
-              "ready": true
+              "ready": false
             },
             {
               "module": 12,
