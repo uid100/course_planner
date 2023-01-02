@@ -1114,7 +1114,7 @@
           }
         },
         "COP2551 (2022 Fall) - Visual C# (TAC)": {
-          "status": "draft",
+          "status": "complete",
           "catalog ID": "COP-2551",
           "canvas URL": "https://courses.sfcollege.edu",
           "canvas course ID": 453172,
@@ -1364,9 +1364,254 @@
           }
         },
         "COP2551 (2023 Spring) - Visual C#": {
+          "status": "draft",
+          "catalog ID": "COP-2551",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 456694,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "course code": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "time zone": "EST5",
+          "SIS ID": "COP2551_0M1_W23",
+          "subaccount": "Santa Fe College",
           "term": "Spring 2023",
           "start": "9-Jan-2023",
-          "end": "6-May-2023"
+          "end": "6-May-2023",
+          "textbook": {
+            "title": "Starting Out with Visual C#, 5ed",
+            "author": "Gaddis",
+            "ISBN": "978-0-13-518351-9"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": true
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 0
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
         },
         "COP2552 (2022 Summer) - Java": {
           "status": "active",
@@ -1617,85 +1862,85 @@
               "module": 1,
               "title": "Chapter 2: Java Fundamentals",
               "week": 1,
-              "ready": true
+              "ready": false
             },
             {
               "module": 2,
               "title": "Chapter 3: A First Look at Classes and Objects",
               "week": 2,
-              "ready": true
+              "ready": false
             },
             {
               "module": 3,
               "title": "Chapter 4: Decision Structures",
               "week": 3,
-              "ready": true
+              "ready": false
             },
             {
               "module": 4,
               "title": "Chapter 5: Loops and Files",
               "week": 4,
-              "ready": true
+              "ready": false
             },
             {
               "module": 5,
               "title": "Chapter 6: A Second Look at Classes",
               "week": 5,
-              "ready": true
+              "ready": false
             },
             {
               "module": 6,
               "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
               "week": 6,
-              "ready": true
+              "ready": false
             },
             {
               "module": 7,
               "title": "Chapter 9: Inheritance",
               "week": 7,
-              "ready": true
+              "ready": false
             },
             {
               "module": 8,
               "title": "Chapter 10: Exceptions and Advanced File I/O",
               "week": 8,
-              "ready": true
+              "ready": false
             },
             {
               "module": 9,
               "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
               "week": 9,
-              "ready": true
+              "ready": false
             },
             {
               "module": 10,
               "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
               "week": 10,
-              "ready": true
+              "ready": false
             },
             {
               "module": 11,
               "title": "Chapter 13: Recursion",
               "week": 12,
-              "ready": true
+              "ready": false
             },
             {
               "module": 12,
               "title": "Chapter 15: Databases",
               "week": 13,
-              "ready": true
+              "ready": false
             },
             {
               "module": 13,
               "title": "Wrap-up and Final Exams",
               "week": 15,
-              "ready": true
+              "ready": false
             },
             {
               "module": 14,
               "title": "Finals Week",
               "week": 16,
-              "ready": true
+              "ready": false
             }
           ],
           "assignments": {
@@ -1788,9 +2033,213 @@
           }
         },
         "COP2552 (2023 Spring) - Java": {
+          "status": "published",
+          "catalog ID": "COP-2552",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 452308,
+          "long name": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "course code": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "time zone": "EST5",
+          "SIS ID": "COP2552_0M1_W23",
+          "subaccount": "Santa Fe College",
           "term": "Spring 2023",
           "start": "9-Jan-2023",
-          "end": "6-May-2023"
+          "end": "6-May-2023",
+          "textbook": "Java Early Objects, Gaddis",
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand data types, variable scope, and file access",
+            "Recognize the properties and behaviors of classes and objects",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and arraylists to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Comprehend and use wrapper classes",
+            "Know proper use of exception handling",
+            "Understand and use JavaFX to create GUI-based applications",
+            "Utilize a relational database within a Java application"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Chapter 2: Java Fundamentals",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Chapter 3: A First Look at Classes and Objects",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "Chapter 4: Decision Structures",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "Chapter 5: Loops and Files",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Chapter 6: A Second Look at Classes",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Chapter 9: Inheritance",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "Chapter 10: Exceptions and Advanced File I/O",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+              "week": 10,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "Chapter 13: Recursion",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "Chapter 15: Databases",
+              "week": 13,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "Wrap-up and Final Exams",
+              "week": 15,
+              "ready": false
+            },
+            {
+              "module": 14,
+              "title": "Finals Week",
+              "week": 16,
+              "ready": false
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 (Price Adjustment)",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 2 (Patient Visit Records)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 3 (Exercise Tracker)",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4 (Storm Data Analysis)",
+                "module": 10,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5 (Movie Catalog)",
+                "module": 11,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6 (Password Check)",
+                "module": 13,
+                "days": 4,
+                "points": 100
+              }
+            ],
+            "Quizzes": {},
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 2-5)",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 6-7)",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-10)",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4 (Chapters 11,12&15)",
+                "module": 12,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Final (Comprehensive)",
+                "module": 13,
+                "days": 7,
+                "points": 100
+              }
+            ],
+            "Class Presentations": ""
+          }
         },
         "COP4813 (2022 Fall) - Web Appl": {
           "status": "draft",
