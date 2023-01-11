@@ -1,0 +1,377 @@
+﻿<!-- capstone course id: 456310 -->
+
+<div id="rest-apis" style="padding:20px; background-color:bisque;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a class="btn btn-primary icon-home" style="background-color:navy; color:white;"
+           href="https://courses.sfcollege.edu/courses/456310">
+            Home
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="header">
+        <h2 class="alert">REST API</h2>
+        <div id="project-definition" class="ic-flash-info">
+            <b>REST</b> - <b>Re</b>presentational <b>S</b>tate <b>T</b>ransfer <br />
+            <b>API</b> - <b>A</b>pplication <b>P</b>rogramming <b>I</b>nterface
+        </div> <!-- #project-definition -->
+        <p>
+            You have likely heard the term <strong>REST API</strong> and maybe
+            <strong>RESTful Services</strong>.
+        </p>
+        <p>
+            Let's discuss what they mean. There is a lot here, but it's mostly review.
+            Take the time to read through it and let me know if it makes sense, and
+            if you agree, or if you don't!
+        </p>
+        <p>&nbsp;</p>
+    </div>
+
+    <div id="discussion">
+        <div id="network-review">
+            <div id="transport">
+                <h2 class="alert">A Brief Overview of Network Communications</h2>
+                <h3>Transport Layer</h3>
+                <p>
+                    Without getting into too much detail, here is a brief refresher description
+                    of some common networking terms and concepts such as internet protocols and
+                    layers, and some simple definitions. These should be familiar. Perhaps this
+                    will fill in some gaps of understanding.
+                </p>
+                <div id="protocol">
+                    <h4>Protocol</h4>
+                    <p>
+                        <img style="float: right;" alt="c-3po" width="210"
+                             src="/courses/456310/files/46116074/preview" />
+                    </p>
+                    <p>
+                        A <strong>protocol</strong> is an agreed upon set of rules.
+                    </p>
+                    <p>
+                        When business partners meet in the office, they will commonly exchange
+                        greetings and shake hands. During a first meeting with a hiring manager
+                        for an interview, it is unlikely that you would begin with a punch in
+                        the arm or a warm embrace. These are protocols. Two systems must
+                        understand and agree on the same rules for communication to be successful.
+                    </p>
+                    <p>
+                        When <em>C-3PO</em> is introduced in the movie, <strong>STAR WARS</strong>,
+                        he indicates that he is <em>
+                            &quot;A protocol droid, versed in over 6
+                            million languages.&quot;
+                        </em> (Strangely non-specific for a protocol droid.)
+                        This means that he really had no skills except to be an interface between
+                        other systems.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Network communication, and especially across the internet, most commonly
+                        use one of two communications protocols (sets of rules); TCP/IP or UDP/IP.
+                        These are also called <strong>transport layer</strong> protocols.
+                    </p>
+                    <p>&nbsp;</p>
+                </div> <!-- #protocol -->
+
+                <div id="tcp">
+                    <h4>TCP/IP</h4>
+                    <p>
+                        <strong>Transmission Control Protocol (TCP)</strong> is the
+                        <strong>Internet Protocol (IP) </strong> which relies on a packet transfer
+                        using a communications handshake between sender and receiver to ensure that
+                        the message received is complete and correct.
+                    </p>
+                    <p>
+                        Imagine if I took a jigsaw puzzle that was all put together, turned it
+                        over and sequentially numbered all of the pieces before taking it apart
+                        and giving you all of the pieces. You could very quickly and easily reassemble
+                        those pieces and if any were missing, you cold tell me precisely which pieces
+                        were missing and I could resend you those pieces (packets.)
+                    </p>
+                    <p>
+                        <img style="display: block; margin-left: auto; margin-right: auto;"
+                             src="/courses/456310/files/46116280/preview"
+                             alt="numbered jigsaw puzzle pieces" width="300" />
+                    </p>
+                    <p>
+                        If I need to you an image, or an email, I want to make sure that what you
+                        receive is exactly what I sent and I need to take the time to make sure of it.
+                        This is sometimes called <em>Lossless</em>.
+                    </p>
+                    <p>&nbsp;</p>
+                </div> <!-- #tcp -->
+
+                <div id="udp">
+                    <h4>UDP/IP</h4>
+                    <p>
+                        In contrast, <strong>Uniform Datagram Protocol (UDP/IP)</strong> allows
+                        the sending process to send messages very quickly without error checking
+                        or halting transmission for re-sending dropped pieces.
+                    </p>
+                    <p>
+                        <img src="/courses/456310/files/46116410/preview"
+                             alt="pixelated image stream" style="float: right;" />
+                    </p>
+                    <p>
+                        Using the analogy above, maybe you received enough of the jigsaw puzzle
+                        to tell what the picture is and you are anxious to get the next.
+                    </p>
+                    <p>
+                        This <em>Lossy</em> transmission is commonly used for near real-time (NRT)
+                        communications such as gaming.
+                    </p>
+                    <p>
+                        You have almost certainly seen this before when a TV picture <em>pixelates</em>
+                        a movie or NFL football game which is being broadcast or <em>streamed</em>
+                        to your device. This is often used for point to multi-point transmission.
+                        Imagine if the broadcast had to stop for error corrections because someone
+                        in another town missed some packets and everyone had to wait for them to
+                        be retransmitted.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Missing a few seconds of a sports broadcast when the network slows is
+                        considered acceptable, but imagine if it was a contract email. Missing
+                        pieces could have big consequences. That is the fundamental difference
+                        between the two.
+                    </p>
+                </div> <!-- #udp -->
+                <p>&nbsp;</p>
+            </div> <!-- #transport -->
+
+            <hr />
+
+            <div id="application">
+                <h3>Application Layer</h3>
+                <p>
+                    Once we've agreed on how systems will send / receive data, there is another
+                    set of protocols, the <em>application layer</em>. If you think of the
+                    transport layer as the shared spoken language, the application layer is
+                    the game rules. If a baseball team took the field in their agreed upon
+                    positions, across the infield and outfield, and the opposing team lined up
+                    along the first baseline wearing football pads ready for a scrimmage, the
+                    result would be chaos.
+                </p>
+                <p>
+                    <img src="/courses/456310/files/46116598/preview"
+                         alt="futbol on hockey skates" width="480"
+                         style="display:block; margin:auto;" />
+                </p>
+                <p>
+                    Instead, there are well defined services, such as Telnet and ftp and http,
+                    and each has it's own set of <em>playing</em> rules and places to play, ports.
+                </p>
+                <p>&nbsp;</p>
+                <h4>HTTP</h4>
+                <p>
+                    To continue the sports analogy, baseball has a defined set of actions,
+                    pitch, catch, bat, run, and others, and each action has a protocol. A
+                    controlled and expected set of rules that make the game playable.
+                </p>
+                <p>
+                    The Hyper-text Transfer Protocol (HTTP) has its own set of <em>actions</em>
+                    GET, POST, PUT, and others. When one of these correctly formatted action
+                    requests is sent to the correct waiting service, a server listening at a
+                    known address and port, it will generate and answer with a correctly
+                    formatted response, such as a web page.
+                </p>
+                <p>
+                    You are well-acquainted with Hyper-text Markup Language (HTML) web pages,
+                    these are blocks of text containing a header and a body with paired
+                    <em>tags</em> which instruct the receiver how to render and view the
+                    object.
+                </p>
+                <p>
+                    But sometimes a <em>web request</em> returns a block of data that isn't
+                    intended to be formatted and viewed on a browser. Sometimes the response
+                    is a block of formatted data (often <em>json</em> or <em>xml</em>) instead.
+                </p>
+                <p>
+                    <img src="/courses/456310/files/46116710/preview"
+                         alt="simple json example" width="420"
+                         style="display:block; margin:auto;" />
+                </p>
+                <hr />
+                <h4>Stateless</h4>
+                <p>
+                    Before we leave our protocol discussion, there is one more point to discuss.
+                    HTTP is called a <em>stateless</em> protocol. That means that each request /
+                    response is separate from every other request / response. There is no inherent
+                    <em>session</em> knowledge.
+                </p>
+                <p>
+                    Imagine an attendant sitting in a ticket window at a movie theater. This
+                    is a <em>server</em>. If a customer approaches with an expected request, buying
+                    tickets, the server (attendant) completes the transaction with an expected
+                    response. If it is a busy theater, there may be more windows (ports) open.
+                    If a customer approaches and tries to order tacos, it is likely considered
+                    an incorrect request, and the server will not respond, or maybe return a
+                    <strong>500-level</strong> server error. If the customer tries to buy tickets
+                    for a movie that is not currently playing, the server might return a
+                    <strong>404</strong> <em>not found</em> error. It is not a server error, the
+                    request was correct, but the server does not have the correct data to deliver
+                    the response the user (client) had hoped.
+                </p>
+                <p>
+                    Now, once that transaction has successfully completed and the client has
+                    received their movie tickets, they can start another request. When the client
+                    makes this new request, maybe to buy 2 more tickets, the window attendant
+                    might remember them, but in the case of the HTTP server, every request is
+                    brand new. The next two tickets might be in the seats next to the last request
+                    but there is no guarantee. The server doesn't know who the client is unless
+                    that information is part of the request. The customer may as well have walked
+                    up to any one of 20 ticket windows. Every request is new.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    <em>Don't you know who I am?</em>
+                </p>
+                <p>
+                    <img src="/courses/456310/files/46116978/preview"
+                         alt="Ron Burgundy" width="320" style="display:block; margin:auto;" />
+                </p>
+                <p>&nbsp;</p>
+            </div> <!-- application -->
+        </div> <!-- #network-review -->
+
+        <div id="api">
+            <h2 class="alert">API</h2>
+            <p>
+                API stands for Application Programming Interface. This is a little vague and 
+                can mean different things in different contexts. Always though, it is an 
+                <em>interface</em> between two entities with an agreed set of rules.
+            </p>
+            <p>
+                For our purposes, it is an HTTP server which will return a dataset instead
+                of an HTML-formatted document. The requests may come from a browser, which
+                is usually looking for an HTML document that it can happily display as the
+                page author intended, but the request may come from any other client as well
+                including another web server, a web application, or even from a command line
+                (lookup <em>curl</em>).
+            </p>
+            <p>
+                <em>What does a web API do?</em>
+            </p>
+            <p>
+                Actually, not very much. (Remember C-3PO?) The purpose of a web API should be 
+                limited to delivering and receiving data without worrying about how it is 
+                going to be used.
+            </p>
+            <div class="ic-flash-info">
+                <p>From a command line, try this:<br />
+                         <pre>curl https://catfact.ninja/fact</pre>
+                </p>
+                <p>Try it a couple more times. What happens?</p>
+            </div>
+            <p>
+                <em>Then, why include it?</em> 
+            </p>
+            <p>
+                Because if we recognize the <strong> Single Responsibility Principle (SRP)
+                </strong> or <strong>Separation of Concerns</strong>
+                best practice, using an API means that (1.) our client application doesn't need
+                to know how or where the data is stored or collected. It also means (2.) other
+                client applications can access the same dataset without worrying that
+                one of those several client applications alter logic which would unknowingly
+                affect all of the other applications, and (3.) greatly simplifies testing
+                by simplifying all of the components. Also, (4.) if the data source changes
+                or a component needs to be updated, as long as the interface is clearly defined,
+                updating or replacing the component does not require a complete rewrite of a
+                working system.
+            </p>
+            <p>
+                You could argue that a waiter in a restaurant adds no value. They don't
+                make the food, they just bring it to you. But they can do it more efficiently
+                than having the chef take the order, prepare the order, write an invoice
+                (a check), accept payments, make change and prepare the space for the next
+                diner.
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;"
+                     src="/courses/456310/files/46117332/preview"
+                     alt="waiter delivering tray" width="340" />
+            </p>
+            <p>&nbsp;</p>
+        </div> <!-- #api -->
+
+        <div id="rest">
+            <h2 class="alert">REST</h2>
+            <h3>Representational state.</h3>
+            <p>
+                This is San Diego Bay in San Diego, California.
+            </p>
+            <p>
+                <img src="/courses/456310/files/46117460/preview"
+                     alt="San Diego Bay" width="640" 
+                     style="display:block; margin:auto;" />
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                Actually, it's not.
+            </p>
+            <p>
+                It is a picture of San Diego Bay, taken from my dad's front porch. It
+                is a representation of San Diego Bay.
+            </p>
+
+            <p>
+                Here's another picture of San Diego Bay.
+            </p>
+            <p>
+                <img src="/courses/456310/files/46117476/preview"
+                     alt="Current wind conditions"
+                     width="640" style="display:block; margin:auto;" />
+            </p>
+            <p>
+                And another <em>representation</em> of the same location.
+            </p>
+            <p>
+                <img src="/courses/456310/files/46117492/preview"
+                     alt="wind forecast" width="480"
+                     style="display:block; margin:auto;" />
+            </p>
+            <p>
+                In fact, these last two images depended on the same data sets
+                used very differently. Both are valid, useful ideas. Both convey 
+                the same information in different ways.
+            </p>
+            <p>
+                If a client made a request for data stored in a database,
+                a server could respond with a snapshot of representational
+                data from that point in time and even apply filters based
+                on parameters from the client's request.
+            </p>
+            <p>
+                Representational State may be an image, or a sound byte,
+                or an MP4 video, or a table of data, or any other data
+                object.
+            </p>
+            <p>&nbsp;</p>
+        </div> <!-- #rest -->
+        <p>&nbsp;</p>
+    </div> <!-- #discussion -->
+    <hr />
+    <p>
+        After reading through my thoughts about REST APIs above,
+        take a look at these explanation and see if they help.
+    </p>
+    <p>
+        I know there are a lot of video explanations of REST APIs to be found.
+        I kind of like the way that <b>clever techie</b> explains it.
+    </p>
+    <p>&nbsp;</p>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/LooL6_chvN4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    <p>&nbsp;</p>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/Q-BpqyOT3a8" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+</div> <!-- #rest-apis -->
+

@@ -3085,15 +3085,15 @@
             ]
           }
         },
-        "CIS4891 (2023 Spring) Senior Project": {
+        "CIS4891 (2023 Spring) Capstone Project": {
           "status": "draft",
-          "catalog ID": "CIS-4083",
+          "catalog ID": "CIS-4891",
           "canvas URL": "https://courses.sfcollege.edu",
           "canvas course ID": 0,
-          "long name": "W23 CIS4083.0M1: INTRO TO CLOUD",
-          "course code": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "long name": "W23 CIS4891.0M1: CAPSTONE",
+          "course code": "W23 CIS4891.0M1: CAPSTONE",
           "time zone": "EST5",
-          "SIS ID": "CIS4083_0M1_W23",
+          "SIS ID": "CIS4891_0M1_W23",
           "subaccount": "Santa Fe College",
           "term": "Spring 2023",
           "start": "9-Jan-2023",
@@ -3102,256 +3102,155 @@
           "modules": [
             {
               "module": 0,
-              "title": "Additional Resources",
+              "title": "Resources",
               "week": 0
             },
             {
               "module": 1,
-              "title": "intro to web appl",
-              "read": "Ch1 � An Introduction to web programming with ASP.NET Core MVC",
+              "title": "Concept Investigation",
               "week": 1,
               "ready": false
             },
             {
               "module": 2,
-              "title": "single page web apps",
-              "read": "Ch2 � How to develop a single-page MVC web app",
+              "title": "Project Planning",
               "week": 2,
               "ready": false
             },
             {
               "module": 3,
-              "title": "responsive design",
-              "read": "Ch3 � How to make a web app responsive with Bootstrap",
+              "title": "UI UX and Single Responsibility",
               "week": 3,
               "ready": false
             },
             {
               "module": 4,
-              "title": "data-driven MVC",
-              "read": "Ch4 � How to develop a data-driven MVC web app",
-              "week": 4,
-              "ready": false
-            },
-            {
-              "module": 5,
-              "title": "Manually test and debug",
-              "read": "Ch5 � Manually test and debug an ASP.NET Core web app",
+              "title": "Rqts and Test",
               "week": 5,
               "ready": false
             },
             {
-              "module": 6,
-              "title": "Working with controllers and routing",
-              "read": "Ch6 � working with controllers and routing",
-              "week": 6,
-              "ready": false
-            },
-            {
-              "module": 7,
-              "title": "Working with Razor views",
-              "read": "Ch7 � Working with Razor views",
+              "module": 5,
+              "title": "Data-Driven Design",
               "week": 7,
               "ready": false
             },
             {
-              "module": 8,
-              "title": "xfr data from controller",
-              "read": "",
-              "week": 8,
-              "ready": false
-            },
-            {
-              "module": 9,
-              "title": "",
-              "read": "",
+              "module": 6,
+              "title": "Agile Software Development",
               "week": 9,
               "ready": false
             },
             {
-              "module": 10,
-              "title": "",
-              "read": "Ch10",
-              "week": 10,
-              "ready": false
-            },
-            {
-              "module": 11,
-              "title": "",
-              "read": "Ch11",
+              "module": 7,
+              "title": "APIs and TDD",
               "week": 11,
               "ready": false
             },
             {
-              "module": 12,
-              "title": "",
-              "read": "Ch12",
-              "week": 12,
+              "module": 8,
+              "title": "Responsive Design",
+              "week": 13,
               "ready": false
             },
             {
-              "module": 13,
-              "title": "",
-              "read": "Ch13",
-              "week": 14,
+              "module": 9,
+              "title": "Project Delivery",
+              "week": 15,
               "ready": false
-            },
-            {
-              "module": 14,
-              "title": "wrap up",
-              "week": 15
-            },
-            {
-              "module": 15,
-              "title": "final",
-              "week": 16
             }
           ],
           "assignments": {
             "Discussions": [
               {
-                "title": "Ice Breaker - Getting to know you (Part 1)",
-                "points": 0,
-                "days": 3,
-                "module": 1
-              },
-              {
-                "title": "Ice Breaker - Getting to know you",
-                "points": 20,
+                "title": "introduction",
+                "points": 50,
                 "days": 6,
                 "module": 1
               },
               {
-                "title": "Web applications: Brainstorming",
-                "points": 0,
-                "days": 3,
-                "module": 3
-              },
-              {
-                "title": "Web applications: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 3
-              },
-              {
-                "title": "Github Hosting: README.md",
-                "points": 0,
-                "days": 3,
-                "module": 6
-              },
-              {
-                "title": "Github: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 6
-              },
-              {
-                "title": "Github Code: commit",
-                "points": 0,
-                "days": 3,
-                "module": 8
-              },
-              {
-                "title": "Github Code: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 8
-              },
-              {
-                "title": "Class Model: commit",
-                "points": 0,
-                "days": 3,
-                "module": 11
-              },
-              {
-                "title": "Class Model: Peer Review",
-                "points": 20,
-                "days": 6,
-                "module": 11
-              },
-              {
-                "title": "My App: Screenshots",
-                "points": 0,
-                "days": 6,
-                "module": 11
-              },
-              {
-                "title": "My App: Feedback",
-                "points": 20,
-                "days": 12,
-                "module": 13
-              }
-            ],
-            "Projects": [
-              {
-                "title": "Ex1-1 - Guitar Shop",
+                "title": "PDR",
                 "points": 100,
                 "days": 6,
                 "module": 1
               },
               {
-                "title": "Ex2-1 - Price Quotation App",
+                "title": "FDR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "IPR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              }
+
+            ],
+            "Projects": [
+              {
+                "title": "concept investigation",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "project spec",
                 "points": 100,
                 "days": 6,
                 "module": 2
               },
               {
-                "title": "Ex4-1 - Contact Manager App",
+                "title": "software diagrams",
                 "points": 100,
-                "days": 6,
+                "days": 13,
+                "module": 3
+              },
+              {
+                "title": "requirements and test",
+                "points": 100,
+                "days": 13,
                 "module": 4
               },
               {
-                "title": "Ex6-1 - FAQ App",
+                "title": "data design",
+                "points": 100,
+                "days": 13,
+                "module": 5
+              },
+              {
+                "title": "prototype",
                 "points": 100,
                 "days": 6,
                 "module": 6
               },
               {
-                "title": "Ex8-1 - TripLog App",
+                "title": "data integration",
+                "points": 100,
+                "days": 13,
+                "module": 7
+              },
+              {
+                "title": "sprint plan",
                 "points": 100,
                 "days": 6,
                 "module": 8
               },
               {
-                "title": "Ex10-1 - TicTacToe App",
+                "title": "sprint review",
                 "points": 100,
-                "days": 6,
-                "module": 10
+                "days": 13,
+                "module": 8
               },
               {
-                "title": "Ex12-1 - TripLog_v2 App",
+                "title": "demo",
                 "points": 100,
-                "days": 6,
-                "module": 12
-              },
-              {
-                "title": "Ex13-1 - Quarterly Sales App",
-                "points": 100,
-                "days": 12,
-                "module": 13
+                "days": 13,
+                "module": 9
               }
             ],
-            "Exams": [
-              {
-                "title": "Exam 1 (Chapters 1-4)",
-                "module": 5,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 2 (Chapters 5-8)",
-                "module": 9,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 3 (Chapters 9-13)",
-                "module": 14,
-                "days": 8,
-                "points": 100
-              }
-            ],
+            "Exams": [],
             "Quizzes": []
           }
 
