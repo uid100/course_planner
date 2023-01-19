@@ -3109,19 +3109,19 @@
               "module": 1,
               "title": "Concept Investigation",
               "week": 1,
-              "ready": false
+              "ready": true
             },
             {
               "module": 2,
               "title": "Project Planning",
               "week": 2,
-              "ready": false
+              "ready": true
             },
             {
               "module": 3,
               "title": "UI UX and Single Responsibility",
               "week": 3,
-              "ready": false
+              "ready": true
             },
             {
               "module": 4,
