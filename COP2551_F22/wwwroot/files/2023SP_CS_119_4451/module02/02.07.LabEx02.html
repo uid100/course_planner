@@ -1,41 +1,67 @@
 ﻿<!-- Code: 2023SP_CS_119_4451 -->
 <!-- id: 49150 -->
-<!-- look for class="on-campus" or "online" and set visibility -->
 
-<div id="lab1" style="background-color:moccasin;">
-    <div id="header" style="padding:20px;">
-        <div id="navigtion">
-            <a href="/courses/49150">
-                <img src="/courses/49150/files/7949795/preview"
-                     alt="generic logic flow image" width="150" /><br />
-                <em>&nbsp;&nbsp; --> Home</em>
-            </a>
-        </div> <!-- #navigation -->
-    </div> <!-- #header -->
+<div id="lab2" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
 
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
     <div id="overview" style="padding:20px;">
-        <h2 class="alert">Lab#1</h2>
+        <h2 class="alert">Lab #2</h2>
         <div id="introduction">
             <p>
-                This lab provides an introduction to programming in Python. You will be creating
-                relatively simple Python console applications, and descriptive pseudocode using
-                the Python&#39;s IDLE.
+                This lab continues the introduction to programming in Python and
+                writing sequential code. You will be creating 2 Python console
+                applications using Python IDLE. It also gives you an opportunity
+                to get a little more hands-on experience with the terminology and
+                concepts presented in chapters 1 & 2 of the PLD text.
             </p>
             <p>
-                It also gives you an opportunity to apply some of the terminology and concepts
-                presented in chapters 1 & 2 of the PLD text.
+                There are two exercises in this lab. Be sure to complete both.
             </p>
             <p>
-                There are three exercises in this lab. Be sure to complete all three.
+                As we progress through these labs, the detailed step-by-step
+                instructions will be omitted for things already covered and more
+                focused on any new material being covered. Before you start this
+                lab, be sure you are comfortable with the following:
+                <ul>
+                    <li>Starting Python IDLE</li>
+                    <li>Creating a pseudocode.txt file for your pseudocode.</li>
+                    <li>Creating Python code files</li>
+                    <li>Getting user input using the input() method</li>
+                    <li>Displaying output using the print() method</li>
+                </ul>
+            </p>
+            <p>
+                Review Lab 1 if you’re unclear on any of the above.
             </p>
         </div> <!-- #introduction -->
 
         <div id="topics" style="padding:40px;">
             <ul>
                 Topics:
-                <li>Introduction to the Python IDLE IDE</li>
-                <li>Introduction to Python applications</li>
-                <li>Introduction to writing pseudocode</li>
+                <li>Gain more experience with the Python IDLE IDE</li>
+                <li>Python applications</li>
+                <li>Writing pseudocode</li>
                 <li>Variables</li>
                 <li>Comments</li>
                 <li>Arithmetic calculations</li>
@@ -48,444 +74,94 @@
     <div id="tabs" class="enhanceable_content tabs">
         <p style="font-style:italic;">Click through each of the following tabs.</p>
         <ul>
-            <li><a href="#prep">First</a></li>
             <li><a href="#ex1">Exercise 1</a></li>
             <li><a href="#ex2">Exercise 2</a></li>
-            <li><a href="#ex3">Exercise 3</a></li>
-            <li><a href="#submit">Submit</a></li>
         </ul>
 
-        <div id="prep" style="padding:20px; background-color:moccasin;">
-            <h2 class="alert">Before You Begin</h2>
-            <h3>File Extensions</h3>
-            <div id="extensions" style="padding:20px;">
-                <p>
-                    I don't know why this is not the default setting anymore, but on
-                    both Windows and MacOS, it is not. As a developer, you need to see
-                    this information.
-                </p>
-                <h4>MacOS:</h4>
-                <p>
-                    Select Finder > Preferences from the menu and check the box.
-                </p>
-                <p>
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                         src="/courses/49150/files/7998158/preview"
-                         alt="Show File Extensions (Mac)" width="390" />
-                </p>
-                <hr />
-                <h4>Windows 11:</h4>
-                <p>
-                    From File Explorer:  View > Show > File name extensions.<br />
-                    (Windows 10: it's a checkbox on the toolbar)
-                </p>
-                <p>
-                    Select Finder > Preferences from the menu and check the box.
-                </p>
-                <p>
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                         src="/courses/49150/files/7998157/preview"
-                         alt="show windows file extensions" width="500" />
-                </p>
-            </div> <!-- #extensions -->
-
-            <h3>Lab Folder Structure</h3>
-            <div id="folders" style="padding:20px;">
-                <p>
-                    <img style="display:block; float:right; border: 2px solid tan;"
-                         src="/courses/49150/files/7998106/preview"
-                         alt="recommended lab folder structure" />
-                </p>
-                <p>
-                    Before starting on any lab work for this class, take a few minutes
-                    to create a folder structure for your labs like the one shown below.
-                    Being organized is a critical survival skill in software development.
-                </p>
-                <p>
-                    If you are using the classroom lab computers, be sure to create this
-                    on your USB drive and be sure to save to it! Saving on the C: drive
-                    of the lab computers is a disaster waiting to happen!
-                </p>
-                <p>
-                    Notice that the folders are numbered "lab01", "lab02", and so on. If
-                    you number these using only a single digit, then when we labs 10, 11,
-                    and 12, the natural ordering of your folders will be lab1, lab10,
-                    lab11, lab12, lab2, lab3, ...
-                </p>
-                <p>
-                    Since there are more than 10, and less than 100, using 2 digit
-                    numbers makes sense.
-                </p>
-            </div> <!-- #folders -->
-        </div> <!-- #prep -->
-
         <div id="ex1" style="padding:20px;">
-            <h2 class="alert">Exercise 1: Multiply 2 Numbers</h2>
-            <h3>A Guided Python Application</h3>
-            <div id="guided" class="ic-flash-info">
-                <p>
-                    For most of the labs in this class, the first exercise will be 
-                    a guided walk through where we will apply the chapter concepts 
-                    to develop a working Python application.
-                </p>
-            </div> <!-- #guided -->
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Text Message Cost Calculator</h3>
+
             <div id="ex1-intro">
                 <p>
-                    In this exercise, you will be guided through the steps of 
-                    analyzing a problem statement, writing pseudocode, and creating 
-                    a working Python application using Python IDLE (Integrated 
-                    Development and Learning Environment). Be sure to complete this 
-                    exercise as you will be repeating these steps and writing the 
-                    same (or very similar) code for the other exercises.
+                    This exercise is based on exercise 6, page 61 of the PLD text.
+                    Besides pseudocode, you will write working Python code as well.
                 </p>
-                <p style="font-style:italic; font-weight:bold;">
-                    Be aware, practice is the key here. The more you do, the easier 
-                    it gets!
+                <p>
+                    Develop an application that will allow the user to enter the
+                    number of text messages sent in the last month. Messages are 0.25
+                    each and a 9% tax is added to the total.
                 </p>
             </div> <!-- #ex1-intro -->
 
-            <div id="analysis">
-                <p>
-                    Step one is <b><i>always</i></b> to analyze the problem and
-                    figure out a plan of attack. To save time, we’ll continue the
-                    problem we looked at in the chapter one lecture notes and the
-                    final problem statement is pasted below for reference.
-                </p>
-                <p>
-                    Please review the chapter one notes if you need to review the 
-                    more detailed analysis and pseudocode.
-                </p>
-                <div id="problem" class="ic-flash-info">
-                    <p>Problem statement from chapter one notes:</p>
-                    <p>
-                        <s>It’s a bright, sunny day and Cuyamaca Learning Center
-                        has hired you as a consultant to develop an application that
-                        will</s> accept two input numbers from the user and display 
-                        the product of the two <s>values</s> numbers.
-                    </p>
-                </div> <!-- #problem -->
-                <p>
-                    Break it down into <strong>input, process and output</strong>.
-                </p>
-                <p>
-                    This is a simple problem and we can easily break it down into
-                    “workable pieces” using this approach.
-                </p>
-                <p>
-                    <em>What input do we need?</em>&nbsp;&nbsp;&nbsp;
-                    <strong>We need 2 numbers.</strong>
-                </p>
-                <p>
-                    <em>What is our process?</em>&nbsp;&nbsp;&nbsp;
-                    <strong>We need to multiply the 2 numbers.</strong><br />
-                    Our formula is: <pre>product = number1 * number2</pre>
-                </p>
-                <p>
-                    <em>What is our output?</em>&nbsp;&nbsp;&nbsp;
-                    <strong>We need to display the product.</strong>
-                </p>
-            </div> <!-- #analysis -->
-
-            <div id="ex1-code">
-                <h3>Logic <i>Pseudocode</i> &amp; Python Source Code</h3>
-                <p>
-                    The next step is to write the pseudocode. This should be a text (.txt)
-                    document and it can be done with any text editor. Python IDLE can be 
-                    used as well. It works out to be a nice way to keep things organized 
-                    and score valuable points when you turn your work in for a grade.
-                </p>
-                <hr />
+            <div id="steps">
                 <h4>Steps</h4>
                 <ol>
                     <li>Start Python IDLE.</li>
-                    <li>From the File menu, click New File<br />
-                        #
+                    <li>
+                        Create your pseudocode.txt file. For all labs, you may put
+                        your pseudocode for all the exercises in a single file to save
+                        time and make things easier. Be sure to have comments or notes
+                        indicating which pseudocode is for which exercise. It
+                        will help you score some points!
                     </li>
                     <li>
-                        Once the new file is created, save it right away as a text (.txt) file.
-                        (Not a Python (.py) file!) Be sure to save it in your Lab 1 folder so 
-                        you get points for it!<br />
-                        #
+                        Write your pseudocode. Once again, keep in mind there is no
+                        single “correct” way of doing it. What are the inputs? What
+                        processing and formulas are needed? What are the outputs?
                     </li>
                     <li>
-                        Write your pseudocode. Keep in mind there is no single 
-                        &quot;correct&quot; way of doing this. This is perhaps what 
-                        makes writing pseudocode confusing and difficult at first. 
-                        Develop a style that helps you understand the problem and 
-                        how you plan to code the solution. The sample shown below is a 
-                        suggested approach.<br />
-                            #
+                        Create a new file and save as TextMessage.py to your Lab 1
+                        folder. Note that Python source files must have the .py
+                        extension.
                     </li>
                     <li>
-                        Create a new file and save as <pre>multiply.py</pre> to your 
-                        Lab 1 folder. Note that Python source files must have the .py
-                        extension.<br />
-                        If IDLE is saving as type <em>Python Files</em>, then the 
-                        extension will be assigned for you. If you try and enter
-                        &quot;multiply.py&quot;, you may end up with a file named
-                        &quot;multiply.py.py&quot;. This is why it is important to 
-                        enable file extensions in the <em>Before you begin</em> tab.<br />
-                            #
+                        Be sure to save your work!
                     </li>
                     <li>
-                        <ul>
-                            Write the code shown in the Python code screenshot below.
-                            Pay close attention to letter case. Note the following things
-                            we will be doing for virtually every lab exercise:
-                            <li>
-                                Be sure to code the shebang line #!/user/bin/env python3. This line
-                                does not belong in your pseudocode (.txt) file. This identifies the
-                                file as an executable Python script file.
-                            </li>
-                            <li>
-                                In comments at the top, put in your name, course number and the lab
-                                exercise information. See sample below.
-                            </li>
-                            <li>
-                                Declare and initialize variables. You don’t have to show this in your
-                                pseudocode but it may help to do so.
-                            </li>
-                            <li>
-                                Use the input() method for getting user input.
-                            </li>
-                            <li>
-                                Use the print() method for displaying output.
-                            </li>
-                            <li>
-                                Use the int() method to convert text to an integer.
-                            </li>
-                            <li>
-                                Use the float() method to convert text to a float.
-                            </li>
-                            <li>
-                                Use the str() method to convert an integer value to string.
-                            </li>
-                            <li style="font-weight:bold;">
-                                The program code should follow the pseudocode!
-                            </li>
-                            <li>
-                                In Python, anything after a single hash (#) character is a
-                                comment.
-                            </li>
-                        </ul><br />
-                        Here’s a sample comment header at the top with your name, the course
-                        number, and a brief description of the lab exercise.<br />
-                        #<br />
-                        <ul>
-                            In the code below, a couple more things to note:
-                            <li>
-                                We declare variables using a concise, yet descriptive name.
-                            </li>
-                            <li>
-                                Python determines the data type by the initial value.
-                            </li>
-                            <li>
-                                We use a single equal sign (=) for assigning literal 
-                                values (i.e., 0, etc.) or the result of an expression 
-                                to a variable.
-                            </li>
-                        </ul><br />
-                        <em>Wow! That&#39;s a lot!</em>
-                    </li>
-                    <li>Be sure to save your work!</li>
-                    <li>
-                        Run your application. Select Run Module from the Run menu.<br />
-                            #
+                        Run your application. Select Run Module from the Run menu.
                     </li>
                     <li>
-                        Choose test values so that you can easily verify that your 
-                        program is producing the correct output. For example:
-                            #
-                    </li>
-                    <li>
-                        If you get a correct output, congratulations! You have just
-                        successfully created your first Python application.
+                        Choose test values where you can easily verify that your
+                        program is producing the correct output.
                     </li>
                 </ol>
-            </div> <!-- #code -->
+            </div> <!-- #steps -->
+
             <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
         </div> <!-- #ex1 -->
 
         <div id="ex2" style="padding:20px;">
-            <h2 class="alert">Exercise 2: Kilometers to Miles Calculator</h2>
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Gas Mileage Calculator</h3>
             <p>
                 In this exercise, you will create another Python application to
-                convert kilometers to miles. Your application must allow the user
-                to enter the number of kilometers and then convert and display
-                miles.
+                compute gas mileage and gas cost per mile. Your application must
+                allow the user to enter the number of miles driven, number of
+                gallons put into the gas tank and cost in dollars per gallon of gas.
+                Your outputs must include MPG, total fuel cost and cost per mile.
             </p>
-            <div id="constant" class="ic-flash-info">
-                <p>
-                    1 kilometer = 0.62 miles.
-                </p>
-                <p>
-                    This is the conversion factor that you are given. It must
-                    be in your code. Do not lookup or calculateanother,
+            <p>&nbsp;</p>
+            <p>
+                Key formulas:
+                <ul>
+                    <li>mpg = milesDriven / gallons</li>
+                    <li>totalFuelCost = gallons * costPerGallon</li>
+                    <li>costPerMile = totalFuelCost / milesDriven</li>
+                </ul>
+            </p>
 
-                </p>
-            </div> <!-- #constant -->
-            <p>
-                Before writing any code, write some pseudocode as it will help you
-                break down the problem into understandable pieces. It’s worth points!
-                To save time, you may add your pseudocode for this exercise to the
-                pseudocode file you created in exercise 1.
-            </p>
-            <p>
-                If you do choose to combine your pseudocode in the same file,
-                be sure to make a clear division between exercises.
-            </p>
-            <p>
-                You will create a new Python source file (.py) in the Python IDLE
-                the same way you did in exercise 1. The file name is left to your
-                discretion but choose a reasonably concise, yet <em>descriptive</em>
-                name for your project such as KmToMiles. Make sure you save the file
-                in your Lab01 folder.
-            </p>
-            <p>
-                Like exercise 1, be sure to code the shebang line and comments
-                with your name, course No. and lab exercise.
-            </p>
-            <div id="enter-km" class="ic-flash-info">
-                <p>
-                    <b>Hint:</b> For your input, you will need a line of code
-                    something like this:<br /><pre>km = float(input("Enter kilometers: "))</pre>
-            </div> <!-- #enter-km -->
-            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
-        </div> <!-- #ex2 -->
-
-        <div id="ex3" style="padding:20px;">
-            <h2 class="alert">Exercise 3: Miles to Kilometers Calculator</h2>
-            <p>
-                In this exercise, you will create another Python application to
-                convert miles to kilometers. This conversion is just the opposite
-                of what you did in the last exercise! Your application must
-                allow the user to enter the number of miles and then convert and
-                display kilometers.
-            </p>
-            <div id="miles-per-km" class="ic-flash-info">
-                <p>
-                    1 kilometer = 0.62 miles.
-                </p>
-                <p>
-                    This is the conversion factor that you are given. It must
-                    be in your code. Do not lookup another, or calculate the
-                    inverse. Any other values will produce (slightly) different
-                    results. Use the supplied value.
-                </p>
-            </div> <!-- #miles_per_km -->
-
-            <h3>Pseudocode</h3>
             <p>
                 Before writing any code, write some pseudocode as it will help
-                you break down the problem into understandable pieces. It’s
-                worth points! To save time, you may add your pseudocode for this
-                exercise to the pseudocode (.txt) file you created in exercise 1.
+                you break down the problem into understandable pieces. Also,
+                it’s worth points! To save time, you may add your pseudocode
+                for this exercise to the pseudocode file you created in exercise 1.
             </p>
-
-            <h3>Python Source Code</h3>
-            <p>
-                You will create a new source code (.py) file in the Python IDLE
-                the same way you did in exercise 1. The file name is left to your
-                discretion but choose a reasonably concise, yet <em>descriptive</em>
-                name for your project such as MilesToKm. Make sure you save the
-                file in your Lab01 folder.
-            </p>
-            <p>
-                Like exercise 1, be sure to code the shebang line and comments with
-                your name, course No. and lab exercise.
-            </p>
-            <div id="enter-miles" class="ic-flash-info">
-                <p>
-                    <b>Hint:</b> For your input, you will need a line of code
-                    something like this:<br /><pre>miles = float(input("Enter miles: "))</pre>
-            </div> <!-- #enter-miles -->
             <p>
                 You will create the Python file the same way you did in exercise 1.
             </p>
-        </div> <!-- #ex3 -->
+        </div> <!-- #ex2 -->
 
-        <div id="submit" style="padding:20px;">
-            <h2 class="alert">Before submitting your work</h2>
+    </div> <!-- #tabs -->
 
-            <div id="outline">
-                <h3>Outline</h3>
-                <p>
-                    Before submitting your assignment, step through this checklist to 
-                    be certain that everything is complete. You should also check the
-                    grading rubric to see if there is anything that you might have
-                    forgotten.
-                </p>
-                <p>
-                    Here is the step-by-step <strong>outline</strong>
-                    <ol>
-                        <li>Create the Lab folder structure</li>
-                        <li>(From IDLE) Create a new .txt file (to contain your pseudocode)</li>
-                        <li>Write (and understand) the pseudocode as described in the lab instructions</li>
-                        <li>Create a new .py file and write the code for the sample exercise, run it and view 
-                            the result</li>
-                        <li>Add pseudocode (logic structure) for the KmToMiles exercise</li>
-                        <li>Create a new .py file and write the code for your solution (follow the example
-                            and modify as needed from step 4). Run it and check your results. </li>
-                        <li>Add pseudocode (logic) for the MilesToKm exercise</li>
-                        <li>Create a new .py file and write the new code, test, and confirm the result.</li>
-                        <li>Zip your files and submit to Canvas <strong>(must be a zip file).</strong></li>
-                    </ol>
-                </p>
-                <p>&nbsp;</p>
-            </div> <!-- #outline -->
-
-            <div id="shebang">
-                <p>
-                    <strong>Hint</strong>: your python code files must have the
-                    following on the first line:
-                </p>
-                <pre>#!/usr/bin/env python3</pre>
-                <p>
-                    The hash character ('#') must be the first character of the
-                    .py source file.
-                </p>
-                <p>&nbsp;</p>
-            </div> <!-- #shebang -->
-
-            <div id="pseudocode">
-                <p>
-                    Pseudocode should be simple, clear sequential instructions.
-                    Think of this as how you would describe a process to your
-                    roommate or your mom. It desribes the logic in simple terms.
-                </p>
-                <p>
-                    Do not submit source code as pseudocode, they are not the 
-                    same thing.
-                </p>
-                <p>
-                    Make sure that your pseudocode is a text (only) file. Not
-                    MS Word (doc, or docx) or from some other word processor.
-                    RTF, PDF... Really. Just text files.
-                </p>
-                    <hr />
-
-                    <p>
-                        This
-                        <a 
-                           class="instructure_file_link instructure_scribd_file" 
-                           title="LabTurnInOnCanvas.pdf" 
-                           href="/courses/49150/files/7931602?wrap=1">
-                            <strong>handout</strong>
-                        </a>
-                        will walk through the details for creating a compressed zip file
-                        of your lab for submitting to Canvas.
-                    </p>
-                    <hr />
-
-                    <p>
-                        The Canvas team also has provided
-                        <a href="https://community.canvaslms.com/videos/1121-assignments-submissions-students">
-                            <strong>this video guide</strong></a> to assist with submitting 
-                        any assignment in Canvas.
-                    </p>
-                </div> <!-- #notes -->
-
-            </div> <!-- #submit -->
-        </div> <!-- #tabs -->
-
-</div> <!-- #lab1 -->
+</div> <!-- #lab2 -->

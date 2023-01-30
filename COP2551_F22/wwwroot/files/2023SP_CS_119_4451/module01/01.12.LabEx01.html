@@ -3,23 +3,31 @@
 <!-- look for class="on-campus" or "online" and set visibility -->
 
 <div id="lab1" style="background-color:moccasin;">
-    <div id="header" style="padding:20px;">
-        <div id="navigation" style="padding: 20px;">
-            <a class="btn btn-primary icon-home"
-               style="background-color:navy; color:white;"
-               href="/courses/49150">
-                Home
-            </a>
-        </div> <!-- #navigation -->
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
 
-        <img style="display:block;"
-             src="/courses/49150/files/7949795/preview"
-             alt="generic logic flow image" width="100" />
-    </div> <!-- #header -->
-    <hr />
-
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
     <div id="overview" style="padding:20px;">
-        <h2 class="alert">Lab#1</h2>
+        <h2 class="alert">Lab #1</h2>
         <div id="introduction">
             <p>
                 This lab provides an introduction to programming in Python. You will be creating
@@ -62,8 +70,8 @@
 
         <div id="prep" style="padding:20px; background-color:moccasin;">
             <h2 class="alert">Before You Begin</h2>
-            <h3>File Extensions</h3>
             <div id="extensions" style="padding:20px;">
+                <h3>File Extensions</h3>
                 <p>
                     I don't know why this is not the default setting anymore, but on
                     both Windows and MacOS, it is not. As a developer, you need to see
@@ -94,8 +102,8 @@
                 </p>
             </div> <!-- #extensions -->
 
-            <h3>Lab Folder Structure</h3>
             <div id="folders" style="padding:20px;">
+                <h3>Lab Folder Structure</h3>
                 <p>
                     <img style="display:block; float:right; border: 2px solid tan;"
                          src="/courses/49150/files/7998106/preview"
@@ -129,22 +137,22 @@
             <h3>A Guided Python Application</h3>
             <div id="guided" class="ic-flash-info">
                 <p>
-                    For most of the labs in this class, the first exercise will be 
-                    a guided walk through where we will apply the chapter concepts 
+                    For most of the labs in this class, the first exercise will be
+                    a guided walk through where we will apply the chapter concepts
                     to develop a working Python application.
                 </p>
             </div> <!-- #guided -->
             <div id="ex1-intro">
                 <p>
-                    In this exercise, you will be guided through the steps of 
-                    analyzing a problem statement, writing pseudocode, and creating 
-                    a working Python application using Python IDLE (Integrated 
-                    Development and Learning Environment). Be sure to complete this 
-                    exercise as you will be repeating these steps and writing the 
+                    In this exercise, you will be guided through the steps of
+                    analyzing a problem statement, writing pseudocode, and creating
+                    a working Python application using Python IDLE (Integrated
+                    Development and Learning Environment). Be sure to complete this
+                    exercise as you will be repeating these steps and writing the
                     same (or very similar) code for the other exercises.
                 </p>
                 <p style="font-style:italic; font-weight:bold;">
-                    Be aware, practice is the key here. The more you do, the easier 
+                    Be aware, practice is the key here. The more you do, the easier
                     it gets!
                 </p>
             </div> <!-- #ex1-intro -->
@@ -157,16 +165,18 @@
                     final problem statement is pasted below for reference.
                 </p>
                 <p>
-                    Please review the chapter one notes if you need to review the 
+                    Please review the chapter one notes if you need to review the
                     more detailed analysis and pseudocode.
                 </p>
                 <div id="problem" class="ic-flash-info">
                     <p>Problem statement from chapter one notes:</p>
                     <p>
-                        <s>It’s a bright, sunny day and Cuyamaca Learning Center
-                        has hired you as a consultant to develop an application that
-                        will</s> accept two input numbers from the user and display 
-                        the product of the two <s>values</s> numbers.
+                        <del>
+                            It’s a bright, sunny day and Cuyamaca Learning Center
+                            has hired you as a consultant to develop an application that
+                            will
+                        </del> accept two input numbers from the user and display
+                        the product of the two <del>values</del> numbers.
                     </p>
                 </div> <!-- #problem -->
                 <p>
@@ -195,42 +205,55 @@
                 <h3>Logic <i>Pseudocode</i> &amp; Python Source Code</h3>
                 <p>
                     The next step is to write the pseudocode. This should be a text (.txt)
-                    document and it can be done with any text editor. Python IDLE can be 
-                    used as well. It works out to be a nice way to keep things organized 
+                    document and it can be done with any text editor. Python IDLE can be
+                    used as well. It works out to be a nice way to keep things organized
                     and score valuable points when you turn your work in for a grade.
                 </p>
                 <hr />
                 <h4>Steps</h4>
                 <ol>
                     <li>Start Python IDLE.</li>
-                    <li>From the File menu, click New File<br />
-                        #
+                    <li>
+                        From the File menu, click New File<br />
+                        <img width="323" alt="IDLE menu  File &gt; New "
+                             src="https://gcccd.instructure.com/courses/49150/files/8062229/preview" 
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062229" 
+                             data-api-returntype="File" />
                     </li>
                     <li>
                         Once the new file is created, save it right away as a text (.txt) file.
-                        (Not a Python (.py) file!) Be sure to save it in your Lab 1 folder so 
+                        (Not a Python (.py) file!) Be sure to save it in your Lab 1 folder so
                         you get points for it!<br />
-                        #
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062237/preview" 
+                            alt="Save as text file" 
+                            data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062237" 
+                            data-api-returntype="File" />
                     </li>
                     <li>
-                        Write your pseudocode. Keep in mind there is no single 
-                        &quot;correct&quot; way of doing this. This is perhaps what 
-                        makes writing pseudocode confusing and difficult at first. 
-                        Develop a style that helps you understand the problem and 
-                        how you plan to code the solution. The sample shown below is a 
+                        Write your pseudocode. Keep in mind there is no single
+                        &quot;correct&quot; way of doing this. This is perhaps what
+                        makes writing pseudocode confusing and difficult at first.
+                        Develop a style that helps you understand the problem and
+                        how you plan to code the solution. The sample shown below is a
                         suggested approach.<br />
-                            #
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062252/preview" 
+                             alt="Sample pseudocode" width="436" height="308" 
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062252" 
+                             data-api-returntype="File" />
                     </li>
                     <li>
-                        Create a new file and save as <pre>multiply.py</pre> to your 
+                        Create a new file and save as <pre>multiply.py</pre> to your
                         Lab 1 folder. Note that Python source files must have the .py
                         extension.<br />
-                        If IDLE is saving as type <em>Python Files</em>, then the 
+                        If IDLE is saving as type <em>Python Files</em>, then the
                         extension will be assigned for you. If you try and enter
                         &quot;multiply.py&quot;, you may end up with a file named
-                        &quot;multiply.py.py&quot;. This is why it is important to 
+                        &quot;multiply.py.py&quot;. This is why it is important to
                         enable file extensions in the <em>Before you begin</em> tab.<br />
-                            #
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062259/preview" 
+                             alt="Save As Python (.py) file" 
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062259" 
+                             data-api-returntype="File" />
                     </li>
                     <li>
                         <ul>
@@ -275,7 +298,10 @@
                         </ul><br />
                         Here’s a sample comment header at the top with your name, the course
                         number, and a brief description of the lab exercise.<br />
-                        #<br />
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062342/preview"
+                             alt="Python Header"
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062342"
+                             data-api-returntype="File" /><br />
                         <ul>
                             In the code below, a couple more things to note:
                             <li>
@@ -285,22 +311,32 @@
                                 Python determines the data type by the initial value.
                             </li>
                             <li>
-                                We use a single equal sign (=) for assigning literal 
-                                values (i.e., 0, etc.) or the result of an expression 
+                                We use a single equal sign (=) for assigning literal
+                                values (i.e., 0, etc.) or the result of an expression
                                 to a variable.
                             </li>
                         </ul><br />
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062252/preview" 
+                             alt="Sample pseudocode" width="436" height="308" 
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062252"
+                             data-api-returntype="File" />
                         <em>Wow! That&#39;s a lot!</em>
                     </li>
                     <li>Be sure to save your work!</li>
                     <li>
                         Run your application. Select Run Module from the Run menu.<br />
-                            #
+                                              <img src="https://gcccd.instructure.com/courses/49150/files/8062477/preview"
+                                                   alt="IDLE menu Run &gt; Run Module" 
+                                                   data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062477" 
+                                                   data-api-returntype="File" />
                     </li>
                     <li>
-                        Choose test values so that you can easily verify that your 
-                        program is producing the correct output. For example:
-                            #
+                        Choose test values so that you can easily verify that your
+                        program is producing the correct output. For example:<br />
+                        <img src="https://gcccd.instructure.com/courses/49150/files/8062481/preview" 
+                             alt="Run with sample test values" 
+                             data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8062481" 
+                             data-api-returntype="File" />
                     </li>
                     <li>
                         If you get a correct output, congratulations! You have just
@@ -415,7 +451,7 @@
             <div id="outline">
                 <h3>Outline</h3>
                 <p>
-                    Before submitting your assignment, step through this checklist to 
+                    Before submitting your assignment, step through this checklist to
                     be certain that everything is complete. You should also check the
                     grading rubric to see if there is anything that you might have
                     forgotten.
@@ -426,11 +462,15 @@
                         <li>Create the Lab folder structure</li>
                         <li>(From IDLE) Create a new .txt file (to contain your pseudocode)</li>
                         <li>Write (and understand) the pseudocode as described in the lab instructions</li>
-                        <li>Create a new .py file and write the code for the sample exercise, run it and view 
-                            the result</li>
+                        <li>
+                            Create a new .py file and write the code for the sample exercise, run it and view
+                            the result
+                        </li>
                         <li>Add pseudocode (logic structure) for the KmToMiles exercise</li>
-                        <li>Create a new .py file and write the code for your solution (follow the example
-                            and modify as needed from step 4). Run it and check your results. </li>
+                        <li>
+                            Create a new .py file and write the code for your solution (follow the example
+                            and modify as needed from step 4). Run it and check your results.
+                        </li>
                         <li>Add pseudocode (logic) for the MilesToKm exercise</li>
                         <li>Create a new .py file and write the new code, test, and confirm the result.</li>
                         <li>Zip your files and submit to Canvas <strong>(must be a zip file).</strong></li>
@@ -459,7 +499,7 @@
                     roommate or your mom. It desribes the logic in simple terms.
                 </p>
                 <p>
-                    Do not submit source code as pseudocode, they are not the 
+                    Do not submit source code as pseudocode, they are not the
                     same thing.
                 </p>
                 <p>
@@ -467,30 +507,30 @@
                     MS Word (doc, or docx) or from some other word processor.
                     RTF, PDF... Really. Just text files.
                 </p>
-                    <hr />
+                <hr />
 
-                    <p>
-                        This
-                        <a 
-                           class="instructure_file_link instructure_scribd_file" 
-                           title="LabTurnInOnCanvas.pdf" 
-                           href="/courses/49150/files/7931602?wrap=1">
-                            <strong>handout</strong>
-                        </a>
-                        will walk through the details for creating a compressed zip file
-                        of your lab for submitting to Canvas.
-                    </p>
-                    <hr />
+                <p>
+                    This
+                    <a class="instructure_file_link instructure_scribd_file"
+                       title="LabTurnInOnCanvas.pdf"
+                       href="/courses/49150/files/7931602?wrap=1">
+                        <strong>handout</strong>
+                    </a>
+                    will walk through the details for creating a compressed zip file
+                    of your lab for submitting to Canvas.
+                </p>
+                <hr />
 
-                    <p>
-                        The Canvas team also has provided
-                        <a href="https://community.canvaslms.com/videos/1121-assignments-submissions-students">
-                            <strong>this video guide</strong></a> to assist with submitting 
-                        any assignment in Canvas.
-                    </p>
-                </div> <!-- #notes -->
+                <p>
+                    The Canvas team also has provided
+                    <a href="https://community.canvaslms.com/videos/1121-assignments-submissions-students">
+                        <strong>this video guide</strong>
+                    </a> to assist with submitting
+                    any assignment in Canvas.
+                </p>
+            </div> <!-- #notes -->
 
-            </div> <!-- #submit -->
-        </div> <!-- #tabs -->
+        </div> <!-- #submit -->
+    </div> <!-- #tabs -->
 
 </div> <!-- #lab1 -->
