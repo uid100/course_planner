@@ -1,0 +1,417 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab3" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #3</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an opportunity to apply the concepts and principles
+                presented in chapter 3 of the PLD text.
+            </p>
+            <p>
+                To save time, space and reading, all the nitty-gritty details of how 
+                to create a Python code file in IDLE, how to create the pseudocode 
+                file, etc. will be mostly left out. Please refer to the chapter 1 lab 
+                if you need a more detailed refresher on these steps. However, we will 
+                review problem analysis and pseudocode in quite a bit of detail in this 
+                exercise. We’ll focus more on the chapter concepts and the Python code 
+                needed to complete this problem as well as things you’ll need to know 
+                to complete the rest of this lab.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="topics" style="padding:40px;">
+            <ul>
+                Topics:
+                <li>Creating a Python console application</li>
+                <li>Declaring variables</li>
+                <li>Assigning values to variables</li>
+                <li>Arithmetic operations</li>
+                <li>Selection structures and relational operators</li>
+                <li>Sequential code</li>
+                <li>Application testing; creating test data and verifying results</li>
+                
+            </ul>
+        </div> <!-- #topics -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>A Guided Python Application – Portrait Studio</h3>
+
+            <div id="ex1-intro">
+                <p>
+                    This exercise is based on exercise 9 on pages 112 and 113 of the 
+                    text. In this exercise, a portrait studio has hired you to implement
+                    a charge calculator for taking portraits. Part of the charge is
+                    based on the number of subjects in the portrait.
+                </p>
+                <p>
+                    <img style="margin-left: auto; margin-right:auto;" width="560" height="420" 
+                         src="/courses/49150/files/8066747/preview"
+                         alt="from Chapter 3, exercise 9" />
+                </p>
+            </div> <!-- #ex1-intro -->
+
+            <div id="ex1-analysis">
+                <hr />
+                <h3>Analyzing the Problem</h3>
+                <p>
+                    From the previous chapters, we know we can break this problem down
+                    into input, process and output.
+                </p>
+                <p>
+                    What inputs do we need? Let’s look at the problem and see if we
+                    can identify them:
+                </p>
+                <p>
+                    <img src="https://gcccd.instructure.com/courses/49150/files/8066785/preview" 
+                         alt="analyze the problem" width="562" height="132" 
+                         data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8066785" 
+                         data-api-returntype="File" />
+                </p>
+                <p>
+                    Now that we’ve identified the inputs of last name, number of subjects
+                    and the scheduled day of the week, our pseudocode will look something
+                    like this:
+                </p>
+                <p style="margin-left:30px;">
+                    Get last_name<br />
+                    Get num_subjects<br />
+                    Get day_of_week<br />
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                </p>
+                <p>Next, let’s break down the processing.</p>
+                <p>
+                    In this exercise, last name really isn’t used for anything. In a
+                    <em>real world</em> application, data such as last name, address,
+                    billing information, etc. would be entered and stored in either
+                    a file or database and used for billing, delivering the portraits,
+                    etc.
+                </p>
+                <p>
+                    We’ve been given a fee schedule based on the number of subjects
+                    for calculating the base price.
+                </p>
+                <p>Portraits sittings on Saturday or Sunday are 20% extra.</p>
+                <p>
+                    These are the 2 processing steps we need but is this clear enough
+                    that we could write code? Let’s be honest with ourselves,
+                    probably not. So, let’s break these steps down a little further.
+                    Keep in mind there are a number of ways this problem could be
+                    solved. What’s presented here is simply one of a number of possible
+                    ways so don’t take this as the only solution or the way you have
+                    to do it. If you have a different approach you want to take, go
+                    for it!
+                </p>
+                <p>
+                    To calculate the base price using the table above, we need to code
+                    a decision structure. In the chapter, we saw that we can use an
+                    if/else (dual alternative) decision structure. Since we have a
+                    number of choices, we’ll need to do an expanded, not covered in
+                    the PLD text version of this called an if/else if/else structure.
+                    Our pseudocode will look something like this:
+                </p>
+                <p style="margin-left:30px;">
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                    if num_subjects = 1 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 100<br />
+                    else if num_subjects = 2 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 130<br />
+                    else if num_subjects = 3 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 150<br />
+                    else if num_subjects = 4 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 165<br />
+                    else if num_subjects = 5 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 175<br />
+                    else if num_subjects = 6 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 180<br />
+                    else // default catch all 7 or more<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = 185<br />
+                    end if<br />
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                </p>
+                <p>
+                    Decision structures like this are heavily used in real world
+                    programming so it’s beneficial to get experience working with
+                    these.
+                </p>
+                <p>
+                    The next thing is to determine if an additional 20% charge applies.
+                    This gets charged if the sitting is on Saturday or Sunday. Once again,
+                    there are multiple, possible ways to approach this. We could use an
+                    if/else if/else decision structure or we could use a single alternative
+                    structure and use the logical OR operator. Here’s the pseudocode for
+                    both approaches. Both will work and there are other ways that would
+                    work too. The choice of which one to use here is really a matter of
+                    personal preference.
+                </p>
+                <p style="margin-left:30px;">
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                    #(Dual alternative:)<br />
+                    if day_of_week = 7 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = base_price * 1.2<br />
+                    else if day_of_week = 1 then<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = base_price * 1.2<br />
+                    else<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;// do nothing – no additional charge<br />
+                    end if<br />
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                </p>
+                <p>&nbsp;</p>
+                <p style="margin-left:30px;">
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                    #(Single alternative:)<br />
+                    if day_of_week = 7 OR day_of_week = 1 then
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = base_price * 1.2
+                    end if<br />
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                </p>
+                <p>
+                    To help guide your final decision, which of these two structures
+                    looks easier to code later on?
+                </p>
+                <p>
+                    Notice in both cases we simply accumulate or add to (well, multiply
+                    in this case) the base charge if the condition is true.
+                </p>
+                <p>
+                    Another point here is the value 1.2 for the surcharge is often
+                    called a magic number; its meaning and purpose is unclear. This
+                    makes for code that is more difficult to read and understand.
+                    To make things more readable and maintainable, let’s add a constant
+                    called SURCHARGE_PCT and assign it the value 1.2. In languages like
+                    Python, Java, C++ and C#, it is customary to declare constants in
+                    all upper case letters and use the underscore (_) to space multiple
+                    words. The idea is to make them really stick out and not be mistaken
+                    for variables. Since Python doesn’t have constants and it turns out
+                    these are really variables, be careful not to change the values of
+                    your Python “constants” after you declare them.
+                </p>
+                <p style="margin-left:30px;">
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                    SURCHARGE_PCT = 1.2<br />
+                    <br />
+                    #(Revised Single alternative using constants:)<br />
+                    if day_of_week = 7 OR day_of_week = 1 then
+                    &nbsp;&nbsp;&nbsp;&nbsp;base_price = base_price * SURCHARGE_PCT
+                    end if<br />
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                </p>
+
+                <p>
+                    Last thing is output.
+                </p>
+                <p>
+                    Notice that our total price is actually stored in the variable
+                    base_price so the pseudocode is very simply the line:
+                </p>
+                <p style="margin-left:30px;">
+                    &nbsp;.&nbsp;.&nbsp;.<br />
+                    Display base_price<br />
+                </p>
+
+            </div> <!-- #ex1-analysis -->
+
+            <div id="pseudocode-file">
+                <hr />
+                <h4>Designing the Solution</h4>
+
+                <p>
+                    Create a file called PortraitStudio in IDLE. Be sure to create 
+                    this on your USB drive if you are using the lab computers. Create 
+                    a blank text file for your pseudocode and name it pseudocode.txt.
+                </p>
+
+            </div> <!-- #pseudocode-file -->
+
+            <div id="pseudocode">
+                <p>
+                    Here’s all the pseudocode we saw earlier all in one place. Keep 
+                    in mind this sample pseudocode is a suggested approach that will
+                    work. You are welcome and encouraged to develop your own approach 
+                    and style.
+                </p>
+                <p>
+                    <img 
+                         style="margin-left:auto; margin-right:auto; display:block;"
+                         src="/courses/49150/files/8066815/preview" 
+                         alt="sample pseudocode" width="451" height="524" />
+                </p>
+                <p>
+                    Another thing we are going to do in this lab is generate some test 
+                    data we can use when we test to ensure our application is working 
+                    correctly and producing correct results.
+                </p>
+                <p>
+                    We need test data for a varying number of subjects (test the 
+                    selection structure) and we also need to test the weekend surcharge 
+                    feature. Having a good table of test input data and the expected 
+                    results allows us to test our application and be able to tell at a 
+                    glance if it is working correctly.
+                </p>
+                <p>
+                    To keep things simple, we will add it to our pseudocode. It doesn’t
+                    need to be anything fancy but should have enough values that we can 
+                    test all possible scenarios.
+                </p>
+                <p>
+                    <img 
+                         style="margin-left:auto; margin-right:auto; display:block;"
+                         src="/courses/49150/files/8066829/preview" 
+                         alt="some sample test data" width="366" height="97" />
+                </p>
+            </div> <!-- #pseudocode -->
+            <hr />
+            <h4>Code the Application</h4>
+            <div id="code">
+                <p>
+                    <img src="/courses/49150/files/8066943/preview" 
+                         alt="sample python code solution" />
+                </p>
+            </div> <!-- #code -->
+
+            <p class="ic-flash-info">
+                Be sure to test your application and verify everything works correctly.
+            </p>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>BMI Calculator</h3>
+            <p>
+                For this exercise, you will design and develop an application 
+                that allows the user to enter their height in inches, weight 
+                in pounds and then calculate their body mass index (BMI). To 
+                calculate BMI, we will use the following formulas:
+            </p>
+            <p style="padding:30px;">
+                bmi = kilograms / meters2
+            </p>
+            <p>
+                <em>Wait a minute! What’s going on here?</em>
+            </p>
+            <p>
+                Before we can do the calculation above, we need to convert 
+                weight in pounds to weight in kilograms and height in inches 
+                to meters. We also need these formulas:
+            </p>
+            <p style="padding:20px;">
+                meters = inches / 39.36
+                kilograms = pounds / 2.2
+            </p>
+            <p>
+                Once you calculate the BMI percentage, you will need to 
+                display one of the messages below based on the BMI percentage 
+                calculated.
+            </p>
+
+            <table class="table table-striped">
+                <caption>(from https://www.bmi-calculator.net)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">BMI range</th>
+                        <th scope="col">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>less than 18.5</td><td>Underweight</td></tr>
+                    <tr><td>less than 25</td><td>Normal Weight</td></tr>
+                    <tr><td>less than 30</td><td>Overweight</td></tr>
+                    <tr><td>less than 35</td><td>Obesity (Class 1)</td></tr>
+                    <tr><td>less than 40</td><td>Obesity (Class 2)</td></tr>
+                    <tr><td>40 or greater</td><td>Morbid Obesity</td></tr>
+                </tbody>
+            </table>
+
+            <p>
+                Be sure to complete pseudocode or a flowchart for this exercise 
+                and complete a table of test values that will test all the ranges 
+                given above. Both of these deliverables are worth points!
+            </p>
+            <p>
+                Test the application with your test data and verify it produces 
+                the results expected.
+            </p>
+
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Coyote Inn</h3>
+            <p>
+                Coyote Inn has hired you to develop a new application to estimate
+                charges for staying at their new inn. Their nightly rates are
+                based on months of the year and provided in the following table:
+            </p>
+            <table class="table table-striped">
+                <caption>Coyote Inn nightly rates by month</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Months</th>
+                        <th scope="col">Months</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1 – 3 (Jan – Mar)</td><td>$80/night</td></tr>
+                    <tr><td>4 – 6 (Apr – Jun)</td><td>$90/night</td></tr>
+                    <tr><td>7 – 9 (Jul – Sept)</td><td>$120/night</td></tr>
+                    <tr><td>10 – 12 (Oct – Dec)</td><td>$100/night</td></tr>
+                </tbody>
+            </table>
+            <p>
+                To keep things simple, you can allow the month to be entered
+                by the month number. Normally, this would be done by a date
+                period but we’ll do it by month to keep the exercise simple.
+            </p>
+            <p>
+                The user must be able to enter a month number (1 – 12) and
+                the number of nights. Use a decision structure to find the
+                correct price per night for the month entered and then multiply
+                it by the number of nights entered.
+            </p>
+            <p style="font-style:italic; font-weight:bold;">
+                Be sure to test all ranges and make sure your calculations
+                are correct.
+            </p>
+            <p style="font-style:italic; font-weight:bold;">
+                Be sure to include a table of test data and expected results
+                with your pseudocode.
+            </p>
+        </div> <!-- #ex3 -->
+    </div> <!-- #tabs -->
+</div> <!-- #lab2 -->
