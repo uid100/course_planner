@@ -1,7 +1,7 @@
 ﻿<!-- capstone course id: 456310 -->
 <!-- requirements definition -->
 
-<div id="requirements-management" style="background:bisque;">
+<div id="requirements" style="background:bisque;">
     <div id="navigation" style="padding: 20px;">
         <p style="margin:auto;">
             <a href="courses/456310" style="color:navy;">
@@ -59,6 +59,7 @@
     </div> <!-- #background -->
 
     <div id="good-requirements" style="padding:20px;">
+        <h2 class="alert">Writing Good Requirements</h2>
         <ul>
             A good requirement definition should be:
             <li>Clear: It should be well-defined, easy to understand and free of ambiguity.</li>
@@ -78,8 +79,108 @@
         </p>
     </div> <!-- #good-requirements -->
 
-    <div>
+    <div id="reqt-decomp" style="padding:20px;">
+        <h2 class="alert">Decomposing Requirements</h2>
+        <p>
+            Requirements decomposition is the process of breaking down high-level requirements 
+            into smaller, more specific and manageable parts. It helps to clarify, organize and 
+            prioritize requirements, and to ensure that each requirement can be traced back to 
+            its origin.
+        </p>
+        <p>
+            <ul>
+            Decomposition can occur at different levels:
+                <li>
+                    From user requirements to system requirements: The process of identifying 
+                    and documenting the high-level functional and non-functional requirements 
+                    that the system must meet to satisfy its users.
+                </li>
+                <li>
+                    From system requirements to software requirements: The process of defining 
+                    the software functions and characteristics that are necessary to implement 
+                    the system requirements.
+                </li>
+                <li>
+                    From software requirements to component requirements: The process of 
+                    specifying the detailed requirements for individual software components 
+                    that make up the overall software system.
+                </li>
+            </ul>
+        </p>
+        <p>
+           The goal of requirements decomposition is to ensure that each requirement is specific, 
+            testable, and traceable, and that all requirements are covered and accounted for in 
+            the final product.
+        </p>
+        <p>
+            The lower level requirements (system, software, component) always should directly 
+            support the top level requirements (usually called the user requirements)
+        </p>
+        <p>
+            The idea is that if the all of the lower level requirements are met, then the top-level
+            requirements are thought to be met also.
+        </p>
 
+        <p>
+            Here's an example of a decomposed requirement from a top-level requirement:
+        </p>
+        <dl>
+            <dt>Top-level requirement:</dt>
+            <dd>2.0 "The software must allow users to manage their personal finances."</dd>
+
+            <dt>Decomposed requirements:</dt>
+            <dd>2.1 "The software must allow users to input and categorize their income and expenses."</dd>
+            <dd>2.2 "The software must provide a summary of users' spending by category."</dd>
+            <dd>2.3 "The software must allow users to set budgets for each spending category and track their progress towards their budget goals."</dd>
+            <dd>2.4 "The software must provide users with a visual representation of their income and expenses over time."</dd>
+            <dd>2.5 "The software must allow users to generate reports for tax purposes."</dd>
+        </dl>
+
+        <p>
+            These decomposed requirements provide more detail and specificity to the top-level 
+            requirement, making it easier to understand and implement. Each decomposed requirement 
+            can be further decomposed into smaller, more manageable parts if necessary.
+        </p>
+
+    </div> <!-- #reqt-decomp -->
+
+    <div id="req-mgmt" style="padding:20px;">
+        <h2 class="alert">Managing Requirements</h2>
+        <p>
+            Requirements management encompasses several activities, from capturing originating
+            requirements from investigation with stakeholders (customers, end-users, subject-matter
+            experts and project teams), analysis, documentation, prioritization, and requirements
+            tracing.
+        </p>
+        <p>
+            Requirements tracing includes ensuring that decomposed requirements accurately and
+            completely support higher level requirements and that all requirements are correctly
+            verified and validated.
+        </p>
+        <p>
+            To further complicate the issue, requirements change.
+        </p>
+        <p>
+            There are many things that can drive requirements change. Sometimes regulation
+            compliance issues arise which could not have been anticipated, or a dependency
+            on am external interface which is no longer supported, or the customer's need
+            or perception changes.
+        </p>
+        <p>
+            An important part of requirements management is minimizing requirements
+            volatility and analyzing the impacts with they do change.
+        </p>
+
+        <p>&nbsp;</p>
+        <hr />
+        <p style="font-style:italic">So... the requirements are WHAT???</p>
+        <p style="text-align: center;">
+            <iframe title="YouTube video player" 
+                    src="https://www.youtube.com/embed/BKorP55Aqvg" 
+                    width="560" height="315" 
+                    allowfullscreen="allowfullscreen" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                </iframe></p>
     </div>
     <p>&nbsp;</p>
-</div> <!-- #requirements-management -->
+</div> <!-- #req-mgmt -->
