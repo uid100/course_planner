@@ -1,0 +1,173 @@
+﻿<!-- capstone course id: 455772 -->
+<!--  serverless functions -->
+<!-- assignment -->
+
+<div id="virtual-machines" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="assignment" style="padding:20px;">
+        <div id="instructions">
+            <h2 class="alert alert-info">Virtual Machines</h2>
+
+            <p>
+                There are two parts to this exercise. You will deploy and
+                connect to Virtual Machines from the desktop and from the cloud.
+            </p>
+            <p>
+                You will have some options for this exercise. Also,  
+                the detailed instructions that you need may require some web
+                searching. You're encouraged to share notes on the class'
+                Discord channel. I'll add mine there too.
+            </p>
+            <p>
+                There are two weeks for this module, but get started as
+                soon as you can.
+            </p>
+        </div> <!-- #instructions -->
+
+        <div id="desktop">
+            <h2 class="alert alert-info">Desktop</h2>
+
+            <p>
+                In this first part, create a local virtual machine hosted on 
+                hypervisor. You can do this either with VirtualBox or Hyper-v.
+            </p>
+            <ul>
+                Select either:
+                <li>VirtualBox (or)</li>
+                <li>Hyper-V</li>
+            </ul>
+            <p>
+                VirtualBox is a no cost application available for Windows, Mac
+                and Linux and I have run it successfully on all of these. There
+                are many resources available online to get you started. 
+            </p>
+            <p>
+                Hyper-v is Microsoft's virtualization product available for
+                Windows 10 and newer. I have not used this, but I have seen the 
+                demos for it and for Windows users, it looks like a good product.
+            </p>
+            <ul>
+                Choose one:
+                <li>Linux</li>
+                <li>Windows</li>
+                <li>Mac (within terms of EULA)</li>
+            </ul>
+            <p>
+                Once you've selected the virtualization environment, there are
+                many virtual machine images available for running many different
+                Linux variants, Windows images, or even MacOS. To install the 
+                Mac OS on a virtual machine, you will need a product key. This 
+                is not an easy hurdle to overcome. Windows images are available
+                for temporary use without license restrictions, but if it will 
+                be in use for longer (usually 30 days) then a license purchase
+                is required. Linux images are generally available without a cost.
+                Ubuntu is one of the most popular (Debian) variants. CentOS is
+                also popular - it is a RedHat variant.
+            </p>
+            <p>
+                Restoring an OSX (Mac) image to non-Apple platforms is not 
+                consistent with Apple's licensing agreements. If you are running
+                VirtualBox on a Mac, this is possible, but you will need to
+                investigate the license issues on your own. I recommend against
+                this to keep things simple.
+            </p>
+        </div> <!-- #lambda -->
+
+        <div id="cloud">
+            <h2 class="alert alert-info">Cloud</h2>
+            <p>
+                Next create and connect to a virtual machine hosted on a cloud server.
+            </p>
+            <p>
+                I have virtual machines running on Azure, AWS, and GCP. You can choose 
+                any of these. To build your VM.
+            </p>
+            <p>
+                Just like you did with the Desktop images
+            </p>
+            <ul>
+                Select a host
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>GCP</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>
+                <ul>
+                    And an image
+                    <li>Linux</li>
+                    <li>Windows</li>
+                </ul>
+            </p>
+            <p>
+                I will add suggested video resources to get you started to this page 
+                and on Discord.
+            </p>
+
+        </div> <!-- #func-app -->
+
+        <div id="submit">
+            <h2 class="alert alert-info">Submit</h2>
+            <p>
+                Upload one or two screenshots showing your virtual machines running on
+                your PC.
+            </p>
+            <p>
+                Here, I have <i>Puka11</i> running Windows from a local image, and 
+                <i>devVM</i> is a Windows image running on my Azure account. Both
+                are accessed using Microsoft Remote Desktop from my MacBook.
+            </p>
+
+            <div style="padding:30px">
+                <img src="/courses/455772/files/46450644/preview" alt="VMs on Mac" />
+            </div>
+            <h3>
+                Clean up
+            </h3>
+            <p>
+                Don't forget to clean up your subscription when you are finished.
+            </p>
+            <h4>Cloud</h4>
+            <p>
+                Even though my Azure VMs stop charging me when I stop the service
+                (from the Portal), if they are using a static IP address, there is
+                a nominal change for that. Also the disk storage for the system
+                which can get large if I have a lot installed on the VM, is also 
+                a charge separate from the VM image itself. I tend to create these
+                often. Some I start and stop and use often when I need another computer,
+                others, I build for a single task and delete when I'm finished. My 
+                usage cost for my frequent use is usually between $5 and $20 per
+                month. If you launch these and delete them again when you are done,
+                your usage should be much less, and more likely within the free 
+                usage tier.
+            </p>
+            <p>
+                When you delete the virtual machine, delete the <strong>resource
+                group</strong>, rather than the VM itself. The resource group will
+                also delete the disk and release the network resources which might
+                otherwise persist and become recurring costs.
+            </p>
+            <h4>Desktop</h4>
+            <p>
+                If you won't be using your local VM images, you can delete them also.
+                My Linux VM images typically take up about 4+Gb of disk space each.
+                Since these are located on your hardware, there won't be recurring 
+                costs, but if you need the disk space, deleting them is recommended.
+            </p>
+
+        </div>
+
+        <div id="footer" style="padding: 20px;">
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+        </div> <!-- #footer -->
+
+    </div> <!-- #assignment -->
+</div> <!-- #serverless-functions -->

@@ -1,0 +1,267 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- virtualization -->
+
+<div id="virtualization" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="discussion" style="padding:20px;">
+        <div id="background">
+            <h2 class="alert alert-info">Virtualization</h2>
+            <p class="ic-flash-info">
+                Virtualization is the creation of a virtual version of something, such as an operating
+                system, a server, a storage device, or network resources. It allows multiple systems to
+                run on one physical device, increasing utilization, and providing flexibility and
+                isolation for different workloads.
+            </p>
+
+            <p>
+                Your computer likely consists of a set of input and output devices, some kind of
+                long- and short-term storage capability and a processor to control them, complete
+                processing tasks and control those devices.
+            </p>
+            <p>
+                On top of this hardware layer is an operating system which is a collection of software
+                that manages computer hardware resources and provides common services for computer
+                programs. It acts as an intermediary between the user of a computer and the computer
+                hardware, and controls the execution of application programs. The operating system is
+                responsible for security, memory management, task scheduling, and input/output
+                operations.
+            </p>
+            <p>
+                Virtualization enables an operating system to be hosted on a set of hardware resoures
+                that may not be on the same physical system.
+            </p>
+        </div> <!-- #background -->
+
+        <div id="vnc" style="padding:20px;">
+            <h2 class="alert alert-info">VNC</h2>
+            <h3>An Evolution</h3>
+            <p>
+                VNC stands for Virtual Network Computing and is a technology for remote 
+                access and control of computers. The concept of VNC was first developed 
+                in the late 1990s by the UK-based company AT&T Laboratories Cambridge. 
+                The aim of the technology was to allow remote access to computers over 
+                the internet in a way that was platform-independent and easy to use.
+            </p>
+            <p>
+                The first version of VNC was released in 1998 as open-source software, 
+                which allowed developers to freely use and modify the code. This 
+                open-source approach quickly gained popularity, and the software was 
+                adopted by a wide range of organizations and individuals. Over time, 
+                VNC has evolved to include features such as encryption and authentication, 
+                making it more secure for use in sensitive environments.
+            </p>
+            <p>
+                Today, VNC is widely used by individuals, businesses, and organizations 
+                for remote access and control of computers. There are several 
+                implementations of VNC available, both as open-source software and as 
+                commercial products. VNC is compatible with a wide range of operating 
+                systems, including Windows, MacOS, and Linux, making it an accessible 
+                and versatile tool for remote computing.
+            </p>
+            <hr />
+            <p>
+                Simply put, there were large Unix workstations in the office next
+                door from mine. Prior to this, I could easily open a terminal session,
+                or several from my desktop PC, instead of walking into the lab, but
+                now, I could open GUI sessions to this computer in a windowed application
+                on my computer, and my mouse actions and keyboard clicks would all
+                be passed to the remote machine as if I was sitting in front of it.
+            </p>
+            <div id="fig1" style="text-align:center;font-style:italic;">
+                <img src="/courses/455772/files/46434952/preview" 
+                     alt="linux session hosted on Mac" width="640" height="400" />
+                <p>Remote Linux session from Mac using VNC</p>
+            </div>
+            <p>
+                And more than that, this VNC server could also run on my PC, so that
+                from my home computer, I could open a client session into my PC at
+                work and like I did with the Unix workstation, I could interact from
+                that remote location.
+            </p>
+            <p>
+                Recent releases of Windows include this capability also in the RDS,
+                or Remote Desktop Services. In fact, I'm typing this on my workstation
+                which is a MacBook hosting a remote session to a PC sitting on a shelf
+                across the room.
+            </p>
+            <div id="fig1" style="text-align:center;font-style:italic;">
+                <img src="/courses/455772/files/46434964/preview" 
+                     alt="remote PC hosted on Mac using RDP" width="640" height="480" />
+                <p>Remote PC session from Mac using RDS</p>
+            </div> <!-- #fig2 -->
+            <p>
+                There are two keyboards, but they are both attached to the MacBook.
+                Some of you may be aware that there are differences between some special
+                keystrokes and the layout of the Mac and PC keyboards has subtle
+                differences. I do switch between the keyboards sometimes, but they
+                both work in whichever mode I'm working. There's usually a second point
+                device (trackpad) on the desk too, but again, both systems support
+                multiple input devices.
+            </p>
+            <p>
+                When I don't need the PC, I can minimize or close the window and use both
+                monitors for the MacBook.
+            </p>
+            <p>
+                It was an arbitrary decision to host the PC from the Mac. In my upstairs
+                office, I have a workstation that is set up to use my PC with a USB-C
+                interface to control 2 monitors. Of course I can open a session to my
+                MacBook from a PC there too and still be able to copy / pasted between the
+                two systems. The difference is that I need to run VNC software instead
+                of Windows' RDS, but really they work very much the same way.
+            </p>
+        </div> <!-- #vnc -->
+
+        <div id="vm" style="padding:20px;">
+            <h2 class="alert alert-info">Virtual Machines</h2>
+            <p>
+                So far, we've demonstrated that we can host a remote machine from another
+                computer which may be located in another room, or across town, and use
+                local input and output devices as if they were connected. Cool!
+            </p>
+            <p>
+                We started out this discussion with a reminder of the hardware configuration
+                that comprises a typical computer (I/O, processor(s), storage, operating 
+                system, other software), and we demonstrated that we can connect remotely
+                and share I/O (keyboard, monitor, etc.) as if they were locally connected.
+                Now consider that the Operating System -which interacts with those devices 
+                and launches and manages other software processes- could also be configured
+                to run as a program on another computer. Actually, there is a piece of software
+                called a Hypervisor which will run on a computer, and host another, or 
+                several other, operating system(s) on it, as long as the host computer has
+                enough resources.
+            </p>
+            <p>
+                Like with the remote computer connection, I can click into the host window
+                and interact with a separate computer, but the difference is, instead of
+                the system running on a remote physical machine, it can borrow processor
+                and storage resources from the host computer. In fact, if I have enough 
+                resources, I can have many separate computer sessions running on my computer
+                that only exist in memory.
+            </p>
+            <p>
+                Watch the videos below to learn more.
+            </p>
+        </div>
+        <div id="applications" style="padding:20px;">
+            <h3 class="alert alert-info">Uses for Virtual Machines</h3>
+            <p>
+                So if you can run a virtual machine hosted on your computer or you can
+                use connect to remote computer and operate it within your host computer,
+                why not connect to a remote virtual computer running on a server in the
+                cloud. The virtual machine works the same whether it is hosted on your
+                local computer or the remote server, which is capable of running many 
+                virtual machines at the same time.
+            </p>
+            <div id="vm-screens" style="text-align:center; font-style:italic;">
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/455772/files/46434788/preview" 
+                     alt="VMs for days!" width="690" height="414" />
+                <p>Remote to nearby PC and to Cloud VM using RDS</p>
+            </div>
+            <hr />
+            <h3>Testing</h3>
+            <p>
+                I have worked on many large government projects and when it came time to
+                deploy these systems, there were always formal test requirements. Not 
+                uncommonly, the project would train a group of users, using the official
+                manuals and training materials developed with the project, then sets of 
+                computers would be set up, often in remote locations, and these newly
+                trained test players would put the computer systems through their paces.
+                This was intended to prove that the system would perform with multiple
+                users across real-world networks, and that the delivered training materials
+                and user documentation was sufficient for the users to successfully complete
+                the intended tasks. 
+            </p>
+            <p>
+                As you can imagine, the costs associated with this type of event were high. 
+                The training team had to be onsite for some period of time, often weeks.
+                The (many) test players and observers had to be assigned to the task for 
+                the duration of training and the formal test event(s). Systems and facilities
+                needed to be arranged and procurred. These events could easily cost in 
+                hundreds of thousands of dollars. And if there were tests ahead of time,
+                which needed to be done to discover issues and mitigate risk, the cost would
+                of course be more.
+            </p>
+            <p>
+                Imagine that you need to ask your company for budget to purchase perhaps dozens
+                of new computers to be set up for this event. Even large companies might be
+                reluctant to do this. Now imagine instead, you could simply configure a VM 
+                as your test client, even script the test inputs themselves, and write a 
+                script to repeat this many times. Now, adding another 10, 20 or 50 computers 
+                for the test event becomes very manageable and very affordable. Test with 100!
+                And when the test is over, delete them.
+            </p>
+            <p>
+                Another advantage of using VMs for testing, is if the software (system) is 
+                still in development and has risk of crashing the computers, it's much
+                easier to manage if the "machine" is virtual. The software crashed? If 
+                it's contained in a Virtual Machine, then it can only affect that machine
+                and the likelihood of corrupting the host machine is unlikely.
+            </p>
+            <h3>Standardization</h3>
+            <p>
+                A company with many employees might use virtual machines so that all of 
+                their employees will have a pre-configured computer environment that is
+                the same as every other. If a computer fails for some reason, you simply
+                boot up another, and since they are all identical, there is no interruption
+                to work. Maybe it's a customer service center or call center. Greatly reduced
+                downtime and software licenses are easy to manage.
+            </p>
+            <p>
+                For classes, I often will create a virtual machine to demonstrate installing
+                software applications to a blank computer, without having to worry about
+                a previous version being installed. In one class, the computers were shared
+                with others outside of my class time, so to avoid data loss, I would connect
+                to my virtual machine in the class, use it for teaching, then close it and
+                reopen it from any other location, right where I left off in class without
+                worrying that someone had changed something since the last session.
+            </p>
+        </div>
+
+
+        <div id="videos">
+            <hr />
+
+            <h3>What is Virtualization (2:51)</h3>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iBI31dmqSX0" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </p>
+
+            <hr />
+            <h3>How to Use VirtualBox (13:51)</h3>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sB_5fqiysi4" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </p>
+            <hr />
+            <p>
+                Virtual Machines vs Containers
+            </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eyNBf1sqdBQ" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen></iframe>
+            </p>
+        </div> <!-- #videos -->
+
+        <div id="footer" style="padding: 20px;">
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+        </div> <!-- #footer -->
+
+    </div> <!-- #discussion -->
+</div> <!-- #serverless-computing -->

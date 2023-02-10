@@ -1,0 +1,28 @@
+﻿list ten simple questions about creating and using local and cloud-based virtual machines
+
+What is a virtual machine and how does it differ from a physical one?
+What is the difference between local and cloud-based virtual machines?
+How do I create a local virtual machine using virtualization software?
+What are the benefits of using cloud-based virtual machines?
+How do I access and use a cloud-based virtual machine?
+What are the security considerations when using virtual machines?
+How do I install software on a virtual machine?
+Can multiple virtual machines run simultaneously on a single physical machine?
+How do I store data on a virtual machine and make sure it is backed up?
+How do I manage network connections and security in a virtual machine environment?
+
+
+What is the main purpose of using virtual machines?
+a. To run multiple operating systems on the same physical machine
+b. To simulate physical hardware for testing purposes
+c. To run software that is not compatible with the host operating system
+
+How can data be stored in a virtual machine environment?
+a. By using a physical disk drive
+b. By using virtual disk images stored on the host machine
+c. By using cloud storage services
+
+How can multiple virtual machines run simultaneously on a single physical machine?
+a. By allocating different amounts of physical memory to each virtual machine
+b. By creating a new partition for each virtual machine
+c. By using virtualization software that allows multiple virtual machines to share the same physical resources.
