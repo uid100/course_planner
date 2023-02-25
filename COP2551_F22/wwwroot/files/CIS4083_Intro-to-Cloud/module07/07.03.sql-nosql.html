@@ -1,0 +1,171 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- Cloud-based database functions -->
+
+<div id="databases" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="sql-nosql" style="padding:20px;">
+        <h2 class="alert alert-info">Relational and Non-relational Databases</h2>
+        <div id="intro">
+            <p>
+                The referenced article from a Pluralsight blog post provides an introduction
+                to defining databases. It is not a comprehensive study of databases, but it
+                provides a good side-by-side comparison of <em>relational</em> (SQL) and
+                <em>non-relational</em> (NoSQL) databases.
+            </p>
+            <p style="font-style:italic;text-align:center; color:navy;">Use the link below to read the full article</p>
+        </div> <!-- #intro -->
+        <div id="excerpt" style="margin-left:30px;margin-right:30px;padding:40px; border:solid;">
+            <div id="header">
+                <a href="https://www.pluralsight.com/blog/software-development/relational-vs-non-relational-databases"
+                   style="color:navy;">
+                    Relational vs. Non-Relational Databases</a>
+                <p>By Tamara Pattinson</p>
+            </div> <!-- #header -->
+
+            <div id="rdbms">
+                <h2>
+                    What are relational databases?
+                </h2>
+                <p>
+                    A <a href="https://en.wikipedia.org/wiki/Relational_database" 
+                         style="color:navy;"target="_blank">
+                    relational database</a> stores data in tables and rows also referred to 
+                    as records. The term “relational database” was first used in 1970 by E.F. Codd at IBM 
+                    in his research paper “A Relational Model of Data for Large Shared Data Banks.” 
+                </p>
+                <p>
+                    A <a href="https://www.pluralsight.com/courses/relational-database-design" 
+                         style="color:navy;" target="_blank">
+                    relational database works</a> by linking information from multiple tables through the use 
+                    of “<i>keys</i>.” A key is a unique identifier which can be assigned to a row of data 
+                    contained within a table. This unique identifier, called a “<i>primary key</i>,” can then 
+                    be included in a record located in another table when that record has a relationship to the 
+                    primary record in the main table. When this unique primary key is added to a record in 
+                    another table, it is called a “<i>foreign key</i>” in the associated table. The connection
+                    between the primary and foreign key then creates the “<i>relationship</i>” between records 
+                    contained across multiple tables.
+                </p>
+            </div> <!-- #rdbms -->
+            <hr />
+            <div id="nosql">
+                <h2>
+                    What are non-relational databases?
+                </h2>
+                <p>
+                    In contrast, the non-relational database, or 
+                    <a href="https://en.wikipedia.org/wiki/NoSQL" target="_blank" style="color:navy;">NoSQL database</a>, stores 
+                    data. However, unlike the relational database, there are no tables, rows, primary keys or 
+                    foreign keys. Instead, the non-relational database uses a storage model optimized for 
+                    specific requirements of the type of data being stored.
+                </p>
+                <p>
+                    The five types of non-relational databases are: document data store, column-oriented 
+                    database, key-value store, document store, and graph database.&nbsp; Often combinations 
+                    of these types are used for a single application.
+                </p>
+                <dl>
+                    <dt>Document data stores</dt>
+                    <dd>
+                        A document data store manages a set of named string fields and object data values 
+                        in an entity referred to as a “document” typically stored in the form of JSON 
+                        documents.<br />
+                        The document stores do not require all documents to maintain identical data 
+                        structures, which provides a great deal of flexibility. It’s easy to see then how 
+                        this flexibility can be leveraged as an organization’s requirements change.
+                    </dd>
+                    <dt>Columnar (or column oriented) data stores</dt>
+                    <dd>A columnar data store organizes data into columns, which is conceptually similar 
+                        to the relational database. The true advantage of a column-family database is in 
+                        its denormalized approach to structuring sparse data, which comes from its 
+                        column-oriented approach to storing data.
+                    </dd>
+                    <dt>Key value stores
+                    <dd>
+                        This is the least complicated of the NoSQL databases. The key-value store is 
+                        simply a collection of key-value pairs contained within an object.
+                    </dd>
+                    <dt>Document stores</dt>
+                    <dd>
+                        Document stores are a bit more complex than key-value stores. The document 
+                        store is designed to store everyday documents as is, and they (involve) more
+                        complicated querying.
+                    </dd>
+                    <dt>Graph databases</dt>
+                    <dd>
+                        Last is the most complex non-relational database type. It’s designed to 
+                        efficiently store relations between entities. When data is greatly 
+                        interconnected, such as purchasing and manufacturing systems or referencing 
+                        catalogs, graph databases are a good solution.
+                    </dd>
+                </dl>
+                <p>
+                    Instead of the Structure Query Language (SQL) used by relational databases,
+                    NoSQL database uses Object-relational-mapping (ORM).
+                </p>
+            </div> <!-- #nosql -->
+        </div> <!-- #excerpt -->
+
+        <div id="database-service ">
+            <h3>A Database?</h3>
+            <ul>
+                The term <em>database</em> can refer to an application, a dataset, or a computer depending
+                on the context.
+            <li>
+                A <em>database</em> may refer to a software application that is used to store and manage large 
+                amounts of data. Examples of database applications include Oracle, MySQL, and Microsoft 
+                SQL Server.
+            </li>
+            <li>
+                A <em>database</em> can refer to a collection of data that is organized in a specific way to allow 
+                for efficient storage, retrieval, and modification. Databases can be used to store many 
+                types of data, including text, images, and numerical data.
+            </li>
+            <li>
+                Or, a <em>database</em> may refer to a physical or virtual storage device that is used to store 
+                data. This can include hard drives, solid-state drives, and cloud-based storage services.
+            </li>
+            </ul>
+            <p>
+                Cloud providers commonly provide database services as supported Platform-as-a-Service 
+                (PaaS). These are sometimes referred to as DBaaS or Database-as-a-Service.
+            </p>
+            <p>
+                This unfortunate ambiguity may lead to confusion. And to make things worse, all of these
+                are correct!
+            </p>
+            <hr />
+            <p>
+                The client-server nature of the database application, and the tendency for these installations to 
+                be commonly hosted on dedicated computers, makes this <em>service</em> an ideal candidate
+                for cloud providers. And it is no surprise that the leading cloud providers do provide
+                ready-to-implement solution platforms to host datasets as relational or non-relational 
+                configurations.
+            </p>
+            <p>
+                These cloud database solutions are considered Platform-as-a-Service because they are not
+                end-user applications (SaaS), and while they are highly configurable, they do not require
+                software installation and server maintenance as an Infrastructure-as-a-Service (IaaS) would.
+                They are generally considered <em>turn-key</em> utilities, ready for datasets to be 
+                written to and utilized.
+            </p>
+            <hr />
+            <p>
+                This week we will look at some examples.
+            </p>
+        </div>
+    </div> <!-- #database-service -->
+
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #databases -->
