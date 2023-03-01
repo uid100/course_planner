@@ -1,0 +1,207 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="demo-code" style="background-color:moccasin;">
+    <div id="header" style="padding:20px;">
+        <div id="navigtion">
+            <a href="/courses/49150">
+                <img src="/courses/49150/files/7949795/preview"
+                     alt="generic logic flow image" width="150" /><br />
+                <em>&nbsp;&nbsp; --> Home</em>
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+
+    <div id="python" style="padding:20px;">
+        <h2 class="alert">Chapter 6 Demo Code</h2>
+        <p>
+            Open this code in IDLE, walk through the source to
+            see if you can follow all that is going on before you
+            try and run it. After you run the code, try changing
+            around a few lines to see what happens.
+        </p>
+
+        <p>
+            In chapter 6, we move into user defined methods. In other languages,
+            these are often referred to as functions and/or procedures. In
+            languages that have both, functions return a value; procedures do not.
+            In Python, we'll use the term method.
+        </p>
+        <p>
+            The demos on this page are an assortment of things.
+        </p>
+    </div> <!-- #python -->
+
+
+    <div id="user-methods" style="padding:20px">
+        <h2 class="alert">User Methods</h2>
+        <h3>Bark!</h3>
+        <p>Simple demonstration of calling (invoking) a user-defined method</p>
+        <div id="user-methods-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# Misc Python method code for the chapter 6 notes
+
+
+# Python main() method
+def main():
+    bark()
+    
+
+# Python method definition with no parameters and no return value
+# def key word, method_name (): means no parameters
+def bark():
+    # be sure to indent 4 spaces!
+    print("Woof, woof!\n")
+
+
+
+# invoke the main method - note this is at the end
+# note the double underscore __ and indent 4 spaces
+if __name__ == "__main__":
+    main()
+</pre>
+        </div> <!-- #user-methods-code -->
+    </div> <!-- #user-methods -->
+
+    <div id="failed-overload" style="padding:20px;">
+        <h2 class="alert">Overloading - not supported in Python</h2>
+        <h3>Failed overload</h3>
+        <p class="ic-flash-info">
+            In Python, overloaded methods are not supported. This demo shows
+            an attempt to do it and how it fails.
+        </p>
+        <div id="failed-overload-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# Misc method code for the chapter 6 notes
+
+# "Global" constant that can accessed anywhere in this module
+RAISE_PCT = 1.1
+
+# Python main() method
+def main():
+    # attempt at calling "overloaded mehods" in Python
+    # WARNING: You will get errors running this!
+    new_salary1 = calc_new_salary(1000)
+    new_salary2 = calc_new_salary(1000, 2.5)
+    print("New salary 1 = " + str(new_salary1) + " New salary 2 = " + str(new_salary2))
+
+
+# Attempt at method overloading in Python
+# WARNING! This does not work!
+
+def calc_new_salary(old_salary):
+    return old_salary * RAISE_PCT
+
+def calc_new_salary(old_salary, raise_pct):
+    return old_salary * raise_pct
+
+
+# invoke the main method - note this is at the end
+# note the double underscore __ and indent 4 spaces
+if __name__ == "__main__":
+    main()
+</pre>
+        </div> <!-- #failed-overload-code -->
+    </div> <!-- #failed-overload -->
+
+    <div id="default-parms" style="padding:20px">
+        <h3>Workaround</h3>
+        <p>Python does allow using optional parameters as a "sort of" way to overload methods</p>
+        <div id="default-parms-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# Misc method code for the chapter 6 notes
+# Ch6MiscDemoCodeMethodOverloadKindaSorta.py
+
+# "Global" constant that can accessed anywhere in this module
+RAISE_PCT = 1.1
+
+# Python main() method
+def main():
+    # attempt at calling "overloaded mehods" in Python
+    new_salary1 = calc_new_salary(1000)
+    new_salary2 = calc_new_salary(1000, 2.5)
+    print("New salary 1 = " + str(new_salary1) + "\nNew salary 2 = " + str(new_salary2))
+
+
+# Attempt at achieving method overloading in Python by using optional parameters.
+# This is kind of a cheesy back handed approach. Whether or not this is
+# a great idea is arguable...
+# Code is based on a demo found at: https://pythonspot.com/method-overloading/
+
+def calc_new_salary(old_salary, raise_pct=None):
+    if raise_pct is not None:
+        return old_salary * raise_pct
+    else:
+        # Note we use our global constant
+        return old_salary * RAISE_PCT
+
+
+
+# invoke the main method - note this is at the end
+# note the double underscore __ and indent 4 spaces
+if __name__ == "__main__":
+    main()
+</pre>
+        </div> <!-- #default-parms-code -->
+    </div> <!-- #default-parms -->
+
+    <div id="variable-scope" style="padding:20px">
+        <h2 class="alert">Variable Scope</h2>
+        <p>
+            Variables only have meaning where they are defined (in scope).
+        </p>
+        <div id="variable-scope-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# Misc method code for the chapter 6 notes
+
+# "Global" constant that can accessed anywhere in this module
+RAISE_PCT = 1.1
+
+# Python main() method
+def main():
+    
+    new_salary1 = calc_new_salary1(1000)
+    new_salary2 = calc_new_salary2(1000, 2.5)
+    new_salary3 = calc_new_salary3(1000)
+    print("New salary 1 = " + str(new_salary1) + "\nNew salary 2 = " + str(new_salary2) + "\n")
+    print("New salary 3 = " + str(new_salary3))
+
+
+# Method overloading in Python doesn't work sooo... create 3 different methods
+
+def calc_new_salary1(old_salary):
+    return old_salary * RAISE_PCT # uses the "global" constant
+
+def calc_new_salary2(old_salary, raise_pct):
+    return old_salary * raise_pct
+
+def calc_new_salary3(old_salary):
+    LOCAL_RAISE_PCT = 1.5 # local constant to calcSalary3()
+    return old_salary * LOCAL_RAISE_PCT
+
+# invoke the main method - note this is at the end
+# note the double underscore __ and indent 4 spaces
+if __name__ == "__main__":
+    main()
+</pre>
+        </div> <!-- #variable-scope-code -->
+    </div> <!-- #variable-scope -->
+
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #demo-code -->
