@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module07\" />
+    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module08\" />
+    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module09\" />
+    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module10\" />
+    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module11\" />
+    <Folder Include="wwwroot\files\2023SP_CS_119_4451\module12\" />
     <Folder Include="wwwroot\files\COP2551_F22_Csharp_b\module1\" />
     <Folder Include="wwwroot\files\COP2551_F22_Csharp_b\module2\" />
     <Folder Include="wwwroot\files\course_files\module01\" />
