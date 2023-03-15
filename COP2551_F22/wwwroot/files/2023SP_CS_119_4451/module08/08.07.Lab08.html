@@ -1,0 +1,323 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab8" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #8</h2>
+        <div id="introduction">
+            <p>
+                This lab will give you some hands-on experience creating user defined 
+                classes using inheritance in Python and creating instances in a “test 
+                fixture” application. Classes such as these are commonly implemented, 
+                tested and debugged in a small scale test environment and then later 
+                integrated into a larger scale project.
+            </p>
+            <p class="ic-flash-alert">
+                Don't forget to export your design diagrams as jpeg image files!
+            </p>
+
+        </div> <!-- #introduction -->
+        <div id="objectives" style="padding:40px;">
+            <ul>
+                Objectives:
+                <li>Classes and objects</li>
+                <li>Implementing class models</li>
+                <li>Protected access</li>
+                <li>Inheritance – superclasses and subclasses</li>
+                <li>Class constructors</li>
+                <li>Class get() and set() methods</li>
+                <li>Abstract methods</li>
+                <li>Overriding methods</li>
+            </ul>
+        </div> <!-- #objectives -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+            <li><a href="#ex4">Exercise 4</a></li>
+            <li><a href="#ex5">Exercise 5</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Automobile class</h3>
+            <p>
+                This exercise is based on exercise 1 on page 333 of the textbook.
+            </p>
+            <div id="class-model">
+                <h3 class="alert">Design</h3>
+                <h3>Creating the Class Model</h3>
+                <p>
+                    Open a new UML drawing in Draw.io. Drag and drop 2 classes onto
+                    the page. Fill in the class name, attributes and properties.
+                    From the exercise, we are given the Automobile class properties
+                    are Vehicle Identification Number (VIN), make, model and color.
+                    We’ll add a to_string() method to return a string of all the
+                    properties. The Convertible class has the added property to
+                    indicate whether the top is up and it will have a to_string()
+                    method we’ll override. When showing an inheritance relationship
+                    in a class model, the key thing is to have the inheritance line
+                    with the arrow pointing to the parent or base class. The class
+                    model should look something like this:
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;" 
+                         src="/courses/49150/files/8284519/preview" 
+                         alt="Automobile class model showing inheritance" />
+                </p>
+                <p class="ic-flash-alert">
+                    <b>Reminder:</b><br />
+                    The Class model is not a flowchart.
+                </p>
+            </div> <!-- #class-model -->
+            <div id="automobile">
+                <h3 class="alert">Automobile class</h3>
+                <h3>Python Code for the Automobile Class</h3>
+                <p>
+                    Create a new code file in Python called <code>Automobile</code> and a class
+                    called <code>Automobile</code> (note: classes should be upper case), code the
+                    properties, constructor, accessors and mutators (getters/setters), and
+                    to_string() method. This class will be coded like the ones we did in the last
+                    chapter with the exception that our attributes will be declared with protected
+                    access.
+                </p>
+                <p>
+                    Protected access is just like private except that it allows derived (inherited)
+                    classes direct access (see page 316).
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;" 
+                         src="/courses/49150/files/8284808/preview" 
+                         alt="Automobile class Python source" />
+                </p>
+            </div> <!-- #automobile-->
+            <div id="convertible">
+                <h3 class="alert">Convertible class</h3>
+                <p>
+                    Now we’re going to create a new code file called <code>Convertible</code>
+                    in Python. The added twist is in the class header where we have
+                    <code>class Convertible( Automobile )</code>, and in the
+                    <strong>constructor</strong> where we first call the inherited class constructor
+                    by using the <code>super().__init__</code> statement and then add any new
+                    initialization behavior needed.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;" 
+                         src="/courses/49150/files/8284815/preview" 
+                         alt="Convertible class Python source" />
+                </p>
+            </div><!-- #convertible -->
+            <div id="car-test">
+                <p>
+                    Create a new Python code file called <code>CarTest.py</code>. A screen shot of
+                    the code is provided below. There shouldn’t be much in the way of surprises for
+                    the Python code.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;" 
+                         src="/courses/49150/files/8284817/preview" 
+                         alt="Car test fixture Python source" />
+                </p>
+            </div> <!--#car-test-->
+            <hr />
+            <h3 class="alert">Don't Forget to Test!</h3>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Race Car class</h3>
+            <p>
+                Create a Python code file called <code>Racecar.py</code> and a class
+                called <strong>Race_Car</strong> that inherits from the
+                <code>Automobile</code> class you did in exercise 1. It will have one
+                additional property called <code>horse_power</code> which is a number.
+            </p>
+            <p style="font-weight:bold;">
+                Add the class model to the <strong>Automobile</strong> class model in
+                the last exercise and show an inheritance relationship.
+            </p>
+            <p>
+                Add the code needed to prompt the user for the horse power, create a
+                <coce>Race_Car</coce> object and call the <code>to_string()</code>
+                method to your CarTest test fixture application.
+            </p>
+            <p>
+                Be sure to test your code!
+            </p>
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Player class</h3>
+            <p>
+                In this exercise, you’ll create a general class called
+                <strong>Player</strong> and then derive (inherit) 2 classes,
+                <strong>BaseballPlayer</strong> and <strong>BasketballPlayer</strong>,
+                from it.
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8284938/preview" 
+                     alt="Player class hierarchy" width="553" height="338" />
+            </p>
+            <hr />
+            <h3 class="alert">Player class Python code</h3>
+            <p>
+                Create a new Python code file called <strong>Player.py</strong>. Code
+                a new class called <code>Player</code>. Implement the attributes, constructors,
+                getter and setter methods, and the to_string() method.
+            </p>
+            <p>
+                One added twist to the code is that we will add some validation to
+                <code>setNumber()</code> to make sure a player’s number is within some “reasonable”
+                range. Notice the custom constructor will call <code>setNumber()</code>. The player
+                class should look like this:
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8285201/preview" 
+                     alt="Player class Python source" />
+            </p>
+            <p>&nbsp;</p>
+            <h3 class="alert">BaseballPlayer class</h3>
+            <p>
+                Create a Python code file called <code>BaseballPlayer.py</code>, create a new class
+                called <code>BaseballPlayer</code>, implement the attributes, constructors, getters/setters
+                and <code>to_string()</code> method. Python screen shots are provided.
+            </p>
+            <p>
+                In the class header, be sure it extends <code>Player</code>. Notice there’s less code by
+                inheriting from another class. Also note the user of the <code>super()</code> statement
+                to call the inherited class <strong>constructor</strong>.
+            </p>
+            <p>
+                In the <code>to_string(</code>) method, notice how the statement
+                <code>super().to_string()</code> calls the <code>to_string()</code> method in the parent
+                class saving some work.
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8285203/preview" 
+                     alt="BaseballPlayer class Python source" />
+            </p>
+            <h3 class="alert">Player Test Fixture</h3>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8285204/preview" 
+                     alt="PlayerTest Python source" />
+            </p>
+            <p>&nbsp;</p>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 4!</p>
+        </div> <!-- #ex3 -->
+
+        <div id="ex4" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 4</h2>
+            <hr />
+            <h3 class="alert alert-info">BasketballPlayer class</h3>
+            <p>
+                Implement the <strong>BasketballPlayer</strong> class. This inherits from
+                the <strong>Player</strong> class and has the added properties <code>position</code> and
+                <code>free_throw_percentage</code>.
+            </p>
+            <p>
+                Add the code to prompt for free throw percentage, create the
+                <strong>Basketball_Player</strong> object and call the <code>to_string()</code> to your
+                <strong>PlayerTest</strong> test fixture application.
+            </p>
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 5!</p>
+        </div> <!-- #ex4 -->
+
+        <div id="ex5" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 5</h2>
+            <hr />
+            <h3 class="alert alert-info">Person class</h3>
+            <p>
+                In this exercise, we will create a base class (superclass) and two inherited classes 
+                (subclasses). To keep things reasonably simple, we’re going to implement just a few 
+                properties and a single method. In real world software development, classes like these 
+                would contain numerous properties and methods. Our goal is to learn the object-oriented 
+                design/programming concepts, Python syntax for classes and inheritance relationships.
+            </p>
+            <p>
+                This exercise is very similar to what did in the previous exercises. This time, the 
+                instructions aren’t going to be as detailed.
+            </p>
+            <ol>
+                <li>
+                    In Draw.io, create a new drawing using the UML class model template. Create a class 
+                    model for a class called <b>Person</b> with the following properties: name, address, 
+                    age. Mark these private. It will have a <em>public</em> <code>to_string()</code> 
+                    method that will display a formatted string of all the properties.
+                </li>
+                <li>
+                    In your class model, add a class called <strong>employee</strong>. Show an inheritance 
+                    (often called a generalization) relationship from the <strong>person</strong> class. 
+                    With inheritance, the arrow points to the superclass or base class. In the 
+                    <strong>employee</strong> class, add the following properties: job_skills and years_worked. 
+                    The <strong>employee</strong> class will override the <code>to_string()</code> method.
+                </li>
+                <li>
+                    Add a class called <strong>student</strong> to your model. Show an inheritance relationship 
+                    from the <strong>person</strong> class. In the <strong>student</strong> class, add the 
+                    following properties: major and units completed. The <strong>student</strong> class will 
+                    also override the <code>to_string()</code> method.
+                </li>
+                <li>
+                    Time to write some code! Create a code file called <em>Person.py</em> and a class called 
+                    <strong>Person</strong>. Implement the properties and methods required from your class model.
+                </li>
+                <li>
+                    Create a Python code file called <em>Employee.py</em>. Implement the <strong>Employee</strong> 
+                    class with the required properties and methods. Be sure to inherit from the <strong>Person</strong> class.
+                </li>
+                <li>
+                    Create a Python code file called <em>Student.py</em>. Implement the <strong>Student</strong> class
+                    with the required properties and methods. Inherit from the <strong>Person</strong> class.
+                </li>
+                <li>
+                    Create a Python code file called <em>PersonTest.py</em>. Prompt for the inputs needed to test the 
+                    <strong>student</strong> and <strong>employee</strong> classes. Create an instance of each and 
+                    display the values.
+                </li>
+            </ol>
+            <p>Sample run:</p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8285231/preview" 
+                     alt="Person Test sample run" width="663" height="223" />
+            </p>
+        </div> <!-- #ex5 -->
+
+    </div> <!-- #tabs -->
+</div> <!-- #lab8 -->
