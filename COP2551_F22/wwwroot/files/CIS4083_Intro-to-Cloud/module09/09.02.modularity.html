@@ -1,0 +1,124 @@
+﻿<!-- cloud course id: 455772 -->
+<!-- n-tiered architecture and SOA -->
+
+<div id="n-tier" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="overview" style="padding:20px;">
+        <p>
+            <img src="/courses/455772/files/46898194/preview" alt="Layers!"
+                 style="display:block; margin-right:auto; margin-left:auto;"/>
+        </p>
+    </div> <!-- #overview-->
+
+    <div id="layers" style="padding:20px;">
+        <h3 class="alert alert-info">Separation of Concerns</h3>
+        <p>
+            Multi-layer, and <em>n-Tiered</em> design patterns are important 
+            in solution development and especially cloud computing.
+        </p>
+        <p>
+            Layers are used describe the logical separation of functionality,
+            for instance the front end or <em>presentation</em> layer from the 
+            <em>business</em> logic, and the <em>data access</em> layer(s).
+            Closely related to that is distributing those functional layers to
+            phyisically separate components, such as a web server, api server, 
+            and database server.
+        </p>
+        <p>
+            To use the cake analogy, cakes may have layers inside them, and
+            multiple individual cakes can be stacked in separate tiers. 
+        </p>
+        <ul>
+            Why?
+            <li>Security</li>
+            <li>Scalability</li>
+            <li>Maintainability</li>
+            <li>Extensibility</li>
+        </ul>
+        <p>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/KlHvRKSH4pk" 
+                    title="YouTube video player"  frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </p>
+    </div>
+
+    <div style="padding:20px;">
+        <h3 class="alert alert-info" >It Depends!</h3>
+        <p>
+            But how many layers is the right number?
+        </p>
+        <p>
+            This <em>podcast</em> presents what is maybe a different perspective 
+            than what you might expect. 
+        </p>
+        <blockquote>
+            Let the application dictate the design.<br /> 
+            Don't have the design dictate the application.
+        </blockquote>
+        <p>
+            As a student, so often the point of an assignment is to learn a 
+            particular design pattern or architecture, to the point that you 
+            may be led to think <em>that</em> is the way to do things.
+        </p>
+        <ol>
+            <li>There <strong>are</strong> <em>best-practices</em></li>
+            <li><strong>Design patterns</strong> exist for a reason</li>
+            <li>Architecture decisions always start out with <em>it depends</em></li>
+        </ol>
+        <p>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/iRfwdPJYmfc" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </p>
+        <p style="font-style:italic;">
+            This video may not be supported in Canvas. The link should work.
+        </p>
+    </div>
+
+    <div id="soa" style="margin:20px;">
+        <h3 class="alert alert-info">Service-Oriented Architecture</h3>
+        <p>
+            While not strictly the same as an <em>n-Tiered</em> application which
+            has logical boundaries between process blocks, <strong>Service-Oriented
+            Architecture (SOA)</strong> operates on a similar concept of decomposing
+            individual actions and components to independent services. The concept of
+            application layers, and tiers is similar but SOA uses self-contained services
+            which may be shared among more than one external application. 
+        </p>
+        <p>
+            A web application may store data in a SQL database running on a cloud server,
+            and a separate mobile application may also access that same database, while
+            an administrator is accessing the database and running queries from an RDBMS
+            client on the server at the same time. Although each appication interacts with
+            and relies on the database, the service itself is likely unaware of other 
+            processes and applications accessing it.
+        </p>
+        <p>
+            Advantages of running applications across multiple <rm>tiers</rm> or even
+            discrete <em>services</em>, includes the ability to scale each component and
+            even use <em>load-balancing</em> to share the processing across multiple 
+            resources.
+        </p>
+        <p>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/AmQeeB4ygZc" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </p>
+    </div> <!-- #soa -->
+    <p>&nbsp;</p>
+</div>
+
