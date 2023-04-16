@@ -1,0 +1,357 @@
+{
+  "Cuyamaca College": {
+    "CS119": {
+      "title": "Programming Logic and Design",
+      "objectives": {
+        " 1)": "Use software engineering methodologies and practices to:",
+        "1a.": "Decompose a complex problem into modular components using both procedural and object oriented design practices.",
+        "1b.": "Define and provide examples of procedural abstraction.",
+        "1c.": "Define and provide examples of encapsulation.",
+        " 2)": "Produce flowchart and pseudocode solutions to solve introductory level programming problems.",
+        " 3)": "Design programs that utilize classes from the standard library (in Java this might include JTextField, DecimalFormat, Math, for example) to solve a variety of programming problems.",
+        " 4)": "Design user-defined methods to augment the standard library in solving a variety of programming problems.",
+        " 5)": "Discuss the difference between public and private access modifiers and their implications in programs.",
+        " 6)": "Distinguish between local variables and class attributes and their accessibility implications.",
+        " 7)": "Utilize all three fundamental programming structures–sequence, decision/selection, repetition–in solving programming problems.",
+        " 8)": "Define the concept of inheritance in a programming perspective and provide examples of where it might be used.",
+        " 9)": "Provide examples of polymorphic methods.",
+        "10)": "Identify the role and variety of constructor methods in programs.",
+        "11)": "Apply time management strategies critical for success in the business world.",
+        "12)": "Demonstrate critical problem-solving skills in the debugging of programs.",
+        "13)": "Trace program flow and predict outcomes."
+      }
+    }
+  },
+  "Santa Fe College": {
+    "COP2000": {
+      "title": "Introduction to Programming",
+      "objectives": {
+        "1": "Understand the program development cycle",
+        "2": "Understand how various programming languages are similar and differ",
+        "3": "Understand data types and variable scope",
+        "4": "Use the various types of selection structures",
+        "5": "Use the various types of repetition structures",
+        "6": "Use arrays and pointers to store character and numeric data",
+        "7": "Understand how to create and use functions",
+        "8": "Understand how sequential data files are opened, read to and from, deleted, and merged",
+        "9": "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism"
+      }
+    },
+    "COP2002": {
+      "title": "Program Logic",
+      "objectives": {
+        "1": "Understand how computers receive input, process data, and supply output",
+        "2": "Distinguish between various types of programming and scripting languages",
+        "3": "Understand how numbers and characters are stored in a computer",
+        "4": "Convert numbers to binary and hexadecimal representations and characters to ASCII representation",
+        "5": "Distinguish between various data types",
+        "6": "Create complex conditions using relational and logical operators",
+        "7": "Use single-, double-, and multiple-alternative selection structures",
+        "8": "Create various types of repetition structures including pre- and post-test loops, for loops, while loops, and do...while loops",
+        "9": "Create and use lists and arrays in a program",
+        "10": "Create programs with user-defined and pre-defined modules and functions",
+        "11": "Distinguish between syntax, runtime, and logic errors",
+        "12": "Use the command prompt environment to implement basic batch file commands",
+        "13": "Use the Python math and decimal modules in programs to work with numbers",
+        "14": "Use built-in Python functions to work with strings"
+      }
+    },
+    "COP2551": {
+      "title": "Object Oriented Programming 1",
+      "objectives": {
+        "1": "Understand the program development cycle",
+        "2": "Understand forms, controls, and events",
+        "3": "Understand data types and variable scope",
+        "4": "Use the various types of selection structures",
+        "5": "Use the various types of repetition structures",
+        "6": "Use arrays and pointers to store character and numeric data",
+        "7": "Understand how to create and use functions",
+        "8": "Understand how sequential data files are opened, read to and from, deleted, and merged",
+        "9": "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+        "10": "Understand the basic concepts of working with a database",
+        "11": "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+      }
+    },
+    "COP2552": {
+      "title": "Object Oriented Programming 2",
+      "objectives": {
+        "1": "Understand the program development cycle",
+        "2": "Understand data types, variable scope, and file access",
+        "3": "Recognize the properties and behaviors of classes and objects",
+        "4": "Use the various types of selection structures",
+        "5": "Use the various types of repetition structures",
+        "6": "Use arrays and arraylists to store character and numeric data",
+        "7": "Understand how to create and use functions",
+        "8": "Understand how sequential data files are opened, read to and from, deleted, and merged",
+        "9": "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+        "10": "Comprehend and use wrapper classes",
+        "11": "Know proper use of exception handling",
+        "12": "Understand and use JavaFX to create GUI-based applications",
+        "13": "Utilize a relational database within a Java application"
+      }
+    }
+  },
+  "Florida Department of Education": {
+    "url": "http://www.fldoe.org/academics/career-adult-edu/career-tech-edu/program-resources.stml",
+    "2022-23 CTE CURRICULUM FRAMEWORKS": {
+      "url": "https://www.fldoe.org/academics/career-adult-edu/career-tech-edu/curriculum-frameworks/2022-23-frameworks/",
+      "Agriculture, Food & Natural Resources": {},
+      "Architecture & Construction": {},
+      "Arts, A/V Technology & Communication": {},
+      "Business, Management & Administration": {},
+      "Education & Training": {},
+      "Energy": {},
+      "Engineering & Technology Education": {},
+      "Finance": {},
+      "Government & Public Administration": {},
+      "Health Science": {},
+      "Hospitality & Tourism": {},
+      "Human Services": {},
+      "Information Technology": {
+        "url": "https://www.fldoe.org/academics/career-adult-edu/career-tech-edu/info-technology.stml",
+        "Middle School Courses": {
+          "Coding Fundamentals (9009200)": {
+            "url": ""
+          },
+          "Digital Discoveries in Society (9009600)": {},
+          "Exploring Information Technology Careers (9009350)": {},
+          "Exploring Information Technology Careers & Career Planning (9009360)": {},
+          "Fundamentals of Networking and Information Support (9009400)": {},
+          "Fundamentals of Web and Software Development (9009500)": {},
+          "Information and Communications Technology (ICT) Essentials (9009100)": {},
+          "Information and Communications Technology (ICT) Essentials Careers & Career Planning (9009370)": {},
+          "Orientation to Career Clusters (8000400)": {}
+        },
+        "Secondary Courses/Programs": {
+          "Applied Cybersecurity (9001300) (RTF)": {},
+          "Applied Information Technology (9003400) (RTF)": {},
+          "Business Computer Programming (8206500) (RTF)": {},
+          "Cloud Computing & Virtualization (9001500) (RTF)": {},
+          "Computer Science Principles (9007600) (RTF)": {},
+          "Computer Systems & Information Technology (9001200) (RTF)": {},
+          "Database and Programming Essentials (8206400) (RTF)": {},
+          "Database Application Development & Programming (9007300) (RTF)": {},
+          "Digital Media Technology (9005100) (RTF)": {},
+          "Game/Simulation/Animation Advanced Applications (8208400) (RTF)": {},
+          "Game/Simulation/Animation Audio/Video Effects (8208200) (RTF)": {},
+          "Game/Simulation/Animation Programming (8208300) (RTF)": {},
+          "Game/Simulation/Animation Visual Design (8208100) (RTF)": {},
+          "Geospatial/Geographic Information Systems Technology (8600200) (RTF)": {},
+          "Integrated Information Technology (9003500) (RTF)": {},
+          "Java Development & Programming (9007200) (RTF)": {},
+          "Modeling and Simulation (9005200) (RTF)": {},
+          ".NET Application Development & Programming (9007400) (RTF)": {},
+          "Network Support Services (8208000) (RTF)": {},
+          "Network Systems Administration (8207440) (RTF)": {},
+          "Technology Support Services (9001400) (RTF)": {},
+          "Web Application Development & Programming (9007500) (RTF)": {},
+          "Web Development (9001100) (RTF)": {}
+        },
+        "Career Certificate Programs": {
+          "Applied Cybersecurity (Y100300)": {},
+          "Applied Information Technology (Y300400)": {},
+          "Cloud Computing & Virtualization (Y100400)": {},
+          "Computer Systems & Information Technology (Y100200)": {},
+          "Database Application Development & Programming (Y700300)": {},
+          "Digital Media Technology (Y500100)": {},
+          "Enterprise Desktop and Mobile Support Technology (Y300600)": {},
+          "Enterprise Network and Server Support Technology (Y300500)": {},
+          "Game/Simulation/Animation Audio/Video Effects (B082200)": {},
+          "Game/Simulation/Animation Programming (B082300)": {},
+          "Game/Simulation/Animation Visual Design (B082100)": {},
+          "Java Development & Programming (Y700200)": {},
+          "Modeling Simulation Design (Y500300)": {},
+          "Modeling Simulation Production (Y500200)": {},
+          ".NET Application Development & Programming (Y700400)": {},
+          "Network Support Services (B078000)": {},
+          "Network Systems Administration (B079300)": {},
+          "Technology Support Services (Y100100)": {},
+          "Web Application Development & Programming (Y700500)": {},
+          "Web Development (Y700100)": {}
+        },
+        "Degree & Certificate Programs": {
+          "Business Intelligence Specialist (AS - 1530700101)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1530700101-2223.rtf",
+            "ccc": {
+              "Business Intelligence Professional (CCC - 0552130101)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0552130101-2223.rtf"
+              }
+            }
+          },
+          "Computer Information Technology (AS - 1511010307)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1511010307-2223.rtf",
+            "ccc": {
+              "Computer Information Data Specialist (CCC - 0611050101)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0611050101-2223.rtf"
+              },
+              "Geographic Information System (CCC - 0545070213)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0545070213-2223.rtf"
+              },
+              "Help Desk Support Technician (CCC - 0511010313)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511010313-2223.rtf"
+              },
+              "Information Technology Analysis (CCC - 0511010312)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511010312-2223.rtf"
+              },
+              "Information Technology Support Specialist (CCC - 0511010311)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511010311-2223.rtf"
+              }
+            }
+          },
+          "Computer Programming and Analysis": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1511020101-2223.rtf",
+            "outcomes": {
+              "01.0": "Perform data file activities.",
+              "02.0": "Perform analysis activities.",
+              "03.0": "Perform program design activities.",
+              "04.0": "Perform coding activities.",
+              "05.0": "Demonstrate fundamental proficiency in network security essentials.",
+              "06.0": "Perform testing activities.",
+              "07.0": "Perform implementation activities.",
+              "08.0": "Perform evaluation activities.",
+              "09.0": "Demonstrate general organizational computing workplace competencies.",
+              "10.0": "Develop an algorithm that solves a problem."
+            },
+            "ccc": {
+              "Computer Programmer": {
+                "ref": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511020200-2223.rtf",
+                "outcomes": {
+                  "01.0": "Perform data file activities.  ",
+                  "02.0": "Perform analysis activities.  ",
+                  "03.0": "Perform program design activities.   ",
+                  "04.0": "Perform coding activities.  ",
+                  "05.0": "Perform testing activities.  ",
+                  "06.0": "Perform user-training activities.  ",
+                  "07.0": "Perform implementation activities.  ",
+                  "08.0": "Perform user-support activities.  ",
+                  "09.0": "Perform evaluation activities.  ",
+                  "10.0": "Demonstrate general organizational computing workplace competencies.  ",
+                  "11.0": "Develop an algorithm that solves a problem.  "
+                }
+              },
+              "Computer Programming Specialist": {
+                "ref": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511020103-2223.rtf",
+                "outcomes": {
+                  "01.0": "Perform data file activities.  ",
+                  "02.0": "Perform program design activities.   ",
+                  "03.0": "Perform coding activities.  ",
+                  "04.0": "Perform testing activities.  ",
+                  "05.0": "Perform implementation activities.  ",
+                  "06.0": "Develop an algorithm that solves a problem.  "
+                }
+              },
+              "Internet of Things Applications": {
+                "ref": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511020110-2223.rtf",
+                "outcomes": {
+                  "01.0": "Perform data file activities.  ",
+                  "02.0": "Perform analysis activities.  ",
+                  "03.0": "Perform program design activities.  ",
+                  "04.0": "Perform coding activities.  ",
+                  "05.0": "Demonstrate fundamental proficiency in network security essentials.  ",
+                  "06.0": "Perform testing activities.  ",
+                  "07.0": "Perform user-training activities.  ",
+                  "08.0": "Perform implementation activities.  ",
+                  "09.0": "Perform user-support activities.  ",
+                  "10.0": "Perform evaluation activities.  ",
+                  "11.0": "Demonstrate professional development skills. ",
+                  "12.0": "Demonstrate employability skills.  ",
+                  "13.0": "Demonstrate general organizational computing workplace competencies.  ",
+                  "14.0": "Develop an algorithm that solves a problem.  ",
+                  "15.0": "Use development methodologies.  "
+                }
+              },
+              "Computer Programming ####": {
+                "01.01": "Identify methods of file organization.",
+                "01.04": "Identify and modify file access/privilege levels (read, write, modify, delete)",
+                "04.01": "Identify modules",
+                "04.02": "Design modules",
+                "04.03": "Code modules",
+                "04.04": "Document modules",
+                "04.05": "Test modules",
+                "04.06": "Debug code",
+                "04.07": "Revise code",
+                "04.08": "Assemble modules",
+                "04.09": "Demonstrate proficient use of programming development tools",
+                "06.02": "Develop test data",
+                "06.03": "Validate input(s)",
+                "06.04": "Perform test(s)",
+                "06.05": "Validate expected outcomes",
+                "14.01": "List the steps in problem solving",
+                "14.02": "Write pseudocode for sequential control structures",
+                "14.03": "Write pseudocode for selection control structures",
+                "14.04": "Write pseudocode for repetition control structures",
+                "14.05": "Discuss the efficiency of an algorithm",
+                "14.06": "Implement the algorithm"
+              }
+            }
+          },
+          "Cybersecurity (AS – 1511100308)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1511100308-2223.rtf"
+          },
+          "Cybersecurity Operations (AS – 1511100300)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1511100300-2223.rtf"
+          },
+          "Database Technology (AS - 1511080200)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1511080200-2223.rtf",
+            "ccc": {
+              "Microsoft Certified Database Administrator Certificate (CCC - 0511020309)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511020309-2223.rtf"
+              },
+              "Oracle Certified Database Administrator (CCC - 0511020307)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0511020307-2223.rtf"
+              }
+            }
+          },
+          "Data Science Technology (AS - 1530700100)": {
+            "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/1530700100-2223.rtf",
+            "ccc": {
+              "Data Science Technician (CCC - 0530700100)": {
+                "url": "Data Science Technician (CCC - 0530700100"
+              },
+              "FinTech Technician (CCC – 0530710400)": {
+                "url": "https://www.fldoe.org/core/fileparse.php/20062/urlt/0530710400-2223.rtf"
+              }
+            }
+
+          },
+          "Game Development Design (AS - 1550041100)": {
+            "url": "Game Development Design (AS - 1550041100)",
+            "ccc": {
+              "Virtual and Augmented Reality Technologies (CCC – 0550041118)": {
+                "url": "Virtual and Augmented Reality Technologies (CCC – 0550041118)"
+              }
+            }
+          },
+          "Internet Services Technology (AS - 1511100400)": {},
+          "IT Security (AS - 1511100307)": {},
+          "Network Systems Technology (AS - 1511100112)": {},
+          "Technology Project Management (AS - 1511100509)": {}
+        },
+        "Supplemental Courses": {
+          "Information Technology Cooperative Education - OJT (9000420) (RTF)": {},
+          "Information Technology Directed Study (9000100) (RTF)": {}
+        },
+        "Programs Daggered for Deletion": {
+          "Business Computer Programming (B070320) (RTF)": {},
+          "E-Business Technology (AS - 1552120107) (RTF)": {},
+          "E-Business Security Technical Certificate (CCC - 0552120102) (RTF)": {},
+          "E-Business Software Technical Certificate (CCC - 0552120103) (RTF)": {},
+          "E-Business Technical Certificate (CCC - 0552120101) (RTF)": {},
+          "E-Business Technology Technical Certificate (CCC - 0552120104) (RTF)": {},
+          "E-Business Ventures Technical Certificate (CCC - 0552120105) (RTF)": {},
+          "Mobile Device Technology (CCC - 0511010309) (RTF)": {},
+          "Oracle Certified Database Developer (CCC - 0511020308) (RTF)": {}
+        }
+      },
+      "Law, Public Safety & Security": {},
+      "Manufacturing": {},
+      "Marketing, Sales & Service": {},
+      "Transportation, Distribution & Logistics": {},
+      "Additional CTE Programs/Courses":[
+          "Diversified Education",
+          "Instructional Support Services (Special Needs)",
+          "Other Career and Technical Education Programs"
+        ]
+    }
+  }
+}

@@ -13,5 +13,8 @@
         public List<Module>? Modules { get; set; }
         public int? CanvasID { get; set; }
         public string? CanvasURL { get; set; }
+        public string? ImageURL { get; set; }
+        public string? BackgroundColor { get; set; }
+        public string? ShadowColor { get; set; }
     }
 }

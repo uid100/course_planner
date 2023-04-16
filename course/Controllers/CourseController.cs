@@ -47,11 +47,14 @@ namespace course.Controllers
 
             // TODO: fix lots of null reference warnings
             JToken? c = jsonObject["colleges"][course.College]["courses"][course.Name] ?? null;
-            if( c!= null) 
+            if (c != null)
             {
                 course.CatalogID = (string)c["catalog ID"];
                 course.CanvasID = (int)c["canvas course ID"];
+                course.ImageURL = (string)c["cover image"];
                 course.CanvasURL = (string)c["canvas URL"];
+                course.BackgroundColor = (string)c["background"];
+                course.ShadowColor = (string)c["shadow"];
                 course.Name = course.Name;
                 course.LongName = (string)c["long name"];
                 course.Term = (string)c["term"];

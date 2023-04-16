@@ -13,7 +13,10 @@
         "OOP-1 (C#)": {
           "status": "draft",
           "catalog ID": "OOP-1",
-          "canvas URL": "https://canvas.instructure.com/",
+          "background": "moccasin",
+          "shadow": "tan",
+          "cover image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw4NTYwNzl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+          "canvas URL": "https://canvas.instructure.com",
           "canvas course ID": 6449778,
           "name": "Object-Oriented Programming-1",
           "long name": "OBJ ORIENT PG 1",
