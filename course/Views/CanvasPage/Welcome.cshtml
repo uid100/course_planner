@@ -1,57 +1,44 @@
 ﻿@model Course
 
-<h2>Homepage: (@Model.CanvasID)</h2>
-<hr />
-<div id="homepage" style="background-color:@Model.BackgroundColor;">
-    <div id="header">
-        <div id="cover-image" style="padding:20px;">
-            <a href="@Model.CanvasURL/courses/@Model.CanvasID"
-               style="color:navy;">
-                <img style="display: block;"
-                     height="120" width="120"
-                     src="@Model.ImageURL"
-                     alt="course cover image" /><br />
-                home
-            </a>
+<!-- @Model.Name -->
+<!-- CourseID: @Model.CanvasID -->
 
-            <h3>&nbsp;</h3>
-        </div> <!-- #cover-image -->
-    </div> <!-- #header -->
+<div id="welcome" style="background-color:@Model.BackgroundColor;">
+    <div id="page-header" style="margin:30px;">
+        <!-- optional:
+            upload the college logo to files/images/ as "college-logo.jpg"
+            change display: from 'none' to 'block'
+         -->
+        <div id="college logo" style="height: 100px; width: 100%; display:none;">
+            <!-- copy institution's approved logo as "college-logo.jpg" to files/images -->
+            <img src="/courses/@Model.CanvasID/file_contents/course%20files/images/college-logo.jpg"
+                 alt="College Logo" style="display: block; max-width:100%; max-height:100%;" />
+        </div>
 
-    <div id="discord" class="alert alert-info">
-        <p style="text-align: center;">
-            <img src="https://flic.kr/p/2nwwnMS/preview" 
-            alt="Discord link" width="250" /> 
-            Discord Server Link: 
-            <a 
-                class="inline_disabled icon-discord btn btn-info" 
-                href="https://discord.gg/MpHjV4qgxZ" 
-                target="_blank" rel="noopener"> 
-                    Code Bytes 
-            </a>
-        </p>
-    </div> <!-- #discord -->
+        <div id="course_title">
+            <h2>@Model.Name</h2>
+        </div>
+        <div id="course-image" style="padding:30px">
+            <p>
+                <img style="display:block; margin-top:50px; margin-left:auto; margin-right:auto;"
+                     src="/courses/@Model.CanvasID/file_contents/course%20files/images/course.png"
+                     alt="generic process logic" width="400" />
+            </p>
+            <p>&nbsp;</p>
+        </div><!-- #course-image -->
+    </div>  <!-- #page-header -->
+
 
     <div id="course-description">
         <h2>@Model.CatalogID</h2>
         <h3>@Model.Name</h3>
-
-        <p>
-            This course is a continuation of structured programming concepts using the C# 
-            programming language. This includes techniques for algorithm development, 
-            coding and testing. This course will delve into forms, controls, and events using 
-            event-driven programming concepts. Students will create GUI-based and event-driven 
-            applications to reinforce new concepts and material presented in each chapter.
-        </p>
-        <p>
-            Each chapter will be in a module that will provide you with lecture notes, 
-            PowerPoint slides for note taking, videos and code demonstrations that 
-            illustrate/apply the chapter concepts. Additionally, you will find links to any 
-            quizzes or other assignments for the chapter.
-        </p>
-        <p>&nbsp;</p>
+        @foreach( var d in Model.descr)
+        {
+            <p>@d</p>
+        }
         <p>&nbsp;</p>
     </div> <!-- #course-description -->
+
     <div id="instructor">
 
         <h3>About your Instructor</h3>
@@ -77,6 +64,20 @@
             </div> <!-- #grid-row -->
         </div> <!-- #content-box -->
         <p>&nbsp;</p>
+
+        <div id="discord" class="alert alert-info">
+            <p style="text-align: center;">
+                <img src="https://flic.kr/p/2nwwnMS/preview"
+                     alt="Discord link" width="250" />
+                Discord Server Link:
+                <a class="inline_disabled icon-discord btn btn-info"
+                   href="https://discord.gg/MpHjV4qgxZ"
+                   target="_blank" rel="noopener">
+                    Code Bytes
+                </a>
+            </p>
+        </div> <!-- #discord -->
+
 
     </div> <!-- #instructor -->
     <div id="engagement">

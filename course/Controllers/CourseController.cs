@@ -62,6 +62,14 @@ namespace course.Controllers
                 course.TermEnd = DateTime.Parse(s: (string)c["end"]);
                 course.Status = (string)c["status"];
 
+                course.descr = new List<string>();
+                try
+                {
+                    foreach (var d in c["description"])
+                        course.descr.Add(d.ToString());
+                }
+                catch (Exception ex) { }
+
                 int count = 0;
 
                 course.Modules = new List<Module>();

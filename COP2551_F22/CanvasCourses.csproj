@@ -11,7 +11,9 @@
     <Folder Include="wwwroot\files\COP2551_F22_Csharp_b\module1\" />
     <Folder Include="wwwroot\files\COP2551_F22_Csharp_b\module2\" />
     <Folder Include="wwwroot\files\course_files\module01\" />
+    <Folder Include="wwwroot\files\CS100_pgm101\images\" />
     <Folder Include="wwwroot\files\OOP-Csharp\images\" />
+    <Folder Include="wwwroot\files\OOP-Csharp\module01\" />
   </ItemGroup>
 
   <ItemGroup>
