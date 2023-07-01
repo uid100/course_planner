@@ -1,0 +1,147 @@
+<div id="contact-mgr-spec">
+    <ul style="list-style-type:square">
+        <li>
+            Complete Project 4-1
+        </li>
+        <li>
+            Build the Contact Manager app. Once you have completed this project, zip the 
+            <strong>4-1_ContactManager</strong> folder with all of the folders and files.
+        </li>
+        <li>
+            Upload the zipped folder to this dropbox.
+        </li>
+    </ul>
+    <p>&nbsp;</p>
+
+    <div id="description">
+        <h2 class="alert">Contact Manager App</h2>
+        <p>
+            For this project, you will build a multi-page, data driven app like the one that’s shown below.
+            Set-up the file structure. Create a new ASP.NET Core Web Application in the 4-1_ContactManager
+            folder with a project folder name of ContactManager and a solution name of 4-1_ContactManager.sln.
+            Base the app on the Web Application (Model-View-Controller) template. You can start your project
+            with either the MVC template or the empty template. Add comments including your name, etc. to
+            the top of the pages and comments throughout the pages to describe the changes/edits/updates
+            that were made.
+        </p>
+
+        <p>&nbsp;</p>
+    </div> <!-- #description -->
+
+    <div id="ui">
+        <h3 class="alert">User Interface</h3>
+        <h4>Home Page</h4>
+        <img style="display:block; margin:auto;"
+             src="https://courses.sfcollege.edu/courses/452018/files/44422096/preview"
+             alt="Contact Manager Home Page" />
+        <p>&nbsp;</p>
+
+        <h4>Details Page</h4>
+        <img style="display:block; margin:auto;"
+             src="https://courses.sfcollege.edu/courses/452018/files/44422100/preview"
+             alt="Contact Manager Details Page" />
+        <p>&nbsp;</p>
+
+        <h4>Add/Edit Page (both use the same view)</h4>
+        <img style="display:block; margin:auto;"
+             src="https://courses.sfcollege.edu/courses/452018/files/44422112/preview"
+             alt="Contact Manager Add/Edit Page" />
+        <p>&nbsp;</p>
+
+        <h4>Delete Page (both use the same view)</h4>
+        <img style="display:block; margin:auto;"
+             src="https://courses.sfcollege.edu/courses/452018/files/44422178/preview"
+             alt="Contact Manager Delete Page" />
+        <p>&nbsp;</p>
+    </div> <!-- #ui -->
+
+    <div id="specifications">
+        <h3 class="alert alert-info">My Web App</h3>
+        <ul>
+            <li>
+                When the app starts, it should display a list of contacts and a link to add a contact.
+            </li>
+            <li>
+                If the user clicks the first or last name of a contact, the app should display the Detail
+                page for that contact.
+            </li>
+            <li>
+                The Details page should include buttons that allow the user to edit or delete the contact.
+                Before deleting a contact, the app should display the Delete page to confirm the deletion.
+            </li>
+            <li>
+                To reduce code duplication, the Add and Edit pages should both use the same view. This
+                view should include a drop-down for Category values.
+            </li>
+            <li>
+                The Add and Edit pages should not include the Date Added field that’s displayed by the
+                Details page. That field should only be set only by code when the user first adds a contact.
+            </li>
+            <li>
+                If the user enters invalid data on the Add or Edit page, the app should display a summary
+                of validation errors above the form.
+            </li>
+            <li>
+                Here are the requirements for valid data:
+                <ul>
+                    <li>
+                        The Firstname, Lastname, Phone, Email, and CategoryId fields are required.
+                    </li>
+                    <li>
+                        The Organization field is optional.
+                    </li>
+                    <li>
+                        Note: Since the CategoryId field is an int (see domain model specifications
+                        below), you can’t use the Required validation attribute with it. However, you
+                        can use the Range attribute to make sure the value of CategoryId is greater
+                        than zero.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                If the user clicks the Cancel button on the Add page, the app should display the
+                Home page.
+            </li>
+            <li>
+                If the user clicks the Cancel button on the Edit page, the app should display to the
+                Details page for that contact.
+            </li>
+            <li>
+                The domain model classes for contacts and categories should use primary keys that
+                are generated by the database.
+            </li>
+            <li>
+                The Contact class should have a foreign key field that relates it to the Category
+                class. It should also have a read-only property that creates a slug of the contact’s
+                first and last name that can be added to URLs to make them user friendly.
+            </li>
+            <li>
+                Use EF Code First to create a database based on your domain model classes. Include
+                seed data for the categories and one or more contacts. If the database does not run
+                in Visual Studio, go to the program files on your hard drive and find the Microsoft
+                SQL Server folder. Right click on the folder and select Repair. This should complete
+                the process of downloading the SQL server to your computer.
+            </li>
+            <li>
+                Use a Razor layout to store the html, head, and body elements.
+            </li>
+            <li>
+                Use Bootstrap to style the views. If necessary, use a custom CSS style sheet to
+                override Bootstrap classes.
+            </li>
+            <li>
+                Use the default route with an additional route segment that allows an optional
+                slug at the end of a URL.
+            </li>
+            <li>
+                Make the app URLs lowercase with trailing slashes.
+            <li>
+                Zip the 4-1_ContactManager folder with the ContactManager folder and the
+                4-1_ContactManager.sln file. Upload the zipped folder to the Module 4 Drop box
+                in Canvas.
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+    </div> <!-- #specifications -->
+
+</div> <!-- #contact-mgr-spec -->

@@ -1,0 +1,72 @@
+<div id="trips_log">
+    <!--
+        Sync:  Chapter 8 Transferring data from controllers
+    -->
+
+    <h3 class="alert alert-info">Trips Log: Instructions</h3>
+    <p>
+        Complete Project 8-1 Build the Trips Log app. Once you have completed this project, 
+        zip the 8-1_TripLog folder with all of the folders and files. Upload the zipped folder 
+        to this assignment page.
+    </p>
+    <p>&nbsp;</p>
+
+    <div id="objective">
+        <h3 class="alert alert-info">Trips Log</h3>
+        <p>
+            For this project, you will build a data-driven web app that uses view models to
+            pass data from controllers to views, the ViewBag object to pass data from views
+            to the layout, and TempData to persist data between requests. Start your project
+            from scratch and save the files in a folder named, <strong>8-1_TripLog.</strong>
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #objective -->
+
+    <div id="UI">
+        <h3 class="alert alert-info">Sample UI</h3>
+        <p>
+            <img src="https://courses.sfcollege.edu/courses/452018/files/44657862/preview" 
+                 alt="Sample UI" width="501" height="890" 
+                 data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452018/files/44657862" 
+                 data-api-returntype="File" />
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #UI -->
+
+    <div id="specifications">
+        <h3 class="alert alert-info">Project Specifications</h3>
+        <ul>
+            <li>When the app starts, it should display trip data and an Add Trip link.</li>
+            <li>Use a Razor layout to store the html, head, and body elements. Use a Razor view start file to apply this 
+            layout to the views in the app, and a Razor view imports file to add using statements.</li>
+            <li>The layout for this web app should display a banner at the top of the page, and a subhead below it. However,
+            the subhead should only display if there’s text in the ViewData property for it.</li>
+            <li>When the user clicks the Add Trip link, a three page data entry process should start.</li>
+            <li>On the first page, the user should enter data about the trip destination and dates. The Accommodations 
+            field on this page should be optional, and the rest should be required.</li>
+            <li>The second page should only display if the user entered a value for the Accommodations field on the first 
+            page. On this page, the user should enter data about the accommodations. The accommodation value the user 
+            entered should display in the subhead, and the fields should be optional.</li>
+            <li>On the third page, the user should enter data about things to do on their trip. The destination the user 
+            entered on the first page should display in the subhead, and the fields should be optional.</li>
+            <li>When the user clicks the Next button on the first or second page, the web app should save the data posted 
+            from the page in TempData. Use this data to get the user entries to display in the subheads as needed, but make 
+            sure any data that needs to be saved to the database persists in TempData.</li>
+            <li>When the user clicks the Save button on the third page, the web app should save the data posted from the 
+            page and the data in TempData to the database. Then, the Home page should display with a temporary message 
+            that the trip has been added.</li>
+            <li>When the user clicks the Cancel button on any of the Add pages, the data in TempData should be cleared 
+            and the Home page should display. You can use this statement to clear the data: TempData.Clear();</li>
+            <li>To keep things simple, store all fields for the trip in a single table like this:<br />
+                                                                                                 <img src="https://courses.sfcollege.edu/courses/452018/files/44657866/preview" 
+                                                                                                      alt="table schema" 
+                                                                                                      data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/452018/files/44657866" 
+                                                                                                      data-api-returntype="File" />
+            </li>
+            <li>Zip the folders and files and upload the zipped 8-1_TripLog folder to the Module 8 Drop box in Canvas.</li>
+        </ul>
+        <p>&nbsp;</p>
+    </div> <!-- #UI -->
+
+
+</div> <!-- #trips_log -->

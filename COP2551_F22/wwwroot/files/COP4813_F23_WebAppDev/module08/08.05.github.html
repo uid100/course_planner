@@ -1,0 +1,133 @@
+<div id="description">
+    <h3 class="alert alert-info">Description</h3>
+    <p>
+        In the last module, we explained a little about what the <strong>git</strong> tool was built to do and 
+        (manually) created a repository on <strong>github.</strong> This week we will walk through another way
+        to create and maintain your github repositories.
+    </p>
+    <p>
+        <em>Note:</em> These instructions are going to be specific to using Visual Studio 2022 on Windows. Many
+        of these same concepts apply if you are using Visual Studio for Mac, but the steps are different. If you
+        only have access to a mac, please let me know as soon as possible to discuss an alternative to these 
+        instructions.
+    </p>
+    <p>&nbsp;</p>
+</div> <!-- #description -->
+
+<div id="objective">
+    <h3 class="alert alert-info">Objective</h3>
+    <p>
+        Create a new ASP.NET MVC project, create a new git and github repository, and commit code changes to
+        server.
+    </p>
+    <p>&nbsp;</p>
+</div> <!-- #objective -->
+
+<div id="instructions">
+    <h3 class="alert alert-info">Instructions</h3>
+    <ol>
+        <li>
+            <strong>Create a new web application.</strong>
+            <p>
+                Launch Visual Studio, create a new project using the ASP.NET Core MVC template. Rename it whatever you like.
+                When the project is ready, run it and see that it launches your browser and the Welcome page appears.
+            </p>
+        </li>
+        <li>
+            <strong>Create a git repository.</strong>
+            <p>
+                If you installed the source control workload when you installed Visual Studio, notice (do not select)
+                the lower right corner of the Visual Studio app has a link that says "Add to Source Control."
+                Visual Studio also has a menu item: <strong>Git > Create Git Repository</strong> both of these
+                bring up the same dialog.
+            </p>
+            <p>
+                Select GitHub on the left. Do not change the local repository path settings. You can click the box
+                to Add a README if you would like.
+            </p>
+            <p>
+                For the GitHub repository options, add your Account (login) information and clear the Private repository
+                checkbox. <strong>Create and Push</strong>
+            </p>
+            <p>
+                The first time that you do this, there may be another dialog which asks you to authenticate. If you
+                are already logged into visual studio and your instance is associated with your Github account, it will
+                automatically configure the new Github repository.
+            </p>
+            <p>
+                Notice the "Add to Source Control" option in the lower right is no longer there, and it has been replaced
+                by other (github) menu items.
+            </p>
+            <p>
+                When it finishes, open Github in the browser and find the repository that you just created. If you
+                added a README file, it will be displayed, without much content. Your code files (from the template)
+                will be listed at the top of the page. The (Green) Code button will display the link to the repository,
+                you will want this later.
+            </p>
+        </li>
+        <li>
+            <strong>Update the Application</strong>
+            <p>
+                Close the browser and go back to Visual Studio. Open the Views/Home/Index.cshtml file and make some
+                edits. From the template there is a "div" tag with a heading and a paragraph with a link. Change
+                the page in some way. What you change is up to you.
+            </p>
+        </li>
+        <li>
+            <strong>Commit your changes.</strong>
+            <p>
+                Open the Git Changes tab ( from menu: View > Git Changes ). This usually appears beside the Solution
+                Explorer Panel by default. You can move the tool from its default location, but I do not recommend it.
+            </p>
+            <p>
+                You will see at the top that there are 0 outgoing and 0 incoming changes waiting. And further down
+                a list of all of the files that have changed (from the local repository, which is sync-ed with the
+                server.) Type a comment in the message box. This is required for every set of changes that you "check-in."
+                For now, "Customized Views/Home/Index page" is enough.
+            </p>
+            <p>
+                Beside the Commit All button, there is a drop down arrow. Select "Commit All and Sync" When the sync
+                completes the pane will say there are no changes. Browse back to the repository, select the folder and
+                the files that you changed, and notice the message on the table matches your 'commit message.' On any
+                of the file or folder pages, you can select the History button to see the history of changes to the
+                project. In time your commit messages will be more and more clear, specific, and helpful so that you
+                have a clear revision history of your projects.
+            </p>
+
+        </li>
+        <li>
+            <strong>Tell us about it. (Discussion board post)</strong>
+            <p>
+                Add a link to this new repository.
+            </p>
+            <p>
+                Tell us about the experience. What went well? What did not go as expected? What was confusing?
+                Any tips or warnings for others?
+            </p>
+            <p>
+                Can you think of other ways you might use this tool?
+            </p>
+        </li>
+    </ol>
+    <p>&nbsp;</p>
+</div>
+
+<div id="deliverable">
+    <h2 class="alert alert-info">Deliverable</h2>
+    <ul>
+        <li>
+            Discussion post (here) containing:
+            <ul>
+                <li>
+                    Link to your <em>new</em> repository.
+                </li>
+                <li>
+                    Answer the discussion questions.
+                </li>
+                <li>
+                    (optionally) Respond to others.
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

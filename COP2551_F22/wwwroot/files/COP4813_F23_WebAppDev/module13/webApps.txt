@@ -1,0 +1,77 @@
+﻿Web Applications
+
+By this point, you have built many web apps and are comfortable and familiar with
+the MVC template and framework.
+
+I use the MVC framework often to build proof-of-concept or prototype projects or to 
+create demos very quickly.
+
+
+Chasing Moving Targets
+
+There are changes in the operating systems and in the tools and templates. Following the textbook,
+we have been building web applications to target the .NET 3.1 SDK. This is a stable release, but
+there are new builds and releases (currently) at least once per year.
+
+.NET (pronounced "dot-net") Frameworks was built to integrate with and complement the Windows 
+operating system. .NET Core is an SDK and runtime environment which was built to support 
+cross-platform development with build support for Windows, Linux, and Mac operating systems.
+.NET framework was being updated and new releases built, about the time that .NET (Framework) v4.5
+was released, Microsoft released .NET Core 3.0 and soon after .NET Core 3.1. To minimize confusion 
+with the well-known framework product, Microsoft skipped the v4 series and released .NET Core 5.0,
+and starting with .NET 6, dropped the name "Core" from the nomenclature. Consistent with .NET
+(Core) 5, and .NET 6, .NET 7 was released in November of 2023.
+
+As each new build is released and the tools and templates are updated, changes need to be made
+to the many sets of instructions to work with them. This takes time.
+
+If you are working with a team on a large project and these updates occur, you may have a team
+or individuals investigating and testing the impacts of integrating the new releases in the
+product and evaluating security impacts and risks of not adopting the changes.
+
+You may have noticed seen the term Long-Term Support (LTS) associated with some of these products.
+This indicates that although the build may not contain the latest features of the newer product,
+but the product will continue to have bug fixes and more commonly, security updates released when
+necessary.
+
+
+New(er) Templates
+
+As developers trying to make sense of all of the changes, we need to build a strong understanding
+of the tools we're using and still remain aware of the changes to be ready for what may be coming
+tomorrow.
+
+
+Example - Try this!
+
+I haven't had time to install the newest (.NET7) release. My current development environment 
+does have support for .NET6. There are a lot of signicant changes that have been included in
+.NET(Core)5 and .NET6. So it's worthwhile to try a simple project to observe some of the changes.
+
+1. Launch Visual Studio and start a New Project. 
+2. Select the familiar MVC template. 
+3. I can even use the defaults for most changes since this isn't a project I'll be maintaining 
+for the long term. In my case, the default project name on this machine is "WebApplication3." 
+Yes, that is a terriblename, but since I plan to delete it when I'm done, that will do fine.
+4. Next I'm going to change the "Framework" selection from .NET Core 3.1(Long-term support) 
+to .NET 6.0 (Long-term support.)  I don't need authentication for this, so I'll keep it simple 
+and Create.
+
+Visual Studio takes a few moments to build the solution and the project and auto-generates
+the code required for and from the template. You may recall that the term used when Visual
+Studio auto-generates code is "scaffolding."
+
+When the project is ready, observe that the folders for Models, Views and Controllers (and
+wwwroot) have been created and there is code for a HomeController and a Home/Index razor
+view. There is also a Shared Layout and the bootstrap library and jquery libraries have been 
+installed.
+
+At this point, things look familiar. I am 5-clicks and (probably) less than 1-minute nito 
+this project and I have not written a single line of code. There are a few things that may
+look different than I'm used to, but there's enough familiarity that I can run this immediately
+before I start writing code and when then Welcome page appears in the browser, we can be
+pretty confident that we understand how that happened.
+
+From this point I can continue by adding some new data models (first) and maybe integrating with
+a database or diving in and creating some new and interesting Razor views.
+
