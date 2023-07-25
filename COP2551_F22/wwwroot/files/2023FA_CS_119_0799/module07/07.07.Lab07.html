@@ -1,0 +1,381 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab7" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #7</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an opportunity to apply the concepts and
+                principles presented in PLD chapter 7.
+            </p>
+            <p>
+                Since we’re spending 2 weeks on this chapter, there are 2 guided 
+                exercises (1 for each week) to give some hands on experience creating 
+                user defined classes in Python.
+            </p>
+            <p>
+                We will create class models and then code the classes in Python as well 
+                as implement a simple test fixture application where we can make sure 
+                the class functions as specified and coded. In real world software 
+                development, it is a common practice to test custom classes this way 
+                before integrating into a large scale project because it makes testing 
+                and debugging a whole lot easier. Once you complete the guided exercises, 
+                you will get a couple user defined classes to code on your own.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="objectives" style="padding:40px;">
+            <ul>
+                Objectives:
+                <li>Creating applications in Python</li>
+                <li>Creating class models</li>
+                <li>Creating user defined classes</li>
+                <li>More experience with Python code in general</li>
+            </ul>
+        </div> <!-- #objectives -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+            <li><a href="#ex4">Exercise 4</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Magazine Subscription class</h3>
+
+            <p>
+                This first exercise will be for a magazine subscription class based
+                on exercise 7 on page 292 in the book. To keep things quick and simple,
+                there are just a few properties given in the exercise. In a real world
+                application, there would probably be quite a few more. When designing
+                user defined classes, UML class models are used to define the class.
+                We’ll create these using Draw.io. We’ll cover the Unified Modeling
+                Language (UML) in more detail in chapter 11.
+            </p>
+
+            <div id="class-model">
+                <h3>Creating the Class Model</h3>
+                <div class="ic-flash-alert">
+                    <p>
+                        The Class model is a software component design diagram that is
+                        one of the diagrams in the Unified Modeling Language (UML)
+                        standard.
+                    </p>
+                    <p>
+                        The Class model is not a flowchart.
+                    </p>
+                </div>
+                <p>
+                    Navigate a web browser to draw.io, select Blank Diagram and click
+                    the Create button. You can save to a file later.
+                </p>
+                <p>
+                    Scroll down to UML and click the arrow to expand the palette.
+                </p>
+                <p>
+                    Locate Class in the tool palette, drag and drop a class template onto the page.
+                </p>
+                <p>
+                    <img src="/courses/49150/files/8252298/preview" 
+                         alt="magazine class diagram" />
+                </p>
+                <p>
+                    Quick review (text book page 262): Notice that a class is split into 3
+                    compartments. The top compartment is the class name, the middle compartment
+                    contains the attributes or properties, and the bottom contains the methods or
+                    operations. Click inside each compartment and edit as needed. We’ll shorten
+                    the class name to Magazine to save some typing.
+                </p>
+                <p>
+                    For attributes and methods, a minus (-) prefix means that member is private
+                    and a plus (+) indicates public. Attributes are normally declared private and
+                    methods are normally public unless they are used only in the internal workings
+                    of the class.
+                </p>
+                <p>
+                    Optionally, you can specify the data type as shown in the sample Magazine class
+                    below.
+                </p>
+                <p>
+                    We’ll have a method called toString() that will return a formatted string of
+                    the subscriber name, magazine title and months remaining.
+                </p>
+                <p>
+                    The book also shows the getters and setters in the methods compartment. Some
+                    software developers omit these in a class model because it’s a given they
+                    exist and, if there’s a large number, they can make a class model very large
+                    and unwieldy in a hurry. If you want to add the getter and setter methods in,
+                    that’s perfectly fine.
+                </p>
+                <p>
+                    You can click on each individual compartment and make larger or smaller as
+                    needed.
+                </p>
+                <p>
+                    Your completed Magazine class should look (roughly) something like this:
+                </p>
+                <p>
+                    <img src="/courses/49150/files/8251106/preview" 
+                         alt="magazine class model" />
+                </p>
+                <p>
+                    Be sure to save your work. Export the <em>MagazineClassModel</em> as a jpg
+                    and save it in your Lab 7 folder.
+                </p>
+            </div> <!-- #class-model -->
+            <div id="class-code">
+                <hr />
+                <h3>Python Code for the Magazine Exercise</h3>
+                <p>
+                    Create a new <code>Magazine.py</code> file.
+                </p>
+                <p>
+                    When coding your class in Python, use your class model as a “cheat sheet”.
+                    This is why we did all the work of creating it! Keep in mind some of the
+                    Python demo code in the lecture notes. Is there something there you could
+                    <em>borrow</em> from? You are given the code for this exercise.
+                </p>
+                <p>
+                    Note the use of the <code>this</code> reference throughout the code,
+                    although it is referred to as <code>self</code> in Python.
+                </p>
+                <p>
+                    <img src="/courses/49150/files/8251124/preview" 
+                         alt="Magazine.py souce code" />
+                </p>
+                <hr />
+                <h3>Code a <em>Test Fixture</em> for the <strong>Magazine</strong> class</h3>
+                <p>
+                    The next step is to code a test fixture where we can create an instance,
+                    set the various properties and make sure things work as expected.
+                </p>
+                <p>
+                    You are given the code for <code>MagazineTest.py</code>.
+                </p>
+                <p>
+                    Be sure that your <code>Magazine.py</code> file is in the same folder. 
+                    And watch your capitalization. "Magazine" is not the same as "magazine."
+                </p>
+                <p>
+                    <img src="/courses/49150/files/8252238/preview" 
+                         alt="MagazineTest source code" />
+                </p>
+                <hr />
+                <h3 class="alert">
+                    Don't Forget to Test!
+                </h3>
+                <p>
+                    <img src="/courses/49150/files/8252240/preview" 
+                         alt="Magazine test run" />
+                </p>
+            </div> <!-- #class-code -->
+
+
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Pizza Demo</h3>
+            <p>
+                This case study is based on exercise 8 on page 292 in the text. To prepare
+                you for an upcoming lab exercise, we’ll add a quantity property in addition
+                to the toppings, size and price properties given in the text. Instead of a
+                numeric size (i.e. 12 inches, etc.), we’ll go with small, medium and large
+                for sizes so size will be a string value instead of a numeric type. We’ll
+                also add a <code>calculatePrice()</code> instance method. Another thing to
+                notice is that <code>price</code> will be a read-only property.
+            </p>
+            <p>
+                When we set the size property, we will look up and set the price. We’ll go
+                through all the same steps as the magazine exercise although things won’t
+                be quite as detailed this time around.
+            </p>
+            <h3>Pizza Class Model</h3>
+            <p>
+                Using draw.io, open the class model you completed for the previous
+                exercise. Add a Pizza class to the page. Our class model should look
+                something like this:
+            </p>
+            <p>
+                <img src="/courses/49150/files/8252318/preview" 
+                     alt="Pizza class model" />
+            </p>
+            <p>
+                A helpful embellishment to our methods is the return type of each method.
+            </p>
+            <hr />
+            <h3>Coding the Pizza Class</h3>
+            <p>
+                Create a new Python file called <code>Pizza.py</code> and a new class
+                called <code>Pizza</code>. Refer to the last exercise if you need detailed
+                instructions on how to create a class, implement the properties, constructors,
+                getters/setters, etc. Note the validation code added to <code>setQty()</code>
+                and how <code>setSize()</code> also sets the price.
+            </p>
+            <p>
+                <img src="/courses/49150/files/8252347/preview" 
+                     alt="Pizza class source code" />
+            </p>
+            <p>
+                Head’s up, there are a few twists this time. The first one is that you’ll
+                need to copy the <code>Methods.py</code> file you created in Lab 6. You will
+                be reusing the <code>find_string()</code> method. Import it to your
+                <code>Pizza.py</code> file.
+            </p>
+            <p>
+                <img src="/courses/49150/files/8252353/preview" 
+                     alt="Pizza test fixture" />
+            </p>
+            <p>
+                Be sure to test your code!
+            </p>
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Checking Account</h3>
+            <p>
+                In this exercise, you will design and build an application that allows 
+                the user to enter information for a checking account and then display 
+                it.
+            </p>
+            <p>
+                To do this, you will create a new class called <code>CheckingAccount</code> 
+                that will contain properties for the account number, customer name, customer 
+                address and account balance.
+            </p>
+            <ol>
+                <li>
+                    Complete a class model in draw.io. Save it as <code>CheckingAccount_ClassModel.jpg</code>
+                </li>
+                <li>
+                    Create a Python code file in your Lab07 folder called CheckingAccount.py
+                </li>
+                <li>
+                    Code a constructor, getter methods, setter methods, the to_string() method
+                </li>
+                <li>
+                    Add methods: credit() and debit(). You may call these deposity() and withdraw()
+                    (you may call this Withdraw() if you prefer.
+                </li>
+                <li>                    
+                    The to_string() method must return a formatted string with the values for all 
+                    the properties above.
+                </li>
+                <li>
+                    Create a new Python code file called <code>CheckingAccountTest.py</code>. This will be the 
+                    test fixture application.
+                </li>
+                <li>
+                    Your test fixture code will have prompts for account number, customer name, 
+                    address and initial balance. Additionally, you must have a prompt to debit an amount 
+                    and a prompt to credit the account. Use the to_string() method to display the 
+                    account information.
+                </li>
+                <li>
+                    Be sure to test your work.
+                </li>
+            </ol>
+
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 4!</p>
+        </div> <!-- #ex3 -->
+
+        <div id="ex4" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 4</h2>
+            <hr />
+            <h3 class="alert alert-info">Burgers!!!</h3>
+            <p>
+                This exercise is very similar to the first exercise and the pizza demo. You will create 
+                a custom class called <code>Burger</code> that will have the following properties: Customer name, 
+                order No., burger type, quantity ordered and price. You will implement get() and set() 
+                methods for these along with a constructor.
+            </p>
+            <ol>
+                <li>
+                    Complete a class model in draw.io. Export the image to jpg and name it 
+                    <code>Burger_ClassModel.jpg</code>.
+                </li>
+                <li>
+                    Create a new Python file and class called Burger. Review the steps and 
+                    code in the previous exercises, if needed.
+                </li>
+                <li>
+                    Implement an appropriate constructor, getter methods and setter methods.
+                </li>
+                <li>
+                    Price is computed based on the type of burger ordered and then multipled 
+                    by the quantity ordered. There is no sales tax. Burger types and prices 
+                    are in the table below. There is room to be creative if you want to use 
+                    some favorites of your own. 
+                    <table class="table table-bordered" style="width=85%">
+                        <caption>burger menu</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Burger Type</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Regular</td><td>$1.75 each</td></tr>
+                            <tr><td>Cheese</td><td>$2.00 each</td></tr>
+                            <tr><td>Double meat</td><td>$3.50 each</td></tr>
+                            <tr><td>Double meat, bacon &amp; cheddar</td><td>$4.50 each</td></tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    Implement a public method called <code>to_string()</code> that will return a string containing 
+                    customer name, order No., type, qty, and total price.
+                </li>
+                <li>
+                    Create a new Python code file called <code>BurgerTest.py</code>. It must prompt for customer 
+                    name, order No., burger type, and quantity ordered.
+                </li>
+                <li>
+                    Test your application. Make sure it calculates properly for each burger type. Test 
+                    with quantities greater than 1 to make sure the extended price (price * qty) is 
+                    calculating properly.
+                </li>
+            </ol>
+            <hr />
+            <p>
+                Be sure to review the rubric before you submit your project to make sure you haven't
+                missed anything.
+            </p>
+        </div> <!-- #ex4 -->
+
+    </div> <!-- #tabs -->
+</div> <!-- #lab7 -->

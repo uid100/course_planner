@@ -1,0 +1,239 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab9" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #9</h2>
+        <div id="introduction">
+            <p>
+                This lab activity gives you an opportunity to apply some of the 
+                programming principles presented in chapter 9 of the text book. 
+                You will be revisiting some previous labs and reworking them into 
+                GUI applications. Updating an existing application with new features 
+                and/or functional changes is very much a part of “real world” 
+                software development.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="objectives" style="padding:40px;">
+            <ul>
+                Objectives:
+                <li>Introduction to Graphical User Interfaces (GUIs) in Python</li>
+                <li>Forms</li>
+                <li>Labels</li>
+                <li>Buttons</li>
+                <li>Text entry boxes</li>
+                <li>Review of general Python coding (sequential code, selection structures, etc.)</li>
+                <li>Text formatting</li>
+            </ul>
+        </div> <!-- #objectives -->
+
+        <div id="gui" style="padding:20px;">
+            <p>
+                GUI programming in Python or any other language can get complicated
+                – especially if you must do it all in code! There are numerous GUI
+                controls, numerous ways to design/layout the GUI, set colors, align
+                controls, etc. However, in this lab, a very basic approach will be
+                used. Once you complete this first exercise, you will find that you
+                can easily replicate the work you did here to the remaining exercises.
+            </p>
+            <p>
+                Most modern programming language libraries provide a set of commonly
+                used GUI controls (often referred to as components or widgets). These
+                include labels, buttons, text boxes, check boxes, etc. These are all
+                pre-coded, tested and immediately available for any GUI application
+                you wish to create.
+            </p>
+            <p>
+                When creating a GUI, you will start with a form (sometimes referred
+                to as a frame or a canvas) and then add the various user interface
+                controls you wish to use. Most GUI libraries have various layout
+                managers to help you arrange your controls on the form. In this lab,
+                you will use a grid layout for the simple reason it’s the easiest to
+                learn and use.
+            </p>
+            <p>
+                For getting user input you will use the Python Entry (single line
+                text box). For labeling each Entry (text box), you will use Label
+                controls. You will also use label controls for displaying output as
+                these can’t be modified by the user. For initiating actions, you
+                will use buttons.
+            </p>
+            <p>
+                From chapter 9 in the text book, you learned the GUI environment
+                is event driven. A GUI that responds to no events is completely
+                useless! For this lab, you will write code often referred to as
+                an event handler or callback function to respond to when the user
+                presses (clicks) a button on the form.
+            </p>
+        </div> <!-- #gui -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1 (Guided)</h2>
+            <h3>Gas Mileage Calculator</h3>
+            <p>
+                That Python console application you did earlier in the semester to
+                compute gas mileage and cost per mile is a bit outdated! It’s time
+                to modernize it with a GUI. Your application must allow the user to
+                enter the number of miles driven, number of gallons put into the gas
+                tank and cost in dollars per gallon of gas. Your outputs must include
+                MPG, total fuel cost and cost per mile.
+            </p>
+            <ul style="list-style-type:none; margin:20px;">
+                Key formulas:
+                <li>mpg = milesDriven / gallons</li>
+                <li>totalFuelCost = gallons * costPerGallon</li>
+                <li>costPerMile = totalFuelCost / milesDriven</li>
+            </ul>
+            <p>
+                Before writing any code, <strong>revise</strong> your pseudocode from 
+                before and <strong>update</strong> it with the new steps for creating 
+                the GUI. The subtle lesson here: Your pseudocode/flowchart and other 
+                system design documents are living documents for the life of your 
+                project; meaning you should be revising them as you add features, fix 
+                bugs, make functional changes, etc.
+            </p>
+            <p>
+                Being a guided exercise, you are given the Python code:
+            </p>
+            <p>
+                <img src="/courses/49150/files/8333461/preview" 
+                     alt="lab09 ex.1 sample code part 1 of 3" />
+                <img src="/courses/49150/files/8333462/preview" 
+                     alt="lab09 ex.1 sample code part 2 of 3" />
+                <img src="/courses/49150/files/8333463/preview" 
+                     alt="lab09 ex.1 sample code part 3 of 3" /></p>
+            <p>
+                There is room to be creative with placement of controls, wording 
+                prompts, etc. but your completed, running GUI should look something 
+                like this:
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/49150/files/8333464/preview" 
+                     alt="lab09 ex.1 sample output" />
+            </p>
+            <p>&nbsp;</p>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>BMI</h3>
+            <p>
+                For this exercise, you will update another previous lab exercise with
+                a GUI. Design and develop an application that allows the user to enter
+                their height in inches, weight in pounds and then calculate their body
+                mass index (BMI). To calculate BMI, we will use the following formulas:
+            </p>
+                <p style="padding:30px;">
+                    bmi = kilograms / meters2
+                </p>
+            <p>
+                Be sure to set the form size to fit your inputs, outputs and controls.
+            </p>
+            <p>
+                Once you calculate the BMI percentage, you will need to display one of
+                the messages below based on the BMI percentage calculated.
+            </p>
+
+            <table class="table table-striped">
+                <caption>(from https://www.bmi-calculator.net)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">BMI range</th>
+                        <th scope="col">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>less than 18.5</td><td>Underweight</td></tr>
+                    <tr><td>less than 25</td><td>Normal Weight</td></tr>
+                    <tr><td>less than 30</td><td>Overweight</td></tr>
+                    <tr><td>less than 35</td><td>Obesity (Class 1)</td></tr>
+                    <tr><td>less than 40</td><td>Obesity (Class 2)</td></tr>
+                    <tr><td>40 or greater</td><td>Morbid Obesity</td></tr>
+                </tbody>
+            </table>
+
+            <p>
+                Be sure to complete pseudocode or a flowchart for this exercise. 
+                Remember that the mainloop() is a loop that waits for events.
+            </p>
+            <p>Test your code!</p>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Coyote Inn</h3>
+            <p>
+                Coyote Inn has asked you to modernize the application you developed to 
+                estimate charges for staying at their new inn with a graphical user 
+                interface. From the original exercise, their nightly rates are based on 
+                months of the year and provided in the following table:
+            </p>
+            <table class="table table-striped">
+                <caption>Coyote Inn nightly rates by month</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Months</th>
+                        <th scope="col">Months</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1 – 3 (Jan – Mar)</td><td>$80/night</td></tr>
+                    <tr><td>4 – 6 (Apr – Jun)</td><td>$90/night</td></tr>
+                    <tr><td>7 – 9 (Jul – Sept)</td><td>$120/night</td></tr>
+                    <tr><td>10 – 12 (Oct – Dec)</td><td>$100/night</td></tr>
+                </tbody>
+            </table>
+            <p>
+                To keep things simple, you can still allow the month to be entered by 
+                the month number. Normally, this would be done by a date period but do 
+                it by month number to keep the exercise simple.
+            </p>
+            <p>
+                The user must be able to enter a month number (1 – 12) and the number 
+                of nights. Use a decision structure to find the correct price per night 
+                for the month entered and then multiply it by the number of nights 
+                entered.
+            </p>
+            <p>
+                You may update the pseudocode or flowchart you completed for the original 
+                exercise. Be sure to clearly indicate the event handler(s) from the mainloop.
+            </p>
+        </div> <!-- #ex3 -->
+    </div> <!-- #tabs -->
+</div> <!-- #lab9 -->

@@ -1,0 +1,423 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="demo-code" style="background-color:moccasin;">
+    <div id="header" style="padding:20px;">
+        <div id="navigtion">
+            <a href="/courses/49150">
+                <img src="/courses/49150/files/7949795/preview"
+                     alt="generic logic flow image" width="150" /><br />
+                <em>&nbsp;&nbsp; --> Home</em>
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+
+    <div id="python" style="padding:20px;">
+        <h2 class="alert">Chapter 3 Demo Code</h2>
+        <p>
+            Open this code in IDLE, walk through the source to
+            see if you can follow all that is going on before you
+            try and run it. After you run the code, try changing
+            around a few lines to see what happens.
+        </p>
+        <p>
+            In chapter 3, we learn about selection structures where code executes
+            based on the result of a condition. We also learn about relational
+            operators such as less than (&lt;), greater than (&gt;), etc. The tricky
+            ones to watch out for in Python are the equality operator  ==
+            (double equal signs) and the inequality operator != Java, C++ and C#
+            also use these relational operators. We also learn about logical
+            operators. The demo code below is based on the various examples found
+            in chapter 3.
+        </p>
+    </div> <!-- #python -->
+
+    <div id="compare-values" style="padding:20px;">
+        <hr />
+        <h2 class="alert">Compare Values</h2>
+
+        <p>
+            Open IDLE and create a new file. Save it with a meaningful name.
+            Copy the following code into your file, save it and run it.
+        </p>
+
+        <p>
+            Notice that <code>(num_val1 > num_val2)</code>
+            <strong>always</strong> evaluates to true or false,
+            regardless of what the numbers are. The expression
+            will never equal a number!
+        </p>
+
+        <div id="compare-values-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 2 compare numbers and strings demo
+
+# Declare variables
+num_val1 = 0
+num_val2 = 0
+str_val1 = ""
+str_val2 = ""
+
+# Let's compare numbers!
+# get numeric input
+num_val1 = int(input("Enter first number: "))
+num_val2 = int(input("Enter second number: "))
+
+# compare numbers
+if num_val1 == num_val2:
+    # values are equal
+    print("values are equal")
+elif num_val1 < num_val2:
+    # val1 < val2
+    print("value1 < value2")
+else:
+    # value1 > value2
+    print("value1 > value2")
+
+# Let's compare strings!
+# get 2 strings for input
+str_val1 = input("Enter first string: ")
+str_val2 = input("Enter second string: ")
+
+# compare strings - convert both strings to either all upper() or lower() case
+# or use casefold() to do a case insensitive comparison
+if str_val1.casefold() == str_val2.casefold():
+    # values are equal
+    print("string values are equal")
+else:
+    # value1 > value2
+    print("String values are not equal")
+
+            </pre>
+        </div> <!-- #compare-values-code -->
+    </div> <!-- #compare-values -->
+
+    <div id="payroll-demo" style="padding:20px;">
+        <hr />
+        <h2 class="alert">Payroll Demo</h2>
+        <p>
+        </p>
+
+        <div id="payroll-demo-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 2 add 2 numbers demo
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US')
+
+
+# Declare variables and constants
+HOURS_IN_WEEK = 40
+OVERTIME_RATE = 1.5
+DENTAL_PREMIUM = 35.00
+YES = 'Y'
+hours_worked = 0.0
+pay_rate = 0.0
+pay = 0.0
+deduct_dental = "N"
+
+
+# get input
+hours_worked = float(input("Enter hours worked: "))
+pay_rate = float(input("Enter pay rate: "))
+deduct_dental = input("Deduct dental premium (Y/N): ")
+print("deduct_dental = " + deduct_dental)
+
+# process - calculate gross pay
+# indent 4 spaces for code in the true and false blocks
+if hours_worked <= 40:
+# normal work week
+pay = hours_worked * pay_rate
+else:
+# calculate with overtime
+pay = (pay_rate * HOURS_IN_WEEK) + ((hours_worked - HOURS_IN_WEEK) * (OVERTIME_RATE * pay_rate))
+
+# Real world stuff the book leaves out: Social Security, Fed & state tax, etc
+# check for dental deduction the casefold() method does case insensitive comparison
+if deduct_dental.upper() == "Y":
+pay = pay - DENTAL_PREMIUM
+
+
+# output - display pay
+print("Total = " + locale.currency(pay, grouping=True))
+</pre>
+        </div> <!-- #payroll-demo-code -->
+    </div> <!-- #payroll-demo -->
+
+    <div id="phonebill-using-AND" style="padding:20px;">
+        <hr />
+        <h2 class="alert">Phone bill using logical AND operator</h2>
+
+        <p></p>
+
+        <div id="phonebill-using-AND-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 3 logical AND demo
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US') # use "en_US" on Mac
+
+# Declare variables and constants
+CALLS = 100
+MINUTES = 500
+BASIC_SERVICE = 30.00
+ADD_PREMIUM = 20.00
+
+customer_id = ""
+calls_made = 0
+call_minutes = 0
+customer_bill = BASIC_SERVICE # start with basic service and accumulate from there...
+
+# input - get customer ID, calls, minutes
+customer_id = input("Enter Customer ID #: ")
+calls_made = int(input("Enter number of calls: "))
+call_minutes = int(input("Enter number of minutes: "))
+
+# process - calculate bill using the AND operator. Both conditions must be true
+if calls_made > CALLS and call_minutes > MINUTES:
+    customer_bill = customer_bill + ADD_PREMIUM
+
+
+# output - display customer bill
+print("Total = " + locale.currency(customer_bill, grouping=True))
+
+</pre>
+        </div> <!-- #phonebill-using-AND-code -->
+    </div> <!-- phonebill-using-AND -->
+
+    <div id="phonebill-using-OR" style="padding:20px;">
+        <hr />
+        <h2 class="alert">Phone bill using logical OR operator</h2>
+
+        <p></p>
+
+        <div id="payroll-demo-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+#Chapter 3 Logical OR demo
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US') # use "en_US" on Mac
+
+# Declare variables and constants
+CALLS = 100
+MINUTES = 500
+BASIC_SERVICE = 30.00
+ADD_PREMIUM = 20.00
+
+customer_id = ""
+calls_made = 0
+call_minutes = 0
+customer_bill = BASIC_SERVICE # start with basic service and accumulate from there...
+
+# input - get customer ID, calls, minutes
+customer_id = input("Enter Customer ID #: ")
+calls_made = int(input("Enter number of calls: "))
+call_minutes = int(input("Enter number of minutes: "))
+
+# process - calculate bill. Page 84, the business rule changed:
+# charge the premium if calls made > 100 OR minutes > 500
+if calls_made > CALLS or call_minutes > MINUTES:
+    customer_bill = customer_bill + ADD_PREMIUM
+
+
+# output - display customer bill
+print("Total = " + locale.currency(customer_bill, grouping=True))
+</pre>
+        </div> <!-- #phonebill-using-OR-code -->
+    </div> <!-- phonebill-using-OR -->
+
+    <div id="phonebill-using-IF" style="padding:20px;">
+        <h2 class="alert">Phone bill using nested <em>if</em></h2>
+
+        <p></p>
+
+        <div id="phonebill-using-IF-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 3 nested if demo
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US')  # use "en_US" on Mac
+
+# Declare variables and constants
+CALLS = 100
+MINUTES = 500
+BASIC_SERVICE = 30.00
+ADD_PREMIUM = 20.00
+
+customer_id = ""
+calls_made = 0
+call_minutes = 0
+# start with basic service and accumulate from there...
+customer_bill = BASIC_SERVICE
+
+# input - get customer ID, calls, minutes
+customer_id = input("Enter Customer ID #: ")
+calls_made = int(input("Enter number of calls: "))
+call_minutes = int(input("Enter number of minutes: "))
+
+# process - calculate bill (nested if) approach
+if calls_made > CALLS:
+    if call_minutes > MINUTES:
+        customer_bill = customer_bill + ADD_PREMIUM
+
+
+# output - display customer bill
+print("Total = " + locale.currency(customer_bill, grouping=True))
+
+</pre>
+        </div> <!-- #phonebill-using-IF-code -->
+    </div> <!-- #phonebill-using-IF -->
+
+    <div id="range-demo-hi-lo" style="padding:20px;">
+        <h2 class="alert">Range demo (upper and lower limits)</h2>
+
+        <p></p>
+
+        <div id="range-demo-hi-lo-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 3 Various coding techniques to calculate a discount based on qty
+# This example is based on pg. 94 of the text.
+# Pardon the magic numbers
+
+# Declare variables and constants
+qty = 0
+discunt = 0.0
+
+
+# input - get qty
+qty = int(input("Enter Qty: "))
+
+
+# process - figure out the discount
+# This approach uses upper and lower limits using the "and" operator
+if qty >= 0 and qty <= 10:
+    discount = 0.00
+elif qty >= 11 and qty <= 24:
+    discount = 0.10
+elif qty >= 25 and qty <= 50:
+    discount = 0.15
+else:
+    discount = 0.20
+
+
+# output - display discount percentage
+print("Discount is: " + "{:.2%}".format(discount))
+
+</pre>
+        </div> <!-- #range-demo-hi-lo-code -->
+    </div> <!-- #range-demo-hi-lo -->
+
+    <div id="range-demo-upper" style="padding:20px;">
+        <h2 class="alert">Range demo high end</h2>
+
+        <p></p>
+
+        <div id="range-demo-upper-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 3 Various coding techniques to calculate a discount based on qty
+# This example is based on pg. 94 of the text.
+# Pardon the magic numbers
+
+# Declare variables and constants
+qty = 0
+discunt = 0.0
+
+
+# input - get qty
+qty = int(input("Enter Qty: "))
+
+
+# process - figure out the discount
+# This approach starts with the high limit and works its way down
+# First check for a qty > 0
+if qty > 0:
+    if qty > 50:
+        discount = 0.20
+    elif qty > 24:
+        discount = 0.15
+    elif qty > 10:
+        discount = 0.10
+    else:
+        discount = 0
+else:
+    print("Qty must be > 0")
+
+# output - display discount percentage
+print("Discount is: " + "{:.2%}".format(discount))
+
+</pre>
+        </div> <!-- #range-demo-upper-code -->
+    </div> <!-- #range-demo-upper -->
+
+    <div id="range-demo-lo" style="padding:20px;">
+        <h2 class="alert">Range demo low end</h2>
+
+        <p></p>
+
+        <div id="range-demo-lo-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Chapter 3 Various coding techniques to calculate a discount based on qty
+# This example is based on pg. 94 of the text.
+# Pardon the magic numbers
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US')  # use "en_US" on Mac
+
+# Declare variables and constants
+qty = 0
+discunt = 0.0
+
+
+# input - get qty
+qty = int(input("Enter Qty: "))
+
+
+# process - figure out the discount
+# This approach starts with the lower limits and works its way up
+# First check for a qty > 0
+if qty > 0:
+    if qty < 11:
+        discount = 0
+    elif qty < 25:
+        discount = 0.10
+    elif qty < 51:
+        discount = 0.15
+    else:
+        discount = 20.0
+else:
+    print("Qty must be > 0")
+
+# output - display discount percentage
+print("Discount is: " + "{:.2%}".format(discount))
+
+</pre>
+        </div> <!-- #range-demo-lo-code -->
+    </div> <!-- range-demo-lo -->
+
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #demo-code -->

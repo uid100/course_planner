@@ -1,0 +1,373 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab6" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #6</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an opportunity to apply the concepts and
+                principles presented in PLD chapter 6.
+            </p>
+            <p>
+                Primarily, we will be
+                focusing on creating user defined methods. The idea here is
+                to build a <em>toolbox</em> of reusable code that you may reuse
+                for other Python programming exercises and perhaps even in
+                the work place.
+            </p>
+            <p>
+                In real world software development, it is a common practice
+                to implement libraries of reusable code needed for a larger
+                project in a small <em>test fixture</em> environment similar to what
+                we will be creating in some of these exercises. Code can be
+                more easily tested/debugged in a small scale environment;
+                different algorithms can be coded and tested to find the
+                one with the best performance, etc. Once everything is
+                tested and working correctly, it then be integrated into
+                a larger scale project and reused in future projects.
+            </p>
+            <p>
+                Very often, interns and entry level software developers are
+                tasked with coding and/or testing libraries such as these.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="objectives" style="padding:40px;">
+            <ul>
+                Objectives:
+                <li>Creating applications in Python.</li>
+                <li>User defined methods</li>
+                <li>More experience with Python repetition (loop) structures.</li>
+                <li>More experience with arrays and lists.</li>
+            </ul>
+        </div> <!-- #objectives -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>User-defined methods</h3>
+
+            <p>
+                This first exercise will give you a guided walk through of creating
+                a simple library of user defined methods. You may need to
+                (re)use any/all of these methods in this library in future lab
+                exercises so completing it and having everything working correctly
+                now will give you an advantage later on.
+            </p>
+
+            <p>&nbsp;</p>
+            <ol>
+                <li>Create a Python file called <code>Methods.py</code></li>
+                <li>
+                    <p>
+                        Create a user defined method called <code>get_float(prompt)</code> that
+                        accepts a prompt as a parameter, uses that prompt to prompt
+                        the user for an input, and stays in a loop until a float
+                        value is entered. You are given the code for this one. You
+                        are also given a “sneak peak” to chapter 10 where we use
+                        exception handling to validate input and recover from
+                        runtime errors.
+                    </p>
+                    <p style="font-style:italic;">
+                        Watch indentation closely. It gets tricky
+                        with both a while loop and try/except blocks.
+                    </p>
+                    <p>
+                        <img 
+                             src="/courses/49150/files/8214162/preview" 
+                             alt="Methods.py source code" width="621" height="493" />
+                    </p>
+                </li>
+                <li>
+                    <p>Create a Python file called <code>MethodTest.py</code></p>
+                </li>
+                <li>
+                    <p>
+                        Import your <code>Methods</code> file. Note how you can create
+                        a shortened “alias” name for your import file. In this case,
+                        we ‘ll call it <code>m</code>. You will also create a
+                        <code>main()</code> method for testing the methods you create
+                        and code to invoke the <code>main()</code> method.
+                    </p>
+                    <p>You are given the code for this:</p>
+                    <p>
+                        <img
+                             src="/courses/49150/files/8214167/preview" 
+                             alt="MethodTest.py source code" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your <code>get_float_val()</code> method. Test with both
+                        invalid and valid values. Be sure to save <strong><em>both</em></strong>
+                        files before testing!
+                    </p>
+                    <p>
+                        <img 
+                             src="/courses/49150/files/8214169/preview" 
+                             alt="test results" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In your Methods file, create a user defined method called
+                        <code>get_int_val(prompt)</code> that takes a prompt as a parameter,
+                        uses that prompt to prompt the user for an input, and stays in a loop
+                        until an integer value is entered. You get to code this one. Hint:
+                        The code will be very similar to the <code>get_float_val()</code>
+                        method.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add code to the <code>main()</code> method to test your
+                        <code>get_int_val()</code> method. The code will be very similar to
+                        what you did to test the <code>get_float_val()</code> method.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your <code>get_int_val()</code> method. Be sure to test with 
+                        both invalid and valid values.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Create a user defined method called <code>is_float(value)</code> that 
+                        simply tests if an input value is a float. This method will accept a 
+                        string input value as a parameter and return a True/False (Boolean) 
+                        result.
+                    </p>
+                    <p>
+                        You are given the code for this one. It also uses exception handling 
+                        to determine if the value is a float.
+                    </p>
+                    <p>
+                        <img 
+                             src="/courses/49150/files/8214215/preview" 
+                             alt="is_float source" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add code to the <code>main()</code> method to test your 
+                        <code>is_float()</code> method. You are given the code:
+                    </p>
+                    <p>
+                        <img 
+                             src="/courses/49150/files/8214219/preview" alt="test is_float" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Be sure to save your work and then test the 
+                        <code>is_float()</code> method.
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214223/preview" alt="test invalid input" />
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214228/preview" alt="test valid input" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Create a user defined method called <code>is_integer(value)</code> 
+                        that tests if an input value is an integer. This method will accept 
+                        a string input value as a parameter and return a True/False (Boolean) 
+                        result. You get to code this one but the code will be very similar 
+                        to <code>is_float()</code>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Add code to the <code>main()</code> method to test your 
+                        <code>is_integer()</code> method. You get to code this.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Be sure to save and test your is_integer method. Test with both invalid
+                        and valid test data.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In lab 5, you wrote code to search an array for a value. This is 
+                        actually a quite common programming task. Do you want to code this 
+                        over and over every time you need to search an array?
+                    </p>
+                    <p>
+                        Let’s code a search method we can reuse! In your Methods file, create 
+                        a user defined method called <code>find_string()</code> to find a 
+                        string value in a Python list. This method will accept 2 parameters. 
+                        The first will be a string list to search and the second parameter will 
+                        be the value to find. It will return the subscript where the value was 
+                        found or <code>-1</code> if the value was not found. You are given the 
+                        code for this one.
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214251/preview" alt="find_string source" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the <code>main()</code> method, add some code to test your 
+                        <code>find_string()</code> method. You are give the code.
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214256/preview" alt="test find_string source" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        It’s time to test. Test with both valid and invalid input values to make 
+                        sure the method returns the correct index or -1 if not found. Since we are 
+                        comparing the string values in <code>find_string()</code> using upper case, 
+                        the letter case doesn’t matter on the input.
+                    </p>
+                    <p>
+                        What does matter is that the word is spelled correctly!
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214257/preview" alt="test result valid data" />
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8214258/preview" alt="test results for invalid data" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In your Methods file, create a user defined method called <code>find_int()</code> 
+                        to find an integer value in a Python list. This method will accept 2 parameters. 
+                        The first will be an integer list to search and the second parameter will be the 
+                        value to find. It will return the subscript where the value was found or -1 if 
+                        the value was not found. You get to code this one. Hint: The code from step 15 
+                        is quite similar. There is also code from Lab 5 that will help if you need it.
+                    </p>
+                    <p>
+                        Write a flowchart or pseudocode for this method.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the <code>main()</code> method, add some code to test your <code>find_int()</code>
+                        method. You get to code this, although the code will be very similar to the code in 
+                        step 16.
+                    </p>
+                    <p>
+                        Use a hard-coded integer list (at least 6 values) and prompt the user for the value 
+                        to find. Display the subscript of the found value and a “Not found” message if the 
+                        value was not found.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your <code>find_int()</code> with both valid and invalid values.
+                    </p>
+                </li>
+            </ol>
+
+
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Coyote Tours</h3>
+
+            <p>
+                Coyote Tours has hired you to develop an application that will
+                <ul>
+                    <li>provide the user the cost of a sightseeing tour.</li>
+                    <li>ask the user to enter a tour code number and number of persons</li>
+                    <li>look up the destination, and cost per person for that destination</li>
+                    <li>compute the total price</li>
+                    <li>store tour codes, destination and cost per person in parallel arrays.</li>
+                </ul>
+            </p>
+            <p>
+                <code>total_price = cost_per_person * number_of_people</code>
+            </p>
+            <p>
+                You will import your Methods module and use the find_int() method like 
+                you did in exercise 1.
+            </p>
+            <p>
+                You are given the following table of tour codes. Use your creative 
+                talents to fill in the destinations and costs.
+            </p>
+            <table class="table table-bordered table-sm">
+                <caption>Tour Code Destination Cost per Person</caption>
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Tour Code</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Cost per Person</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1001</td><td></td><td></td></tr>
+                    <tr><td>1002</td><td></td><td></td></tr>
+                    <tr><td>1003</td><td></td><td></td></tr>
+                    <tr><td>1004</td><td></td><td></td></tr>
+                    <tr><td>1005</td><td></td><td></td></tr>
+                    <tr><td>1006</td><td></td><td></td></tr>
+                </tbody>
+            </table>
+                
+            <p>
+                If the user types in an invalid tour code, display “NOT FOUND” 
+                for the destination and $0 for the cost.
+            </p>
+
+            <p>&nbsp;</p>
+            <ol>
+                <li>
+                    Document your design with either pseudocode or a flowchart. If you are using
+                    pseudocode, you may add it to the pseudocode text file you created in exercise 1.</li>
+                <li>
+                    Create a new Python file <code>CoyoteTours.py</code>. Make sure you are saving 
+                    it to your Lab06 folder on your USB drive if you are using the college lab 
+                    computers.</li>
+                <li>
+                    Code the application. Create a main() method and write your application code in 
+                    it like you did for exercise 1.</li>
+                <li>
+                    Test your application and verify lookups and computations are correct.</li>
+            </ol>
+        </div> <!-- #ex2 -->
+
+    </div> <!-- #tabs -->
+</div> <!-- #lab6 -->
