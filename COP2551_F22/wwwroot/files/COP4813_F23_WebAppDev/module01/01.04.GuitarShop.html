@@ -1,0 +1,338 @@
+<!-- WebAppDev  id: 465444  -->
+
+<div id="ex1">
+
+    <div id="header">
+        <div id="course-image" style="width: 350px; padding:20px;">
+            <figure>
+                <a href="/courses/465444/">
+                    <img style="display:block; margin:auto;"
+                         src="/courses/465444/file_contents/course%20files/course_image/webdev.png"
+                         alt="main course image" width="200" height="115" />
+                    <figcaption style="text-align:center;">home</figcaption>
+                </a>
+            </figure>
+            <p>&nbsp;</p>
+        </div><!-- #course-image -->
+    </div> <!-- #header -->
+
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert alert-info">Ex.1 Guitar Shop</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an introduction to using the Visual Studio IDE and
+                to the MVC design pattern.
+            </p>
+            <p>
+                It also gives you an opportunity to apply some of the terminology and concepts
+                presented in chapters 1 of the PLD text.
+            </p>
+            <p>&nbsp;</p>
+
+        </div> <!-- #introduction -->
+
+        <div id="topics" style="padding:40px;">
+            <ul>
+                Topics:
+                <li>Install Visual Studio</li>
+                <li>Open the Project or Solution</li>
+                <li>Review the project framework structure</li>
+                <li>Run the Application using the Debugger</li>
+                <li>Submitting the assignment</li>
+            </ul>
+        </div> <!-- #topics -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#prep">First</a></li>
+            <li><a href="#solution">Guitar Shop</a></li>
+            <li><a href="#mvc-template">MVC Template</a></li>
+            <li><a href="#submit">Submit</a></li>
+        </ul>
+
+        <div id="prep" style="padding:20px;">
+            <h2 class="alert alert-info">Before You Begin</h2>
+            <div id="extensions" style="padding:20px;">
+                <h3>File Extensions</h3>
+                <p>
+                    I don't know why this is not the default setting anymore, but on
+                    both Windows and MacOS, it is not. As a developer, you need to see
+                    this information.
+                </p>
+                <h4>MacOS:</h4>
+                <p>
+                    Select Finder > Preferences from the menu and check the box.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                         src="/courses/465444/file_contents/course%20files/course_image/01/Mac_file_extensions.png"
+                         alt="Show File Extensions (Mac)" width="390" />
+                </p>
+                <hr />
+                <h4>Windows 11:</h4>
+                <p>
+                    From File Explorer:  View > Show > File name extensions.<br />
+                    (Windows 10: it's a checkbox on the toolbar)
+                </p>
+                <p>
+                    Select Finder > Preferences from the menu and check the box.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                         src="/courses/465444/file_contents/course%20files/course_image/01/Windows_file_extensions.png"
+                         alt="show windows file extensions" width="500" />
+                </p>
+            </div> <!-- #extensions -->
+
+            <a href="#tabs" style="text-align:center; font-style:italic">
+                Go to next tab
+            </a>
+        </div> <!-- #prep -->
+
+        <div id="solution">
+            <h2 class="alert alert-info">Build the Project</h2>
+            <h3>Install or Update Visual Studio</h3>
+            <p>
+                If you have not already installed Visual Studio, there are step-by-step
+                instructions and notes to help in Module 0: Install Visual Studio 2022,
+                and also in Appendix A in your text.
+            </p>
+            <div class="ic-flash-info">
+                <p>
+                    Note: Plan some time for installing and configuring Visual Studio.
+                    Quite often, this takes much longer than students expect.
+                </p>
+                <p>
+                    If you already have it installed, this would be a good time to check
+                    the configuration for the required workloads and any updates.
+                </p>
+            </div>
+
+            <h3>Download the Project Files</h3>
+            <p>
+                Use the
+                <a href="https://www.murach.com/shop-books/web-development-books/murach-s-asp-net-core-mvc-2nd-edition-detail"
+                   style="color:navy;">link</a>,
+                Or from the publisher's website, <a href="murach.com">Murach.com</a>, find
+                your textbook and the <strong>FREE Downloads</strong> tab, and download the
+                Zip file.
+            </p>
+
+            <hr />
+
+            <p>
+                This exercise will follow the step-by-step instructions from Exercise 1-1
+                at the end of Chapter 1.
+            </p>
+            <h3>Start Visual Studio and open the Guitar Shop app</h3>
+            <p>
+                Although there is no code for you to write in this exercise, take your time
+                with it and notice some important points.
+            </p>
+            <p>
+                The <strong>Solution Explorer</strong> in Visual Studio is an important part
+                of the environment and provides a lot of useful information at a glance.
+            </p>
+            <p>
+                At the top of the solution explorer, notice the name of the
+                <strong>Solution</strong>. More about this later. Below that is the list
+                of <strong>Projects</strong>. In the case of the Guitar Shop app, there
+                is only one project in the solution, <strong>GuitarShop</strong>. Its
+                name is in bold font. A solution may have several projects, but only
+                one will be set as the default startup project. You can see this from
+                the <em>right-click</em> (on the project name) context menu.
+            </p>
+            <p class="ic-flash-info" style="font-style:italic">
+                These instructions are specific to Windows. I will try and update for macOS
+                as time allows.
+            </p>
+            <p>
+                For now, right-click on the solution name and <strong>
+                    Open Folder in File Explorer
+                </strong>. Here you will see that there is
+                a single solution (.sln) file. Right click it and open it in notepad. It is
+                a small text file that visual studio uses to configure Visual Studio. It
+                contains information about version numbers and which projects are in the
+                solution (just one for now). Close that file. Note, ff you double-click
+                on one of these .sln files, it will open the solution in Visual Studio.
+                Since this solution is already open and running in Visual Studio, you
+                won't need to do that.
+            </p>
+            <p>
+                Next, from the File Explorer, open up the GuitarShop folder and look at
+                the list of files and folders there. Here you will see one <strong>Project</strong>
+                (.csproj) file. Again open this file in a text editor (Right-click > Open with > Notepad).
+                This is another small configuration, text file. Look at the settings, but don't
+                worry about what they are for now, and close the file without editing it.
+            </p>
+            <p>
+                These configuration files are important to Visual Studio, but you will
+                almost never need to edit them directly.
+            </p>
+            <p>
+                Close Notepad (if it's still running) and the File Explorer and return to
+                Visual Studio.
+            </p>
+
+            <h3>Run the Guitar Shop app</h3>
+            <p>
+                Continue with the instructions in the exercise to launch the app. As described
+                in the chapter, Visual Studio will start a hosting service and the app will
+                open in a web browser.
+            </p>
+            <p>
+                The exercise steps point out some important points about the application.
+                Read through each carefully.
+            </p>
+            <p>
+                From the browser, notice the URL. It probably says<br />
+                <code>https://localhost:#####</code> where #### indicates a pseudo-random
+                available port number the browser and host server are using.
+            </p>
+            <p>
+                This is actually a shortcut for the page, try adding<br />
+                <code>/Home/Index</code> to the end of the URL. Also, as you click through
+                each of the links in the app, notice how the URL changes. We'll learn
+                more about these soon.
+            </p>
+            <p>
+                While we are here, try coping the URL and opening another browser and
+                navigating to the same [localhost] address. You can open many sessions
+                of this page, as long as the app is open. When they are all closed, the
+                session will end. If you stop the app (in Visual Studio), the browser
+                pages won't close, but if you try refreshing them when the app is no longer
+                running, you will see an error.
+            </p>
+
+            <h3>Close the Guitar Shop app and exit Visual Studio</h3>
+            <p class="ic-flash-info">But wait, there's more!</p>
+            <p>
+                The final steps in the book include one way to close and exit
+                the application and the IDE, there are others.
+            </p>
+
+            <a href="#tabs" style="text-align:center; font-style:italic">
+                Go to next tab to continue the assignment.
+            </a>
+        </div> <!-- #solution -->
+
+        <div id="mvc-template">
+            <h2 class="alert alert-info">Build a New App from the Template</h2>
+            <h3>Reopen the Guitar Shop app</h3>
+            <p>
+                If you closed Visual Studio, reopen it. The Guitar Shop app will 
+                be at or near the top of your recent solutions. You can select it from
+                there, or choose Open Project or Solution and navigate back to it.
+            </p>
+            <h3>Add a New Project to the Solution</h3>
+            <p>
+                From the Solution Explorer, right-click on the solution name near the
+                top of the display, and select <strong>Add</strong> and 
+                <strong>New Project</strong>. From the <strong>New Project</strong>
+                Dialog, you can use the filters to make it easier to find the template.
+            </p>
+            <p>
+                Change 'All languages' to 'C#'.
+            </p>
+            <p>
+                Change 'All project types' to 'Web'
+            </p>
+            <p>
+                Scroll down to find "ASP.NET Core Web App (Model-View-Controller)". There
+                are other templates which look very similar. Be sure you choose the one
+                with MVC included in the template. Click [Next].
+            </p>
+            <p>
+                By default the new project will be named "WebApplication1" If that project
+                already exists, the id number will increment to a unique name. You can use
+                the default, or rename the project to "WebApplicationMVCTest". Either is fine.
+                Click [Next]
+            </p>
+            <p>
+                Check the Framework, the default should be .NET 6.0 (Long Term Support).
+            </p>
+            <p>
+                Click [Create] and notice that the new project is added to the solution.
+                Right-click on the name of the project and select <strong>Set as Startup
+                Project</strong>. Click the green triangle (play button) on the toolbar
+                to build and start this new project in the debugger. Again it will launch
+                the default browser and the hosted app will appear.
+            </p>
+            <p>
+                The MVC template includes a simple HomeController in the Controllers
+                folder and a Home folder in the Views folder with an Index.cshtml file
+                in it. There is more in the template, but it's enough for now that it
+                runs. You will become very familiar with creating MVC web apps.
+            </p>
+
+            <a href="#tabs" style="text-align:center; font-style:italic">
+                Go to next tab
+            </a>
+        </div> <!-- #mvc-template -->
+
+        <div id="submit">
+            <h2 class="alert alert-info">Submit the Assignment</h2>
+            <p>
+                Close Visual Studio and navigate to the folder that contains your
+                solution (.sln) file, then open the folder <em>above</em> that one.
+            </p>
+            <p>
+                In Windows 11, use the File Explorer, for macOS, the Finder window.
+                From the folder (directory) that <strong>contains</strong> your solution
+                file, right-click the folder name and select Compress to ZIP file.
+            </p>
+            <p>
+                This may be a little different in Windows 10, but it works the same way.
+            </p>
+            <p>
+                From macOS, right-click the folder and choose Compress <em>folder_name</em>.
+            </p>
+            <p>
+                Upload your zip file, containing the solution with both projects. Remember
+                this contains more than simply the .sln or .prj (or .csproj) files, as
+                these do not contain the project code.
+            </p>
+            <p>
+                If you are having trouble Zipping files, Be sure Visual Studio is closed, 
+                as well as any applications that may be running in Visual Studio or as 
+                background processes and try again.
+            </p>
+            <p>
+                Do not use other archive utilities, such as tar, cpio, gzip, or 7zip, or others.
+            </p>
+            <hr />
+            <p>
+                Before submitting, take a look at the rubric to make sure the assignment
+                is correct.
+            </p>
+            <hr />
+            <p>
+                Although there was no code to write in this exercise, there was a lot of
+                content in chapter 1.
+            </p>
+            <p> You successfully created a visual studio solution containing two separate
+                MVC Web App projects, tested that they run correctly, and zipped the correct 
+                files to submit the assignment. This is a good time to flip back through
+                the chapter and see if any of the points are clearer from building the 
+                application(s) and share any questions you may have.
+            </p>
+            <p>
+                All of these things will be important in the coming chapters. If you
+                had any trouble with these things, be sure they are sorted out before 
+                going on.
+            </p>
+            <p>
+                Next week, you'll be editing the code to see how all of these things 
+                work together.
+            </p>
+        </div> <!-- #submit -->
+    </div> <!-- #tabs -->
+
+    <p style="text-align:center;">
+        <a href="#ex1" style="font-style:italic;"> back to top </a>
+    </p>
+
+    <p style="text-align:center;"><em>Use the [Next >] button to continue.</em></p>
+</div> <!-- #ex1 -->
