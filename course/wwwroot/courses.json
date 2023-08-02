@@ -271,6 +271,7 @@
           "term": "Spring 2023",
           "start": "21-Aug-2023",
           "end": "8-Dec-2023",
+          "description": "",
           "textbook": {
             "title": "Microsoft Visual C# Step by Step",
             "author": "Sharp",
@@ -516,6 +517,7 @@
           "CanvasCourseID": 999,
           "Start": "1-Jan-1900",
           "End": "31-Jan-1900",
+          "description": "",
           "objectives": [
             "Describe the software development life-cycle",
             "Describe the principles of structured programming and be able to describe, design, implement, and test structured programs using currently accepted methodology",
@@ -634,6 +636,7 @@
           "term": "Spring 2022",
           "start": "31-Jan-2022",
           "end": "6-Jun-2022",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -853,6 +856,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "17-Dec-2022",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -1132,6 +1136,7 @@
           "term": "Spring 2022",
           "start": "30-Jan-2023",
           "end": "2-Jun-2023",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -1417,6 +1422,7 @@
           "term": "Fall 2023",
           "start": "21-Aug-2023",
           "end": "21-Dec-2023",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -1758,6 +1764,7 @@
           "term": "Spring 2021",
           "start": "4-Jan-2021",
           "end": "30-Apr-2021",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -1996,6 +2003,7 @@
           "term": "Summer 2022",
           "start": "9-May-2022",
           "end": "9-Aug-2022",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -2207,6 +2215,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -2456,6 +2465,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -2705,6 +2715,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -2914,6 +2925,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": "",
           "modules": [
             {
@@ -3189,6 +3201,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -3439,6 +3452,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -3654,6 +3668,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "Course Learning Outcomes": [
             "Master the concepts and principles of cloud computing.",
             "Explain the basic concepts of cloud computing.",
@@ -3911,6 +3926,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": "",
           "modules": [
             {
@@ -4081,6 +4097,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": "",
           "modules": [
             {
@@ -4253,6 +4270,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -4503,6 +4521,7 @@
           "term": "Spring 2023",
           "start": "9-Jan-2023",
           "end": "6-May-2023",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -4718,6 +4737,7 @@
           "term": "Fall 2023",
           "start": "21-Aug-2023",
           "end": "8-Dec-2023",
+          "description": "",
           "textbook": "",
           "modules": [
             {

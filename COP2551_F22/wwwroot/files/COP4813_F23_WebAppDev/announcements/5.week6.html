@@ -1,0 +1,52 @@
+﻿<!-- COP4813 Week6 - Building and Running Web Apps - Quickly -->
+
+<h2 class="p1">Web Applications</h2>
+<p class="p2">&nbsp;</p>
+<p class="p1">By this point, you have built many web apps and are comfortable and familiar with the MVC template and framework.</p>
+<p class="p1">I use the MVC framework often to build proof-of-concept or prototype projects or to<span class="Apple-converted-space">&nbsp;</span>create demos very quickly.</p>
+<p class="p1">&nbsp;</p>
+<h3 class="p1">Chasing Moving Targets</h3>
+<p class="p2">&nbsp;</p>
+<p class="p1">There are changes in the operating systems and in the tools and templates. Following the textbook, we have been building web applications to target the .NET 6.0. As of today, .NET 7 is released and stable and .NET 8 preview is very close to a product release. .NET 7 is considered a stable release, but there are new builds and releases (currently) at least once per year.</p>
+<p class="p1">.NET (pronounced "dot-net") 'Framework' was built to integrate with and complement the Windows<span class="Apple-converted-space">&nbsp;</span>operating system. .NET Core is an SDK and runtime environment which was built to support<span class="Apple-converted-space">&nbsp;</span>cross-platform development with build support for Windows, Linux, and Mac operating systems.</p>
+<p class="p1">.NET framework was being updated and new releases built. About the same time that .NET (Framework) v4.5 was released, Microsoft released .NET Core 3.0 and soon after .NET Core 3.1.</p>
+<p class="p1">To minimize confusion<span class="Apple-converted-space">&nbsp;</span>with the well-known framework product, Microsoft skipped the v4 series and released .NET Core 5.0, and starting with .NET 6, dropped the name "Core" from the nomenclature. Consistent with .NET(Core) 5, and .NET 6 was released in November 2021 and .NET 7 was released a year later, in November of 2022, and .NET 8 is scheduled.</p>
+<p class="p1">As each new build is released and the tools and templates are updated, changes need to be made to the many sets of instructions to work with them. This takes time.</p>
+<p class="p1">If you are working with a team on a large project and these updates occur, you may have a team or individuals investigating and testing the impacts of integrating the new releases in the product and evaluating security impacts and risks of not adopting the changes.</p>
+<p class="p2">&nbsp;</p>
+<h4 class="p2">Long-Term Support</h4>
+<p class="p1">You may have noticed seen the term Long-Term Support (LTS) associated with some of these products. This indicates that although the build may not contain the latest features of the newer product, but the product will continue to have bug fixes and more commonly, security updates released when necessary.</p>
+<p class="p2">&nbsp;</p>
+<h4 class="p1">New(er) Templates</h4>
+<p class="p1">As developers trying to make sense of all of the changes, we need to build a strong understanding of the tools we're using and still remain aware of the changes to be ready for what may be coming tomorrow.</p>
+<p class="p2">&nbsp;</p>
+<h3 class="p1">Example - Try this!</h3>
+<div class="ic-flash-info">
+    <p>... I wrote this last year. The older version of the textbook was using .NET Framework (Windows!) not .NET Core. This is the main reason for the textbook change, but as you can see, the published and printed book can never keep pace with a software product that is subject to Continuous Integration/Continuous Development (CI/CD).</p>
+    <p>The message is still relevant. The textbook and examples will target a specific build, but it's always up to us to keep up with any changes and try things out in the newer environment releases.</p>
+</div>
+<p>&nbsp;</p>
+<div>
+    <p class="p1">I haven't had time to install the newest (.NET7) release. My current development environment does have support for .NET6. There are a lot of significant changes that were included in .NET(Core)5 and .NET6. So it's worthwhile to try a simple project to observe some of the changes.</p>
+    <ol>
+        <li class="p1">Launch Visual Studio and start a New Project.<span class="Apple-converted-space">&nbsp;</span></li>
+        <li class="p1">Select the familiar MVC template.<span class="Apple-converted-space">&nbsp;</span></li>
+        <li class="p1">I can even use the defaults for most changes since this isn't a project I'll be maintaining<span class="Apple-converted-space">&nbsp;</span>for the long term. In my case, the default project name on this machine is "WebApplication3."<span class="Apple-converted-space"> &nbsp;</span>Yes, that is a terrible name, but since I plan to delete it when I'm done, that will do fine.</li>
+        <li class="p1">Next I'm going to change the "Framework" selection from .NET Core 3.1(Long-term support)<span class="Apple-converted-space">&nbsp;</span>to .NET 6.0 (Long-term support.)<span class="Apple-converted-space">&nbsp; </span>I don't need authentication for this, so I'll keep it simple<span class="Apple-converted-space">&nbsp;</span>and Create.</li>
+    </ol>
+    <p class="p2">&nbsp;</p>
+    <p class="p1">Visual Studio takes a few moments to build the solution and the project and auto-generates the code required for and from the template. You may recall that the term used when Visual Studio auto-generates code is "scaffolding."</p>
+    <p class="p2">&nbsp;</p>
+    <p class="p1">When the project is ready, observe that the folders for Models, Views and Controllers (and wwwroot) have been created and there is code for a HomeController and a Home/Index Razor view. There is also a Shared Layout and the bootstrap library and jquery libraries have been<span class="Apple-converted-space">&nbsp;</span>installed.</p>
+    <p class="p2"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://courses.sfcollege.edu/courses/465444/files/48091042/preview" alt="MVC Folder Structure" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465444/files/48091042" data-api-returntype="File" /></p>
+    <p class="p2">&nbsp;</p>
+    <p class="p1">At this point, things look familiar. I am 5-clicks and (probably) less than 1-minute into<span class="Apple-converted-space">&nbsp;</span>this project and I have not written a single line of code. There are a few things that may look different than I'm used to, but there's enough familiarity that I can run this immediately before I start writing code and when then Welcome page appears in the browser, we can be pretty confident that we understand how that happened.</p>
+    <p class="p1"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://courses.sfcollege.edu/courses/465444/files/48091066/preview" alt="Run the template project as-is" width="736" height="474" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465444/files/48091066" data-api-returntype="File" /></p>
+    <p class="p1">&nbsp;</p>
+    <p class="p1">From this point I can continue by adding some new data models (first) and maybe integrating with a database or diving in and creating some new and interesting Razor views.</p>
+    <p class="p2">&nbsp;</p>
+    <h3 class="p2">Publishing to Web</h3>
+    <p>In case you're wondering, Visual Studio has built in integration to Microsoft Azure. If you have an Azure account and are already logged in, then with just a few more clicks, you can publish this very simple (or any other) web application to the web to be accessed from anywhere.&nbsp;</p>
+    <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://courses.sfcollege.edu/courses/465444/files/48091062/preview" alt="cloud instance" width="413" height="253" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465444/files/48091062" data-api-returntype="File" /> &nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="https://courses.sfcollege.edu/courses/465444/files/48091036/preview" alt="mobile" width="148" height="320" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465444/files/48091036" data-api-returntype="File" /></p>
+</div>
+<p>&nbsp;</p>

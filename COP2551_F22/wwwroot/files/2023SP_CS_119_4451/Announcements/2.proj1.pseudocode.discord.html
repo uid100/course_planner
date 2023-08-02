@@ -1,0 +1,223 @@
+﻿<!-- id: 53190 -->
+<!-- title: Week 2 - Project 1, Pseudocode, and Discord! -->
+
+<h2>Review</h2>
+<h3>Getting Started</h3>
+
+<p>
+    As I mentioned, programming classes usually start out with very simple exercises to 
+    bridge the human-machine interface as quickly as possible. In other words, students 
+    provide simple instructions to get the computer to do something. If you continue 
+    with studying other programming languages, you'll find that this is usually a special
+    program called "HelloWorld." This is true in almost every language I've ever seen, 
+    with minor variations and few exceptions. A quick search will reveal many of these.
+</p>
+<p>
+    In addition to simply getting started, another theme that I hope you saw was the 
+    realization that almost every program you'll ever write or use follows the same 
+    pattern:
+</p>
+<ul>
+    <li>it takes some sort of<span>&nbsp;</span><strong>input</strong>,</li>
+    <li>does some amount of<span>&nbsp;</span><strong>processing</strong>,</li>
+    <li>and responds with some<span>&nbsp;</span><strong>output</strong>.</li>
+</ul>
+<p>
+    That can mean prompting the user for two numbers, multiplying them together, and 
+    displaying the result, or it can be waiting for a pedestrian to press a button, 
+    monitoring the traffic status, and cycling a traffic light to signal cross traffic 
+    to slow, then stop, and then lighting a Walk signal and starting a timer to 
+    trigger the next cycle. Think about any computer application that you use. Can you 
+    identify the inputs and the outputs?
+</p>
+<p>
+    This week you did this. You wrote usable and useful computer programs. You taught 
+    the computer how to respond to inputs and deliver a predictable result. That's 
+    quite an accomplishment. This class and your experiences will get more complex, 
+    but we'll build on this one step at a time.
+</p>
+<p>&nbsp;</p>
+<hr />
+<h2>Pseudocode</h2>
+<p><span><i>What is it?</i></span></p>
+<p>
+    In one of my advanced programming classes, I bring decks of playing cards to 
+    class and deal them to my students and I ask them to sort that set of cards in 
+    their hand. This is something that is fundamental to anyone who has ever played 
+    just about any card game. Next I ask them to each write down a set of instructions 
+    of how to sort a hand of cards and then trade those instructions with each other 
+    and try and follow the steps, explicitly. Every single step on the instructions 
+    needs to be followed, exactly as written. Yes, there are assumptions and questions 
+    and rules. What does it mean to "sort" them? Why is a 'Q' higher than a 'J'? Does 
+    sort mean left-to-right? .. low-to-high? .. is the 'Ace' the highest card or the 
+    lowest? What about suits (hearts, diamonds...)? Oh, and I have 'Jokers' in my 
+    card decks because my family uses them for some games. Some of the students will 
+    find them in their hand and choose how to deal with them in their instructions, 
+    but some might find them in their hand and not have any instructions written for 
+    them by another student who didn't think that they'd be there.
+</p>
+<p>
+    This brings up very real situations and common problems we run into when writing 
+    code. There are circumstances that might be encountered that the developer needs 
+    to consider. We'd like to think that the user will enter values the way we expect 
+    them to, but most errors in code exist because a user enters something that we 
+    didn't imagine. An application might ask for a user's birthday. Did the developer 
+    check to see that 31-April is not a valid date, and that although it's uncommon, 
+    some people are born on 29-Feb.
+</p>
+<p>
+    But more importantly, is that sequence of instructions clear enough to follow? Is 
+    it complete and detailed? Is the sequence correct and not ambiguous? In other words 
+    is there one and only one way to follow them and get the correct result. If these 
+    things are all done correctly, then anyone you give those instructions will be able 
+    to follow them and get the same result, every time.
+</p>
+<p>
+    What are all of the steps to do something? What is the correct order of all of 
+    those steps?
+</p>
+<p>
+    Pseudocode is that set of clear instructions that you can give to anyone and they 
+    could follow them to get the same result.
+</p>
+<p><span><i>What isn't it?</i></span></p>
+<p>
+    Pseudocode is not written in any programming language. In fact, the logic should 
+    be simple enough that you could give these instructions to someone who has no 
+    programming knowledge at all and follow them. The pseudocode also should make no 
+    assumptions of what language will be used to write the solution.
+</p>
+<p>
+    This <em>sequence</em> of <em>logical instructions</em>, which is commonly called 
+    an <em>algorithm</em> could be read by any programmer and they might decide which 
+    programming language best fits the solution, but that choice of language would 
+    make no difference to the algorithm that was written in pseudocode.
+</p>
+<p>
+    For our labs, do not write the solution in Python and then copy your code into a 
+    text file and call it 'pseudocode.' If everything in your set of simple, logical, 
+    sequenced instructions aren't completely clear to your roommate, or your great aunt 
+    Helen, or your son's basketball coach, then you might be missing something.
+</p>
+<p>Keep it simple, logical, correct.</p>
+<p class="ic-flash-info">
+    <strong>Do not submit a copy of your code and call it pseudocode.</strong>
+</p>
+<p>&nbsp;</p>
+
+<hr />
+<h2><i>Shebang!</i></h2>
+<p>Yes, that's really what it's called.</p>
+<p>
+    The '#' symbol has been called many things over the years, but most recently, 
+    in the computer world at least, it's been referred to as a 'hash' symbol. 
+    Instagram uses them to identify keywords. They call these 'hashtags' which is 
+    a <em>tag</em> (identifier) set off by a <em>hash</em> symbol.
+    </p>
+<p>
+    The exclamation point ('!'), used in written languages, is used for other 
+    purposes in programming and is often pronounced as 'bang.'
+</p>
+<p>
+    Together the hash-bang has become known as a 'shebang' (pronounced: shuh-BANG) 
+    and is used in scripting or interpreted languages. This line needs to be at the 
+    very beginning of a file. The hash (#) tells the interpreter to ignore or do 
+    nothing with this line, but it tells most operating systems which interpreter 
+    to use. In the case of Python3, the common usage is "#!/usr/bin/env python3"
+</p>
+<p>&nbsp;</p>
+<h3>(Examples)</h3>
+<p>"#!/usr/bin/env bash" tells the shell reading this file to use the Bash shell to execute the file.</p>
+<p>"#!/usr/bin/env pwsh" is sometimes used with Windows Powershell scripts.</p>
+<p>&nbsp;</p>
+
+<hr />
+<h2>Writing good code</h2>
+<h3>Self-documenting code</h3>
+<p>
+    Yes, good code needs to work, but like pseudocode, it should be clear and simple to 
+    follow. It might be somebody else that has to update or fix or reuse something that 
+    you've written, but just as commonly, it could be you (or me!) that has to open a 
+    program that we've written months or years before and we have to sort through it and 
+    try and remember what we were thinking at the time.
+</p>
+<p>
+    Good code starts with good identifiers. Give your variables logical names. A variable 
+    called "height" or "height_in_inches" or "centimeters" or even "cm" is pretty clear 
+    what kind of data it might contain. If your variables have clear, logical names, then 
+    the purpose of a statement such as<br />
+    <code>area_of_circle = value_of_pi * Radius * Radius</code><br />
+    would be very clear, and good clear code is less likely to have errors.
+</p>
+<h3>Using Comments</h3>
+<p>
+    Self-documented code is always a good idea, but sometimes, even with good name choices 
+    for variables and functions (or methods), comments are still helpful to keep the 
+    developers intent clear.
+</p>
+<p>
+    <code>tax_rate = 0.0825 # local tax rate for El Cajon as of 1-Aug-2021</code>
+</p>
+<p>
+    This line not only defines the value in one place, making it easy to update and use, 
+    but it also clarifies where that value originated.
+</p>
+<p>
+    <code>X = 4 * sqrt(1-(a*a))</code><br />
+    is also a very logical expression and one that might be in common use in statistical 
+    analysis, but without comments and better descriptions, its purpose is not clear to 
+    anyone.
+</p>
+
+<hr />
+<p>&nbsp;</p>
+<h3 style="font-style:italic;">Help, I'm lost and sinking!</h3>
+<p>First of all, that's probably a mixed metaphor. Hahaha! Just kidding.</p>
+<p>
+    I'm here to help. I know you can't see me, but I'm pretty accessible. Have you visited 
+    the Discord server yet? There's a channel just for this class!
+</p>
+<p>
+    Visit me on Wednesday afternoon. Connect just to say hello or ask a question. I welcome 
+    the chance to meet online students.
+</p>
+<p>
+    <em>(Really!)</em> Lots of good stuff gets posted on the Discord server. Don't forget to 
+    check in there.
+</p>
+<p>&nbsp;</p>
+<h3 style="font-style:italic;">Ok, I'm not lost but I tripped a couple times at the start.</h3>
+<p>
+    If you missed the first lab or first exam, do them now! Life happens. We are all juggling 
+    far more things than homework. Things happen and have to be prioritized. Please get your 
+    homework done on time. It makes my life much easier and makes me happier. But when things 
+    happen, I'd still rather have you do the assignment than have you skip it, just because 
+    it's late. If it is late, I may take some points off. If it happens a lot, I may not be 
+    able to grade things that are really late, but I will try. I'm very forgiving and 
+    understanding with grades until late becomes a pattern. when in doubt, do the assignment. 
+    If a crisis gets in the way, let me know. I'm human too. If the assignment is locked in 
+    Canvas, then you'll need to ask me directly (office hours!) if you can submit it.
+</p>
+<h3 style="font-style:italic;">I did the assignment but didn't get all the points I expected</h3>
+<p>
+    Let's check it again. Maybe you didn't hand it all the files you meant to. I'll usually 
+    only look at the last version that you submit before the due date. If you made a mistake 
+    and caught it, resubmit and I'll look at the last one.
+</p>
+<p>
+    Be sure and read ALL of the instructions. Don't stop reading at the first page, there might 
+    be more to do. The Rubric will always tell you where the points are hiding.
+</p>
+<p>
+    I make mistakes too. If I included a comment that makes no sense, let me know. Sometimes 
+    I grade homework very late at night. If I make a mistake while grading something, I will 
+    apologize, thank you for bringing to my attention, and fix it.
+</p>
+<p><img
+        style="float: right;" 
+        src="https://gcccd.instructure.com/courses/53190/file_contents/course%20files/course_image/dug.jpg" 
+        alt="Dug!" width="172" height="115" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
