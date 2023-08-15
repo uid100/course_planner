@@ -1,0 +1,115 @@
+﻿<!-- F23 COP2552  id: 465680  -->
+<!-- Announcements:  Week 5.5 -->
+<!-- title: "Week 5+ - Project 1 Observations"-->
+
+<h2>Project 1: Notes and Feedback</h2>
+<p>These are some notes I collected and shared with some individuals regarding <strong>project 1.</strong></p>
+<p>&nbsp;</p>
+<p>I think that everyone should be pleased with the first project.</p>
+<p style="padding-left: 40px;"><em>Requirements&nbsp;were reviewed, </em><br /><em>a solution was created which met the requirements, </em><br /><em>the solution was tested and delivered.&nbsp;</em></p>
+<p>One of the common student concerns was, given the very strict and specific&nbsp;rubric, and only limited expectation of the grading practices, where is the delicate balance&nbsp;between too little, enough, and too much?</p>
+<p>Again, the resulting code was pretty good. No, this wasn't a particularly&nbsp;complicated project, so I was not surprised by the overall class success.</p>
+<p>Most of the common feedback shared with students was regarding:</p>
+<ul>
+    <li style="list-style-type: none;">
+        <ul>
+            <li><strong>comments</strong>, and</li>
+            <li><strong>formatting</strong></li>
+        </ul>
+    </li>
+</ul>
+<h3><br />Formatting</h3>
+<p>Every language has syntax constraints which are largely managed by&nbsp;the compiler or interpreter. Yes, logic errors may still get in&nbsp;the way of "correct" results, but if the code is not syntactically&nbsp;correct, execution will fail.</p>
+<p>In addition to syntax, there are <strong>code conventions</strong>. While it is true&nbsp;that coding conventions may vary some between engineering teams, it&nbsp;is becoming more common for style-guides to follow language-specific&nbsp;guidance, with minimal to no local tailoring.</p>
+<p>&nbsp;</p>
+<p><em>ok, but what does that mean?</em></p>
+<p>More simply put, my company may have a very specific&nbsp;template for source code file headers to include "properly" formatted copyright&nbsp;information, documented baseline pedigree, author information, and file&nbsp;change history, and such, but more and more commonly, C#, or Python, or&nbsp;Java, or javascript files will adhere very closely with industry standards.</p>
+<p>For instance, Python code usually uses <em>snake_case</em> for identifiers (using&nbsp;underscores as word separators), where C# and Java developers favor <em>camelCase</em>&nbsp;for variables and <em>PascalCase</em> for class names. Most IDEs are&nbsp;configured to format spacing according to these language-specific&nbsp;guidelines.&nbsp;</p>
+<p>It's important to know that these conventions, or guidelines are rules in&nbsp;name only. A block of code may be functionally correct but not be consistent&nbsp;with these community standards. So while the code may work, it may still be&nbsp;considered incorrect by the project team.</p>
+<p>&nbsp;</p>
+<p><em>But if it works, why does it matter?</em></p>
+<p>On a project team, in a production environment, every document, code segment,&nbsp;or other artifact will be peer-reviewed before being released either internally&nbsp;or to customers. If this isn't universally true, then any variance should be&nbsp;seen as an (incorrect) exception. As I discussed previously, these peer-reviews are the team's responsibility. So, imagine a group of three engineers, billing their time at a very expensive rate, spend several hours reviewing each other's code, and formally documenting findings that amount to things such as whitespace and comment formats. Next the author reviews the changes and decides he or she preferred the way it was before, and restores the formatting to his or her own&nbsp;<em>styles</em>. How many needless hours are spent making changes to code incurring great cost to the company and customer with no value added to the product. That's the first, but not the only problem.</p>
+<p>Next imagine a defect (or three) is (are) found after the code has been released to production, or a new feature is contracted and changes need to be made to the code baseline. If the code is written to the accepted guidelines, then a developer that steps in to fix it will have a much easier time coming up to speed with the original code and making the required changes. Sometimes, it could be you that are asked to fix code that was written weeks or even months earlier. Well-written code is more readable, and more maintainable, and is less prone to errors.</p>
+<p>Consider this example:</p>
+<p><strong>Code Listing 5-7 (Squares.java)</strong></p>
+<pre>/**This program demonstrates the for loop**/
+public class Squares{public static void main(String[] args){int
+number; //Loop control variable
+System.out.println( "Number Number Squared" );System.out.println(
+"---------------------"); for (number=1;number&lt;10;
+number++){System.out.println(number+"\t\t"+number *number);}}}
+</pre>
+<p>There is nothing syntactically wrong with this code and it will compile and run just fine. That doesn't mean it is correct.</p>
+<p>&nbsp;</p>
+<p><em>Then where do we start?</em></p>
+<p>A simple web search for <em>Java Code Conventions</em> will lead here:</p>
+<p><a href="https://www.oracle.com/java/technologies/javase/codeconventions-contents.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase/codeconventions-contents.html</a></p>
+<p>And it's a very good place to start. It talks about identifiers, whitespace, where to put blank lines, and so much more.</p>
+<p>Take a minute now to see what's there. Answer these two questions (for yourselves):</p>
+<ul>
+    <li style="list-style-type: none;">
+        <ul>
+            <li>This document is not actively maintained. When was it last updated? Does this surprise you?</li>
+            <li>What are the listed reasons for having code conventions?</li>
+        </ul>
+    </li>
+</ul>
+<p>For now, you can follow the examples in the book and assume they are correct, but when in doubt, check the document.</p>
+<p>&nbsp;</p>
+<h4>Whitespace</h4>
+<p>"...&nbsp;<em>is any string of&nbsp;<span> text composed only of spaces, tabs or line breaks (to be precise, CRLF sequences, carriage returns or line feeds).</span>&nbsp;</em>"</p>
+<p>Judicious use of blanks and blank lines will improve readability. Blank lines between methods are helpful. Several consecutive blank lines sprinkled randomly through a file are not. Check the code convention for where they belong and be consistent in your code.</p>
+<p>&nbsp;</p>
+<h4>Line Length</h4>
+<p>Most common coding conventions recommend limiting lines of code to less than 80 columns. Some guidelines recommend 70, although this can be a challenge with nested indented blocks. Modern monitors will support wider displays than that, but when your code is spanning beyond 100 columns, it's probably going to wrap in most editors and readability suffers. This is also much harder to maintain. I saw some examples in your projects where lines spanned over 220 columns!</p>
+<pre>/*-------1---------2---------3---------4---------5---------6---------7--------*/</pre>
+<p>Most editors will display the row and column number of the cursor, but this line used to be commonly placed throughout code projects. &nbsp;I still use it from time to time while I'm editing big projects, although I will usually delete all of them before committing the final changes to production.</p>
+<pre>&lt;!-------1---------2---------3---------4---------5---------6---------7---------&gt;</pre>
+<p>This is an .html version.</p>
+<p>These are not strict rules. Sometimes, breaking the line at 80 columns is a very awkward breakpoint and maybe lines need to go to 86 or 91 to be clear. But when they start getting too long to reasonably be viewed on a laptop for instance, keep those as an exception, and use the guidelines as objectives.</p>
+<p>&nbsp;</p>
+<h3>Comments</h3>
+<p>Comment formatting is also covered in the code conventions, but when it comes to comments, how much is enough? Is there such a thing as too much?</p>
+<p>Consider the following:</p>
+<p><strong>Triangle.java</strong></p>
+<pre>public class Triangle {
+    private double base;
+    private double height;
+
+    public Triangle(double b, double h) {
+        base = b;
+        height = h;
+    }
+
+    public double Area() {
+        return (this.base * this.height) / 2.0;
+    }
+}
+</pre>
+<p>Can you tell what this code does, what the methods are for and what the variables contain?</p>
+<p>&nbsp;</p>
+<p>Here's another:</p>
+<p><strong>Distance.java</strong></p>
+<pre>public class Distance {
+    float MI_PER_KM = 0.62f; // Conversion factor from customer requirements
+
+    public double milesToKm( double miles ) {
+        return miles / MI_PER_KM;
+    }
+
+    public double kmToMiles( double kilometers ) {
+        return kilometers * MI_PER_KM;
+    }
+}
+</pre>
+<p>In the first example, there are no comments yet the intent and usage are clear. In the second example, there is one comment, indicating the source for a named constant. If the source was not indicated, perhaps someone might decide that 0.621371 miles-per-kilometer is better for precision, but since the constant was specified as a customer requirement, any well-meaning change would change the results and introduce new errors and unexpected results. This comment not only adds value, but leaving it out opens the code to potential errors.</p>
+<p>&nbsp;</p>
+<h4>Self-documenting code</h4>
+<p>When identifiers (variable, method, class names) are clear and descriptive,&nbsp;code is more readable, maintainable and less error prone.</p>
+<p>Processing should be logical but not complex. Just because you can mathematically stack many calculations onto a single line of code, doesn't mean you should. Does it improve readability?</p>
+<p>Comments are very helpful in many situations, but you will find that making&nbsp;them too verbose can also get in the way of understanding and can obscure&nbsp;the code. Sometimes less really is more. If your comment is restating what is already clear in the code, it is probably not adding value. Remember that if the code changes, the comments will likely need to be modified also.</p>
+<p>&nbsp;</p>
+<p>Think about the next person to open your code. If someone has to reuse or modify your code two-, three-, six-, or eighteen months from now, will the code's meaning be clear. Too often, we are the ones that have to fix code that we wrote in the past. If you come back to something you wrote in the past and don't remember what it did, or can't determine from the context, does it have the right amount of comments? Also, if too many comments are needed, consider refactoring your code or renaming your identifiers to improve the level of self-documenting code.</p>
+<p style="text-align: right;"><img id="43152540" src="https://courses.sfcollege.edu/courses/465680/files/48156970/preview" alt="Dug (again)" width="135" height="90" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465680/files/48156970" data-api-returntype="File" /></p>
+<p>Good code is good code, and the more you practice this, the more code you see, the more you study, the better your code will be. <em>Getting it working</em> isn't the same as done.</p>
+<p>&nbsp;</p>

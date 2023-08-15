@@ -1,0 +1,17 @@
+﻿<!-- F23 COP2552  id: 465680  -->
+<!-- Announcements:  Week 3.5 -->
+<!-- title: "Week 7 - Writing more code"-->
+
+
+<p>Let me know if my hints and discussions on Discord for Project 3 were helpful.</p>
+<p>&nbsp;</p>
+<p>I went through all of the Project 2 submissions.&nbsp; I think everyone realizes by now that the more time (we) spent writing code, the easier this gets. And that the to complete the project assignment satisfactorily, it's more than just a single sitting.&nbsp; The process of elaboration is definitely helpful. Get something (minimal) working, and add to it. The "big-bang, write-it-all and fix the errors" is less likely to work.</p>
+<p>One observation I've heard, and I agree with, is that the instructions (requirements) are not always as clear as we would like, but that is an important part of the task too. More often than not, we get incomplete or even misleading requirements from a customer and working through those requirements is sometimes an imperfect science.</p>
+<p>&nbsp;</p>
+<p>A couple of reminders from the projects I saw in Project 2, ALWAYS avoid using unnamed constants. If the input patient data file for week 3 is "PatientDataW3.txt" consider naming all of your constants together in one place near the top of your code:<br />outputDataFilePath = "C:\\SFC\\COP2552\\Project2";<br />inputDataFile = getInputDataFileName();&nbsp; &nbsp;// look for newest patient data file and get confirmation from user<br />outputDataFile = getOutputDataFileName(inputDataFileName);&nbsp; // increment week # based on current input data<br />patientDataErrorFile = getErrorDataFileName(outputData);<br /><br />This level of detail wasn't required, but it means that we don't have to rewrite the application every single week when the data file names change.</p>
+<p>&nbsp;</p>
+<p>Read the instructions and then read them again.&nbsp; If the instructions indicate "using <span>good object-oriented programming principles that will demonstrate the use of multiple classes," identify what those classes are. As you write similar classes, are there common properties or methods that could be written to a base class and inherited?&nbsp; If you are repeating code, then you probably missed something.</span></p>
+<p>&nbsp;</p>
+<p><span>Writing code every day doesn't mean staring at the same project for hours at a time. Code (not copy) the samples from the chapter. Change them up. What are they trying to demonstrate?&nbsp; What can you apply to your project?&nbsp; Every time you work on your project, try and end the session with a working application, even if it doesn't meet all of the requirements yet. Keep adding to it until it's something that is maintainable, self-documenting, logical and stable.</span></p>
+<p><span><img id="43152540" style="float: right;" src="https://courses.sfcollege.edu/courses/465680/files/48156970/preview" alt="Dug" width="275" height="184" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465680/files/48156970" data-api-returntype="File" /></span></p>
+<p><span>Dan</span></p>
