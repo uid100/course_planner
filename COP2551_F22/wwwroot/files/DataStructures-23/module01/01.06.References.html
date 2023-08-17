@@ -1,0 +1,128 @@
+﻿<!-- data structures: 465482 -->
+
+
+<div id="references" style="background-color:gainsboro;">
+    <div id="header">
+        <div id="course-image" style="width: 350px; padding:20px">
+            <figure>
+                <a href="/courses/465482/" style="color:navy;">
+                    <img style="display:block; margin:auto;"
+                         src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                         alt="main course image" width="200" height="115" />
+                    <figcaption style="text-align:center;">home</figcaption>
+                </a>
+            </figure>
+            <p>&nbsp;</p>
+        </div><!-- #course-image -->
+    </div>
+
+    <div id="content" style="padding:20px;">
+        <h2 class="alert alert-info">References</h2>
+        <p>
+            Understanding the difference between value types and reference types is important to our discussion
+            of data structures. These concepts are fundamental to understanding how data is stored and manipulated
+            in memory.
+        </p>
+        <p>&nbsp;</p>
+        <div id="value-types">
+            <h3>Value Types:</h3>
+            <p>
+                In C++, value types are variables that directly store their data. When you declare a value type variable,
+                the actual value is stored in memory. Examples of value types include `int`, `float`, `char`, and `bool`.
+                Let's look at an example:
+            </p>
+            <div class="ic-flash-info">
+<pre>
+    int x = 5;
+    int y = x;</pre>
+            </div>
+            <p>
+                Here, <code>x</code> and <code>y</code> are both value type variables. When we assign <code>x</code> to
+                <code>y</code>, the value of <code>x</code> (which is 5) is copied into <code>y</code>. This means that
+                <code>x</code> and <code>y</code> are independent and changing one won't affect the other.
+            </p>
+        </div> <!-- #value-types -->
+
+        <div id="reference-types">
+            <h3>Reference Types:</h3>
+            <p>
+                On the other hand, reference types in C++ use references to point to the memory location of a variable.
+                They allow us to work with the same data without copying it. One of the primary examples of a reference
+                type is a reference itself. Let's see how it works:
+            </p>
+            <div class="ic-flash-info">
+<pre>
+    int a = 10;
+    int &b = a; // 'b' is a reference to 'a'</pre>
+            </div>
+            <p>
+                Here, <code>b</code> is a reference that points to the memory location of <code>a</code>. If we modify 
+                <code>b</code>, <code>a</code> will also change, and vice versa. They essentially refer to the same 
+                memory location. This can be really useful, especially when working with large data structures where 
+                copying would be inefficient.
+            </p>
+        </div> <!-- #reference-types -->
+
+        <div id="parameters">
+            <h3>Parameters</h3>
+            <h4>Passing by Value vs. Passing by Reference:</h4>
+            <p>
+                When passing variables to functions in C++, you can either pass them by value or by reference. Passing 
+                by value creates a copy of the variable, while passing by reference allows the function to directly work
+                with the original variable. For example:
+                <div class="ic-flash-info">
+<pre>
+    void modifyValue(int val) {
+        val = 20;
+    }
+
+    void modifyReference(int &ref) {
+        ref = 30;
+    }
+
+    int main() {
+        int num1 = 5;
+        int num2 = 5;
+
+        modifyValue(num1);
+        modifyReference(num2);
+
+        // num1 will still be 5, num2 will be 30
+    }</pre>
+                </div>
+            </p>
+            <p>
+                In the <code>modifyValue</code> function, <code>val</code> is a copy of the original variable, so 
+                modifying it won't affect the original. However, in the <code>modifyReference</code> function, 
+                <code>ref</code> is a reference to the original variable, so changes made to it affect the original 
+                variable.
+            </p>
+        </div> <!-- #parameters -->
+
+        <p>
+            In C++, understanding the difference between value types and reference types is crucial for 
+            efficient memory management and data manipulation. Value types involve copying data, while 
+            reference types allow us to work directly with existing data. By using these concepts 
+            appropriately, you can write more efficient and powerful C++ programs.
+        </p>
+    </div>  <!-- #content -->
+
+    <hr />
+    <div id="video">
+        <p>
+            <iframe 
+                    title="YouTube video player" 
+                    src="https://www.youtube.com/embed/OCL7mSFCIx0" 
+                    width="560" height="315" allowfullscreen="allowfullscreen" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe>
+        </p>
+
+    </div>
+
+    <div id="footer" style="padding: 20px;">
+        <a href="#variables" style="text-align: center;color:navy;"><em>top</em></a>
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #references -->
