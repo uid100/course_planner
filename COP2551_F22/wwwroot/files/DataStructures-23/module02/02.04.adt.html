@@ -1,0 +1,188 @@
+﻿<!-- Abstract Data Types (ADTs) -->
+<!-- data structures id: 465482 -->
+<div id="adt">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="abstract-data-types">
+
+        <p class="ic-flash-info">
+            An Abstract Data Type (ADT) is a high-level description of a data structure along with
+            the operations that can be performed on it, without revealing the underlying implementation
+            details.
+        </p>
+        <p>
+            ADTs help in managing complexity and promoting modularity in software development.
+        </p>
+
+        <h2 class="alert alert-info">Abstract Data Types (ADTs)</h2>
+
+        <p style="font-style:italic;">
+            A concept in computer science that refers to a high-level description of a data
+            structure and the operations that can be performed on it, without specifying the
+            underlying implementation details.
+        </p>
+        <p>
+            In other words, an ADT defines a set of <b>behaviors and properties</b> associated
+            with a data structure, while hiding the internal workings from the user. This
+            separation between interface and implementation is crucial for managing complexity,
+            promoting modularity, and enabling easier maintenance and code reuse.
+        </p>
+
+        <p>
+            ADTs are used to encapsulate data structures and their associated operations,
+            allowing programmers to focus on how to use the data structure rather than how
+            it's implemented. This leads to improved code readability, maintainability, and
+            reduces the risk of errors due to unintended manipulation of the internal structure.
+        </p>
+
+        <h3>Key Components of an ADT:</h3>
+        <ul>
+            <li>
+                <strong>Interface:</strong>
+                The interface of an ADT specifies the operations that can be performed on the
+                data structure, along with their parameters and return values. These operations
+                are often defined using methods or functions. Examples of common ADTs include
+                stacks, queues, lists, and sets. For instance, the interface of a stack ADT
+                might include methods like <code>push</code>, <code>pop</code>, <code>peek</code>,
+                and <code>isEmpty</code>.
+            </li>
+            <li>
+                <strong>Properties:</strong> An ADT also defines the properties or characteristics
+                that the data structure must adhere to. These properties outline the behavior of
+                the data structure and the expectations users can have when using it. For example,
+                a queue ADT should follow the "first-in, first-out" (FIFO) property, where the
+                element added first is the one that will be removed first.
+            </li>
+            <li>
+                <strong>Encapsulation:</strong>
+                One of the core principles of ADTs is encapsulation. This means that the internal
+                details of how the data structure is implemented are hidden from the user. Users
+                of the ADT interact only with its interface, without needing to be concerned about
+                the underlying algorithms or data storage mechanisms.
+            </li>
+            <li>
+                <strong>Implementation:</strong>
+                The implementation of an ADT refers to the specific way in which the data structure
+                and its operations are realized in code. Different implementations may use different
+                algorithms, data structures, and optimizations while still adhering to the same ADT
+                interface and properties.
+            </li>
+            <li>
+                <strong>Abstraction:</strong>
+                ADTs provide a level of abstraction that allows developers to focus on solving
+                high-level problems without getting bogged down in the technicalities of
+                implementation. This abstraction aids in managing complexity and facilitates
+                collaboration among software development teams.
+            </li>
+        </ul>
+
+        <p>
+            Abstract Data Types provide a clear separation between how a data structure is used
+            and how it's implemented. By defining interfaces, properties, and encapsulation,
+            ADTs enable programmers to work more effectively, promote modular design, and create
+            code that's easier to maintain and understand.
+        </p>
+
+        <h2 class="alert alert-info">
+            Arrays <em>vs</em> ADTs
+        </h2>
+        <ul>
+            <li>
+                Arrays are a simple and low-level data structure, while ADTs are higher-level
+                abstractions that can be built using arrays or other data structures.
+            </li>
+            <li>
+                Arrays have a fixed size and simple operations, while ADTs can have dynamic
+                sizing and more complex behaviors.
+            </li>
+            <li>
+                ADTs hide the implementation details, promoting encapsulation and modularity,
+                whereas arrays expose their indexing and memory management details.
+            </li>
+            <li>
+                ADTs provide a conceptual framework for designing and using data structures,
+                whereas arrays are a specific data structure with limited functionality.
+            </li>
+        </ul>
+        <p>
+            The internal implementation of ADTs can vary, and they are typically built using 
+            arrays, linked lists, trees, or other data structures.
+        </p>
+        <p>
+            Examples of ADT usage may include a stack ADT with push, pop, peek, and isEmpty 
+            operations.
+        </p>
+
+        <p>
+            In essence, arrays are a building block used in many data structures, including those
+            that can be abstracted as ADTs. ADTs provide a way to define, organize, and work with
+            data structures in a more abstract and structured manner, offering higher-level
+            functionality than arrays alone.
+        </p>
+
+        <h3>Definitions</h3>
+        <p>
+            Arrays are a basic data structure that stores a collection of elements of the same
+            data type in contiguous memory locations.
+        </p>
+        <p>
+            ADTs are high-level concepts that define a data structure and the operations that
+            can be performed on it, abstracting away the implementation details.
+        </p>
+
+        <h3>Access</h3>
+        <p>
+            Elements in an array are accessed using an index, which represents the position of
+            an element in the array.
+        </p>
+        <p>
+            ADTs provide an interface through which users interact with the data structure. The
+            internal implementation is hidden from users.
+        </p>
+
+        <h3>Size</h3>
+        <p>
+            Arrays have a fixed size defined at the time of declaration, and this size cannot be
+            changed during runtime.
+        </p>
+        <p>
+            The size of an ADT may not be fixed and can be managed dynamically based on the
+            operations it supports.
+        </p>
+
+        <h3>Operations</h3>
+        <p>
+            Basic operations on arrays include element access, modification, and traversal.
+        </p>
+        <p>
+            ADTs define a set of operations that can be performed which may involve complex
+            behaviors and properties.
+        </p>
+
+        <h3>Complexity</h3>
+        <p>
+            Accessing elements by index is fast and has constant time complexity O(1).
+        </p>
+        <p>
+            Operation complexity depends on the specific ADT and its implementation.
+        </p>
+    </div> <!-- #abstract-data-types -->
+    <hr />
+    <p>Go back to the top of the page and read the definition again.</p>
+    <a href="#adt" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #adt -->

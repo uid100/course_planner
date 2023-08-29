@@ -1,0 +1,100 @@
+﻿<!-- data structures id:  465482 -->
+<!-- arrays -->
+
+
+<div id="arrays">
+    <h2 class="alert alert-info">C++ Arrays and Their Properties</h2>
+
+    <p>
+        An array is a collection of elements of the same data type, stored in contiguous memory
+        locations. Arrays provide a convenient way to store and manipulate multiple values under
+        a single identifier.
+    </p>
+
+    <h2>Declaring and Initializing Arrays in C++</h2>
+    <p>
+        To declare an array, you specify the data type of its elements, followed by the array's
+        name and its size in square brackets.
+    </p>
+<pre>
+<code>
+// Declaration and initialization of an integer array
+int numbers[5] = {10, 20, 30, 40, 50};
+</code>
+</pre>
+
+    <p>
+        You can also omit the size when initializing, and the compiler will automatically determine
+        it based on the number of elements:
+    </p>
+<pre>
+<code>
+
+// Declaration and initialization without specifying size
+char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+</code>
+</pre>
+
+    <h3>Accessing Array Elements</h3>
+    <p>Array elements are accessed using zero-based indexing. The first element is at index 0, the second at index 1, and so on.</p>
+<pre>
+<code>
+int thirdNumber = numbers[2]; // Accessing the third element (30)
+char firstVowel = vowels[0];  // Accessing the first element ('a')
+</code>
+</pre>
+
+    <h3>Array Properties</h3>
+    <p>Arrays have several important properties:</p>
+    <ul>
+        <li><strong>Size:</strong> The number of elements in the array.</li>
+        <li><strong>Contiguity:</strong> Array elements are stored in adjacent memory locations.</li>
+        <li><strong>Fixed Size:</strong> Once an array is declared, its size is fixed and cannot be changed.</li>
+    </ul>
+
+    <div class="ic-flash-info">
+        <h4>Important!</h4>
+        <p>
+            The variable describes the memory location for the starting point in memory.
+        </p>
+        <p>
+            The indexed-variable points to the value stored at each location.
+        </p>
+        <ul>
+            <li>
+                Because each element is the same type, it is the same size in memory.
+            </li>
+            <li>
+                Since the elements are the same size, and adjacent in memory, each
+                element is stored at<br />
+                <code><em>base address</em> plus (<em>index</em> times <em>element size</em>)</code>Ye
+            </li>
+        </ul>
+    </div>
+    <h3>Iterating Through Arrays</h3>
+    <p>Loop structures like <code>for</code> or <code>while</code> can be used to iterate through array elements:</p>
+<pre>
+<code>
+for (int i = 0; i &lt; 5; ++i) {
+    // Access and manipulate numbers[i]
+}
+
+int index = 0;
+while (index &lt; 5) {
+    // Access and manipulate vowels[index]
+    ++index;
+}
+</code>
+</pre>
+
+    <h3>Multi-dimensional Arrays</h3>
+    <p>C++ also supports multi-dimensional arrays, allowing you to create matrices and tables:</p>
+<pre>
+<code>
+int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+</code>
+</pre>
+
+    <p>Arrays are a fundamental data structure in C++, providing a versatile way to store and manage collections of values.</p>
+    <a href="#arrays" style="font-style:italic;color:navy;">top</a>
+</div> <!-- arrays -->

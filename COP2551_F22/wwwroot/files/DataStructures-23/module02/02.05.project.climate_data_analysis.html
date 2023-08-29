@@ -1,0 +1,106 @@
+﻿<!-- data structures id: 465482 -->
+<!-- Climate Data Analysis: Array Project -->
+
+<div id="project">
+    <p style="font-style:italic;">
+        Using <strong>object-oriented principles</strong>, write a C++ program that will 
+        analyze a year's worth of rainfall data...
+    </p>
+
+    <h2 class="alert alert-info"> Project 1 - Array Project</h2>
+    <h3>Purpose</h3>
+    <p>Gain technical skills using data structures through programming in C++</p>
+
+    <h3 class="alert alert-info">Specifications</h3>
+    <ol>
+        <li>
+            Using <strong>object-oriented principles</strong>, write a C++ program that 
+            will analyze a year's worth of rainfall data.
+        </li>
+        <li>
+            Within the class, create a private member function called <code>getData</code> 
+            that will read in the data from an input file called <code>rain2019.txt</code>. 
+            This file contains the total rainfall for each of the 12 months.
+        </li>
+        <li>
+            Read the contents of this file into a <code>float</code> array.
+        </li>
+        <li>The class should have four private member functions that compute and return
+            <ul>
+                <li><code>totalRainfall</code>,</li>
+                <li><code>averageRainfall</code>,</li>
+                <li><code>driestMonth</code>, and </li>
+                <li><code>wettestMonth</code>.</li>
+            </ul>
+            The last two private member functions return the number of the month with the 
+            lowest and highest rainfall amounts, not the amount of rain that fell in those 
+            months. Notice that the month number can be used to obtain the amount of rain 
+            that fell those months.
+        </li>
+        <li>
+            Create a private member function called <code>displayReport</code> that will 
+            print a summary rainfall report similar to the following (NOTE:  this is only 
+            an example of format, not accurate data):
+            <pre>
+    2019 Rain Report for Alachua County
+
+    Total rainfall:  34.19 inches
+    Average monthly rainfall:  2.85 inches
+    The least amount of rain fell in January with 0.84 inches.
+    The most rain fell in April with 4.29 inches.
+
+    End of report.
+</pre>
+        </li>
+        <li>
+            All output values should display 2 decimal places.
+        </li>
+        <li>
+            Use private member functions and variables.
+        </li>
+        <li>
+            Use public member functions for a constructor (where appropriate) and 
+            a driver method only.
+        </li>
+    </ol>
+    <p class="ic-flash-info">
+        <strong>Note:</strong> any submission that uses global variables or does not use a class 
+        and object appropriately will result in a project grade of 0.
+    </p>
+
+    <hr />
+    <h4>Template Code</h4>
+    <pre>
+//Your name
+//COP2535.0XX (XX = your section number)
+//Short description of what your project will do
+#include <iostream>
+using namespace std;
+int main()
+{
+//program code goes here
+return 0;
+}</pre>
+
+    <h4>Input Data</h4>
+    <p>
+        <a 
+           class="instructure_file_link instructure_scribd_file inline_disabled" 
+           title="rain2019.txt" href="/courses/465482/files/48818960?wrap=1" 
+           target="_blank" rel="noopener noreferrer" data-canvas-previewable="false">
+                rain2019.txt
+            </a>
+    </p>
+
+    <h3>Grading</h3>
+    <p>
+        Make sure to review the grading rubric prior to submitting your assignment to ensure you 
+        have completed everything to the appropriate standard.
+    </p>
+
+    <h3>Submission</h3>
+    <ul>
+        <li>Upload your .cpp source file.</li>
+    </ul>
+    <a href="#project" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #project -->
