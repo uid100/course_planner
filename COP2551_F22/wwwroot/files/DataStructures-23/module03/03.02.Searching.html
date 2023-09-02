@@ -1,0 +1,215 @@
+﻿<!-- data structures id:  465482 -->
+<!-- searching -->
+<div id="searching">
+    <h2 class="alert alert-info">Searching through Data</h2>
+    <figure style="margin:auto; display:block;">
+        <!--<img width="360" height="270" style="margin:auto; display:block;"
+         alt="U2 - still haven't found what I'm looking for"
+         src="https://i.imgflip.com/16eupn.jpg">-->
+        <img width="360" height="270" style="margin:auto; display:block;"
+             alt="U2 - still haven't found what I'm looking for"
+             src="/courses/465482/file_contents/course%20files/modules/3/u2-stillsearching.jpg">
+
+        <figcaption style="text-align:center;">Keep looking, I guess?</figcaption>
+    </figure>
+
+    <div id="introduction">
+        <p>
+            In the world of data, the ability to efficiently find and retrieve specific
+            information is paramount. Data searching algorithms are the basis of this,
+            providing the principles and techniques that enable computers and software
+            to locate particular data quickly and accurately.
+        </p>
+        <p>
+            Whether you're looking up information on the internet, searching for a file
+            on your computer, or seeking a specific record in a massive database, data
+            searching algorithms play a fundamental role in making these tasks possible.
+        </p>
+        <p>
+            Searching through data can be like finding a needle in a haystack. Imagine
+            sifting through an extensive library without any index or catalog; it would
+            be a time-consuming and frustrating experience. Data searching algorithms
+            provide the structure and methodologies necessary to streamline this process.
+            These algorithms are designed to search through vast datasets efficiently,
+            often leveraging various search strategies and techniques to optimize performance.
+        </p>
+        <p>
+            As we consider various data searching algorithms, We'll explore the essential
+            concepts of these algorithms, including search criteria, complexity, and key
+            algorithms such as linear search and binary search. Additionally, we'll look
+            at more advanced techniques like hash tables and tree-based searches, which
+            are used to tackle complex and large-scale data retrieval challenges.
+        </p>
+    </div> <!-- !introduction -->
+
+    <div id="linear">
+        <h3 class="alert alert-info">Linear Search</h3>
+        <p>
+            A linear search, also known as a sequential search, is a basic and straightforward
+            searching algorithm used to find a specific element within a collection of data.
+            It works by examining each element in the data structure, one at a time, until the
+            desired item is found or until the entire dataset has been searched.
+        </p>
+
+        <figure style="margin:auto; display:block;">
+            <img style="margin:auto; display:block;"
+                 alt="linear search"
+                 src="/courses/465482/file_contents/course%20files/modules/3/linear-search.png">
+
+            <figcaption style="text-align:center;">linear searching</figcaption>
+        </figure>
+
+
+        <p>
+            The steps are simple.
+        </p>
+        <ol>
+            <li><b>Initialization</b> Start at the beginning of the dataset (usually the first element).</li>
+            <li><b>Comparison</b> Compare the current element with the target element you want to find.</li>
+            <li>
+                <b>Matching</b> If the current element matches the target element, the search is successful,
+                and you've found the item you were looking for. You can return its position (index) in the
+                dataset or perform any desired action with it.
+            <li>
+                <b>No Match</b> If the current element does not match the target element, move on to the next
+                element in the dataset.
+            </li>
+            <li>
+                <b>Repeat</b> Continue steps 2-4 until you either find the target element or reach the end
+                of the dataset.
+            </li>
+            <li>
+                <b>Termination</b> The search terminates when you either find the target element or exhaust
+                the entire dataset without finding a match.
+            </li>
+        </ol>
+
+        <h4>In pseudocode:</h4>
+<pre>
+    function linearSearch(data, target):
+        for each item in data:
+            if item equals target:
+                return item's position
+        return "Not found"
+</pre>
+        <hr />
+        <h4>Key Points</h4>
+        <ul>
+            <li>Linear search is simple and easy to implement.</li>
+            <li>
+                It is suitable for small datasets or unsorted datasets where you
+                cannot take advantage of any inherent order.
+            </li>
+            <li>
+                The time complexity of a linear search is O(n), where "n" is the
+                number of elements in the dataset. This means that in the worst
+                case, the algorithm may need to examine every element.
+            </li>
+            <li>
+                Linear search is inefficient for large datasets, as the time it
+                takes to search grows linearly with the size of the dataset.
+            </li>
+        </ul>
+    </div> <!-- #linear -->
+
+    <div id="binary">
+        <h3 class="alert alert-info">Binary Search</h3>
+
+        <p class="ic-flash-info" padding:20px>
+            As you can predict, if the data is organized, or <em>sorted</em> first,
+            then much more efficient searches are possible.
+        </p>
+
+        <p>
+            A binary search is a highly efficient search algorithm used to locate a specific
+            target value within a sorted dataset. This algorithm repeatedly divides the
+            dataset in half, eliminating half of the remaining elements with each comparison
+            until the target value is found or it is determined that the target does not exist
+            in the dataset. Binary search is significantly faster than linear search for large
+            datasets, especially when the data is sorted.
+        </p>
+        <figure style="margin:auto; display:block;">
+            <img style="margin:auto; display:block;"
+                 alt="binary search"
+                 src="/courses/465482/file_contents/course%20files/modules/3/BinarySearch.png">
+
+            <figcaption style="text-align:center;">binary searching through sorted data</figcaption>
+        </figure>
+
+        <p>
+            Steps:
+        </p>
+        <ol>
+            <li><b>Initialization</b> Start with the entire sorted dataset.</li>
+            <li>
+                <b>Comparison</b> Compare the middle element of the dataset to the target
+                value.
+            </li>
+            <li>
+                <b>Matching</b> If the middle element is equal to the target value, the search
+                is successful, and you've found the item you were looking for. You can return
+                its position (index) in the dataset or perform any desired action with it.
+            </li>
+            <li>
+                <b>No Match - Adjust Search Range</b> If the middle element is greater than
+                the target, the target must be in the lower half of the dataset. Discard the
+                upper half and repeat the search on the lower half. If the middle element is
+                less than the target, the target must be in the upper half of the dataset.
+                Discard the lower half and repeat the search on the upper half.
+            </li>
+            <li>
+                <b>Repeat</b> Continue steps 2-4 until you either find the target element or
+                narrow the dataset down to an empty set, indicating that the target is not
+                present in the dataset.
+            </li>
+        </ol>
+
+        <h4>In pseudocode:</h4>
+<pre>
+    function binarySearch(data, target):
+        left = 0
+        right = length of data - 1
+
+        while left <= right:
+            mid = (left + right) / 2
+
+            if data[mid] equals target:
+                return mid  // Target found
+            else if data[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        return "Not found"  // Target not in the dataset
+</pre>
+
+        <hr />
+        <h4>Key Points</h4>
+        <ul>
+            <li>
+                Binary search is highly efficient and has a time complexity of O(log n),
+                where "n" is the number of elements in the dataset. This means that it
+                can quickly narrow down a large dataset.
+            </li>
+            <li>
+                It works best on sorted data, as the division into halves relies on the
+                order of elements.
+            </li>
+            <li>
+                Binary search is ideal for situations where the dataset is too large for
+                a linear search to be practical.
+            </li>
+            <li>
+                The efficiency of binary search makes it a fundamental algorithm used in
+                various applications, including computer science, mathematics, and
+                information retrieval systems.
+            </li>
+        </ul>
+    </div> <!-- #binary -->
+    <hr />
+
+    <p>
+        We will look at other sorting and searching algorithms for data sets.
+    </p>
+    <a href="#searching" style="font-style:italic; color:navy;">back to top</a>
+</div> <!-- #searching -->
