@@ -1,0 +1,194 @@
+﻿<!-- data structures id:  465482 -->
+<!-- memory organization -->
+<div id="memory">
+    <figure style="margin:auto; display:block;">
+        <img width="360" height="270" style="margin:auto; display:block;"
+             alt="the stack and the heap"
+             src="/courses/465482/file_contents/course%20files/modules/3/stackandheap.gif">
+    </figure>
+
+    <div id="organization">
+        <h2 class="alert alert-info">Memory</h2>
+        <p>
+            How a compiled program manages memory depends on the programming language, the compiler,
+            and the runtime environment in which the program runs.
+        </p>
+        <p>
+            A compiled program may allocate memory for data and variables at compile-time. This is
+            known as static memory allocation and involves reserving memory for global variables,
+            constants, and data structures whose sizes are known at compile-time. Memory for these
+            variables is allocated when the program starts and is deallocated when the program exits.
+        </p>
+        <p>
+            Many compiled languages use a stack to manage memory for function calls, local variables,
+            and control flow. Each time a function is called, a new stack frame is created to store
+            function parameters, local variables, and return addresses.
+        </p>
+        <p>
+            The stack operates in a last-in, first-out (LIFO) fashion, making it a simple and efficient
+            way to manage memory for function calls. Memory for stack frames is automatically allocated
+            and deallocated as functions are called and return.
+        </p>
+        <p>
+            For dynamic memory allocation, compiled programs often use the heap. Memory allocation on
+            the heap is typically done explicitly by the programmer using functions like <code>malloc</code>
+            (in C/C++) or <code>new</code> (in C++, Java, or C#).
+        </p>
+        <p>
+            Memory allocated on the heap persists beyond the scope of a single function call and can be
+            accessed from multiple parts of the program.
+        </p>
+        <p class="ic-flash-info">
+            As the name suggests, data on the stack tends to be more <em>limited</em> <em>ordered</em>
+            and the heap may take advantage of more available memory, including dynamic <em>swap</em>-space.
+        </p>
+
+    </div> <!-- #organization -->
+
+    <div id="stack">
+        <h3 class="alert alert-info">Stack</h3>
+        <ul>
+            <li>
+                The stack is a region of memory that is used for storing function call information, 
+                local variables, and control flow data.</li>
+            <li>
+                It operates in a last-in, first-out (LIFO) fashion, meaning that the most recently
+                called function is the first one to complete and release its memory.
+            </li>
+            <li>
+                Each time a function is called, a new stack frame is created to store information
+                about that function, including its parameters, return address, and local variables.
+            </li>
+            <li>
+                The stack is typically a fixed-size memory region allocated when a program starts,
+                and it is used for managing the execution flow of a program.
+            </li>
+            <li>
+                It is generally faster in terms of memory access compared to the heap because of
+                its straightforward and predictable allocation and deallocation.
+            </li>
+        </ul>
+    </div>
+
+    <div id="heap">
+        <h3 class="alert alert-info">Heap</h3>
+        <ul>
+            <li>The heap is a region of memory used for dynamic memory allocation, where data 
+                can be allocated and deallocated at runtime.</li>
+            <li>Memory in the heap is allocated and deallocated explicitly by the programmer 
+                and is not managed automatically by the language or runtime system.</li>
+            <li>Data in the heap can persist beyond the scope of a single function call and 
+                can be accessed from multiple parts of a program.</li>
+            <li>Unlike the stack, the heap memory allocation and deallocation can be less 
+                predictable in terms of timing, which can lead to issues like memory leaks
+                or fragmentation if not managed properly.</li>
+            <li>The heap allows for the allocation of objects and data structures whose size 
+                or lifetime is not known at compile time.</li>
+        </ul>
+    </div>
+
+    <div id="memory-management">
+        <p>
+            In many programming languages, such as C and C++, programmers have direct control over
+            memory allocation on both the stack and the heap. However, in higher-level languages
+            like Java, Python, and C#, memory management is abstracted from the programmer, and
+            the runtime system takes care of it, often utilizing both the stack and the heap
+            behind the scenes for different purposes.
+        </p>
+
+        <table border="1" style="width:80%; margin:auto;">
+            <caption>comparison between stack and heap</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Stack</th>
+                    <th scope="col">Heap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="2" style="font-weight:bold;">Purpose</td></tr>
+                <tr>
+                    <td>
+                        Used for managing function call information, local variables, and control
+                        flow data. It operates in a last-in, first-out (LIFO) fashion.
+                    </td>
+                    <td>
+                        Used for dynamic memory allocation, where data can be allocated and
+                        deallocated at runtime. It is not tied to function calls and operates
+                        independently of the program's execution flow.
+                    </td>
+                </tr>
+                <tr><td colspan="2" style="font-weight:bold;">Allocation and Deallocation</td></tr>
+                <tr>
+                    <td>
+                        Memory for stack frames is automatically allocated and deallocated as
+                        functions are called and return. It follows a predictable and efficient
+                        allocation pattern.
+                    </td>
+                    <td>
+                        Memory on the heap is allocated and deallocated explicitly by the
+                        programmer. It allows for more flexible but potentially less
+                        predictable memory management.
+                    </td>
+                </tr>
+                <tr><td colspan="2" style="font-weight:bold;">Data Lifetime</td></tr>
+                <tr>
+                    <td>
+                        Data on the stack typically has a shorter lifetime and is limited to the
+                        scope of the function call where it's created.
+                    </td>
+                    <td>
+                        Data on the heap can persist beyond the scope of a single function call
+                        and can be accessed from multiple parts of the program.
+                    </td>
+                </tr>
+
+                <tr><td colspan="2" style="font-weight:bold;">Access Speed</td></tr>
+                <tr>
+                    <td>
+                        Generally offers faster memory access compared to the heap due to its
+                        straightforward and predictable allocation and deallocation.
+                    </td>
+                    <td>
+                        Accessing memory on the heap can be slower due to its dynamic nature
+                        and potential fragmentation.
+                    </td>
+                </tr>
+
+                <tr><td colspan="2" style="font-weight:bold;">Responsibility</td></tr>
+                <tr>
+                    <td>
+                        Memory management on the stack is handled automatically by the
+                        program's runtime system.
+                    </td>
+                    <td>
+                        Memory management on the heap is the responsibility of the programmer,
+                        who must allocate and deallocate memory explicitly.
+                    </td>
+                </tr>
+
+                <tr><td colspan="2" style="font-weight:bold;">Error Types</td></tr>
+                <tr>
+                    <td>
+                        Common errors include stack overflows when the stack's size is
+                        exceeded and can lead to program crashes.
+                    </td>
+                    <td>
+                        Common errors include memory leaks (not releasing allocated memory)
+                        and fragmentation, which can degrade program performance.
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>
+            Understanding the differences between the stack and the heap is essential for writing
+            efficient and correct programs, as mismanagement of memory can lead to bugs, crashes,
+            or performance issues.
+        </p>
+
+    </div> <!-- #memory-management -->
+
+    <p>&nbsp;</p>
+    <a href="#searching" style="font-style:italic; color:navy;">back to top</a>
+</div> <!-- #memory -->
