@@ -1,27 +1,167 @@
-﻿<!-- wekCOP4813 Week 4 - Developing Web Applications -->
+﻿<!-- wekCOP4813 Week 4 - Data-driven Web Applications -->
+<!-- id: 465444 -->
 
 
-<h2>Separation of Concerns</h2>
-<p>The concept has been described many ways, using many terms, but the practice of&nbsp;<em>Separation of Concerns</em> is a principal concern in software engineering. As computing power became more capable and data storage more practical, the size and complexity of computer applications grew. I've personally worked on many legacy code projects that were described as <em>spaghetti code&nbsp;</em>or&nbsp;<em>Jenga code.</em> These nicknames are sometimes used to describe <em>monolithic</em> applications which grow and grow and are intertwined and have so many inherent dependencies, they become very fragile.</p>
-<p>Imagine stirring a giant pot of soup and someone adds some salt and pepper, and someone else visits and adds a little garlic, and another person steps in and decides it needs a little cumin, and another contributor shakes in some paprika. As these become mixed in, trying to remove or replace any single ingredient becomes impossible, and if you wanted to remove any one thing, the best course of action is to get a new pot and start over.</p>
-<p>This gave way to the concept of multi-layered or <em>n-tiered&nbsp;</em>architectures and frameworks. Instead of the soup pot, we can use a&nbsp;<em>salad bar&nbsp;</em>approach. Take the components that you want, combine them together, each component may interact with one another and even complement each other, but they remain identifiable as individual components.</p>
-<p>I may have an application which accesses the card catalog from the local library, makes requests for book availability, perhaps for transfer to another nearby library request, and another application may use that same card catalog for a different application which tracks historical patterns and other metrics so that a single neighborhood library does not end up with 27 copies of a book that has very little interest, and another has 1 copy of a text that is in high regional demand. The idea is that card catalog (or database) can be&nbsp;<em>loosely</em> tied to each of those applications, but still be useful on its own. And if the database is migrated to a new database with the same interface, those applications do not need to be rewritten because of a simple configuration change.</p>
-<p>The Model-View-Controller framework is a good example of multi-layered, or&nbsp;<em>n-tiered</em> solutions. If I keep my components small and simple, each doing one thing, then mixing and matching them should be relatively simple. The data model may be reusable by other applications. Many different view representations can reuse the same sets of data. Think about weather. I can display a map view of Northern Florida, or a table of local cities and regional temperatures and rainfall totals, or I can display radar and satellite tracking. All of those are different views, or ways of looking at the same data. These are also called representational states.&nbsp;</p>
-<p>Also, in the same way that different applications can share data sources, applications can use multiple data sources. In other words, in the first case, multiple stores can sell the same products, but a store location might host multiple seasonal, or pop-up vendors.</p>
-<p>In object-oriented programming, you'll often hear the expression&nbsp;<em>loosely-coupled, and highly cohesive.</em> If this is new to you, read it again, write it down, commit it to memory. These are more than buzz-words, but they are important discussion topics in any technical interview. It means that my components should be designed and built so that they play well with others, but not dependent on them. My component does exactly what it needs to do, but nothing 'extra.'&nbsp; The Swiss Army Knife is a great example which of a tool that does 14 things, but none of them very well.</p>
+<p>
+    <img src="/courses/465444/file_contents/course%20files/course_image/college_logo.png"
+         alt="College Logo"
+         width="270" height="110" style="padding-left:30px; padding-right:30px;" />
+</p>
+
+
+<h2 class="alert alert-info">Separation of Concerns</h2>
+<div class="ic-flash-info">
+    <p style="font-weight:bold;">Separation of concerns...</p>
+    <p style="font-style:italic;">
+        &nbsp;&nbsp; is a design principle in software engineering that advocates 
+        for breaking a system into distinct and isolated components, each responsible 
+        for a specific aspect or functionality of the system.
+    </p>
+</div>
+<p>
+    The concept has been described many ways, using many terms, but the practice of
+    <em>Separation of Concerns</em> is a principal concern in software engineering. 
+    As computing power became more capable and data storage more practical, the size 
+    and complexity of computer applications grew. I've personally worked on many legacy 
+    code projects that were described as <em>spaghetti code</em> or <em>Jenga code.</em> 
+    These nicknames are sometimes used to describe <em>monolithic</em> applications 
+    which grow and grow and are intertwined and have so many inherent dependencies, 
+    they become very fragile.
+</p>
+<p>
+    Imagine stirring a giant pot of soup and someone adds some salt and pepper, and 
+    someone else visits and adds a little garlic, and another person steps in and 
+    decides it needs a little cumin, and another contributor shakes in some paprika. 
+    As these become mixed in, trying to remove or replace any single ingredient becomes 
+    impossible, and if you wanted to remove any one thing, the best course of action 
+    is to get a new pot and start over.
+</p>
+<p>
+    This paved the way to the concept of multi-layered or <em>n-tiered</em> architectures 
+    and frameworks. Instead of the soup pot, we can use <em>salad bar</em> approach. 
+    Take the components that you want, combine them together, each component may 
+    interact with one another and even complement each other, but they remain 
+    identifiable as individual components.
+</p>
+<p>
+    I may have an application which accesses the card catalog from the local library, 
+    makes requests for book availability, perhaps for transfer to another nearby library 
+    request, and another application may use that same card catalog for a different 
+    application which tracks historical patterns and other metrics so that a single 
+    neighborhood library does not end up with 27 copies of a book that has very little 
+    interest, and another has 1 copy of a text that is in high regional demand. The 
+    idea is that card catalog (or database) can be<em>loosely</em> tied to each of 
+    those applications, but still be useful on its own. And if the database is migrated 
+    to a new database with the same interface, those applications do not need to be 
+    rewritten because of a simple configuration change.
+</p>
+<p>
+    The Model-View-Controller framework is a good example of multi-layered, or 
+    <em>n-tiered</em> solutions. If I keep my components small and simple, each doing 
+    one thing, then mixing and matching them should be relatively simple. The data 
+    model may be reusable by other applications. Many different view representations 
+    can reuse the same sets of data.
+</p>
+<p>
+    Think about weather. I can display a map view of Northern Florida, or a table 
+    of local cities and regional temperatures and rainfall totals, or I can display
+    radar and satellite tracking. All of those are different views, or ways of 
+    looking at the same data. These are also called representational states.
+</p>
+<p>
+    Also, in the same way that different applications can share data sources, 
+    applications can use multiple data sources. In other words, in the first case,
+    multiple stores can sell the same products, but a store location might host 
+    multiple seasonal, or pop-up vendors.
+</p>
+<p>
+    In object-oriented programming, you'll often hear the expression <em>loosely-coupled, 
+    and highly cohesive.</em> If this is new to you, read it again, write it down, 
+    commit it to memory.
+</p>
+<p>
+    These are more than buzz-words, but they are important discussion topics in 
+    any technical interview. It means that my components should be designed and 
+    built so that they play well with others, but not dependent on them. My 
+    component does exactly what it needs to do, but nothing 'extra.' The Swiss 
+    Army Knife is a great example which of a tool that does 14 things, but none 
+    of them very well.
+</p>
 <p>&nbsp;</p>
-<h2>Web Application Designs</h2>
-<p>I've enjoyed reading your ideas for your web development. I promise that we will be doing more with those. For now, think about the concept of modular components and n-tiered architecture. Without getting into details, start to think about how you can make your big ideas into piles of smaller ones. How can you disassemble the project into small pieces?&nbsp;</p>
-<p>This is week 4. Week 3 raced passed me! We had family visiting and our normally quiet house was not. I love my family and loved having them visit, but I'm ready for a return to relative normal. My daughter is an executive for a large corporation and also a founding partner in an unrelated business venture. Last week she consulted with me about some ideas for a web application that their startup needs, so I'm going through a similar process. I know that this application will need to grow, so it needs to be well-designed from the beginning, but it also needs to have simple components so that as pieces evolve and newer features are added, they will integrate well and be easy to manage.</p>
-<p>This week, please <span style="background-color: #fbeeb8;"><strong>continue with your discussions,</strong></span> consider the different ideas presented and imagine what the smaller components might be. What do the data models look like? Are there different ways of viewing the same data so that looking at it from a different perspective, doesn't require a restructuring of the application? Often engineers might gather around a whiteboard with a customer and sketch block diagrams indicating how data might flow from one data storage point or another. What data will be collected from the user? Will that data be stored or used as processing inputs? These design ideas are still concepts, not logical lines of code yet. That's still coming.</p>
+<h2 class="alert alert-info">Web Application Designs</h2>
+<p>
+    I've enjoyed reading your ideas for your web development. I promise that we 
+    will be doing more with those. For now, think about the concept of modular 
+    components and n-tiered architecture. Without getting into details, start to 
+    think about how you can make your big ideas into piles of smaller ones.
+</p>
+<p>
+    How can you disassemble the project into small pieces?
+</p>
+<p>
+    This is week 4. Week 3 raced passed me! We have had family staying with us,
+    and our normally quiet house was not. I love my family and love having them 
+    close, but I'm ready for a return to relative normal. My daughter is an 
+    executive for a large corporation and also a founding partner in an unrelated 
+    business venture. Last week she consulted with me about some ideas for a web 
+    application that their startup needs, so I'm going through a similar process. 
+    I know that this application will need to grow, so it needs to be well-designed 
+    from the beginning, but it also needs to have simple components so that as 
+    pieces evolve and newer features are added, they will integrate well and be
+    easy to manage.
+</p>
+<p>
+    This week, please <span style="background-color: #fbeeb8;"><strong>continue 
+    with your discussions,</strong></span> consider the different ideas presented 
+    and imagine what the smaller components might be. What do the data models look 
+    like? Are there different ways of viewing the same data so that looking at it 
+    from a different perspective, doesn't require a restructuring of the application? 
+    Often engineers might gather around a whiteboard with a customer and sketch 
+    block diagrams indicating how data might flow from one data storage point or 
+    another. What data will be collected from the user? Will that data be stored 
+    or used as processing inputs? These design ideas are still concepts, not 
+    logical lines of code yet. That's still coming.
+</p>
 <p>&nbsp;</p>
-<h2>Bootstrap and Responsive Design</h2>
-<p>Front-end design and CSS, I love using bootstrap. The grid concept and&nbsp;<em>mobile-first</em> design principals have changed the way I build applications. As most of you already know, I inherited most of these course materials. On one hand, I regret that there isn't more time and emphasis on this chapter, but on the other, I'm glad that it's introduced early so that we have more time overall to apply the concepts.&nbsp;</p>
-<p>I know that you're all busy. I suspect that translates to having to prioritize some things over others. And what I also suspect is that since there wasn't anything directly assigned from the chapter, some of you (I know,&nbsp;<em>most of you</em>) may have raced over some of that concept. And that's ok. It is. But let me encourage you that if you skimmed over the content the first time, at least skim over it again. Even if we don't have time to instill a strong working knowledge of this material, understand that this is a good reference to have. Sometimes it's enough to know where to find the answer quickly when you don't have the answer right away.</p>
+<h2 class="alert alert-info">Bootstrap and Responsive Design</h2>
+<p>
+    Front-end design and CSS, I love using bootstrap. The grid concept and 
+    <em>mobile-first</em> design principals have changed the way I build applications. 
+    Like so many concepts in this textbook and this course, I really wish there 
+    was more time to deep-dive, investigate, discuss and practice more of what is in
+    this chapter, but one of my goals for this course isn't that you become experts
+    in all of the topics immediately, but that you are able to apply them, and quickly
+    find and return to the resources when you need them.
+</p>
+<p>
+    I know that you're all busy. I suspect that translates to having to prioritize 
+    some things over others. And what I also suspect is that since there wasn't 
+    anything directly assigned from the chapter (using Bootstrap), some of you (I know,
+    <em>most of you</em>) may have raced over some of that concept. And that's ok. 
+    It is. But let me encourage you that if you skimmed over the content the first 
+    time, at least skim over it again. Even if we don't have time to instill a strong 
+    working knowledge of this material, understand that this is a good reference to 
+    have. Sometimes it's enough to know where to find the answer quickly when you
+    don't have the answer right away.
+</p>
 <p>&nbsp;</p>
-<h2>Data-driven Applications</h2>
-<p>All of this comes together this week with a focus on data models. Think about different representations of the same data. The data itself needs to be well-structured to support this.&nbsp;<em>Strongly-typed&nbsp;</em>views only work if the data models (or data-view models) are correctly built.</p>
+<h2 class="alert alert-info">Data-driven Applications</h2>
+<p>
+    All of this comes together this week with a focus on data models. Think about 
+    different <strong>representations</strong> of the same data. The data itself needs 
+    to be well-structured to support this. <em>Strongly-typed</em> views only work if 
+    the data models (or data-view models) are correctly built.
+</p>
 <p>&nbsp;</p>
-<h2>Final thoughts</h2>
-<p>Don't forget to visit the Discord discussion channel! I know that other classes have been doing more&nbsp;<em>coding</em> up to this point, but that doesn't mean more&nbsp;<em>development.</em>&nbsp; I suspect as we get further along with your web applications, the discussions there will pick up too.</p>
-<p><img id="43786096" style="float: right;" role="presentation" src="https://courses.sfcollege.edu/users/1450061/files/43786096/preview?" alt="" width="275" height="184" data-api-endpoint="https://courses.sfcollege.edu/api/v1/users/1450061/files/43786096" data-api-returntype="File" /></p>
+<h2 class="alert alert-info">Final thoughts</h2>
+<p>
+    Don't forget to visit the Discord discussion channel! I know that other classes 
+    have been doing more <em>coding</em> up to this point, but that doesn't mean more
+    <em>development.</em> I suspect as we get further along with your web applications, 
+    the discussions there will pick up too.
+</p>
+<p>
+    <img style="float: right;"
+         src="/courses/465444/file_contents/course%20files/course_image/Dug.png"
+         alt="Dug (again)" width="175" height="141" />
+</p>
