@@ -1,5 +1,5 @@
-﻿<!-- Code: 2023SP_CS_119_4451 -->
-<!-- id: 49150 -->
+﻿<!-- Code: 2023FA_CS_119_0799 -->
+<!-- id: 53190 -->
 
 <div id="lab3" style="background-color:moccasin;">
     <div id="navigation"
@@ -16,7 +16,7 @@
         ">
         <a href="/courses/49150">
             <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
-                 src="/courses/49150/files/8043903/preview"
+                 src="/courses/53190/file_contents/course%20files/course_image/logic.png"
                  alt="generic logic flow image" width="100" />
             home
         </a>
@@ -33,13 +33,13 @@
                 presented in chapter 3 of the PLD text.
             </p>
             <p>
-                To save time, space and reading, all the nitty-gritty details of how 
-                to create a Python code file in IDLE, how to create the pseudocode 
-                file, etc. will be mostly left out. Please refer to the chapter 1 lab 
-                if you need a more detailed refresher on these steps. However, we will 
-                review problem analysis and pseudocode in quite a bit of detail in this 
-                exercise. We’ll focus more on the chapter concepts and the Python code 
-                needed to complete this problem as well as things you’ll need to know 
+                To save time, space and reading, all the nitty-gritty details of how
+                to create a Python code file in IDLE, how to create the pseudocode
+                file, etc. will be mostly left out. Please refer to the chapter 1 lab
+                if you need a more detailed refresher on these steps. However, we will
+                review problem analysis and pseudocode in quite a bit of detail in this
+                exercise. We’ll focus more on the chapter concepts and the Python code
+                needed to complete this problem as well as things you’ll need to know
                 to complete the rest of this lab.
             </p>
         </div> <!-- #introduction -->
@@ -54,7 +54,7 @@
                 <li>Selection structures and relational operators</li>
                 <li>Sequential code</li>
                 <li>Application testing; creating test data and verifying results</li>
-                
+
             </ul>
         </div> <!-- #topics -->
     </div> <!-- #overview -->
@@ -73,14 +73,14 @@
 
             <div id="ex1-intro">
                 <p>
-                    This exercise is based on exercise 9 on pages 112 and 113 of the 
+                    This exercise is based on exercise 9 on pages 112 and 113 of the
                     text. In this exercise, a portrait studio has hired you to implement
                     a charge calculator for taking portraits. Part of the charge is
                     based on the number of subjects in the portrait.
                 </p>
                 <p>
-                    <img style="margin-left: auto; margin-right:auto;" width="560" height="420" 
-                         src="/courses/49150/files/8066747/preview"
+                    <img style="margin-left: auto; margin-right:auto;" width="560" height="420"
+                         src="/courses/53190/file_contents/course%20files/Module03/ch3ex9.png"
                          alt="from Chapter 3, exercise 9" />
                 </p>
             </div> <!-- #ex1-intro -->
@@ -97,10 +97,8 @@
                     can identify them:
                 </p>
                 <p>
-                    <img src="https://gcccd.instructure.com/courses/49150/files/8066785/preview" 
-                         alt="analyze the problem" width="562" height="132" 
-                         data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/49150/files/8066785" 
-                         data-api-returntype="File" />
+                    <img src="/courses/53190/file_contents/course%20files/Module03/ch3ex9obj.png"
+                         alt="analyze the problem" width="562" height="132" />
                 </p>
                 <p>
                     Now that we’ve identified the inputs of last name, number of subjects
@@ -250,8 +248,8 @@
                 <h4>Designing the Solution</h4>
 
                 <p>
-                    Create a file called PortraitStudio in IDLE. Be sure to create 
-                    this on your USB drive if you are using the lab computers. Create 
+                    Create a file called PortraitStudio in IDLE. Be sure to create
+                    this on your USB drive if you are using the lab computers. Create
                     a blank text file for your pseudocode and name it pseudocode.txt.
                 </p>
 
@@ -259,38 +257,36 @@
 
             <div id="pseudocode">
                 <p>
-                    Here’s all the pseudocode we saw earlier all in one place. Keep 
+                    Here’s all the pseudocode we saw earlier all in one place. Keep
                     in mind this sample pseudocode is a suggested approach that will
-                    work. You are welcome and encouraged to develop your own approach 
+                    work. You are welcome and encouraged to develop your own approach
                     and style.
                 </p>
                 <p>
-                    <img 
-                         style="margin-left:auto; margin-right:auto; display:block;"
-                         src="/courses/49150/files/8066815/preview" 
+                    <img style="margin-left:auto; margin-right:auto; display:block;"
+                         src="/courses/53190/file_contents/course%20files/Module03/03-pseudocode.png"
                          alt="sample pseudocode" width="451" height="524" />
                 </p>
                 <p>
-                    Another thing we are going to do in this lab is generate some test 
-                    data we can use when we test to ensure our application is working 
+                    Another thing we are going to do in this lab is generate some test
+                    data we can use when we test to ensure our application is working
                     correctly and producing correct results.
                 </p>
                 <p>
-                    We need test data for a varying number of subjects (test the 
-                    selection structure) and we also need to test the weekend surcharge 
-                    feature. Having a good table of test input data and the expected 
-                    results allows us to test our application and be able to tell at a 
+                    We need test data for a varying number of subjects (test the
+                    selection structure) and we also need to test the weekend surcharge
+                    feature. Having a good table of test input data and the expected
+                    results allows us to test our application and be able to tell at a
                     glance if it is working correctly.
                 </p>
                 <p>
                     To keep things simple, we will add it to our pseudocode. It doesn’t
-                    need to be anything fancy but should have enough values that we can 
+                    need to be anything fancy but should have enough values that we can
                     test all possible scenarios.
                 </p>
                 <p>
-                    <img 
-                         style="margin-left:auto; margin-right:auto; display:block;"
-                         src="/courses/49150/files/8066829/preview" 
+                    <img style="margin-left:auto; margin-right:auto; display:block;"
+                         src="/courses/53190/file_contents/course%20files/Module03/03_testdata.png"
                          alt="some sample test data" width="366" height="97" />
                 </p>
             </div> <!-- #pseudocode -->
@@ -298,7 +294,7 @@
             <h4>Code the Application</h4>
             <div id="code">
                 <p>
-                    <img src="/courses/49150/files/8066943/preview" 
+                    <img src="/courses/53190/file_contents/course%20files/Module03/lab03ex1_code.png"
                          alt="sample python code solution" />
                 </p>
             </div> <!-- #code -->
@@ -313,29 +309,29 @@
             <h2 class="alert">Exercise 2</h2>
             <h3>BMI Calculator</h3>
             <p>
-                For this exercise, you will design and develop an application 
-                that allows the user to enter their height in inches, weight 
-                in pounds and then calculate their body mass index (BMI). To 
-                calculate BMI, we will use the following formulas:
+                For this exercise, you will design and develop an application
+                that allows the user to enter their height in inches, weight
+                in pounds and then calculate their body mass index (BMI). To
+                calculate BMI (kilograms per square meter), we will use the following formulas:
             </p>
             <p style="padding:30px;">
-                bmi = kilograms / meters2
+                bmi = kilograms / ( meters * meters )
             </p>
             <p>
                 <em>Wait a minute! What’s going on here?</em>
             </p>
             <p>
-                Before we can do the calculation above, we need to convert 
-                weight in pounds to weight in kilograms and height in inches 
+                Before we can do the calculation above, we need to convert
+                weight in pounds to weight in kilograms and height in inches
                 to meters. We also need these formulas:
             </p>
             <p style="padding:20px;">
-                meters = inches / 39.36
+                meters = inches / 39.36<br />
                 kilograms = pounds / 2.2
             </p>
             <p>
-                Once you calculate the BMI percentage, you will need to 
-                display one of the messages below based on the BMI percentage 
+                Once you calculate the BMI percentage, you will need to
+                display one of the messages below based on the BMI percentage
                 calculated.
             </p>
 
@@ -358,12 +354,12 @@
             </table>
 
             <p>
-                Be sure to complete pseudocode or a flowchart for this exercise 
-                and complete a table of test values that will test all the ranges 
+                Be sure to complete pseudocode or a flowchart for this exercise
+                and complete a table of test values that will test all the ranges
                 given above. Both of these deliverables are worth points!
             </p>
             <p>
-                Test the application with your test data and verify it produces 
+                Test the application with your test data and verify it produces
                 the results expected.
             </p>
 
@@ -414,4 +410,4 @@
             </p>
         </div> <!-- #ex3 -->
     </div> <!-- #tabs -->
-</div> <!-- #lab2 -->
+</div> <!-- #lab3 -->

@@ -1,0 +1,161 @@
+﻿<!-- data structures id:  465482 -->
+<!-- Algortithm Analysis -->
+<div id="analysis">
+    <h2 class="alert alert-info">Comparing Algorithms</h2>
+
+    <div id="complexities">
+        <p class="ic-flash-info">
+            An algorithm is a step-by-step set of instructions or a well-defined 
+            procedure for solving a specific problem or accomplishing a particular 
+            task.
+        </p>
+        <p>
+            In the previous module, we looked at some different approaches for sorting
+            and searching data sets. As you can imagine, there are different approaches
+            for performing these basic operations, and some will predictably perform 
+            better than others under certain conditions.
+        </p>
+        <p>
+            Specifically, coded algorithms are usually compared on the basis of how 
+            much memory they require, or how fast they can complete the task. 
+        </p>
+        <p>
+            Complexity of an algorithm is is described by the number of basic operations 
+            required for input of a given size, and how that complexity changes as the 
+            size of the input data set increases.
+        </p>
+        <p>
+            Functional, or algorithm complexity is often measured based on consideration
+            of worst-case complexity to indicate the longest time the algorithm can take 
+            to solve an instance of size <em>n</em>. In other words, it considers the 
+            <em>most</em> work which could be required for a given size data set.
+        </p>
+        <p>
+            While the <em>worst-case</em> complexity of a function may be the best
+            consideration for some situations, if the occurrence of the worst-case
+            situation is rare and the structure of the data set leads to a more 
+            typical result, an average-case complexity description might be more
+            better for estimating performance and for designing a solution.
+        </p>
+    </div> <!-- #complexities -->
+
+    <div id="big-o">
+        <h3 class="alert alert-info"></h3>
+        <p>
+            Often misunderstood, Big O notation is not a measurement of the efficiency
+            of an algorithm. It characterizes the mathematical nature of a its performance
+            as the size of the data set increases.
+        </p>
+        <p class="ic-flash-info">
+            Don't be intimidated by the <em>math</em>. Simply put, Big-O notation
+            is used to categorize the <em>nature</em> of how a function's efficiency
+            changes over time.
+        </p>
+        <p>
+            Big O notation is a way to describe how the performance of an algorithm or
+            function scales as the size of the input grows. It helps us analyze how
+            efficient an algorithm is in terms of time and space complexity. In simple
+            terms, Big O notation tells us the upper bound or worst-case scenario of
+            how an algorithm's time or space requirements increase as the input gets
+            larger.
+        </p>
+        <figure style="margin:auto; display:block;">
+            <img width="360" height="270" style="margin:auto; display:block;"
+                 alt="Big O notation, typical curves"
+                 src="/courses/465482/file_contents/course%20files/modules/4/big-o-complexity-comparison.png">
+
+            <figcaption style="text-align:center;">Keep looking, I guess?</figcaption>
+            <p>
+                Here are some examples:
+            </p>
+            <ol>
+                <li>
+                    <strong>O(1) - Constant (Time):</strong>
+                    <ul>
+                        <li>
+                            This means the algorithm's performance doesn't depend on the
+                            size of the input. It's very efficient and quick.
+                        </li>
+                        <li>
+                            Example: Accessing an element in an array by its index. No
+                            matter how big the array is, it takes the same amount of time
+                            to retrieve an element.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>O(log n) - Logarithmic:</strong>
+                    <ul>
+                        <li>
+                            As the input size increases, the time or space required grows
+                            slowly. It's more efficient than linear time.
+                        </li>
+                        <li>
+                            Example: Binary search in a sorted list. With each comparison,
+                            the search space is reduced by half, making it very efficient
+                            even for large lists.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>O(n) - Linear:</strong>
+                    <ul>
+                        <li>
+                            The time or space required grows linearly with the size of the
+                            input.
+                        </li>
+                        <li>
+                            Example: Iterating through an array to find a specific element.
+                            The time it takes increases proportionally with the size of the
+                            array.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>O(n^2) - Quadratic:</strong>
+                    <ul>
+                        <li>
+                            The time or space required grows quadratically with the input size.
+                        </li>
+                        <li>
+                            Example: Nested loops where each loop iterates through the same array.
+                            This can be inefficient for large input sizes.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>O(2^n) - Exponential:</strong>
+                    <ul>
+                        <li>
+                            This grows very quickly with the input size and can become extremely
+                            slow for even moderately large inputs.
+                        </li>
+                        <li>
+                            Example: Recursive algorithms that have branching, such as the
+                            Fibonacci sequence calculation using naive recursion.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>
+                Big O notation provides a way to analyze and compare the efficiency of algorithms
+                <em>in general,</em> by looking at how their performance scales with input size.
+                When designing or choosing algorithms, consider their complexity to ensure they
+                perform well for the expected input sizes.
+            </p>
+    </div>
+    <h3 class="alert alert-info">Another Explanation</h3>
+    <p>
+        Here's another way of considering this. I like the presenters explanation, but I'm
+        not sure I agree with his <em>grading</em> approach at the end. The metaphor makes
+        a point, but remember that the nomenclature is used to categorize the efficiency, 
+        not necessarily a specific measure of <em>goodness</em>.
+    </p>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/XMUe3zFhM5c?si=yQLVcGDeVhhklOsF" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+    <hr />
+    <a href="#analysis" style="font-style:italic; color:navy;">back to top</a>
+</div> <!-- #analysis -->
