@@ -1,0 +1,211 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="linkedlists">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="discussion">
+        <h2 class="alert alert-info">Linked Lists in C++</h2>
+
+        <h3>Introduction</h3>
+
+        <p>
+            Recall from our discussion of arrays, that the size of an array must be
+            known and declared when the array is created, because the array needs to
+            be stored and accessed in a contiguous block of memory. For this reason,
+            the size of an array is immutable. In order to add items to an array, a
+            new array (memory space) is created and data from the original array is
+            copied to it.
+        </p>
+        <p>
+            A linked list is not constrained in the same way. It is used to store and
+            manage collections of data in a flexible and dynamic manner. Unlike arrays,
+            which have a fixed size, linked lists can grow or shrink in size during
+            runtime, making them a versatile choice for various applications.
+        </p>
+
+        <h3>What is a Linked List?</h3>
+        <p>
+            A linked list is a data structure consisting of a sequence of nodes, where
+            each node stores a piece of data and a reference (or pointer) to the next
+            node in the sequence. The last node points to a null reference, indicating
+            the end of the list. This structure allows for efficient insertion and
+            deletion of elements at any position within the list.
+        </p>
+        <p>
+            Linked Lists are not limited to a single format. These are common variations.
+            With <em>Singly Linked Lists</em>, each node has a reference to the next node.
+            Each nodes in <em>Doubly Linked Lists</em> have references to both the next
+            and previous nodes. And for <em>Circular Linked List</em>, the last node points
+            back to the first node, forming a loop.
+        </p>
+
+        <h3>Why Use Linked Lists?</h3>
+        <p>
+            Linked lists are preferred over arrays or other data structures in certain
+            scenarios due to their
+            <ul>
+                <li>
+                    <strong>Dynamic Size:</strong> Linked lists can easily change in size
+                    as elements are added or removed without requiring pre-allocation of memory.
+                </li>
+                <li>
+                    <strong>Efficient Insertion/Deletion:</strong> Inserting or deleting
+                    elements at any position in the list is typically O(1) if you have a
+                    reference to the node, making it efficient.
+                </li>
+                <li>
+                    <strong>Memory Allocation Flexibility:</strong> Memory is allocated
+                    for each node individually, allowing efficient use of memory without the
+                    need for contiguous blocks.
+                </li>
+                <li>
+                    <strong>Easy to Implement:</strong> Implementing a basic linked list
+                    is relatively straightforward and a good exercise for understanding pointers
+                    and memory management in C++.
+                </li>
+            </ul>
+        </p>
+
+        <h3 class="alert alert-info">Time complexities</h3>
+
+        <p>
+            Recall that time complexities of common operations, are expressed as a relationship
+            to the size of the collection. For a singly linked list, it also typically depends
+            on where you want to perform the operation, at the beginning, at the end, or in the
+            middle.
+        </p>
+
+        <h4>... at the start</h4>
+        <p>
+            Inserting or deleting elements at the start of a linked list involves updating the
+            next pointer of the new node to point to the current head and then updating the head
+            pointer to the new node.
+        </p>
+        <p>
+            These operations can be done in constant time, regardless of the size of the linked list.
+        </p>
+        <p>
+            In other words, it is not dependent on the size of the data set,so the time complexity
+            is expressed as the function O(1).
+        </p>
+
+        <h4>... at the end</h4>
+        <p>
+            The end of the <em>singly-linked</em> list (when a tail pointer is maintained) is a
+            little different.
+        </p>
+        <p>
+            As long as you maintain a tail pointer, inserting a node at the end of the linked list
+            can also be done in constant time. You simply update the next pointer of the current
+            tail node to point to the new node and then update the tail pointer to the new node.
+            Since it is constant time, regardless of the size of the set, the time complexity is
+            also O(1).
+        </p>
+        <p>
+            Deleting is a little different. When the tail node is to be deleted, you need to
+            traverse the entire list to find the second-to-last node (penultimate node) so that you
+            can update its next pointer to null. This traversal takes O(n) time.
+        </p>
+
+        <h4>... what about the middle?</h4>
+        <p>
+            Inserting or deleting a node at a specific position in the middle of a linked list
+            typically requires traversing the list from the beginning until you reach the desired
+            position, on average this may involve visiting n/2 nodes in a singly linked list. Since
+            it is directly dependent on the size of the data set, the time complexity is O(n).
+        </p>
+        <hr />
+        <p>
+            The efficiency of processing linear data sets such as a queue, first-in, first-out
+            (FIFO) data, or a stack, which may be last-in, first-out (LIFO), or first-in, last-out
+            (FILO) make linked lists a very good candidate for a singly linked list where you have 
+            to traverse the list to find the desired position. In cases where you need to perform 
+            frequent insertions and deletions in the middle of a list and you require better 
+            performance, such as a hash table, you might consider using a doubly linked list or 
+            other data structures like a skip list or a balanced tree, depending on your specific 
+            requirements.
+        </p>
+
+        <h3 class="alert alert-info">Sentinel Node</h3>
+        <p>
+            A sentinel node, also known as a dummy node or a sentinel value, is a special node 
+            added to the beginning or end of a linked list (or other data structures) to simplify 
+            operations and handle edge cases. Sentinel nodes are not part of the actual data stored 
+            in the list but are used as placeholders to make certain operations more efficient and 
+            less error-prone.
+        </p>
+
+        <h4>Implementation</h4>
+        <p>
+            A sentinel node is an ordinary node structure, similar to the other nodes in the list.
+            It does not store any data related to the main data structure but may contain auxiliary 
+            information such as a reference to the next node or previous node (for doubly linked 
+            lists).
+        </p>
+        <p>
+            The sentinel node's next pointer (or previous pointer in a doubly linked list) initially 
+            points to the first (or last) real node in the list.
+        </p>
+        <p>
+            The sentinel node is not require in a linked list. Some of the reasons for including it
+            are:
+            <ul>
+                <li>
+                    Sentinel nodes can <strong>simplify edge cases</strong> in algorithms and code 
+                    that manipulate linked lists. For example, when inserting or deleting nodes at 
+                    the beginning of a list, there's no need to handle the special case where the 
+                    list is initially empty because the sentinel node ensures that there's always at 
+                    least one node in the list.
+                </li>
+                <li>
+                    Using a sentinel node makes it possible to treat all nodes in the list 
+                    <strong>uniformly</strong>, including the first and last nodes, which simplifies 
+                    code and reduces the need for conditional checks.
+                </li>
+                <li>
+                    Some algorithms can be made <strong>more efficient</strong> by using sentinel 
+                    nodes. For example, in a singly linked list, inserting a node at the beginning 
+                    typically requires changing the head pointer. With a sentinel node, the head 
+                    pointer always points to the sentinel, simplifying the insertion operation, 
+                    which can be particularly useful in concurrent or multi-threaded code.
+            </ul>
+        </p>
+        <p>
+            Here's a simple example of a singly linked list with a sentinel node at the beginning.
+<pre>
+    Sentinel (dummy) node
+    |
+    v
+    [  ] -> [A] -> [B] -> [C]
+</pre>
+        </p>
+        <p>
+            In this example, the sentinel node is the initial node in the list, and its purpose 
+            is to simplify insertions and deletions at the beginning. When you want to insert a 
+            new node 'X' at the beginning, you simply update the sentinel's next pointer to point 
+            to 'X', and 'X' becomes the new head of the list.
+        </p>
+        <p>
+            A sentinel node is a helpful technique for simplifying and optimizing operations on linked 
+            lists, especially at the beginning or end, by ensuring that there's always at least one 
+            node in the list and by reducing the need for special-case handling.
+        </p>
+    </div> <!-- #discussion -->
+    <p>&nbsp;</p>
+    <a href="#linkedlists" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #linkedlists -->

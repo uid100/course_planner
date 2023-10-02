@@ -1,0 +1,181 @@
+﻿<!-- data structures id: 465482 -->
+<!-- Project 5: Linked Lists -->
+
+<div id="project">
+    <p style="font-style:italic;">
+        Using <strong>object-oriented principles</strong>, write a C++ program 
+        that will  read an input file to manage a list of students waiting to 
+        register for a course using a linked list.
+    </p>
+
+    <h2 class="alert alert-info"> Project 5 - Linked Lists</h2>
+    <h3>Purpose</h3>
+    <p>Gain technical skills using data structures through programming in C++</p>
+
+    <p>&nbsp;</p>
+
+    <h3 class="alert alert-info">Specifications</h3>
+
+    <p>
+        Write a C++ program that will  read an input file to manage a list of 
+        students waiting to register for a course using a linked list.
+    </p>
+
+    <p>
+        The input file name is <code>WaitList.txt</code> and will be located 
+        in the current directory of the project.
+    </p>
+
+    <table style="width:50%; margin:30px 10px 30px 10px;">
+        <caption>The input file layout is as follows:</caption>
+        <tr><th scope="col" style="width: 30%;">action</th><th scope="col" style="width: 70%">student name</th></tr>
+    </table>
+
+    <p>
+        Actions are defined as follows:
+        <ul>
+            <li>add student name to the end of the linked list</li>
+            <li>add student name to the beginning of the linked list</li>
+            <li>delete the student at the beginning of the linked list</li>
+            <li>delete the student at the end of the linked list</li>
+        </ul>
+    </p>
+
+    <p>
+        Actions #1 and #2 require student names. Actions #3 and #4 do not.
+        <table style="width: 50%; margin: 30px 10px 30px 10px;">
+            <caption>For example, if the input file contents contained:</caption>
+            <thead>
+                <tr><th scope="col" style="width: 30%;">action</th><th scope="col" style="width: 70%">student name</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="text-align: center">1</td><td style="text-align: center">Sally Sue Student</td></tr>
+                <tr><td style="text-align: center">1</td><td style="text-align: center">Peter Pupil</td></tr>
+                <tr><td style="text-align: center">1</td><td style="text-align: center">Sam Scholar</td></tr>
+                <tr><td style="text-align: center">4</td><td style="text-align: center"></td></tr>
+                <tr><td style="text-align: center">2</td><td style="text-align: center">Terri Tutor</td></tr>
+                <tr><td style="text-align: center">1</td><td style="text-align: center">Abby Achiever</td></tr>
+                <tr><td style="text-align: center">3</td><td style="text-align: center"></td></tr>
+                <tr><td style="text-align: center">2</td><td style="text-align: center">Bill Brain</td></tr>
+            </tbody>
+        </table>
+    </p>
+
+    <p>
+        The program would display the wait list as follows:
+<pre>
+The Wait List:
+
+1.  Bill Brain
+2.  Sally Sue Student
+3.  Peter Pupil
+4.  Abby Achiever
+
+End of List.
+</pre>
+    </p>
+
+    <p>
+        ...Then the program will prompt the user if they wish to delete a student by name.
+        If the user selects 'y', the program will prompt for a student name.
+    </p>
+    <p>
+        If the name is found in the linked list, the student node will be deleted and 
+        the wait list is then displayed. If the name is not found, an error message is 
+        displayed to the user.
+    </p>
+    <p>
+        If the user selects 'n' to deleting a student by name, the program will end.
+        <pre>
+The Wait List:
+
+1.  Bill Brain
+2.  Sally Sue Student
+3.  Peter Pupil
+4.  Abby Achiever
+
+End of List.
+
+
+Would you like to delete a student by name (y = yes, n = no): Y
+Enter the full name of the student to delete:  peter pupil
+
+Student deleted.
+
+
+The Wait List:
+
+1.  Bill Brain
+2.  Sally Sue Student
+3.  Abby Achiever
+
+End of List.
+
+
+Would you like to delete a student by name (y = yes, n = no):  y
+Enter the full name of the student to delete:  casey clever
+
+Student does not exist on the wait list.
+
+
+The Wait List:
+
+1.  Bill Brain
+2.  Sally Sue Student
+3.  Abby Achiever
+
+End of List.
+
+
+Would you like to delete a student by name (y = yes, n = no):  a
+Invalid response, please enter y = yes, n = no:  n
+
+Program end.
+</pre>
+    </p>
+
+    <ul>
+        <li>
+            Validate all user input values.
+        </li>
+        <li>
+            Be sure to use good programming methodology and keep your project modular.
+        </li>
+        <li>
+            Use private member functions and variables.
+        </li>
+        <li>
+            Use public member functions for a constructor (where appropriate) and a 
+            driver method only.
+        </li>
+        <li>
+            These specifications do not give a list of method names to be used. It is 
+            assumed the program will use several methods doing one task each.
+        </li>
+    </ul>
+
+    <p class="ic-flash-info" style="padding:20px;">
+        <strong>Note:</strong> any submission that uses global variables, unnamed constants
+        (magic numbers), or does not use a class and object appropriately will result in a
+        project grade of 0.
+    </p>
+
+    <h4>Input Data</h4>
+    <p>
+        <a href="/courses/465482/file_contents/modules/7/WaitList.txt">
+            <code>WaitList.txt</code>
+        </a>
+    </p>
+
+    <h3 class="alert alert-info">Grading</h3>
+    <p>
+        Make sure to review the grading rubric prior to submitting your assignment to ensure
+        you have completed everything to the appropriate standard.
+    </p>
+
+    <h3 class="alert alert-info">Submission</h3>
+    <ul>
+        <li>Upload your .cpp source file(s).</li>
+    </ul>
+    <a href="#project" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #project -->
