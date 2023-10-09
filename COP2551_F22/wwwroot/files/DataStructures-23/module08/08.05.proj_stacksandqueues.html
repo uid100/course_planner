@@ -1,0 +1,197 @@
+﻿<!-- data structures id: 465482 -->
+<!-- Project 6: Stacks and Queues -->
+
+<div id="project">
+    <p style="font-style:italic;">
+        Write two programs to exercise stacks and queues.
+    </p>
+
+    <h2 class="alert alert-info"> Project 6 - Stacks and Queues</h2>
+    <h3>Purpose</h3>
+    <p>Understand and use the <code>stack</code> and <code>queue</code> data structures</p>
+
+    <p>&nbsp;</p>
+
+    <div id="exercises">
+        <div id="tabs" class="enhanceable_content tabs">
+            <p style="font-style:italic;">
+                There are two parts. Be sure to open both tabs and submit both solution (c++) files
+            </p>
+            <ul>
+                <li><a href="#ex1">Exercise 1</a></li>
+                <li><a href="#ex2">Exercise 2</a></li>
+            </ul>
+
+            <div id="ex1">
+                <h3 class="alert alert-info">Circular Queue</h3>
+                <p>
+                    Suppose we have the following pseudocode (i.e. not directly C++ syntax)
+                    that executes in the same way C++ does (hint:  what does C++ do when there
+                    aren't braces for a loop and for if statements)
+                </p>
+
+        <pre>
+            // Define and initialize the circular queue 'myQueue' before using it.
+
+            int counter=1
+            if(myQueue.isEmpty())
+                cout << "The queue is empty." << endl;
+                enqueue("Jack")
+            enqueue("Jill")
+            enqueue("Ann")
+
+            if(myQueue.isFull())
+                cout << "The queue is full." << endl;
+                dequeue(name)
+                cout << name << " is number "<< counter << endl
+                ++counter
+
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+            myQueue.clear()
+
+            enqueue("Alex")
+            enqueue("Fiona")
+            enqueue("Julia")
+            enqueue("Sean")
+            enqueue("Paddy")
+
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+            enqueue("Gaston")
+            enqueue("Richard")
+            cout << name << " is number "<< counter << endl
+
+            enqueue("Tobias")
+            dequeue(name)
+            cout << name << " is number "<< counter << endl
+
+            ++counter
+</pre>
+
+                <p>
+                    Below are TWO different queues each independent from the other.  In the above
+                    code where the comment is, consider the circular queue below is what the program
+                    has at this point of execution.
+                </p>
+                <ul>
+                    <li>What does the queue look like after each line of the code above is executed?</li>
+                    <li>What does the output of the code look like?</li>
+                </ul>
+                <p>
+                    The goal of this exercise is to trace through the code yourself and show what the
+                    queue looks like after each line of code as well as showing what the program would
+                    output to the screen.  Do this for each queue listed below.
+                </p>
+                <ol>
+                    <li>
+                        myQueue (space for 10 elements)=
+                        <table style="width:60%; margin:auto;">
+                            <caption style="display:none;">myQueue</caption>
+                            <tr>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Nate"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Bethany"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Bryan"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Gwen"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Phill"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Allison"</th>
+                                <th scope="col" style="  border: 1px solid black;border-collapse: collapse;">"Tabitha"</th>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        myQueue= &lt;empty queue with space for 5 elements&gt;
+                    </li>
+                </ol>
+                <h4>Grading:</h4>
+                <p>
+                    Make sure to review the grading rubric prior to submitting your assignment to
+                    ensure you have completed everything to the appropriate standard.
+                </p>
+            </div>
+
+            <div id="ex2">
+                <h3 class="alert alert-info">Palindrome Checker</h3>
+                <p>
+                    Write a C++ function that checks whether a given string is a palindrome.
+                </p>
+                <p>
+                    A palindrome is a word, phrase, or sequence that reads the same forwards and backwards,
+                    ignoring spaces, punctuation, and capitalization.
+                </p>
+                <p>
+                    Your program should use a combination of <b>a stack and a queue</b> to perform the check.
+                    It should return <code>true</code> if the input string is a palindrome and <code>false</code>
+                    otherwise.
+                </p>
+                <h4>Function Signature</h4>
+                <pre>
+                <code>
+            bool isPalindrome(const std::string& str);
+        </code>
+</pre>
+        <h4>Input</h4>
+        <p>
+            A string <b>str</b> (1 <= str.length() <= 10^5) consisting of alphanumeric characters, 
+            punctuation and spaces.
+        </p>
+
+        <h4>Output</h4>
+        <p>
+            <code>true</code> if <b>str</b> is a palindrome, <code>false</code> otherwise.
+        </p>
+
+        <h4>Example</h4>
+<pre>
+        <code>
+    bool result1 = isPalindrome("A man a plan a canal Panama"); // true
+    bool result2 = isPalindrome("race car"); // true
+    bool result3 = isPalindrome("hello world"); // false
+</code>
+</pre>
+
+                <ul>
+                    <li>Convert the input string to lowercase to ignore capitalization.</li>
+                    <li>Remove spaces and punctuation from the string to focus only on alphanumeric characters.</li>
+                    <li>Use a stack to push characters onto it as you iterate through the string.</li>
+                    <li>Use a queue to enqueue characters as you iterate through the string in reverse.</li>
+                    <li>Compare characters popped from the stack with characters dequeued from the queue to check if they match.</li>
+                    <li>Use the C++ Standard Library's <code>std::stack</code> and <code>std::queue</code> for this exercise.</li>
+                </ul>
+
+                <h4>Constraints</h4>
+                <p>
+                    Do not use additional data structures or containers beyond the stack and queue for this exercise.
+                </p>
+
+                <h4>Sample Palindromes (for testing)</h4>
+                <ul>
+                    <li>racecar</li>
+                    <li>deified</li>
+                    <li>level</li>
+                    <li>rotor</li>
+                    <li>123454321</li>
+                    <li>Madam in Eden, I'm Adam.</li>
+                    <li>Was it a car or a cat I saw?</li>
+                </ul>
+            </div> <!-- #ex2 -->
+        </div> <!-- #tabs -->
+    </div> <!-- #exercises -->
+            <a href="#project" style="font-style:italic;color:navy;">top</a>
+    </div> <!-- #project -->
