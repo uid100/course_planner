@@ -508,7 +508,294 @@
             "Presentations": ""
           }
         },
-        "OOP-2 (C#)": {}
+        "OOP-2 (C#)": {},
+        "CSIT175 Python Spring 2024": {
+          "status": "draft",
+          "catalog ID": "CSIT 175",
+          "canvas URL": "https://palomar.instructure.com",
+          "canvas course ID": 49289,
+          "name": "Python Programming",
+          "long name": "PYTHON PROGRAMMING 35163",
+          "course code": "CSIT 175",
+          "time zone": "PST8",
+          "SIS ID": "2243-35163",
+          "subaccount": "Palomar",
+          "term": "Spring 2024",
+          "start": "29-Jan-2024",
+          "end": "24-May-2024",
+          "description": "",
+          "textbook": "Murach Python Programming",
+          "c-id": {
+            "Discipline": "Computer Science",
+            "C-ID Number": "112",
+            "Title": "Introduction to Programming Concepts and Methodologies"
+          },
+          "objectives": {
+            "1": "Understand the fundamentals of the Python programming language",
+            "2": "Write syntactically and semantically correct Python programs",
+            "3": "Create Python Desktop and Web applications",
+            "4": "Analyze program requirements and design solutions using Python."
+          },
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Variables and Data Types",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Working with Lists",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "(Chapter 3) Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "(Chapter 4) Looping",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "(Chapter 5) Arrays (2 weeks)",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "(Chapter 6) Using Methods (2 weeks)",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "(Chapter 8) More Object Concepts (2 weeks)",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 98,
+              "title": "Thanksgiving",
+              "week": 14
+            },
+            {
+              "module": 10,
+              "title": "(Chapter 10) Exception Handling",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "(Chapter 11) System Modeling with UML",
+              "week": 16,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+              "week": 17,
+              "ready": true
+            },
+            {
+              "module": 13,
+              "title": "Finals Week",
+              "week": 18,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Lab1",
+                "module": 1,
+                "days": 6,
+                "tasks": [
+                  "lab folder structure",
+                  "pseudocode.txt",
+                  "calculator.py",
+                  "KmToMiles.py",
+                  "MilesToKm.py"
+                ],
+                "points": 10
+              },
+              {
+                "title": "Lab2",
+                "module": 2,
+                "days": 6
+              },
+              {
+                "title": "Lab3",
+                "module": 3,
+                "days": 6
+              },
+              {
+                "title": "Lab4",
+                "module": 4,
+                "days": 6
+              },
+              {
+                "title": "Lab5",
+                "module": 5,
+                "days": 13
+              },
+              {
+                "title": "Lab6",
+                "module": 6,
+                "days": 13
+              },
+              {
+                "title": "Lab7",
+                "module": 7,
+                "days": 13
+              },
+              {
+                "title": "Lab8",
+                "module": 8,
+                "days": 13
+              },
+              {
+                "title": "Lab9",
+                "module": 9,
+                "days": 6
+              },
+              {
+                "title": "Lab10",
+                "module": 10,
+                "days": 6
+              },
+              {
+                "title": "Lab11",
+                "module": 11,
+                "days": 6
+              },
+              {
+                "title": "Lab12",
+                "module": 12,
+                "days": 6
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "Chapter 1 Quiz",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 2 Quiz",
+                "module": 2,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 3 Quiz",
+                "module": 3,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 4 Quiz",
+                "module": 4,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 5 Quiz",
+                "module": 5,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 6 Quiz",
+                "module": 6,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 7 Quiz",
+                "module": 7,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 8 Quiz",
+                "module": 8,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 9 Quiz",
+                "module": 9,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 10 Quiz",
+                "module": 10,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 11 Quiz",
+                "module": 11,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 12 Quiz",
+                "module": 12,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Mid-term Exam",
+                "module": 6,
+                "days": 15,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 13,
+                "days": 3,
+                "points": 100
+              }
+            ]
+          }
+        }
+
       }
     },
     "CCC-CSU C-ID": {

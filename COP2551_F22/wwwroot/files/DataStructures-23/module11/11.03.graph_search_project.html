@@ -1,0 +1,125 @@
+﻿<h2><span style="font-size: 24pt;">Purpose:</span></h2>
+<ul>
+    <li>Understanding the data structure of graphs</li>
+</ul>
+<h2><span style="font-size: 24pt;">Directions:</span></h2>
+<p>Given the following adjacency matrix for a undirected, weighted graph:</p>
+<table style="border-collapse: collapse; width: 47.6685%; height: 280px;" border="1">
+    <caption>undirected, weighted graph data</caption>
+    <tbody>
+        <tr style="height: 28px;">
+            <th style="width: 33.321%; height: 28px;" scope="col"><strong>Source Node<br /></strong></th>
+            <th style="width: 33.321%; height: 28px;" scope="col"><strong>Destination Node<br /></strong></th>
+            <th style="width: 33.321%; height: 28px;" scope="col"><strong>Weight</strong></th>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">0</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">3</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">2</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">3</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">4</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">3</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">3</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">7</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">6</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">4</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">7</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">8</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">0</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">4</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">7</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">1</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">4</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">9</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">1</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">5</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">3</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">4</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">8</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">1</td>
+        </tr>
+        <tr style="height: 28px;">
+            <td style="width: 33.321%; height: 28px; text-align: center;">7</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">8</td>
+            <td style="width: 33.321%; height: 28px; text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">0</td>
+            <td style="width: 33.321%; text-align: center;">1</td>
+            <td style="width: 33.321%; text-align: center;">4</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">4</td>
+            <td style="width: 33.321%; text-align: center;">5</td>
+            <td style="width: 33.321%; text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">5</td>
+            <td style="width: 33.321%; text-align: center;">8</td>
+            <td style="width: 33.321%; text-align: center;">3</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">8</td>
+            <td style="width: 33.321%; text-align: center;">9</td>
+            <td style="width: 33.321%; text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">5</td>
+            <td style="width: 33.321%; text-align: center;">9</td>
+            <td style="width: 33.321%; text-align: center;">10</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">1</td>
+            <td style="width: 33.321%; text-align: center;">2</td>
+            <td style="width: 33.321%; text-align: center;">5</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">5</td>
+            <td style="width: 33.321%; text-align: center;">2</td>
+            <td style="width: 33.321%; text-align: center;">6</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">5</td>
+            <td style="width: 33.321%; text-align: center;">6</td>
+            <td style="width: 33.321%; text-align: center;">7</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">2</td>
+            <td style="width: 33.321%; text-align: center;">6</td>
+            <td style="width: 33.321%; text-align: center;">8</td>
+        </tr>
+        <tr>
+            <td style="width: 33.321%; text-align: center;">9</td>
+            <td style="width: 33.321%; text-align: center;">6</td>
+            <td style="width: 33.321%; text-align: center;">9</td>
+        </tr>
+    </tbody>
+</table>
+<p>Calculate each of the following searches assuming we start at node 4.</p>
+<ul>
+    <li>Breadth-first search</li>
+    <li>Depth-first search</li>
+</ul>
+<p>Show the order that each search will produce assuming it chooses a node with a higher number first when there are multiple choices.&nbsp; Remember unordered graphs allow for traveling from source to destination and from destination to source so to save space, an adjacency matrix may only provide from node A to B instead of including node B to A as another edge in the list.</p>
+<h2><span style="font-size: 24pt;">Grading:</span></h2>
+<ul>
+    <li>Make sure to review the grading rubric prior to submitting your assignment to ensure you have completed everything to the appropriate standard.&nbsp; The grading rubric is below this assignment's directions.</li>
+</ul>
+<h2><span style="font-size: 24pt;">Submission:</span></h2>
+<ul>
+    <li>Upload your file here</li>
+</ul>

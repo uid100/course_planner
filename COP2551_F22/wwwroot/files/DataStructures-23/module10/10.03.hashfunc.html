@@ -1,0 +1,251 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+
+<div id="hash-functions">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="discussion">
+
+        <h2 class="alert alert-info" style="margin-top:25px;margin-bottom:25px;">Hash functions</h2>
+
+        <h3 style="font-style:italic;">What is a hash function</h3>
+
+        <p class="ic-flash-info">
+            A hash function is a mathematical function that takes an input (or "message") and returns
+            a fixed-size string of bytes. The output, commonly called the hash code or hash value, is
+            typically a digest that is unique to each unique input.
+        </p>
+
+        <p>
+            Hash functions are widely used for various purposes, especially in cryptography.
+        </p>
+
+        <p>
+            Hash functions are designed:
+            <ul>
+                <li>
+                    ... to be <b>Deterministic</b>. For the same input, the hash function
+                    should always produce the same output.
+                </li>
+                <li>
+                    ... to be <b>Efficient</b>. It should be computationally efficient to
+                    compute the hash value for any given input.
+                </li>
+                <li>
+                    ... to have a <b>Fixed Output Size</b>. The hash function should produce
+                    a fixed-size output, regardless of the size of the input.
+                </li>
+                <li>
+                    ... to be <b>Collision Resistant</b>. It should be computationally
+                    <i>infeasible</i> to find two different inputs that produce the same hash
+                    value. In practice, this property is essential to ensure the integrity of
+                    data and the security of hash-based algorithms.
+                </li>
+                <li>
+                    ... to have an <b>Avalanche Effect</b>. A small change in the input
+                    should result in a significantly different hash value. This property
+                    ensures that similar inputs have very different hash codes.
+                </li>
+            </ul>
+        </p>
+        <p>
+            This is a seemingly simple description of what can be very complex mathematical
+            applications.
+        </p>
+        <h3>For Example <em>Passwords</em></h3>
+        <p>
+            Here's a common use-case. A user sets an access password. Imagine that password
+            can contain upper and lower case values of the 26 letters of the english language
+            plus 10 numeric digits and maybe a hanful of allowable printable characters. To
+            make it more complex, it may be between 10 and 20 characters long. This unknown
+            length combination of perhaps 70 or more pseudo-random characters presents as...
+            (skipping the math...) a <em>whole lot(!) of</em> possible combinations.
+        </p>
+        <p>
+            If you run this password string through one of our complex hash functions, it
+            produces a presumably unique string that is equally random. Because of the
+            characteristics of the hash function described above, even storing this value as
+            plain text, makes guessing or even calculating the source string very unlikely,
+            or at the least, very computationally complicated.
+        </p>
+        <p>
+            So when the authorized user returns and re-enters the pre-selected password, and
+            it is again validated against the same hash function, only the exact password
+            will result in a match with the stored password hash.
+        </p>
+
+        <h3>Common Uses</h3>
+        <p>
+            Hash functions are used in various applications, such as:
+            <ul>
+                <li>
+                    <strong>Data Integrity</strong> Verifying the integrity of data by comparing
+                    hash values before and after transmission or storage. If the data has been
+                    altered even slightly, the hash value will not match.
+                </li>
+                <li>
+                    <strong>Hash Tables</strong> Efficiently organizing and retrieving data in hash
+                    tables and other data structures.
+                </li>
+                <li>
+                    <strong>Digital Signatures</strong> Ensuring the authenticity and integrity
+                    of messages and documents. Similar to the way that a data transfer can be
+                    checked as described above, the source for a message or document can also be
+                    checked using hashes.
+                </li>
+                <li>
+                    <strong>Cryptography</strong> Password storage, and other security applications.
+                </li>
+            </ul>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            Common hash functions used in cryptography include
+            <ul>
+                <li>MD5 (Message Digest 5)</li>
+                <li>SHA-1 (Secure Hash Algorithm 1)</li>
+                <li>SHA-256</li>
+                <li>SHA-3</li>
+            </ul>
+        </p>
+        <p>
+            Older hash functions like MD5 and SHA-1 are still used in some contexts, they are
+            considered insecure for cryptographic purposes due to vulnerabilities, and more secure
+            hash functions are recommended for new applications.
+        </p>
+        <p>&nbsp;</p>
+        <h2 class="alert alert-info">Hash Tables</h2>
+        <p>
+            Hash functions do not need to be complex and <em>unbreakable</em> to be useful or effective.
+            The application will determine the complexity of the hash function.
+        </p>
+
+        <h3 style="font-style:italic;">What is a hash table</h3>
+
+        <p class="ic-flash-info">
+            A hash table (also known as a hash map) is a <strong>data structure</strong> that implements
+            an associative array abstract data type (ADT), a structure that can map keys to values. It
+            uses a <em>hash function</em> to compute an index into an array of buckets or slots, from
+            which the desired value can be found.
+        </p>
+        <p style="font-weight:bold">
+            The idea behind a hash table is to transform the key into a hash code, which is used as an
+            index to access the corresponding value in the array.
+        </p>
+        <p>
+            Ideally, each unique key should produce a unique hash code, but in practice, <em>collisions</em>
+            (two different keys producing the same hash code) can occur. Various techniques are used to
+            handle collisions.
+        </p>
+        <p>
+            Two common approaches are
+            <ul>
+                <li>Separate chaining, and</li>
+                <li>Open addressing</li>
+            </ul>
+        </p>
+        <p>&nbsp;</p>
+        <h3 style="font-style:italic;">How a hash table works</h3>
+        <ol>
+            <li>
+                A <strong>hash function</strong> takes a key as input and produces a hash code, <em>integer</em> 
+                to be used as an index to where the corresponding value should be stored or looked up.
+            </li>
+            <li>
+                <strong>Buckets</strong> The hash table typically consists of an array (or vector) of buckets or 
+                slots. Each bucket can hold multiple key-value pairs in the case of collisions.
+            </li>
+            <li>
+                <strong>Collision Resolution</strong> (when more than one key-value resolves to the same index)
+                <ul>
+                    <li>
+                        <strong>Separate Chaining</strong> Each bucket contains a linked list (or another 
+                        data structure) to store multiple key-value pairs with the same hash code. (To hold 
+                        multiple values at the same index)
+                    </li>
+                    <li>
+                        <strong>Open Addressing</strong> If a collision occurs, search for the next available 
+                        slot (the next "open address) in the array (linear probing is one common method) until 
+                        an empty slot is found. Although the hash function may not find the key in the table
+                        immediately, if the search starts there, the algorithm should not have to search far
+                        starting from there to find the target. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Table Operations</strong>
+                <ul>
+                    <li>
+                        <strong>Insert</strong> The key-value pair is inserted into the bucket determined by 
+                        the hash code.
+                    </li>
+                    <li>
+                        <strong>Retrieve</strong> The hash code is used to find the appropriate bucket, and 
+                        then the key is searched within the bucket to retrieve the associated value.
+                    </li>
+                    <li>
+                        <strong>Delete</strong> Similar to retrieval, the key is located in the corresponding 
+                        bucket, and the key-value pair is removed.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            Hash tables provide fast average-case time complexity for basic operations (insertion, retrieval, 
+            and deletion), making them efficient for tasks like indexing and searching.
+        </p>
+        <p>
+            Compared with the other search algorithms we've looked at, this makes a lot of sense.
+        </p>
+        <p class="ic-flash-info">
+            <strong>Searching is faster when you know where to start looking</strong>
+        </p>
+        <p>
+            The efficiency depends on the quality of the hash function and the collision resolution strategy 
+            employed. Simpler hash functions are more likely for collisions to occur.
+        </p>
+        <p>
+            Common programming languages often provide built-in implementations of hash tables, such as 
+            Python's <code>dict</code> or C++'s <code>std::unordered_map</code>.
+        </p>
+
+    </div> <!-- #discussion -->
+    <p>&nbsp;</p>
+    <div id="resources">
+        <h3 class="alert alert-info">Resources</h3>
+        <p>&nbsp;</p>
+        <h4>Hash tables in 4 minutes</h4>
+        <p>
+            <iframe title="YouTube video player"
+                    src="https://www.youtube.com/embed/knV86FlSXJ8?si=zEstF1DSWOlyKaqO"
+                    width="560" height="315" allowfullscreen="allowfullscreen"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe>
+        </p>
+        <p>&nbsp;</p>
+        <h4>Hash table open addressing</h4>
+        <p>
+            <iframe title="YouTube video player"
+                    src="https://www.youtube.com/embed/xIejolxzZS8?si=VepS367LYPWgubMN"
+                    width="560" height="315" allowfullscreen="allowfullscreen"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+            </iframe>
+        </p>
+    </div> <!-- #resources -->
+    <a href="#hash-functions" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #hash-functions -->
