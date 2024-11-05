@@ -1,0 +1,136 @@
+﻿<!-- data structures id: 465482 -->
+<!-- Project: Binary Trees -->
+
+<div id="project">
+    <h2 class="alert alert-info"> Project: Binary Tree</h2>
+    <h3>Purpose</h3>
+    <p>Understand and use binary search trees</p>
+
+    <p>&nbsp;</p>
+
+    <div id="instructions">
+        <h3>Instructions</h3>
+        <p>
+            Using good OOP, write a C++ program for implementing a simple
+            binary search tree capable of storing  and retrieving student
+            information.
+        </p>
+        <p>
+            The class should have private member variables (each separated
+            by a tab):
+        </p>
+        <p>
+            <ul>
+                <li>student's id number - an integer</li>
+                <li>student's name - a string</li>
+                <li>student's declared major</li>
+            </ul>
+        </p>
+        <p>
+            The class should have private member functions as a minimum:
+        </p>
+        <ul>
+            <li>openFile - opens the input file</li>
+            <li>testFile - tests the input file has been opened properly</li>
+            <li>readFile - reads in one student's information</li>
+            <li>closeFile - close the input file</li>
+            <li>insert - inserts the students information into the proper place in the tree structure</li>
+            <li>search - search for the student id entered by the user</li>
+            <li>inorder - traverses the tree structure</li>
+            <li>prompt - prompts the user for a student id number</li>
+            <li>validate - validate the user input value</li>
+            <li>display - display the contents of the binary tree</li>
+            <li>results - student id found or not found result</li>
+        </ul>
+        <p>
+            The class should have public member functions:
+        </p>
+        <ul>
+            <li>class constructor (if needed)</li>
+            <li>driver - order of execution</li>
+        </ul>
+
+        <p>The input file layout:</p>
+        <pre>
+student id number &nbsp; &lt;tab&gt; &nbsp; student name &nbsp; &lt;tab&gt; &nbsp; student declared major
+        </pre>
+        <p>
+            Read the input file <code>students.txt</code> from the current
+            directory until <code>eof</code> storing the student information
+            in ascending order student id number.
+        </p>
+        <p>
+            When the end of file is reached, traverse the binary tree displaying
+            its contents. The output list should be in ascending order by student
+            id number.
+        </p>
+        <p>
+            Prompt the user for a student id number. Validate this value.
+        </p>
+        <p>
+            If the value is found in the tree structure, let the user know and
+            display the student's information. If the value is not found in the
+            tree structure, let the user know this as well.
+        </p>
+        <p>
+            Continue to prompt for student id numbers until the user to stop.
+        </p>
+        <h3>Input File</h3>
+        <!-- <a href="/courses/465482/file_contents/course%20files/modules/9/students.txt">
+            students.txt
+        </a> -->
+        <a class="instructure_file_link instructure_scribd_file inline_disabled" 
+           href="/courses/465482/file_contents/course%20files/modules/9/students.txt" 
+           target="_blank" rel="noopener" data-canvas-previewable="true" 
+           data-api-endpoint="/courses/465482/file_contents/course%20files/modules/9/students.txt" 
+           data-api-returntype="File">students.txt</a>
+            <h3>
+                Example execution:
+            </h3>
+            <div>
+                <pre>
+Populating Binary Tree Structure
+
+Reading contents....
+
+Student ID       Student Name                   Student Major
+22222222         Dalton Diggs            Organizational Management
+33333333         Ben Brothers            Graphic Design
+55555555         Abby Archer             Mathematics
+88888888         Evan Egglish            Information Systems Technology
+99999999         Charles Cool            Biological Sciences
+
+End of tree
+
+
+Enter a student id (press Q to quit): -33
+
+Invalid input, try again:  twelve
+Invalid input, try again:  11111111
+
+Student 11111111 not found.
+
+
+Enter a student id (press Q to quit): 22222222
+
+Student id:    22222222
+Student name:  Dalton Diggs
+Student major: Organizational Management
+
+
+Enter a student id (press Q to quit):  Q
+
+End of program.
+</pre>
+            </div>
+            <p>&nbsp;</p>
+            <p class="ic-flash-info">
+                NOTE: Any submission that uses global variables or does not
+                use a class and object appropriately will result in a project
+                grade of 0.
+            </p>
+
+    </div> <!-- #instructions -->
+
+    <a href="#project" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #project -->

@@ -1,0 +1,122 @@
+<div id="overview09">
+
+    <div id="navigation">
+        <a class="btn btn-primary icon-home-light"
+           href="https://courses.sfcollege.edu/courses/452018">
+            Home
+        </a>
+    </div> <!-- navigation -->
+
+    <div id="header">
+        <p>&nbsp;</p>
+
+        <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid red;"
+             id="44071302" alt="textbook cover" width="128"
+             src="https://courses.sfcollege.edu/courses/452018/files/44071302/preview" width"300" />
+        <p style="text-align: center;">
+            <strong>
+                Chapter 9 Working with Session State and Cookies
+            </strong>
+        </p>
+        <p>&nbsp;</p>
+        <h2 class="alert alert-info">Module 9</h2>
+    </div> <!-- #header -->
+
+
+    <div id="razor">
+        <h3 class="alert alert-info">Session State and Cookies</h3>
+
+        <p>
+            When you started writing computer applications, you probably saw 
+            and practiced sequential processing steps. You could walk through
+            your code step by step and track how each variable and counter 
+            might change along the way. With web applications, the application
+            starts a listening service. As soon as a connection is made, a new
+            listening process starts up to replace the previous one which is
+            now busy handling the request, and the process continues by calling
+            the method that corresponds to the HTTP request. Each of those 
+            "listeners" handles whatever request is made to it, with no context
+            of what happened before.
+        </p>
+        <p>
+            Look at it another way. Imagine that you walk up to a professional
+            sports venue, football stadium, baseball park, hockey arena, take
+            your pick... And there are 10 ticket windows. You approach the window
+            and purchase four tickets for that evening. The attendant processes
+            your transaction and (imagine) steps away and a new attendant steps
+            back to the window. If you want to purchase tickets for that event
+            or any other, it is a brand new transaction which has no connection
+            to the previous request and purchased tickets. Remember, that first
+            attendant walked away and was replaced by this one. You might as 
+            well have gone to a different window, which right now is busy handling
+            another transaction. This is how our web application works. Each
+            request is brand new with no context and no connection to any previous
+            request.
+        </p>
+        <p>
+            Read that again.
+        </p>
+        <p>
+            HTTP - Hyper Text Transfer Protocol, is said to be a "stateless" 
+            protocol. That means that every transaction is handled separately from
+            every other transaction. Your application can handle one user or one
+            hundred and twenty-one users at the same time and each one is handled
+            separately, even if you click from one page to another!
+        </p>
+        <p>
+            That is <em>really</em> important to understand.
+        </p>
+        <p>
+            But wait(!) if I add a box of laundry soap to my Amazon shopping cart 
+            and then browse for a set of motorcycle tires, and then walk away and
+            log back in on my iPhone, Amazon knows all about me, what I was shopping
+            for, and what I still have waiting to purchase. And the continuous loop
+            of Amazon delivery trucks in my neighborhood suggests that there were 
+            at least a few other customers logged in during that time.
+        </p>
+        <p>
+            When a user makes a request from a web application, in order to provide
+            a custom, correct response to each request, there needs to be some way
+            to keep track of connections from request to request, and to do it as
+            efficiently as possible. This is why we have session state data and 
+            (request) cookies.
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #razor -->
+
+    <div id="todo-list">
+        <h3 class="alert alert-info"> TODO:</h3>
+
+        <p>
+            Although nothing is due to be submitted for credit this week, take the 
+            time to practice the sample code in the book. 
+        </p>
+        <p>
+            As you have seen, this topic and this textbook is packed full of 
+            information. It is understandable that there will be some details and
+            concepts that slip past us the first time around. It is however important 
+            to grasp enough so that when you need to apply these ideas later, that
+            you will recognize what they are and where to find the information. And
+            it may be very true that this textbook becomes a valuable reference that
+            you can return to, if you know where to look for answers.
+        </p>
+        <p>
+            Sometimes, knowing what questions to ask, and where to find the answers
+            is enough.
+        </p>
+        <p>
+            Visit Discord and share your discoveries and questions.
+        </p>
+        <p>
+            &nbsp;
+        </p>
+        <ol style="margin-left:10%;">
+            <li><strong>Read</strong> Chapter 9</li>
+            <li><strong>Review</strong> Chapter 9 Powerpoint notes</li>
+            <li><strong>Practice</strong> stepping through the code samples</li>
+            <li><strong>Review</strong> chapters 5 through 8</li>
+            <li><strong>Complete</strong> Exam 2</li>
+        </ol>
+
+    </div> <!-- #todo-list -->
+</div> <!-- #overview09 -->

@@ -1,0 +1,204 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab10" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+        </a>
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #10</h2>
+        <div id="introduction">
+            <p>
+                We’ve seen from the textbook chapter that exception handling is a
+                vital tool that helps us write more robust, fault tolerant code.
+                Up until now, we’ve put very little emphasis on error handling in
+                our code.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="objectives" style="padding:40px;">
+            <ul>
+                Objectives:
+                <li>Python exception handling</li>
+                <li>Working with classes and inheritance</li>
+                <li>Review of general Python coding (sequential code, selection structures, etc.)</li>
+            </ul>
+        </div> <!-- #objectives -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs" style="padding:20px;">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1 (Guided)</h2>
+            <h3>Player Exercise (Revisited)</h3>
+            <p>
+                For this exercise, you are going to modify the Player class created in Lab 8
+                and add a custom exception class for an invalid player number, throw the
+                exception when the player number is invalid, and catch/handle it in the Python
+                client code. You don’t need to do any class models or pseudocode. The focus
+                here will be strictly on creating a custom exception class, throwing and
+                catching exceptions. As a best practice, and to avoid “reinventing the wheel”,
+                use the built-in Python exception classes wherever possible. Custom classes
+                should be created to enforce business rules that aren’t handled by any of the
+                built-in exception classes..
+            </p>
+
+            <ol>
+                <li>
+                    <p>
+                        Copy the player files from lab 8 to your Lab 10 folder. Lab 8 must be
+                        completed before starting this!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Create a new Python code file called <strong>CustomExceptions.py</strong>.
+                        Add the code shown below:
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8345352/preview" 
+                             alt="Custom Exception Class" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify the <strong>Player</strong> class. Add an import for the custom 
+                        exception:
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8345403/preview" 
+                             alt="import the custom exception classes" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify the <code>set_number()</code> method as shown:
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8345351/preview" 
+                             alt="set_number() method changes" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify the constructor with the code modification:
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8345350/preview" 
+                             alt="modify the constructor" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify your test fixture app with the code shown. indent the code in the
+                        <em>try/except</em> blocks (4 spaces!). Be careful here!
+                    </p>
+                    <p>
+                        <img src="/courses/49150/files/8345423/preview" 
+                             alt="Added try/except blocks to test code" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your application first with a player numbers in and out of range and
+                        also with other invalid number value(s). Note how the program repsonds.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        You get to do this one on your own. Create a class called
+                        <code>InvalidBattingException</code> in the <strong>CustomExceptions</strong>
+                        module from step 2. Modify the method to set batting average to raise this
+                        exception if batting average is less than 0 or greater than 1.0.
+                    </p>
+                    <p>
+                        Add the code to the test fixture to trap the exception.
+                    </p>
+                </li>
+            </ol>
+
+            <p>&nbsp;</p>
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Person, Employee and Student (Revisited)</h3>
+            <p>
+                For this exercise, you are going to modify the Person, Employee and
+                Student classes you created in Lab 8 and add a custom exception classes
+                for an invalid age (InvalidAge), years worked (InvalidYearsWorked) and
+                units completed (InvalidUnits).
+            </p>
+            <ul style="list-style-type:none; margin:20px;">
+                <li>Valid age is 0 through 120</li>
+                <li>Valid years worked is from 0 through 75</li>
+                <li>Valid units is from 0 through 200</li>
+            </ul>
+            <p>
+                Add the custom exceptions to the custom exceptions file you created in
+                exercise 1. You don’t need to do any class models or pseudocode. Like
+                exercise 1, the focus will be on creating a custom exception class,
+                raising and catching exceptions.
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        Copy the Person, Employee, Student and PersonTest Python code files
+                        from lab 8 to your Lab 10 folder. Lab 8 must be completed and working
+                        properly before starting this!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Code the new custom exceptions in CustomExceptions.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify the setter methods in Person, Student and Employee as needed
+                        to raise an exception for an invalid age,invalid years worked and invalid
+                        number of units.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Modify the PersonTest application to catch these exceptions. Make your
+                        error messages informative. Remember to keep the generic exception as the
+                        last one.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Test your application with both valid and invalid data and ensure
+                        your program responds appropriately.
+                    </p>
+                </li>
+            </ol>
+        </div> <!-- #ex2 -->
+    </div> <!-- #tabs -->
+</div> <!-- #lab10 -->

@@ -1,0 +1,399 @@
+﻿<!-- capstone course id: 456310 -->
+<!-- api-build -->
+
+<div id="api-build" style="background:bisque;">
+    <div id="navigation" style="padding: 20px;">
+        <p style="margin:auto;">
+            <a href="courses/456310" style="color:navy;">
+                <img id="project-jpg" width="150"
+                     style="display: block;padding:30px;"
+                     src="/courses/456310/files/46355442/preview"
+                     data-api-returntype="File"
+                     alt="project icon" />
+                Home
+            </a>
+        </p>
+    </div> <!-- #navigation -->
+
+    <div id="objective" style="padding:20px;">
+        <h2 class="alert">Data I/O</h2>
+        <p>
+            The data structure and I/O is a fundamental architectural building block for any
+            development solution. Using APIs for data access helps support the design principle
+            of separation of concerns. If the data source is compartmentalized, it is
+            easier to isolate components for reusability, maintainability and extensibility.
+        </p>
+        <h3>Objective</h3>
+        <p>
+            Build and demonstrate an API to deliver sample data from your class models.
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #objective -->
+
+    <div id="instructions" style="padding:20px;">
+        <h3 class="alert">Instructions</h3>
+        <p>
+            A challenge of designing this course is that there are multiple and distinct
+            entry paths. Usually, with a project of this scope, defining the requirements
+            for building and deploying the data access layer would be more straightforward.
+            So the objectives will be specific, but your solution can take different forms.
+        </p>
+        <ol>
+            <li>
+                <p><strong>Build your data model class</strong></p>
+                <p>
+                    Select your code architecture and create the data model class from the
+                    class model diagram from the earlier module step.
+                </p>
+            </li>
+            <li>
+                <p><strong>Create a small collection of sample data</strong></p>
+                <p>
+                    This may be created as a mock-repository, a small set of database rows,
+                    or simply hard-coded <em>test-data.</em>
+                </p>
+            </li>
+            <li>
+                <p><strong>Create an API to return your data set</strong></p>
+                <p>
+                    It should have at a minimum a single GET action to return your dataset.
+                    You may also implement additional actions to return specific records
+                    or POST actions as well.
+                </p>
+            </li>
+            <li>
+                <p><strong>Demonstrate API data response</strong></p>
+                <p>
+                    Using either a browser, or <code>curl</code> from a terminal command
+                    line, connect to your API and show a screenshot of the result.
+                </p>
+            </li>
+        </ol>
+        <p>
+            With varying programming backgrounds, there are several approaches you might take
+            for this assignment. Common approaches could be to code your solution using Node.JS
+            or ASP.NET/C#. Both of these are popular industry standard approaches.
+        </p>
+        <p>
+            My preference would be to code this using C#, and I've included a step-by-step
+            example for this in the next section, but you are not limited to this approach.
+        </p>
+        <p>
+            <strong>Node.js</strong> is also a popular approach to creating web APIs, and there 
+            are several tutorials online avaiable to you.
+        </p>
+
+        <h3 class="alert">ASP.NET API example</h3>
+        <p>
+            A common API implementation approach is to build the API in C#/.NET using ASP.NET
+            framework and hosting on Microsoft's Azure cloud platform.
+        </p>
+        <p>
+            This is an optional approach, but since most of the code is supplied, it should
+            help simplify the task.
+        </p>
+        <ol>
+            Using Visual Studio:
+            <li>
+                Create a new project using the "ASP.NET Core Web API" C# template. I named mine
+                <code>MyDemoAPI</code> using no authentication and all other default settings.
+                The sample project will be created, ready to edit to add your own changes. I
+                did make one change to the project. This is not necessary, but I created a folder
+                in the project called "Models" (at the same level as "Controllers"), I moved the
+                WeatherForecast.cs (model) file to that folder, and Visual Studio updated the
+                folder namespaces in the code for me. The project works fine with or without
+                this change.
+            </li>
+            <li>
+                Next, build and run it. I still have not written any code. Visual Studio will
+                build the code and run it in its own hosting environment. It will also launch
+                Swagger in your local browser. Swagger will enable you to interact with the
+                different <em>endpoints</em> for both <code>GET</code> and <code>POST</code>
+                and other <strong>http</strong> supported actions. In this case, the only
+                endpoint in our API is [GET] https://localhost:[port]/WeatherForecast.
+            </li>
+            <li>
+                Open a new browser window (apart from the one running Swagger). for the URL,
+                use https://localhost:[port]/WeatherForecast. You can get the port number from
+                the window running Swagger, or also from the command-line output where the API
+                is <em>running</em>. It will tell you which port the https service is listening.
+                If you review the Controllers/WeatherForecastController, you'll find a Get()
+                method which is generating 5 days of random values for the <code>WeatherForecast</code>
+                data model. Back in the browser window (https://localhost:7093/weatherforecast,
+                this is not case sensitive) you can review the JSON-formatted data output.
+            </li>
+            <li>
+                <p>
+                    My default browser is Chrome, yours may be something else. Find and install
+                    a JSON formatter browser extension, and refresh your data page. It should look
+                    something like this:
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                         src="/courses/456310/files/46759642/preview"
+                         alt="weather forcast JSON response" />
+                </p>
+                <p>
+                    This is still simulated data, but you can see that the data model, from
+                    <strong>WeatherForecast.cs</strong> is working with the
+                    <strong>WeatherForecastController</strong> to generate the data instance.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Next, I made a new data model. The Student data model is just an example.
+                    You can use the class model that you created previously. As part of the data
+                    model, I created a mock data collection. Your data can be dummy data (like
+                    this is) or you can use Entity Framework to connect to a database instance.
+                </p>
+                <p>
+                    <strong>Student.cs</strong><br />
+                    <pre>
+namespace MyDemoAPI.Models
+{
+    public class Student
+    {
+        private static Random _r = new Random();
+
+        public int Id { get; set; }
+        public String Name { get; set; } = "";
+        public float TotalScore { get; set; }
+        public String CurrentGrade
+        {
+            get
+            {
+                if (TotalScore > 90.0) return "A";
+                if (TotalScore > 80.0) return "B";
+                if (TotalScore > 70.0) return "C";
+                if (TotalScore > 60.0) return "D";
+                return "F";
+            }
+        }
+
+        public Student(int id, string name, float totalScore)
+        {
+            Id = id;
+            Name = name;
+            TotalScore = totalScore;
+        }
+
+        private static int _randomScore() => _r.Next(58, 100);
+
+        public static List<Student> GetStudents() => new List<Student>
+            // random list of names from "behindthename.com"
+            {
+                new Student( 1234, "Charley Oliver", _randomScore() ),
+                new Student( 2222, "Augusta Sheppard", _randomScore() ),
+                new Student( 2234, "Darcie Parent", _randomScore() ),
+                new Student( 3210, "Emile Gorbold", _randomScore() ),
+                new Student( 3456, "Vicki Glover", _randomScore() ),
+                new Student( 4444, "Tera Hambleton", _randomScore() ),
+                new Student( 4567, "Domenic Cash", _randomScore() ),
+                new Student( 4680, "Marcy Salvage", _randomScore() )
+            };
+    }
+}
+</pre>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Create a new controller. I simply copied the existing one from the Template.
+                    name it to match your data model (+ <strong>Controller</strong>). Build it and
+                    run it to see <em>your</em> data response to the API call.
+                </p>
+                <p>
+                    <strong>StudentController.cs</strong>
+                    <pre>
+
+namespace MyDemoAPI.Controllers
+{
+    [ApiController]
+    [Route("[controller]")]
+    public class StudentController : ControllerBase
+    {
+        private static readonly List<Student> _students = Student.GetStudents();
+
+        private readonly ILogger<StudentController> _logger;
+
+        public StudentController(ILogger<StudentController> logger)
+        {
+            _logger = logger;
+        }
+
+        [HttpGet(Name = "GetStudentList")]
+        public IEnumerable<Student> Get() => Student.GetStudents();
+    }
+}
+</pre>
+                </p>
+            </li>
+        </ol>
+        <p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                 src="/courses/456310/files/46759646/preview"
+                 alt="Student JSON API response" />
+        </p>
+    </div> <!-- #background -->
+
+    <div id="hosting" style="padding:20px;">
+        <h3 class="alert">Hosting</h3>
+        <p>
+            This section is also optional, but it does have value. I am providing this
+            as reference for you to consider.
+        </p>
+        <p>
+            Now that my code is working and successfully hosting my API requests locally,
+            it would be beneficial if I could access this from the network. As a security
+            measure, especially if you intende to have write (PUT/POST) access with your
+            API, you should be aware of, and implement security for the API. In most
+            cases, I would deploy the API as a cloud-hosted web service and limit firewall
+            exceptions to my development IP address and the web application which is 
+            intended to connect. That is an interesting discussion, but beyond the scope
+            of this task, so considering the minimal risk. Here's a simple walk-through
+            to deploy the API to the Azure cloud.
+        </p>
+        <p class="ic-flash-info">
+            This section is optional and it assumes that you have an active MS Azure account.
+        </p>
+        <ol>
+            <li>
+                From the <strong>Solution Explorer</strong> right-click the project
+                and select <strong>Publish</strong> from the context menu. You could
+                also select Publish from the <strong>Build</strong> menu.
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/456310/files/46761852/preview" 
+                     alt="Publish menu selection" width="379" height="255" />
+            </li>
+            <li>
+                Choose Azure <em>[Next]</em> from the target dialog and Azure App Service
+                (Windows)<em>[Next]</em>
+            </li>
+            <li>
+                For the <strong>App Service</strong>, <em>Create New</em>.
+                <div class="ic-flash-info"><strong>STOP.</strong> Read this section before
+                continuing.
+                </div>
+                <ol>
+                    There are four inputs here.
+                    <li>
+                        Name. This needs to be unique. By default, it will use the project
+                        name and a verbose date-time stamp. This could be useful, but it's 
+                        not fun to type. I usually override with something simple, like just
+                        project name. In this case I used MyDemoAPI1
+                    </li>
+                    <li>
+                        Subscription. I have a few that I use to track customer billable 
+                        costs and other project reasons. If you have more than one, be sure 
+                        the right one is selected. Most developers may have only one.
+                    </li>
+                    <li>
+                        Resource Group. I always group my projects together in their own
+                        resource groups. For many projects, multiple resources are created
+                        and it is easier to manage them this way. (RG_MyDemoAPI1)
+                    </li>
+                    <li>
+                        Subscription Plan. This one's important. By default, a very capable
+                        configuration will be <em>recommended</em>. For production work, it 
+                        is probably a reasonable choice. Since is this just a development
+                        project and not intended for production, select New and change this
+                        from the default. At the top of the list, you'll see that there is 
+                        a Free tier available. I use this for the majority of my development
+                        projects and have not encountered any limitations for any of those
+                        testing environments.<strong>If you leave this in the default setting
+                        you will incur costs on your Azure subscription.</strong>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                After the app service is created, the next step is to configure the API
+                management section. Use the defaults for your app service and continue. 
+                When it is complete, the Azure service will be created and ready to Deploy
+                but the project has not yet been published.
+            </li>
+            <li>
+                At this point, you can use the <strong>[Publish]</strong> button to send
+                your project to your new cloud service. As you continue to work on your
+                project, make changes and test locally, you'll be able to publish directly
+                to this service. It only needs to be created the first time.
+            </li>
+            <li>
+                <p>
+                    When the API is deployed, Visual Studio may launch your default
+                    browser with a connection to the web service. If the page is blank or 404,
+                    check that the URL points to the correct endpoint.
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            Since there is no required API key or any firewall restrictions, the API data can 
+            be accessed from anywhere on the internet, including mobile devices.
+        </p>
+        <p>
+            <img src="/courses/456310/files/46761728/preview" 
+                 alt="/student endpoint API response" />
+        </p>
+        <p>
+            Even mobile devices.
+        </p>
+        <p>
+            <img src="/courses/456310/files/46761730/preview" 
+                 alt="mobile access" width="230" height="497" />
+        </p>
+        <p>
+            In addition to the Student data, the original WeatherForecast controller and data
+            model are still active on the API.
+        </p>
+        <p>
+            <img src="/courses/456310/files/46761732/preview" 
+                 alt="/weatherforecast endpoint API response" />
+        </p>
+        <p>
+            Since this is deployed and currently accumulating no cost, and since the security 
+            risk is low, it could conceivably be left running indefinitely, but since it is one
+            of many development projects, I will regularly clean up and remove unused cloud
+            services (by resource groups).
+        </p>
+        <p>
+            Usually, the data source for the API would be accessing a live database. There are
+            limited options when developing and testing projects at zero to near-zero cost. 
+            I've used SQLite successfully for proof-of-cost projects. My preference would be
+            to use a cloud-deployed RDBMS, like Azure SQL, but that comes at a cost, so for
+            the proof of concept, I elected to mock-up the data for this example. The nice thing
+            about the design is that the front-end application can be developed using this API,
+            and then if the data source changes, the API can be updated with no change to the 
+            web application.
+        </p>
+    </div> <!-- #hosting -->
+
+    <div id="submission" style="padding:20px;">
+        <h3 class="alert">Submission</h3>
+        
+        <p>Create your data model(s) and an API access to them, you can deploy this to the
+        cloud, or simply run it locally.</p>
+        <ul>
+            <li>
+                Add your class model code to your project repository, and upload a screenshot 
+                (of the code).
+            </li>
+            <li>
+                Create an API (using the platform of your choice) and take a screenshot of 
+                the http response.
+            </li>
+            <li>
+                Add a <strong>Data Access Layer</strong> header to your project README and
+                upload your screenshots there.
+            </li>
+            <li style="font-style:italic;">
+                Optional: add the URL to your API as a comment to the submission page.
+            </li>
+            <li>
+                Submit the URL to your project.
+            </li>
+        </ul>
+
+    </div> <!-- #submission -->
+
+    <p>&nbsp;</p>
+</div> <!-- #api-build -->

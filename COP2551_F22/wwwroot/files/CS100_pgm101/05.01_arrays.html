@@ -1,0 +1,373 @@
+﻿<!-- id: 3525664 -->
+
+
+<div id="arrays" style="background-color: Gainsboro;">
+    <div id="header" style="padding:40px;">
+        <div id="navigation"
+             style="
+                padding: 20px;
+                width: 150px;
+                height: 1950px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                float:right;
+        ">
+            <a href="/courses/3525664" style="color:navy;">
+                <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                     src="/courses/3525664/file_contents/course%20files/images/logic.png"
+                     alt="generic logic flow image" width="200" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;</p>
+        <h2>
+            Fundamental Programming Logic<br />
+            and Design Patterns
+        </h2>
+        <p>&nbsp;</p>
+        <hr />
+    </div> <!-- #header -->
+
+    <div id="context" style="margin-left:20%; margin-right:20%;">
+        <h3 style="font-style:italic;">Context</h3>
+        <ul>
+            <li style="list-style-type:disc;"> <span style="font-style:italic;">Sequential Processing</span> <i class="icon-check"></i></li>
+            <li style="list-style-type:disc;"> <span style="font-style:italic;">Conditional Logic</span> <i class="icon-check"></i></li>
+            <li style="list-style-type:disc;"> <span style="font-style:italic;">Repetition</span> <i class="icon-check"></i></li>
+            <li style="list-style-type:disc;"> <span style="text-decoration:underline;"><strong>Single-dimensional Arrays</strong></span></li>
+            <li style="list-style-type:circle;"> <span style="color: gray;">Multi-dimensional Arrays</span></li>
+            <li style="list-style-type:circle;"> <span style="color: gray;">Methods</span></li>
+            <li style="list-style-type:circle;"> <span style="color:gray;">Objects</span></li>
+            <li style="list-style-type:circle;"> <span style="color:gray;">Class Inheritance</span></li>
+            <li style="list-style-type:circle;"> <span style="color:gray;">Exception Handling</span></li>
+            <li style="list-style-type:circle;"> <span style="color:gray;">Events and GUIs</span></li>
+        </ul>
+    </div>
+
+
+    <div id="content" style="padding:20px;">
+
+        <h3 class="alert alert-info">Arrays</h3>
+
+        <div id="definition" class="ic-flash-info">
+            <p>
+                An <strong>Array</strong> is a variable type for storing,
+                and managing collections of data elements.
+            </p>
+            <hr />
+            <p>
+                The <em>structured</em> set:
+                <ul>
+                    <li>Contains elements of the same type</li>
+                    <li>Are stored in a contiguous memory location</li>
+                </ul>
+            </p>
+            <hr />
+            <ul>
+                <li>
+                    Individual elements can be accessed using an index or <em>key</em> to its
+                    location in memory.
+                </li>
+            </ul>
+        </div>
+        <p>&nbsp;</p>
+        <p style="border-top: 4px solid blue;">&nbsp;</p>
+
+        <div id="review" style="padding:20px;">
+
+            <h3 style="font-style:italic;">First, Let's Review</h3>
+            <div style="padding:30px;">
+                <h4><strong>Variables</strong> and Variable Types</h4>
+                <p>
+                    As you have seen, <strong>Variables</strong> allow programs to store and
+                    manipulate data dynamically.
+                </p>
+                <p>
+                    Using variables, programmers can write code that is more flexible and
+                    adaptable to changing conditions, and they can avoid the need to <em>hard-code</em>
+                    values into their programs.
+                </p>
+                <p class="ic-flash-info">
+                    A <strong>variable</strong> is a named storage location in the computer's
+                    memory where a value can be stored and accessed later. The value of a
+                    variable can be changed (may "vary") throughout the execution of a program.
+                </p>
+                <p>
+                    A variable can be given a name that describes what it represents. This
+                    name is used to refer to the value stored in the variable throughout the
+                    program. When a variable is created, it must be given a data type, which
+                    determines the type of data that can be stored in the variable (e.g.,
+                    integer, string, boolean, etc.).
+                </p>
+                <hr />
+                <p>&nbsp;</p>
+                <p>Variables:</p>
+                <ul>
+                    <li>Have reserved space in memory</li>
+                    <li>Have a data type</li>
+                    <li>May be given a name</li>
+                    <li>May be assigned a value</li>
+                </ul>
+
+                <p>&nbsp;</p>
+                <p style="padding-left: 40px;font-style:italic;">... because it has reserved space in memory</p>
+                <ul>
+                    <li style="list-style-type: none; font-style: italic;">
+                        <ul>
+                            <li>Its location will be known by the <em>system</em></li>
+                            <li>may be accessed quickly</li>
+                            <li>
+                                must not change (if it needs to be changed, a new variable
+                                will be created to replace the old one)
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>&nbsp;</p>
+                <p style="padding-left: 40px;font-style:italic;">... because it has a data type</p>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <ul>
+                            <li>its size must be known</li>
+                            <li>it subscribes to a known set of rules and operations</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>&nbsp;</p>
+                <p style="padding-left: 40px; font-style: italic;">... because it can be given a name</p>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <ul>
+                            <li>its value can be assigned and retrieved programmatically</li>
+                            <li>the name must be unique</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>&nbsp;</p>
+                <p style="padding-left: 40px; font-style: italic;">... because it can be assigned a value</p>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <ul>
+                            <li>its value may be re-assigned</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr />
+                <p>&nbsp;</p>
+                <h4>Declare, Assign and Initialize</h4>
+                <p>
+                    In most programming languages, variables must be declared before they
+                    are accessed.
+                </p>
+                <p>
+                    When a variable is <strong>declared</strong>, its name, type, and storage
+                    location are reserved.
+                </p>
+                <p>
+                    When a variable is <strong>assigned</strong>, a value is written to its
+                    memory location.
+                </p>
+                <p>
+                    <strong>Initialization</strong> combines variable declaration and assignment
+                    into a single operation.
+                </p>
+            </div>
+        </div> <!-- #review -->
+        <p style="border-top: 4px solid blue;">&nbsp;</p>
+
+        <div id="creation" style="padding:30px;">
+            <p>
+                <strong>Arrays</strong> are a fundamental data structure and can be used in
+                many different applications. They are useful for passing datasets between
+                processes and stepping through structured data collections.
+            </p>
+            <hr />
+
+            <h3>Storing Data in an Array</h3>
+            <p class="ic-flash-info">
+                All data elements in an array must be of the same type.
+            </p>
+            <p>
+                Data stored in arrays may be of any type, including numbers, strings, or
+                even complex objects. For example:
+            </p>
+            <ul>
+                <li>Assignment Scores</li>
+                <li>Company Employees</li>
+                <li>Santa's Reindeer</li>
+                <li>Baseball Teams</li>
+            </ul>
+
+            <p>Compare these two images.</p>
+            <div style="display:flex; justify-content:center;">
+                <figure style="text-align:center; display:inline-block">
+                    <img src="https://media.istockphoto.com/id/1047974290/photo/rows-and-stacks-of-cardboard-boxes-sitting-inside-a-warehouse.jpg?s=1024x1024&w=is&k=20&c=WZVTBLRgoFEhQihM4lVDbWLo-bvJkDfKeVWp0KLCCTk="
+                         width="350" alt="array" />
+                    <figcaption>"Array"</figcaption>
+                </figure>
+                <figure style="text-align:center; display:inline-block">
+                    <img src="https://media.istockphoto.com/id/187034478/photo/cardboard-boxes.jpg?s=1024x1024&w=is&k=20&c=hf0gkVET-976UnvyS2H9fblgz1MklGvZIHeLOxYjNIk="
+                         width="350" alt="dis-array" />
+                    <figcaption>"Disarray"</figcaption>
+                </figure>
+            </div>
+            <p>
+                The <em>boxes</em> can be any size and shape, but they must be all the same.
+            </p>
+            &nbsp;&nbsp;
+
+            <p class="ic-flash-info">
+                An <strong>Array's</strong> data is stored in a single <em>contiguous</em>
+                memory location.
+            </p>
+            <p>
+                Memory addresses that can be accessed sequentially without any gaps
+                or interruptions. In other words, the memory locations are physically
+                adjacent to each other are known as <em>contiguous</em>.
+                Accessing data stored in a contiguous memory location is generally
+                faster than locating and accessing data that is scattered throughout
+                memory.
+            </p>
+            <h4>Contiguous, not continuous!</h4>
+            <div style="display:flex; justify-content:center;">
+                <figure style="text-align:center; display:inline-block">
+                    <img src="https://cdn.pixabay.com/photo/2015/03/27/00/09/puzzle-693865_960_720.jpg"
+                         width="350" alt="contguous" />
+                    <figcaption>"contiguous"</figcaption>
+                </figure>
+                <figure style="text-align:center; display:inline-block">
+                    <img src="https://media.istockphoto.com/id/1449630699/photo/movement-in-a-vicious-circle.jpg?s=2048x2048&w=is&k=20&c=KQaXKJvMpeKRdgr_SfgfPwuPMyLO6FZHJRoYsyCyyII="
+                         width="350" alt="continuous" />
+                    <figcaption>not "continuous"</figcaption>
+                </figure>
+            </div>
+            <p>&nbsp;</p>
+            <p class="ic-flash-info">
+                The size of the array (number of items) must be known when it is created.
+            </p>
+            <p>
+                Since the computer knows what size the items are, <strong>and</strong>
+                the computer needs to find a space big enough to store all of the items together,
+                it needs to know how many there are.
+            </p>
+            <p>
+                So, if the size of the array (the collection) needs to change, then a new array
+                needs to be created to replace the old one, and all of the data copied to the new
+                (array) variable.
+            </p>
+            <p>
+                <code>string[] teamNames = new string[68]; // NCAA Basketball Tournament</code>
+            </p>
+            <hr />
+            <h3>Accessing Data in an Array</h3>
+            <p class="ic-flash-info">
+                Access each data value stored in the array with its <em>index</em>
+            </p>
+            <h4>A Different Way of Counting</h4>
+            <p>
+                We are used to counting sets of items starting with 1,2,3 ...
+            </p>
+            <div style="display:flex; justify-content:center;">
+                <figure style="text-align:center; display:inline-block">
+                    <img src="https://images.pexels.com/photos/39290/mother-board-electronics-computer-board-39290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                         width="350" alt="computer chips" />
+                    <figcaption>"Integrated Circuits"</figcaption>
+                </figure>
+            </div>
+            <p>
+                Physical devices such as computer chips (integrated circuits) number
+                pins starting with 1, 2, 3, and so on.
+            </p>
+            <h4 style="font-style:italic;">
+                So why do we start <em>counting</em> from zero (0)?
+            </h4>
+            <p>
+                The short answer is, <em>we don't</em>. We index, or address, using an
+                offset from the starting point.
+            </p>
+            <p>
+                The array variable references the address of the beginning of the
+                <em>contiguous</em> memory block, where the first element is stored.
+                The second item is stored next, exactly one (1) size over. The second
+                is stored beside that at <em>base address</em> plus 2 times the size
+                of the elements.
+            </p>
+            <p>
+                Think of it like birthdays. For the year before your first birthday 
+                you are zero years old. Your eighteenth (18th) birthday marks the 
+                beginning of your nineteenth (19th) year.
+            </p>
+            <p>
+                The index is the number of <em>boxes</em> offset from the start of
+                the memory location. So the first item is at index: 0.
+            </p>
+            <p>
+                <code>FirstItem = items[0];</code>
+            </p>
+            <p>
+                And we can access any, or all of the items by <em>iterating</em>
+                through the set.
+            </p>
+            <p>
+                <pre>
+double[] myArray = { 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 };
+int arrayLength = myArray.Length;
+
+for( int i=0; i&lt;arrayLength; i++) 
+{
+    Console.WriteLine($"item # {i+1} equals {myArray[i]}");
+}
+</pre>
+            </p>
+            <p>
+                <img src="/courses/3525664/file_contents/course%20files/images/array_index.png"
+                     alt="index vs count" width="400" />
+            </p>
+        </div> <!-- #creation -->
+
+    </div> <!-- #content -->
+
+    <p>&nbsp;</p>
+
+    <div id="summary" style="padding:20px;">
+        <p style="border-top: 4px solid blue;">&nbsp;</p>
+
+        <h3 style="font-style:italic;">Review</h3>
+        <div style="padding:30px;">
+            <ul>
+                <li>An array is used to store a collection of elements</li>
+                <li>An array's variable name references its location in memory</li>
+                <li>Elements of an array must be all of the same type (size and shape)</li>
+                <li>The size of an array is determined when the variable is declared</li>
+                <li>Individual elements of an array can accessed by the element's index, counting from zero</li>
+            </ul>
+        </div>
+    </div> <!-- #summary -->
+
+    <div id="questions" style="padding:20px;">
+        <p style="border-top: 4px solid blue;">&nbsp;</p>
+
+        <h3 style="font-style:italic;">Questions</h3>
+        <ol>
+            <li>
+                Why do you need to know how many items will be in the array when it is declared?
+            </li>
+            <li>
+                Why must all of the elements in an array be the same type?
+            </li>
+            <li>
+                Why are array elements indexed from 0 (in most languages)?
+            </li>
+        </ol>
+    </div>
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+</div> <!-- #arrays -->

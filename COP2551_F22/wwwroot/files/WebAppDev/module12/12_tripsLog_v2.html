@@ -1,0 +1,63 @@
+<div id="description">
+    <h3 class="alert alert-info">Description</h3>
+
+    <div id="myapp">
+        <h3>Trips Log Part 2</h3>
+        <h4>EF Core</h4>
+        <p>&nbsp;</p>
+    </div> <!-- #myapp -->
+</div> <!-- #description -->
+
+
+<div id="instructions">
+    <p>
+        Complete Project 12-1 Update the Trips Log app. Once you have completed this project. 
+        zip the&nbsp;<strong>12-1_TripLog </strong>folder with all of the folders and files. 
+        Upload the zipped folder to this dropbox.
+    </p>
+    <p>
+        Update the Trips Log app from project 8-1 so that it uses multiple related entities, 
+        rather than a single Trip entity. Make a copy of your <strong>8-1_TripLog</strong> 
+        files and save the files in a new folder named, <strong>12-1_TripLog</strong>.
+    </p>
+    <p>
+        <img id="43109730" 
+             src="https://courses.sfcollege.edu/courses/452018/files/43109730/preview"
+             alt="The Trips Page" />
+    </p>
+    <p>
+        <img id="43109732" 
+             src="https://courses.sfcollege.edu/courses/452018/files/43109732/preview" 
+             alt="The Add Trip Page" /></p>
+    <p>
+        <img id="43109734" 
+             src="https://courses.sfcollege.edu/courses/452018/files/43109734/preview" 
+             alt="The Activities Page" />
+    </p>
+    <p>
+        <img id="43109736" 
+             src="https://courses.sfcollege.edu/courses/452018/files/43109736/preview" 
+             alt="The Manage Page" />
+    </p>
+    <!--img src="images/project_12_1a_trip_log.JPG" -->
+    <!--img src="images/project_12_1b_trip_log.JPG" -->
+    <!--img src="images/project_12_1c_trip_log.JPG" -->
+    <!--img src="images/project_12_1d_trip_log.JPG" -->
+
+    <p><strong>Project 12-1 Specifications:</strong></p>
+    <ul>
+        <li>There should be a Destination entity that has a one-to-many relationship with the Trip entity. That is, a trip can only have one destination, but a destination can be associated with more than one trip. The foreign key in the Trip entity should be configured so that attempting to delete a destination that&rsquo;s associated with a trip throws an error.</li>
+        <li>There should be an Accommodation entity that has a one-to-many relationship with the Trip entity. That is, a trip can only have one accommodation, but an accommodation can be associated with more than one trip. The foreign key in the Trip entity should be configured so that when you delete an accommodation that&rsquo;s associated with a trip, the app sets the accommodation for that trip to null.</li>
+        <li>There should be an Activity entity that has a many-to-many relationship with the Trip entity. That is, a trip can have more than one activity, and an activity can be associated with more than one trip.</li>
+        <li>Use Entity Framework (EF) Code First and migrations to create a new database named TripLog2 that maps to these entities.</li>
+        <li>Make sure to encapsulate your EF Core code in its own data layer.</li>
+        <li>Update the Trips page so it allows users to delete a trip.</li>
+        <li>Update the New Trip page so it allows users to select the destination and accommodation from drop-downs, rather than entering them in text boxes.</li>
+        <li>Update the Activities page so the user can select one or more activities from a select element that allows multiple selections.</li>
+        <li>Add a Manager page that provides a way for users to add and delete destinations, accommodations, and activities.</li>
+        <li>Provide a way to access the Manager page from the Add Trip page.</li>
+        <li>Zip the folders and files and upload the zipped <strong>12-1_TripLog folder</strong> to the <strong>Module 12 Drop box</strong> in Canvas.</li>
+    </ul>
+    <p>&nbsp;</p>
+</div>
+

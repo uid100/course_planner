@@ -1,0 +1,148 @@
+<!-- COP4813   id: 465444 -->
+
+<div id="overview02">
+
+    <div id="navigation">
+        <a class="btn btn-primary icon-home-light"
+           href="/courses/465444/">
+            Home
+        </a>
+    </div> <!-- navigation -->
+
+    <div id="header">
+        <p>&nbsp;</p>
+
+        <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid red;"
+             alt="textbook cover" width="128" 
+             src="/courses/465444/file_contents/course%20files/course_image/Murach_MVC2.jpg"/>
+        <p style="text-align: center;">
+            <strong>
+                Chapter 2 How to develop a single-page web app
+            </strong>
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #header -->
+
+    <div id="goals">
+        <h2 class="alert alert-info">Module 2</h2>
+        <p>
+            In Module 2, you will learn how to create a new ASP.NET Core MVC web app
+            including all the skills you need to set up the folders and files for a
+            simple MVC app that uses a controller to pass some data to a view that
+            displays the data on a web page.
+        </p>
+        <p>
+            Important concepts for this week
+            <ul>
+                <li>The URL Path maps to the Server, (Port,) Controller (class), and (public) Action (method)</li>
+                <li>The controller naming convention</li>
+                <li>View folder structure, naming matches controller and (usually) the action method</li>
+                <li>Data Model Classes can be passed from the Controller Action to the View</li>
+                <li>What is a <em>strongly typed view</em>?</li>
+            </ul>
+        </p>
+
+        <p>
+            The goals for this week:
+            <ul>
+                <li>start creating applications and using the Visual Studio IDE</li>
+            </ul>
+        </p>
+    </div> <!-- #goals -->
+
+    <div id="ch2">
+        <h3 class="alert alert-info">Practice (you will not hand these in) </h3>
+        <p>
+            Review the Chapter and the study notes and follow Exercise 2-1, p. 80-81, and Exercise 2-2, p. 81.
+            Do not submit these to Canvas, but working through the examples will help with the project, below.
+        </p>
+
+        <h3 class="alert alert-info"> Homework: Project 2 Build the Price Quotation app </h3>
+        <p>
+            For this project, you will build a single-page app like the one that's shown below. Start your project that's based
+            on the MVC template or the empty template.
+        </p>
+        <!-- class="alert alert-info">
+        <img style="display: block; margin-left: auto; margin-right: auto;"
+             src="src="/courses/465444/file_contents/course%20files/course_image/Murach_MVC2.jpg"
+             alt="choose .NET Core 3.1" width="461" height="265" />
+    </!-->
+        <p>
+            You can also use the files from Exercise 2-1 or 2-2 as a starting point.
+            Save the files in a folder named, <strong>2-1_PriceQuotation</strong>. Be sure to add comments to your code.
+        </p>
+
+        <img style="display: block; margin-left: auto; margin-right: auto;"
+             src="/courses/465444/file_contents/course%20files/Modules/02/project_2a.jpg"
+             alt="Project 2 sample screenshot" />
+
+        <strong>Project 2-1 Specifications:</strong>
+        <ul>
+            <li>
+                When the app starts, it should display the Price Quotation page with no subtotal or discount
+                percent, and it should set the discount amount and total to $0.00.
+            </li>
+            <li>
+                If the user enters a valid subtotal and discount percent and clicks the Calculate button, the
+                app should calculate and display the discount amount and total.
+            </li>
+            <li>
+                If the user enters invalid data and clicks the Calculate button, the app should display a summary
+                of validation errors above the form.
+            </li>
+            <li>
+                Here are the requirements for valid data:
+                <ul>
+                    <li>The sales price is required and must be a valid number that’s greater than 0.</li>
+                    <li>The discount percent is required and must be a valid number from 0 to 100.</li>
+                </ul>
+            </li>
+            <li>
+                If the user clicks the Clear link, the app should reset the form to how it was when the
+                app first started.
+            </li>
+            <li>
+                Use the MVC pattern. To do that, create a model class that stores the subtotal and discount
+                percent and calculates the discount amount and total. Make sure to bind that model to the
+                Razor view that displays the Price Quotation page shown above.
+            </li>
+            <li>
+                Use a Razor layout to store the html, head, and body elements.
+            </li>
+            <li>
+                Use a custom CSS style sheet to style the HTML elements so they appear as shown above.
+            </li>
+            <li>
+                Zip the folders and files and upload the zipped <strong>2-1_PriceQuotation</strong> folder
+                to the Project Drop box in Canvas. Please use one of the zip programs like the Windows
+                compressed zip program, WinZip, or 7-Zip that uses the .ZIP file extension. Please do not
+                zip your files using the .RAR file extension.
+            </li>
+        </ul>
+
+        <p>
+            The due date is listed on the Canvas Calendar.
+        </p>
+    </div> <!-- #ch2 -->
+
+    <div id="todo-list">
+        <h3 class="alert alert-info"> TODO:</h3>
+        <ol style="margin-left:10%;">
+            <li><strong>Read</strong> Chapter 2</li>
+            <li><strong>Review</strong> Chapter notes and PowerPoint slides</li>
+            <li><strong>Practice</strong> Write the code for Ex.2-1 and Ex.2-2 from the textbook</li>
+            <li><strong>Build, Run and Test!</strong> Exercise 2-1</li>
+        </ol>
+        <p>&nbsp;</p>
+        <p>
+            <em>... and don't forget to:</em>
+        </p>
+        <ul>
+            <li>Check for any new announcements in Canvas</li>
+            <li>Check the calendar for upcoming events and due dates</li>
+            <li>Sign in to Discord if you haven't already and say hello to others in the class</li>
+        </ul>
+        <p>&nbsp;</p>
+    </div> <!-- #todo-list -->
+
+</div> <!-- #overview02 -->

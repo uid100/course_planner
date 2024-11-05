@@ -1,0 +1,173 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- Cloud-based database functions -->
+
+<div id="scaling" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="introduction" style="padding:20px;">
+        <div id="overview">
+            <h2 class="alert alert-info">Scalability</h2>
+
+            <p>
+                A recurring theme in the discussion of cloud resources has been
+                efficiency and cost of ownership vs operation. From the start,
+                we considered the capital expense of purchasing, installing,
+                configuring, and maintaining internet-accessible computing resource
+                compared with the more practical approach of <em>piggy-backing</em>
+                on existing resoures for the relatively shorter duration of use.
+            </p>
+            <p>
+                Faced with the task to procure and deploy server resources,
+                consideration must be given to peak demand, rather than average
+                demand. Although most of the time, capital equipment may sit idle
+                it needs to be adequate to meet the demand when it arises.
+            </p>
+            <p>
+                By using cloud resources, much of that <em>idle-time</em> cost
+                can be mitigated by scaling the resources to meet demand.
+            </p>
+
+        </div> <!-- #introduction -->
+
+        <div id="scalability">
+            <h2 class="alert alert-info">Resource Scaling</h2>
+            <p>
+                <img style="float: right;" 
+                     src="/courses/455772/files/46597794/preview" 
+                     alt="audio specialist at mixing board" 
+                     width="210" height="240" />
+            </p>
+            <p>
+                Cloud scalability refers to the ability of a cloud computing system
+                to easily and efficiently handle an increasing amount of workload
+                and users. It allows businesses and organizations to seamlessly
+                expand or shrink their computing resources according to the changing
+                demands of their users and applications, without having to invest
+                in costly hardware upgrades or additional infrastructure.
+            </p>
+            <p>
+                It is achieved by leveraging the cloud's ability to
+                distribute computing resources dynamically across multiple servers
+                and data centers, and by employing automated management and monitoring
+                tools that can quickly allocate or de-allocate resources based on
+                demand. This allows businesses to scale up or down their computing
+                resources as needed, without experiencing any disruption in service
+                or performance.
+            </p>
+            <p>
+                Many cloud applications are very much <em>peak-driven</em>. That is, 
+                there may be peak usage times which dominate the demand rather than
+                a steady, predictable usage state.
+            </p>
+            <p>
+                A ticket sales application for instance will likely experience a 
+                much higher demand the day that tickets for a popular act are released
+                or announced. Online tax preparation software will have a higher user
+                load near a tax deadline than the rest of the month or year.
+            </p>
+            <p>
+                When it comes to cloud scaling, there are two main approaches that can 
+                be taken: horizontal scaling and vertical scaling.
+            </p>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                    src="/courses/455772/files/46598102/preview" 
+                    alt="scaling up/down or in/out" 
+                    width="709" height="307" />
+            </p>
+            <p>
+                <strong>Horizontal scaling</strong>, also known as scaling out, involves adding more 
+                computing resources, such as servers, to a system in order to increase 
+                its capacity. This approach allows for increased scalability and can be 
+                achieved by adding more instances or nodes to a distributed system. 
+                Horizontal scaling is commonly used to handle large volumes of traffic 
+                or to improve fault tolerance by spreading the workload across multiple 
+                machines.
+            </p>
+            <p>
+                <strong>Vertical scaling</strong>, also known as scaling up, involves increasing the 
+                capacity of individual computing resources, such as servers, by adding 
+                more processing power, memory, or storage capacity. This approach can 
+                be achieved by upgrading or replacing existing hardware components or 
+                by adding more resources to virtual machines. Vertical scaling is often 
+                used when a system requires more processing power or memory than what 
+                is available on the current hardware.
+            </p>
+            <div class="ic-flash-info">
+                <p style="font-weight:bold">Horizontal</p>
+                <p>
+                    <em>Scale in or out</em> if your solution is optimized to share the
+                    demand across more computers.
+                </p>
+                <p style="font-weight:bold">Vertical</p>
+                <p>
+                    <em>Scale up or down</em> if you need faster, or more powerful 
+                    computer resources.
+                </p>
+            </div>
+            <p>
+                Horizontal scaling involves adding more computing resources to a system, 
+                while vertical scaling involves increasing the capacity of existing 
+                resources. Both approaches have their own advantages and disadvantages, 
+                and the choice between them depends on the specific needs of the system 
+                and its workload.
+            </p>
+        </div> <!-- #scalability -->
+
+        <div id="elasticity">
+            <h2 class="alert alert-info">Elasticity</h2>
+            <p>
+                Cloud scalability and elasticity are related concepts but have some
+                important differences.
+            </p>
+            <p class="ic-flash-info">
+                Scalability and Elasticity are not the same thing.
+            </p>
+            <p>
+                Scalability is often achieved by distributing computing resources across 
+                multiple servers and data centers and using automated management and 
+                monitoring tools to quickly allocate or de-allocate resources based on 
+                demand.
+            </p>
+            <p>
+                <strong>Cloud elasticity</strong>, on the other hand, is the ability of a cloud computing 
+                system to <em>dynamically</em> adjust computing resources in response to changes 
+                in demand. Elasticity focuses on the ability of a system to quickly and 
+                automatically scale resources up or down as needed to maintain optimal 
+                performance and cost efficiency.
+            </p>
+            <p>
+                The key difference between cloud scalability and elasticity is that 
+                scalability is about the ability to grow the computing resources to 
+                accommodate demand, while elasticity is about the ability to adjust 
+                the computing resources in response to demand. This is accomplished by 
+                setting thresholds for resource usage and automatically adjusting 
+                resource allocation in response to those thresholds.
+            </p>
+            <p>
+                Scalability is about the ability to handle growth, while elasticity 
+                is about the ability to adjust computing resources <em>dynamically</em>
+                to optimize performance and cost efficiency.
+            </p>
+            <p class="alert alert-info" style=" text-align: center;">
+                Find out more!<br />
+                <a href="https://www.vmware.com/topics/glossary/content/cloud-scalability.html"
+                   style="color:navy;">
+                    vmware.com:  Cloud Scalability and Elasticity
+                </a>
+            </p>
+        </div> <!-- #elasticity -->
+
+        <div id="footer" style="padding: 20px;">
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+        </div> <!-- #footer -->
+
+    </div> <!-- #assignment -->
+</div> <!-- #serverless-functions -->

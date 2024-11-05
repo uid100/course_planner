@@ -1,0 +1,93 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="queues">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="discussion">
+        <h2 class="alert alert-info">Queues</h2>
+            <p>
+                A queue is another linear data structure in C++ that follows the First-In-First-Out (FIFO) 
+                principle. It can be thought of as a collection of elements with two primary operations: 
+                enqueue and dequeue.
+            <p>
+                Elements are added to the back of the queue using the enqueue operation, and they are removed 
+                from the front of the queue using the dequeue operation.
+            </p>
+
+            <h3 class="alert alert-info">Common Uses of Queues in C++</h3>
+
+            <ul>
+                <li><strong>Task Scheduling:</strong> Queues are often used in task scheduling algorithms. 
+                In real-time systems, processes or tasks are added to a queue based on their priority or 
+                arrival time. The task with the highest priority or the first to arrive is dequeued and 
+                executed next.</li>
+
+                <li><strong>Breadth-First Search (BFS):</strong> In graph algorithms, BFS uses a queue to 
+                explore and traverse all nodes at the current level before moving to the next level. This 
+                is useful for finding shortest paths in unweighted graphs and solving various graph-related 
+                problems.</li>
+
+                <li><strong>Print Queue:</strong> In printer management systems, print jobs are often stored 
+                in a queue. The jobs are processed in the order they are received, ensuring fairness in 
+                printing and preventing resource contention.</li>
+
+                <li><strong>Task Management in Multithreading:</strong> Queues are valuable for managing 
+                tasks in a multithreaded environment. Worker threads can dequeue tasks from a queue and 
+                execute them concurrently, ensuring proper synchronization and load balancing.</li>
+
+                <li><strong>Buffering and Data Streaming:</strong> Queues can be used to buffer data in 
+                streaming applications. Data producers enqueue data, and consumers dequeue and process it. 
+                This ensures a smooth and controlled flow of data.</li>
+            </ul>
+
+            <h3>Using Queues in C++</h3>
+
+            <p>
+                In C++, queues can be implemented using various data structures, such as arrays, linked 
+                lists, or the standard library's <code>std::queue</code> container. Here's a basic example
+                using <code>std::queue</code>:
+            </p>
+
+<pre>
+<code>
+        #include &lt;iostream&gt;
+        #include &lt;queue&gt;
+
+        int main() {
+            std::queue&lt;int&gt; myQueue;
+    
+            // Enqueue elements
+            myQueue.push(10);
+            myQueue.push(20);
+            myQueue.push(30);
+    
+            // Dequeue elements
+            while (!myQueue.empty()) {
+                std::cout &lt;&lt; myQueue.front() &lt;&lt; " "; // Print front element
+                myQueue.pop(); // Remove front element
+            }
+    
+            return 0;
+        }
+</code>
+</pre>
+
+    </div> <!-- #discussion -->
+    <p>&nbsp;</p>
+    <a href="#queues" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #queues -->

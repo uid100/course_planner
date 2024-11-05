@@ -1,0 +1,117 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+
+<div id="hashing">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="discussion">
+
+        <h2 class="alert alert-info" style="margin-top:25px;margin-bottom:25px;">Using Hashes in C++:</h2>
+
+        <div class="ic-flash-info">
+            Hashing is used for efficiently storing and retrieving data.
+        </div>
+
+        <div id="indent" style="padding:20px;">
+            <p>
+                Hashing is used for efficiently storing and retrieving data. It involves mapping data of
+                arbitrary size to a fixed-size value, usually a hash code or hash value. Hash functions
+                play a crucial role in various applications, such as indexing data structures like hash
+                tables, ensuring data integrity in cryptographic algorithms, and optimizing search operations.
+            </p>
+
+            <p>
+                In C++, the Standard Template Library (STL) provides a hash framework that includes hash
+                functions for basic data types like integers, strings, and user-defined types. The
+                <code>&lt;functional&gt;</code> header in C++ contains classes and functions related to
+                hashing.
+            </p>
+
+            <h3>Basics of Hashing in C++:</h3>
+
+            <h4>Hash Functions:</h4>
+
+            <p>
+                A hash function takes an input (or a key) and produces a fixed-size hash code. The goal is to
+                distribute the hash codes uniformly to minimize collisions (i.e., when two different inputs
+                produce the same hash code). C++ provides predefined hash functions for primitive data types,
+                but you can also define custom hash functions for user-defined types.
+            </p>
+
+<pre><code>
+    #include &lt;functional&gt;
+
+    // Using predefined hash functions
+    std::hash&lt;int&gt; hashFunction; 
+    int hashCode = hashFunction(42);
+
+    // Defining a custom hash function for a user-defined type
+    struct MyType {
+        int data1;
+        char data2;
+    };
+
+    struct MyTypeHash {
+        std::size_t operator()(const MyType&amp; obj) const {
+            // Implement a custom hash function logic here
+            // ...
+        }
+    };
+
+    std::hash&lt;MyType&gt; myTypeHashFunction;
+</code></pre>
+
+            <h4>Hash Containers:</h4>
+
+            <p>
+                C++ provides hash-based containers in the form of <code>std::unordered_set</code> and <code>std::unordered_map</code>. These containers use hash functions to organize and access their elements efficiently.
+            </p>
+
+<pre><code>
+    #include &lt;unordered_set&gt;
+    #include &lt;unordered_map&gt;
+    #include &lt;iostream&gt;
+
+    int main() {
+        std::unordered_set&lt;int&gt; intSet = {1, 2, 3, 4, 5};
+        std::unordered_map&lt;int, std::string&gt; intToStr = {{1, "One"}, {2, "Two"}, {3, "Three"}};
+
+        // Accessing elements in hash containers
+        if (intSet.find(3) != intSet.end()) {
+            std::cout &lt;&lt; "Found 3 in the set." &lt;&lt; std::endl;
+        }
+
+        // Accessing elements in hash maps
+        if (intToStr.find(2) != intToStr.end()) {
+            std::cout &lt;&lt; "Found key 2 with value: " &lt;&lt; intToStr[2] &lt;&lt; std::endl;
+        }
+
+        return 0;
+    }
+</code></pre>
+
+            <p>
+                Understanding hashes and hash functions is important for designing efficient algorithms and data 
+                structures. There are many applications for hashes in optimizing performance and ensuring data integrity.
+            </p>
+        </div>
+    </div>  <!-- #discussion -->
+
+    <p>&nbsp;</p>
+    <a href="#algorithm-design" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #algorithm-design -->

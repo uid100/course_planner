@@ -1,0 +1,1268 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- module 4 - Azure Web App PaaS (AZ_204_1) -->
+
+<div id="cloud-web-app" style="background:lightblue;">
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>click the image to return to the homepage</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="header" style="padding: 20px;">
+        <h2 class="alert alert-info">Build a web application using Azure web service PaaS</h2>
+        <h3>Overview</h3>
+        <p>
+            In this setup and configure data in a cloud storage account,
+            deploy and test an API to access that data, and deploy a web
+            application which accesses data delivered by the API.
+        </p>
+        <h3>Background</h3>
+        <p>
+            Microsoft provides many online learning resources for their popular
+            certifications. You can see the list
+            <a href="https://learn.microsoft.com/en-us/certifications/"
+               style="color:navy;">here.  (learn.microsoft.com/en-us/certifications)</a>
+        </p>
+        <p>
+            The lab chosen for this module demonstrates typical service elements
+            of an n-Tiered PaaS web application. There is separation between the
+            data, the data access layer, the business logic, and the presentation
+            layer. All of the code and the instructions are provided.
+        </p>
+        <p>
+            The provided instructions are adapted from Microsoft's AZ-204
+            certificate training material.
+        </p>
+        <p>
+            As you click through each of the tabs below, follow the steps and
+            collect the required images. Read the instructions carefully. Ask
+            questions along the way.
+        </p>
+        <p>
+            In the final step of the exercise, you will delete the cloud resources
+            you have deployed. It is recommended that you complete this lab in
+            one session. Leaving the resources created will incur costs until
+            they are removed. The exercise is designed to mnimize the expenses.
+            All of the labs can be completed well within the trial user account
+            allowance.
+        </p>
+    </div> <!-- #header -->
+
+    <div id="architecture" style="padding:20px;">
+        <h2 class="alert alert-info">Architecture Diagram</h2>
+        <p>Here is a picture of the system architecture that you will deploy.</p>
+        <img src="https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/raw/master/Instructions/Labs/media/Lab01-Diagram.png"
+             alt="System Architecture Diagram" />
+    </div> <!-- #architecture -->
+
+    <div id="summary" style="padding:20px;">
+        <p>Here is a list of the steps you will complete for this exercise.</p>
+        <ol>
+            <li>
+                Build a back-end API by using Azure Storage and the Web Apps feature of Azure App Service
+                <ol>
+                    <li>Open Azure portal</li>
+                    <li>Create Storage account</li>
+                    <li>Upload sample blob</li>
+                    <li>Create a web app</li>
+                    <li>Configure the web app</li>
+                    <li>Deploy an ASP.NET web application to Web Apps</li>
+                </ol>
+            </li>
+            <li>
+                Build a front-end web application by using Azure Web Apps
+                <ol>
+                    <li>Create a web app</li>
+                    <li>Configure a web app</li>
+                    <li>Deploy an ASP.NET web application to Web Apps</li>
+                </ol>
+            </li>
+            <li>
+                Clean up subscription
+                <ol>
+                    <li>Azure Cloud Shell</li>
+                    <li>Delete resource group(s)</li>
+                    <li>Close active applications</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>Objectives</p>
+        <ul>
+            <li>Create various apps by using App Service</li>
+            <li>Configure application settings for an app</li>
+            <li>
+                Deploy apps by using Kudu, the Azure Command-Line
+                Interface (CLI), and zip file deployment
+            </li>
+        </ul>
+
+    </div> <!-- #summary -->
+
+    <div id="video" style="padding:30px;">
+        <p style="font-style:italic;">
+            You can view this optional video by right-clicking this
+            <a href="https://youtu.be/UAnHqJSkmSY" style="color:navy;">link</a>
+            (https://youtu.be/UAnHqJSkmSY) and select 'Open link in a new tab / new window'.
+        </p>
+    </div>
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <a id="anchor1">
+            <p style="font-style:italic;">Click through each of the following tabs.</p>
+        </a>
+        <ul>
+            <li><a href="#prep" style="color:navy;">Getting Ready</a></li>
+            <li><a href="#ex1" style="color:navy;">Ex.1 backend API</a></li>
+            <li><a href="#ex2" style="color:navy;">Ex.2 front-end web app</a></li>
+            <li><a href="#ex3" style="color:navy;">Finish</a></li>
+        </ul>
+        <div id="prep" style="padding:20px;">
+            <h2 class="alert alert-info">Before you get started</h2>
+            <p>
+                This exercise was adapted from the Microsoft learning materials
+                hosted on GitHub for the AZ-204 certificate prep. These instructions
+                were originally written with a dependency on a Microsoft VM-hosted
+                learning environment. Instead, you will be creating the web service
+                directly from your computing environment and using your cloud
+                service account.
+            </p>
+            <p class="ic-flash-info">
+                Cloud updates occur frequently, so you might encounter UI changes
+                before this training content updates. If this occurs, adapt to the
+                changes, and then work through them in the labs as needed.
+            </p>
+
+            <h3>Required Files</h3>
+            <p>
+                Check the list of what you will need to get started
+            </p>
+
+            <ul>
+                <li>
+                    Download and unzip the lab files:
+                    <a class="instructure_file_link inline_disabled"
+                       title="AzWebApp.zip" style="color:navy;"
+                       href="/courses/455772/files/46302462?wrap=1"
+                       target="_blank" rel="noopener noreferrer"
+                       data-canvas-previewable="false">
+                        AzWebApp.zip
+                    </a>
+                </li>
+                <li>Log in to the Azure Portal</li>
+                <li>Microsoft Visual Studio or Visual Studio Code*</li>
+            </ul>
+            <p>
+                No programming will be required for this exercise. The solution source
+                code for this lab is provided.
+            </p>
+            <p>
+                You can use either Visual Studio (Community Edition is fine), or Visual
+                Studio Code. If either is already installed, you can skip this step.
+            </p>
+            <p>
+                Visual Studio Code is a free open source IDE. You can download it
+                <a href="https://code.visualstudio.com/download" style="color:navy;">here.</a>
+            </p>
+            <p>
+                These instructions were written for use with Windows, using another
+                platform should work with minor adjustments. Let me know if you have
+                questions or problems with any of the steps.
+            </p>
+            <a href="#anchor1" style="color:navy;">
+                <p style="text-align:center;font-style:italic;">
+                    Go to the next tab to continue.
+                </p>
+            </a>
+        </div> <!-- #prep -->
+
+        <div id="ex1" style="padding:20px;">
+            <h2 class="alert alert-info">Exercise 1</h2>
+            <h3>Backend API</h3>
+            <p>Build a backend API by using the Azure Storage and the Web Apps feature of Azure App Service</p>
+
+            <div id="ex1-task1">
+                <h4>
+                    Task 1: Open the Azure portal &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task1detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex1task1detail" style="list-style: none; display:none;">
+                    <ol>
+                        <li>
+                            Browse* to the Azure portal (https://portal.azure.com), and sign in with your account.
+                        </li>
+                    </ol>
+                    <p>(optional) Microsoft's instructions specify using the Microsoft Edge browser.</p>
+                    <p>&nbsp;</p>
+                </div> <!-- #ex1task1detail -->
+            </div> <!-- #ex1-task1 -->
+
+            <div id="ex1-task2">
+                <h4>
+                    Task 2: Create a Storage account &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task2detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+
+                </h4>
+                <div id="ex1task2detail" style="list-style: none; display:none;">
+
+                    <ol>
+                        <li>
+                            In the Azure portal, use the <b>
+                                Search resources, services,
+                                and docs
+                            </b> text box to search for <b>Storage Accounts</b>,
+                            and then in the list of results, select <b>Storage Accounts</b>.
+                        </li>
+                        <li>
+                            On the <b>Storage accounts</b> blade, select <b>+ Create</b>.
+                        </li>
+                        <li>
+                            On the <b>Create a storage account</b> blade, on the <b>Basics</b>
+                            tab, perform the following actions, and then select <b>Review</b>
+                            <table class="table table-striped">
+                                <caption>Storage Account Settings</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Subscription</b> drop-down list</td>
+                                        <td>Retain the default value</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Resource group</b> section</td>
+                                        <td>
+                                            Select <b>Create new</b>, enter <b>ManagedPlatform</b>,
+                                            and then select <b>OK</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Storage account name</b> text box</td>
+                                        <td>Enter <b>imgstor</b>_[yourname]_</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Region</b> drop-down list</td>
+                                        <td>Select <b>(US) East US</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Performance</b> section</td>
+                                        <td>Select the <b>Standard</b> option</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Redundancy</b> drop-down list</td>
+                                        <td>Select <b>Locally-redundant storage (LRS)</b></td>
+                                    </tr>
+                                </tbody>
+                            </table><br />
+                            <div id="fig1" style="margin:20px;">
+                                <p style="text-align:center;">Storage Account settings screenshot</p>
+                                <img src="/courses/455772/files/46302676/preview"
+                                     alt="Storage Account Settings" />
+                            </div> <!-- #fig1 -->
+                        </li>
+                        <li>
+                            On the <b>Review</b> tab, review the options that you
+                            selected during the previous steps.
+                        </li>
+                        <li>
+                            Select <b>Create</b> to create the storage account by
+                            using your specified configuration.<br />
+                            <em>Note: Wait for the create task to complete.</em>
+                        </li>
+                        <li>
+                            On the <b>Overview blade,</b> select the <b>Go to resource</b>
+                            button to navigate to the blade of the newly created storage
+                            account.
+                        </li>
+                        <li>
+                            On the <b>Storage account</b> blade, in the <b>Security + networking</b>
+                            section, select <b>Access keys</b>.
+                        </li>
+                        <li>
+                            On the <b>Access keys</b> blade, select <b>Show keys</b>.
+                        </li>
+                        <li>
+                            Review any one of the keys, and then copy the value of either
+                            of the <b>Connection string</b> boxes to the clipboard.<br />
+                            <em>
+                                **Note**: It doesn't matter which connection string you
+                                choose. They are interchangeable.
+                            </em>
+                        </li>
+                        <li>
+                            Paste the copied connection string value to a text editor.
+                            You'll need this later. <em>Microsoft recommends Notepad.</em>
+                        </li>
+                    </ol>
+                </div> <!-- #ex1task2detail -->
+            </div> <!-- #ex1-task2 -->
+
+            <div id="ex1-task3">
+                <h4>
+                    Task 3: Upload a sample blob &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task3detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+
+                </h4>
+                <div id="ex1task3detail" style="list-style: none; display:none;">
+
+                    <p>
+                        Now that you have configured a <b>Storage Account</b> service, you can
+                        attach a container and upload a <em>binary large object (blob),</em>
+                        in this case, image files.
+                    </p>
+                    <ol>
+                        <li>
+                            On the <b>Storage Account</b> blade, in the <b>Data storage</b>
+                            section, select the <b>Containers</b> link.
+                        </li>
+                        <li>
+                            On the <b>Containers</b> blade, select <b>+ Container</b>.
+                        </li>
+                        <li>
+                            In the <b>New container</b> window, perform the following actions:
+                            <table class="table table-striped">
+                                <caption>Create New Container</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Name</b> text box</td>
+                                        <td>Enter <b>images</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Public access level</b> list
+                                        <td>
+                                            Select <b>Blob (anonymous read access for blobs only)</b>,
+                                            and then select <b>Create</b>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>On the <b>Containers</b> blade, select the newly created <b>images</b> container.
+                        <li>On the <b>images</b> blade, select <b>Upload</b>.
+                        <li>
+                            In the <b>Upload blob</b> window, perform the following actions:
+                            <table class="table table-striped">
+                                <caption>upload</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Files</b> section</td>
+                                        <td>Select the <b>Folder</b> icon</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>File Explorer</b> window</td>
+                                        <td>
+                                            unzip the downloaded file and select <b>Images\\grilledcheese.jpg</b>,
+                                            and then select <b>Open</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Overwrite if files already exist</b> check box</td>
+                                        <td>Ensure that the check box is selected, and then select <b>Upload</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="font-style:italic">Note: Wait for the blob to upload before you continue.</p>
+                        </li>
+                    </ol>
+                </div> <!-- #ex1task3detail -->
+            </div> <!-- #ex1-task3 -->
+
+            <div id="ex1-task4">
+                <h4>
+                    Task 4: Create a web app &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task4detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+
+                </h4>
+                <div id="ex1task4detail" style="list-style: none; display:none;">
+
+                    <ol>
+                        <li>On the Azure portal's navigation pane, select <b>Create a resource</b>.</li>
+                        <li>
+                            On the <b>Create a resource</b> blade, in the <b>Search services and marketplace</b>
+                            text box, enter <b>Web App</b>, and then select Enter.
+                        </li>
+                        <li>On the <b>Marketplace</b> search results blade, select the <b>Web App</b> result.</li>
+                        <li>On the <b>Web App</b> blade, select <b>Create</b>.</li>
+                        <li>
+                            On the <b>Create Web App</b> blade, on the <b>Basics</b> tab, perform the following
+                            actions, and then select the <b>Monitoring</b> tab:
+                            <table class="table table-striped">
+                                <caption>Create Web App settings</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Subscription</b> drop-down list</td>
+                                        <td>Retain the default value</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Resource group</b> section</td>
+                                        <td>Select <b>ManagedPlatform</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Name</b> text box</td>
+                                        <td>Enter <b>imgapi</b>_[yourname]_</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Publish</b> section</td>
+                                        <td>Select <b>Code</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Runtime stack</b> drop-down list</td>
+                                        <td>Select <b>.NET 6 (LTS)</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Operating System</b> section</td>
+                                        <td>Select <b>Windows</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Region</b> drop-down list</td>
+                                        <td>Select the <b>East US</b> region</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Windows Plan (East US)</b> section</td>
+                                        <td>Select <b>Create new</b>, enter the value <b>ManagedPlan</b> in the <b>Name</b> text box, and then select <b>OK</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>SKU and size</b> section</td>
+                                        <td>Retain the default value</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Create Web App settings</p>
+                            <p>Note: try the selection menu drop-down in the Pricing Plan.</p>
+                            <img style="margin-left:auto;margin-right:auto;"
+                                 src="/courses/455772/files/46302944/preview"
+                                 alt="Web App Pricing Plans" width="400" />
+                            <p>
+                                The default setting for the App will work fine. There is a <b>Free (F1)</b>
+                                setting. Here it indicates 60 CPU Minutes/day. For development and testing
+                                that is usually plenty. You can always scale it up later.
+                            </p>
+                            <p class="ic-flash-info">Always check the defaults.</p>
+                            <p>Also, changing the region will usually have a big impact on estimated cost.</p>
+                            <img style="margin-left:auto;margin-right:auto;"
+                                 src="/courses/455772/files/46302946/preview"
+                                 alt="web app settings" width="400" />
+                        </li>
+                        <li>
+                            On the <b>Monitoring</b> tab, in the <b>Enable Application Insights</b> section,
+                            select <b>No</b>, and then select <b>Review + create</b>.
+                        </li>
+                        <li>
+                            On the <b>Review + create</b> tab, review the options that you selected during
+                            the previous steps.
+                        </li>
+                        <li>
+                            Select <b>Create</b> to create the web app by using your specified configuration.<br />
+                            <span style="font-style:italic;">
+                                Note: Wait for the web app to be created before you
+                                continue with this lab.
+                            </span>
+                        </li>
+                        <li>
+                            On the <b>Overview</b> blade, select the <b>Go to resource</b> button to navigate to
+                            the blade of the newly created web app.
+                        </li>
+                    </ol>
+                </div> <!-- #ex1task4detail -->
+            </div> <!-- #ex1-task4 -->
+
+            <div id="ex1-task5">
+                <h4>
+                    Task 5: Configure the web app &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task5detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+
+                </h4>
+                <div id="ex1task5detail" style="list-style: none; display:none;">
+
+                    <ol>
+                        <li>
+                            On the <b>App Service</b> blade, in the <b>Settings</b> section,
+                            select the <b>Configuration</b> link.
+                        <li>
+                            In the <b>Configuration</b> section, perform the following actions,
+                            select <b>Save</b>, and then select <b>Continue</b>.
+                            <table class="table table-striped">
+                                <caption>web app settings</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Application settings</b> tab</td>
+                                        <td>Select <b>New application setting</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Add/Edit application setting</b> pop-up dialog</td>
+                                        <td>In the <b>Name</b> text box, enter <b>StorageConnectionString</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Value</b> text box</td>
+                                        <td>Paste the storage connection string that you previously copied to Notepad</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Deployment slot setting</b> text box</td>
+                                        <td>
+                                            Keep the default value, and then select <b>OK</b> to close the pop-up
+                                            dialog and return to the <b>Configuration</b> section
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span style="font-style:italic;">
+                                Be sure to <b>Save</b> your
+                                changes and wait for your application settings to save before
+                                you continue.
+                            </span>
+                        </li>
+                        <li>
+                            On the <b>App Service</b> blade in the <b>Settings</b> section,
+                            select the <b>Properties</b> link.
+                        </li>
+                        <li>
+                            In the <b>Properties</b> section, copy the value of the <b>URL</b>
+                            hyperlink, and then paste it to Notepad. You'll use this value
+                            later in the lab.<br />
+                            <span style="font-style:italic">
+                                <b>Note</b>: At this point, the
+                                web server at this URL will return a placeholder webpage. You
+                                haven't deployed any code to the Web App yet. You'll deploy code
+                                to the Web App later in this lab.
+                            </span>
+                        </li>
+                    </ol>
+                </div> <!-- #ex1task5detail -->
+            </div> <!-- #ex1-task5 -->
+
+            <div id="ex1-task6">
+                <h4>
+                    Task 6: Deploy an ASP.NET web application to Web Apps &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex1task6detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+
+                </h4>
+                <div id="ex1task6detail" style="list-style: none; display:none;">
+
+                    <ol>
+                        <li>Start Visual Studio (or Visual Studio Code)
+                        <li>On the <b>File</b> menu, select <b>Open Folder</b>
+                        <li>
+                            In the <b>File Explorer</b> window, browse to the <b>API</b>
+                            folder from the downloaded (unzipped) zipfile, and then select
+                            <b>Select Folder</b><br />
+                            <i>
+                                <b>Note</b>: Ignore any prompts to add required assets to build
+                                and debug and to run the restore command to address unresolved
+                                dependencies.
+                            </i>
+                        </li>
+                        <li>
+                            On the <b>Explorer</b> pane of the <b> Visual Studio Code</b> window, expand
+                            the <b>Controllers</b> folder, and then select the <b>ImagesController.cs</b>
+                            file to open the file in the editor.
+                        </li>
+                        <li>
+                            In the editor, in the <b>ImagesController</b> class on line 26, observe the
+                            <b>GetCloudBlobContainer</b> method and the code used to retrieve a container.
+                        </li>
+                        <li>
+                            In the <b>ImagesController</b> class on line 36, observe the <b>Get</b> method
+                            and the code used to retrieve all blobs asynchronously from the <b>images</b>
+                            container.
+                        </li>
+                        <li>
+                            In the <b>ImagesController</b> class on line 55, observe the <b>Post</b> method
+                            and the code used to persist an uploaded image to  Storage.
+                        </li>
+                        <li>
+                            Sign in to the Azure Command-Line Interface (CLI) by entering<br />
+                            <pre>az login</pre><br />
+                            at the Windows command line.<br />
+                            If you get response that the cmd is not recognized, you need to install the
+                            Azure CLI. Get more information at https://learn.microsoft.com/en-us/cli/azure/install-azure-cli.
+                            <br />Downloading and running the installer does not take long.<br />
+                            When you login, the command will launch a browser to finish the sign in,
+                            when it is successful, you can close the browser.
+                        </li>
+                        <li>
+                            Return to the currently open Windows terminal <b>Command Prompt</b> (or Powershell)
+                            window. Wait for the sign-in process to finish.
+                        </li>
+                        <li>
+                            At the command prompt, enter the following command, and then select Enter to
+                            list all the apps in your **ManagedPlatform** resource group:<br />
+                            <pre>az webapp list --resource-group ManagedPlatform</pre>
+                            <p class="ic-flash-info">
+                                <b>Error:</b> If you the command returns: Resource group 'ManagedPlatform'
+                                could not be found<br />
+                                Check that the resource group name matches of if you have multiple subscriptions,
+                                change the current subscription to the correct one.<br />
+                                azure config set --subscription &lt;SubscriptionName&gt;
+                            </p>
+                            for more see https://learn.microsoft.com/en-us/cli/azure/account?view=azure-cli-latest
+                        </li>
+                        <li>
+                            Enter the following command, and then select Enter to find the apps that have
+                            the <b>imgapi\\*</b> prefix:<br />
+                            <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"</pre>
+                        </li>
+                        <li>
+                            Enter the following command, and then select Enter to render only the name of
+                            the single app that has the <b>imgapi\*</b> prefix:<br />
+                            <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv</pre>
+                        </li>
+                        <li>
+                            Change the current directory to the location of the <b>API</b> folder that
+                            contains the lab files
+                        </li>
+                        <li>
+                            To deploy the <b>api.zip</b> file to the new web app that you created, Enter:<br />
+                            <pre>az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name &lt;name-of-your-api-app&gt;</pre><br />
+                            <i>
+                                <b>Note</b>: Replace the &lt;name-of-your-api-app\&gt; placeholder with the name of the
+                                web app that you created previously in this lab. You queried this app’s name in the previous steps.<br />
+                                Wait for the deployment to complete before you continue with this lab.
+                            </i>
+                        </li>
+                        <li>
+                            On the Azure portal's <b>navigation</b> pane, select the <b>Resource groups</b> link.
+                        </li>
+                        <li>
+                            On the <b>Resource groups</b> blade, select the <b>ManagedPlatform</b> resource
+                            group that you created previously in this lab.
+                        </li>
+                        <li>
+                            On the <b>ManagedPlatform</b> blade, select the <b>imgapi</b><i>[yourname]</i> web
+                            app that you created previously in this lab.
+                        </li>
+                        <li>
+                            From the <b>App Service</b> blade, select <b>Browse</b><br />
+                            <i>
+                                <b>Note</b>: The <b>Browse</b> command will perform a GET request to the root
+                                of the website, which returns a JavaScript Object Notation (JSON) array. This array
+                                should contain the URL for your single uploaded image in your Storage account.
+                            </i>
+                        </li>
+                    </ol>
+                </div> <!-- #ex1task6detail -->
+            </div> <!-- #ex1-task6 -->
+
+            <h3 class="alert alert-info">Review</h3>
+            In this exercise, you:
+            <ul>
+                <li>created a storage account with a container and seeded it with data.</li>
+                <li>
+                    created web app in Azure, and then deployed your ASP.NET web application
+                    to Web Apps by using the Azure CLI and Apache Kudu zip file deployment utility.
+                </li>
+                <li>tested and demonstrated the functionality of the new custom API</li>
+            </ul>
+            <p>&nbsp;</p>
+            <div class="ic-flash-info" style="background-color:yellow;">
+                <p>
+                    From the command line, run the command <code>curl &lt;url&gt;</code>
+                    where <em>&lt;url&gt;</em> is the full url to your API(https://...)
+                </p>
+                <p>
+                    Take a screenshot of the output AND the URL from your browser window.
+                    Save this for later.
+                </p>
+            </div>
+
+            <p>
+                The example is the output from Windows Powershell. The detail and format
+                will look different on your configuration.
+            </p>
+            <p>
+                All of these steps have been tested on Windows 11 and MacOS.
+            </p>
+            <p><img 
+                    style="margin-left:auto; margin-right:auto;"
+                    src="/courses/455772/files/46306478/preview" 
+                    alt="API return" width="400" /></p>
+
+            <a href="#anchor1" style="color:navy;">
+                <p style="text-align:center;font-style:italic;">
+                    Go to the next tab to continue.
+                </p>
+            </a>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px;">
+            <h2 class="alert alert-info">Exercise 2 </h2>
+            <h3>Build a front-end web application by using Azure Web Apps</h3>
+
+            <div id="ex2-task1">
+                <h4>
+                    Task 1: Create a web app &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex2task1detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex2task1detail" style="list-style: none; display:none;">
+                    <ol>
+                        <li>
+                            <p>
+                                On the Azure portal's <strong>navigation</strong>
+                                pane, select <strong>Create a resource</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Create a resource</strong> blade, in the
+                                <strong>Search services and marketplace</strong> text box,
+                                enter <strong>Web App</strong>, and then select Enter.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Marketplace</strong> search results blade,
+                                select <strong>Web App</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Web App</strong> blade, select
+                                <strong>Create</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Create Web App</strong> blade, on the
+                                <strong>Basics</strong> tab, perform the following actions,
+                                and then select the <strong>Monitoring</strong> tab:
+                            </p>
+                            <table class="table table-striped">
+                                <caption>web app settings</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Subscription</strong>drop-down list</td>
+                                        <td>Retain the default value</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Resource group</strong>section</td>
+                                        <td>Select<strong> ManagedPlatform</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Name</strong>&nbsp;text box</td>
+                                        <td>Enter <strong>imgweb</strong><em>[yourname]</em></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Publish</strong> section</td>
+                                        <td>Select <strong>Code</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Runtime stack</strong> drop-down list</td>
+                                        <td>Select <strong>.NET 6 (LTS)</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Operating System</strong> section</td>
+                                        <td>Select <strong>Windows</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Region</strong> drop-down list</td>
+                                        <td>Select the <strong>East US</strong> region</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Windows Plan (East US)</strong> section</td>
+                                        <td>Select <strong>ManagedPlan (S1)</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                The following screenshot displays the configured settings
+                                on the <strong>Create web app</strong> blade.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    <span class="color-fg-accent">Note</span>:
+                                    As discussed, you can select different service plans and
+                                    regions to change the operating cost. The FREE tier (F1)
+                                    is more than adequate for most development applications.
+                                </p>
+                            </blockquote>
+
+                            <img src="https://github.com/MicrosoftLearning/AZ-204-DevelopingSolutionsforMicrosoftAzure/raw/master/Instructions/Labs/media/l01_create_a_front_end_web_app.png"
+                                 alt="Create web app blade" />
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Monitoring</strong> tab, in the
+                                <strong>Enable Application Insights</strong> section,
+                                select <strong>No</strong>, and then select
+                                <strong>Review + create</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                From the <strong>Review + create</strong> tab,
+                                review the options that you selected during the previous
+                                steps.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Select <strong>Create</strong> to create the web
+                                app by using your specified configuration.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    <span class="color-fg-accent">Note</span>:
+                                    Wait for the creation task to complete before you
+                                    continue with this lab.
+                                </p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Overview</strong> blade, select the
+                                <strong>Go to resource</strong> button to navigate to
+                                the blade of the newly created web app.
+                            </p>
+                        </li>
+                    </ol>
+                </div> <!-- #ex2task1detail -->
+            </div> <!-- #ex2-task1 -->
+            <div id="ex2-task2">
+                <h4>
+                    Task 2: Configure a web app &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex2task2detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex2task2detail" style="list-style: none; display:none;">
+
+                    <ol>
+                        <li>
+                            <p>
+                                On the <strong>App Service</strong> blade, in the
+                                <strong>Settings</strong> section, select the
+                                <strong>Configuration</strong> link.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In the <strong>Configuration</strong> section,
+                                perform the following actions, select <strong>Save</strong>,
+                                and then select <strong>Continue</strong>:
+                            </p>
+                            <table class="table table-striped">
+                                <caption>App Setting configuration</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Setting</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Application settings</strong> tab</td>
+                                        <td>Select <strong>New application setting</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Add/Edit application setting</strong> pop-up dialog</td>
+                                        <td>In the <strong>Name</strong> text box, enter <strong>ApiUrl</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Value</strong> text box</td>
+                                        <td>Enter the web app URL that you copied previously in this lab. <strong>Note</strong>: Make sure you include the protocol <strong>https://</strong>, in the URL that you copy into the <strong>Value</strong> text box for this application setting</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Deployment slot setting</strong> text box</td>
+                                        <td>Retain the default value, and then select <strong>OK</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <blockquote>
+                                <p>
+                                    <span class="color-fg-accent">Note</span>: Wait for
+                                    the application settings to save before you continue
+                                    with this lab.
+                                </p>
+                            </blockquote>
+                        </li>
+                    </ol>
+                </div> <!-- #ex2task2detail -->
+            </div> <!-- #ex2task2 -->
+            <div id="ex2-task3">
+                <h4>
+                    Task 3: Deploy web app &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex2task3detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex2task3detail" style="list-style: none; display:none;">
+                    <h4>Task 3: Deploy an <code>ASP.NET</code> web application to Web Apps</h4>
+                    <ol>
+                        <li>
+                            <p>
+                                Open <strong>Visual Studio Code</strong> and <strong>Open Folder</strong>
+                                from the <strong>File</strong> menu
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Go to the <b>Web</b> folder from the project data and
+                                <strong>Select Folder</strong>.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    <span class="color-fg-accent">Note</span>: Ignore any
+                                    prompts to add required assets to build and debug and to
+                                    run the restore command to address unresolved dependencies.
+                                </p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Explorer</strong> pane of the
+                                <strong>Visual Studio Code</strong> window, expand the
+                                <strong>Pages</strong> folder, and then select the
+                                <strong>Index.cshtml.cs</strong> file to open the file in the editor.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In the editor, in the <strong>IndexModel</strong> class on
+                                line 30, observe the <strong>OnGetAsync</strong> method and the
+                                code used to retrieve the list of images from the API.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In the <strong>IndexModel</strong> class on line 41, observe the
+                                <strong>OnPostAsync</strong> method and the code used to stream an
+                                uploaded image to the backend API.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                login from a command prompt.
+                            </p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az login
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Enter your account credentials in the browser and select
+                                <strong>Sign in</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Return to the <strong>Command Prompt</strong>
+                                window. Wait for the sign-in process to finish.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Enter the following command, and then select Enter to list all the apps
+                                in your <strong>ManagedPlatform</strong> resource group:
+                            </p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az webapp list --resource-group ManagedPlatform
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Enter the following command, and then select Enter to find the apps that
+                                have the <strong>imgweb*</strong> prefix:
+                            </p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')]"
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Enter the following command, and then select Enter to render only the
+                                name of the single app that has the <strong>imgweb*</strong> prefix:
+                            </p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')].{Name:name}" --output tsv
+</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <p>
+                                Set the current directory to the <strong>Web/</strong> folder from the downloaded
+                                (and unzipped) data file. Enter the following command, and then select Enter to deploy
+                                the <strong>web.zip</strong> file to the new Azure web app
+                            </p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az webapp deployment source config-zip --resource-group ManagedPlatform --src web.zip --name &lt;name-of-your-web-app&gt;
+</code></pre>
+                            </div>
+                            <blockquote>
+                                <p><span class="color-fg-accent">Note</span>: Replace the <em>&lt;name-of-your-web-app&gt;</em> placeholder with the name of the web app that you created previously in this lab. You recently queried this app&rsquo;s name in the previous steps.</p>
+                            </blockquote>
+                            <p>Wait for the deployment to complete before you continue with this lab.</p>
+                        </li>
+                        <li>
+                            <p>
+                                On the Azure portal's <strong>navigation</strong> pane,
+                                select <strong>Resource groups</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>Resource groups</strong> blade, select
+                                the <strong>ManagedPlatform</strong> resource group that
+                                you created previously in this lab.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                On the <strong>ManagedPlatform</strong> blade, select
+                                the <strong>imgweb</strong><em>[yourname]</em> web app that
+                                you created previously in this lab.
+                            </p>
+                        </li>
+                        <li>
+                            <p>On the <strong>App Service</strong> blade, select <strong>Browse</strong>.</p>
+                        </li>
+                        <li>
+                            <p>
+                                Observe the list of images in the gallery. The gallery should
+                                list a single image that was uploaded to Storage previously in
+                                the lab.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In the <strong>Contoso Photo Gallery</strong> webpage, in the
+                                <strong>Upload a new image</strong> section, perform the following
+                                actions:
+                            </p>
+                            <p>a. Select <strong>Browse</strong>.</p>
+                            <p>
+                                b. In the <strong>File Explorer</strong> window, browse
+                                to <strong>Allfiles (F):\Allfiles\Labs\01\Starter\Images</strong>,
+                                select the <strong>bahnmi.jpg</strong> file, and then select
+                                <strong>Open</strong>.
+                            </p>
+                            <p>c. Select <strong>Upload</strong>.</p>
+                        </li>
+                        <li>
+                            <p>
+                                Observe that the list of gallery images has updated with your
+                                new image.
+                            </p>
+                            <blockquote>
+                                <p><span class="color-fg-accent">Note</span>: In some rare cases, you might need to refresh your browser window to retrieve the new image.</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <p>Repeat and upload each of the files from the Images folder</p>
+                        </li>
+                    </ol>
+                </div> <!-- #ex2task3detail -->
+            </div> <!-- #ex2task3 -->
+            <h4>Review</h4>
+            <p>
+                In this exercise, you created an Azure web app and deployed an existing
+                web application&rsquo;s code to the resource in the cloud.
+            </p>
+
+            <p class="ic-flash-info" style="background-color:yellow; padding:20px;">
+                Take a screenshot of the webapp output AND the URL from your
+                browser window showing all of the uploaded files. Save this for later.
+            </p>
+
+            <a href="#anchor1" style="color:navy;">
+                <p style="text-align:center;font-style:italic;">
+                    Go to the next tab to continue.
+                </p>
+            </a>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px;">
+            <h2 class="alert alert-info">Almost Finished. Don't skip this step</h2>
+            <h3>Record Results and Remove Resources</h3>
+
+            <p>
+                Read through this section and make sure that you have saved all
+                of the required screenshots before you delete the resources. When
+                you are finished, clean up the resources running on your subscription.
+            </p>
+
+            <div id="ex3task1">
+                <h4>
+                    Task 1: Record results and upload to Canvas &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex3task1detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex3task1detail" style="list-style: none; display:none;">
+                    <ol>
+                        <li>
+                            <p>
+                                Navigage to the Azure portal and open your Storage Account >
+                                Containers and the <code>images</code> container.
+                            </p>
+                            <p class="ic-flash-info">
+                                Take a (third) screenshot of this page. 
+                            </p>
+                            <p>
+                                What do you notice about the resource Names?
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Paste your 3 required screenshots into a new Microsoft 
+                                Word document.
+                            </p>
+                            <p>
+                                (optional) Add any observations or comments to the document,
+                                save and submit.
+                            </p>
+                        </li>
+                    </ol>
+                </div> <!-- #ex3task1detail -->
+            </div> <!-- #ex3task1 -->
+
+            <div id="ex3task2">
+                <h4>
+                    Task 2: Clean up your Azure subscription &nbsp;&nbsp;
+                    <span class="element_toggler btn" role="button" aria-controls="ex3task2detail"
+                          aria-label="Toggler toggle list visibility" aria-expanded="false">
+                        show/hide detail
+                    </span>
+                </h4>
+                <div id="ex3task2detail" style="list-style: none; display:none;">
+                    <p>
+                        Open the Resource Groups and open the <code>ManagedPlatform</code> 
+                        blade in the Azure portal.
+                    </p>
+                    <p>
+                        It is recommended to group related resources within Resource 
+                        Groups, often by projects. In this Group, there is an App Service
+                        plan, a Storage account, and two App Services. One of these
+                        is an API, the other is a web app.
+                    </p>
+                    <p>
+                        From the Cost Management > Cost Analysis blade, you can see
+                        your forecast expenses of using these. Since the storage
+                        is not high performance, or large content, the cost is below 
+                        any visible threshold. Likewise, I deployed both web apps on 
+                        the Free Tier, so my usage and forecast cost for this Resource 
+                        Group is currently sitting at $0. 
+                    </p>
+                    <p>
+                        It's always important to track and manage your billable activity.
+                    </p>
+                    <p>
+                        In this case, the next step is to simply delete the resources.
+                    </p>
+                    <h4>Open Azure Cloud Shell</h4>
+                    <ol>
+                        <li>
+                            <p>In the Azure portal, select the <strong>Cloud Shell</strong>
+                            icon to open a new Bash session. If Cloud Shell defaults to a 
+                            PowerShell session, select <strong>PowerShell</strong>, and in 
+                            the drop-down menu, select <strong>Bash</strong>.</p>
+                            <blockquote>
+                                <p><span class="color-fg-accent">Note</span>: If this is the 
+                                first time you're starting <strong>Cloud Shell</strong>, when 
+                                prompted to select either <strong>Bash</strong> or 
+                                <strong>PowerShell</strong>, select <strong>PowerShell</strong>.
+                                When you're presented with the <strong>You have no storage 
+                                    mounted</strong> message, select the subscription you're 
+                                using in this lab, and then select <strong>Create storage</strong>.
+                                </p>
+                            </blockquote>
+                        </li>
+                    </ol>
+                    <h4>Delete resource groups</h4>
+                    <ol>
+                        <li>
+                            <p>On the <strong>Cloud Shell</strong> pane, run the following command to 
+                            delete the <strong>ManagedPlatform</strong> resource group:</p>
+                            <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
+                                <pre class="notranslate"><code>az group delete --name ManagedPlatform --no-wait --yes
+</code></pre>
+                            </div>
+                            <blockquote>
+                                <p><span class="color-fg-accent">Note</span>: The command executes 
+                                asynchronously (as determined by the <em>--no-wait</em> parameter). 
+                                While you'll be able to run another Azure CLI command immediately 
+                                after the command executes, within the same Bash session, it'll take 
+                                a few minutes before the resource groups are actually removed.</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <p>Close the <strong>Cloud Shell</strong> pane in the portal.</p>
+                        </li>
+                    </ol>
+                    <h4>Close the active applications</h4>
+                    <ul>
+                        <li>Close the currently running Microsoft Edge application.</li>
+                    </ul>
+                    <h4>Review</h4>
+                    <p>
+                        In this exercise, you cleaned up your subscription by removing the resource
+                        groups used in this lab.</p>
+                    <p>
+                        It is worth noting that the resource group and all its associated resources
+                        could also be deleted directly from the resource group blade in the portal.
+                    </p>
+                </div>
+            </div> <!-- #ex3task1detail -->
+        </div> <!-- #ex3task2 -->
+    </div> <!-- tabs -->
+</div> <!-- #cloud-web-app -->

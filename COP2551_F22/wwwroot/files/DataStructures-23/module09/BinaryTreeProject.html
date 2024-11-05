@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Binary Tree Project Description</title>
+</head>
+<body>
+    <table width="100%" cellspacing="2" cellpadding="2" border="0">
+        <tbody>
+            <tr>
+                <td valign="top" bgcolor="#ccffff">
+                    <font color="#333399">
+                        <b>
+                            <big>
+                                <big>
+                                    <font face="Calibri">Binary Tree Project</font>
+                                </big>
+                            </big>
+                        </b>
+                    </font><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <font face="Calibri">
+        Using good OOP, w<font face="Courier New,
+        Courier, monospace">
+            <font face="Calibri">
+                rite a C++ program for
+                implementing a simple binary search tree capable of
+                storing&nbsp; and retrieving student information.&nbsp; <br>
+                <br>
+                The class should have private member variables (each separated
+                by a tab):<br>
+                <br>
+            </font>
+        </font>
+    </font>
+    <ul>
+        <li>
+            <font face="Calibri">
+                student's id number - an integer<br>
+            </font>
+        </li>
+        <li><font face="Calibri">student's name - a string</font></li>
+        <li>
+            <font face="Calibri">
+                student's declared major <br>
+            </font>
+        </li>
+    </ul>
+    <font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri">
+                <br>
+                <br>
+                The class should have private member functions as a minimum:<br>
+                <br>
+            </font>
+        </font>
+    </font>
+    <ul>
+        <li>
+            <font face="Calibri">
+                openFile - opens the input file<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                testFile - tests the input file has been
+                opened properly<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                readFile - reads in one student's information<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                closeFile - close the input file<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                insert - inserts the students information
+                into the proper place in the tree structure<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                search - search for the student id
+                entered by the user<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                inorder - traverses the tree structure<br>
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                prompt - prompts the user for a student
+                id number<br>
+            </font>
+        </li>
+        <li><font face="Calibri">validate - validate the user input value</font></li>
+        <li>
+            <font face="Calibri">
+                display - display the contents of the
+                binary tree
+            </font>
+        </li>
+        <li>
+            <font face="Calibri">
+                results - student id found or not found
+                result<br>
+            </font>
+        </li>
+    </ul>
+    <p>
+        <br>
+        <font face="Calibri">
+            The class should have public member
+            functions:<br>
+        </font><br>
+    </p>
+    <ul>
+        <li><font face="Calibri">class constructor (if needed)</font></li>
+        <li>
+            <font face="Calibri">driver - order of execution</font><br>
+        </li>
+    </ul>
+    <p>
+        <br>
+    </p>
+    <table width="532" height="96" cellspacing="2" cellpadding="2"
+           border="1">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <font face="Calibri">
+                        <font face="Courier New,
+                Courier, monospace">
+                            <font face="Calibri">
+                                The input file
+                                layout:<br>
+                                <br>
+                                student id number&nbsp; &lt;tab&gt;&nbsp;&nbsp;
+                                student name&nbsp;&nbsp; &lt;tab&gt;&nbsp; student
+                                declared major<br>
+                            </font>
+                        </font>
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <br>
+    </p>
+    <font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri"> </font>
+        </font>
+    </font><font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri">
+                <br>
+                Read the input file <font face="Courier New, Courier,
+            monospace">students.txt</font> from the current directory
+                until eof storing the student information in ascending order
+                by student id number.<br>
+                <br>
+                When the end of file is reached, traverse the binary tree
+                displaying its contents.&nbsp; The output list should be in
+                ascending order by student id number.<br>
+                <br>
+                Prompt the user for a student id number.&nbsp;&nbsp; Validate
+                this value.<br>
+                <br>
+            </font>
+        </font>
+    </font><br>
+    <font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri">
+                <font face="Calibri">
+                    <font face="Courier New,
+              Courier, monospace">
+                        <font face="Calibri">
+                            If the value is
+                            found in the tree structure, let the user know and
+                            display the student's information.&nbsp; If the value is
+                            not found in the tree structure, let the user know this
+                            as well.<br>
+                            Continue to prompt for student id numbers until the user
+                            wishes to stop.<br>
+                            <br>
+                            An example:<br>
+                            <br>
+                        </font>
+                    </font>
+                </font>
+            </font>
+        </font>
+    </font>
+    <table width="659" height="32" cellspacing="2" cellpadding="2"
+           border="1">
+        <tbody>
+            <tr>
+                <td valign="top" bgcolor="#000000">
+                    <font face="Calibri">
+                        <b>
+                            <font color="#ffffff">
+                                Populating Binary Tree Structure<br>
+                                <br>
+                                Reading contents....<br>
+                                <br>
+                                Student ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student
+                                Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Student Major<br>
+                            </font>
+                        </b>
+                    </font><b>
+                        <font color="#ffffff">
+                            <font face="Calibri">
+                                <span style="left: 108px; top:
+                    161.528px; font-size: 15.75px; transform:
+                    scaleX(1.01085);" class="textLayer--absolute">
+                                    22222222
+                                    &nbsp; &nbsp; &nbsp; &nbsp; Dalton
+                                    Diggs&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Organizational
+                                    Management<br>
+                                </span><span style="left: 108px; top: 125.843px;
+                    font-size: 15.75px; transform: scaleX(1.01365);"
+                                             class="textLayer--absolute">
+                                    33333333 &nbsp; &nbsp;
+                                    &nbsp; &nbsp; Ben Brothers&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp; &nbsp; &nbsp;&nbsp; Graphic Design<br>
+                                </span><span style="left: 108px; top: 108.001px;
+                    font-size: 15.75px; transform: scaleX(0.995833);"
+                                             class="textLayer--absolute">
+                                    55555555 &nbsp; &nbsp;
+                                    &nbsp; &nbsp; Abby
+                                    Archer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+                                    &nbsp;&nbsp; Mathematics<br>
+                                </span><span style="left: 108px; top: 179.371px;
+                    font-size: 15.75px; transform: scaleX(1.00994);"
+                                             class="textLayer--absolute">
+                                    88888888 &nbsp; &nbsp;
+                                    &nbsp; &nbsp; Evan Egglish&nbsp;&nbsp;&nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; Information Systems
+                                    Technology<br>
+                                </span>
+                            </font><span style="left: 108px; top:
+                  143.686px; font-size: 15.75px; font-family: monospace;
+                  transform: scaleX(1.01223);"
+                                         class="textLayer--absolute">
+                                <font face="Calibri">
+                                    99999999
+                                    &nbsp; &nbsp; &nbsp; &nbsp; Charles Cool &nbsp;
+                                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Biological
+                                    Sciences<br>
+                                    <br>
+                                    End of tree<br>
+                                    <br>
+                                    <br>
+                                    Enter a student id (press Q to quit): -33<br>
+                                    <br>
+                                    Invalid input, try again:&nbsp; twelve<br>
+                                    Invalid input, try again:&nbsp; 11111111<br>
+                                    <br>
+                                    Student 11111111 not found.<br>
+                                    <br>
+                                    <br>
+                                    Enter a student id (press Q to quit): 22222222<br>
+                                    <br>
+                                    Student id:&nbsp;&nbsp;&nbsp; 22222222<br>
+                                    Student name:&nbsp; Dalton Diggs<br>
+                                    Student major: Organizational Management<br>
+                                    <br>
+                                    <br>
+                                    Enter a student id (press Q to quit):&nbsp; Q<br>
+                                    <br>
+                                    End of program.
+                                </font><br>
+                            </span><span style="left: 108px; top: 179.371px;
+                  font-size: 15.75px; font-family: monospace; transform:
+                  scaleX(1.00994);" class="textLayer--absolute"></span><span style="left: 108px; top: 108.001px; font-size:
+                  15.75px; font-family: monospace; transform:
+                  scaleX(0.995833);" class="textLayer--absolute"></span><span style="left: 108px; top: 125.843px; font-size:
+                  15.75px; font-family: monospace; transform:
+                  scaleX(1.01365);" class="textLayer--absolute"></span><span style="left: 108px; top: 161.528px; font-size:
+                  15.75px; font-family: monospace; transform:
+                  scaleX(1.01085);" class="textLayer--absolute"></span>
+                        </font>
+                    </b>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri">
+                <font face="Calibri">
+                    <font face="Courier New,
+              Courier, monospace">
+                        <font face="Calibri">
+                            <br>
+                            <br>
+                            <br>
+                        </font>
+                    </font>
+                </font><br>
+            </font>
+        </font>
+    </font><br>
+    <font face="Calibri">
+        <font face="Courier New, Courier, monospace">
+            <font face="Calibri">
+                <font face="Calibri">
+                    <font face="Courier New,
+              Courier, monospace">
+                        <font face="Calibri">
+                            <font face="Calibri">
+                                <font face="Courier New, Courier,
+                    monospace">
+                                    <font face="Calibri">
+                                        <font face="Calibri">
+                                            <font face="Courier New, Courier, monospace">
+                                                <font face="Calibri">
+                                                    <font face="Calibri">
+                                                        <font face="Courier New, Courier, monospace">
+                                                            <font face="Calibri">
+                                                                <font face="Courier
+                                    New, Courier, monospace">
+                                                                    <font face="Calibri">
+                                                                        <font color="#ff0000"><b>NOTE</b></font>:&nbsp;
+                                                                        Any submission that uses global
+                                                                        variables or does not use a class
+                                                                        and object appropriately will
+                                                                        result in a project grade of 0.
+                                                                    </font>
+                                                                </font>
+                                                            </font>
+                                                        </font>
+                                                    </font>
+                                                </font>
+                                            </font>
+                                        </font>
+                                    </font>
+                                </font>
+                            </font>
+                        </font>
+                    </font>
+                </font>
+            </font>
+        </font>
+    </font><font face="Courier New, Courier,
+      monospace">
+        <br>
+    </font><br>
+    <big>
+        <span style="color: rgb(204, 0, 0); font-family: Calibri;
+        font-weight: bold; text-decoration: underline;">To Do:</span>
+    </big><br>
+    <br style="font-family: Calibri;">
+    <span style="font-family: Calibri;">1.&nbsp; Upload your </span><font face="Calibri">
+        <span style="font-style: italic;">cpp file</span>.<br>
+    </font>
+    <p>
+        <font face="Calibri">
+            2.&nbsp; Check the <strong>Calendar</strong>
+            for the due date.<br>
+        </font>
+    </p>
+    <font face="Calibri">
+        3.&nbsp; Check the rubrics to see how your
+        project will be graded.
+    </font><br>
+</body>
+</html>

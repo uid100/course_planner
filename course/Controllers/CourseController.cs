@@ -18,6 +18,19 @@ namespace course.Controllers
             return View(_courses.Courses.Where(c=>c.College == college.Name));
         }
 
+        public IActionResult All()
+        {
+            DateTime dateTime = DateTime.Now;
+            IEnumerable<Course> courses = _courses.Courses.Where(d=>d.TermEnd > dateTime);
+            return View("CourseList", courses);
+        }
+        public IActionResult Current()
+        {
+            IEnumerable<Course> courses = _courses.Courses;
+            //_courses.Courses.ToList().AsEnumerable()
+            return View("CourseList", courses);
+        }
+
         public IActionResult CourseDetail(Course? course)
         {
             string jsonString = "";
@@ -34,16 +47,28 @@ namespace course.Controllers
 
             // TODO: fix lots of null reference warnings
             JToken? c = jsonObject["colleges"][course.College]["courses"][course.Name] ?? null;
-            if( c!= null) 
+            if (c != null)
             {
                 course.CatalogID = (string)c["catalog ID"];
                 course.CanvasID = (int)c["canvas course ID"];
+                course.ImageURL = (string)c["cover image"];
+                course.CanvasURL = (string)c["canvas URL"];
+                course.BackgroundColor = (string)c["background"];
+                course.ShadowColor = (string)c["shadow"];
                 course.Name = course.Name;
                 course.LongName = (string)c["long name"];
                 course.Term = (string)c["term"];
                 course.TermStart = DateTime.Parse(s: (string)c["start"]);
                 course.TermEnd = DateTime.Parse(s: (string)c["end"]);
                 course.Status = (string)c["status"];
+
+                course.descr = new List<string>();
+                try
+                {
+                    foreach (var d in c["description"])
+                        course.descr.Add(d.ToString());
+                }
+                catch (Exception ex) { }
 
                 int count = 0;
 

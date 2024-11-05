@@ -1,0 +1,122 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="stacks">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="discussion">
+        <h2 class="alert alert-info">Stacks</h2>
+        <p>
+            In C++, a stack is a linear data structure that follows the Last-In-First-Out (LIFO)
+            principle. This means that the most recently added item is the first one to be removed.
+            It can be thought of as a collection of elements with two main operations: push and pop.
+            Elements are added to the top of the stack using the push operation, and they are removed
+            from the top of the stack using the pop operation.
+        </p>
+
+        <h3>Operations and Characteristics</h3>
+        <h4>Push</h4>
+        <p>
+            The <b>push</b> operation is used to add an element to the top of the stack. It increases
+            the stack's size by one. In C++, you can use the <code>push()</code> member function of the
+            <code>std::stack</code> container, which is part of the C++ Standard Library.
+        </p>
+        <p>
+<pre>
+        #include <stack>
+            std::stack<int>
+                myStack;
+                myStack.push(10);
+                myStack.push(20);
+</pre>
+        </p>
+
+        <h4>Pop</h4>
+        <p>
+            The pop operation removes the element from the top of the stack. It decreases the stack's
+            size by one. You can use the `pop()` member function to accomplish this.
+        </p>
+        <p>
+<pre>
+        myStack.pop(); // Removes the top element (20)
+</pre>
+        </p>
+
+        <h4>Top</h4>
+        <p>
+            You can retrieve the element at the top of the stack without removing it using the
+            <code>top()</code> member function.
+        </p>
+        <p>
+<pre>
+        int topElement = myStack.top(); // Retrieves the top element (10)
+</pre>
+        </p>
+
+        <h4>Size</h4>
+        <p>
+            You can determine the number of elements in the stack using the
+            <code>size()</code> member function.
+        </p>
+        <p>
+<pre>
+        int stackSize = myStack.size(); // Returns the size of the stack (1 in this case)
+</pre>
+        </p>
+
+        <h4>Empty</h4>
+        <p>
+            You can check if the stack is empty using the <code>empty()</code> member function.
+        </p>
+        <p>
+<pre>
+        bool isEmpty = myStack.empty(); // Returns false if the stack is not empty
+</pre>
+        </p>
+
+        <h4>Implementation</h4>
+        <p>
+            Stacks can be implemented using arrays or linked lists, but C++ provides a
+            convenient stack container, <code>std::stack</code>, that is based on a deque
+            (double-ended queue) by default.
+        </p>
+
+        <h4>Custom Data Types</h4>
+        <p>
+            Stacks can hold elements of custom data types, not just integers. You can create a
+            stack of any user-defined class or struct.
+        </p>
+        <p>
+<pre>
+        #include <stack>
+        #include <string>
+
+        std::stack<std::string> stringStack;
+        stringStack.push("Hello");
+        stringStack.push("World");
+</pre>
+        </p>
+
+        <h3 class="alert alert-info">Uses</h3>
+        <p>
+            The last-in-first-out data structure is useful in situations, when a solution might
+            need to keep track of an order of operations that could be undone in the reverse order.
+        </p>
+    </div> <!-- #discussion -->
+    <p>&nbsp;</p>
+    <a href="#stacks" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #stacks -->

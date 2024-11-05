@@ -1,0 +1,604 @@
+﻿<!-- OOP1 -->
+<!-- course id:  7099152 -->
+
+
+<div id="lab1" style="background-color:lightblue;">
+    <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+        <div id="course-image" style="padding:30px; float:right;">
+
+            <a href="/courses/7099152/" style="text-align:center; color:navy;">
+                <figure style="text-align:center;">
+                    <img style="display:block; margin-left:auto; margin-right:auto;"
+                         src="/courses/7099152/file_contents/course%20files/course_image/cover_image.jpg"
+                         alt="main course image" width="150" height="100" />
+                    <figcaption>home</figcaption>
+                </figure>
+            </a>
+            <p>&nbsp;</p>
+        </div><!-- #course-image -->
+    </div><!-- #page-header -->
+
+    <p>&nbsp;</p>
+
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert alert-info">Getting Started</h2>
+        <p>
+            At a very simple starting point, virtually every computer program:
+            <ul>
+                <li>accepts input</li>
+                <li>processes data</li>
+                <li>generates output</li>
+            </ul>
+        </p>
+        <p class="ic-flash-info" style="text-align:center;">
+            input &gt; process &gt; output
+        </p>
+        <p>
+            <strong>Input</strong> can be reading a file, enabling keyboard entry
+            or mouse clicks, waiting for a timer to expire, or a pedestrian to press
+            the button to request a WALK signal.
+        </p>
+        <p>
+            <strong>Processing</strong> may be simple such adding numbers on a
+            calculator Application or complex such as calculating the required
+            trajectory to launch a satellite into geo-stationary orbit.
+        </p>
+        <p>
+            Program <strong>output</strong> may include displaying the contents of
+            a data file on a computer monitor or transmitting a message to an email
+            server or sending a control signal to trigger a measured current to a
+            medical defibrallator.
+        </p>
+        <p>
+            Not all programs will be sequential, or simple step-by-step,
+            start-to-finish instruction sets, there may be logic loops and
+            conditional decision points, but consider that all systems can be
+            described, at least as a starting point in these simple terms and
+            logic algorithms, or instructions, will make sense.
+        </p>
+        <p>&nbsp;</p>
+
+        <h3 class="alert alert-info">Hello World</h3>
+        <p>
+            There is a simple program that is familiar to all developers. Almost
+            every programming language book, tutorial, or course starts with a
+            simple <code>helloworld</code> program to bridge the human-machine
+            interface. By writing simple programming instructions, we ask the
+            computer to do something.
+        </p>
+        <p>
+            Computer instructions are written as <em>source code</em> using a
+            programming language. The choice of programming language may vary
+            based on capabilities, system requirements, interoperability, or
+            even programmer or engineer preference. Sometimes the decision is
+            based only on which language the developer has the most familiarity
+            and the most knowledge and comfort.
+        </p>
+        <p>
+            All of the most popular programming languages in use are either
+            compiled or interpreted. Programs, or computer instruction sets are
+            written using a friendlier, human readable language which is usually
+            similar or familiar to the programmers native spoken language and
+            saved as text files. Text files do not store information about font
+            sizes and styles, just simple letters and numbers and common
+            punctuation which can be written and read from simple editors on
+            just about any computing system. Some languages require that these
+            saved text files, called source code, be run through another program,
+            called a compiler to output another file which contains instructions
+            which are easier, and faster, for the computer to understand.
+        </p>
+        <p>
+            Other languages run interpreters which read the source code and tell
+            the computer what to do without storing the intermediate computer file.
+        </p>
+        <p>
+            As an example, a program written in the C programming language, will
+            be stored as a text file, and given a name with a .c file extension,
+            and then run through a C compiler program, such as cc or gcc, and
+            might be output as a binary file which might have a .exe file extension
+            for use on a Windows PC and can run on its own.
+        </p>
+        <p>
+            In contrast, a program written in the Python language requires the
+            Python interpreter to be running on the host machine when the program
+            runs. In both of these cases (C and Python) the language is widely
+            supported and the source code can be compiled or interpreted and run
+            on Windows, MacOS or Linux computer systems with little to no changes.
+        </p>
+        <p>&nbsp;</p>
+
+
+        <h2 class="alert alert-info">Lab #1</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an introduction to programming in C#. You will
+                begin by creating simple C# console application and analyzing it
+                to identify the various parts.
+            </p>
+            <p>
+                For this lab, follow the steps described below. The C# language has
+                gone through a lot of evolution and especially in recent years.
+                Following the steps will help to understand some of the recent changes.
+                It will give you an opportunity to apply some of the terminology and
+                concepts presented in the chapter 1 text.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="topics" style="padding:40px;">
+            <ul>
+                Topics:
+                <li>Introduction to the C# programming language</li>
+                <li>Using the Command-Line compiler</li>
+                <li>Introduction to application templates</li>
+                <li>Using the Visual Studio IDE</li>
+                <li>Adding comments to your code</li>
+                <li>Console input and output</li>
+            </ul>
+        </div> <!-- #topics -->
+        <p>
+            There are multiple parts to this lab. Be sure to through all of the
+            tabs below.
+        </p>
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#prep" style="color:navy;">First</a></li>
+            <li><a href="#ex1" style="color:navy;">Exercise 1</a></li>
+            <li><a href="#ex2" style="color:navy;">Exercise 2</a></li>
+            <li><a href="#submit" style="color:navy;">Submit</a></li>
+        </ul>
+
+        <div id="prep" style="padding:20px; background-color:lightblue;">
+            <h2 class="alert alert-info">Before You Begin</h2>
+            <div id="extensions" style="padding:20px;">
+                <h3>File Extensions</h3>
+                <p>
+                    I don't know why this is not the default setting anymore, but on
+                    both Windows and MacOS, it is not. As a developer, you need to see
+                    this information.
+                </p>
+                <h4>MacOS:</h4>
+                <p>
+                    Select Finder > Preferences from the menu and check the box.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                         src="/courses/7099152/file_contents/course%20files/images/1_fileextensions_macos.png"
+                         alt="Show File Extensions (Mac)" width="390" />
+                </p>
+                <hr />
+                <h4>Windows 11:</h4>
+                <p>
+                    From File Explorer:  View > Show > File name extensions.<br />
+                    (Windows 10: it's a checkbox on the toolbar)
+                </p>
+                <p>
+                    Select Finder > Preferences from the menu and check the box.
+                </p>
+                <p>
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                         src="/courses/7099152/file_contents/course%20files/images/1_fileextensions_win11.png"
+                         alt="show windows file extensions" width="500" />
+                </p>
+            </div> <!-- #extensions -->
+            <hr />
+
+            <div id="folders" style="padding:20px;">
+                <h3>Lab Folder Structure</h3>
+                <p>
+                    <img style="display:block; float:right; border: 2px solid blue;"
+                         src="/courses/7099152/file_contents/course%20files/images/1_lab_folders.png"
+                         alt="recommended lab folder structure" />
+                </p>
+                <p>
+                    Before starting on any lab work for this class, take a few minutes
+                    to create a folder structure for your labs like the one shown below.
+                    Being organized is a critical survival skill in software development.
+                </p>
+                <p>
+                    If you are using the classroom lab computers, be sure to create this
+                    on your USB drive and be sure to save to it! Saving on the C: drive
+                    of the lab computers is a disaster waiting to happen!
+                </p>
+                <p>
+                    Notice that the folders are numbered "lab01", "lab02", and so on. If
+                    you number these using only a single digit, then when we labs 10, 11,
+                    and 12, the natural ordering of your folders will be lab1, lab10,
+                    lab11, lab12, lab2, lab3, ...
+                </p>
+                <p>
+                    Since there are more than 10, and less than 100, using 2 digit
+                    numbers makes sense.
+                </p>
+            </div> <!-- #folders -->
+            <p style="font-style:italic; text-align:center;">
+                <a style="color:navy;" href="#tabs"> 
+                    Go to next tab (Exercise 1)
+                </a>
+        </div> <!-- #prep -->
+
+        <div id="ex1" style="padding:20px; background-color:lightblue;">
+            <h2 class="alert alert-info">Exercise 1: Using the command line </h2>
+            <h3>dotnet</h3>
+
+            <div id="ex1-intro">
+                <p>
+                    Let's walk through the structure and process of writing and
+                    executing a C# application.
+                </p>
+                <p>
+                    For this first exercise, use the command line, not the Visual
+                    Studio IDE. From Windows, you can use either the traditional
+                    DOS command line (CMD) or the more modern and capable Powershell.
+                </p>
+            </div> <!-- #ex1-intro -->
+
+            <div id="sdk">
+                <p>
+                    C# code is compiled to intermediate language (CIL) and processed
+                    (again) by the .NET runtime CLR and optimized for the particular
+                    system according to its capabilities. Simiilar to Java programs,
+                    these .NET programs are contained and executed within a separate
+                    runtime virtual machine environment, insulating the operating system
+                    from the application.
+                </p>
+                <p>
+                    From the command line, try: <code>dotnet --help</code><br />
+                    for a brief list of available commands.
+                </p>
+                <p>
+                    Then <code>dotnet --list-sdks</code><br />
+                    to view the available installed versions on your system.
+                </p>
+                <figure style="text-align:center;">
+                    <img style="display:block; margin-left:auto; margin-right:auto;"
+                         src="/courses/7099152/file_contents/course%20files/images/1_dotnet_sdks.png"
+                         alt="dotnet --list-sdks" width="400" height="224" />
+                    <figcaption>dotnet --list-sdks</figcaption>
+                </figure>
+
+                <p>
+                    This will confirm whether the SDK is installed or not. As of this
+                    date, Summer, 2023, .NET 6.0 (LTS), and 7.0 are supported and available
+                    for download. The .NET preview release (8.0) is also available for
+                    early adopters, but may not be fully tested. Since .NET 5, Microsoft
+                    has announced the new release schedule will be each year in November,
+                    so the new release should be getting closer to a stable build.
+                </p>
+                <p>
+                    If none are available, browse to https://dotnet.microsoft.com/en-us/download
+                    to download and install the SDKs you need. For compatibility with the
+                    textbook (10th edition), use the latest version of .NET 6.0. The designator
+                    "LTS" indicates Long Term Support.
+                </p>
+                <p>
+                    In my case, there were newer versions for both .NET6 and .NET7, so I
+                    installed both. Downloading and running the installer took only a minute
+                    or so.
+                </p>
+                <figure style="text-align:center;">
+                    <img style="display:block; margin-left:auto; margin-right:auto;"
+                         src="/courses/7099152/file_contents/course%20files/images/1_dotnet_sdks2.png"
+                         alt="dotnet --list-sdks" width="400" height="358" />
+                    <figcaption>dotnet --list-sdks</figcaption>
+                </figure>
+                <p>
+                    The numbering on software releases is worth learning more about.
+                    Typically the first digit indicates a major release (6 vs 7). The next
+                    digit is known as a minor release (x.3 vs x.5), and subsequent digits
+                    (x.x.205) indicate a build number, often associated with bug fixes
+                    or security patches rather than new features or functionality.
+                </p>
+                <p>
+                    You may also note that the .NET6.0 update removed and replaced the
+                    older installation, but the .NET7.0 update was simply added to the
+                    list of installed SDKs.
+                </p>
+                <p>
+                    If you have already installed Visual Studio, then chances are some
+                    .NET SDK is already installed.
+                </p>
+            </div> <!-- #sdks -->
+            <hr />
+            <div id="hello-code">
+                <p>
+                    From your lab folder, enter: <pre>dotnet new console --output HelloWorld</pre>
+                </p>
+                <p>
+                    This will create a new project folder named "HelloWorld" containing
+                    a project (.csproj) file and a (C#) source file, Program.cs.
+                </p>
+                <p>
+                    Open both of these files to view their contents.
+                </p>
+                <p>
+                    Next, from the lab folder (containing the HelloWorld folder),
+                    run <code>dotnet build HelloWorld</code>.
+                </p>
+                <p>
+                    This should complete with 0 warnings and 0 errors.
+                </p>
+                <p>
+                    Run <code>dotnet run --project HelloWorld</code>
+                </p>
+                <p>
+                    The code executes and says "Hello" to the console.
+                </p>
+                <figure>
+                    <img src="/courses/7099152/file_contents/course%20files/images/1_hello1.png"
+                         alt="console app template result" />
+                </figure>
+                <hr />
+                <p>
+                    Next edit the Program.cs file using a text editor
+                    (not a word processor!) like Notepad.
+                </p>
+                <p>
+                    Enter the following code. Upper/Lower case matters!:
+<pre>
+using System;
+
+namespace hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello C# Programming World!");
+        }
+    }
+}
+</pre>
+                </p>
+                <ul>
+                    <li>
+                        The single <code>using</code> statement indicates that we will
+                        need the System library for the <code>Console</code> object methods.
+                    </li>
+                    <li>
+                        The <code>namespace</code> will contain the class and other elements
+                        within the scope of this application.
+                    </li>
+                    <li>
+                        "Program" is the name of the class and matches the name of the file.
+                    </li>
+                    <li>
+                        There is a single <code>static void</code> method in the class called
+                        <code>Main()</code>. This is the entry point for the application.
+                    </li>
+                    <li>
+                        <code>string[] args</code> are the parameters that can be passed to
+                        the application, in this case from the command line.
+                    </li>
+                    <li>
+                        Finally, the single command, <code>Console.WriteLine()</code> outputs
+                        our message to the display. Change it from Hello, World to anything
+                        else.
+                    </li>
+                </ul>
+                <p>
+                    Navigate back to the lab01 folder, build and run it as before.
+                </p>
+                <figure>
+                    <img src="/courses/7099152/file_contents/course%20files/images/1_hello2.png"
+                         alt="edit the hello world app" />
+                </figure>
+
+                <hr />
+                <p>
+                    Starting in C# 9 (released with .NET 6.0), you don't have to
+                    explicitly include a Main method in a console application project.
+                    Instead, you can use the top-level statements feature to minimize
+                    the code you have to write. In this case, the compiler generates a
+                    class and Main method entry point for the application.
+                </p>
+                <p>
+                    Read more: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/top-level-statements
+                </p>
+                <p>
+                    It's important to note that the top-level <code>Main()</code> and
+                    <code>using</code> and <code>class</code> and <code>namespace</code>
+                    statements are not gone or optional, but in simple cases, if they
+                    are left out, the compiler will generate them by default.
+                </p>
+                <p>
+                    Most of the code that we write will include all of these things,
+                    that is why it is essential to know what they are, what they mean,
+                    and where they go. We'll talk about them more later.
+                </p>
+                <hr />
+                <p>
+                    Before we leave the command line, let's try one more thing.
+                </p>
+                <p>
+                    Run: <code>dotnet new list</code> to see the list of templates
+                    currently installed with the SDK. If you haven't installed
+                    Visual Studio yet, we will in the next exercise.
+                </p>
+            </div> <!-- #hello-code -->
+            <p style="font-style:italic; text-align:center;">
+                <a style="color:navy;" href="#tabs"> 
+                    Go to Exercise 2.
+                </a>
+            </p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:lightblue;">
+            <h2 class="alert alert-info">Exercise 2: Using the IDE</h2>
+            <h3>Review</h3>
+
+            <p class="ic-flash-info">
+                Review the first 9 pages of the textbook and compare
+                with what you did in exercise 1 before continuing.
+            </p>
+            <p>&nbsp;</p>
+            <h3>Install Visual Studio</h3>
+            <p>
+                Visual Studio is an Integrated Development Environment.
+                It is not <em>a code editor</em>, or <em>a compiler</em>,
+                but a very capable set of tools including those things
+                and others.
+            </p>
+            <p>
+                If you haven't already, install Visual Studio 2022 
+                (Community Edition) now. There are some notes about
+                configuring it in Canvas in the
+                <a href="/courses/7099152/pages/visual-studio-2022">
+                    <strong>Additional Resources</strong> module</a>
+            </p>
+            <p class="ic-flash-info">
+                If you are working in an enterprise or controlled project
+                environment, there may be compelling reasons for targeting
+                particular 
+            </p>
+            <h3>TestHello</h3>
+            <p>
+                Follow the steps beginning near the bottom of page 9
+                to build a new <code>testhello</code> application in
+                Visual Studio.
+            </p>
+            <p>
+                In step 4(b), substitute the path to your lab01 folder.
+            </p>
+            <p>
+                Since Visual Studio is continually being updated, some of
+                the screen diagrams may look different from the images in
+                the book. Make a note of any differences or questions and
+                share them on the class discussion board (Discord).
+            </p>
+            <p>
+                Some of the code also may be different depending on the 
+                .NET Framework templates installed.
+            </p>
+            <p>
+                If you run the code with the Debugger, or simply using the 
+                start button, the application will run, complete, and the
+                window may close before you see the output. Try starting
+                without debugging from the Debug menu or from the drop-down
+                option on the Start button on the toolbar.
+            </p>
+            <p>
+                Finish the exercise, through the top of page 21, ensuring
+                that your code works as expected.
+            </p>
+            <h3>TestHelloCore</h3>
+            <p>
+                Because of the dependency on .NET Framework, the previous
+                exercise will not work in macOS or Linux.
+            </p>
+            <p>
+                Right-click on the Visual Studio icon running on the Windows 
+                TaskBar (usually at the bottom of the screen). You may see a
+                list of recent projects and solutions that you have used. 
+                Near the bottom of the list there is an option to launch 
+                another instance of <strong>Visual Studio</strong>. This 
+                will allow you to run two instances, and work on two different
+                solutions at the same time.
+            </p>
+            <p>
+                Try the console exercise again, but this time build an application
+                called 'TestHelloCore', also from the lab01 folder, but
+                this time, use the <strong>Console App</strong> template 
+                instead of the <strong>Console App (.NET Framework)</strong>
+                template.
+            </p>
+            <p>
+                Run and check your code. Compare the (.cs) source files between
+                the two different applications. Notice the differences. Add
+                your own comments (see page 24) to your code.
+            </p>
+            <hr />
+            <h3>UWP</h3>
+            <p>
+                Beginning on page 24 and through the rest of the chapter, 
+                the author steps through an example using the Universal Windows
+                Platform forms application. Read through this, but you do not
+                need to complete or turn this part in as part of the lab.
+            </p>
+            <p style="font-style:italic; text-align:center;">
+                <a style="color:navy;" href="#tabs">
+                    Go to the next tab.
+                </a>
+            </p>
+            </div> <!-- #ex3 -->
+
+        <div id="submit" style="padding:20px;">
+            <h2 class="alert">Before submitting your work</h2>
+
+            <div id="outline">
+                <h3>Outline</h3>
+                <p>
+                    Before submitting your assignment, step through this checklist to
+                    be certain that everything is complete. You should also check the
+                    grading rubric to see if there is anything that you might have
+                    forgotten.
+                </p>
+                <p>
+                    Here is the step-by-step <strong>outline</strong>
+                    <ol>
+                        <li>Create the Lab folder structure</li>
+                        <li>
+                            Create a HelloWorld application from the command-line tools
+                            <ul>
+                                This folder will contain:
+                                <li>a (.csproj) project file and</li>
+                                <li>your (.cs) C# source file</li>
+                                <li>other files</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Create the TestHello (.NET Framework) application from VS2022
+                            <ul>
+                                This folder will have:
+                                <li>a (.sln) solution file</li>
+                                <li>a (.csproj) project file and</li>
+                                <li>your (.cs) C# source file</li>
+                                <li>other files</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Create the TestHelloCore (.NET) console application from VS2022
+                            <ul>
+                                This folder will have:
+                                <li>a (.sln) solution file</li>
+                                <li>a (.csproj) project file and</li>
+                                <li>your (.cs) C# source file</li>
+                                <li>other files</li>
+                            </ul>
+                        </li>
+                        <li>* Zip your files and submit to Canvas <strong>(must be a zip file).</strong></li>
+                    </ol>
+                </p>
+                <p>
+                    * (Windows) Open the <strong>labs</strong> folder that you created at the 
+                    beginning of the lab. Right-click on the <strong>lab01</strong> folder
+                    and select <strong>Compress to ZIP file</strong>. There will be a new
+                    <strong>lab01.zip</strong> file in your <strong>labs</strong> folder, which
+                    contains all of your lab files. Submit this file.
+                </p>
+                <p>
+                    Files must be submitted in Canvas. Do not attach work to emails
+                    or to a comment in the assignment page. I cannot submit assignments
+                    to Canvas for students, and assignments that are not correctly 
+                    submitted, will not be added to the grading queue.
+                </p>
+                <p>&nbsp;</p>
+            </div> <!-- #outline -->
+
+            <div>
+                <p>
+                    The Canvas team has provided
+                    <a style="color:navy;"
+                        href="https://community.canvaslms.com/videos/1121-assignments-submissions-students">
+                        <strong>this video guide</strong>
+                    </a> to assist with submitting
+                    any assignment in Canvas.
+                </p>
+            </div> <!-- #notes -->
+
+        </div> <!-- #submit -->
+    </div> <!-- #tabs -->
+
+</div> <!-- #lab1 -->

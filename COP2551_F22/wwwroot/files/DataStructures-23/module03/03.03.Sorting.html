@@ -1,0 +1,198 @@
+﻿<!-- data structures id:  465482 -->
+<!-- sorting -->
+<div id="sorting">
+    <figure style="margin:auto; display:block;">
+        <img width="360" height="270" style="margin:auto; display:block;"
+             alt="sorting numbers"
+             src="/courses/465482/file_contents/course%20files/modules/3/sorting.png">
+    </figure>
+
+    <div id="introduction">
+        <h2 class="alert alert-info">Sorting Data</h2>
+        <p>
+            It seems obvious that the ability to retrieve data is the fundamental reason for
+            collecting and storing it in the first place, and as we have seen, effecient
+            search and retrieval is directly related to data organization and sorting.
+        </p>
+        <p>
+            Data sorting is a fundamental concept in the world of computer science and data
+            management. It serves as the bedrock for organizing, categorizing, and making
+            sense of vast amounts of information. In the digital age, where data is abundant
+            and diverse, the ability to sort data efficiently is more crucial than ever.
+        </p>
+        <p>
+            At its core, data sorting involves arranging a collection of data points or
+            elements in a specific order, often based on a defined criterion. This order
+            could be alphabetical, numerical, chronological, or even custom-defined to
+            suit a particular purpose. The goal of sorting is to simplify data retrieval,
+            analysis, and presentation, making it easier for humans and machines alike to
+            work with the information.
+        </p>
+        <p>
+            Consider a phonebook, where names are sorted alphabetically, or a spreadsheet
+            of sales data arranged by date. These are real-world examples of data sorting
+            in action. In the digital realm, sorting is not only about making data more
+            manageable but also about improving the efficiency and performance of algorithms
+            and applications.
+        </p>
+        <p>
+            We will look at the essential concepts of data sorting, explore various sorting
+            algorithms, and when and how to use them. There are several well-documented
+            sorting algorithms. For now, we're going to look at just a few of the most
+            common.
+        </p>
+        <ul>
+            <li>
+                <b>Bubble Sort</b> is a simple and inefficient sorting algorithm. It
+                repeatedly steps through the list, compares adjacent elements, and swaps
+                them if they are in the wrong order. This process continues until the
+                list is sorted.
+            </li>
+            <li>
+                <b>Selection Sort</b> divides the input list into two parts: the sorted
+                and the unsorted. It repeatedly finds the minimum element from the
+                unsorted part and puts it at the beginning of the sorted part.
+            </li>
+            <li>
+                <b>Insertion Sort</b> builds the sorted list one item at a time by
+                repeatedly taking an element from the unsorted part and inserting it
+                into its correct position in the sorted part. It is efficient for
+                small datasets and nearly sorted data.
+            </li>
+        </ul>
+    </div> <!-- #introduction -->
+
+
+    <div id="bubble-sort">
+        <h3 class="alert alert-info">Bubble Sort</h3>
+        <p>
+            Bubble Sort is a simple sorting algorithm that repeatedly steps through 
+            the list to be sorted, compares adjacent elements, and swaps them if 
+            they are in the wrong order. This process continues until the list is 
+            sorted.
+        </p>
+
+        <h3>How Bubble Sort Works</h3>
+        <p>
+            Bubble Sort gets its name because smaller elements "bubble" to the top 
+            of the list while larger elements "sink" to the bottom. Here's a 
+            step-by-step explanation of the algorithm:
+        </p>
+        <ol>
+            <li>Start at the beginning of the list.</li>
+            <li>Compare the current element with the next element.</li>
+            <li>If the current element is greater than the next element, swap them.</li>
+            <li>Repeat steps 1-3 for each element in the list until no more swaps are needed.</li>
+            <li>The list is now sorted.</li>
+        </ol>
+
+        <h4>Pseudocode</h4>
+                <pre><code>
+function bubbleSort(data):
+    n = length of data
+    do
+        swapped = false
+        for i from 0 to n-2
+            if data[i] > data[i+1]
+                swap data[i] and data[i+1]
+                swapped = true
+    while swapped
+    </code></pre>
+
+        <ul>
+            <li>Bubble Sort is simple to understand and implement but inefficient for large 
+                or nearly sorted datasets.</li>
+            <li>Despite its inefficiency, Bubble Sort is a useful educational tool for 
+                learning and understanding sorting algorithms and concepts.</li>
+        </ul>
+    </div> <!-- #bubble-sort -->
+
+    <div id="selection-sort">
+        <h3 class="alert alert-info">Selection Sort</h3>
+        <p>
+            Selection Sort is a simple (but like bubble sort, inefficient) sorting algorithm 
+            that divides the input list into two parts: the sorted and the unsorted. It 
+            repeatedly finds the minimum (or maximum) element from the unsorted part and 
+            puts it at the beginning (or end) of the sorted part. This process continues 
+            until the entire list is sorted.
+        </p>
+
+        <h3>How Selection Sort Works</h3>
+        <p>
+            Selection Sort is called so because it selects the smallest (or largest) 
+            element in each pass. Here's a step-by-step explanation of the algorithm:
+        </p>
+        <ol>
+            <li>Start with the entire list as unsorted.</li>
+            <li>Find the minimum (or maximum) element in the unsorted part.</li>
+            <li>Swap the found minimum (or maximum) element with the first element in 
+                the unsorted part, effectively moving it to the sorted part.</li>
+            <li>Repeat steps 1-3 for the remaining unsorted part until the entire 
+                list is sorted.</li>
+        </ol>
+
+            <h4>Pseudocode</h4>
+            <pre><code>
+function selectionSort(data):
+    n = length of data
+    for i from 0 to n-1
+        minIndex = i
+        for j from i+1 to n
+            if data[j] < data[minIndex]
+                minIndex = j
+        swap data[i] and data[minIndex]
+    </code></pre>
+
+        <ul>
+            <li>Selection Sort is easy to understand and implement but is not efficient 
+                for large datasets.</li>
+            <li>Selection Sort is not stable, meaning it may change the relative order 
+                of equal elements.</li>
+            <li>Despite its inefficiency, Like bubble sort, Selection Sort has is very
+                good for learning sorting algorithms and principles.</li>
+        </ul>
+    </div> <!-- #selection-sort -->
+
+    <div id="insertion-sort">
+        <h3 class="alert alert-info">Insertion Sort</h3>
+        <p>
+            Insertion Sort is a simple sorting algorithm that builds the final sorted list 
+            one element at a time. It is less efficient on large lists than more advanced 
+            algorithms such as quicksort, heapsort, or merge sort.
+        </p>
+
+        <h3>How Insertion Sort Works</h3>
+        <p>
+            Insertion Sort is called so because it works by repeatedly taking an element from the 
+            unsorted part and inserting it into its correct position in the sorted part. Here's a 
+            step-by-step explanation of the algorithm:
+        </p>
+        <ol>
+            <li>Start with the first element as a sorted part and the remaining elements as an unsorted part.</li>
+            <li>Take an element from the unsorted part and compare it to the elements in the sorted part.</li>
+            <li>Insert the element into its correct position in the sorted part, shifting other elements to make room if necessary.</li>
+            <li>Repeat steps 2-3 for all elements in the unsorted part until the entire list is sorted.</li>
+        </ol>
+
+        <h4>Pseudocode Representation</h4>
+        <pre><code>
+function insertionSort(data):
+    n = length of data
+    for i from 1 to n-1
+        key = data[i]
+        j = i - 1
+        while j >= 0 and data[j] > key
+            data[j + 1] = data[j]
+            j = j - 1
+        data[j + 1] = key
+    </code></pre>
+
+        <ul>
+            <li>Insertion Sort is simple to implement and is efficient for small datasets or nearly sorted data.</li>
+            <li>Insertion Sort is stable, meaning it preserves the relative order of equal elements.</li>
+            <li>It is often used in practice when the dataset is small or partially sorted due to its simplicity and low overhead.</li>
+        </ul>
+    </div> <!-- #insertion-sort -->
+
+    <a href="#searching" style="font-style:italic; color:navy;">back to top</a>
+</div> <!-- #searching -->

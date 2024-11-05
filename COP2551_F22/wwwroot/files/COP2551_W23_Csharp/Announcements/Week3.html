@@ -1,0 +1,289 @@
+﻿<h2>Week 3 - TicketSales project feedback</h2>
+
+<div id="general-feedback" style="padding:20px;">
+    <h3 class="alert alert-info">General Feedback</h3>
+    <p>
+        I was very pleased with the TicketSales pricing calculator that you created.
+        I usually try and include more  individual feedback on these, but I decided
+        to try something different this time. I'd like you to open your project back
+        up and look at some things with me.
+    </p>
+    <p>
+        These are a few of the common issues I saw in your assignments. Not in all
+        of them, but whether this was an issue with your assignment or not, all may
+        benefit from this collective feedback.
+    </p>
+    <p>
+        These are <em>concerns</em>. They may not be errors, most of the form applications
+        that I saw worked just fine and even if I saw some of these, I did not deduct
+        any points for them.
+    </p>
+    <p>&nbsp;</p>
+</div> <!-- #general-feedback -->
+
+<div id="code-review" style="padding:20px; background-color:cyan;">
+    <h3 class="alert alert-info">Code Review</h3>
+    <p>
+        These are what we would commonly call <em>findings</em> in a formal code
+        review. A finding may be something that is incorrect, or doesn't match
+        expected standad coding practices or just opportunities to improve the
+        code.
+    </p>
+    <p>
+        After the initial code review (or peer review) is complete, the findings
+        are collected and recorded, usually tracked by the Quality Assurance (QA)
+        team. The findings are presented to the creator and all are addressed by
+        either a change to the artifact (the code) or by some other acknowledgement
+        or clarifying response. Not all findings require <em>corrections</em>,
+        but all findings need to be addressed.
+    </p>
+    <p>
+        By the way, the QA team may track metrics such as how many findings per
+        line of code, how long does it take for findings to be addressed (closed)
+        and maybe how many findings are dismissed or corrected.
+    </p>
+    <p>
+        After the creator and the reviewer agree that all of the findings have
+        been addressed, the code can be integrated with the test build and the
+        test team may take over.
+    </p>
+    <p>
+        Of course this process will vary from team to team and project to project.
+        But the general workflow will be similar.
+    </p>
+    <p>
+        So let's consider my list of <em>findings</em> and you can look
+        at your code and decide if any of these apply. And no, you won't need
+        to make any corrections and resubmit them. After you've been through
+        the list, I'll consider these closed and next time I may take points.
+    </p>
+    <p>&nbsp;</p>
+</div> <!-- #code-review -->
+
+<div id="identifiers" style="padding:20px;">
+    <h3 class="alert alert-info">Identifiers</h3>
+    <p>
+        Our textbook talks a little about identifiers. In fact <em>every</em> programming
+        textbook will talk about identifiers. I wish it said more.
+    </p>
+    <h4 class="alert alert-info">Rules</h4>
+    <p>
+        The book lists rules for legal C# identifiers. In fact, these rules generally
+        apply to all <em>C</em>-style programming languages, including C/C++/C# and Java.
+        Most of these are common to other languages also, but for now we'll just consider
+        these. According to the book:
+        <ul>
+            <li>Must start with a letter [a-z] or [A-Z] or an underscore (_). </li>
+            <li>May also contain digits [0-9]. Can't start with any.</li>
+            <li>May not contain spaces.</li>
+        </ul>
+    </p>
+    <p>
+        <em>But wait, there's more!</em>
+    </p>
+    <p>
+        These are <strong>rules.</strong> There are also <strong>conventions</strong>
+        and <em>best practices.</em>
+    </p>
+    <h4 class="alert alert-info">Conventions</h4>
+    <p>
+        As long as the rules are met, the conventions are really just suggestions.
+        But consider them <em>strong suggestions.</em> Just because your code runs
+        doesn't mean it is <em>correct.</em>
+    </p>
+    <p>
+        Conventions make your code more consistent, easier to read and easier to
+        understand, and by extension, easier to maintain and less error-prone.
+    </p>
+    <p>
+        <em>C</em>-style languages, including C# use <strong>camelCase</strong>
+        formatting for compound names. <strong>PascalCase</strong> is a specialized
+        form of camelCase in which the first character is capitalized. It is
+        named for the French mathemetician, Blaise Pascal, not for the programming
+        language which also is named for him. Since it is his last name, the
+        capital letter makes sense and is easier to remember.
+    </p>
+    <p>
+        C# conventions usually expects camelCase for variables, and
+        PascalCase for a class, record, struct, and public type members such as
+        fields, properties, and methods.
+    </p>
+    <p>
+        There's more, but just remember public -- capitalize, private -- lower case.
+    </p>
+    <h4 class="alert alert-info">Self-documenting Code</h4>
+    <p class="ic-flash-info">
+        <strong>Finding #1</strong><br />
+        The name of an item should describe its purpose or contents.
+    </p>
+
+    <p>
+        Experiment 626, is an illegal genetic experiment created by Jumba Jookiba.
+    </p>
+    <p>
+        I do not know, but maybe we are to believe that it was preceded by 625 other
+        efforts. In reality, it is the area code for the San Gabriel Valley area around
+        West Covina and Pasadena, likely a significant location for one of the creative
+        team.
+    </p>
+    <p>
+        <img style="display: block; margin-left: auto; margin-right: auto;"
+             src="/courses/456694/files/46259828/preview"
+             alt="Stitch" width="228" height="173" />
+    </p>
+    <hr>
+    <p>
+        <strong>WD-40</strong> is a lubricant and rust-inhibitor created by the Rocket
+        Chemical Company, now known as the WD-40 Company, renamed after its best known
+        product, which in turn was named for the water displacement formula number 40.
+        Again, presumably following 39 other attempts.
+    </p>
+    <p>
+        <img style="display: block; margin-left: auto; margin-right: auto;"
+             src="/courses/456694/files/46259834/preview"
+             alt="WD-40" width="147" height="233" />
+    </p>
+    <hr>
+    <p>
+        These are exceptions. Most of us know about "Agent-86" and "007", but generally
+        speaking numbers aren't particularly descriptive.
+    </p>
+    <p>
+        None of you should take this criticism personally. The course curriculum actually
+        introduces this as "Project 1." But can we agree that this is a ridiculous name
+        for this Project? I know! Whether I created it or not, I own this material, so I
+        really need to update it.
+    </p>
+    <p>
+        Names like <em>Project1</em>, and <em>Form1</em>, and <em>Label1</em>
+        and <em>TextBox1</em> carry no special meaning to me. Tell me what they
+        are and what they're for.
+    </p>
+    <p>
+        I wonder if we could interview a former student and ask them what Label3 in
+        Form2 from Project4 was supposed to contain.
+    </p>
+    <p>
+        Last week I told you that <pre>heightInInches</pre> and <pre>distanceInKm</pre>
+        are more meaningful than <pre>X</pre> and <pre>Y</pre>.
+    </p>
+    <p>
+        Self-documenting code starts with descriptive identifiers.
+    </p>
+</div> <!-- #identifiers -->
+
+<div id="unnamed-constants" style="padding:20px;">
+    <h3 class="alert alert-info">Unnamed Constants</h3>
+    <p class="ic-flash-info">
+        <strong>Finding #2</strong><br />
+        Avoid using unnamed constants in your code.
+    </p>
+    <p>
+        I already discussed this one last week (go back and read it again.)
+    </p>
+    <p>
+<pre>valueA = double.Parse(classATextBox.Text) * 15</pre>
+    </p>
+    <p>
+        Why 15? Why is this in the code and not defined as a constant near the
+        top of the code? And if the same constant is used more than once in
+        the code, that is much worse. Please be careful with these. They may
+        be correct or not. They won't cause runtime exceptions, and they can
+        lead to errors that can be very difficult to find and very difficult
+        to correct.
+    </p>
+</div> <!-- #unnamed-constants -->
+
+<div id="consistent-types" style="padding:20px;">
+    <h3 class="alert alert-info">Consistent Types</h3>
+    <p class="ic-flash-info">
+        <strong>Finding #3</strong><br />
+        Variable (and constant) type assignments should match.
+    </p>
+    <p>
+        Sometimes named constants were used to hold the correct assignments
+        for the ticket prices, but the wrong types were assigned.
+    </p>
+    <p>
+        This initializes the value <pre>double CLASS_A_PRICE = 15</pre> but uses
+        an integer, which the compiler, correctly casts to an integer, but
+        implicit casts are not ideal. Try using <pre>= 15.0</pre> instead
+        to ensure the value is set to a double, or use <pre>15M</pre> if
+        you are using a Decimal variable type.
+    </p>
+    <p>
+        Again, not an error, but matching the correct variable types makes
+        your code clearer, and more reliable.
+    </p>
+</div> <!-- #meaningful-defaults -->
+
+<div id="meaningful-defaults" style="padding:20px;">
+    <h3 class="alert alert-info">Default Values</h3>
+    <p class="ic-flash-info">
+        <strong>Finding #4</strong><br />
+        Should your variables be initialized with default values?
+    </p>
+    <p>
+        Run your code again. There were 3 levels of tickets available. If you
+        sold 1000 Class A tickets and 3 Class B tickets, what was the total?
+        Did the calculation return anything when there were no sales entered
+        for the Class C tickets?
+    </p>
+    <p>
+        This is not an error, just an opportunity to make your code better.
+    </p>
+</div> <!-- #meaningful-defaults -->
+
+<div id="output-format" style="padding:20px;">
+    <h3 class="alert alert-info">Formatted Output</h3>
+    <p class="ic-flash-info">
+        <strong>Finding #5</strong><br />
+        Check the format of your output.
+    </p>
+    <p>
+        Two observations here, and again, most of these were really good, these
+        are just some notes to check.
+    </p>
+    <p>
+        Monetary (price, costs, sales totals) should be formatted as currency.
+        This can be a little complex, but at the least, add a dollar sign in
+        your output.
+    </p>
+    <p>
+        One more related to output. This one I did not see as a problem for this
+        example, but it becomes a common problem in later exercises, so I'll mention
+        it now. Output results should be written as read-only text boxes, not labels.
+    </p>
+    <p>
+        The reason is that textboxes, even read-only, can be selected and copy/pasted
+        to other applications. Labels cannot. Try it. If your program has collected
+        data and performed some calculations, you might want to reuse that data
+        and manually typing it from one place to another doesn't make sense.
+    </p>
+</div> <!-- #output-format -->
+
+
+<div id="tab-order" style="padding:20px;">
+    <h3 class="alert alert-info">Tab Order</h3>
+    <p class="ic-flash-info">
+        <strong>Finding #6</strong><br />
+        Set the tab order for your form elements.
+    </p>
+    <p>
+        This one is a little more advanced and I wouldn't expect these to
+        be correct on the first application, but try this on your next project.
+    </p>
+    <p>
+        When the application starts is the cursor on the first input box? 
+        Can you use the [Tab] key to advance to the next logical input, or control?        
+    </p>
+    <p>
+        More advanced, does the [Enter] key perform the correct default
+        <em>Submit</em> action? Does [Esc] exit the program? These are a little
+        tricky to find, but once you do, it will make your programs better.
+    </p>
+</div> <!-- #output-format -->
+<hr />
+<p>
+    Take a look at your code. Are any of these helpful?
+</p>

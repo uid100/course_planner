@@ -1,0 +1,214 @@
+﻿<!-- capstone course id: 455772 -->
+<!--  serverless computing -->
+
+<div id="serverless-computing" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="discussion" style="padding:20px;">
+        <div id="background">
+            <h2 class="alert alert-info">Serverless Computing</h2>
+
+            <p class="ic-flash-info">
+                The term "serverless" refers to the fact that the cloud provider is responsible
+                for managing the servers, so the developer doesn't have to, but the servers still
+                exist.
+            </p>
+            <h3>Background</h3>
+            <p>
+                PaaS (Platform as a Service) and serverless computing are related, but distinct,
+                cloud computing models.
+            </p>
+            <p>
+                PaaS provides a platform for developing, running, and managing applications and
+                services, typically offering a complete runtime environment, development tools,
+                and a hosting environment. It abstracts the underlying infrastructure and provides
+                everything needed to build and run applications and services, including servers,
+                storage, databases, and other services.
+            </p>
+            <p>
+                Serverless computing, on the other hand, is a way of building and running
+                applications and services without having to manage infrastructure. It allows
+                developers to focus on writing code that runs in response to specific events
+                or actions, such as a user request or a database change, rather than managing
+                the underlying servers. The cloud provider manages the servers, dynamically
+                allocates resources, and charges for usage, rather than for a set amount of
+                resources.
+            </p>
+            <p>
+                In short, PaaS is a complete platform for application development and
+                management, while serverless computing is a way to build and run applications
+                without managing infrastructure.
+            </p>
+            <hr />
+            <div style="padding:30px;">
+                <p style="font-style:italic;">
+                    Let's think about it another way.
+                </p>
+                <p>
+                    If you need a task completed, you could select someone at random, teach and
+                    train them and then direct them to complete the task. This is the equivalent
+                    of Infrastucture as a Service (IaaS). You can specify physical traits, size and
+                    strength perhaps, but ensuring that they know what they are doing is up to you.
+                </p>
+                <p>
+                    Alternatively, you could hire a qualified employee, someone who already
+                    understands your business or working environment, then give them the task and
+                    supervise the completion of the task. This is similar to Platform as a Service
+                    (PaaS). Like IaaS, you can scale certain parameters, and you can adjust them
+                    as needed, but the cloud provider ensures that the service is pre-configured
+                    to certain capabilities, perhaps as a database or a web server.
+                </p>
+                <p>
+                    Finally, you could take that same task and simply hire a contractor, who is
+                    responsible for ensuring they assign a qualified candidate, and the contractor
+                    will oversee the employee to ensure the task is completed. With this serverless
+                    computing, if the coded solution demands more or less resources, the cloud
+                    provider can scale and configure as needed. This more hands-off approach
+                    is usually more efficient.
+                </p>
+            </div>
+
+        </div> <!-- #background -->
+
+        <div id="context">
+            <h3>Context</h3>
+
+            <p style="font-style:italic;">
+                But where/why/when would I use these?
+            </p>
+            <p>
+                To put these <em>serverless functions</em> into context, consider the life cycle 
+                of an application.
+            </p>
+            <p>
+                Simple console utility applications might be called from the command line, perhaps
+                take some input from the keyboard or from the system, complete some processing, and
+                then exit. If they are well-behaved, they release all of their memory and resources
+                and although they may be kept in storage to be called again, they are no longer
+                active in the processor or the computer's active memory.
+            </p>
+            <p>
+                A web application, including an API, starts when it is deployed. The application
+                usually completes some initial definitions and configuration and then it starts
+                up a listening thread to wait. Don't confuse this with a web server, which is 
+                listening for network requests and then passing them along to this waiting 
+                application. When the web application receives the http request, it may launch a 
+                new listening process before continuing with its processing to construct the
+                response and exiting, but there should always be more listeners waiting for more
+                requests (up to a limit.)
+            </p>
+            <p class="ic-flash-info">
+                The web application is running whether there are any active requests or not.
+            </p>
+            <p>
+                In contrast. <em>serverless functions</em> are in storage but not actively running
+                until they are needed. In most cases, this means less processing time and lower
+                operating cost.
+            </p>
+            <p>
+                If you need to automatically send an email to all of your customers on the 
+                first of every month, that might get fresh data from a database call or from
+                an API, lookup the email addresses it needs to broadcast to, and then format
+                the message and send the email batch. It might be busy for a minute or so once
+                every month, but it isn't efficient to keep it running all month only to check 
+                the time a few times each second.
+            </p>
+            <p>
+                As another example, a resort's website could display photos, tour information
+                and rates, and maybe poll some local equipment to display current weather 
+                conditions. Rather than maintain the connection to the weather station, that
+                interaction could be generated by a trigger sent from the web application, 
+                run the functions, return the data and then exit.
+            </p>
+            <p>
+                Here are some other use cases
+                <ul>
+                    <li>
+                        Web applications and static websites: Serverless architecture can 
+                        handle dynamic web traffic while reducing infrastructure costs.
+                    </li>
+                    <li>
+                        Event-driven and microservices-based applications: Serverless 
+                        computing allows developers to build small, independent functions 
+                        that respond to specific events, such as changes in a database or 
+                        messages from a queue.
+                    </li>
+                    <li>
+                        Big data processing: Serverless computing can handle large amounts 
+                        of data processing, such as data analytics and machine learning, 
+                        by scaling computing resources automatically.
+                    </li>
+                    <li>
+                        Mobile backends: Serverless computing can provide scalable and 
+                        cost-effective backends for mobile applications, without having 
+                        to worry about server infrastructure.
+                    </li>
+                    <li>
+                        Internet of Things (IoT): Serverless computing is ideal for IoT 
+                        applications that require real-time processing of large amounts 
+                        of data generated by devices.
+                    </li>
+                </ul>
+            </p>
+        </div> <!-- #context -->
+
+        <div id="triggers">
+            <h2>Triggers</h2>
+            <p>
+                Software triggers are events or conditions in a software system that 
+                initiate an action or process. They are often used in database management 
+                systems to automatically perform specific tasks, such as updating records 
+                or sending notifications, when certain conditions are met. For example, 
+                a trigger can be set up to automatically update a record whenever a change 
+                is made to a certain field, or to send an email notification whenever a 
+                new record is added to a database. They are an effective way of automating 
+                repetitive or complex processes and can save time and increase efficiency.
+            </p>
+        </div> <!-- #triggers -->
+
+
+        <div id="videos">
+            <hr />
+
+            <h3>AWS Lambda Functions</h3>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Ar1ABlD_Vs"
+                        title="YouTube video player" frameborder="0" style="margin-right:auto;margin-left:auto;"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </p>
+
+            <hr />
+            <h3>More about Serverless Functions</h3>
+            <p>
+                AWS calls their serverless computing product <strong>Lambda Functions</strong>. If you've used LINQ in C#, don't
+                confuse these with <em>lambda expressions,</em> they are not related. Google calls them <strong>
+                    Google Cloud
+                    Functions
+                </strong> and Microsoft has <strong>Azure Functions.</strong>
+            </p>
+            <hr />
+            <p>
+                This discussion offers a little different perspective of serverless computing functions
+            </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fx3ZGy-mbV4"
+                        title="YouTube video player" style="margin-right:auto; margin-left:auto;"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </p>
+        </div> <!-- #videos -->
+
+        <div id="footer" style="padding: 20px;">
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+        </div> <!-- #footer -->
+
+    </div> <!-- #discussion -->
+</div> <!-- #serverless-computing -->

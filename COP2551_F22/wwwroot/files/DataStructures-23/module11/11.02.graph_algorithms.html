@@ -1,0 +1,189 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="graph-algorithms">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="about-graphs">
+        <h2 class="alert alert-info">Graph Data Structures</h2>
+        <div style="padding:30px;">
+            <p>
+                <strong>Graphs</strong> are a versatile and powerful abstraction for representing relationships
+                between entities. Whether modeling social networks, transportation systems, or dependency relationships
+                in software, graphs offer a rich framework for understanding and solving a wide array of problems.
+                Graphs provide a natural way to represent and analyze complex systems. Unlike linear data structures
+                such as arrays or linked lists, graphs allow us to express intricate connections and dependencies
+                between individual elements.
+            </p>
+            <p>
+                Start with understanding the terminology and structure of graphs. Examine the different types of
+                graphs, such as directed and undirected graphs, weighted and unweighted edges, and cyclic and
+                acyclic structures. Starting here, you will gain the tools needed to model real-world problems and
+                translate them into a graph representation.
+            </p>
+            <p>
+                With an understanding of graph fundamentals we can consider graph algorithms. These algorithms are
+                designed to traverse, search, and analyze graphs efficiently. Topics include breadth-first search
+                (BFS) and depth-first search (DFS) for exploring graph structures, as well as algorithms for finding
+                the shortest path between nodes and detecting cycles within a graph.
+            </p>
+            <p>
+                It is important to choose the right algorithm for the task at hand. As you have seen with other
+                algorithm complexity considerations, you need to analyze the time and space complexity of graph
+                algorithms, enabling you to make informed decisions about algorithm selection based on the
+                requirements of your applications.
+            </p>
+            <p>
+                Designing the best approach requires an understanding of graph algorithms and their applications as
+                well as a solid foundation in data structures that will prove invaluable in tackling a wide range of
+                computational challenges.
+            </p>
+            <p>
+                At its core, a graph is a mathematical abstraction that represents a set of entities, often called
+                nodes or vertices, and the <em>connections</em> between them, referred to as edges. This versatile
+                structure finds applications in various domains, such as social networks, routing algorithms, and
+                dependency analysis in software systems.0
+            </p>
+        </div>
+    </div> <!-- #about-graphs -->
+
+    <div id="about">
+        <div id="graph-types" class="alert alert-info">
+            <div style="padding:30px;">
+                <ul>
+                    <li>
+                        <strong>Directed and Undirected Graphs</strong>
+                        <ul>
+                            <li>
+                                <strong>Directed Graph (Digraph)</strong> In a directed graph, edges have a defined
+                                direction, indicating a one-way relationship between nodes.
+                            </li>
+                            <li>
+                                <strong>Undirected Graph</strong> Here, edges lack direction, signifying a mutual
+                                connection between nodes.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Weighted and Unweighted Graphs</strong>
+                        <ul>
+                            <li>
+                                <strong>Weighted Graph</strong> Edges in a weighted graph carry a numerical value,
+                                representing a cost, distance, or some other metric associated with the connection.
+                            </li>
+                            <li>
+                                <strong>Unweighted Graph</strong> In contrast, edges in an unweighted graph lack
+                                such numerical values.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Cyclic and Acyclic Graphs</strong>
+                        <ul>
+                            <li>
+                                <strong>Cyclic Graph</strong> A graph containing at least one cycle, where a cycle
+                                is a path that starts and ends at the same node.
+                            </li>
+                            <li><strong>Acyclic Graph</strong> A graph without any cycles.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="font-style:italic;">
+                    Consider this discussion of directed and undirected, and weighted and unweighted data structures.
+                </p>
+                <p>
+                    <iframe title="YouTube video player" 
+                            src="https://www.youtube.com/embed/gXgEDyodOJU?si=GxvcGJUJhETCVpNJ" 
+                            width="560" height="315" allowfullscreen="allowfullscreen" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                    </iframe>
+                </p>
+            </div>
+        </div> <!-- #graph-types -->
+        <div id="graph-algorithms">
+            <h3>Graph Algorithms</h3>
+            <h4>Breadth-First Search (BFS):</h4>
+            <p>
+                <strong>Purpose:</strong> BFS explores a graph <em>level by level</em>, systematically
+                visiting all the neighbors of a node before moving on to the next level.
+            </p>
+            <p>
+                <strong>Applications:</strong> Shortest path determination, connected components
+                identification.
+            </p>
+
+            <h4>Depth-First Search (DFS):</h4>
+            <p>
+                <strong>Purpose:</strong> DFS explores as far as possible along each branch
+                before backtracking, often employed in topological sorting and cycle detection.
+            </p>
+            <p>
+                <strong>Applications:</strong> Maze-solving, graph traversal.
+            </p>
+
+            <h4>Dijkstra's Algorithm:</h4>
+            <p>
+                <strong>Purpose:</strong> Dijkstra's algorithm finds the shortest path between
+                nodes in a weighted graph.
+            </p>
+            <p>
+                <strong>Applications:</strong> Network routing, mapping, logistics.
+            </p>
+
+            <h4>Bellman-Ford Algorithm:</h4>
+            <p>
+                <strong>Purpose:</strong> Similar to Dijkstra's, Bellman-Ford finds the shortest
+                path in a weighted graph but can handle graphs with negative edge weights.
+            </p>
+            <p>
+                <strong>Applications:</strong> Routing in networks with variable costs.
+            </p>
+
+            <h4>Topological Sorting:</h4>
+            <p>
+                <strong>Purpose:</strong> Organizes the nodes of a directed acyclic graph in a
+                linear order respecting the partial order defined by the edges.
+            </p>
+            <p>
+                <strong>Applications:</strong> Task scheduling, dependency resolution.
+            </p>
+
+            <h4>Minimum Spanning Tree (Prim's and Kruskal's Algorithms):</h4>
+            <p>
+                <strong>Purpose:</strong> Finds the subset of edges that connects all the vertices
+                in a graph with the minimum possible total edge weight.
+            </p>
+            <p>
+                <strong>Applications:</strong> Network design, clustering, and resource optimization.
+
+            </p>
+            <p style="font-style:italic; text-align:center; padding:30px;">
+                next, get excited and listen to this explanation of DFS and BFS algorithm comparisons!
+            </p>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/TIbUeeksXcI?si=8xL6BnR6_L48nRU7" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>s
+            </iframe>
+        </div> <!-- graph-algorithms -->
+    
+    </div>  <!-- #about -->
+
+    <p>&nbsp;</p>
+    <a href="#algorithm-design" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #algorithm-design -->

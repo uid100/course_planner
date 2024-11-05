@@ -1,0 +1,201 @@
+﻿<!-- capstone course id: 456310 -->
+<!-- User Stories and Use Cases -->
+
+<div id="requirements" style="background:bisque;">
+    <div id="navigation" style="padding: 20px;">
+        <a class="btn btn-primary icon-home" style="background-color:navy; color:white;"
+           href="https://courses.sfcollege.edu/courses/456310">
+            Home
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="system-description" style="padding: 20px;">
+        <p>&nbsp;</p>
+        <h2 class="alert">Describing the System</h2>
+        <h3>[Top-Level] User Requirements</h3>
+
+        <p>
+            Identifying, decomposing and managing formal requirements is an important
+            part of software engineering.
+        </p>
+        <p>
+            System requirements are often supported by <b>User Stories</b>, <b>Use-Cases,</b>
+            and <b>Use-Case Diagrams</b>. Don't confuse these. They sound similar but it is
+            important to be able to explain how they are similar and to distinguish between
+            them.
+        </p>
+    </div> <!-- #system-description -->
+
+    <p>&nbsp;</p>
+
+    <div id="user-stories" style="padding: 20px;">
+        <h2 class="alert">User Stories</h2>
+        <p>
+            The process of developing system requirements usually begins with identifying
+            the user need for a solution or developing a problem description.
+        </p>
+        <p>
+            This is usually expressed as <b>user stories.</b>
+        </p>
+        <div class="ic-flash-info">
+            The <em>user story</em> is a simple statement expressing a user or customer's
+            need or desire for a solution. It should be expressed from the user's perspective
+        </div>
+        <p>
+            The user story follows a standard 3-part format, indicating:
+            <ol>
+                <li>role</li>
+                <li>request</li>
+                <li>result</li>
+            </ol>
+        </p>
+        <p>
+            For example,
+            <ul>
+                <li><b>As a</b> potential customer</li>
+                <li><b>I need</b> to see customer reviews</li>
+                <li><b>So that</b> I can make an informed product selection</li>
+            </ul>
+        </p>
+        <p>
+            <b>User stories</b> are usually written in collaboration with a customer or
+            end user and express operational needs from the user's point of view.
+        </p>
+        <p>
+            These are simple expressions and during the initial phase of <em>
+                capturing
+                originating requirements
+            </em> as many of these should be gathered as possible
+            to describe the goals of the system.
+        </p>
+        <p>
+            This standard format is easily recognizable and easy to follow.
+            <ul>
+                <li><b>As a</b> <em>[Persona]</em></li>
+                <li><b>I want/need</b> <em>[Functionality]</em></li>
+                <li><b>So that</b> <em>[Desired Outcome]</em></li>
+            </ul>
+        </p>
+        <p>
+            Notice that sometimes the solution the user is requesting may not be the
+            the best solution for the desired outcome. Also, understanding the user's
+            role and intended operational environment is essential to developing a
+            usable and useful solution.
+        </p>
+        <p>
+            Formally, <b><i>User Stories</i></b> should include acceptance criteria
+            specifying starting condition, action, and demonstrated objective. This
+            is not always included at this stage.
+        </p>
+
+    </div> <!-- #user-stories -->
+
+    <div id="use-cases" style="padding:20px;">
+        <h2 class="alert">Use Cases</h2>
+        <div id="use-case-definition" class="ic-flash-info" style="font-style:italic;">
+            <p>
+                In simple terms, a use case is an account of how a person who uses
+                a certain process will achieve a goal. In technical terms, it is the
+                description of the interaction between system and actors. The product
+                of this process is a document containing all the steps followed by a
+                user to achieve a goal.
+            </p>
+            <p>
+                (from: https://www.digitalnatives.hu/blog/user-story-vs-use-case/)
+            </p>
+        </div> <!-- #use-case-definition -->
+        <p>
+            A Use-Case is a textual description of how a person will use a
+            system to accomplish an objective.
+        </p>
+        <p>
+            There are many template examples for Use Cases. Although these may differ,
+            and may be tailored to meet a particular need or audience, these will generally
+            include:
+            <ul>
+                <li><b>Brief description</b> (or title)</li>
+                <li><b>The [relevant] system</b></li>
+                <li><b>The actor(s)</b> including those initiating or responding to events</li>
+                <li><b>Scenario</b> usually will include the pre-existing conditions and
+                (all) relevant action sequences</li>
+                <li><b>Expected result</b></li>
+            </ul>
+        </p>
+
+        <p>
+            Use cases can be quite detailed and should describe all of the actions and 
+            measurable results required to meet the user requirements.
+        </p>
+        <p>
+            The <em>Use-Case</em> may derive from one or more <em>User Stories</em>.
+        </p>
+        <p class="ic-flash-info">
+            <strong>
+                A <em>Use-Case</em> is not the same thing as a <em>User Story.</em>
+            </strong>
+        </p>
+    </div>
+
+    <div id="use-case-diagrams" style="padding:20px;">
+        <h2 class="alert">A Graphical Summary</h2>
+        <p>
+            The <strong>Unified Modeling Language (UML)</strong> is a formal standard
+            (currently v2.5) specification which defines 14 types of engineering diagrams,
+            7 <em>behavioral,</em> and 7 <em>structural</em>
+        </p>
+        <p>
+            <img 
+                 style="display: block; margin-left: auto; margin-right: auto;"
+                 src="/courses/456310/files/46193414/preview" 
+                 alt="UML2.5 Diagram Overview" />
+        </p>
+
+        <p>
+            One of these formal diagram definitions is the <strong>use case diagram</strong>
+            which is a graphical representation of a set of use-cases depicting their
+            interaction with actors either inside or outside of the system boundary.
+        </p>
+        <p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                 src="/courses/456310/files/46193420/preview"
+                 alt="(UML) use case diagram example" width="420" />
+        </p>
+        <p>
+            Notice 
+            <ul>
+            <li>
+                The system boundary indicating which activities take place inside 
+                and outside of the system. The system boundary is represented by
+                a box around the use case(s)
+            </li>
+            <li>
+                The actors, in this case all of them are indicated outside of the 
+                system boundary. The actors are a generalized persona. If multiple
+                instances of a role are expected, only one <em>actor</em> is 
+                indicated to represent that role. Actors do not need to be users,
+                they may represent external systems or APIs. They are represented
+                by a stick figure
+            </li>
+            <li>
+                Straight lines are drawn indicating interaction between actor and
+                use case.
+            </li>
+            <li>
+                Relevant use cases are represented in the diagram. All use cases
+                associated with the system do not need to be included in the diagram
+                to make the diagram useful.
+            </li>
+            <li>
+                Use cases are represented with a labeled oval shape.
+            </li>
+            <li>
+                The use case diagram is <em>not</em> an activity diagram or flow chart.
+                Activity is not indicated by "flow" lines between use cases.
+            </li>
+                </ul>
+        </p>
+        <p class="ic-flash-info">
+            The <em>use-case diagram</em> is not the same as a <em>use-case</em>
+        </p>
+    </div>
+</div> <!-- #requirements -->

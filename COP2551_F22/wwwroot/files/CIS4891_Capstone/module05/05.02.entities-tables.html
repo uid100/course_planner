@@ -1,0 +1,238 @@
+﻿<!-- capstone course id: 456310 -->
+<!-- entities, relations, tables and data classes -->
+
+<div id="requirements" style="background:bisque;">
+    <div id="navigation" style="padding: 20px;">
+        <p style="margin:auto;">
+            <a href="courses/456310" style="color:navy;">
+                <img id="project-jpg" width="150"
+                     style="display: block;padding:30px;"
+                     src="/courses/456310/files/46355442/preview"
+                     data-api-returntype="File"
+                     alt="project icon" />
+                Home
+            </a>
+        </p>
+    </div> <!-- #navigation -->
+
+    <div id="introduction" style="padding:20px;">
+        <h2 class="alert">Introduction</h2>
+    <h3>
+        Entities, classes, and tables.
+    </h3>
+    <p>
+        Entities are the <em>things</em> in your application. Entities
+        are typically stored in database tables with records in rows and 
+        attributes in columns, and related to eachother using keys in the 
+        table.
+    </p>
+    <p>
+        Data models are implemented as classes in Object-Oriented Programming
+        with attributes as fields or properties and behavior and relationships
+        as methods.
+    </p>
+    </div>
+    <div id="classes-and-tables" style="padding:20px;">
+        <h2 class="alert">Classes and Tables</h2>
+        <p>
+            In software development, classes and database tables are both used to represent 
+            entities or objects in a system. Classes are used to represent objects and their 
+            behavior, while database tables are used to represent entities and their attributes.
+        </p>
+        <p>
+            The relationship between classes and database tables is often referred to as the 
+            "object-relational mapping" (ORM). ORM is the process of mapping objects in an 
+            object-oriented programming language to database tables in a relational database 
+            management system (RDBMS).
+        </p>
+        <p>
+            In general, each class in an object-oriented programming language corresponds to 
+            a table in a relational database. The class attributes are represented as columns 
+            in the table, and the class methods are represented as stored procedures or 
+            functions in the database.
+        </p>
+        <p>
+            For example, let's say you have a class called "Customer" in your software 
+            application. This class might have attributes such as "name", "email", and 
+            "address". In a database, you might have a table called "Customers" with columns 
+            for "name", "email", and "address". The data in the table would correspond to 
+            instances of the "Customer" class in the software.
+        </p>
+        <p>
+            The relationship between classes and database tables is important because it 
+            allows developers to store and retrieve data in a structured way that can be 
+            easily queried and manipulated. By mapping classes to database tables, developers 
+            can use the power of a relational database management system to efficiently store 
+            and manage data in their applications.
+        </p>
+        <p class="ic-flash-info">
+            Simply put, if your data design is logical, your software implementation is simplified.
+        </p>
+    </div>
+
+    <div id="entities" style="padding:20px;">
+        <h2 class="alert">Entities</h2>
+        <p>
+            Entities are a fundamental concept in object-oriented programming (OOP) design.
+            In OOP, an entity is an object or concept in the problem domain that the software
+            system being designed needs to represent and manipulate.
+        </p>
+        <p>
+            Entities can be represented in OOP design as classes, which encapsulate data and
+            behavior related to the entity. For example, in a banking system, a "Customer"
+            entity might be represented as a class with properties such as name, address, and
+            account information, and methods to deposit or withdraw money.
+        </p>
+        <p>
+            OOP design typically emphasizes the use of entities to represent real-world objects
+            and concepts in the software system being developed. By using entities as the
+            building blocks of the design, the resulting software system can be more modular,
+            extensible, and maintainable, since changes to an entity's behavior or data can be
+            encapsulated within the entity's class without affecting the rest of the system.
+            Additionally, entities can be composed of other entities, creating a hierarchy of
+            objects that can be modeled and represented in the software.
+        </p>
+        <p>
+            The concept of entities is related to the design of databases, which are used to
+            store and manage structured data.
+        </p>
+        <p>
+            As with OOP, database design begins with an entity refererence to a real-world
+            object or concept that is represented by a table in the database. The attributes
+            of the entity are the columns of the table, and each row in the table represents
+            a specific instance of the entity.
+        </p>
+        <p>
+            For example, in a database for an e-commerce website, the entity "Product" might
+            be represented by a table with columns for the product's name, description, price,
+            and other attributes. Each row in the table would represent a specific product that
+            is available for purchase on the website.
+        </p>
+        <p>
+            When considering the design approach to a software solution, begin with identifying
+            the associated entities, those real-world objects and concepts. If your database tables
+            are well-designed, the development of the corresponding data classes will be greatly
+            simplified.
+        </p>
+        <p class="ic-flash-info">Identify the entities first.</p>
+    </div> <!-- #background -->
+
+    <div id="chen-erd" style="padding:20px;">
+        <h2 class="alert">Chen-model ERD</h2>
+        <p>
+            Good database design begins with identifying the Entities and their attributes.
+        </p>
+        <p>
+            Chen Notation is a graphical notation used to represent entities, relationships,
+            and attributes in an Entity-Relationship Diagram (ERD). ERD is a data modeling
+            technique used to describe the relationships between entities in a database.
+        </p>
+        <p>
+            The Chen notation was developed by Peter Chen in the 1970s and is also known as
+            the "Chen ERD" or "Chen model." It is one of the most widely used ERD notations.
+        </p>
+        <p>
+            In Chen notation, an entity is represented by a rectangle with its name written
+            inside it. Relationships between entities are represented by lines connecting
+            them, with a diamond shape on the connecting line representing the relationship.
+            The name of the relationship is written inside the diamond.
+        </p>
+        <p>
+            Attributes are represented as ovals or ellipses connected to the entity rectangle
+            by a line. The name of the attribute is written inside the oval. Primary keys are
+            underlined within the attribute ovals.
+        </p>
+        <p>
+            Chen notation provides a clear and concise way to represent complex data models,
+            making it a useful tool for database design and development.
+        </p>
+        <p>
+            The simplicity and clarity of the Chen ERD makes it very useful for early
+            data diagramming.
+        </p>
+        <hr />
+        <p>
+            There are many tutorials online about creating the ERD (specifically the Chen ERD,
+            not the crows-foot ERD). The following video explains this in an easy to understand
+            way. I don't particularly like that the speaker uses bent instead of straight
+            lines, which is more conventional or this type of diagram, but he does a good
+            job of explaining it.
+        </p>
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/c0_9Y8QAstg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+        <hr />
+        <p>
+            The presenter in this second video actually does a better job of representing
+            the ERD but he may not explain the concepts in quite the same detail as the first.
+            I believe it is a good follow up, and worthwhile.
+        </p>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/F0t9PG_ecJs" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+        <hr />
+        <p>
+            Before we leave the ERD behind, there is one more resource which I think is excellent
+            to have available as a reference when creating your own ERDs.
+        </p>
+        <p>
+            <a https: //vertabelo.com/blog/chen-erd-notation/ style="color:navy;">
+                https://vertabelo.com/blog/chen-erd-notation/
+            </a>
+        </p>
+        <p>
+            Have a brief look at it now and refer back to it for the exercise.
+        </p>
+    </div> <!-- #chen-erd -->
+
+    <div id="class-diagrams" style="padding:20px;">
+        <h2 class="alert">Class Diagrams</h2>
+        <p>
+            The UML class diagram is a visual representation of the structure of a system
+            or application using object-oriented concepts. It is one of the most widely
+            used types of UML diagrams and is used to model the classes, objects, and their
+            relationships in a system.
+        </p>
+        <p>
+            In a UML class diagram, each class is represented as a rectangle with the class
+            name in the top section, followed by the class attributes (properties) in the
+            middle section, and the class methods (functions) in the bottom section. The
+            class attributes and methods are separated by a horizontal line.
+        </p>
+        <p>
+            Arrows are used to represent the relationships between classes. For example, a
+            solid line with an arrowhead can represent an association between two classes,
+            while a diamond-shaped arrowhead can represent a composition relationship.
+            Inheritance can also be represented using a solid line with an arrowhead
+            pointing from the subclass to the superclass.
+        </p>
+        <p>
+            UML class diagrams are useful for both software developers and stakeholders,
+            as they provide a high-level view of the system's structure, which can be used
+            for communication, documentation, and design. They are also used as a basis
+            for generating code, as they can provide a detailed view of the classes, methods,
+            and relationships needed to implement a system.
+        </p>
+        <hr />
+        <p>
+            Like before with the ERD, there are many videos available which discuss and
+            describe UML class diagrams. I chose this one because I think he does a good
+            job of explaining the concepts and the process clearly. Also, although some of 
+            his discussion is specific to the tool he is demonstrating, applying the same
+            process to another drawing tool won't be difficult.
+        </p>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/UI6lqHOVHic" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+    </div> <!-- #class-diagrams -->
+
+    <p>&nbsp;</p>
+</div> <!-- #req-mgmt -->

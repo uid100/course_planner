@@ -1,0 +1,447 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab4" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #4</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an opportunity to apply the concepts and principles
+                presented in chapter 4 of the PLD text.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="topics" style="padding:40px;">
+            <ul>
+                Topics:
+                <li>Creating a Python console application</li>
+                <li>Declaring variables</li>
+                <li>Assigning values to variables</li>
+                <li>Arithmetic operations</li>
+                <li>Python repetition (loop) structures</li>
+            </ul>
+        </div> <!-- #topics -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>A Guided Python Application – Exponents and Factorials</h3>
+
+            <div id="ex1-intro">
+            <h4>Description</h4>
+                <p>
+                    Loops or repetition structures are used extensively in software development
+                    so it’s very important to get comfortable coding these. The exercise we’re
+                    going to do here isn’t necessarily real practical but it does illustrate the
+                    use of loops for a couple of common arithmetic operations. The first one
+                    we’ll do is an exponent function. Most modern programming languages have
+                    either an exponent operator (I.e., Visual Basic, Python) or a built-in
+                    library function (Java, C#) to calculate exponents so, once again, we’re
+                    doing this just to get some hands-on practice coding loops. The other
+                    arithmetic operation we’ll do is the factorial function.
+                </p>
+            <h4>Design</h4>
+                <p>
+                    This time around, we’ll do a flowchart. Keep in mind a flowchart is 
+                    like pseudocode except in a more graphical form.
+                </p>
+
+                <p class="ic-flash-info" style="padding:20px;">
+                    Read the instructions carefully. You will practice with two different
+                    functions in this first Exercise (1).
+                </p>
+            </div> <!-- #ex1-intro -->
+            
+            <hr />
+            <div id="flowchart">
+
+                <h3>Creating Flowcharts</h3>
+                <p>
+                    First, review the basic flowchart shapes.
+                </p>
+                <p><img src="/courses/49150/files/8109913/preview" alt="review flowchart shapes" /></p>
+                <p>fig.1 Flowchart Shapes</p>
+                <p>
+                    For doing exponents, we know from past math classes the expression 24
+                    is really a shorthand notation for the expression 2*2*2*2. This looks
+                    like something we could do with a loop, right? Let’s give it a shot.
+                    We’ll use the online tool <a href="http://draw.io">Draw.io</a>. It
+                    functions very similar to Microsoft Visio.
+                </p>
+                <p>
+                    Start out by creating a new diagram.
+                </p>
+                <p><img src="/courses/49150/files/8109916/preview" alt="new diagram" /></p>
+                <p>fig.2 New Diagram</p>
+                <p>
+                    Select (1) Blank Diagram and then (2) Create.
+                </p>
+                <p><img src="/courses/49150/files/8109919/preview" alt="create from blank" /></p>
+                <p>fig.3 Create from Blank</p>
+                <p>
+                    You can also select Flowcharts and then Create.
+                </p>
+                <p><img src="/courses/49150/files/8109922/preview" alt="create from flowchart template" /></p>
+                <p>fig.4  or Create from Flowcharts</p>
+                <p class="ic-flash-info">
+                    Which shapes you choose matter. Hover over each shape in the
+                    palette to find its correct purpose.
+                </p>
+                <p>
+                    You will get a blank drawing with various tool palettes of shapes on
+                    the left side. Expand Flowchart. The “key” shapes we’ll be using are
+                    highlighted below. Select a shape, hold down the left mouse button,
+                    and then drag and then drop the shape onto the page. Double-click the
+                    shape to add text. A “proper” flowchart will have a distinct start
+                    and end; all shapes will have appropriate labels, and all structures
+                    will have a single entry and exit point.
+                </p>
+                <p><img src="/courses/49150/files/8109926/preview" alt="common flowchart shapes" /></p>
+                <p>fig.5 Common flowchart shapes for this exercise</p>
+                <p>
+                    First, drag and drop a Start/End oval (or “lozenge” as the textbook
+                    likes to call it) onto the page. Double-click the oval and label it
+                    as either “Start” or “Begin”. Drag and drop a Data (Input/Output)
+                    parallelogram onto the page. If you hover over the parallelogram in
+                    the Flowchart shapes palette, you will see it is used to indicate
+                    "Data".
+                </p>
+                <p>
+                    To save time and space, we’ll combine our inputs into one shape.
+                    Double-click the parallelogram and enter the required inputs. In
+                    this case, we need the number and the power or exponent. Your
+                    flowchart should look something like this:
+                </p>
+                <p><img src="/courses/49150/files/8109929/preview" alt="get inputs" /></p>
+                <p>fig.6 Get inputs</p>
+                <p>
+                    Click on the Start oval and drag the flow line/arrow to the
+                    parallelogram. You can also use the Connector tool in the tool
+                    bar to draw flow lines. Be aware getting flowlines drawn correctly
+                    can be a bit of a trial and error process. The flowchart should
+                    now look something like this:
+                </p>
+                <p><img src="/courses/49150/files/8109932/preview" alt="adding flow-lines" /></p>
+                <p><img src="/courses/49150/files/8109934/preview" alt="added flow-lines" /></p>
+                <p>fig.7&8 Add flow-lines</p>
+                <p>
+                    Note how the arrow on the connector always points to the next step.
+                </p>
+                <p>
+                    Next, drag and drop a process box (rectangle) onto the page,
+                    double-click and initialize the loop counter with the statement
+                    i = 0. Also, we need a variable for the result that will be
+                    initialized to 1 so add the statement result = 1. When coding
+                    loops, it’s generally accepted and understood the single letter
+                    variables i, j and k are loop counters. If you prefer to use a
+                    variable name such as count, that’s fine too. Draw a line from
+                    the input to the process box.
+                </p>
+                <p>
+                    Next, add a decision diamond to test the loop condition. Since
+                    we initialized i = 0, we need to ask the question is i < exponent.
+                    Draw a flow line into the top of the decision diamond. The
+                    flowchart will now look like this:
+                </p>
+                <p><img src="/courses/49150/files/8109937/preview" alt="decisions" /></p>
+                <p>fig.9 Start &gt; Input &gt; Initialize &gt; Conditional </p>
+                <p>
+                    In a decision diamond, there will always be 2 flow lines coming
+                    out; one for the true path and 1 for the false path. For a loop,
+                    when the loop condition is false, the loop will terminate. We’ll
+                    arbitrarily start with the true path so we need to add a process
+                    box to set result = result * number and, very important, increment
+                    the loop counter by 1. Again, to save time and space, we’ll put
+                    both in the same box. Draw a flow line from the right side of the
+                    decision diamond to the process box. Double-click the flow line
+                    and label true. It’s also generally accepted to use Yes/No, T/F
+                    or Y/N Instead of True/False. Add a flow line from the process
+                    box to the top of the decision diamond. Our flowchart should now
+                    look something like this:
+                </p>
+                <p><img src="/courses/49150/files/8109939/preview" alt="loop" /></p>
+                <p>fig.10 Loop structure</p>
+                <p>
+                    When the loop condition is false, the loop will terminate and
+                    the next step will be to add another data (input/output)
+                    parallelogram to display the result. Add a flowline labeled
+                    false from the bottom of the decision diamond to our output
+                    step. Last, add a terminator and a flowline from the output.
+                    Our finished flowchart will look like this:
+                </p>
+                <p><img src="/courses/49150/files/8109941/preview" alt="example flowchart for exponent" /></p>
+                <p>fig.11 Exponent - Flowchart</p>
+                <p>
+                    <ul>
+                        Things to notice about a “properly drawn” flowchart:
+                        <li>Distinct start/end points.</li>
+                        <li>
+                            Flowlines run from top to bottom, left to right with
+                            the exception of flow lines going to the top of a loop.
+                        </li>
+                        <li>
+                            Flowlines in a decision are clearly labeled with the
+                            true and false path.
+                        </li>
+                        <li>
+                            Arrows on flow lines point to the next step in the
+                            process.
+                        </li>
+                        <li>
+                            Each program structure has exactly one entry and one
+                            exit point; no steps lead to a dead end.
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    Last thing: Be sure to save your work! If you plan to edit or
+                    do work on your flowchart later on, be sure to click on File and then
+                    “Save as”
+                </p>
+                <p>
+                    <img src="/courses/49150/files/8109942/preview" alt="save as" />
+                    <img src="/courses/49150/files/8109945/preview" alt="save draw.io (XML) file" />
+                </p>
+                <p>fig.12 Save As</p>
+                <p>
+                    Enter a suitable file name. If you want to save to your computer,
+                    select “Device”. You may also save to one of the online cloud based
+                    accounts shown below assuming you have a user account. By default,
+                    Draw.io saves to the Windows user downloads directory. Be sure to
+                    copy or move the file to your lab folder.
+                </p>
+                <p class="ic-flash-info">
+                    Do not submit this Draw.io (XML) file! Keep reading.
+                </p>
+                <p>
+                    For turning in a lab, export to JPEG image format. Be sure
+                    the file is in your lab folder.
+                </p>
+                <p>
+                    From the menu, choose: <strong>File &gt; Export as &gt; JPEG...</strong>
+                </p>
+                <p><img src="/courses/49150/files/8109947/preview" alt="export jpeg" /></p>
+                <p>fig.13 Export to .jpg</p>
+                <p>
+                    For comparison purposes, we could write pseudocode something like this:
+                    <pre>
+Get number
+Get exponent
+i = 0
+result = 1
+
+while i < exponent
+    result = result * number
+    i = i + 1
+end while
+
+Display result
+</pre>
+                </p>
+                <h3>Factorial</h3>
+                <p>
+                    For the factorial exercise, recall from a math class somewhere along the
+                    way that the expression 5! is simply a short hand notation for 1*2*3*4*5
+                    Once again, does this look like something we could code using a loop?
+                </p>
+                <p>
+                    Refer to the previous exercise if you need details on how to create a
+                    flowchart, add shapes, draw flow lines, etc. The factorial flowchart
+                    should look something like this:
+                </p>
+                <p><img src="/courses/49150/files/8109949/preview" alt="example flowchart for factorial" /></p>
+                <p>fig.14 Flowchart example: Factorial</p>
+                <p>
+                    For both exercises, notice how we initialized our result variable to 1
+                    because multiplying by 0 will give a result of 0. Be aware! Little things
+                    like this are very common logical errors in programming!
+                </p>
+                <p>
+                    Be sure to export both as jpg to your lab folder.
+                </p>
+
+            </div>
+            <div id="ex1-code">
+                <h2 class="alert">Code</h2>
+                <h3>Python Implementation</h3>
+                <p>
+                    Create a file called <code>exponent.py</code>. For those of you using
+                    lab computers, be sure to save to your USB drive or H: drive and be sure
+                    to save to your lab03 folder. This is worth points!
+                </p>
+                <p>
+                    The next step is to convert our design into real working Python code.
+                </p>
+                <p><img src="/courses/49150/files/8110028/preview" alt="exponent.py code" /></p>
+                <p>fig.15 exponent.py code</p>
+                <p>
+                    Next, we’ll do the factorial code. Create a new Python code file
+                    called <code>factorial.py</code>. Enter the code below:
+                </p>
+                <p><img src="/courses/49150/files/8110029/preview" alt="factorial.py code" /></p>
+                <p>fig.16 factorial.py</p>
+                <p>
+                    Note the test values above to ensure each is working correctly.
+                </p>
+            </div> <!-- #ex1-code -->
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Investment Growth</h3>
+            <p>
+                Create a Python application that will allow the user to calculate 
+                the future value of an investment. The user will enter a monthly 
+                amount, annual interest rate and number of years for the investment.
+            </p>
+            <p>
+                You will code a loop to calculate the future value and display the 
+                value of each month and then display the final value.
+            </p>
+            <p>
+                Some key formulas and free Python code snippets:
+            </p>
+            <p>
+                Note that the term is in years but we need to show the value of each 
+                month. So a 5 year savings account would be 60 months.
+            </p>
+            <p><code>months = years * 12</code></p>
+            <p>
+                Interest rates are a percentage and entered as 3.25 (i.e., for 3.25%), 
+                1.125, etc. This is also an annual percentage rate (APR). We need to 
+                divide this rate by 100 and then by 12 to get the monthly percentage 
+                rate.
+            </p>
+            <p><code>monthlyIntRate = annualIntRate / 100 /12</code></p>
+            <p>
+                The futureValue variable is an accumulator as it accumulates value as 
+                the loop executes.
+            </p>
+            <p><code>futureValue = (futureValue + monthlyAmount) * (1 + monthlyRate)</code></p>
+
+            <hr />
+            <h3>Steps</h3>
+            <ol>
+                <li>
+                    Create either a flowchart or pseudocode to document your design. 
+                    This is worth points and please complete this before attempting 
+                    to write code.
+                </li>
+                <li>
+                    Create a new file called <code>Lab4FutureValue.py</code> in your 
+                    <code>\Labs\Lab04</code> folder.
+                </li>
+                <li>
+                    Code the application. Some of the code is given. The parts that 
+                    are blurred out you get to code!<br />
+                    <img src="/courses/49150/files/8110319/preview" alt="investment sample code" />
+                    <p>
+                        At about line 17, there is a line that assigns a string <code>msg</code> to:<br />
+                        <code>"month: {0:3d} FV: ${1:.2f} Interest ${2:.2f}"</code><br />
+                        note those are <em>curly braces</em> "{}", not parentheses "()" 
+                    </p>
+                    <p>
+                        Specifically this string as used for the <code>.format()</code> command used below.
+                    </p>
+                </li>
+                <li>
+                    Test your application using the following values:
+                    <ul>
+                        <li>Monthly Amount = 100</li>
+                        <li>Interest Rate = 6</li>
+                        <li>Years = 5</li>
+                    </ul>
+                    Your result should be somewhere around $7011.88. Results should 
+                    be reasonably close (+/- 2%). Don’t worry if your results have a
+                    large number of decimal places. Number formatting is optional for 
+                    this exercise.
+                </li>
+                <li>
+                    Calculate and display the total interest earned. After the loop, 
+                    add a line to display the total interest earned.
+                </li>
+            </ol>
+
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Heads or Tails!</h3>
+            <p>
+                In this exercise, you will get some experience with the random 
+                number generator in Python. Random numbers are heavily used in 
+                many games and simulations for things like dice rolls, dealing 
+                cards, flipping a coin, etc.
+            </p>
+            <p>
+                You will build an application that will flip a coin 20 times, 
+                keep a running total of heads and tails.
+            </p>
+            <p>
+                For each coin toss, display the result (heads or tails).
+            </p>
+            <p>
+                After the last toss, you will display
+                <ul>
+                    <li>total number of heads</li>
+                    <li>total number of tails</li>
+                    <li>and the percentage of each</li>
+                </ul>
+            </p>
+            <hr />
+            <h3>Steps</h3>
+            <ol>
+                <li>
+                    Complete your <strong>Program Design</strong>. You may create 
+                    a flowchart or you may use pseudocode to develop your logic. 
+                    This is worth points and please complete this before attempting 
+                    to write code!
+                </li>
+                <li>
+                    Create a new Python file called <code>HeadsTails.py</code>
+                </li>
+                <li>
+                    Code the application. Be sure to import random. A screen shot 
+                    of a partially coded application is given here to get you started:<br />
+                    <img src="/courses/49150/files/8110322/preview" alt="heads or tails sample code" />
+                </li>
+                <li>
+                    Test your application.
+                </li>
+            </ol>
+        </div> <!-- #ex3 -->
+    </div> <!-- #tabs -->
+</div> <!-- #lab2 -->

@@ -1,0 +1,616 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- Cloud-based database functions -->
+<!-- assignment -->
+
+<div id="dbaas" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="assignment" style="padding:20px;">
+        <div id="instructions">
+            <h2 class="alert alert-info">Database-as-a-Service</h2>
+
+            <p>
+                Cloud service providers package turn-key database server solutions 
+                for relational (SQL) and non-relational (NoSQL) database systems. In
+                this exercise, take a look at how these PaaS solutions are provisioned
+                and deployed. Compare and contrast that with an IaaS database solution.
+            </p>
+        </div> <!-- #instructions -->
+
+        <div id="tabs" class="enhanceable_content tabs">
+            <p style="font-style:italic;">Click through each of the following tabs.</p>
+            <ul>
+                <li><a href="#ex1" style="color:navy;">Exercise 1</a></li>
+                <li><a href="#ex2" style="color:navy;">Exercise 2</a></li>
+                <li><a href="#ex3" style="color:navy;">Exercise 3</a></li>
+            </ul>
+
+            <div id="ex1" style="padding:20px;">
+                <h2 class="alert">Exercise 1</h2>
+                <h3>Azure SQL Database</h3>
+
+                <div id="ex1-intro">
+                    <p>
+                        Follow the steps to provision and deploy a SQL Server instance
+                        on Microsoft Azure, connect and use it.
+                    </p>
+                    <p>
+                        Copy the data where indicated in the instructions.
+                    </p>
+                </div> <!-- #ex1-intro -->
+                <div id="part1">
+                    <h3>Part 1: Setup the Database</h3>
+                    <ol style="list-style:decimal;">
+                        <li>
+                            (Logged in to the Azure portal) Select <b>Create a resource</b>
+                            and select <b>SQL Database</b> from the Marketplace and <b>Create.</b>
+                        </li>
+                        <li>
+                            From the <b>Create SQL Database</b> window (<em>blade</em>):
+                            <ol style="list-style:lower-alpha;">
+                                <li>Check that your active subscription is selected, if you have more than one.</li>
+                                <li>Create a resource group. I created one called <b>RG_SQL_Demo</b></li>
+                                <li>Name your database. I used: <b>SimpleSqlDemoDb</b></li>
+                                <li>
+                                    Below the Server* entry box, chose <b>Create new.</b><br />
+                                    This opens a new <b>Server details</b> pane
+                                    <ol style="list-style:lower-roman;">
+                                        <li>
+                                            Server name* This must be a unique name. I chose <b>sqldemoserver-uid100</b>
+                                            for mine. <em>.database.windows.net</em> will be added to the FQDN.
+                                        </li>
+                                        <li>
+                                            Location* This defaulted to <b>(US) East US</b> you may choose to change this.
+                                            It may impact service costs.
+                                        </li>
+                                        <li>
+                                            For <b>Authentication</b>, Use SQL authentication and set an admin adn Password.
+                                            Remember these.
+                                        </li>
+                                    </ol>
+                                    These are the server configuration settings. The server isn't created yet.<br />
+                                    Click <b>OK</b><br />
+                                    <br /><img style="display: block; margin-left: auto; margin-right: auto; border:2px solid;" 
+                                               src="/courses/455772/files/46614034/preview" 
+                                               alt="database server settings" 
+                                               width="635" height="404" />
+                                </li>
+                                <li>
+                                    Workload environment: <br />
+                                    <div style="background-color:yellow;">
+                                        Use caution here!
+                                    </div>
+                                    By default this will be set to <b>Production</b>.<br />
+                                    Scroll down and take note of your <b>ESTIMATED COST / MONTH</b><br />
+                                    In my case this was approximately $375/month. This may be warranted and
+                                    reasonable for your production environment (remember the scaling discussion?)
+                                    Even just a couple of days at that rate is going to be far more than my
+                                    budget wants to handle for a classroom demo! Go back and set the workload
+                                    environment to "Development" and check again. Divide the estimated cost by 30 days
+                                    and by 24 hours, and you're probably back in the <em>very reasonable</em> range.<br />
+                                    Also, consider clicking on the <b>Configure database</b> link on the Compute +
+                                    storage * category and browse through estimated costs on other configurations.
+                                    <p style="background-color:yellow;">
+                                        Did you remember to set this back to <b>Development?</b>
+                                    </p>
+                                    <p><img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid" 
+                                         src="/courses/455772/files/46615940/preview" 
+                                         alt="Configure the database" width="655" height="563" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Lastly, you can set the backup storage redundancy to Local. This installation
+                                        isn't going to involve critical data or need for disaster recover plans.
+                                    </p>
+                                    <p>Scroll down to see the Estimated cost panel at the bottom of the pane</p>
+                                    <p>
+                                        <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid"
+                                             src="/courses/455772/files/46616038/preview"
+                                             alt="estimated cost" />
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p>
+                                The next tab contains <b>Networking</b> configuration.<br />
+                                You will need to set up the Firewall to allow access from your local IP address.
+                                Most of the time Azure services such as your web apps and APIs will also need
+                                access. For now, change the settings to enable a Public endpoint and Add your
+                                current client IP address to the firewall rule. 
+                            </p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid" 
+                                        src="/courses/455772/files/46616126/preview" 
+                                        alt="enable remote access through the database server firewall" 
+                                        width="661" height="471" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                You can browse through the other tabs, or go straight to <strong>Review + 
+                                create</strong>.
+                            </p>
+                            <p>
+                                Here again,  review the cost estimate and if you agree with it, click
+                                <strong>Create</strong> at the bottom of the pane.
+                            </p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto; border: 2px solid" 
+                                     src="/courses/455772/files/46617636/preview" 
+                                     alt="review the estimated cost and other settings"
+                                     width="610" height="299" />
+                            </p>
+                            <p>
+                                In my example, $4.78 / 30 days / 24 hours = < $.01 / hour.  Even if I want
+                                to use it for a day or so, not life-changing.
+                            </p>
+                            <p>
+                                Azure will provision the server and initial database and set up the firewall.
+                                This will usually take a minute or two. I have seen it take much longer, but
+                                only in unusual circumstances.
+                            </p>
+                            <p>
+                                When the process is complete you will be asked to go to the resource page. 
+                                If you leave the page, the process will still complete, and the notification
+                                that it finished will be waiting for you, or you can simply find the new 
+                                resource on your main page in the portal.
+                            </p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                                     src="/courses/455772/files/46617694/preview" 
+                                     alt="database resource is ready" width="640" height="375" />
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The database resource pane has a lot of good resources available. From here 
+                                you can add IP addresses to the firewall exceptions if you or someone else
+                                needs access from another location, or you can reset your admin username
+                                and password if they are forgotten, and of course you can scale up and down
+                                if you need to increase the resource capabilities for performance, or tune
+                                them down to manage costs.
+                            </p>
+                            <p>
+                                Notice the Server name. This is the FQDN for the database server
+                                that you set from the main configuration page.
+                            </p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                                     src="/courses/455772/files/46618110/preview" 
+                                     alt="Get the JSON View" width="600" height="314" />
+                            </p>
+                            <p>
+                                Click the link to see the JSON View.
+                            </p>
+                            <p style="font-weight:bold;background-color:yellow;">
+                                <strong>Lab Task 1:</strong> Copy and Paste this (JSON data) 
+                                to a Word Document. 
+                            </p>
+                        </li>
+                    </ol>
+                </div> <!-- #part1 -->
+                <div id="part2">
+                    <h3>Part 2: Test the Database</h3>
+                    <ol style="list-style:decimal;">
+                        <li>
+                            <p>Open a database client application.</p>
+                            <p>
+                                My database client of choice is Microsoft's SQL Server
+                                Management Studio, sometimes known as SSMS. This is a free
+                                download for Windows.
+                            </p>
+                            <p>
+                                There are a number of SQL client applications available
+                                for MACOS and Linux, including Microsoft's Azure Data Studio.
+                                It has been a while since I've used those, so you'll need to
+                                do some research, or find a Windows if needed. SSMS is not
+                                available for MacOS.
+                            </p>
+                            <p>
+                                When you start SSMS or your favorite SQL client, you will first
+                                need to connect to the database server.
+                            </p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto; border:2px solid;" 
+                                     src="/courses/455772/files/46618346/preview" 
+                                     alt="connect to server" width="459" height="304" />
+                            </p>
+                            <p>
+                                Enter the database name, admin name, and FQDN for the server you created 
+                                in part 1. Set the login to <em>SQL authentication</em> and login.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Create a new script to run in your new database.</p>
+                            <p>
+                                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                                     src="/courses/455772/files/46618386/preview" 
+                                     alt="create a script in your new database" width="594" height="466" />
+                            </p>
+                            <p>
+                                Create a table, add some data and run a query against your data. You can use
+                                the following example or use your own.
+                            </p>
+                            <p>
+                                <pre>
+USE [SimpleSqlDemoDb];
+DROP TABLE IF EXISTS Automobiles;
+
+CREATE TABLE Automobiles (
+    ID int IDENTITY(1,1),
+	VIN varchar(18),
+	ModelYear int,
+	Make varchar(64),
+	Model varchar(64),
+	Color varchar(12),
+	Lic varchar(12)
+);
+
+INSERT INTO dbo.Automobiles
+	(VIN, ModelYear, Make, Model, Color)
+VALUES
+	('JH4DA9458JS001234', 2012, 'Toyota', 'Corolla', 'Silver'),
+	('1G1JD5SB1D4112345', 2003, 'Ford', 'F-150', 'White'),
+	('KMHDN45D53U012345', 2003, 'Volkswagen', 'Golf', 'Gray'),
+	('2T1BR32E84C123456', 2019, 'Honda', 'Civic', 'Blue'),
+	('1J4FA69S94P012345', 2008, 'Toyota', 'Camry', 'Blue'),
+	('3D7KS29C57G812345', 2012, 'Chevrolet', 'Silverado', 'White'),
+	('WBANA53585B123456', 2003, 'Nissan', 'Sentra', 'Silver'),
+	('JN1CA31A4XT012345', 2019, 'Ford', 'Mustang', 'Red'),
+	('5FNRL38408B123456', 2017, 'Toyota', '4-Runner', 'White'),
+	('WBAVB73517PA12345', 2021, 'Hyundai', 'Elantra', 'Gray');
+
+SELECT 
+	ID, ModelYear, Color, Make, Model
+FROM dbo.Automobiles
+WHERE
+	ModelYear > 2010 AND ModelYear < 2020;
+</pre>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The script creates a new table in your database, inserts data to it,
+                                and then queries for results based on a filter criteria. Every time
+                                the script is called, it will delete the table and re-create it. This
+                                is ok for development, but of course you wouldn't use this in production.
+                            </p>
+                            <p>
+                                Run script and view the results.
+                            </p>
+                            <p style="font-weight:bold;background-color:yellow;">
+                                <strong>Lab Task 2:</strong> Copy and Paste <em>the output result from 
+                                this query</em> to your Word Document.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                After you've completed the step above, remember to delete any unneeded 
+                                cloud resources running on your service account. Database are servers.
+                                They are running all the time whether anyone is using them or not. Delete
+                                them when they are not needed, or scale them to a very limited capacity
+                                to manage costs.
+                            </p>
+                            <p>
+                                From the Azure Portal, open <strong>Resource groups</strong>
+                                and open the page that contains the resource group you created.
+                                Mine is called RG_SQL_Demo. Notice that the group contains
+                                both a database and a server. You can use the link at the top
+                                to <b>Delete resource group</b> which will delete both and stop
+                                the billing on those resources.
+                            </p>
+                        </li>
+                    </ol>
+                </div> <!-- #part2 -->
+                <div id="wrap-up">
+                    <p>
+                        In this exercise, you created a remote cloud-based database
+                        that can be used to store and endless amount of data to be 
+                        used by any number of applications. Commonly this database 
+                        might be used by APIs and Web applications also hosted on
+                        cloud servers. Remember that each new system that wants to 
+                        access this remote server needs to be added to the list of 
+                        firewall exceptions.
+                    </p>
+                    <p>
+                        SSMS is a very powerful, feature-rich SQL client. In addition 
+                        to basic queries, you can also create new databases on the
+                        server from scripts. Remember that doing so from this tool
+                        may result in a new database with all of the default configuration
+                        settings. Recall that this includes Production-level scaling.
+                        Unless you are working on a local -not cloud server, this is not 
+                        recommended.
+                    </p>
+                </div> <!-- #wrap-up -->
+                <h4>Go to the next tab for Exercise #2.</h4>
+            </div> <!-- #ex1 -->
+
+            <div id="ex2" style="padding:20px;">
+                <h2 class="alert alert-info">Exercise 2</h2>
+                <h3>Getting started with (AWS) DynamoDB</h3>
+                <p>
+                    In this module, we talked about relational and nonrelational databases.
+                    We also mentioned that cloud providers offer just about every database
+                    solution you can list.
+                </p>
+                <p>
+                    Go back to the Azure portal, click on create a resource, and search
+                    the term 'database' and browse through some of the supported platforms.
+                </p>
+                <p>
+                    In this section, we'll look at and install a NoSQL database on AWS.
+                    Their product is called DynamoDB.
+                </p>
+                <p>
+                    Read the description
+                    <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+                       style="color:navy;">here.</a>
+                </p>
+                <p>
+                    Next follow the steps of the tutorial linked below. There are 8 steps in the tutorial, including the
+                    final step to cleanup your subscription (deleting the resources). Each of the (8) steps contains
+                    instructions for completing them using the <strong>AWS Management Console</strong> and with the
+                    <strong>AWS CLI</strong>. You are encouraged to read through and perhaps even try both approaches,
+                    but for this exercise, use the AWS Management Console approach.
+                </p>
+                <p>
+
+                    <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html"
+                       style="color:navy;">Link to the DynamoDB tutorial steps</a>.
+                </p>
+                <p style="font-weight:bold;background-color:yellow;">
+                    <strong>Lab Task 3:</strong> Add the name of each step as a header to your output document
+                    (eg., "Step 1: Create a table") below the header for that step, add a screenshot of the output
+                    for that step. Here's an example after step 1.
+                </p>
+                <p>
+                    <img src="/courses/455772/files/46619266/preview" alt="example screenshot added to Word document" />
+                </p>
+            </div> <!-- #ex2 -->
+
+            <div id="ex3" style="padding:20px;">
+                <h2 class="alert">Exercise 3</h2>
+                <h3>Deploying SQL Server on Azure VM</h3>
+                <h3 style="font-style:italic">Demonstration</h3>
+
+                <div id="intro3">
+                    <p>
+                        <code>"Currently unable to deploy Azure database server resources."</code>
+                    </p>
+                    <p>
+                        For a while, in the Spring of 2020, there was unprecedented demand on
+                        cloud resources while many industries were scrambling to stay productive under
+                        federal stay-at-home orders, cloud service providers had as a fundamental mission
+                        statement, managing and maintaining geo-redundant remote services and regional
+                        risk mitigation, were working to manage load and prioritize critical systems
+                        for the increased demand on limited resources.
+                    </p>
+                    <p>
+                        And so, for a brief time, Azure subscriptions configured for education were
+                        deprioritized and had very limited capability to configure and deploy Azure SQL
+                        Server (PaaS) instances. Azure training documents reference the benefits of
+                        using Azure SQL database as a service (DBaaS) in contrast to creating a virtual
+                        machine, then installing and configuring and managing the system, firewall(s)
+                        and a SQL server instance.
+                    </p>
+                    <p>
+                        Needed to host a shared remote database. This was the temporary, tested
+                        workaround.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p style="font-style:italic;">
+                        Follow along, read through the steps and add your responses to your assignment
+                        where indicated. Following these steps to build and deploy SQL Server on a cloud VM
+                        is optional.
+                    </p>
+                </div> <!-- #intro3 -->
+
+                <div id="step1-vm">
+                    <h3 class="alert alert-info">Step 1.</h3>
+                    <h3>Build and Deploy (Windows) Virtual Machine</h3>
+                    <p>
+                        Create VM use Windows 10 From the Size diaglog, sort by cost and select
+                        the minimum configuration. This is adequate for student database requirements.
+                        This setting may be unsatisfactory for running any developer or activities
+                        beyond a single SQL Server instance. We can scale up if we need to.
+                    </p>
+                    <p>
+                        This estimated cost is very reasonable, <del>
+                            but can be reduced further by using
+                            Linux instead of Windows 10.
+                        </del> Edited: this is not correct. Since SQL Server
+                        is not currently available for MACOS or Linux platforms.
+                    </p>
+                    <p>
+                        Enable RDP port, review and deploy.
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619036/preview" alt="create azure vm" />
+                    </p>
+                    <p style="font-style:italic">
+                        note: the first deployment failed. steps were repeated using SqlDbWinVM1 and
+                        assigned a new IP address: 13.78.132.132. Results will be the same but the actual
+                        machine instance may not match the screenshots
+                    </p>
+                </div> <!-- #step1-vm -->
+
+                <div id="step2-firewall">
+                    <h3 class="alert alert-info">Step 2.</h3>
+                    <h3>Configure Azure network firewall</h3>
+                    <p>
+                        From Networking settings, <b>Add Inbound Port Rule</b> to enable inbound 
+                        SQL TCP port traffic (typically: 1433)
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619066/preview" alt="Add inboard port rule" />
+                    </p>
+                </div> <!-- #step2-firewall -->
+
+                <div id="step3-install-SQL">
+                    <h3 class="alert alert-info">Step 3.</h3>
+                    <h3>
+                        Connect to VM, Install & Configure SQL Server
+                    </h3>
+                    <p>
+                        Connect to VM using Remote Desktop (on port 3389), enter credentials and accept
+                        security certificate.
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619080/preview" alt="Remote Desktop Client" />
+                    </p>
+                    <p>
+                        The first connection on startup to the Windows machine may take some time.
+                    </p>
+                    <p>
+                        Download and install SQL Server. I used Developer Edition for this demonstration
+                    </p>
+                    <h3>
+                        Configure SQL Server to use TCP/IP
+                    </h3>
+                    <p>
+                        After the installation completes, open Sql Server Configuration Manager and enable TCP/IP protocol.
+                    </p>
+                    <p>
+                        Run SQL Configuration on the remote VM
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619082/preview" alt="SQL Configuration" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>Enable TCP/IP</p>
+                    <p>
+                        <img src="/courses/455772/files/46619084/preview" alt="Enable TCP/IP" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>Enable TCP Ports</p>
+                    <p>
+                        <img src="/courses/455772/files/46619098/preview" alt="Enable TCP Ports" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>And restart the SQL Service to enable the changes</p>
+                    <p>
+                        <img src="/courses/455772/files/46619100/preview" alt="SQL Restart" />
+                    </p>
+                </div> <!-- #step3-install-sql -->
+
+                <div id="step4-auth">
+                    <h3 class="alert alert-info">Step 4.</h3>
+                    <h3>Configure SQL Authentication</h3>
+                    <p>
+                        Configuring SQL Server can be done from the command line,
+                        but SQL Server Management Studio (SSMS) will simplify this
+                        task.
+                    </p>
+                    <p>
+                        Connect to the SQL Server (with SSMS), using Windows
+                        Authentication and setup SQL Authentication
+                    </p>
+                    <p>
+                        Add and configure new Sql Login
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619112/preview" alt="Add SQL Password" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>Add SQL Login</p>
+                    <p>
+                        <img src="/courses/455772/files/46619114/preview" alt="Add SQL Login" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>set DbMapping</p>
+                    <p><img src="/courses/455772/files/46619116/preview" alt="DbMapping permissions" /></p>
+                    <p>&nbsp;</p>
+                    <p>Set User Roles</p>
+                    <p>
+                        <img src="/courses/455772/files/46619120/preview" alt="Set User Roles" />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Setup SQL Server to use SQL Authentication EnableSqlAuthentication
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619122/preview" 
+                             alt="Enable SQL Authentication" width="1002" height="385" />
+                    </p>
+                </div> <!-- #step4-auth -->
+                
+                <div id="step5-firewall">
+                    <h3 class="alert alert-info">Step 5.</h3>
+                    <h3>Configure Windows Firewall</h3>
+                    <p>
+                        Windows also installs a Firewall by default and the port exception
+                        needs to be added there as well.
+                    </p>
+                    <p>
+                        Set port 1433 to allow connections and save changes
+                    </p>
+                    <p>
+                        Add Inbound Port Exception to Windows Firewall
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619148/preview" 
+                             alt="Test Connection" width="614" height="401" />
+                    </p>
+                    <p>
+                        Log out of the VM, leaving it running (or simply close the remote
+                        desktop session).
+                    </p>
+                    <p>
+                        Test the remote connection. tcp:IP,port \ ServerName
+                    </p>
+                    <p>
+                        tcp(colon) ipaddress(comma) port_number
+                    </p>
+                    <p>
+                        <img src="/courses/455772/files/46619148/preview" 
+                             alt="Test Connection" width="614" height="401" />
+                    </p>
+                </div> <!-- step5-firewall -->
+
+                <div id="finish-ex3">
+                    <h3 class="alert alert-info">Wrap-up</h3>
+                    <p>
+                        In the first part of the lab you created, deployed, and exercised cloud database
+                        services. Although these are widely referred to as database-as-a-service
+                        DBaaS, recognized that they are specialized instances of the
+                        platform-as-a-service, PaaS.
+                    </p>
+                    <p>
+                        In contrast, in the last exercise you had a look at implementing a
+                        database solution from an infrastructure-as-a-service model perpective.
+                        In this case, we were responsible to create and scale the computer,
+                        install all of the needed software components and manage them for
+                        security patches and feature updates as needed. The result was a
+                        fully functional cloud-hosted database resource, but not a DBaaS
+                        strictly speaking.
+                    </p>
+                    <p style="font-weight:bold;background-color:yellow;">
+                        <strong>Lab Task 4:</strong> List the high-level steps covered
+                        in this demo to create and use SQL Server hosted on a VM. Add this
+                        to your Word Document.
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        Don't forget to delete any unneeded resources from your cloud service
+                        accounts. Upload your document to Canvas.
+                    </p>
+                </div> <!-- #finish-ex3 -->
+            </div> <!-- #ex3 -->
+
+        </div> <!-- #tabs -->
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+    </div> <!-- #assignment -->
+</div> <!-- #dbaas -->

@@ -1,0 +1,326 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="lab5" style="background-color:moccasin;">
+    <div id="navigation"
+         style="
+                padding: 20px;
+                width: 100px;
+                height: 130px;
+                font-size: 80%;
+                text-align: center;
+                font-style:italic;
+                color:navy;
+                display:block;
+                float:right;
+        ">
+        <a href="/courses/49150">
+            <img style="margin-left:auto; margin-right:auto; padding-bottom:0.5em;"
+                 src="/courses/49150/files/8043903/preview"
+                 alt="generic logic flow image" width="100" />
+            home
+        </a>
+
+    </div> <!-- #navigation -->
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="overview" style="padding:20px;">
+        <h2 class="alert">Lab #5</h2>
+        <div id="introduction">
+            <p>
+                This lab provides an opportunity to apply the concepts and principles
+                presented in chapter 4 of the PLD text.
+            </p>
+            <p>
+                You have the choice of doing either pseudocode or a flowchart for each 
+                exercise. In the guided exercises, we will mix it up and do the first 
+                exercise with a flow chart and the second with pseudocode.
+            </p>
+        </div> <!-- #introduction -->
+
+        <div id="topics" style="padding:40px;">
+            <ul>
+                Topics:
+                <li>Creating applications in Python.</li>
+                <li>Python repetition (loop) structures.</li>
+                <li>Selection structures.</li>
+                <li>Arrays and lists.</li>
+                <li>Parallel arrays.</li>
+                <li>Searching an array for a value.</li>
+                <li>Random numbers.</li>
+            </ul>
+        </div> <!-- #topics -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style:italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1">Exercise 1</a></li>
+            <li><a href="#ex2">Exercise 2</a></li>
+            <li><a href="#ex3">Exercise 3</a></li>
+            <li><a href="#ex4">Exercise 4</a></li>
+        </ul>
+
+        <div id="ex1" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Guided Zip Code Lookup</h3>
+
+            <div id="ex1-intro">
+                <h4>Description</h4>
+                <p>
+                    The first case study is taken from page 199 in the PLD text.
+                    We’re only going to do the part where the user enters a zip
+                    code. If the zip code is found, the program displays the city
+                    and state. This is something we’ve seen and done while ordering
+                    items on a web site or filling out an online form.
+                </p>
+                <p>
+                    We’re going to focus mainly on things that are new so there
+                    won’t be a whole lot of detail on creating a program file in
+                    Python, etc. In this case, we’ll focus on creating arrays, coding
+                    an efficient search loop, and accessing the elements of an array.
+                </p>
+            </div> <!-- #ex-1-intro -->
+            <p>
+                Analysis: The user enters a zip code. Search the array using a
+                loop. If the zip code is found, return the corresponding city and
+                state from the parallel arrays. Quick review from the book: If we
+                search an array and find a match at subscript n, we can get the
+                corresponding values from the parallel arrays at subscript n as
+                well. We can do either pseudocode or a flowchart.
+            </p>
+            <p>
+                Sample flowchart:
+            </p>
+            <p style="text-align:center;">
+                <img src="/courses/49150/files/8153703/preview" alt="zip code search flowchart" />
+                fig.1 - Zip Code search - Flowchart
+            </p>
+
+            <p>
+                You can do this in pseudocode if you prefer. If you decide to create this
+                or any other drawings, don't forget to export your work as a .jpg image to 
+                turn it in.
+            </p>
+            <p>
+                Note in the loop condition, we have 2 conditions: one to stay in the
+                bounds of the array and the other is a search flag called found. Note
+                the <i>found</i> flag is initially set <b>false</b> and gets set to
+                <b>true</b> if we get a match. This makes our search more efficient.
+                Why continue searching for something if we already found it? To avoid
+                a selection structure after the loop, we can initialize our city and
+                state variables to something like “NOT FOUND” when we declare them.
+            </p>
+
+            <p>
+                To save time and make things a little easier, we’ll do just 4 zip
+                codes and the corresponding cities and states, but this code could be
+                expanded to much larger lists (arrays).
+            </p>
+
+            <div id="ex1-code">
+                <h2 class="alert">Code</h2>
+                <h3>Python Implementation</h3>
+                <p>
+                    In Python, create a new file called <b>ZipSearch.py</b>. Be
+                    sure to save in your Lab05 folder.
+                </p>
+                <p style="text-align:center;">
+                    <img src="/courses/49150/files/8153710/preview" alt="zip code search sample code" />
+                    fig.2 Zip code array search code
+                </p>
+                <p>
+                    Be sure to test with both valid and invalid zip codes.
+                </p>
+                <p style="text-align:center;">
+                    <img src="/courses/49150/files/8153725/preview" alt="Zip code search test - part 2" />
+                    fig.3 test for invalid user entry
+                </p>
+                <p>
+                    Notes on the code above:
+                    <ul>
+                        <li>Initializing city to “NOT FOUND” and state to a blank string eliminates need for a selection structure after the loop.</li>
+                        <li>Note the compound condition in the while loop and use of the Python not operator.</li>
+                        <li>Watch your indentation closely with Python loops and selection structures</li>
+                        <li>Be sure to code the colon (:) after loop and selection structure conditions.</li>
+                    </ul>
+                </p>
+            </div> <!-- #ex1-code -->
+            <p style="font-style:italic; text-align:center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Guided Dice Game</h3>
+            <p>
+                This one is for all you aspiring game programmers to give you a taste
+                and appreciation of what it’s like to program even a simple computer
+                game. We’re going to design and code a dice game or scaled down version
+                of Yahtzee if you will. This exercise is based largely off exercise 15
+                on page 197 of the PLD text. Here’s how it will work:
+            <p>
+                <ul>
+                    <li>Player (person) against the computer.</li>
+                    <li>Each player will roll 5 dice.</li>
+                    <li>
+                        Find highest dice combination rolled such as 5 of a kind, 4 of a
+                        kind, 3 of a kind, or pair.
+                    </li>
+                    <li>Display value of each roll.</li>
+                    <li>To keep things simple for now, play 1 round.</li>
+                </ul>
+            <p>
+                Random numbers are used in games for dice rolls, dealing cards, etc.
+                so that’s what will be used for the dice rolls.
+            </p>
+
+            <hr />
+            <h3>Analysis</h3>
+            <p>
+                This time we’ll use Pseudocode although you can do a flowchart if
+                you’d like some extra challenge and practice with those. If you
+                created a pseudocode file in exercise 1, you may add your
+                pseudocode for this exercise. Otherwise, go ahead and create a
+                file for your pseudocode now. Being a guided exercise, you are
+                given a screen shot of the pseudocode.
+            </p>
+
+            <p style="text-align:center;">
+                <img src="/courses/49150/files/8153749/preview" alt="Ex. 2 - pseudocode" />
+                Fig 4. Ex 2 - pseudocode
+            </p>
+
+            <h3>Code the Application</h3>
+            <p>
+                Create a new Python code file called <b>DiceExercise2.py</b>. Being
+                a guided exercise, you are given screenshots of the code you need to
+                write.
+            </p>
+            <ul>
+                Things to watch out for as you write your code:
+                <li>Make sure you import random.</li>
+                <li>Watch indentation (4 spaces) in loops and selection structures.</li>
+                <li>
+                    In Python, we’re actually using lists but we still need to watch the
+                    lower bound (0) and make sure we’re staying within the upper bound.
+                </li>
+            </ul>
+            <p style="text-align:center;">
+                <img src="/courses/49150/files/8153770/preview" alt="ex.2 sample code - part 1" />
+                <img src="/courses/49150/files/8153775/preview" alt="ex.2 sample code - part 2" />
+                Fig 5. Ex 2 - sample code
+            </p>
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Shipping Charge Calculator</h3>
+            <p>
+                You’ve probably seen these in online shopping applications: Get an
+                estimated shipping cost based on the zip code your order has to ship
+                to. Price will vary depending on if it’s shipped via Coyote Express
+                or Coyote Ground.
+            </p>
+            <p>
+                Develop a Python application that will allow the user to enter a zip
+                code and shipping method. You must then look up the zip code and return
+                the correct city and shipping charge based on the user’s shipping choice.
+                You can shorten the shipping choice to “Express” and “Ground” if you
+                prefer.
+            </p>
+            <p>
+                You must use either a Python array or list for the zip codes and
+                shipping charges. If the user enters an invalid zip code, your
+                application must display an appropriate “Zip code not found” message
+            </p>
+            <table style="width:95%;">
+                <caption>Parallel Arrays - content</caption>
+                <tbody>
+                    <tr>
+                        <th scope="row" style="width:15%">Zip Code</th>
+                        <td style="width:17%">92020</td>
+                        <td style="width:17%">91901</td>
+                        <td style="width:17%">92040</td>
+                        <td style="width:17%">91976</td>
+                        <td style="width:17%">92071</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">City</th>
+                        <td>El Cajon</td>
+                        <td>Alpine</td>
+                        <td>Lakeside</td>
+                        <td>Spring Valley</td>
+                        <td>Santee</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Express</th>
+                        <td>$5.00</td>
+                        <td>$10.00</td>
+                        <td>$7.00</td>
+                        <td>$6.00</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ground</th>
+                        <td>$3.00</td>
+                        <td>$5.00</td>
+                        <td>$4.00</td>
+                        <td>$3.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Hint: This exercise is similar to guided exercise 1 so you will
+                find quite a bit of code you can “borrow”.
+            </p>
+            <p>
+                <strong><em>Before</em></strong> writing any code, be sure to complete
+                either pseudocode or a flowchart. This is worth points!
+            </p>
+            <p>
+                Create a Python code file called <strong>ShippingChargeExercise3</strong>
+                for your program code.
+            </p>
+            <hr />
+            <p style="font-style:italic; text-align:center;">Go to Exercise 4!</p>
+        </div> <!-- #ex3 -->
+
+        <div id="ex4" style="padding:20px; background-color:moccasin;">
+            <h2 class="alert">Exercise 4</h2>
+            <h3>Dice Game (Revisited)</h3>
+            <p>
+                In this exercise, you will make the following modifications to the dice
+                game from exercise 2:
+            </p>
+            <ul>
+                <li>Prompt the user for the number of rounds they want to play.</li>
+                <li>Code a loop to play the user entered number of rounds.</li>
+                <li>Keep score for the player and computer.</li>
+                <li>
+                    At the end, display who won the game after all rounds have been
+                    played (player, computer or tie).
+                </li>
+            </ul>
+            <p>
+                You must complete exercise 2 before starting this.
+            </p>
+            <p>
+                Save a copy of the <strong>DiceGameExercise2.py</strong> as 
+                <strong>DiceGameExercise4.py</strong>. You may copy the pseudocode or 
+                flowchart you did in exercise 2 and add/modify things as needed.
+            </p>
+            <hr />
+            <p>
+                Zip <b>Lab05</b> folder and upload.
+            </p>
+
+        </div> <!-- #ex4 -->
+
+
+
+    </div> <!-- #tabs -->
+</div> <!-- #lab5 -->

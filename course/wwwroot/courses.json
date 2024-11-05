@@ -1,11 +1,810 @@
 {
   "colleges": {
+    "Canvas": {
+      "terms": {
+        "ongoing": {
+          "holidays": {
+            "Christmas": "25-Dec-2020"
+          },
+          "important dates": {}
+        }
+      },
+      "courses": {
+        "OOP-1 (C#)": {
+          "status": "draft",
+          "catalog ID": "OOP-1",
+          "background": "moccasin",
+          "shadow": "tan",
+          "cover image": "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw4NTYwNzl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+          "canvas URL": "https://canvas.instructure.com",
+          "canvas course ID": 6449778,
+          "name": "Object-Oriented Programming-1",
+          "long name": "OBJ ORIENT PG 1",
+          "course code": "OBJ ORIENT PG 1",
+          "time zone": "PST8",
+          "SIS ID": "",
+          "subaccount": "",
+          "term": "ongoing",
+          "start": "8-Jan-2024",
+          "end": "4-May-2024",
+          "description": [
+            "This course is a continuation of structured programming concepts using the C# programming language. This includes techniques for algorithm development, coding, and testing. This course will delve into forms, controls, and events using event-driven programming concepts. Students will create GUI-based and event driven applications to reinforce new concepts and material presented in each chapter.",
+            "Each chapter will be in a module that will provide you with lecture notes, PowerPoint slides for note taking, videos and code demonstrations that illustrate/apply the chapter concepts. Additionally, you will find links to any quizzes or other assignments for the chapter."
+          ],
+          "textbook": {
+            "title": "Microsoft Visual C# Step by Step, 10th ed.",
+            "author": "Sharp",
+            "ISBN-13": "9780137619832"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 11
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 12
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 14
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 16
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 17
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
+        "OOP-1 (template)": {
+          "status": "published",
+          "catalog ID": "OOP1",
+          "canvas URL": "https://canvas.instructure.com",
+          "canvas course ID": 7099152,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "OBJ ORIENT PG 1",
+          "course code": "OBJ ORIENT PG 1",
+          "time zone": "EST5",
+          "office hours": "W 1P (EST)",
+          "SIS ID": "COP2551_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "21-Aug-2023",
+          "end": "8-Dec-2023",
+          "description": "",
+          "textbook": {
+            "title": "Microsoft Visual C# Step by Step",
+            "author": "Sharp",
+            "ISBN": "978-0-13-761983-2"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
+        "OOP-2 (C#)": {},
+        "CSIT175 Python Spring 2024": {
+          "status": "draft",
+          "catalog ID": "CSIT 175",
+          "canvas URL": "https://palomar.instructure.com",
+          "canvas course ID": 49289,
+          "name": "Python Programming",
+          "long name": "PYTHON PROGRAMMING 35163",
+          "course code": "CSIT 175",
+          "time zone": "PST8",
+          "SIS ID": "2243-35163",
+          "subaccount": "Palomar",
+          "term": "Spring 2024",
+          "start": "29-Jan-2024",
+          "end": "24-May-2024",
+          "description": "",
+          "textbook": "Murach Python Programming",
+          "c-id": {
+            "Discipline": "Computer Science",
+            "C-ID Number": "112",
+            "Title": "Introduction to Programming Concepts and Methodologies"
+          },
+          "objectives": {
+            "1": "Understand the fundamentals of the Python programming language",
+            "2": "Write syntactically and semantically correct Python programs",
+            "3": "Create Python Desktop and Web applications",
+            "4": "Analyze program requirements and design solutions using Python."
+          },
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Variables and Data Types",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Working with Lists",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "(Chapter 3) Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "(Chapter 4) Looping",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "(Chapter 5) Arrays (2 weeks)",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "(Chapter 6) Using Methods (2 weeks)",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "(Chapter 8) More Object Concepts (2 weeks)",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 98,
+              "title": "Thanksgiving",
+              "week": 14
+            },
+            {
+              "module": 10,
+              "title": "(Chapter 10) Exception Handling",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "(Chapter 11) System Modeling with UML",
+              "week": 16,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+              "week": 17,
+              "ready": true
+            },
+            {
+              "module": 13,
+              "title": "Finals Week",
+              "week": 18,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Lab1",
+                "module": 1,
+                "days": 6,
+                "tasks": [
+                  "lab folder structure",
+                  "pseudocode.txt",
+                  "calculator.py",
+                  "KmToMiles.py",
+                  "MilesToKm.py"
+                ],
+                "points": 10
+              },
+              {
+                "title": "Lab2",
+                "module": 2,
+                "days": 6
+              },
+              {
+                "title": "Lab3",
+                "module": 3,
+                "days": 6
+              },
+              {
+                "title": "Lab4",
+                "module": 4,
+                "days": 6
+              },
+              {
+                "title": "Lab5",
+                "module": 5,
+                "days": 13
+              },
+              {
+                "title": "Lab6",
+                "module": 6,
+                "days": 13
+              },
+              {
+                "title": "Lab7",
+                "module": 7,
+                "days": 13
+              },
+              {
+                "title": "Lab8",
+                "module": 8,
+                "days": 13
+              },
+              {
+                "title": "Lab9",
+                "module": 9,
+                "days": 6
+              },
+              {
+                "title": "Lab10",
+                "module": 10,
+                "days": 6
+              },
+              {
+                "title": "Lab11",
+                "module": 11,
+                "days": 6
+              },
+              {
+                "title": "Lab12",
+                "module": 12,
+                "days": 6
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "Chapter 1 Quiz",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 2 Quiz",
+                "module": 2,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 3 Quiz",
+                "module": 3,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 4 Quiz",
+                "module": 4,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 5 Quiz",
+                "module": 5,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 6 Quiz",
+                "module": 6,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 7 Quiz",
+                "module": 7,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 8 Quiz",
+                "module": 8,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 9 Quiz",
+                "module": 9,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 10 Quiz",
+                "module": 10,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 11 Quiz",
+                "module": 11,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 12 Quiz",
+                "module": 12,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Mid-term Exam",
+                "module": 6,
+                "days": 15,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 13,
+                "days": 3,
+                "points": 100
+              }
+            ]
+          }
+        }
+
+      }
+    },
     "CCC-CSU C-ID": {
       "courses": {
         "COMP112": {
           "CanvasCourseID": 999,
           "Start": "1-Jan-1900",
           "End": "31-Jan-1900",
+          "description": "",
           "objectives": [
             "Describe the software development life-cycle",
             "Describe the principles of structured programming and be able to describe, design, implement, and test structured programs using currently accepted methodology",
@@ -59,11 +858,54 @@
             ],
             "Memorial Day": "30-May-2022"
           },
-          "important dates": {}
+          "important dates": {
+          }
         },
         "Fall 2022": {
           "holidays": {},
           "important dates": {}
+        },
+        "Spring 2023": {
+          "holidays": {
+            "Spring Break": [
+              "27-Mar-2023",
+              "28-Mar-2023",
+              "29-Mar-2023",
+              "30-Mar-2023",
+              "31-Mar-2023"
+            ],
+            "Memorial Day": "29-May-2023"
+          },
+          "important dates": {
+            "classes start": "30-Jan-2023",
+            "classes end": "",
+            "finals": [
+              "30-May-2023",
+              "31-May-2023",
+              "1-Jun-2023",
+              "2-Jun-2023",
+              "3-Jun-2023"
+            ]
+          }
+        },
+        "Fall 2023": {
+          "holidays": {
+            "Labor Day": "4-Sep-2023",
+            "Veterans Day": "10-Sep-2023",
+            "Thanksgiving": [
+              "20-Nov-2023",
+              "21-Nov-2023",
+              "22-Nov-2023",
+              "23-Nov-2023",
+              "24-Nov-2023"
+            ]
+          },
+          "important dates": {
+            "classes start": "21-Aug-2023",
+            "classes end": "16-Dec-2023",
+            "drop deadline": "12-Nov-2023",
+            "grades due": "21-Dec-2023"
+          }
         }
       },
       "courses": {
@@ -81,6 +923,7 @@
           "term": "Spring 2022",
           "start": "31-Jan-2022",
           "end": "6-Jun-2022",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -300,6 +1143,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "17-Dec-2022",
+          "description": "",
           "textbook": "Programming Logic and Design",
           "c-id": {
             "Discipline": "Computer Science",
@@ -564,6 +1408,577 @@
               }
             ]
           }
+        },
+        "CS-119 (2023 Spring) - Python": {
+          "status": "draft",
+          "catalog ID": "CS119",
+          "canvas URL": "https://gcccd.instructure.com",
+          "canvas course ID": 48300,
+          "name": "Program Design & Development",
+          "long name": "2022FA-CS-119-0799 - Program Design & Development",
+          "course code": "2022FA-CS-119-0799",
+          "time zone": "PST8",
+          "SIS ID": "2022FA-0799",
+          "subaccount": "Computer Science",
+          "term": "Spring 2022",
+          "start": "30-Jan-2023",
+          "end": "2-Jun-2023",
+          "description": "",
+          "textbook": "Programming Logic and Design",
+          "c-id": {
+            "Discipline": "Computer Science",
+            "C-ID Number": "112",
+            "Title": "Introduction to Programming Concepts and Methodologies"
+          },
+          "objectives": [
+            "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools",
+            "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
+            "Test and debug applications using debugging tools such as trace execution"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "(Chapter 1) An Overview of Computer Programming",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "(Chapter 2) Applications and Data",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "(Chapter 3) Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "(Chapter 4) Looping",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "(Chapter 5) Arrays (2 weeks)",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "(Chapter 6) Using Methods (2 weeks)",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "(Chapter 8) More Object Concepts (2 weeks)",
+              "week": 12,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+              "week": 14,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "(Chapter 10) Exception Handling",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "(Chapter 11) System Modeling with UML",
+              "week": 16,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+              "week": 17,
+              "ready": true
+            },
+            {
+              "module": 13,
+              "title": "Finals Week",
+              "week": 18,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Lab1",
+                "module": 1,
+                "days": 6,
+                "tasks": [
+                  "lab folder structure",
+                  "pseudocode.txt",
+                  "calculator.py",
+                  "KmToMiles.py",
+                  "MilesToKm.py"
+                ],
+                "points": 10
+              },
+              {
+                "title": "Lab2",
+                "module": 2,
+                "days": 6
+              },
+              {
+                "title": "Lab3",
+                "module": 3,
+                "days": 6
+              },
+              {
+                "title": "Lab4",
+                "module": 4,
+                "days": 6
+              },
+              {
+                "title": "Lab5",
+                "module": 5,
+                "days": 13
+              },
+              {
+                "title": "Lab6",
+                "module": 6,
+                "days": 13
+              },
+              {
+                "title": "Lab7",
+                "module": 7,
+                "days": 13
+              },
+              {
+                "title": "Lab8",
+                "module": 8,
+                "days": 13
+              },
+              {
+                "title": "Lab9",
+                "module": 9,
+                "days": 6
+              },
+              {
+                "title": "Lab10",
+                "module": 10,
+                "days": 6
+              },
+              {
+                "title": "Lab11",
+                "module": 11,
+                "days": 6
+              },
+              {
+                "title": "Lab12",
+                "module": 12,
+                "days": 6
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "Chapter 1 Quiz",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 2 Quiz",
+                "module": 2,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 3 Quiz",
+                "module": 3,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 4 Quiz",
+                "module": 4,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 5 Quiz",
+                "module": 5,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 6 Quiz",
+                "module": 6,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 7 Quiz",
+                "module": 7,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 8 Quiz",
+                "module": 8,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 9 Quiz",
+                "module": 9,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 10 Quiz",
+                "module": 10,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 11 Quiz",
+                "module": 11,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 12 Quiz",
+                "module": 12,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Mid-term Exam",
+                "module": 6,
+                "days": 15,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 13,
+                "days": 3,
+                "points": 100
+              }
+            ]
+          }
+        },
+        "CS-119 (2023 Fall) - Python": {
+          "status": "draft",
+          "catalog ID": "CS119",
+          "canvas URL": "https://gcccd.instructure.com",
+          "canvas course ID": 999,
+          "name": "Program Design & Development",
+          "long name": "2022FA-CS-119-0799 - Program Design & Development",
+          "course code": "2022FA-CS-119-0799",
+          "time zone": "PST8",
+          "SIS ID": "2023FA-0799",
+          "subaccount": "Computer Science",
+          "term": "Fall 2023",
+          "start": "21-Aug-2023",
+          "end": "21-Dec-2023",
+          "description": "",
+          "textbook": "Programming Logic and Design",
+          "c-id": {
+            "Discipline": "Computer Science",
+            "C-ID Number": "112",
+            "Title": "Introduction to Programming Concepts and Methodologies"
+          },
+          "objectives": [
+            "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools",
+            "Properly code applications using the fundamental coding structures: sequence, selection, and loops",
+            "Test and debug applications using debugging tools such as trace execution"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "(Chapter 1) An Overview of Computer Programming",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "(Chapter 2) Applications and Data",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "(Chapter 3) Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "(Chapter 4) Looping",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "(Chapter 5) Arrays (2 weeks)",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "(Chapter 6) Using Methods (2 weeks)",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "(Chapter 7) Object-Oriented Programming Concepts (2 weeks)",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "(Chapter 8) More Object Concepts (2 weeks)",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "(Chapter 9) Event-Driven Prog. and GUIs",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 98,
+              "title": "Thanksgiving",
+              "week": 14
+            },
+            {
+              "module": 10,
+              "title": "(Chapter 10) Exception Handling",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "(Chapter 11) System Modeling with UML",
+              "week": 16,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "(Chapter 12) Manipulating Larger Quantities of Data",
+              "week": 17,
+              "ready": true
+            },
+            {
+              "module": 13,
+              "title": "Finals Week",
+              "week": 18,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Lab1",
+                "module": 1,
+                "days": 6,
+                "tasks": [
+                  "lab folder structure",
+                  "pseudocode.txt",
+                  "calculator.py",
+                  "KmToMiles.py",
+                  "MilesToKm.py"
+                ],
+                "points": 10
+              },
+              {
+                "title": "Lab2",
+                "module": 2,
+                "days": 6
+              },
+              {
+                "title": "Lab3",
+                "module": 3,
+                "days": 6
+              },
+              {
+                "title": "Lab4",
+                "module": 4,
+                "days": 6
+              },
+              {
+                "title": "Lab5",
+                "module": 5,
+                "days": 13
+              },
+              {
+                "title": "Lab6",
+                "module": 6,
+                "days": 13
+              },
+              {
+                "title": "Lab7",
+                "module": 7,
+                "days": 13
+              },
+              {
+                "title": "Lab8",
+                "module": 8,
+                "days": 13
+              },
+              {
+                "title": "Lab9",
+                "module": 9,
+                "days": 6
+              },
+              {
+                "title": "Lab10",
+                "module": 10,
+                "days": 6
+              },
+              {
+                "title": "Lab11",
+                "module": 11,
+                "days": 6
+              },
+              {
+                "title": "Lab12",
+                "module": 12,
+                "days": 6
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "Chapter 1 Quiz",
+                "module": 1,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 2 Quiz",
+                "module": 2,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 3 Quiz",
+                "module": 3,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 4 Quiz",
+                "module": 4,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 5 Quiz",
+                "module": 5,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 6 Quiz",
+                "module": 6,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 7 Quiz",
+                "module": 7,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 8 Quiz",
+                "module": 8,
+                "days": 13,
+                "points": 10
+              },
+              {
+                "title": "Chapter 9 Quiz",
+                "module": 9,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 10 Quiz",
+                "module": 10,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 11 Quiz",
+                "module": 11,
+                "days": 6,
+                "points": 10
+              },
+              {
+                "title": "Chapter 12 Quiz",
+                "module": 12,
+                "days": 6,
+                "points": 10
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Mid-term Exam",
+                "module": 6,
+                "days": 15,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 13,
+                "days": 3,
+                "points": 100
+              }
+            ]
+          }
         }
       }
     },
@@ -595,6 +2010,30 @@
             "Finals Week ends": "11-Dec-2022",
             "Grades due": "12-Dec-2022"
           }
+        },
+        "Spring 2023": {
+          "holidays": {
+            "Martin Luther King, Jr.": "16-Jan-2023",
+            "Spring Break": [
+              "13-Mar-2023",
+              "14-Mar-2023",
+              "15-Mar-2023",
+              "16-Mar-2023",
+              "17-Mar-2023"
+            ]
+          },
+          "important dates": {
+            "classes begin": "9-Jan-2023",
+            "classes end": "29-Apr-2023",
+            "final exams": [
+              "1-May-2023",
+              "2-May-2023",
+              "3-May-2023",
+              "4-May-2023",
+              "5-May-2023"
+            ],
+            "grades due": "8-May-2023"
+          }
         }
       },
       "courses": {
@@ -612,6 +2051,7 @@
           "term": "Spring 2021",
           "start": "4-Jan-2021",
           "end": "30-Apr-2021",
+          "description": "",
           "textbook": {
             "title": "Starting Out with Visual C#, 5ed",
             "author": "Gaddis",
@@ -837,490 +2277,6 @@
             "Presentations": ""
           }
         },
-        "COP2551 (2022 Fall) - Visual C# (TIC)": {
-          "status": "draft",
-          "catalog ID": "COP-2551",
-          "canvas URL": "https://courses.sfcollege.edu",
-          "canvas course ID": 449240,
-          "name": "Intermediate Object-Oriented Programming",
-          "long name": "F22 COP2552.0M1: OBJ ORIENT PG 2",
-          "course code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
-          "time zone": "EST5",
-          "SIS ID": "COP2552_0M1_F22",
-          "subaccount": "Santa Fe College",
-          "term": "Fall 2022",
-          "start": "22-Aug-2022",
-          "end": "10-Dec-2022",
-          "textbook": {
-            "title": "Starting Out with Visual C#, 5ed",
-            "author": "Gaddis",
-            "ISBN": "978-0-13-518351-9"
-          },
-          "objectives": [
-            "Understand the program development cycle",
-            "Understand forms, controls, and events",
-            "Understand data types and variable scope",
-            "Use the various types of selection structures",
-            "Use the various types of repetition structures",
-            "Use arrays and pointers to store character and numeric data",
-            "Understand how to create and use functions",
-            "Understand how sequential data files are opened, read to and from, deleted, and merged",
-            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
-            "Understand the basic concepts of working with a database",
-            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
-          ],
-          "modules": [
-            {
-              "module": 0,
-              "title": "Getting Started",
-              "week": 0
-            },
-            {
-              "module": 1,
-              "title": "intro to Visual C# & Processing Data",
-              "week": 1,
-              "ready": true
-            },
-            {
-              "module": 2,
-              "title": "Making Decisions",
-              "week": 3,
-              "ready": true
-            },
-            {
-              "module": 3,
-              "title": "Loops, Files and Random Numbers",
-              "week": 4,
-              "ready": true
-            },
-            {
-              "module": 4,
-              "title": "Modular Code",
-              "week": 5
-            },
-            {
-              "module": 5,
-              "title": "Text Processing",
-              "week": 6
-            },
-            {
-              "module": 6,
-              "title": "Structs, Enums, and Dict",
-              "week": 7
-            },
-            {
-              "module": 7,
-              "title": "Introduction to Classes",
-              "week": 8
-            },
-            {
-              "module": 99,
-              "title": "Spring Break",
-              "week": 0
-            },
-            {
-              "module": 8,
-              "title": "Inherit.., Polym.., and Interfaces",
-              "week": 10
-            },
-            {
-              "module": 9,
-              "title": "Databases",
-              "week": 11
-            },
-            {
-              "module": 10,
-              "title": "LINQ",
-              "week": 13
-            },
-            {
-              "module": 11,
-              "title": "wrap-up",
-              "week": 15
-            },
-            {
-              "module": 12,
-              "title": "finals week",
-              "week": 16
-            }
-          ],
-          "assignments": {
-            "Discussions": [
-              {
-                "title": "Ice Breaker - Getting to know you (Part 1)",
-                "points": 0,
-                "module": 1
-              },
-              {
-                "title": "Ice Breaker",
-                "points": 50,
-                "days": 6,
-                "module": 1
-              }
-            ],
-            "Projects": [
-              {
-                "title": "Project 1 - ticket sales",
-                "module": 1,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 2",
-                "module": 2,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 3",
-                "module": 3,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 4",
-                "module": 4,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 5",
-                "module": 5,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 6",
-                "module": 6,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 7a",
-                "module": 7,
-                "points": 100
-              },
-              {
-                "title": "Project 7b",
-                "module": 7,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 8",
-                "module": 8,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 9a",
-                "module": 9,
-                "points": 100
-              },
-              {
-                "title": "Project 9b",
-                "module": 9,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 10",
-                "module": 10,
-                "days": 13,
-                "points": 100
-              }
-            ],
-            "Exams": [
-              {
-                "title": "Exam 1",
-                "module": 2,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 2",
-                "module": 4,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 3",
-                "module": 6,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 4",
-                "module": 8,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 5",
-                "module": 10,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Final Exam",
-                "module": 11,
-                "days": 8,
-                "points": 100
-              }
-            ],
-            "Quizzes": [
-              {
-                "title": "syllabus ack.",
-                "days": 6,
-                "module": 1,
-                "points": 50
-              }
-            ],
-            "Presentations": ""
-          }
-        },
-        "COP2551 (2022 Fall) - Visual C# (TAC)": {
-          "status": "draft",
-          "catalog ID": "COP-2551",
-          "canvas URL": "https://courses.sfcollege.edu",
-          "canvas course ID": 453172,
-          "name": "Intermediate Object-Oriented Programming",
-          "long name": "F22 COP2551.0M2: OBJ ORIENT PG 1",
-          "course code": "F22 COP2551.0M2: OBJ ORIENT PG 1",
-          "time zone": "EST5",
-          "SIS ID": "COP2552_0M1_F22",
-          "subaccount": "Santa Fe College",
-          "term": "Fall 2022",
-          "start": "22-Aug-2022",
-          "end": "10-Dec-2022",
-          "textbook": {
-            "title": "Starting Out with Visual C#, 5ed",
-            "author": "Gaddis",
-            "ISBN": "978-0-13-518351-9"
-          },
-          "objectives": [
-            "Understand the program development cycle",
-            "Understand forms, controls, and events",
-            "Understand data types and variable scope",
-            "Use the various types of selection structures",
-            "Use the various types of repetition structures",
-            "Use arrays and pointers to store character and numeric data",
-            "Understand how to create and use functions",
-            "Understand how sequential data files are opened, read to and from, deleted, and merged",
-            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
-            "Understand the basic concepts of working with a database",
-            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
-          ],
-          "modules": [
-            {
-              "module": 0,
-              "title": "Getting Started",
-              "week": 0
-            },
-            {
-              "module": 1,
-              "title": "intro to Visual C# & Processing Data",
-              "week": 1,
-              "ready": true
-            },
-            {
-              "module": 2,
-              "title": "Making Decisions",
-              "week": 3,
-              "ready": true
-            },
-            {
-              "module": 3,
-              "title": "Loops, Files and Random Numbers",
-              "week": 4,
-              "ready": true
-            },
-            {
-              "module": 4,
-              "title": "Modular Code",
-              "week": 5
-            },
-            {
-              "module": 5,
-              "title": "Text Processing",
-              "week": 6
-            },
-            {
-              "module": 6,
-              "title": "Structs, Enums, and Dict",
-              "week": 7
-            },
-            {
-              "module": 7,
-              "title": "Introduction to Classes",
-              "week": 8
-            },
-            {
-              "module": 99,
-              "title": "Spring Break",
-              "week": 0
-            },
-            {
-              "module": 8,
-              "title": "Inherit.., Polym.., and Interfaces",
-              "week": 10
-            },
-            {
-              "module": 9,
-              "title": "Databases",
-              "week": 11
-            },
-            {
-              "module": 10,
-              "title": "LINQ",
-              "week": 13
-            },
-            {
-              "module": 11,
-              "title": "wrap-up",
-              "week": 15
-            },
-            {
-              "module": 12,
-              "title": "finals week",
-              "week": 16
-            }
-          ],
-          "assignments": {
-            "Discussions": [
-              {
-                "title": "Ice Breaker - Getting to know you (Part 1)",
-                "points": 0,
-                "module": 1
-              },
-              {
-                "title": "Ice Breaker",
-                "points": 50,
-                "days": 6,
-                "module": 1
-              }
-            ],
-            "Projects": [
-              {
-                "title": "Project 1 - ticket sales",
-                "module": 1,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 2",
-                "module": 2,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 3",
-                "module": 3,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 4",
-                "module": 4,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 5",
-                "module": 5,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 6",
-                "module": 6,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 7a",
-                "module": 7,
-                "points": 100
-              },
-              {
-                "title": "Project 7b",
-                "module": 7,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 8",
-                "module": 8,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Project 9a",
-                "module": 9,
-                "points": 100
-              },
-              {
-                "title": "Project 9b",
-                "module": 9,
-                "days": 13,
-                "points": 100
-              },
-              {
-                "title": "Project 10",
-                "module": 10,
-                "days": 13,
-                "points": 100
-              }
-            ],
-            "Exams": [
-              {
-                "title": "Exam 1",
-                "module": 2,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 2",
-                "module": 4,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 3",
-                "module": 5,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 4",
-                "module": 7,
-                "days": 6,
-                "points": 100
-              },
-              {
-                "title": "Exam 5",
-                "module": 9,
-                "days": 3,
-                "points": 100
-              },
-              {
-                "title": "Final Exam",
-                "module": 11,
-                "days": 10,
-                "points": 100
-              }
-            ],
-            "Quizzes": [
-              {
-                "title": "syllabus ack.",
-                "days": 6,
-                "module": 1,
-                "points": 50
-              }
-            ],
-            "Presentations": ""
-          }
-        },
         "COP2552 (2022 Summer) - Java": {
           "status": "active",
           "catalog ID": "COP-2552",
@@ -1334,6 +2290,7 @@
           "term": "Summer 2022",
           "start": "9-May-2022",
           "end": "9-Aug-2022",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -1531,6 +2488,507 @@
             "Class Presentations": ""
           }
         },
+        "COP2551 (2022 Fall) - Visual C# (TIC)": {
+          "status": "draft",
+          "catalog ID": "COP-2551",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 449240,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+          "course code": "F22 COP2552.0M1: OBJ ORIENT PG 2",
+          "time zone": "EST5",
+          "SIS ID": "COP2552_0M1_F22",
+          "subaccount": "Santa Fe College",
+          "term": "Fall 2022",
+          "start": "22-Aug-2022",
+          "end": "10-Dec-2022",
+          "description": "",
+          "textbook": {
+            "title": "Starting Out with Visual C#, 5ed",
+            "author": "Gaddis",
+            "ISBN": "978-0-13-518351-9"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": true
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 0
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 15
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2 - BMI calc",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 3 - guess number",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4 - tictactoe sim",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5 - camelCase",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a - employees",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b - dorm life",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8 - address book",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a - personnel db",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b - population db",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10 - prod.search",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 10,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 8,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
+        "COP2551 (2022 Fall) - Visual C# (TAC)": {
+          "status": "complete",
+          "catalog ID": "COP-2551",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 453172,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+          "course code": "F22 COP2551.0M2: OBJ ORIENT PG 1",
+          "time zone": "EST5",
+          "SIS ID": "COP2552_0M1_F22",
+          "subaccount": "Santa Fe College",
+          "term": "Fall 2022",
+          "start": "22-Aug-2022",
+          "end": "10-Dec-2022",
+          "description": "",
+          "textbook": {
+            "title": "Starting Out with Visual C#, 5ed",
+            "author": "Gaddis",
+            "ISBN": "978-0-13-518351-9"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": true
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 0
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 15,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
         "COP2552 (2022 Fall) - Java": {
           "status": "published",
           "catalog ID": "COP-2552",
@@ -1544,6 +3002,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": "Java Early Objects, Gaddis",
           "objectives": [
             "Understand the program development cycle",
@@ -1570,85 +3029,85 @@
               "module": 1,
               "title": "Chapter 2: Java Fundamentals",
               "week": 1,
-              "ready": true
+              "ready": false
             },
             {
               "module": 2,
               "title": "Chapter 3: A First Look at Classes and Objects",
               "week": 2,
-              "ready": true
+              "ready": false
             },
             {
               "module": 3,
               "title": "Chapter 4: Decision Structures",
               "week": 3,
-              "ready": true
+              "ready": false
             },
             {
               "module": 4,
               "title": "Chapter 5: Loops and Files",
               "week": 4,
-              "ready": true
+              "ready": false
             },
             {
               "module": 5,
               "title": "Chapter 6: A Second Look at Classes",
               "week": 5,
-              "ready": true
+              "ready": false
             },
             {
               "module": 6,
               "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
               "week": 6,
-              "ready": true
+              "ready": false
             },
             {
               "module": 7,
               "title": "Chapter 9: Inheritance",
               "week": 7,
-              "ready": true
+              "ready": false
             },
             {
               "module": 8,
               "title": "Chapter 10: Exceptions and Advanced File I/O",
               "week": 8,
-              "ready": true
+              "ready": false
             },
             {
               "module": 9,
               "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
               "week": 9,
-              "ready": true
+              "ready": false
             },
             {
               "module": 10,
               "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
               "week": 10,
-              "ready": true
+              "ready": false
             },
             {
               "module": 11,
               "title": "Chapter 13: Recursion",
               "week": 12,
-              "ready": true
+              "ready": false
             },
             {
               "module": 12,
               "title": "Chapter 15: Databases",
               "week": 13,
-              "ready": true
+              "ready": false
             },
             {
               "module": 13,
               "title": "Wrap-up and Final Exams",
               "week": 15,
-              "ready": true
+              "ready": false
             },
             {
               "module": 14,
               "title": "Finals Week",
               "week": 16,
-              "ready": true
+              "ready": false
             }
           ],
           "assignments": {
@@ -1753,6 +3212,7 @@
           "term": "Fall 2022",
           "start": "22-Aug-2022",
           "end": "10-Dec-2022",
+          "description": "",
           "textbook": "",
           "modules": [
             {
@@ -1763,84 +3223,1905 @@
             {
               "module": 1,
               "title": "intro to web appl",
-              "read": "Ch1 – An Introduction to web programming with ASP.NET Core MVC",
+              "read": "Ch1 ï¿½ An Introduction to web programming with ASP.NET Core MVC",
               "week": 1,
               "ready": true
             },
             {
               "module": 2,
               "title": "single page web apps",
-              "read": "Ch2 – How to develop a single-page MVC web app",
+              "read": "Ch2 ï¿½ How to develop a single-page MVC web app",
               "week": 2,
               "ready": true
             },
             {
               "module": 3,
               "title": "responsive design",
-              "read": "Ch3 – How to make a web app responsive with Bootstrap",
+              "read": "Ch3 ï¿½ How to make a web app responsive with Bootstrap",
               "week": 3,
               "ready": true
             },
             {
               "module": 4,
               "title": "data-driven MVC",
-              "read": "Ch4 – How to develop a data-driven MVC web app",
+              "read": "Ch4 ï¿½ How to develop a data-driven MVC web app",
               "week": 4,
               "ready": true
             },
             {
               "module": 5,
               "title": "Manually test and debug",
-              "read": "Ch5 – Manually test and debug an ASP.NET Core web app",
-              "week": 5
+              "read": "Ch5 ï¿½ Manually test and debug an ASP.NET Core web app",
+              "week": 5,
+              "ready": true
             },
             {
               "module": 6,
               "title": "Working with controllers and routing",
-              "read": "Ch6 – working with controllers and routing",
-              "week": 6
+              "read": "Ch6 ï¿½ working with controllers and routing",
+              "week": 6,
+              "ready": true
             },
             {
               "module": 7,
               "title": "Working with Razor views",
-              "read": "Ch7 – Working with Razor views",
-              "week": 7
+              "read": "Ch7 ï¿½ Working with Razor views",
+              "week": 7,
+              "ready": true
             },
             {
               "module": 8,
               "title": "xfr data from controller",
-              "read": "Ch8 – ",
-              "week": 8
+              "read": "Ch8 ï¿½ xfr data between controller and view",
+              "week": 8,
+              "ready": true
             },
             {
               "module": 9,
               "title": "state & cookies",
-              "read": "Ch9 –",
-              "week": 9
+              "read": "Ch9 ï¿½ session state and cookies",
+              "week": 9,
+              "ready": true
             },
             {
               "module": 10,
               "title": "model binding",
               "read": "Ch10",
-              "week": 10
+              "week": 10,
+              "ready": true
             },
             {
               "module": 11,
               "title": "data validation",
               "read": "Ch11",
-              "week": 11
+              "week": 11,
+              "ready": true
             },
             {
               "module": 12,
               "title": "Entity Framework",
               "read": "Ch12",
-              "week": 12
+              "week": 12,
+              "ready": true
             },
             {
               "module": 13,
               "title": "e-commerce website",
               "read": "Ch13",
-              "week": 14
+              "week": 14,
+              "ready": true
+            },
+            {
+              "module": 14,
+              "title": "wrap up",
+              "week": 15
+            },
+            {
+              "module": 15,
+              "title": "final",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 20,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Web applications: Brainstorming",
+                "points": 0,
+                "days": 3,
+                "module": 3
+              },
+              {
+                "title": "Web applications: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 3
+              },
+              {
+                "title": "Github Hosting: README.md",
+                "points": 0,
+                "days": 3,
+                "module": 6
+              },
+              {
+                "title": "Github: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Github Code: commit",
+                "points": 0,
+                "days": 3,
+                "module": 8
+              },
+              {
+                "title": "Github Code: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Class Model: commit",
+                "points": 0,
+                "days": 3,
+                "module": 11
+              },
+              {
+                "title": "Class Model: Peer Review",
+                "points": 20,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Screenshots",
+                "points": 0,
+                "days": 6,
+                "module": 11
+              },
+              {
+                "title": "My App: Feedback",
+                "points": 20,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Ex1-1 - Guitar Shop",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "Ex2-1 - Price Quotation App",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "Ex4-1 - Contact Manager App",
+                "points": 100,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "title": "Ex6-1 - FAQ App",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "Ex8-1 - TripLog App",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "Ex10-1 - TicTacToe App",
+                "points": 100,
+                "days": 6,
+                "module": 10
+              },
+              {
+                "title": "Ex12-1 - TripLog_v2 App",
+                "points": 100,
+                "days": 6,
+                "module": 12
+              },
+              {
+                "title": "Ex13-1 - Quarterly Sales App",
+                "points": 100,
+                "days": 12,
+                "module": 13
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 1-4)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 5-8)",
+                "module": 9,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-13)",
+                "module": 14,
+                "days": 8,
+                "points": 100
+              }
+
+
+
+            ],
+            "Quizzes": []
+          }
+        },
+        "COP2551 (2023 Spring) - Visual C#": {
+          "status": "published",
+          "catalog ID": "COP-2551",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 456694,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "course code": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "time zone": "EST5",
+          "office hours": "W 1P (EST)",
+          "SIS ID": "COP2551_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": {
+            "title": "Starting Out with Visual C#, 5ed",
+            "author": "Gaddis",
+            "ISBN": "978-0-13-518351-9"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": true
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 12,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 14,
+              "ready": true
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 16,
+              "ready": true
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
+        "COP2552 (2023 Spring) - Java": {
+          "status": "published",
+          "catalog ID": "COP-2552",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 452308,
+          "long name": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "course code": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "time zone": "EST5",
+          "office hours": "W 2P (EST)",
+          "SIS ID": "COP2552_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": "Java Early Objects, Gaddis",
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand data types, variable scope, and file access",
+            "Recognize the properties and behaviors of classes and objects",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and arraylists to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Comprehend and use wrapper classes",
+            "Know proper use of exception handling",
+            "Understand and use JavaFX to create GUI-based applications",
+            "Utilize a relational database within a Java application"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Chapter 2: Java Fundamentals",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Chapter 3: A First Look at Classes and Objects",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "Chapter 4: Decision Structures",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "Chapter 5: Loops and Files",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Chapter 6: A Second Look at Classes",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Chapter 9: Inheritance",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "Chapter 10: Exceptions and Advanced File I/O",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "Chapter 13: Recursion",
+              "week": 13,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "Chapter 15: Databases",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "Wrap-up and Final Exams",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 14,
+              "title": "Finals Week",
+              "week": 16,
+              "ready": false
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 (Price Adjustment)",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 2 (Patient Visit Records)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 3 (Exercise Tracker)",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4 (Storm Data Analysis)",
+                "module": 10,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5 (Movie Catalog)",
+                "module": 11,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6 (Password Check)",
+                "module": 13,
+                "days": 4,
+                "points": 100
+              }
+            ],
+            "Quizzes": {},
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 2-5)",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 6-7)",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-10)",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4 (Chapters 11,12&15)",
+                "module": 12,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Final (Comprehensive)",
+                "module": 13,
+                "days": 7,
+                "points": 100
+              }
+            ],
+            "Class Presentations": ""
+          }
+        },
+        "CIS4083 (2023 Spring) Introduction to Cloud": {
+          "status": "draft",
+          "catalog ID": "CIS-4083",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 0,
+          "long name": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "course code": "W23 CIS4083.0M1: INTRO TO CLOUD",
+          "time zone": "EST5",
+          "SIS ID": "CIS4083_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "Course Learning Outcomes": [
+            "Master the concepts and principles of cloud computing.",
+            "Explain the basic concepts of cloud computing.",
+            "Identify and distinguish cloud types.",
+            "Explain methods of managing cloud computing systems.",
+            "Identify standards, best practices, and policies of cloud computing management.",
+            "Describe cloud services; SaaS, PaaS, IaaS, IDaaS.",
+            "Perform a business impact analysis.",
+            "Identify advantages and disadvantages of cloud-based storage.",
+            "Explain best practices when collaborating in the clouds.",
+            "Demonstrate professional level skills in the areas of disaster recovery and business continuity and the cloud.",
+            "Explain service-oriented architectures and web services.",
+            "Master techniques of using Infrastructure-as-a-Service, (IaaS), Platform-as-a-Service (Paas) and Big Data systems.",
+            "Master the techniques of developing, deploying, and managing cloud applications major topics: Introduction background and history of cloud computing, cloud computing concepts, cloud computing models with virtualization background and history  of virtualization, virtual machines, virtual networks, virtual storage IaaS system architecture, IaaS programming, PaaS System Architecture, PaaS Programming, Big Data system architecture and Big Data programming."
+          ],
+          "textbook": "",
+          "topics": [
+            "What is the cloud?",
+            "Cloud Services (SaaS, PaaS, IaaS, IDaaS, XaaS)",
+            "Scalability",
+            "Cloud Providers (AWS, Azure, GCP)",
+            "App Services",
+            "Virtual Machines",
+            "Storage",
+            "Databases",
+            "Virtual Networks",
+            "Authentication"
+          ],
+          "modules": [
+            {
+              "module": -99,
+              "title": "Spring Recess",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 0,
+              "title": "Resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "The Cloud, Architecture and Context",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Cloud Computing and Cloud Services",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "Getting your head in the cloud",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Collaboration and Deployment Types",
+              "week": 4,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Serverless Computing and Triggers",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Virtualization",
+              "week": 6,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "Scalability",
+              "week": 8,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "Designing Cloud-based and n-Tier Solutions",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Authentication and IDaaS",
+              "week": 13,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "Migrating to the Cloud",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "Next Steps",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "final",
+              "week": 17
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Tell us about you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Tell us about you",
+                "points": 75,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "leading CSPs",
+                "points": 75,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "new acct experience",
+                "points": 75,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "title": "Case Studies",
+                "points": 75,
+                "days": 6,
+                "module": 7
+              },
+              {
+                "title": "auth",
+                "points": 75,
+                "days": 6,
+                "module": 9
+              },
+              {
+                "title": "migrating",
+                "points": 75,
+                "days": 6,
+                "module": 10
+              },
+              {
+                "title": "looking ahead",
+                "points": 75,
+                "days": 6,
+                "module": 11
+              }
+            ],
+            "Projects": [
+              {
+                "title": "subscriptions",
+                "points": 100,
+                "days": 6,
+                "module": 3
+              },
+              {
+                "title": "Az CloudPix",
+                "points": 100,
+                "days": 6,
+                "module": 4
+              },
+              {
+                "Title": "AWS Lambda",
+                "points": 100,
+                "days": 6,
+                "module": 5
+              },
+              {
+                "Title": "VMs",
+                "points": 100,
+                "days": 13,
+                "module": 6
+              },
+              {
+                "Title": "SQL",
+                "points": 100,
+                "days": 13,
+                "module": 7
+              },
+              {
+                "Title": "n-tier",
+                "points": 100,
+                "days": 13,
+                "module": 8
+              },
+              {
+                "Title": "managing expenses",
+                "points": 100,
+                "days": 6,
+                "module": 10
+              }
+            ],
+            "Exams": [
+              {}
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus acknowledgement",
+                "module": 1,
+                "days": 6,
+                "points": 25
+              },
+              {
+                "title": "quiz 1-cloud computing",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "quiz 2-deployment, recovery",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "quiz 3-virt.,scalability",
+                "module": 9,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "quiz 4-auth, security, impacts",
+                "module": 12,
+                "days": 9,
+                "points": 100
+              }
+            ]
+          }
+        },
+        "CIS4891 (2023 Spring) Capstone Project": {
+          "status": "draft",
+          "catalog ID": "CIS-4891",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 0,
+          "long name": "W23 CIS4891.0M1: CAPSTONE",
+          "course code": "W23 CIS4891.0M1: CAPSTONE",
+          "time zone": "EST5",
+          "SIS ID": "CIS4891_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": "",
+          "modules": [
+            {
+              "module": 0,
+              "title": "Resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Concept Investigation",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Project Planning",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "UI UX and Single Responsibility",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Rqts and Test",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Data-Driven Design",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Agile Software Development",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "APIs and TDD",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "Responsive Design",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Project Delivery",
+              "week": 15,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "introduction",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "PDR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "FDR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "IPR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              }
+
+            ],
+            "Projects": [
+              {
+                "title": "concept investigation",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "project spec",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "software diagrams",
+                "points": 100,
+                "days": 13,
+                "module": 3
+              },
+              {
+                "title": "requirements and test",
+                "points": 100,
+                "days": 13,
+                "module": 4
+              },
+              {
+                "title": "data design",
+                "points": 100,
+                "days": 13,
+                "module": 5
+              },
+              {
+                "title": "prototype",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "data integration",
+                "points": 100,
+                "days": 13,
+                "module": 7
+              },
+              {
+                "title": "sprint plan",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "sprint review",
+                "points": 100,
+                "days": 13,
+                "module": 8
+              },
+              {
+                "title": "demo",
+                "points": 100,
+                "days": 13,
+                "module": 9
+              }
+            ],
+            "Exams": [],
+            "Quizzes": []
+          }
+
+        },
+        "COP2535 (2023 Fall) - Data Structures": {
+          "status": "draft",
+          "catalog ID": "CIS-4891",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 0,
+          "long name": "W23 CIS4891.0M1: CAPSTONE",
+          "course code": "W23 CIS4891.0M1: CAPSTONE",
+          "time zone": "EST5",
+          "SIS ID": "CIS4891_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": "",
+          "modules": [
+            {
+              "module": 0,
+              "title": "Resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Concept Investigation",
+              "week": 1,
+              "ready": true
+            },
+            {
+              "module": 2,
+              "title": "Project Planning",
+              "week": 2,
+              "ready": true
+            },
+            {
+              "module": 3,
+              "title": "UI UX and Single Responsibility",
+              "week": 3,
+              "ready": true
+            },
+            {
+              "module": 4,
+              "title": "Rqts and Test",
+              "week": 5,
+              "ready": true
+            },
+            {
+              "module": 5,
+              "title": "Data-Driven Design",
+              "week": 7,
+              "ready": true
+            },
+            {
+              "module": 6,
+              "title": "Agile Software Development",
+              "week": 9,
+              "ready": true
+            },
+            {
+              "module": 7,
+              "title": "APIs and TDD",
+              "week": 11,
+              "ready": true
+            },
+            {
+              "module": 8,
+              "title": "Responsive Design",
+              "week": 13,
+              "ready": true
+            },
+            {
+              "module": 9,
+              "title": "Project Delivery",
+              "week": 15,
+              "ready": true
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "introduction",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "PDR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "FDR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "IPR",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              }
+
+            ],
+            "Projects": [
+              {
+                "title": "concept investigation",
+                "points": 100,
+                "days": 6,
+                "module": 1
+              },
+              {
+                "title": "project spec",
+                "points": 100,
+                "days": 6,
+                "module": 2
+              },
+              {
+                "title": "software diagrams",
+                "points": 100,
+                "days": 13,
+                "module": 3
+              },
+              {
+                "title": "requirements and test",
+                "points": 100,
+                "days": 13,
+                "module": 4
+              },
+              {
+                "title": "data design",
+                "points": 100,
+                "days": 13,
+                "module": 5
+              },
+              {
+                "title": "prototype",
+                "points": 100,
+                "days": 6,
+                "module": 6
+              },
+              {
+                "title": "data integration",
+                "points": 100,
+                "days": 13,
+                "module": 7
+              },
+              {
+                "title": "sprint plan",
+                "points": 100,
+                "days": 6,
+                "module": 8
+              },
+              {
+                "title": "sprint review",
+                "points": 100,
+                "days": 13,
+                "module": 8
+              },
+              {
+                "title": "demo",
+                "points": 100,
+                "days": 13,
+                "module": 9
+              }
+            ],
+            "Exams": [],
+            "Quizzes": []
+          }
+
+        },
+        "COP2551 (2023 Fall) - OOP-1": {
+          "status": "published",
+          "catalog ID": "COP-2551",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 456694,
+          "name": "Intermediate Object-Oriented Programming",
+          "long name": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "course code": "W23 COP2551.0M1: OBJ ORIENT PG 1",
+          "time zone": "EST5",
+          "office hours": "W 1P (EST)",
+          "SIS ID": "COP2551_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": {
+            "title": "Starting Out with Visual C#, 5ed",
+            "author": "Gaddis",
+            "ISBN": "978-0-13-518351-9"
+          },
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand forms, controls, and events",
+            "Understand data types and variable scope",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and pointers to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Understand the basic concepts of working with a database",
+            "Understand the basic concepts of working with Language Integrated Query (LINQ)"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to Visual C# & Processing Data",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Making Decisions",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "Loops, Files and Random Numbers",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "Modular Code",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Text Processing",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Structs, Enums, and Dict",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Introduction to Classes",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10
+            },
+            {
+              "module": 8,
+              "title": "Inherit.., Polym.., and Interfaces",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "Databases",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "LINQ",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "wrap-up",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "finals week",
+              "week": 16
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 - ticket sales",
+                "module": 1,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 2",
+                "module": 2,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 3",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 7a",
+                "module": 7,
+                "points": 100
+              },
+              {
+                "title": "Project 7b",
+                "module": 7,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 8",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 9a",
+                "module": 9,
+                "points": 100
+              },
+              {
+                "title": "Project 9b",
+                "module": 9,
+                "days": 13,
+                "points": 100
+              },
+              {
+                "title": "Project 10",
+                "module": 10,
+                "days": 13,
+                "points": 100
+              }
+            ],
+            "Exams": [
+              {
+                "title": "Exam 1",
+                "module": 2,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 5",
+                "module": 9,
+                "days": 3,
+                "points": 100
+              },
+              {
+                "title": "Final Exam",
+                "module": 11,
+                "days": 10,
+                "points": 100
+              }
+            ],
+            "Quizzes": [
+              {
+                "title": "syllabus ack.",
+                "days": 6,
+                "module": 1,
+                "points": 50
+              }
+            ],
+            "Presentations": ""
+          }
+        },
+        "COP2552 (2023 Fall) - Java": {
+          "status": "published",
+          "catalog ID": "COP-2552",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 452308,
+          "long name": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "course code": "W23 COP2552.0M1: OBJ ORIENT PG 2",
+          "time zone": "EST5",
+          "office hours": "W 2P (EST)",
+          "SIS ID": "COP2552_0M1_W23",
+          "subaccount": "Santa Fe College",
+          "term": "Spring 2023",
+          "start": "9-Jan-2023",
+          "end": "6-May-2023",
+          "description": "",
+          "textbook": "Java Early Objects, Gaddis",
+          "objectives": [
+            "Understand the program development cycle",
+            "Understand data types, variable scope, and file access",
+            "Recognize the properties and behaviors of classes and objects",
+            "Use the various types of selection structures",
+            "Use the various types of repetition structures",
+            "Use arrays and arraylists to store character and numeric data",
+            "Understand how to create and use functions",
+            "Understand how sequential data files are opened, read to and from, deleted, and merged",
+            "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism",
+            "Comprehend and use wrapper classes",
+            "Know proper use of exception handling",
+            "Understand and use JavaFX to create GUI-based applications",
+            "Utilize a relational database within a Java application"
+          ],
+          "modules": [
+            {
+              "module": 0,
+              "title": "resources",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "Chapter 2: Java Fundamentals",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "Chapter 3: A First Look at Classes and Objects",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "Chapter 4: Decision Structures",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "Chapter 5: Loops and Files",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Chapter 6: A Second Look at Classes",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Chapter 7&8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Chapter 9: Inheritance",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "Chapter 10: Exceptions and Advanced File I/O",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "Chapter 11: JavaFX: GUI Programming and Basic Controls",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 99,
+              "title": "Spring Break",
+              "week": 10,
+              "ready": true
+            },
+            {
+              "module": 10,
+              "title": "Chapter 12: JavaFX: Advanced Controls with Graphics, Effects, and Media and Databases",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "Chapter 13: Recursion",
+              "week": 13,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "Chapter 15: Databases",
+              "week": 14,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "Wrap-up and Final Exams",
+              "week": 16,
+              "ready": false
+            },
+            {
+              "module": 14,
+              "title": "Finals Week",
+              "week": 16,
+              "ready": false
+            }
+          ],
+          "assignments": {
+            "Discussions": [
+              {
+                "title": "Ice Breaker - Getting to know you (Part 1)",
+                "points": 0,
+                "days": 3,
+                "module": 1
+              },
+              {
+                "title": "Ice Breaker - Getting to know you",
+                "points": 50,
+                "days": 6,
+                "module": 1
+              }
+            ],
+            "Projects": [
+              {
+                "title": "Project 1 (Price Adjustment)",
+                "module": 3,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 2 (Patient Visit Records)",
+                "module": 5,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 3 (Exercise Tracker)",
+                "module": 7,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 4 (Storm Data Analysis)",
+                "module": 10,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 5 (Movie Catalog)",
+                "module": 11,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Project 6 (Password Check)",
+                "module": 13,
+                "days": 4,
+                "points": 100
+              }
+            ],
+            "Quizzes": {},
+            "Exams": [
+              {
+                "title": "Exam 1 (Chapters 2-5)",
+                "module": 4,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 2 (Chapters 6-7)",
+                "module": 6,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 3 (Chapters 9-10)",
+                "module": 8,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Exam 4 (Chapters 11,12&15)",
+                "module": 12,
+                "days": 6,
+                "points": 100
+              },
+              {
+                "title": "Final (Comprehensive)",
+                "module": 13,
+                "days": 7,
+                "points": 100
+              }
+            ],
+            "Class Presentations": ""
+          }
+        },
+        "COP4813 (2023 Fall) - Web Appl": {
+          "status": "draft",
+          "catalog ID": "COP-2552",
+          "canvas URL": "https://courses.sfcollege.edu",
+          "canvas course ID": 452018,
+          "long name": "F22 COP4813.0M1: WEB APPL PROG",
+          "course code": "F22 COP4813.0M1: WEB APPL PROG",
+          "time zone": "EST5",
+          "SIS ID": "COP4813_0M1_F22",
+          "subaccount": "Santa Fe College",
+          "term": "Fall 2023",
+          "start": "21-Aug-2023",
+          "end": "8-Dec-2023",
+          "description": "",
+          "textbook": "",
+          "modules": [
+            {
+              "module": 0,
+              "title": "Getting Started",
+              "week": 0
+            },
+            {
+              "module": 1,
+              "title": "intro to web appl",
+              "read": "Ch1: An Introduction to web programming with ASP.NET Core MVC",
+              "week": 1,
+              "ready": false
+            },
+            {
+              "module": 2,
+              "title": "single page web apps",
+              "read": "Ch2: How to develop a single-page MVC web app",
+              "week": 2,
+              "ready": false
+            },
+            {
+              "module": 3,
+              "title": "responsive design",
+              "read": "Ch3: How to make a web app responsive with Bootstrap",
+              "week": 3,
+              "ready": false
+            },
+            {
+              "module": 4,
+              "title": "data-driven MVC",
+              "read": "Ch4: How to develop a data-driven MVC web app",
+              "week": 4,
+              "ready": false
+            },
+            {
+              "module": 5,
+              "title": "Manually test and debug",
+              "read": "Ch5: Manually test and debug an ASP.NET Core web app",
+              "week": 5,
+              "ready": false
+            },
+            {
+              "module": 6,
+              "title": "Working with controllers and routing",
+              "read": "Ch6: working with controllers and routing",
+              "week": 6,
+              "ready": false
+            },
+            {
+              "module": 7,
+              "title": "Working with Razor views",
+              "read": "Ch7: Working with Razor views",
+              "week": 7,
+              "ready": false
+            },
+            {
+              "module": 8,
+              "title": "xfr data from controller",
+              "read": "Ch8: xfr data between controller and view",
+              "week": 8,
+              "ready": false
+            },
+            {
+              "module": 9,
+              "title": "state & cookies",
+              "read": "Ch9: session state and cookies",
+              "week": 9,
+              "ready": false
+            },
+            {
+              "module": 10,
+              "title": "model binding",
+              "read": "Ch10",
+              "week": 10,
+              "ready": false
+            },
+            {
+              "module": 11,
+              "title": "data validation",
+              "read": "Ch11",
+              "week": 11,
+              "ready": false
+            },
+            {
+              "module": 12,
+              "title": "Entity Framework",
+              "read": "Ch12",
+              "week": 12,
+              "ready": false
+            },
+            {
+              "module": 13,
+              "title": "e-commerce website",
+              "read": "Ch13",
+              "week": 14,
+              "ready": false
             },
             {
               "module": 14,

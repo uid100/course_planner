@@ -1,0 +1,4 @@
+﻿This course provides a comprehensive overview of the Cloud Infrastructure and 
+Services, as well as their underlying management mechanisms, including data 
+center virtualization and networking, cloud security and reliability, big data 
+analytics, scientific and commercial applications.

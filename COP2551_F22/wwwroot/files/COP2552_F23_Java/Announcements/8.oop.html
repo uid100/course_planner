@@ -1,0 +1,74 @@
+﻿<!-- F23 COP2552  id: 465680  -->
+<!-- Announcements:  Week 8 -->
+<!-- title: "Week 8 - Object Oriented Programming"-->
+
+<h2>Object Oriented Programming&nbsp;</h2>
+<h2>( REMIX!&nbsp; Sorry... please read it again.)</h2>
+<p>Some of you have likely heard of Bloom's Taxonomy. It is a hierarchical classification of cognitive skills pertaining to learning. It states that <strong>knowledge</strong>, followed by <strong>comprehension </strong>are beginning levels which can grow and mature to the higher orders of <strong>application</strong>, <strong>analysis</strong>, and <strong>synthesis</strong>.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://courses.sfcollege.edu/courses/465680/files/48157038/preview" alt="Blooms Taxonomy" width="787" height="476" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465680/files/48157038" data-api-returntype="File" /></p>
+<p>&nbsp;</p>
+<p><em>Ok. But what does this have to do with me?</em></p>
+<p>Look back and consider some of the courses that you've taken up to this point. There were times when we (<em>collectively</em>) went to class, were fed information, and practiced memorizing answers in anticipation of repeating them correctly for a test. The objective was to pass the test and the course and progress to the next one, so that at the conclusion of a predetermined set of these, we could receive some artifact to pave the way for whatever the next step was.</p>
+<p>&nbsp;</p>
+<p>"<em>In 1492, Columbus sailed the ocean blue.</em>"&nbsp; This is a fact. We know that it is, because we were told, and it rhymes, so we remembered it! But there was more to his story! <span title="Latin-language text"><i lang="la">Christophorus Columbus&nbsp;</i></span>was Italian. He read a lot. Probably through discussions with some collection of his peers, he had a theory that by sailing west across the sea, he could find safe passage to India, which didn't include crossing Asia. We all know at least part of the story, he had an idea, but needed sponsors. The Italians said no... everyone said no until he found someone to say yes! So he sailed for, and from Spain. And found a shortcut to ... the Bahamas. Yes, he was wrong. It was a failed mission. But that's not the part that we learned. He discovered something. He learned. And the more we ask, the more we can understand. Which leads to more questions and more understanding and then testing ideas (application) and thinking about the results and trying something new.</p>
+<p>&nbsp;</p>
+<h3>MyApplication.java</h3>
+<pre>class MyApplication {
+   public static void main(String[] args) {
+      System.exit(0);
+   }
+}</pre>
+<ul>
+    <ul>
+        <li>The entry point for our application has to be a method called "main()"</li>
+        <li>There can be only one main() method in our application</li>
+        <li>The main() method must be contained within a class</li>
+        <li>The class which contains the main() method must be in a source file with the same name and the extension .java</li>
+    </ul>
+</ul>
+<p>These are all facts.</p>
+<p>But why?&nbsp;</p>
+<ul>
+    <li style="list-style-type: none;">
+        <ul>
+            <li>What if our main() method was not public?&nbsp; <em>Then it couldn't be accessed from outside of the class, but it's the entry point, so there is nothing outside of the class yet. Of course it has to be public.</em></li>
+            <li>What if main() was not declared static?&nbsp;&nbsp;<em>Then it would require the class to have been instantiated. But from where, still the entry point, so nothing exists to create the object yet. So, of course it has to be static.</em></li>
+            <li>Why is main() always written with a void return type?&nbsp;<em>Again, if it's our application's first step, then who called it and where-- to what object will we return some other typed value? Void is the only type that makes sense.</em></li>
+        </ul>
+    </li>
+</ul>
+<p>"Public," "Static," "Void," "main()," Ok, now we have understanding. We've moved on from repeating facts to following the pattern because we understand it and it makes sense. We could theorize that maybe we could use different types in our method signature and try to pass something that isn't "String[]." We could also sail due west from Spain, following the sun and hope to make landfall in India. We won't, of course, but we're following the steps and learning.</p>
+<p>We have the facts, they make sense, let's try something and see where it gets us.&nbsp;</p>
+<p>Classes and Objects</p>
+<p>The principals or "pillars" of object-oriented programming are:</p>
+<ul>
+    <li><strong>Encapsulation</strong></li>
+    <li><strong>Abstraction</strong></li>
+    <li><strong>Inheritance</strong></li>
+    <li><strong>Polymorphism</strong></li>
+</ul>
+<p>Sometimes there are 3, sometimes there are 5, usually 4, depending on when and where you choose your references. Yes, these are important. Yes, it's even important to ask why there are differences of opinions and who decided these. But these are just facts. It's more important to understand what they mean, not because they might be test (or interview questions) but because they're important enough that modern systems are built with these fundamental frameworks. So their meaning leads to their application.&nbsp;</p>
+<p>-------------------------</p>
+<p>In my garage I have many tools. Each has its own purpose and use. In all likelihood, I could use every single one of them as a hammer.</p>
+<p>***So... I was writing this yesterday, was interrupted, and then it posted before I had a chance to finish... LOL ... so here are some more thoughts. ***</p>
+<p>&nbsp;</p>
+<p>....every tool has a purpose.&nbsp; In project 3, we created a workout app to</p>
+<ul>
+    <li>display a user menu to allow to select an activity</li>
+    <li>create a specialized instance of an activity object</li>
+    <li>display a workout summary</li>
+</ul>
+<p>Thinking about the principals of Object-Oriented Programming and extending our discussion of learning phases, the next level of our&nbsp;<em>learning-journey&nbsp;</em>is applying what we have (1) stored, and (2) understood.&nbsp;</p>
+<p>Our application has to have a main() entry point. By now your main() method will seldom contain more than one or maybe only a few lines of code (call to a driver function.)&nbsp; This makes our testing more robust.&nbsp; (Maybe someone will discuss why on Discord.)</p>
+<p>A goal is that each method is as focused as possible, usually each should only do one thing.</p>
+<p>So our driver method (could be WorkoutApp() is probably going to call a menu object. Maybe the menu object is the driver.</p>
+<p>The menu object will dynamically assemble the prompt for the user, based on some list of available activities, and then accept and validate the user selection and respond by creating the new requested object.</p>
+<p>Next, as you built each new activity object, you recognized that there was a lot of re-used code. In fact, each of the items could be abstracted to be a common "exercise" class. Maybe you wrote two or three of the activities and realized how similar they were.&nbsp; Back to the "Apply" concept and thinking about Object-Oriented Programming, many of you wrote a single class to do calculations and now the derived classes only need to contain the constant (static final) values. This is step-by-step development or the process of "elaboration."</p>
+<p>So by now, you probably have a base exercise class and a handful of derived classes. We can now add exercises all day, 3, 4, 11, 115... doesn't matter. Object-oriented programming to the rescue!</p>
+<p>Next we get back to the summary that we talked about. That had a lot of things in common too. So, maybe we add the familiar .toString() method to each exercise class, or at least to the parent (base) class!</p>
+<p>The development process might have been that your code grew and grew and grew, and then started to become more and more recognizable and simplified and actually became more and more compact. If you consider this optimized version of your project, it becomes easier to see that this application can be expanded and if something needs to be updated or changed, those changes will probably only be in one or maybe just a couple of places.</p>
+<p>Look back at your code. Do you see places that it could be optimized? What would you change? Next, look back at the&nbsp;<em>learning</em> phases. You applied what you were learning, next is analyzing the solution.&nbsp;</p>
+<p>As each requirement is completed, we enter a "<em>test-fix-test</em>" phase. Each piece gets tested and re-tested and then tweaked and tested again. As part of the analysis phase, look ahead at Project 4. It could be many of the same challenges and ideas. There is a dynamic menu. There are classes and objects. Considering all of these things, how will you plan the design? Remembering, Understanding, Applying, Analyzing... this is Evaluating time! What worked, what would make it better?</p>
+<p>Look back at the diagram. The final phase is Create. It starts all over. Consider each step along the way, revisit them often, they're all part of learning and they're all part of creating solutions.</p>
+<p>Drop in to Discord and share your thoughts. Had any of these occurred to you while you were going through the process? Is it making sense?&nbsp;</p>
+<p><img id="43152540" style="float: right;" role="presentation" src="https://courses.sfcollege.edu/courses/465680/files/48156970/preview" alt="" width="166" height="111" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465680/files/48156970" data-api-returntype="File" /></p>

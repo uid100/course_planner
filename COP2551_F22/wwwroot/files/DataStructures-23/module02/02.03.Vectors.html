@@ -1,0 +1,86 @@
+﻿<!-- data structures id:  465482 -->
+<!-- arrays and vectors -->
+
+<div id="vectors">
+
+    <h2 class="alert alert-info">C++ Vectors: Dynamic Arrays</h2>
+
+        <p>In C++, a vector is a dynamic array that provides more flexibility and functionality compared to traditional arrays. Vectors are part of the Standard Template Library (STL) and offer a convenient way to work with collections of elements while automatically managing memory allocation and resizing.</p>
+
+        <h2>Introduction to Vectors</h2>
+        <p>C++ vectors are containers that can dynamically adjust their size to accommodate the number of elements they hold. Unlike fixed-size arrays, vectors can grow or shrink as needed, making them highly versatile for various programming tasks.</p>
+
+        <h2>Creating and Initializing Vectors</h2>
+        <p>Creating a vector involves including the <code>&lt;vector&gt;</code> header and specifying the data type of the elements it will hold:</p>
+<pre>
+<code>
+#include &lt;vector&gt;
+using namespace std;
+
+// Creating a vector of integers
+vector&lt;int&gt; numbers;
+</code>
+</pre>
+        <p>Vectors can also be initialized with values using an initializer list:</p>
+<pre>
+<code>
+// Initializing a vector with values
+vector&lt;double&gt; prices = {10.99, 20.49, 5.99, 8.75};
+</code>
+</pre>
+
+        <h2>Adding and Removing Elements</h2>
+        <p>Vectors provide methods for adding and removing elements:</p>
+<pre>
+<code>
+// Adding elements to the end of the vector
+numbers.push_back(42);
+numbers.push_back(99);
+
+// Removing the last element
+numbers.pop_back();
+
+// Inserting an element at a specific position
+numbers.insert(numbers.begin() + 2, 73);
+
+// Erasing an element at a specific position
+numbers.erase(numbers.begin() + 1);
+</code>
+</pre>
+
+        <h2>Accessing Vector Elements</h2>
+        <p>Vector elements can be accessed using zero-based indexing, just like arrays:</p>
+<pre>
+<code>
+int secondNumber = numbers[1]; // Accessing the second element
+double lastPrice = prices.back(); // Accessing the last element
+</code>
+</pre>
+
+        <h2>Vector Properties</h2>
+        <p>Key properties of vectors include:</p>
+        <ul>
+            <li><strong>Dynamic Resizing:</strong> Vectors automatically resize when elements are added or removed.</li>
+            <li><strong>Efficient Memory Management:</strong> Memory allocation and deallocation are handled by vectors.</li>
+            <li><strong>Range Checking:</strong> Vectors perform bounds checking to prevent invalid access.</li>
+        </ul>
+
+        <h2>Iterating Through Vectors</h2>
+        <p>Loop structures can be used to iterate through vector elements:</p>
+<pre>
+<code>
+for (size_t i = 0; i &lt; numbers.size(); ++i) {
+    // Access and manipulate numbers[i]
+}
+
+for (double price : prices) {
+    // Access and manipulate each price
+}
+</code>
+</pre>
+
+        <p>C++ vectors offer a convenient and efficient way to work with dynamic collections of elements, making them a valuable tool in modern programming.</p>
+
+
+<a style="font-style:italic; color:navy;" href="#vectors">top</a>
+</div> <!-- #vectors -->

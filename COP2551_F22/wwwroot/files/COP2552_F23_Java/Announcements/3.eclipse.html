@@ -1,0 +1,53 @@
+﻿<!-- W23 COP2552  id: 465680  -->
+<!-- Announcements:  Week 3 -->
+<!-- title: "Week 3 - Eclipse and Conditional Code-->
+
+
+<h3>Eclipse</h3>
+<p>I know that there were some questions about installing Eclipse. I went through the install again and captured some notes. I've uploaded the record of the new installation steps in Module 0. <a title="Installing Eclipse - Updated Jan-2023" href="https://courses.sfcollege.edu/courses/465680/pages/installing-eclipse-updated-jan-2023" data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/465680/pages/installing-eclipse-updated-jan-2023" data-api-returntype="Page">Here is the link</a></p>
+<p>For now, you can defer the installation of the JavaFX extension. We won't be using it for several more weeks. Keep things simple for now. If you have already installed, JavaFX, please wait to build using that library. It will unnecessarily complicate your solutions.</p>
+<p>&nbsp;</p>
+<h3>Decisions</h3>
+<p>As you have seen over the past couple of weeks, although this is a new language for most of you, this course is not a beginning programming class but rather an introduction to a new syntax for familiar concepts. In the first few chapters, the author discussed some history and environment for the Java language, and an overview or review of classes and objects. This week we'll review the concept of conditional logic. Don't get lost in the details. Decision logic is something that should be very familiar.&nbsp;</p>
+<p><strong><em>IF&nbsp;</em></strong><em>I am cold&nbsp;<strong>THEN</strong> I will wear a jacket&nbsp;<strong>ELSE</strong>&nbsp;I'll probably be comfortable in shorts and a t-shirt.</em></p>
+<p><strong><em>IF</em></strong><i>&nbsp;I have an extra thousand dollars after I pay my rent and utilities,&nbsp;<strong>THEN&nbsp;</strong>I will buy steak and wine for my roommates.</i><em></em></p>
+<p><i><strong>IF</strong> the user selects from the menu: </i><strong style="font-style: italic;">(P)</strong>lay, <strong>(S)</strong>top,&nbsp;<strong>(R)</strong>repeat, <strong>(N)</strong>ext,&nbsp;<strong><em>THEN</em></strong><em> decide what to do next based on the input....</em></p>
+<p>&nbsp;</p>
+<p>These are all conditions. In all of our experiences, we consider the inputs and decide what to do next. If you consider all of these as simple&nbsp;<strong>Yes&nbsp;</strong>or&nbsp;<strong>No</strong> &nbsp;decisions, that is the basis of conditional logic. At it's simples form, all decisions are really binary. If you are in a restaurant and presented with a menu of 100 items with options, each item is either yes or no. Even when you decide that 14 of them could be Yes, you finally narrow it down to one as yes. And after considering other decisions, you could decide that more than one could be a Yes also, but ultimately, everything gets decided either yes or no, true or false. This is binary logic, and whether you recognized it or not, you've probably done it every day.</p>
+<p>&nbsp;</p>
+<p>The Unified Modeling Language (UML) standard describes 14 different engineering diagrams. You are probably familiar with several. Half of these are <strong>structural</strong>. These are comprised of static models describing the elements of a system, the <strong>class model</strong> for instance.&nbsp;The rest are <strong>behavioral</strong> and describe what happens in the system like&nbsp;<strong>use-case</strong> diagram,&nbsp;<strong>sequence, activity,&nbsp;</strong>and&nbsp;<strong>state machine&nbsp;</strong>diagrams. Most engineering teams will use a <em>subset</em> of these for their system design and planning activities. It has never been my experience to see more than a few applied to any given project. The Sequence diagram, which is (a more standardized form of the familiar flowchart) defines the conditional block with a single entry point, a condition statement, and two (binary) alternative exit directions which are dependent on the evaluation of a condition.</p>
+<p>
+    <img src="src=/courses/465680/file_contents/course%20files/images/UML-Activity-Diagram-24.png"
+         alt="UML decision statment" width="362" height="341" />
+</p>
+<p>&nbsp;</p>
+<p>This week we'll look (AGAIN) at conditional statements. While we do, I will ask you to spend an hour, considering all of the "conditional" decisions that you make.&nbsp;<em>Do I want&nbsp;</em><i>pepperoni pizza for dinner? Will an hour at the gym make me feel better? If I called and talked to my mom on the phone for thirty minutes, would it make her happy?</i></p>
+<p>&nbsp;</p>
+<p><strong>IF-ELSEIF-ELSE</strong> and&nbsp;<strong>SWITCH-CASE</strong> logic can be that simple. Take away the syntax for moment and consider the True-False logic statements as nothing more than a simple path with two possible outcomes. Consider that all decisions, and all digital logic paths, regardless of how complex, can be decomposed to that simple, binary logic Think in&nbsp;<em>system-logic.</em></p>
+<p>&nbsp;</p>
+<p>Yes, this week we will be focused (in sync with the textbook) on simple conditional statements and the required syntax to "make it work" in the Java programming language. But it's far more important as we learn the concepts, to generalize these and consider how would you accomplish these in another familiar language. What does the logic look like in English? in C++? in Python? in Java? &nbsp;How are they different? Or are they really?</p>
+<p>&nbsp;</p>
+<p>To be successful, yes it is important to understand how to apply the concepts to a specific environment and language, but more important to consider how the logic applies and why the logic is configured in a particular way.</p>
+<p>&nbsp;</p>
+<p>Also....&nbsp;</p>
+<p>As we go through this material, you may discover that I inherited much of this curriculum material from another. I may have edited and modified things, but a lot of it is not my original work. This includes the selection of the Eclipse IDE. <span>There are a handful of IDEs that I like to use, depending on the project and language I&rsquo;m using. Eclipse, Bluej, NetBeans all are good, but I do like to test cross-platform and usually rely on command-line environments for this. In fact I like to develop Java code using Visual Studio Code. This is not meant to replace or override the course material, but rather, to expand it.&nbsp;</span></p>
+<p><span>When a requirement, whether explicit or implied, indicates that something is "cross-platform" compliant or inclusive, it suggests (or insists) that the solution is tested on multiple platforms. When I am developing, I usually test on multiple platforms. If I am developing a web solution, I will test on multiple common browsers, not just my favorite. If I am writing code in Python or Java, I will test the solution on different operating systems.</span></p>
+<p>This week a question from a student asked, If I am only submitting a single .java source code file, how can I test this outside of the Eclipse environment? (Great question!)</p>
+<p>As, I mentioned, testing in multiple environments is a good idea and taking it to its simplest form is usually ideal.</p>
+<p>&nbsp;</p>
+<p>Go to your development folder and run:</p>
+<p>javac Markup.java</p>
+<p>&nbsp;</p>
+<p>This will (should) create the Markup.class solution file. &nbsp;Next run:</p>
+<p>java Markup</p>
+<p>&nbsp;</p>
+<p>notice you are calling the class "Markup," not the class "Markup.class"</p>
+<p style="text-align: left;">This should launch your program solution. &nbsp;when in doubt, start with the command line.<br /><br /></p>
+
+<p>
+    <img style="float: right;"
+         src="/courses/465680/file_contents/course%20files/images/dug.jpg"
+         alt="Dug" width="179" height="120" />
+</p>
+<p>&nbsp;</p>
+<p>~Dan</p>

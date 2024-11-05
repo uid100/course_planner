@@ -1,0 +1,367 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="demo-code" style="background-color:moccasin;">
+    <div id="header" style="padding:20px;">
+        <div id="navigtion">
+            <a href="/courses/49150">
+                <img src="/courses/49150/files/7949795/preview"
+                     alt="generic logic flow image" width="150" /><br />
+                <em>&nbsp;&nbsp; --> Home</em>
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+
+    <div id="python" style="padding:20px;">
+        <h2 class="alert">Chapter 5 Demo Code</h2>
+        <p>
+            Open this code in IDLE, walk through the source to
+            see if you can follow all that is going on before you
+            try and run it. After you run the code, try changing
+            around a few lines to see what happens.
+        </p>
+
+        <p>
+            In chapter 5, we move into working with arrays. The more preferred
+            and commonly used data structure in Python is the list. It is similar
+            to an array but it allows different data types in the list. A couple
+            of Python array demos (using true arrays) are provided to show how
+            it is done in Python and to illustrate the text material. For lab
+            work, we'll do it the easy way and just use lists.
+        </p>
+    </div> <!-- #python -->
+
+    <div id="true-array" style="padding:20px;">
+        <h2 class="alert">Array Demo</h2>
+        <h3>Using true arrays in Python</h3>
+        <p>
+            We will be using lists for most of our work, but Python does support
+            arrays. Walk through this demo to see the difference.
+        </p>
+        <p class="ic-flash-info">
+            We will need to import the <b>array</b> module for this
+        </p>
+        <div id="true-array-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/user/bin/env python3
+
+# Cuyamaca College CS-119
+# Array demo
+# In Python, we need to import the array module
+# If you get errors, execute the import statement in the Python shell.
+import array as arr
+
+# variables and constants
+MAX_SIZE = 10
+
+# declare an integer array of 4 elements
+
+# nums = arr.array('i', [0,0,0,0])
+print ("nums array")
+nums = arr.array('i', range(4))
+
+# initialize the array using sequential code
+# Note the first subscript (index) starts at 0
+nums[0] = 1
+nums[1] = 2
+nums[2] = 3
+nums[3] = 4
+
+
+# display the array. Note the for each loop
+for num in nums:
+    print(num, end=' ')
+print("\n")
+print ("nums2 array")
+
+# A little bit bigger array and a loop to initialize the array elements
+nums2 = arr.array('i', range(MAX_SIZE))
+i = 0
+for num in nums2:
+    nums2[i] = i + 1
+    i += 1
+
+# display the bigger array
+for num in nums2:
+    print(num, end=' ')
+
+print("\n")
+print ("nums3 array")
+
+# declare an array using literal constant values. This time we'll use float
+nums3 = arr.array('d', [1.5, 3.1, 6.75, 8.0, 9.3, 7.6, 4.4])
+
+# display the float array
+for num in nums3:
+    print(num, end=' ')
+
+print("\n")
+print ("nums4 array")
+
+# Use the len() method to get the size of an array
+nums4 = arr.array('i', range(MAX_SIZE))
+i = 0
+array_len = len(nums4)
+for count in range(0, array_len, 1):
+    nums4[count] = i + 1
+    i += 1
+
+# display the bigger array
+for num in nums4:
+    print(num, end=' ')
+</pre>
+        </div> <!-- #true-array-code -->
+    </div> <!-- #true-array -->
+
+    <div id="search-list" style="padding:20px">
+        <h2 class="alert">Array Search</h2>
+        <h3>Array search using Lists instead of Arrays</h3>
+        <p>
+            Lists are preferred in Python
+        </p>
+        <div id="search-list-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/user/bin/env python3
+
+# Cuyamaca College CS-119
+# In this demo we transition from arrays to lists as these are preferred
+# in Python programming
+
+# create a list of random animals and declare variables
+animals = ["cat", "dog", "horse", "goat", "rabbit", "lizard", "duck"]
+search_val = ""
+i = 0
+found = False
+message = ""
+
+# input - find out what we're looking for
+search_val = input("Find what animal? ")
+
+# process - search the list and see if we can find the search value
+list_len = len(animals)
+
+# search the loop - watch the indentation closely!
+while i < list_len and found == False:
+    if search_val.upper() == animals[i].upper():
+        found = True
+    # end if
+    i = i + 1
+# end while
+
+# output - show the result of our search
+if found == True:
+    message = "Found " + search_val + " in the list.\n"
+else:
+    message = search_val + " was not found.\n"
+
+print(message)
+</pre>
+        </div> <!-- #search-list-code -->
+    </div> <!-- #search-list -->
+
+    <div id="inefficient-search" style="padding:20px">
+        <h2 class="alert">Inefficient Search Demo</h2>
+        <div id="inefficient-search-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# This demo contains sample code used in the lecture notes for PLD
+# Ch 5, Pg. 179
+
+# This first search is inefficient. It searches the entire array every time!
+# create a list of tenant names and parallel list of unit numbers
+tenants = ["Munster", "Jetson", "Clampetts", "Flinstone", "Addams", "Simpson"]
+# create a parallel list of units
+units = [1, 2, 3, 4, 5, 6]
+
+# declare other variables we need
+tenant = ""
+i = 0
+message = ""
+unit = 0
+
+# input - find what we're looking for
+unit = int(input("Find what unit? "))
+
+# process - search the list and see if we can find the search value
+list_len = len(tenants)
+
+# watch indentation in the loop and selection structure closely!
+while i < list_len:
+    if unit == units[i]:
+        # get qty from the parallel list qty_available
+        tenant = tenants[i]
+    # end if
+    i = i + 1
+# end while
+
+# output - show the result of our search
+if tenant != "":
+    message = "Found " + str(unit) + ". " + tenant + " lives there."
+else:
+    message = "Unit " + str(unit) + " was not found.\n"
+
+print(message)
+</pre>
+        </div> <!-- #inefficient-search-code -->
+    </div> <!-- #inefficient-search -->
+
+    <div id="unstructured-array" style="padding:20px">
+        <h2 class="alert">Unstructured Array Search</h2>
+        <div id="unstructured-array-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/user/bin/env python3
+
+# Cuyamaca College CS-119
+# This demo contains sample code used in the lecture notes for PLD
+# Ch 5, Pg. 179
+
+# This 2nd search is actually efficient but the break statement in the loop
+# violates the rule of structured code where every code structure should have exactly
+# 1 entry and 1 exit point
+
+# create a list of tenant names and parallel list of unit numbers
+tenants = ["Munster", "Jetson", "Clampetts", "Flinstone", "Addams", "Simpson"]
+# create a parallel list of units
+units = [1, 2, 3, 4, 5, 6]
+
+# declare other variables we need
+tenant = ""
+i = 0
+message = ""
+unit = 0
+
+# input - find what we're looking for
+unit = int(input("Find what unit? "))
+
+# process - search the list and see if we can find the search value
+list_len = len(tenants)
+
+# watch indentation in the loop and selection structure closely!
+while i < list_len:
+    if unit == units[i]:
+        # get qty from the parallel list qty_available
+        tenant = tenants[i]
+        break # unstructured code - creates 2nd exit point
+    # end if
+    i = i + 1
+# end while
+
+# output - show the result of our search
+if tenant != "":
+    message = "Found " + str(unit) + ". " + tenant + " lives there."
+else:
+    message = "Unit " + str(unit) + " was not found.\n"
+
+print(message)
+</pre>
+        </div> <!-- #unstructured-array-code -->
+    </div> <!-- #unstructured-array -->
+
+    <div id="efficient-search" style="padding:20px">
+        <h2 class="alert">Efficient Array Search</h2>
+        <div id="efficient-search-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/user/bin/env python3
+
+# Cuyamaca College CS-119
+# This demo contains sample code used in the lecture notes for PLD
+# Ch 5, Pg. 179
+
+# This 3rd search is both efficient and structured
+
+# create a list of tenant names and parallel list of unit numbers
+tenants = ["Munster", "Jetson", "Clampetts", "Flinstone", "Addams", "Simpson"]
+# create a parallel list of units
+units = [1, 2, 3, 4, 5, 6]
+
+# declare other variables we need
+tenant = ""
+i = 0
+message = ""
+unit = 0
+found = False
+
+# input - find what we're looking for
+unit = int(input("Find what unit? "))
+
+# process - search the list and see if we can find the search value
+list_len = len(tenants)
+
+# watch indentation in the loop and selection structure closely!
+while i < list_len and found == False:
+    if unit == units[i]:
+        # get qty from the parallel list qty_available
+        tenant = tenants[i]
+        found = True # set the found flag
+    # end if
+    i = i + 1
+# end while
+
+# output - show the result of our search
+if tenant != "":
+    message = "Found " + str(unit) + ". " + tenant + " lives there."
+else:
+    message = "Unit " + str(unit) + " was not found.\n"
+
+print(message)
+
+</pre>
+        </div> <!-- #efficient-search-code -->
+    </div> <!-- #efficient-search -->
+
+    <div id="" style="padding:20px">
+        <h2 class="alert">Parallel Array Search</h2>
+        <div id="-code" style="margin-left:60px; margin-right:60px;">
+            <pre>
+#!/user/bin/env python3
+
+# Cuyamaca College CS-119
+# In this demo we transition from arrays to lists as these are preferred
+# in Python programming. Added bonus: They're easier!
+
+# create a list of random animals and declare variables
+animals = ["cat", "dog", "horse", "goat", "rabbit", "lizard", "duck"]
+# create a parallel list of the qty of each animal available
+qty_available = [15, 18, 0, 1, 12, 2, 1] 
+
+search_val = ""
+i = 0
+found = False
+message = ""
+qty = 0
+
+# input - find what we're looking for
+search_val = input("Find what animal? ")
+
+# process - search the list and see if we can find the search value
+list_len = len(animals)
+
+# watch indentation in the loop and selection structure closely!
+while i < list_len and found == False:
+    if search_val.upper() == animals[i].upper():
+        # get qty from the parallel list qty_available
+        qty = qty_available[i]
+        found = True
+    # end if
+    i = i + 1
+# end while
+
+# output - show the result of our search
+if found == True:
+    message = "Found " + search_val + ". there are " str(qty) + " available\n"
+else:
+    message = search_val + " was not found.\n"
+
+print(message)
+</pre>
+        </div> <!-- # -->
+    </div> <!-- # -->
+
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #demo-code -->

@@ -1,0 +1,210 @@
+﻿<!-- capstone course id: 456310 -->
+<!-- user authentication -->
+
+<div id="user-authentication" style="background:bisque;">
+    <div id="navigation" style="padding: 20px;">
+        <a class="btn btn-primary icon-home" style="background-color:navy; color:white;"
+           href="https://courses.sfcollege.edu/courses/456310">
+            Home
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="who-are-you" style="padding:20px;">
+        <h2 class="alert">Who are you?</h2>
+
+        <p>
+            I was looking through the project specification documents that you submitted and I'm 
+            encouraged by the thought and creativity you are all showing in your design process. 
+            Most, if not all of the development projects I saw rely on some level of authorized 
+            user access or user account identity.
+        </p>
+        <p>
+            In past semesters, using this similar project outline, user authentication and 
+            authorization was a topic that was discussed later in the term. I know now that was
+            unfortunate, so I wanted to launch this topic now for you to consider.
+        </p>
+        <p>
+            It is not surprising that <em>user logins</em> are mentioned in most of your proposals. 
+            Just about everything that we do using network applications needs some level of 
+            information about the user to be effective and provide value. If you ask for tide 
+            tables, I need to know your location, or at least your location of interest.
+        </p>
+        <p>
+            If you want to purchase something online, I need to know where it is being
+            shipped, or if shipping to you is even allowed. Many states have laws prohibiting 
+            the shipment of certain goods. My daughter was living on the island of Kaua'i for three
+            years and often it was less expensive for her to fly to Oahu, or even to the mainland
+            to purchase household goods than the cost for shipping to the outer islands.
+        </p>
+        <p>
+            Of course any app that includes messaging needs to ensure that messages are delivered
+            to the intended recipient.
+        </p>
+    </div> <!-- #who-are-you -->
+
+    <div id="how-do-we-know" style="padding:20px;">
+        <h2 class="alert">How do I know it's you?</h2>
+        <p>
+            Authentication, if not <em>most</em> important, becomes very important. This is not
+            a new concept for application development, but you might be surprised at how the
+            solutions and performance expectations have changed over the years.
+        </p>
+        <p>
+            The question eventually becomes how to implement user authentication in your application.
+        </p>
+        <p>
+            Once upon a time, it was enough to prompt the user and ask for their username.
+            (<em>Ok. Hi Bob. Welcome Back.</em>) If the user had physical access to the system,
+            it must be ok, and all I really care about is what their name is, so I know how
+            to greet them and where to find <em>their</em> files.
+        </p>
+        <p>
+            That was adequate until it wasn't. Next the application would ask for a password
+            and the application would store the password. In time, this became bad practice
+            too.
+        </p>
+        <p>
+            How many passwords do we need to manage now? If we are using strong encryption to
+            manage and encrypt store and recover passwords, there are many points of failure
+            and overhead and risk.
+        </p>
+        <p>
+            In most cases, I don't need to know anything about you except to recognize you 
+            when you return. I likely don't need to know anything about the user, except 
+            that they were here before and that someone else isn't pretending to be them.
+        </p>
+        <p>
+            Software libraries were written to help with this, and we could build databases and 
+            support methods, but the result is reinventing a wheel which is probably already 
+            obsolete.
+        </p>
+        <p>
+            Federated passwords and IDaaS is a much better solution. Perhaps not 5 years
+            ago, but by now, most of us are familiar with Single Sign-On (SSO) and mult-factor
+            authentication (MFA).
+        </p>
+        <p>
+            When you visit sites that invite you to login using Facebook or Google or
+            Microsoft, they very likely do not care about your Facebook or Google or
+            Microsoft accounts, they are simply using them as a trusted authority to validate
+            the claim that you are who you say your are. As developers, we probably don't care
+            about where a user had dinner or which memes they LOL-d. All we care about is
+            that a trusted authority said, "yeah, he is who he claims to be. (Because I
+            said so.)"
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #how-do-we-know -->
+
+    <div id="identity-crisis" style="padding:20px;">
+        <h2 class="alert">Identity Crisis</h2>
+        <p>
+            This series, although a couple years old now, provides an excellent introduction
+            to implementing Identity in your code. The later sessions deal with some specifics
+            about using MS-Identity in a .NET application, but the fundamentals are worth
+            your time.
+        </p>
+        <p>
+            These episodes are a little long (~60min). I suggest that you watching the first one
+            at 1.5x speed, and then slow them down when you find something of interest. Maybe
+            slow down to 1.25x for Epsisode 2, and then take a break and come back and watch
+            Episode 3.
+        </p>
+        <div class="ic-flash-info">
+            <strong>Spoiler alert:</strong> the takeaway from this series, is not to help you
+            learn how to implement user authentication, but to convince you not to write a
+            home-grown solution. (see Episode 3)
+        </div>
+        <hr />
+        <p>
+            Episode 1 (of 9) is interesting, and not especially technical. You can almost run this
+            in the background when you are working on something else. There is a good discussion
+            and explanation of what we mean by concepts such as claims and trusted authority.
+            Between the casual back and forth, this discussion does a good job of explaining
+            what the problem is and why it needs a solution.
+        </p>
+        <p style="text-align:center">
+            [Identity Crisis - A brief history of Identity]<br />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bniAj9q4s7c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </p>
+        <hr />
+
+        <p>
+            In the next edition (episode 2), the hosts go further into the technical approach
+            to the problem, still at a high level and explaining the differences between impersonation
+            and selected delegation with (Open Authorization - OAuth2.0) and finally a discription
+            of OpenID Connect. More than just a walk-through of how to integrate these standards,
+            this discussion presents a good explanation of the what, why, and how. Even just as a
+            casual user of modern web applications, this is a helpful discussion of the state
+            of the industry how to do authentication in modern applications.
+        </p>
+        <p style="text-align:center">
+            [Identity Crisis - A brief history of Identity]<br />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kg-g3csVJWw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+        </p>
+        <hr />
+
+        <p>
+            Episode 3. Yes, there are 9 episodes if you're interested. But episode 3 is worth your
+            time.
+        </p>
+        <p>
+            In my experience, I have implemented applications with what we believed to be secure,
+            robust sign-on sytems, and at the time, they were reasonable solutions. In hind-sight
+            there were unrecognized, or under-appreciated risks everywhere.
+        </p>
+        <p>
+            Robust security is a concern, and identifying and avoiding vulnerabilities is certainly
+            a concern, but while the details of the implementation are beyond the scope of what we
+            can cover in this course, if you are going to build modern software applications, it is
+            worth your time to watch and understand modern authentication best practices. If you
+            decide to defer the rest of this series until another time, that is ok, but watch
+            at least through episode 3 so that if you will be better informed about, not just how
+            to build more secure apps, but why and just what the risks are.
+        </p>
+
+        <p style="text-align:center">
+            [Identity Crisis - let's design a secure app)]<br />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hX9FnPtsFvo" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </p>
+        <hr />
+        <p>
+            Unfortunately, a comprehensive catalog of this series and links is not readily available,
+            but I've assembled this. I hope that someone finds it helpful. At some point, I'd like to
+            add keywords and brief notes to these to make it a more useful reference.
+        </p>
+        <p>
+            Some of you may decided to view all of these, but if you get through the first 3, and
+            hear the message, that will be enough for now.
+        </p>
+        <p>
+            <ul>
+                <li>(Episode 1) [Getting Started with Identity (Identity 101)](https://youtu.be/bniAj9q4s7c) What kind of problems are we solving?</li>
+                <li>(Episode 2) [Identity Crisis - A brief history of Identity](https://youtu.be/kg-g3csVJWw) A brief history</li>
+                <li>(Episode 3) [Identity Crisis - let's design a secure app)](https://youtu.be/hX9FnPtsFvo) Federated identities &amp; identity systems</li>
+                <li>(Episode 4) [Identity Crisis - components of identity system](https://youtu.be/4BmHmiVpkjI)</li>
+                <li>(Episode 5) [Identity Crisis - All about Authorization flows](https://youtu.be/vqhfhf6xDHI)</li>
+                <li>(Episode 6) [Identity Crisis Tokens, tokens and more tokens](https://youtu.be/IBBE0DUKDmo)</li>
+                <li>(Episode 7) [Identity Crisis - Getting started with Azure AD Tenants](https://youtu.be/spAwxnLktMY)</li>
+                <li>(Episode 8) [Identity Crisis - Application Registrations](https://youtu.be/3mh6n6sXcSI)</li>
+                <li>(Episode 9) [Identity Crisis - All about authentication libraries](https://youtu.be/DEt8fTHW7_A)</li>
+            </ul>
+        </p>
+    </div> <!-- #how-do-we-know -->
+
+    <div class="ic-flash-info">
+        <p>
+            Takeaway: before you build your own login functionality, consider leveraging IDaaS technology.
+        </p>
+    </div>
+    <p>&nbsp;</p>
+</div> <!-- #user-authentication -->

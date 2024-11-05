@@ -1,0 +1,214 @@
+﻿<!-- W23 COP2552  id: 465680  -->
+<!-- Announcements:  Week 2 -->
+
+<!-- title: "Week 2: Another language, another project"-->
+<div id="week2">
+    <div id="housekeeping">
+        <h3>Housekeeping</h3>
+        <p>
+            We're just getting started with this school term, and we're still getting acquainted.
+            Many of your names are familiar from my OOP-1 course. Some of this will feel familiar.
+            Welcome back.
+        </p>
+        <p>
+            I had a couple of visitors during office hours. My other classes were quiet last week
+            (not surprising for the beginning of the term.)&nbsp; As a reminder, I am available
+            during the week, check the home page or syllabus for the schedule or use email. And
+            don't forget the Discord channel that is set up just for this class too! Online doesn't
+            have to mean <em>alone.</em>
+        </p>
+        <p>
+            I've gotten a few student emails, but as expected at the beginning of the term, most
+            questions are more administrative than technical.
+        </p>
+        <p>
+            Yes, there were some errors in assignment (exam) dates. I think they're all correct
+            now, but as always, please let me know if you find something in the course material
+            that could be clearer.
+        </p>
+
+        <hr /> <!-- ------------ -->
+
+
+        <p>&nbsp;</p>
+        <h2>Language</h2>
+
+        <h3>Aloha mai kākou!</h3>
+        <p>
+            In the Hawaiian language ( '&otilde;lelo ) and traditions, aloha is much more than a
+            catchy phrase on a t-shirt or bumper sticker. It originates from the word 'alo' which
+            is "to face" or "be present" and "ha" which is a breath. Together, "aloha" is the
+            presence of breath, the first signs of life we exhibit after birth, and the shared
+            experience of life itself. "Aloha mai kākou" is a collective greeting, it is a shared
+            aloha between all of us.
+        </p>
+        <p>
+            I enjoy traveling when I can and the Hawaiian islands are one of my favorite destinations.
+            I have spent a lot of time on most of the major islands. Generally, I think that a study
+            of language offers better insight to a people and a culture.
+        </p>
+        <p>
+            This is a language class, do you think the same concept can be applied to computer
+            programming? The Java programming language has a history and an evolution. The language
+            development is steered by people and experiences and influenced by other languages and
+            even cultures and environments. It's an interesting thought. Consider the programming
+            languages that you've used and the (usually simple) examples that you've coded. Can you
+            see the patterns and parallels between them? Do you ever stop and ask why there are
+            differences and what drove the development?
+        </p>
+        <p>
+            <em>
+                How many times has a computer been told to echo "Hello World" and by how many people,
+                in how many languages?
+            </em>
+        </p>
+
+        <hr /> <!-- ------------ -->
+
+
+    </div>
+    <div id="java">
+        <h2>Java and Project 1</h2>
+        <h3>JOptionsPane</h3>
+        <p>
+            One student had an interesting question about the use of JOptionsPane in Chapter 2 and
+            I thought I'd share my response with the rest of you.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <em>
+                What is the difference in using JOptionsPane and JFrame? I have programmed GUIs in
+                Java prior to this class and always used JFrames.
+            </em>
+        </p>
+        <p>
+            The short answer is that JOptionsPane is a simple dialog box. It's a way to get
+            information to the user very simply and very quickly. One of the first things to
+            notice is that it's a <em>modal</em> dialog box. That means it's a <em>blocking</em>
+            action. The dialog will stop program execution until it is acted on and dismissed.
+            The two classes also have different inheritance. If you refer to the Oracle docs,
+            you can see that they have different intended uses and purposes.
+        </p>
+        <p>
+            It's a great question, and we will use both, but for these first exercises, the
+            "keep it simple" mantra prevails. Follow the examples from the book.
+        </p>
+
+        <hr /> <!-- ------------ -->
+
+        <h3>Conventions</h3>
+        <p>
+            The instructions for Project 1 include:
+            <ul>
+                <li>>Follow all good programming naming conventions.</li>
+            </ul>
+        </p>
+        <p>
+            What are naming conventions?
+        </p>
+        <p>
+            There are <strong>case styles.</strong>
+            <ul>
+                <li>
+                    <ul>
+                        <li>camelCase</li>
+                        <li>PascalCase</li>
+                        <li>snake_case</li>
+                        <li>kebab-case</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <p>
+            Languages usually have their own standards. Snake_case (separating with underscores)
+            is commonly used in Python code, kebab-case, hyphenated is often seen in javascript
+            and CSS.
+        </p>
+        <p>
+            camelCase and PascalCase are usually included as part of the language coding standards
+            for C# and Java.
+        </p>
+
+        <hr /> <!-- ------------ -->
+
+
+        <h3>Self-documenting code</h3>
+        <p>
+            That's a good start, but there's more.
+        </p>
+        <p>
+            Self-documenting code also means using descriptive variable names. Consider the following:
+        </p>
+<pre>
+int numberOfStudents;
+float heightInInches;
+static final float CM_PER_INCH = 2.54;
+</pre>
+        <p>
+            None of these lines of code contain any comments, but it is very clear what each of these
+            identifiers' purpose is and when they occur anywhere in code, you have a pretty good idea
+            what that variable (or constant) is meant to contain.
+        </p>
+<pre>
+LOCAL_SALES_TAX = .0925 // for Nashville,TN 2023
+</pre>
+        <p>Comments should be used to explain or clarify code, not in place of writing clear code.</p>
+        <p>For comparison:</p>
+<pre>
+value = dataEntered * 27.3;
+static float CONSTANT = 3958.8;
+x = java.lang.Math.sqrt( newValue ) / CONSTANT;
+</pre>
+        <p>
+            This code may be correct, but there is no indication of what are these numbers for or what
+            this code does. If you had to find and fix an error how would you know where to start?
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            As a rule, if there are numbers or string variables anywhere in your code, is it obvious
+            what they are for? Could they be assigned to an identifier to make them clearer and ensure
+            they are defined in only one place?
+        </p>
+        <p>&nbsp;</p>
+
+        <hr /> <!-- ------------ -->
+
+        <p>A quick web search found these guidelines for Java coding</p>
+        <ul class="regular">
+            <li>Use descriptive names for all variables, function names, constants, and other identifiers.</li>
+            <li>Use single letter identifiers only for the counter in loops.</li>
+            <li>Class names start with an upper case letter.</li>
+            <li>
+                Variable names start with a lower case letter. (Variables include parameters, local variables,
+                and data fields. Exception: use UPPER_CASE for constants - final variables.)
+            </li>
+            <li>Method names start with a lower case letter.</li>
+            <li>Multi-word identifiers are internally capitalized.</li>
+            <li>
+                Do not use hyphens or underscores to separate multi-word identifiers (except for constants,
+                which have all upper case letters).
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+    </div>
+
+    <hr /> <!-- ------------ -->
+
+    <div id="footer">
+        <p>
+            <img style="float: right;"
+                 src="/courses/465680/file_contents/course%20files/images/dugandpuppies.jpg"
+                 alt="Dug with puppies" width="323" height="176" />
+        </p>
+        <p>
+            <em>A hui hou&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ... </em>until next time)
+        </p>
+        <p>
+            <em>E mālama pono!</em>&nbsp; &nbsp; &nbsp; &nbsp; ... take (the very best) care!
+        </p>
+        <p>&nbsp;</p>
+        <p style="text-align: center;">
+            <em>(I looked for a picture of Dug with a lei, but found this instead.)</em>
+        </p>
+    </div> <!-- #footer -->
+</div> <!-- #week2 -->

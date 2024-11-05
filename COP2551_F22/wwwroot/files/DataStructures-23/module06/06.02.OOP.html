@@ -1,0 +1,133 @@
+﻿<!-- Objects -->
+<!-- data structures id: 465482 -->
+<div id="oop">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="objects">
+        <h2>Object-Oriented Programming (OOP) in C++</h2>
+
+        <h2 class="alert alert-info">Objects and Classes</h2>
+        <p class="ic-flash-info" style="font-weight:bold;">
+            Objects are instances of classes
+        </p>
+        <p>
+            Classes define the blueprint or template for creating objects. They encapsulate 
+            data and behaviors (methods) into a single unit. Objects represent real-world 
+            entities and can interact with each other to model complex systems.
+        </p>
+
+        <h3>Instance Members</h3>
+        <p>
+            Instance members in a class are attributes and methods that belong to individual 
+            objects created from that class. These members are specific to each object and can 
+            have different values or states. For example:
+        </p>
+
+<pre>
+<code>
+    class Car {
+        public:
+        std::string brand;
+        int year;
+
+        void StartEngine() {
+            // Code to start the car's engine
+        }
+    };
+</code>
+</pre>
+
+        <p>
+            In this example, <code>brand</code> and <code>year</code> are instance variables, 
+            and <code>StartEngine()</code> is an instance method. Each car object has its own 
+            <code>brand</code> and <code>year</code> values.
+        </p>
+
+        <h3>Static Members</h3>
+        <p>
+            Static members in a class are shared among all objects of that class. They are 
+            associated with the class itself rather than with individual objects. Static 
+            members are defined using the <code>static</code> keyword. For example:
+        </p>
+
+<pre>
+<code>
+        class MathUtil {
+            public:
+                static double PI;
+
+                static double CircleArea(double radius) {
+                    return PI * radius * radius;
+                }
+        };
+
+        double MathUtil::PI = 3.14159265359;
+</code>
+</pre>
+
+        <p>
+            In this example, <code>PI</code> is a static member of the <code>MathUtil</code> 
+            class. It is shared among all instances of the class.
+        </p>
+
+            <h3>The 'this' Parameter</h3>
+            <p>
+                The 'this' pointer is a special pointer available in C++ methods that points to 
+                the object on which the method was invoked. It allows you to access the instance 
+                members within the class. For example:
+            </p>
+
+<pre>
+<code>
+        class Person {
+            public:
+                std::string name;
+
+                void SetName(std::string newName) {
+                    this->name = newName; // 'this' is used to access the instance variable
+                }
+        };
+</code>
+</pre>
+
+            <h3>Principles of Object-Oriented Programming</h3>
+            <p>
+                Object-Oriented Programming follows these key principles:
+            </p>
+            <ul>
+                <li><strong>Encapsulation:</strong> Bundling data (attributes) and methods 
+                (behaviors) into a single unit (class) and controlling access to them.</li>
+                <li><strong>Inheritance:</strong> Creating new classes (derived or child 
+                classes) from existing classes (base or parent classes) to inherit their 
+                attributes and behaviors.</li>
+                <li><strong>Polymorphism:</strong> Allowing objects of different classes to 
+                be treated as objects of a common base class, enabling flexibility and 
+                extensibility.</li>
+                <li><strong>Abstraction:</strong> Simplifying complex systems by representing 
+                the essential features while hiding unnecessary details.</li>
+            </ul>
+
+            <p>
+                These principles promote code reusability, maintainability, and modularity 
+                in software development.
+            </p>
+        </p>
+    </div>
+    <p>&nbsp;</p>
+    <a href="#oop" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #oop -->

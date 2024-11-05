@@ -1,0 +1,133 @@
+﻿<!-- capstone course id: 456310 -->
+<!-- modularity -->
+
+<div id="modularity" style="background:bisque;">
+    <div id="navigation" style="padding: 20px;">
+        <a class="btn btn-primary icon-home" style="background-color:navy; color:white;"
+           href="https://courses.sfcollege.edu/courses/456310">
+            Home
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="decomposition" style="padding: 20px;">
+        <p>&nbsp;</p>
+        <h2 class="alert">Subsystems, Modules, and Components</h2>
+        <h3>Identifying the <em>Building Blocks</em></h3>
+        <div id="activity" class="ic-flash-info">
+            <p>
+                An important step in building a complex system is decomposing
+                large, complex systems into smaller, easier to construct subsystems,
+                modules, or components
+            </p>
+        </div> <!-- #activity -->
+        <p>
+            In all of the programming courses you've taken and languages you've learned, you have
+            practiced the process and <em>art</em> of writing modular code, using objects and
+            methods, and library modules and even inter-process communication. (IPCs)
+        </p>
+        <p>
+            Start to deconstruct the functionality of your application into manageable pieces.
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #decomposition -->
+
+    <div id="abstraction-and-decomposition" style="padding:20px;">
+        <h2 class="alert">Abstraction and Decomposition</h2>
+        <p>
+            Take a moment to consider the structure and functionality of your application. How
+            many ways could it be deconstructed into smaller architectural and functional pieces?
+        </p>
+        <p>
+            Using an <em>n-Tiered</em> architecture model, the presentation layer, the data
+            access layer, the business logic layer are constructed as separate entities. Are
+            there other components or subsystems that could be employed to simplify your design
+            and implementation?
+        </p>
+        <p>
+            As an example, a separate, standalone application could be used to perform select,
+            <em>priveleged</em> functions, that are not available to a web-enabled user application
+            reducting the authentication requirements. If the web app doesn't have the capability
+            to perform certain actions on a given data-space, the security requirements are eased
+            whereas the admin functions for the same data set might only be available to a desktop
+            application installed on a particular workstation.
+        </p>
+        <p>&nbsp;</p>
+
+        <p>
+            The following paragraphs were extracted from <strong>stackoverflow</strong><br />
+            <a href="https://stackoverflow.com/questions/23413242/what-are-the-differences-between-abstraction-and-decomposition"
+               style="color:navy;">
+                Abstraction vs Decomposition
+            </a>
+
+        <div id="stackoverflow" style="padding:30px;">
+            <p>
+                Both concepts (<strong>abstraction and decomposition</strong> are analysis & design
+                basic techniques. There are interrelated and normally used together during software
+                development. We use them even though we are not always aware of it. Deeper understanding
+                of these concepts helps to be more accurate and effective in A&D.
+            </p>
+            <p>
+                <strong>Abstraction</strong> in general is a process of consciously ignoring some
+                aspects of a subject under analysis in order to better understand other aspects of
+                it. In other words, it kind of <em>simplification</em> of a subject. In software in
+                particular, analysis &amp; design are all about abstraction.
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        When you model your DB, you ignore UI and behavior of your system and
+                        concentrate only on DB structure
+                    </li>
+                    <li>
+                        When you model your architecture, you concentrate on high-level modules
+                        and their relationships and ignore their internal structure
+                    </li>
+                    <li>
+                        Each UML diagram for example gives a special, limited view on the system,
+                        therefore focusing on a single aspect and ignoring all other (sequences
+                        abstract objects and messages, deployment abstracts network and servers,
+                        use cases abstract system users and their interactions with a system, etc)
+                    </li>
+                    <li>
+                        Writing source code in any programming language requires a lot of
+                        abstraction - programmers abstract app's functionality using limited set
+                        of language constructs
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <strong>Decomposition</strong> is an application of the old good principle
+                &quot;divide and conquer&quot; to software development. It is a technique of
+                classifying, structuring and grouping complex elements in order to end up with
+                more atomic ones, organized in certain fashion and easier to manage. In all
+                phases there are lots of examples:
+                <ul>
+                    <li>
+                        functional decomposition of a complex process to hierarchical structure
+                        of smaller sub-processes and activities
+                    </li>
+                    <li>
+                        high-level structure of an complex application to 3 tiers - UI, logic and data
+                    </li>
+                    <li>
+                        Class structure of a complex domain
+                    </li>
+                    <li>
+                        namespaces as a common concept of breaking a global scope into several local ones
+                    </li>
+                    <li>
+                        UML packages are a direct use of decomposition on the model level - use packages
+                        to organize your model
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Abstraction is somehow more generic principle than decomposition, kind of
+                &quot;father of all principles&quot; :)
+            </p>
+        </div> <!-- #stackoverflow -->
+    </div> <!-- #abstraction-and-decomposition -->
+    <p>&nbsp;</p>
+
+</div> <!-- #modularity -->

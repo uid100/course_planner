@@ -1,0 +1,198 @@
+﻿<!-- Code: 2023SP_CS_119_4451 -->
+<!-- id: 49150 -->
+
+<div id="demo-code" style="background-color:moccasin;">
+    <div id="header" style="padding:20px;">
+        <div id="navigtion">
+            <a href="/courses/49150">
+                <img src="/courses/49150/files/7949795/preview"
+                     alt="generic logic flow image" width="150" /><br />
+                <em>&nbsp;&nbsp; --> Home</em>
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+
+    <div id="python" style="padding:20px;">
+        <h2 class="alert">Chapter 4 Demo Code</h2>
+        <p>
+            Open this code in IDLE, walk through the source to
+            see if you can follow all that is going on before you
+            try and run it. After you run the code, try changing
+            around a few lines to see what happens.
+        </p>
+
+        <p>
+            Chapter 4 focuses on the last of the three fundamental
+            coding structures: Loops or repetition structures. With
+            loops, we repeat a block of instructions for as long as the
+            loop condition is true.
+        </p>
+    </div> <!-- #python -->
+
+    <div id="exponent" style="padding:20px;">
+        <h2 class="alert">Exponents</h2>
+        <h3>Python Exponent Operator</h3>
+        <p>
+            In lab, we did this as a loop. Using the built-in operator or library method is always
+            the easier and better way.
+        </p>
+        <p class="ic-flash-info">
+            The Python exponent operator is <code>**</code>
+        </p>
+        <div id="exponent-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# variables and constants
+
+number = 0
+exponent = 0
+result = 1
+
+# input - get number and exponent
+number = int(input("Enter a number: "))
+exponent = int(input("Enter the exponent: "))
+
+# calculate exponent using the exponent operator
+result = number ** exponent
+    
+print("The result is " + str(result))
+</pre>
+        </div> <!-- #exponent-code -->
+    </div> <!-- #exponent -->
+
+    <div id="isnumeric" style="padding:20px;">
+        <h2 class="alert">isNumeric</h2>
+        <h3>Numeric Test Demo</h3>
+        <div id="isnumeric-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# Demo of string.isnumeric()
+
+# variables
+str_input = ""
+num_input = 0
+
+#Data validation example. Loop until the user enters a number
+str_input = input("Enter a number: ")
+
+# Note the isnumeric() method is limited to integers
+while str_input.isnumeric() == False:
+    str_input = input("Enter a number: ")
+
+num_input = float(str_input)
+
+print("The validated number is " + str(num_input))
+</pre>
+        </div> <!-- #isnumeric-code -->
+    </div> <!-- #isNumeric -->
+
+    <div id="for-loop" style="padding:20px;">
+        <h2 class="alert">For-Loop</h2>
+        <h3>For Loop Demo</h3>
+        <div id="forloop-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# For loop demo definite loop with a known number of iterations
+
+# variables and constants
+MAX_ITEMS = 10
+count = 1
+total = 0 # Just for fun, let's keep a running total of the numbers
+
+# Note the use of the range() method to control the loop
+for count in range(MAX_ITEMS):
+    total = total + count # accumulate a running total
+    print(str(count), end=' ')
+    
+# output - after the loop ends, display the total
+print("\nTotal = " + str(total)) 
+
+# another variation on the range function
+total = 0
+count = 1
+
+# This time, we also specify start and step value in the range() method
+for count in range(1, MAX_ITEMS + 1, 1):
+    total = total + count # accumulate a running total
+    print(str(count), end=' ')
+    
+# output - after the loop ends, display the total
+print("\nTotal = " + str(total)) 
+</pre>
+        </div> <!-- #forloop-code -->
+    </div> <!-- #for-loop -->
+
+    <div id="while" style="padding:20px;">
+        <h2 class="alert">While Loop</h2>
+        <p>
+            Here are examples of a While-loop using both definite and indefinite loop.
+        </p>
+        <h3>While loop using a definite loop</h3>
+
+        <div id="definiteloop-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# Cuyamaca College CS-119
+# While loop demo definite loop with a fixed number of iterations
+
+# variables and constants
+MAX_ITEMS = 10
+count = 1
+
+# Make sure the loop body code is indented 4 spaces!
+# Also, note the colon (:)
+# The Ctrl c key combination will break you out of an endless loop
+# Print to the console
+while count <= MAX_ITEMS:
+    print(count, end=" ")
+    count = count + 1 # Be sure to change the loop control variable!
+print("\n End of loop printing")
+</pre>
+        </div> <!-- #definiteloop-code -->
+        <hr />
+        <h3>While loop using a definite loop</h3>
+
+        <div id="indefiniteloop-code" style="margin-left:60px;margin-right:60px; ">
+            <pre>
+#!/usr/bin/env python3
+
+# import locale to do currency formatting
+import locale
+locale.setlocale(locale.LC_ALL, 'en-US')
+
+# Cuyamaca College CS-119
+# While loop demo indefinite loop unknown number of iterations
+
+# variables and constants
+amount = 0.0
+total = 0.0 # the variable total works as an accumulator
+
+# priming read to make sure the loop control variable is initialized
+amount = float(input("Enter amount: "))
+
+
+# amount serves as both a sentinel and loop control variable
+while amount > 0:
+    total = total + amount # accumulate a running total
+    amount = float(input("Enter amount: "))
+
+# output - after the loop ends, display the total
+print("Total = " + locale.currency(total, grouping=True)) 
+</pre>
+        </div> <!-- #indefiniteloop-code -->
+    </div> <!-- #while -->
+
+
+
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+
+</div> <!-- #demo-code -->

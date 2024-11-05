@@ -1,0 +1,232 @@
+﻿<!-- capstone course id: 455772 -->
+<!-- authentication vs authorization -->
+
+<div id="scaling" style="background:lightblue;">
+
+    <div id="navigation" style="padding: 20px;">
+        <a href="/courses/455772" style="color:navy;">
+            <img src="/courses/455772/files/45593224/preview"
+                 alt="simple cloud drawing" width="150" /><br />
+            <em>home</em>
+        </a>
+    </div> <!-- #navigation -->
+
+    <div id="introduction" style="padding:20px;">
+        <div id="overview">
+            <h2 class="alert alert-info">Authentication and Authorization</h2>
+            <p>
+                <img style="display: block; margin-left: auto; margin-right: auto;" 
+                     src="/courses/455772/files/46763892/preview" 
+                     alt="sign: authorized personnel only" width="293" height="293" />
+            </p>
+            <ul style="padding-left:50px;padding-right:50px;">
+                <li>
+                    There is a sign near the entrance to rides at amusement parks which indicate
+                    a minimum height requirement for safety purposes. 
+                </li>
+                <li>
+                    A guard stands by the backstage door at a music venue checking passes.
+                </li>
+                <li>
+                    Sentries are posted at the gates of a military installation carefully 
+                    inspecting identification credentials.
+                </li>
+                <li>
+                    The cashier at the corner store is required to confirm your government-issued
+                    identification before selling you age-restricted products.
+                </li>
+                <li>
+                    An RFID card reader operates the locks on the doors to corporate offices.
+                </li>
+            </ul>
+            <p>
+                All of these are intended to legitimately and conscientiously <em>discriminate</em> 
+                against unauthorized access.
+            </p>
+            <p>
+                Additionally, if you are building or managing an online application or system,
+                it is likely that there are some activities that only specific users should be
+                allowed to access.
+            </p>
+            <p>
+                But in order to control this gate or filter to allow some users in and keeping
+                others out, you need a way to identify them.
+            </p>
+            <div class="ic-flash-info">
+                <p>
+                    The process of allowing qualified access is called <strong>authorization</strong>.
+                </p>
+                <p>
+                    Confidently identifying or qualifying the user is <strong>authentication</strong>.
+                </p>
+            </div>
+        </div> <!-- #introduction -->
+
+        <div id="permissions" style="padding:20px;">
+            <h3 class="alert">Authorization</h3>
+            <p>
+                Allowing and disallowing user permissions may be granted at the individual or 
+                group (role) level. Granting a particular user all of the permissions they may 
+                require for a particular job can be tedious in large organizations, so it's 
+                often easier to assign them to a particular role that has a permission.
+            </p>
+            <p>
+                All users should be able to access their own messages, but not messages intended
+                for others. Elevated permissions are usually granted to system administrators,
+                who may need to add and delete users and roles.
+            </p>
+        </div>
+
+        <div id="identity" style="padding:20px">
+            <h3 class="alert">Authentication</h3>
+            <div id="how-do-we-know">
+                <h3>How do I know it's you?</h3>
+                <p>
+                    Authentication, if not <em>most</em> important, becomes very important. This is not
+                    a new concept for application development, but you might be surprised at how the
+                    solutions and performance expectations have changed over the years.
+                </p>
+                <p>
+                    The question eventually becomes how to implement user authentication.
+                </p>
+                <p>
+                    Once upon a time, it was enough to prompt the user and ask for their username.
+                    (<em>Ok. Hi Bob. Welcome Back.</em>) If the user had physical access to the system,
+                    it must be ok, and all I really care about is what their name is, so I know how
+                    to greet them and where to find <em>their</em> files.
+                </p>
+                <p>
+                    That was adequate until it wasn't. Next the application would ask for a password
+                    and the application would store the password. In time, this became bad practice
+                    too.
+                </p>
+                <p>
+                    How many passwords do we need to manage now? If we are using strong encryption to
+                    manage and encrypt store and recover passwords, there are many points of failure
+                    and overhead and risk.
+                </p>
+                <p>
+                    In most cases, I don't need to know anything about you except to recognize you
+                    when you return. I likely don't need to know anything about the user, except
+                    that they were here before and that someone else isn't pretending to be them.
+                </p>
+                <p>
+                    Software libraries were written to help with this, and we could build databases and
+                    support methods, but the result is reinventing a wheel which is probably already
+                    obsolete.
+                </p>
+                <p>
+                    Federated passwords and IDaaS is a much better solution.
+                </p>
+                <p>
+                    Perhaps not 5 years ago, but by now, most of us are familiar with Single Sign-On 
+                    (SSO) and multi-factor authentication (MFA).
+                </p>
+                <p>
+                    When you visit sites that invite you to login using Facebook or Google or
+                    Microsoft, they very likely do not care about your Facebook or Google or
+                    Microsoft accounts, they are simply using them as a trusted authority to validate
+                    the claim that you are who you say your are. When you log in <em>through</em>
+                    these systems, they will issue a credential to you and <em>vouch</em> for you
+                    to the requesting system. They don't share any other information other than
+                    "yes, I know this user."
+                </p>
+                <p>
+                    As developers, we probably don't care
+                    about where a user had dinner or which memes they LOL-d. All we care about is
+                    that a trusted authority said, "yeah, he is who he claims to be. (Because I
+                    said so.)"
+                </p>
+                <p>&nbsp;</p>
+            </div> <!-- #how-do-we-know -->
+
+
+            <div id="identity-crisis">
+                <h2 class="alert">Identity Crisis</h2>
+                <p>
+                    To understand the process of user authentication, it helps to look at the evolution.
+                    From installing password files on every system, and adding two-factor authentication
+                    (2FA or MFA), and enterprise domain providers, SSO, and federated identity systems.
+                </p>
+                <p>
+                    This series, although a couple years old now, provides an excellent introduction
+                    to implementing Identity in your code. The later sessions deal with some specifics
+                    about using MS-Identity in a .NET application, but the fundamentals are worth
+                    your time.
+                </p>
+                <p>
+                    These episodes are a little long (~60min). The first is interesting and explains a
+                    little about the problem. Here is the link, but consider skipping right to episode 2 
+                    (of 9!) linked below, to learn more about the history and current state of user 
+                    authentication and how we got where we are.
+                    <a href="https://youtu.be/bniAj9q4s7c" style="color:navy;">
+                        1. (Episode 1) Getting
+                        Started with Identity (Identity 101)] <em>What kind of problems are we solving?</em>
+                    </a>
+
+                </p>
+                <div class="ic-flash-info">
+                    <strong>Spoiler alert:</strong> the takeaway from this series, is not to help you
+                    learn how to implement user authentication, but to convince you not to write a
+                    home-grown solution. (see Episode 3)
+                </div>
+                <p>
+                    In episode 2, the hosts go further into the technical approach
+                    to the problem, still at a high level and explaining the differences between impersonation
+                    and selected delegation with (Open Authorization - OAuth2.0) and finally a discription
+                    of OpenID Connect. More than just a walk-through of how to integrate these standards,
+                    this discussion presents a good explanation of the what, why, and how. Even just as a
+                    casual user of modern web applications, this is a helpful discussion of the state
+                    of the industry how to do authentication in modern applications.
+                </p>
+                <p style="text-align:center">
+                    [Identity Crisis - A brief history of Identity]<br />
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kg-g3csVJWw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                </p>
+            </div>
+
+            <div id="tldr" style="padding:20px;">
+                <h3 class="alert">TLDR;</h3>
+                <p>
+                    To make a long story short(er), authentication is hard, but necessary. <em>Outsourcing</em>
+                    this to external service dependencies makes for more robust systems and a better user experience.
+                </p>
+                <p>
+                    In the first couple of minutes of this video (5:33), Jeff Hainsworth provides a clear description 
+                    of federated authentication, which is a specialized case of single sign-on (SSO), what it is
+                    and how it works.
+                </p>
+                <p>
+                    <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/sKa7STjeOTo"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </p>
+
+
+            </div>
+
+            <div id="idaas" style="padding:20px;">
+                <h3>IDaaS</h3>
+                <p>
+                    You've seen how database systems and even serverless functions can be utilized as services,
+                    providing secure authentication is one more element that is very well suited to cloud service
+                    offerings.
+                </p>
+                <p>
+                    <a href="https://www.hypr.com/security-encyclopedia/idaas" style="color:navy;">
+                        One more resource for you to consider before moving on: <strong>IDaaS</strong></a>
+                </p>
+            </div>
+
+            <div id="footer" style="padding: 20px;">
+                <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+            </div> <!-- #footer -->
+
+        </div> <!-- #assignment -->
+</div> <!-- #serverless-functions -->

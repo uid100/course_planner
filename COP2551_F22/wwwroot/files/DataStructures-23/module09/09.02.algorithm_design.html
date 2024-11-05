@@ -1,0 +1,225 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="algorithm-design">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="patterns">
+        <h2 class="alert alert-info">Algorithm Design Patterns</h2>
+
+        <p style="font-style:italic">source: https://cs.lmu.edu/~ray/notes/algpatterns/</p>
+        <p>
+            The best architects, developers, engineers, and scientists realize that a 
+            solution to a problem they currently have kind of reminds them of something 
+            similar.
+        </p>
+        <p class="ic-flash-info">
+            An algorithmic pattern, or algorithmic paradigm, is a method, strategy, or 
+            technique of solving a problem.
+        </p>
+        <h4>Some Common Patterns</h4>
+        <p>
+            The following is just a list of common paradigms; there aren&rsquo;t any detailed 
+            examples here.
+        </p>
+        <p>
+            Read through the descriptions and the different pattern categories. You'll
+            explore them in more detail in the discussion.
+        </p>
+
+        <h3>Brute Force</h3>
+        <p>
+            Enumerate all possible solutions, unintelligently, and try them all until you find 
+            a solution. Not really a &ldquo;pattern&rdquo;. You could in theory, do Traveling 
+            Salesperson, Knapsack, or Subset Sum this way, but don&rsquo;t.
+        </p>
+
+        <h3>Divide and Conquer</h3>
+        <p>
+            Breaking down a problem into multiple <strong>independent</strong> subproblems, 
+            solving the subproblems (recursively), and combining those solutions into a solution 
+            for the original problem.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Mergesort</li>
+            <li>Quicksort</li>
+            <li>Median</li>
+            <li><a href="http://mathworld.wolfram.com/KaratsubaMultiplication.html">Karatsuba&rsquo;s</a>
+                Integer Multiplication</li>
+            <li>Matrix Multiplication</li>
+            <li>FFT</li>
+            <li>Nearest Neighbors</li>
+        </ul>
+
+        <h3>Decrease and Conquer</h3>
+        <p>
+            A variant of divide and conquer where the problem is broken down into <em>one</em> subproblem.</p>
+        <p>Examples:</p>
+        <ul>
+            <li>Binary search</li>
+            <li>Factorial</li>
+            <li>Selection Sort</li>
+            <li>Insertion Sort</li>
+            <li>Largest Number</li>
+            <li>Greatest Common Divisor</li>
+            <li>Topological Sort</li>
+            <li>Insertion or lookup in a binary search tree</li>
+            <li>Computing the median</li>
+        </ul>
+
+        <h3>The Greedy Method</h3>
+        <p>Solving a problem by doing the "best looking" thing at each step. (May miss a solution, or may miss the optimal one. But in some cases where it is known to work, it is a great approach.)</p>
+        <p>Examples</p>
+        <ul>
+            <li>Minimum Spanning Trees</li>
+            <li>Naive coin changing</li>
+            <li>Huffman Compression</li>
+            <li>Dijkstra&rsquo;s Shortest Path</li>
+        </ul>
+
+        <h3>Dynamic Programming</h3>
+        <p>
+            Solving an optimization problem by breaking down a problem into multiple 
+            <strong>overlapping</strong> subproblems, solving the subproblems (recursively), and 
+            combining those solutions into a solution for the original problem. The idea is to 
+            cache the results of overlapping subproblems. Can be done bottom up (table 
+            construction) or top-down (recursive with memoization)
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Interval scheduling</li>
+            <li>Longest common subsequence</li>
+            <li>Coin changing</li>
+            <li>Levenshtein distance</li>
+            <li>Matrix-chain multiplication</li>
+            <li>Integer knapsack</li>
+            <li>Shortest path</li>
+            <li>Word wrap</li>
+            <li>Traveling salesperson</li>
+        </ul>
+
+        <h3>Backtracking</h3>
+        <p>
+            A method for systematically generating possible solutions to a problem in 
+            which you sometimes have to back up when realizing your paritally generated 
+            candidate can&rsquo;t possibly be extended to a real solution.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Map coloring</li>
+            <li>Eight queens</li>
+            <li>Knight&rsquo;s Tour</li>
+            <li>Maze solving</li>
+            <li>Regular expression matching</li>
+            <li>Generic path finding</li>
+        </ul>
+
+        <h3>Branch and Bound</h3>
+        <p>
+            Backtracking applied to optimization problems.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Satisfiability</li>
+            <li>Traveling salesperson</li>
+            <li>Integer programming</li>
+            <li>Nearest neighbor search</li>
+            <li>Nonlinear programming</li>
+        </ul>
+
+        <h3>Hill Climbing</h3>
+        <p>
+            Solving (or finding an approximate solution to) an optimization problem 
+            by generating candidate solutions that are (hopefully) improvements over 
+            the previous candidate. <strong>Basic Hill Climbing</strong> chooses the 
+            "best" next step, <strong>Genetic algorithms</strong> choose a genetic 
+            mutation of the previous candidate. <strong>Simulated Annealing</strong>
+            makes the next choice based on a particular formula used in metallurgy.
+        </p>
+
+        <h3>Particle Swarm Optimization</h3>
+        <p>
+            Solving an optimization problem with a bunch of decentralized particles 
+            all searching for a solution with something that looks like its has a 
+            collective organization (e.g. ant colonies, bird flocks, animal herds, 
+            etc.)
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Neural network training</li>
+            <li>Finite element updating</li>
+        </ul>
+
+        <h3>Las Vegas</h3>
+        <p>
+            A randomized algorithm that always produces the correct answer but makes 
+            no guarantees on how long it will run or how much space it will need (in 
+            the worst case).
+        </p>
+        <p>
+            Used as a defense against algorithm complexity attacks.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Finding a value in a collection</li>
+            <li>Randomized Quicksort</li>
+        </ul>
+
+        <h3>Monte Carlo</h3>
+        <p>
+            A randomized algorithm that has time and space guarantees but has a small 
+            probablility of giving the wrong answer. The probability of error can be 
+            reduced by running the algorithm longer.
+        </p>
+        <p>
+            Used when all known deterministic algorithms for a problem are too slow, 
+            or when estimation is an inherent part of the problem.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Miller-Rabin primality test</li>
+            <li>Approximating &pi; (by throwing darts)</li>
+            <li>Approximating integrals</li>
+            <li>Game playing</li>
+        </ul>
+
+        <h3>Reduction (Transformation)</h3>
+        <p>
+            Solving a problem by reducing, or transforming, it to a similar (usually 
+            easier) problem whose solution implies a solution to the original. Also 
+            known as <strong>transform and conquer</strong>.
+        </p>
+
+        <h3>Preprocessing</h3>
+        <p>
+            Playing tricks with the input (input enhancement) or building up a cache 
+            (prestructuring) prior to doing the official run.
+        </p>
+        <p>Examples:</p>
+        <ul>
+            <li>Table of counts for counting sort</li>
+            <li>Boyer-Moore pattern matching</li>
+            <li>Storing often used data in a hashtable</li>
+            <li>Store often used data in a search tree (B-tree, BST, Red-black, ...)</li>
+            <li>Heapify, prior to heapsort</li>
+        </ul>
+    </div>  <!-- #patterns -->
+
+    <p>&nbsp;</p>
+    <a href="#algorithm-design" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #algorithm-design -->

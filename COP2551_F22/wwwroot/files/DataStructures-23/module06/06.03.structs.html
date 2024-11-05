@@ -1,0 +1,172 @@
+﻿<!-- Structures -->
+<!-- data structures id: 465482 -->
+<div id="structs">
+
+    <div id="course_header">
+        <div id="page-header" style="margin-left:auto; margin-right:0; display:block; height:150px;">
+            <div id="course-image" style="padding:30px; float:right;">
+                <figure>
+                    <a href="/courses/465482/">
+                        <img style="display:block; margin-left:auto; margin-right:auto;"
+                             src="/courses/465482/file_contents/course%20files/course_image/cover_image.png"
+                             alt="main course image" width="175" height="85" />
+                        <figcaption style="text-align:center;">home</figcaption>
+                    </a>
+                </figure>
+                <p>&nbsp;</p>
+            </div><!-- #course-image -->
+        </div><!-- #page-header -->
+    </div>
+
+    <div id="structures">
+        <h2 class="alert alert-info">C++ Structures</h2>
+        <p>
+            C++ <b>structs</b> are a fundamental feature of the C++ programming language that
+            allow you to create custom data types to group together variables of different
+            data types under a single name. These user-defined data structures are similar
+            to classes but have some key differences that make them particularly useful
+            for specific tasks.
+        </p>
+
+        <h3>Defining a Struct</h3>
+        <p>
+            In C++, you can define a struct using the <code>struct</code> keyword followed
+            by the struct's name. Inside the struct, you can declare data members, also known
+            as fields or properties, which can have different data types. For example:
+        </p>
+
+<pre>
+<code>
+    struct Person {
+        std::string name;
+        int age;
+    };
+</code>
+</pre>
+
+        <p>
+            In this example, we've defined a <code>Person</code> struct with two data members:
+            <code>name</code> of type <code>std::string</code> and <code>age</code> of type
+            <code>int</code>.
+        </p>
+
+        <h33>Accessing Struct Members</h33>
+        <p>
+            Struct members can be accessed using the dot (.) operator. For instance, to set the
+            <code>name</code> and <code>age</code> of a <code>Person</code> struct:
+        </p>
+
+<pre>
+<code>
+        Person person1;
+        person1.name = "John Doe";
+        person1.age = 30;
+</code>
+</pre>
+
+        <h3>Use Cases</h3>
+        <p>
+            C++ structs are commonly used for creating lightweight data structures to represent
+            records, coordinate points, and other related data. They are also used for passing
+            multiple values to functions and organizing data in a more structured manner.
+        </p>
+
+        <p>
+            While structs provide a way to group data together, they lack the advanced features
+            of classes, such as member functions (methods) and access control modifiers.
+            Therefore, structs are often preferred when simplicity and easy access to data are
+            the primary concerns.
+        </p>
+
+        <hr />
+        <p>
+            C++ structs are a versatile tool for organizing and managing data in your programs.
+            They offer a straightforward way to group related data elements and are especially
+            useful when you need a simple, lightweight data structure without the complexities
+            of classes.
+        </p>
+    </div> <!-- #structures -->
+    <p>&nbsp;</p>
+    <div id="comparison">
+        <h2 class="alert alert-info">Structs vs Objects</h2>
+        <p>
+            Reviewing the fundamentals of using structs and objects reveals some similarity and often
+            leads to the question of when to use each.
+        </p>
+        <p>
+            In C++, both structs and objects are used to define composite data types that can group
+            together variables of different types. However, there are some key differences.
+        </p>
+
+        <h3>Access Control</h3>
+        <p>
+            For structs: In a struct, the default access control for its members is "public." This means
+            that the data members of a struct are accessible directly from outside the struct, and there
+            is no encapsulation by default.
+        </p>
+        <p>
+            For objects (classes): In a class, the default access control for its members is "private."
+            This means that data members of a class are not accessible directly from outside the class,
+            promoting encapsulation.
+        </p>
+
+        <h3>Encapsulation</h3>
+        <p>
+            Structs typically do not emphasize encapsulation and are often used for simple data containers.
+            In a struct, you usually have public data members that can be accessed directly.
+        </p>
+        <p>
+            Objects (instances of classes) are designed with encapsulation in mind. They usually have
+            private data members and provide public member functions (methods) to interact with and
+            manipulate those data members. This encapsulation helps control access to the data and
+            allows for better data integrity and security.
+        </p>
+
+        <h3>Inheritance</h3>
+        <p>
+            Both structs and classes can be used as base classes for inheritance in C++. The only
+            difference is the default access control.
+        </p>
+        <p>
+            Structs can be used for inheritance, but they use public inheritance by default, which
+            means that public members of the base struct remain public in the derived struct.
+        </p>
+        <p>
+            Classes, on the other hand, use private inheritance by default, so public members of
+            the base class become private members in the derived class.
+        </p>
+
+        <h3>Constructor (and Destructor)</h3>
+        <p>
+            Classes (objects) can have constructors and destructors, which allow for initialization
+            and cleanup operations when objects are created and destroyed.
+        </p>
+        <p>
+            Structs can also have constructors and destructors in C++, but this is less common, and
+            they are typically used for more complex structs.
+        </p>
+
+        <h3>Typical Use Cases</h3>
+        <p>
+            Structs are often used for simple data structures that group related variables together,
+            such as coordinates (x, y, z) or data records.
+        </p>
+        <p>
+            Objects (classes) are used for more complex data structures that include both data
+            members and associated behaviors (methods), implementing object-oriented programming
+            concepts like encapsulation, inheritance, and polymorphism.
+        </p>
+
+        <hr />
+        <p>
+            Both structs and objects (classes) can be used to define composite data types (in C++).
+        </p>
+        <p>
+            Structs are often used for simple data containers with public access to their members,
+            while objects (classes) are used for more complex data structures with encapsulation
+            and private access to data members and methods for behavior.
+        </p>
+    </div> <!-- #comparison -->
+    <p>&nbsp;</p>
+    <a href="#structs" style="font-style:italic;color:navy;">top</a>
+</div> <!-- #adt -->

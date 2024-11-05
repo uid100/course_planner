@@ -1,0 +1,9 @@
+﻿<p>Get your head in the Cloud.</p>
+<ul>
+    <li>Overview</li>
+    <li>Data Storage, Data Centers, Disaster Recovery, Regions, and Exports</li>
+    <li>Q2: Cloud Computing (100 pts)</li>
+    <li>Ex. Subscriptions AWS, Az, GCP (100 pts)</li>
+</ul>
+<p>SLAs&nbsp;</p>
+<p>SOA</p>

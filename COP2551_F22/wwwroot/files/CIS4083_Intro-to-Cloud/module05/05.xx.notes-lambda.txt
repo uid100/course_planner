@@ -1,0 +1,26 @@
+﻿link
+
+create function
+hello-world-python
+Name:  hello-uid100
+Role from lambda_basic_execution
+
+if you are repeating this, use existing role and select from the dropdown
+
+choose Test
+
+At the top, you'll see Execution Result: succeeded
+
+Expand > Details [screenshot]
+
+
+select Configuration tab
+
+Choose Function URL from the left column and Create function URL
+
+For Auth type select NONE
+
+and configure CORS  [*]
+
+
+go back to the Functions page and select your new lambda and the [+ Add trigger ] link
